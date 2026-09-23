@@ -27,6 +27,19 @@ def test_recovers_planted_groups():
     assert adjusted_rand_score(truth, labels[:keys]) == 1.
 
 
+def test_likelihood_selects_the_planted_count():
+    rng = random.Random(2)
+    truth = np.repeat(np.arange(6), 12)
+    members = [np.flatnonzero(truth == g) for g in range(6)]
+    worlds = []
+    for _ in range(800):
+        pool = [int(k) for g in rng.sample(range(6), 3) for k in members[g]]
+        worlds.append(sorted(rng.sample(pool, 14)))
+    labels, groups = learn_groups(worlds, len(truth), choices=range(3, 10), select='likelihood')
+    assert groups == 6
+    assert adjusted_rand_score(truth, labels) == 1.
+
+
 def test_unseen_atoms_form_one_extra_group():
     harness = Harness()
     keys = len(harness.key_names)

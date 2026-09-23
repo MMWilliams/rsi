@@ -229,12 +229,27 @@ static/blind/warm/hedged/revealed arms hit for hit, `tests/test_growth_coach.py`
       deployed at 256, and the coach lost there on untrained combinations in
       replication A (-328 [-499, -158]). Audit passed. The coach line is
       closed by its own protocol; no third run.
-- [ ] Next on tight-budget growth: the family agent recovers about half of the
-      family oracle's gain at 256. Learn the grouping instead of reading it
-      from syntax (cluster atoms by co-occurrence across training worlds) and
-      test whether the result survives; model wrong picks better (slip is a
-      single constant); combine the family model with the coach's
-      generous-budget levers, each under its own predeclared gate.
+- [x] Git: repo initialised 2026-09-23, first commit `103edc4` on `master`
+      (no remote). `core.autocrlf` off locally so frozen protocol hashes stay
+      valid; run journals, two >100 MB dumps and LoRA adapters are ignored.
+      Work continues on branch `worktree-learned-groups`
+      (`.claude/worktrees/learned-groups`, `vendor/` linked by junction).
+- [x] **Learned grouping** (`rsi/learned_groups.py`,
+      `mechanism_learned_groups_probe.py`, seed 633101): atoms clustered by
+      positive PMI of co-occurrence across training worlds. Adjusted Rand
+      against the families 0.15 / 0.84 / 0.89 / 0.89 at 100 / 400 / 1600 /
+      6400 worlds; small families merge (rotmod into mod, which is a real
+      regularity: viable rotmod worlds nearly always include mod). On learned
+      groups from 1,600 worlds the family agent recovers ~80% of the syntactic
+      agent's in-support gains, **improving past the 400 worlds where the pair
+      prior saturates**, but loses at 256 on untrained-family worlds (-89 to
+      -103, significant) and is weak at 256-512 on untrained combinations.
+- [ ] Likelihood-selected group count (held-out world likelihood; picks 5-6
+      groups, separates gcd) with the confirmed hedge rule vs hedging from 256:
+      `mechanism_learned_groups_likelihood.py`, seed 634101, running.
+- [ ] Also open: model wrong picks better (slip is one constant); combine the
+      family model with the coach's generous-budget levers, each under its own
+      predeclared gate.
 - [ ] Update the paper draft (`PAPER-DRAFT-drawn-mechanisms-2026-09-22.md`):
       rule 6 correction, the informational analysis, C-family, and the two
       failed coach confirmations.

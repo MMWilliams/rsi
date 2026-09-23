@@ -21,11 +21,8 @@ import numpy as np
 from .family_inference import FamilySimulator
 
 
-def learn_groups(observed_sets, keys, choices=range(3, 16), seed=0):
-    """Labels per atom (-1 if never observed) and the chosen group count."""
-    from scipy.sparse.csgraph import laplacian
-    from sklearn.cluster import SpectralClustering
-
+def _affinity(observed_sets, keys):
+    """Positive PMI of co-occurrence among the atoms any world contained."""
     worlds = len(observed_sets)
     counts = np.zeros((keys, keys))
     for indices in observed_sets:
@@ -39,13 +36,63 @@ def learn_groups(observed_sets, keys, choices=range(3, 16), seed=0):
         pmi = np.log(joint / np.outer(marginal, marginal))
     affinity = np.where(np.isfinite(pmi), np.maximum(pmi, 0.), 0.)
     np.fill_diagonal(affinity, 0.)
-    eigenvalues = np.sort(np.linalg.eigvalsh(laplacian(affinity, normed=True)))
-    gaps = {k: eigenvalues[k] - eigenvalues[k - 1] for k in choices}
-    groups = max(gaps, key=gaps.get)
+    return seen, affinity
+
+
+def _cluster(seen, affinity, groups, keys, seed):
+    from sklearn.cluster import SpectralClustering
     labels = np.full(keys, -1)
     labels[seen] = SpectralClustering(groups, affinity='precomputed', random_state=seed,
                                       assign_labels='cluster_qr').fit_predict(affinity)
-    return labels, groups
+    return labels
+
+
+def log_likelihood(observed_sets, labels, per_world=3, slip=.05):
+    """Log probability of worlds under 'pick `per_world` groups uniformly, then
+    atoms uniformly from their union', each atom slipping to any seen atom with
+    probability `slip`. Atoms the grouping has never seen count as slips."""
+    groups = int(labels.max()) + 1
+    sizes = np.bincount(labels[labels >= 0], minlength=groups)
+    seen = int((labels >= 0).sum())
+    total = 0.
+    for indices in observed_sets:
+        present = np.bincount(labels[list(indices)][labels[list(indices)] >= 0],
+                              minlength=groups)
+        unseen = len(indices) - present.sum()
+        terms = []
+        for triple in itertools.combinations(range(groups), per_world):
+            union = sizes[list(triple)].sum()
+            inside = present[list(triple)].sum()
+            outside = present.sum() - inside + unseen
+            terms.append(inside * np.log((1 - slip) / union + slip / seen)
+                         + outside * np.log(slip / seen))
+        terms = np.array(terms)
+        total += terms.max() + np.log(np.exp(terms - terms.max()).mean())
+    return total
+
+
+def learn_groups(observed_sets, keys, choices=range(3, 16), seed=0, select='eigengap'):
+    """Labels per atom (-1 if never observed) and the chosen group count.
+
+    `select='eigengap'` takes the largest gap in the normalised Laplacian's
+    spectrum. `select='likelihood'` clusters the first four fifths of the
+    worlds at every count in `choices`, keeps the count under which the last
+    fifth is most probable (`log_likelihood`), and reclusters all worlds."""
+    from scipy.sparse.csgraph import laplacian
+
+    if select == 'likelihood':
+        cut = len(observed_sets) * 4 // 5
+        fit_seen, fit_affinity = _affinity(observed_sets[:cut], keys)
+        scores = {g: log_likelihood(observed_sets[cut:],
+                                    _cluster(fit_seen, fit_affinity, g, keys, seed))
+                  for g in choices}
+        groups = max(scores, key=scores.get)
+    seen, affinity = _affinity(observed_sets, keys)
+    if select == 'eigengap':
+        eigenvalues = np.sort(np.linalg.eigvalsh(laplacian(affinity, normed=True)))
+        gaps = {k: eigenvalues[k] - eigenvalues[k - 1] for k in choices}
+        groups = max(gaps, key=gaps.get)
+    return _cluster(seen, affinity, groups, keys, seed), groups
 
 
 class LearnedFamilySimulator(FamilySimulator):
