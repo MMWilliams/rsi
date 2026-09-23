@@ -1,0 +1,85 @@
+{
+  "scope": "independent audit of mechanism-learned-confirmation-20260923",
+  "catalog_digest": "1d3c71aff89ba2b6fd72da3ea20591d74afc6aa26ef367c59bed6e57ee5424b8",
+  "replications": {
+    "A": {
+      "picks": 271379,
+      "interpreter_sample": 3000,
+      "interpreter_accepts_graded_misses": 14,
+      "lifetimes_replayed": 27,
+      "gates_recomputed": {
+        "improve": {
+          "seen_triple": {
+            "128": true,
+            "256": true,
+            "512": true,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          },
+          "new_triple": {
+            "128": true,
+            "256": true,
+            "512": false,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          }
+        },
+        "safe": {
+          "new_family": {
+            "128": true,
+            "256": true,
+            "512": true,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          }
+        },
+        "learned_passed": false,
+        "growth_passed": true
+      }
+    },
+    "B": {
+      "picks": 284181,
+      "interpreter_sample": 3000,
+      "interpreter_accepts_graded_misses": 10,
+      "lifetimes_replayed": 27,
+      "gates_recomputed": {
+        "improve": {
+          "seen_triple": {
+            "128": true,
+            "256": true,
+            "512": true,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          },
+          "new_triple": {
+            "128": true,
+            "256": true,
+            "512": true,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          }
+        },
+        "safe": {
+          "new_family": {
+            "128": true,
+            "256": true,
+            "512": true,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          }
+        },
+        "learned_passed": true,
+        "growth_passed": true
+      }
+    }
+  },
+  "failures": [],
+  "passed": true,
+  "wall_seconds": 1340.9621990000014
+}

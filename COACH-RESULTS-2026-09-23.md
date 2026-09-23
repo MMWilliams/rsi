@@ -496,6 +496,64 @@ world uses from the agent's own evidence, and it rests on family labels being
 readable from the programs scanned. It is not a learning-to-learn result and
 it does not make the RL coach's gains confirmed.
 
+## 16. The grouping learned from worlds: C-growth confirmed, C-learned failed by one cell
+
+C-family read each atom's family from its program text. `rsi/learned_groups.py`
+learns a grouping instead, from which atoms appear together across training
+worlds: spectral clustering of positive PMI of co-occurrence, the number of
+groups chosen by held-out world likelihood. Development
+(`analysis/mechanism-learned-groups-*.json`): recovery of the true families
+rises with experience (adjusted Rand 0.15, 0.84, 0.89, 0.89 at 100, 400, 1600,
+6400 worlds); the eigengap merged small families and lost at 256 on
+untrained-family worlds; likelihood selection (5-6 groups) matched the
+syntactic agent on two seeds, the second untouched.
+
+`EXPERIMENT-mechanism-learned-confirmation.md`, committed (`515d109`) before
+the run, seeds 981101 and 982101, 1,456 s. The learned agent uses groups from
+1,600 training worlds; the `early` agent the same method on the first 400; the
+champion's pair prior comes from the first 400 in every arm. Learned agent
+minus champion, tasks of 12,800:
+
+| replication | split | 128 | 256 | 512 | 1024 | 2048 | 4096 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| A | trained combinations | +818 [638, 1012] | +840 [583, 1106] | +253 [25, 487] | +1027 [778, 1282] | +1224 [995, 1457] | +660 [485, 842] |
+| A | untrained combinations | +704 [563, 852] | +654 [456, 850] | **+153 [-59, 367]** | +961 [676, 1256] | +1340 [1048, 1631] | +1015 [795, 1229] |
+| A | untrained family | +232 [129, 339] | +11 [-119, 141] | -28 [-125, 68] | +71 [-23, 169] | +337 [175, 511] | +1001 [809, 1197] |
+| B | trained combinations | +935 [721, 1158] | +896 [613, 1188] | +484 [206, 769] | +1218 [935, 1502] | +1331 [1124, 1532] | +757 [611, 903] |
+| B | untrained combinations | +1406 [1154, 1677] | +1216 [955, 1484] | +266 [43, 492] | +1426 [1151, 1712] | +2168 [1906, 2426] | +1166 [992, 1341] |
+| B | untrained family | +342 [247, 439] | -28 [-138, 83] | +105 [3, 211] | +245 [131, 365] | +497 [317, 685] | +790 [597, 991] |
+
+**C-learned failed**, on the one cell the protocol named as likely to: untrained
+combinations at 512 in replication A. Replication B passed all 18 cells, and no
+safety cell in either replication came near failing. It is reported as a
+failure; the gate is not revisited.
+
+**C-growth passed in both replications**: summed over all 18 cells, the agent
+on groups from 1,600 worlds solves +6,993 [5,890, 8,110] and +8,077
+[6,932, 9,264] more tasks than the same agent on groups from 400 worlds. The
+groups from 400 worlds (four of them) hurt in places, for example -354 and -237
+at 512 on untrained combinations and -115 and -143 at 256 on untrained-family
+worlds; the groups from 1,600 (six) turn those around.
+
+The independent audit passed (`analysis/audit-mechanism-learned-confirmation-20260923.json`):
+both groupings relearned from the recorded training worlds equal the recorded
+labels; every total, contrast, growth figure and gate recomputes from the
+journals; all 555,560 picks check against constraints rebuilt from the example
+strings; 6,000 sampled picks through the host interpreter (24 graded misses
+it accepts, the known conservative direction, none the other way); no tested
+mechanism among training solved sets; 54 lifetimes of the three arms replayed
+decision for decision by the full-sort reference.
+
+**What C-growth is.** The first predeclared, audited result in this repository
+in which an agent's ability to acquire worlds it has never seen, at every
+resource level taken together, improves with its experience of other worlds
+through a structure it learned from that experience, and keeps improving past
+the point where the cross-world pair prior stopped (about 400 worlds). The
+grouping is learned without labels, from co-occurrence alone. What is not
+claimed: that the learned agent beats the champion in every cell (C-learned
+failed by one), or that the within-world learner itself improves; it is a
+fixed rule throughout.
+
 ## 15. Files
 
 `rsi/growth_coach.py`, `tests/test_growth_coach.py`; `mechanism_coach_screen.py`,

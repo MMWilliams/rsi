@@ -244,9 +244,26 @@ static/blind/warm/hedged/revealed arms hit for hit, `tests/test_growth_coach.py`
       agent's in-support gains, **improving past the 400 worlds where the pair
       prior saturates**, but loses at 256 on untrained-family worlds (-89 to
       -103, significant) and is weak at 256-512 on untrained combinations.
-- [ ] Likelihood-selected group count (held-out world likelihood; picks 5-6
-      groups, separates gcd) with the confirmed hedge rule vs hedging from 256:
-      `mechanism_learned_groups_likelihood.py`, seed 634101, running.
+- [x] Likelihood-selected group count (`learn_groups(select='likelihood')`,
+      5-6 groups): the agent on groups from 1,600 worlds matched the syntactic
+      agent at every budget and split on seed 634101 and on the untouched seed
+      635101 (64 worlds); groups from 1,600 beat groups from 400 in 15 of 18
+      cells. Hedging from 256 only costs. Full-sort reference
+      `rsi/learned_reference.py`, held pick for pick by tests.
+- [x] **C-growth CONFIRMED, C-learned FAILED by one cell**
+      (`EXPERIMENT-mechanism-learned-confirmation.md`, committed `515d109`
+      before the run, seeds 981101/982101; `COACH-RESULTS-2026-09-23.md` §16;
+      audit passed, groups relearned exactly). Groups learned from 1,600
+      worlds beat groups from 400 by +6,993 and +8,077 tasks pooled over 18
+      cells: acquisition of unfamiliar worlds grows with experience through a
+      representation learned without labels. C-learned failed at untrained
+      combinations, budget 512, replication A (+153 [-59, 367]), the cell the
+      protocol named; B passed all 18; no safety cell failed.
+- [ ] Next: budget 512 on untrained combinations is the one cell both the
+      syntactic and learned agents are weak at (the hedge switches on there).
+      Understand it before any further gate; do not predeclare a rerun of
+      C-learned on the strength of this run's arms.
+- [ ] Merge branch `worktree-learned-groups` into `master` (left to the user).
 - [ ] Also open: model wrong picks better (slip is one constant); combine the
       family model with the coach's generous-budget levers, each under its own
       predeclared gate.
