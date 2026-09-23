@@ -1,0 +1,688 @@
+{
+  "summary": {
+    "scope": "development only; trial outcomes already inspected",
+    "episodes": 6,
+    "final_tasks_per_stage": 96,
+    "fixed": {
+      "t1": 60,
+      "t05": 68,
+      "t025": 69
+    },
+    "scores": {
+      "0:0": [
+        64,
+        70
+      ],
+      "0:0.25": [
+        64,
+        70
+      ],
+      "0:0.5": [
+        64,
+        70
+      ],
+      "0:1": [
+        64,
+        70
+      ],
+      "8:0": [
+        70,
+        70
+      ],
+      "8:0.25": [
+        70,
+        69
+      ],
+      "8:0.5": [
+        70,
+        69
+      ],
+      "8:1": [
+        70,
+        69
+      ],
+      "16:0": [
+        70,
+        70
+      ],
+      "16:0.25": [
+        70,
+        69
+      ],
+      "16:0.5": [
+        70,
+        69
+      ],
+      "16:1": [
+        70,
+        69
+      ],
+      "32:0": [
+        71,
+        70
+      ],
+      "32:0.25": [
+        71,
+        69
+      ],
+      "32:0.5": [
+        71,
+        69
+      ],
+      "32:1": [
+        71,
+        69
+      ],
+      "64:0": [
+        71,
+        70
+      ],
+      "64:0.25": [
+        71,
+        69
+      ],
+      "64:0.5": [
+        71,
+        69
+      ],
+      "64:1": [
+        71,
+        69
+      ],
+      "128:0": [
+        71,
+        70
+      ],
+      "128:0.25": [
+        71,
+        69
+      ],
+      "128:0.5": [
+        71,
+        69
+      ],
+      "128:1": [
+        71,
+        69
+      ],
+      "192:0": [
+        71,
+        70
+      ],
+      "192:0.25": [
+        71,
+        69
+      ],
+      "192:0.5": [
+        71,
+        69
+      ],
+      "192:1": [
+        71,
+        69
+      ]
+    }
+  },
+  "variants": {
+    "0:0": {
+      "parent_correct": 64,
+      "child_correct": 70,
+      "parent_choices": [
+        "t025",
+        "t1",
+        "t05",
+        "t025",
+        "t1",
+        "t1"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t05",
+        "t025"
+      ]
+    },
+    "0:0.25": {
+      "parent_correct": 64,
+      "child_correct": 70,
+      "parent_choices": [
+        "t025",
+        "t1",
+        "t05",
+        "t025",
+        "t1",
+        "t1"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t05",
+        "t025"
+      ]
+    },
+    "0:0.5": {
+      "parent_correct": 64,
+      "child_correct": 70,
+      "parent_choices": [
+        "t025",
+        "t1",
+        "t05",
+        "t025",
+        "t1",
+        "t1"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t05",
+        "t025"
+      ]
+    },
+    "0:1": {
+      "parent_correct": 64,
+      "child_correct": 70,
+      "parent_choices": [
+        "t025",
+        "t1",
+        "t05",
+        "t025",
+        "t1",
+        "t1"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t05",
+        "t025"
+      ]
+    },
+    "8:0": {
+      "parent_correct": 70,
+      "child_correct": 70,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t1",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t05",
+        "t025"
+      ]
+    },
+    "8:0.25": {
+      "parent_correct": 70,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t1",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "8:0.5": {
+      "parent_correct": 70,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t1",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "8:1": {
+      "parent_correct": 70,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t1",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "16:0": {
+      "parent_correct": 70,
+      "child_correct": 70,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t1",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t05",
+        "t025"
+      ]
+    },
+    "16:0.25": {
+      "parent_correct": 70,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t1",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "16:0.5": {
+      "parent_correct": 70,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t1",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "16:1": {
+      "parent_correct": 70,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t1",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "32:0": {
+      "parent_correct": 71,
+      "child_correct": 70,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t05",
+        "t025"
+      ]
+    },
+    "32:0.25": {
+      "parent_correct": 71,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "32:0.5": {
+      "parent_correct": 71,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "32:1": {
+      "parent_correct": 71,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "64:0": {
+      "parent_correct": 71,
+      "child_correct": 70,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t05",
+        "t025"
+      ]
+    },
+    "64:0.25": {
+      "parent_correct": 71,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "64:0.5": {
+      "parent_correct": 71,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "64:1": {
+      "parent_correct": 71,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "128:0": {
+      "parent_correct": 71,
+      "child_correct": 70,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t05",
+        "t025"
+      ]
+    },
+    "128:0.25": {
+      "parent_correct": 71,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "128:0.5": {
+      "parent_correct": 71,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "128:1": {
+      "parent_correct": 71,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "192:0": {
+      "parent_correct": 71,
+      "child_correct": 70,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t05",
+        "t025",
+        "t05",
+        "t025"
+      ]
+    },
+    "192:0.25": {
+      "parent_correct": 71,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "192:0.5": {
+      "parent_correct": 71,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    },
+    "192:1": {
+      "parent_correct": 71,
+      "child_correct": 69,
+      "parent_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ],
+      "child_choices": [
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025",
+        "t025"
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "scope": "opened development; partition environment re-screened with capacity-matched pooled defaults",
+  "threshold": 20,
+  "panels": {
+    "candidate-query-cost-transfer-20260918": {
+      "totals": {
+        "pooled15": 326,
+        "pooled60": 396,
+        "pooled120": 412,
+        "most_confident15": 339,
+        "own_bin_latent15": 392,
+        "oracle15": 462,
+        "oracle_all": 470
+      },
+      "best_free_default": "pooled120",
+      "default_regret_vs_oracle_all": 58,
+      "default_regret_vs_oracle15": 50,
+      "p2c_passed": true,
+      "own_bin_latent_minus_best_default": {
+        "gain": -20,
+        "positive_banks": 3,
+        "losing_banks": 7,
+        "interval": [
+          -41,
+          0
+        ]
+      }
+    },
+    "combined-ranker-query-transfer-20260918": {
+      "totals": {
+        "pooled15": 333,
+        "pooled60": 397,
+        "pooled120": 405,
+        "most_confident15": 346,
+        "own_bin_latent15": 401,
+        "oracle15": 447,
+        "oracle_all": 457
+      },
+      "best_free_default": "pooled120",
+      "default_regret_vs_oracle_all": 52,
+      "default_regret_vs_oracle15": 42,
+      "p2c_passed": true,
+      "own_bin_latent_minus_best_default": {
+        "gain": -4,
+        "positive_banks": 4,
+        "losing_banks": 6,
+        "interval": [
+          -17,
+          11
+        ]
+      }
+    },
+    "candidate-conditioned-query-transfer-20260918": {
+      "totals": {
+        "pooled15": 341,
+        "pooled60": 401,
+        "pooled120": 413,
+        "most_confident15": 350,
+        "own_bin_latent15": 400,
+        "oracle15": 439,
+        "oracle_all": 451
+      },
+      "best_free_default": "pooled120",
+      "default_regret_vs_oracle_all": 38,
+      "default_regret_vs_oracle15": 26,
+      "p2c_passed": true,
+      "own_bin_latent_minus_best_default": {
+        "gain": -13,
+        "positive_banks": 3,
+        "losing_banks": 7,
+        "interval": [
+          -31,
+          6
+        ]
+      }
+    }
+  },
+  "learnability": {
+    "train": [
+      "candidate-query-cost-transfer-20260918",
+      "combined-ranker-query-transfer-20260918"
+    ],
+    "test": "candidate-conditioned-query-transfer-20260918",
+    "learned": 411,
+    "default_used": "pooled120",
+    "default": 413,
+    "learned_minus_default": {
+      "gain": -2,
+      "positive_banks": 3,
+      "losing_banks": 5,
+      "interval": [
+        -10,
+        7
+      ]
+    },
+    "p2d_passed": false
+  },
+  "verdict": {
+    "p2c_all_panels": true,
+    "p2d": false
+  },
+  "limits": [
+    "Opened panels; development only.",
+    "pooled60/120 are trained on the same source labels as the original specialists, so label exposure is matched.",
+    "Leaf count is one capacity axis."
+  ]
+}

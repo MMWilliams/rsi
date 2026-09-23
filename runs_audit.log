@@ -1,0 +1,21 @@
+rebuilt admission 288 27226
+rebuilt transfer_b 576 54032
+Traceback (most recent call last):
+  File "C:\Users\reese\projects\rsi\audit_region_acquisition_improver_transfer.py", line 307, in <module>
+    main()
+  File "C:\Users\reese\projects\rsi\audit_region_acquisition_improver_transfer.py", line 207, in main
+    rows, checked = rebuild_bank(name, manifest, failures)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reese\projects\rsi\audit_region_acquisition_improver_transfer.py", line 94, in rebuild_bank
+    scores, old_order = rank(task, pool, ranker)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reese\projects\rsi\ast_probe_sensor_transfer.py", line 47, in rank
+    x = np.asarray(features(task, rows), dtype=np.float32)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reese\projects\rsi\ast_evaluator_feedback.py", line 62, in features
+    return seed_growth.representation({'id': task['id'], 'visible': task['visible']}, rows)['structural']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reese\projects\rsi\seed_growth.py", line 102, in representation
+    'behavior':np.asarray(behavior,dtype=float).reshape(len(rows),256),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 1.01 MiB for an array with shape (518, 256) and data type float64

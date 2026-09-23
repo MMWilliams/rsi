@@ -1,0 +1,1827 @@
+{
+  "scope": "one confirmation episode; pooled counts descriptive; panels separately recorded",
+  "driver": "ensemble",
+  "gate": "retention",
+  "arms": {
+    "fixed_uniform": {
+      "curve": [
+        {
+          "round": 0,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "mean_evaluator_correct_across_rounds": 43.0,
+      "candidate_queries": 206,
+      "actions": [
+        null,
+        "uniform",
+        "uniform",
+        "uniform",
+        "uniform"
+      ],
+      "accepted_rounds": [
+        1
+      ],
+      "deployment_blocked_correct": [
+        {
+          "id": "48c83f8e245f44fadeb7dff2",
+          "panel": "final_ast",
+          "score_gap": 0.02221108113817649
+        },
+        {
+          "id": "4e3b1e35e2848bef2879b3d2",
+          "panel": "final_ast",
+          "score_gap": 0.0038846698571070037
+        },
+        {
+          "id": "effc4f2f4c7eb34a9d6f9cbd",
+          "panel": "final_changed",
+          "score_gap": 0.030777399119311655
+        }
+      ],
+      "deployment_rescued": []
+    },
+    "fixed_uncertainty": {
+      "curve": [
+        {
+          "round": 0,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "evaluator": 47,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 23,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "mean_evaluator_correct_across_rounds": 43.8,
+      "candidate_queries": 262,
+      "actions": [
+        null,
+        "uncertainty",
+        "uncertainty",
+        "uncertainty",
+        "uncertainty"
+      ],
+      "accepted_rounds": [
+        4
+      ],
+      "deployment_blocked_correct": [
+        {
+          "id": "d828e5803537fda7cace62d0",
+          "panel": "final_mixed",
+          "score_gap": 0.023856645596980974
+        },
+        {
+          "id": "91a68be11b3c976ec75eec82",
+          "panel": "final_mixed",
+          "score_gap": 0.008590144275148592
+        },
+        {
+          "id": "48c83f8e245f44fadeb7dff2",
+          "panel": "final_ast",
+          "score_gap": 0.020999700095059803
+        },
+        {
+          "id": "5ea4f993394d4ee49c483517",
+          "panel": "final_ast",
+          "score_gap": 0.03423218997454969
+        },
+        {
+          "id": "4e3b1e35e2848bef2879b3d2",
+          "panel": "final_ast",
+          "score_gap": 0.0196745593300216
+        },
+        {
+          "id": "a6cafe41ba4fe7ff277c266c",
+          "panel": "final_ast",
+          "score_gap": 0.005714937856210134
+        },
+        {
+          "id": "effc4f2f4c7eb34a9d6f9cbd",
+          "panel": "final_changed",
+          "score_gap": 0.028730082076970698
+        }
+      ],
+      "deployment_rescued": []
+    },
+    "fixed_disagreement": {
+      "curve": [
+        {
+          "round": 0,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "mean_evaluator_correct_across_rounds": 43.0,
+      "candidate_queries": 222,
+      "actions": [
+        null,
+        "disagreement",
+        "disagreement",
+        "disagreement",
+        "disagreement"
+      ],
+      "accepted_rounds": [
+        1
+      ],
+      "deployment_blocked_correct": [
+        {
+          "id": "48c83f8e245f44fadeb7dff2",
+          "panel": "final_ast",
+          "score_gap": 0.021970735563379584
+        },
+        {
+          "id": "4e3b1e35e2848bef2879b3d2",
+          "panel": "final_ast",
+          "score_gap": 0.004643132014604534
+        },
+        {
+          "id": "effc4f2f4c7eb34a9d6f9cbd",
+          "panel": "final_changed",
+          "score_gap": 0.0339734121514228
+        }
+      ],
+      "deployment_rescued": []
+    },
+    "fixed_novelty": {
+      "curve": [
+        {
+          "round": 0,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "evaluator": 47,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 23,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "evaluator": 47,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 23,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "evaluator": 47,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 23,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "mean_evaluator_correct_across_rounds": 45.4,
+      "candidate_queries": 256,
+      "actions": [
+        null,
+        "novelty",
+        "novelty",
+        "novelty",
+        "novelty"
+      ],
+      "accepted_rounds": [
+        2
+      ],
+      "deployment_blocked_correct": [
+        {
+          "id": "d828e5803537fda7cace62d0",
+          "panel": "final_mixed",
+          "score_gap": 0.02364959720432591
+        },
+        {
+          "id": "91a68be11b3c976ec75eec82",
+          "panel": "final_mixed",
+          "score_gap": 0.00977939575384934
+        },
+        {
+          "id": "48c83f8e245f44fadeb7dff2",
+          "panel": "final_ast",
+          "score_gap": 0.021999611517253048
+        },
+        {
+          "id": "5ea4f993394d4ee49c483517",
+          "panel": "final_ast",
+          "score_gap": 0.03459064568491699
+        },
+        {
+          "id": "4e3b1e35e2848bef2879b3d2",
+          "panel": "final_ast",
+          "score_gap": 0.02108656018765309
+        },
+        {
+          "id": "a6cafe41ba4fe7ff277c266c",
+          "panel": "final_ast",
+          "score_gap": 0.0059053150288943534
+        },
+        {
+          "id": "effc4f2f4c7eb34a9d6f9cbd",
+          "panel": "final_changed",
+          "score_gap": 0.029895158116895804
+        }
+      ],
+      "deployment_rescued": []
+    },
+    "fixed_combined": {
+      "curve": [
+        {
+          "round": 0,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "evaluator": 47,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 23,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "evaluator": 47,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 23,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "evaluator": 47,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 23,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "mean_evaluator_correct_across_rounds": 45.4,
+      "candidate_queries": 256,
+      "actions": [
+        null,
+        "combined",
+        "combined",
+        "combined",
+        "combined"
+      ],
+      "accepted_rounds": [
+        2
+      ],
+      "deployment_blocked_correct": [
+        {
+          "id": "d828e5803537fda7cace62d0",
+          "panel": "final_mixed",
+          "score_gap": 0.02367299591329497
+        },
+        {
+          "id": "91a68be11b3c976ec75eec82",
+          "panel": "final_mixed",
+          "score_gap": 0.009957516106577136
+        },
+        {
+          "id": "48c83f8e245f44fadeb7dff2",
+          "panel": "final_ast",
+          "score_gap": 0.021865676085845998
+        },
+        {
+          "id": "5ea4f993394d4ee49c483517",
+          "panel": "final_ast",
+          "score_gap": 0.034604839907589446
+        },
+        {
+          "id": "4e3b1e35e2848bef2879b3d2",
+          "panel": "final_ast",
+          "score_gap": 0.02095742689645852
+        },
+        {
+          "id": "a6cafe41ba4fe7ff277c266c",
+          "panel": "final_ast",
+          "score_gap": 0.0059602946957908465
+        },
+        {
+          "id": "effc4f2f4c7eb34a9d6f9cbd",
+          "panel": "final_changed",
+          "score_gap": 0.030130249948721377
+        }
+      ],
+      "deployment_rescued": []
+    },
+    "meta0": {
+      "curve": [
+        {
+          "round": 0,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "mean_evaluator_correct_across_rounds": 43.0,
+      "candidate_queries": 206,
+      "actions": [
+        null,
+        "uniform",
+        "uniform",
+        "uniform",
+        "uniform"
+      ],
+      "accepted_rounds": [
+        1
+      ],
+      "deployment_blocked_correct": [
+        {
+          "id": "48c83f8e245f44fadeb7dff2",
+          "panel": "final_ast",
+          "score_gap": 0.02221108113817649
+        },
+        {
+          "id": "4e3b1e35e2848bef2879b3d2",
+          "panel": "final_ast",
+          "score_gap": 0.0038846698571070037
+        },
+        {
+          "id": "effc4f2f4c7eb34a9d6f9cbd",
+          "panel": "final_changed",
+          "score_gap": 0.030777399119311655
+        }
+      ],
+      "deployment_rescued": []
+    },
+    "meta2": {
+      "curve": [
+        {
+          "round": 0,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "mean_evaluator_correct_across_rounds": 43.0,
+      "candidate_queries": 236,
+      "actions": [
+        null,
+        "disagreement",
+        "uncertainty",
+        "uncertainty",
+        "uncertainty"
+      ],
+      "accepted_rounds": [
+        1
+      ],
+      "deployment_blocked_correct": [
+        {
+          "id": "48c83f8e245f44fadeb7dff2",
+          "panel": "final_ast",
+          "score_gap": 0.021970735563379584
+        },
+        {
+          "id": "4e3b1e35e2848bef2879b3d2",
+          "panel": "final_ast",
+          "score_gap": 0.004643132014604534
+        },
+        {
+          "id": "effc4f2f4c7eb34a9d6f9cbd",
+          "panel": "final_changed",
+          "score_gap": 0.0339734121514228
+        }
+      ],
+      "deployment_rescued": []
+    },
+    "meta4": {
+      "curve": [
+        {
+          "round": 0,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "mean_evaluator_correct_across_rounds": 43.0,
+      "candidate_queries": 236,
+      "actions": [
+        null,
+        "disagreement",
+        "uncertainty",
+        "combined",
+        "combined"
+      ],
+      "accepted_rounds": [
+        1
+      ],
+      "deployment_blocked_correct": [
+        {
+          "id": "48c83f8e245f44fadeb7dff2",
+          "panel": "final_ast",
+          "score_gap": 0.021970735563379584
+        },
+        {
+          "id": "4e3b1e35e2848bef2879b3d2",
+          "panel": "final_ast",
+          "score_gap": 0.004643132014604534
+        },
+        {
+          "id": "effc4f2f4c7eb34a9d6f9cbd",
+          "panel": "final_changed",
+          "score_gap": 0.0339734121514228
+        }
+      ],
+      "deployment_rescued": []
+    },
+    "meta4_scrambled": {
+      "curve": [
+        {
+          "round": 0,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "evaluator": 47,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 23,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "evaluator": 47,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 23,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "mean_evaluator_correct_across_rounds": 44.6,
+      "candidate_queries": 250,
+      "actions": [
+        null,
+        "uncertainty",
+        "uncertainty",
+        "novelty",
+        "uniform"
+      ],
+      "accepted_rounds": [
+        3
+      ],
+      "deployment_blocked_correct": [
+        {
+          "id": "d828e5803537fda7cace62d0",
+          "panel": "final_mixed",
+          "score_gap": 0.02372627415683859
+        },
+        {
+          "id": "91a68be11b3c976ec75eec82",
+          "panel": "final_mixed",
+          "score_gap": 0.00865754514137862
+        },
+        {
+          "id": "48c83f8e245f44fadeb7dff2",
+          "panel": "final_ast",
+          "score_gap": 0.021571328369054177
+        },
+        {
+          "id": "5ea4f993394d4ee49c483517",
+          "panel": "final_ast",
+          "score_gap": 0.03423036782123057
+        },
+        {
+          "id": "4e3b1e35e2848bef2879b3d2",
+          "panel": "final_ast",
+          "score_gap": 0.02022303005971615
+        },
+        {
+          "id": "a6cafe41ba4fe7ff277c266c",
+          "panel": "final_ast",
+          "score_gap": 0.005677292824341262
+        },
+        {
+          "id": "effc4f2f4c7eb34a9d6f9cbd",
+          "panel": "final_changed",
+          "score_gap": 0.028910223256847445
+        }
+      ],
+      "deployment_rescued": []
+    },
+    "meta4_online": {
+      "curve": [
+        {
+          "round": 0,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "evaluator": 43,
+          "deployed": 40,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "evaluator": 21,
+              "deployed": 21,
+              "base": 20,
+              "reachable": 23
+            },
+            "final_ast": {
+              "n": 12,
+              "evaluator": 10,
+              "deployed": 8,
+              "base": 6,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "evaluator": 12,
+              "deployed": 11,
+              "base": 11,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "mean_evaluator_correct_across_rounds": 43.0,
+      "candidate_queries": 220,
+      "actions": [
+        null,
+        "disagreement",
+        "disagreement",
+        "disagreement",
+        "combined"
+      ],
+      "accepted_rounds": [
+        1
+      ],
+      "deployment_blocked_correct": [
+        {
+          "id": "48c83f8e245f44fadeb7dff2",
+          "panel": "final_ast",
+          "score_gap": 0.021970735563379584
+        },
+        {
+          "id": "4e3b1e35e2848bef2879b3d2",
+          "panel": "final_ast",
+          "score_gap": 0.004643132014604534
+        },
+        {
+          "id": "effc4f2f4c7eb34a9d6f9cbd",
+          "panel": "final_changed",
+          "score_gap": 0.0339734121514228
+        }
+      ],
+      "deployment_rescued": []
+    }
+  }
+}

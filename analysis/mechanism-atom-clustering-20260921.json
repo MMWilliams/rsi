@@ -1,0 +1,445 @@
+{
+  "scope": "can unsupervised behavioural clustering recover atom families",
+  "atoms": 313,
+  "families": {
+    "bit": 16,
+    "divmod": 50,
+    "gcd": 6,
+    "mod": 135,
+    "parity": 14,
+    "popcount": 39,
+    "rotmod": 8,
+    "threshold": 15,
+    "xormod": 30
+  },
+  "withheld": [
+    "popcount",
+    "xormod"
+  ],
+  "seed": 613101,
+  "clusterings": {
+    "6": {
+      "adjusted_rand": 0.14416768790060797,
+      "per_family": {
+        "bit": {
+          "atoms": 16,
+          "home_cluster": 1,
+          "captured": 0.75,
+          "contamination": 0.8588235294117648,
+          "clusters_touched": 2
+        },
+        "divmod": {
+          "atoms": 50,
+          "home_cluster": 4,
+          "captured": 0.46,
+          "contamination": 0.5106382978723405,
+          "clusters_touched": 5
+        },
+        "gcd": {
+          "atoms": 6,
+          "home_cluster": 0,
+          "captured": 0.5,
+          "contamination": 0.8695652173913043,
+          "clusters_touched": 3
+        },
+        "mod": {
+          "atoms": 135,
+          "home_cluster": 5,
+          "captured": 0.362962962962963,
+          "contamination": 0.33783783783783783,
+          "clusters_touched": 5
+        },
+        "parity": {
+          "atoms": 14,
+          "home_cluster": 1,
+          "captured": 0.8571428571428571,
+          "contamination": 0.8588235294117648,
+          "clusters_touched": 2
+        },
+        "popcount": {
+          "atoms": 39,
+          "home_cluster": 1,
+          "captured": 0.6923076923076923,
+          "contamination": 0.6823529411764706,
+          "clusters_touched": 4
+        },
+        "rotmod": {
+          "atoms": 8,
+          "home_cluster": 5,
+          "captured": 0.75,
+          "contamination": 0.9189189189189189,
+          "clusters_touched": 2
+        },
+        "threshold": {
+          "atoms": 15,
+          "home_cluster": 2,
+          "captured": 1.0,
+          "contamination": 0.5588235294117647,
+          "clusters_touched": 1
+        },
+        "xormod": {
+          "atoms": 30,
+          "home_cluster": 3,
+          "captured": 0.4666666666666667,
+          "contamination": 0.72,
+          "clusters_touched": 3
+        }
+      }
+    },
+    "9": {
+      "adjusted_rand": 0.10226029481112442,
+      "per_family": {
+        "bit": {
+          "atoms": 16,
+          "home_cluster": 4,
+          "captured": 0.75,
+          "contamination": 0.8356164383561644,
+          "clusters_touched": 2
+        },
+        "divmod": {
+          "atoms": 50,
+          "home_cluster": 1,
+          "captured": 0.5,
+          "contamination": 0.47916666666666663,
+          "clusters_touched": 6
+        },
+        "gcd": {
+          "atoms": 6,
+          "home_cluster": 8,
+          "captured": 0.5,
+          "contamination": 0.896551724137931,
+          "clusters_touched": 4
+        },
+        "mod": {
+          "atoms": 135,
+          "home_cluster": 4,
+          "captured": 0.2222222222222222,
+          "contamination": 0.589041095890411,
+          "clusters_touched": 7
+        },
+        "parity": {
+          "atoms": 14,
+          "home_cluster": 4,
+          "captured": 0.42857142857142855,
+          "contamination": 0.9178082191780822,
+          "clusters_touched": 3
+        },
+        "popcount": {
+          "atoms": 39,
+          "home_cluster": 4,
+          "captured": 0.5384615384615384,
+          "contamination": 0.7123287671232876,
+          "clusters_touched": 6
+        },
+        "rotmod": {
+          "atoms": 8,
+          "home_cluster": 8,
+          "captured": 0.75,
+          "contamination": 0.7931034482758621,
+          "clusters_touched": 2
+        },
+        "threshold": {
+          "atoms": 15,
+          "home_cluster": 3,
+          "captured": 1.0,
+          "contamination": 0.5454545454545454,
+          "clusters_touched": 1
+        },
+        "xormod": {
+          "atoms": 30,
+          "home_cluster": 6,
+          "captured": 0.4666666666666667,
+          "contamination": 0.72,
+          "clusters_touched": 3
+        }
+      }
+    },
+    "12": {
+      "adjusted_rand": 0.09532823472524161,
+      "per_family": {
+        "bit": {
+          "atoms": 16,
+          "home_cluster": 2,
+          "captured": 0.625,
+          "contamination": 0.8113207547169812,
+          "clusters_touched": 3
+        },
+        "divmod": {
+          "atoms": 50,
+          "home_cluster": 7,
+          "captured": 0.4,
+          "contamination": 0.6825396825396826,
+          "clusters_touched": 6
+        },
+        "gcd": {
+          "atoms": 6,
+          "home_cluster": 3,
+          "captured": 0.3333333333333333,
+          "contamination": 0.8888888888888888,
+          "clusters_touched": 4
+        },
+        "mod": {
+          "atoms": 135,
+          "home_cluster": 7,
+          "captured": 0.25925925925925924,
+          "contamination": 0.4444444444444444,
+          "clusters_touched": 10
+        },
+        "parity": {
+          "atoms": 14,
+          "home_cluster": 2,
+          "captured": 0.42857142857142855,
+          "contamination": 0.8867924528301887,
+          "clusters_touched": 4
+        },
+        "popcount": {
+          "atoms": 39,
+          "home_cluster": 2,
+          "captured": 0.48717948717948717,
+          "contamination": 0.6415094339622642,
+          "clusters_touched": 6
+        },
+        "rotmod": {
+          "atoms": 8,
+          "home_cluster": 3,
+          "captured": 0.5,
+          "contamination": 0.7777777777777778,
+          "clusters_touched": 4
+        },
+        "threshold": {
+          "atoms": 15,
+          "home_cluster": 0,
+          "captured": 1.0,
+          "contamination": 0.42307692307692313,
+          "clusters_touched": 1
+        },
+        "xormod": {
+          "atoms": 30,
+          "home_cluster": 1,
+          "captured": 0.4666666666666667,
+          "contamination": 0.5483870967741935,
+          "clusters_touched": 5
+        }
+      }
+    },
+    "16": {
+      "adjusted_rand": 0.08161027035735645,
+      "per_family": {
+        "bit": {
+          "atoms": 16,
+          "home_cluster": 1,
+          "captured": 0.75,
+          "contamination": 0.8421052631578947,
+          "clusters_touched": 2
+        },
+        "divmod": {
+          "atoms": 50,
+          "home_cluster": 7,
+          "captured": 0.16,
+          "contamination": 0.0,
+          "clusters_touched": 10
+        },
+        "gcd": {
+          "atoms": 6,
+          "home_cluster": 2,
+          "captured": 0.3333333333333333,
+          "contamination": 0.8333333333333334,
+          "clusters_touched": 4
+        },
+        "mod": {
+          "atoms": 135,
+          "home_cluster": 1,
+          "captured": 0.2222222222222222,
+          "contamination": 0.6052631578947368,
+          "clusters_touched": 11
+        },
+        "parity": {
+          "atoms": 14,
+          "home_cluster": 1,
+          "captured": 0.5714285714285714,
+          "contamination": 0.8947368421052632,
+          "clusters_touched": 4
+        },
+        "popcount": {
+          "atoms": 39,
+          "home_cluster": 1,
+          "captured": 0.5641025641025641,
+          "contamination": 0.7105263157894737,
+          "clusters_touched": 6
+        },
+        "rotmod": {
+          "atoms": 8,
+          "home_cluster": 5,
+          "captured": 0.5,
+          "contamination": 0.8095238095238095,
+          "clusters_touched": 4
+        },
+        "threshold": {
+          "atoms": 15,
+          "home_cluster": 14,
+          "captured": 1.0,
+          "contamination": 0.42307692307692313,
+          "clusters_touched": 1
+        },
+        "xormod": {
+          "atoms": 30,
+          "home_cluster": 8,
+          "captured": 0.4666666666666667,
+          "contamination": 0.46153846153846156,
+          "clusters_touched": 5
+        }
+      }
+    },
+    "24": {
+      "adjusted_rand": 0.10307897770615705,
+      "per_family": {
+        "bit": {
+          "atoms": 16,
+          "home_cluster": 2,
+          "captured": 0.5,
+          "contamination": 0.8490566037735849,
+          "clusters_touched": 5
+        },
+        "divmod": {
+          "atoms": 50,
+          "home_cluster": 5,
+          "captured": 0.16,
+          "contamination": 0.6521739130434783,
+          "clusters_touched": 11
+        },
+        "gcd": {
+          "atoms": 6,
+          "home_cluster": 15,
+          "captured": 0.3333333333333333,
+          "contamination": 0.75,
+          "clusters_touched": 5
+        },
+        "mod": {
+          "atoms": 135,
+          "home_cluster": 2,
+          "captured": 0.2222222222222222,
+          "contamination": 0.4339622641509434,
+          "clusters_touched": 12
+        },
+        "parity": {
+          "atoms": 14,
+          "home_cluster": 21,
+          "captured": 0.2857142857142857,
+          "contamination": 0.4285714285714286,
+          "clusters_touched": 6
+        },
+        "popcount": {
+          "atoms": 39,
+          "home_cluster": 2,
+          "captured": 0.23076923076923078,
+          "contamination": 0.8301886792452831,
+          "clusters_touched": 9
+        },
+        "rotmod": {
+          "atoms": 8,
+          "home_cluster": 6,
+          "captured": 0.25,
+          "contamination": 0.7777777777777778,
+          "clusters_touched": 5
+        },
+        "threshold": {
+          "atoms": 15,
+          "home_cluster": 23,
+          "captured": 0.6666666666666666,
+          "contamination": 0.4736842105263158,
+          "clusters_touched": 2
+        },
+        "xormod": {
+          "atoms": 30,
+          "home_cluster": 7,
+          "captured": 0.4,
+          "contamination": 0.52,
+          "clusters_touched": 8
+        }
+      }
+    },
+    "32": {
+      "adjusted_rand": 0.10052881285794613,
+      "per_family": {
+        "bit": {
+          "atoms": 16,
+          "home_cluster": 10,
+          "captured": 0.375,
+          "contamination": 0.7857142857142857,
+          "clusters_touched": 5
+        },
+        "divmod": {
+          "atoms": 50,
+          "home_cluster": 20,
+          "captured": 0.16,
+          "contamination": 0.0,
+          "clusters_touched": 15
+        },
+        "gcd": {
+          "atoms": 6,
+          "home_cluster": 3,
+          "captured": 0.3333333333333333,
+          "contamination": 0.75,
+          "clusters_touched": 4
+        },
+        "mod": {
+          "atoms": 135,
+          "home_cluster": 6,
+          "captured": 0.17777777777777778,
+          "contamination": 0.19999999999999996,
+          "clusters_touched": 17
+        },
+        "parity": {
+          "atoms": 14,
+          "home_cluster": 25,
+          "captured": 0.2857142857142857,
+          "contamination": 0.6363636363636364,
+          "clusters_touched": 6
+        },
+        "popcount": {
+          "atoms": 39,
+          "home_cluster": 1,
+          "captured": 0.1282051282051282,
+          "contamination": 0.8,
+          "clusters_touched": 9
+        },
+        "rotmod": {
+          "atoms": 8,
+          "home_cluster": 16,
+          "captured": 0.5,
+          "contamination": 0.6363636363636364,
+          "clusters_touched": 4
+        },
+        "threshold": {
+          "atoms": 15,
+          "home_cluster": 10,
+          "captured": 1.0,
+          "contamination": 0.4642857142857143,
+          "clusters_touched": 1
+        },
+        "xormod": {
+          "atoms": 30,
+          "home_cluster": 8,
+          "captured": 0.2,
+          "contamination": 0.0,
+          "clusters_touched": 10
+        }
+      }
+    }
+  },
+  "best_k": 6,
+  "verdict": {
+    "best_k": 6,
+    "adjusted_rand": 0.14416768790060797,
+    "withheld_captured": {
+      "popcount": 0.6923076923076923,
+      "xormod": 0.4666666666666667
+    },
+    "precondition_met": false
+  },
+  "cost": {
+    "wall_seconds": 1.0498464000047534,
+    "cpu_seconds": 2.9375,
+    "peak_rss_mb": 188.45696
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "library-inheritance-v7",
+  "protocol": "EXPERIMENT-v7-library.md",
+  "bank_seed": 9162607,
+  "seeds": [181, 193, 211, 223, 239, 251],
+  "generations": 6,
+  "search_budget": 128,
+  "max_atoms": 4,
+  "visible_examples": 3,
+  "hidden_examples": 13,
+  "bank_counts": {
+    "source_harvest": 576,
+    "source_development": 576,
+    "source_admission": 576,
+    "transfer_harvest": 576,
+    "transfer_development": 576,
+    "transfer_admission": 576,
+    "final": 192
+  },
+  "conditions": ["g0", "g3", "g6", "scrambled_g6", "numeric_pair", "frozen_library"],
+  "macro_source": "runs/pilot-20260916-v2-complete/common_macros.json"
+}

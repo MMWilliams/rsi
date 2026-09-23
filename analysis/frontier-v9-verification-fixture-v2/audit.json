@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "artifacts_hashed": 136,
+  "journal_events": 106,
+  "fresh_tasks_regenerated": 19,
+  "harvest_searches_reexecuted": 32,
+  "raw_samples_regraded": 1664,
+  "unique_sample_files": 16,
+  "training_pool_rows_reverified": 561,
+  "optimizer_steps_reconciled": 8,
+  "checkpoint_decisions_reconciled": 8,
+  "token_accounting": "Raw completion IDs decoded and counted; prompt and supervised tokens reconstructed with pinned tokenizer",
+  "diversity_checks": "Canonical programs and visible outputs reconstructed with published interpreter",
+  "limits": "Training and GPU sampling not reexecuted; shared generator/search and finite-example oracle. Hashes do not authenticate a hostile host. Timings are not independently reproduced."
+}

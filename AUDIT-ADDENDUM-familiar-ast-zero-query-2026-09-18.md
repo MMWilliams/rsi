@@ -1,0 +1,7 @@
+# Audit addendum: familiar AST zero-query transfer
+
+The initial `familiar_ast_zero_query_transfer.py audit` command failed before target replay because `joblib.hash` of all four deterministically retrained histogram-gradient-boosting model objects differed from the frozen model-object hashes. A diagnostic found identical probabilities on the first 500 source candidate rows for all four models, but that small check is insufficient to validate the result. The original failed command is preserved in the work log; the frozen target, choices, results, protocol, runner and model files are not changed.
+
+The replacement audit must require **exactly equal predicted class probabilities** from retrained and frozen models on every source candidate feature row and every target top-100 candidate feature row. It must also regenerate all target tasks, candidate pools, predicted outputs, frozen policy choices and final candidate labels and compare them with the saved artifacts and results. File hashes in the original manifest must still match. It records the object-hash mismatch as an audit qualification. A failure of any prediction or replay equality invalidates the result. This addendum and the replacement auditor are frozen before that audit runs.
+
+Exact evaluated-row equivalence supports the reported target choices; it does not establish byte-identical model objects or equal behavior on untested feature rows.

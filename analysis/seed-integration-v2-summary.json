@@ -1,0 +1,4876 @@
+{
+  "primary": "fixed_novelty__argmax__proper_tie",
+  "audit": {
+    "status": "passed",
+    "candidate_calls_replayed": 276,
+    "arms": 32,
+    "checkpoints_per_arm": 5,
+    "equal_improvement_labels_per_arm": 192,
+    "same_admission_deployment_rule": true,
+    "scope": "one episode, shared host interpreter; no independent semantic oracle"
+  },
+  "scope": "one episode, 32 prespecified arms; unexpected winners are exploratory",
+  "arms": {
+    "fixed_uniform__argmax__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 1,
+      "gained_tasks": [
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        1
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 47.8
+    },
+    "fixed_uniform__argmax__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 23,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 23,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 1,
+      "gained_tasks": [
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        1,
+        2,
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 47.4
+    },
+    "fixed_uniform__margin__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 2,
+      "gained_tasks": [
+        "79f9569a772e9491a6c4ce69",
+        "d7276195fb705a1b0d75710b"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        1
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 45.6
+    },
+    "fixed_uniform__margin__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 23,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 23,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 42,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 21,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": -2,
+      "gained_tasks": [
+        "d7276195fb705a1b0d75710b"
+      ],
+      "lost_tasks": [
+        "87f465b1ca519232d3b1f8e2",
+        "73775cbe01d9aa4a8bce9153",
+        "7016a703ea45e9662d945b7d"
+      ],
+      "accepted_rounds": [
+        1,
+        2,
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 44.8
+    },
+    "fixed_uncertainty__argmax__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 1,
+      "gained_tasks": [
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        2
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 47.6
+    },
+    "fixed_uncertainty__argmax__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": -1,
+      "gained_tasks": [],
+      "lost_tasks": [
+        "d7276195fb705a1b0d75710b"
+      ],
+      "accepted_rounds": [
+        1,
+        2,
+        3
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 46.2
+    },
+    "fixed_uncertainty__margin__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 0,
+      "gained_tasks": [],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        2
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 44.0
+    },
+    "fixed_uncertainty__margin__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 23,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 1,
+      "gained_tasks": [
+        "d7276195fb705a1b0d75710b"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 44.2
+    },
+    "fixed_disagreement__argmax__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 22,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 22,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 22,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": -1,
+      "gained_tasks": [
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [
+        "79f9569a772e9491a6c4ce69",
+        "c966c8ba7a10593b13f69e49"
+      ],
+      "accepted_rounds": [
+        1,
+        2
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 46.4
+    },
+    "fixed_disagreement__argmax__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 22,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 0,
+      "gained_tasks": [
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [
+        "79f9569a772e9491a6c4ce69"
+      ],
+      "accepted_rounds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 46.8
+    },
+    "fixed_disagreement__margin__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 1,
+      "gained_tasks": [
+        "d7276195fb705a1b0d75710b"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        2
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 44.6
+    },
+    "fixed_disagreement__margin__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 1,
+      "gained_tasks": [
+        "d7276195fb705a1b0d75710b"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        2,
+        3,
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 44.6
+    },
+    "fixed_novelty__argmax__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 0,
+      "gained_tasks": [
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [
+        "79f9569a772e9491a6c4ce69"
+      ],
+      "accepted_rounds": [
+        2
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 47.0
+    },
+    "fixed_novelty__argmax__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 0,
+      "gained_tasks": [
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [
+        "79f9569a772e9491a6c4ce69"
+      ],
+      "accepted_rounds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 47.2
+    },
+    "fixed_novelty__margin__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 0,
+      "gained_tasks": [],
+      "lost_tasks": [],
+      "accepted_rounds": [],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 44.0
+    },
+    "fixed_novelty__margin__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 2,
+      "gained_tasks": [
+        "d7276195fb705a1b0d75710b",
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        1,
+        3,
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 44.8
+    },
+    "fixed_combined__argmax__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 0,
+      "gained_tasks": [
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [
+        "79f9569a772e9491a6c4ce69"
+      ],
+      "accepted_rounds": [
+        3
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 47.0
+    },
+    "fixed_combined__argmax__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 23,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 22,
+              "base": 20,
+              "behavior": 22,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 23,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": -1,
+      "gained_tasks": [],
+      "lost_tasks": [
+        "79f9569a772e9491a6c4ce69"
+      ],
+      "accepted_rounds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 46.2
+    },
+    "fixed_combined__margin__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 1,
+      "gained_tasks": [
+        "d7276195fb705a1b0d75710b"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        3
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 44.4
+    },
+    "fixed_combined__margin__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 23,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 22,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 23,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 1,
+      "gained_tasks": [
+        "d7276195fb705a1b0d75710b"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 44.6
+    },
+    "meta4__argmax__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 22,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 22,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 22,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": -1,
+      "gained_tasks": [
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [
+        "79f9569a772e9491a6c4ce69",
+        "c966c8ba7a10593b13f69e49"
+      ],
+      "accepted_rounds": [
+        1,
+        2
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 46.4
+    },
+    "meta4__argmax__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 22,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 1,
+      "gained_tasks": [
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 47.0
+    },
+    "meta4__margin__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 1,
+      "gained_tasks": [
+        "d7276195fb705a1b0d75710b"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        2
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 44.6
+    },
+    "meta4__margin__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 1,
+      "gained_tasks": [
+        "d7276195fb705a1b0d75710b"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        2,
+        3,
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 44.6
+    },
+    "meta4_scrambled__argmax__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 1,
+      "gained_tasks": [
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        2
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 47.6
+    },
+    "meta4_scrambled__argmax__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 0,
+      "gained_tasks": [
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [
+        "79f9569a772e9491a6c4ce69"
+      ],
+      "accepted_rounds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 46.6
+    },
+    "meta4_scrambled__margin__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 0,
+      "gained_tasks": [],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        2
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 44.0
+    },
+    "meta4_scrambled__margin__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 1,
+      "gained_tasks": [
+        "d7276195fb705a1b0d75710b"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        1,
+        2,
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 44.2
+    },
+    "meta4_online__argmax__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 22,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 22,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 22,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": -1,
+      "gained_tasks": [
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [
+        "79f9569a772e9491a6c4ce69",
+        "c966c8ba7a10593b13f69e49"
+      ],
+      "accepted_rounds": [
+        1,
+        2
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 46.4
+    },
+    "meta4_online__argmax__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 22,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 47,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 48,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 24,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 12,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 1,
+      "gained_tasks": [
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 47.0
+    },
+    "meta4_online__margin__strict": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 45,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 1,
+      "gained_tasks": [
+        "d7276195fb705a1b0d75710b"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 44.2
+    },
+    "meta4_online__margin__proper_tie": {
+      "curve": [
+        {
+          "round": 0,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 1,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 2,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 3,
+          "correct": 44,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 10,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 11,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        },
+        {
+          "round": 4,
+          "correct": 46,
+          "panels": {
+            "final_mixed": {
+              "n": 24,
+              "correct": 23,
+              "base": 20,
+              "behavior": 24,
+              "reachable": 24
+            },
+            "final_ast": {
+              "n": 12,
+              "correct": 11,
+              "base": 8,
+              "behavior": 12,
+              "reachable": 12
+            },
+            "final_changed": {
+              "n": 12,
+              "correct": 12,
+              "base": 11,
+              "behavior": 12,
+              "reachable": 12
+            }
+          }
+        }
+      ],
+      "net_gain": 2,
+      "gained_tasks": [
+        "d7276195fb705a1b0d75710b",
+        "aefa281c4a036376b932e852"
+      ],
+      "lost_tasks": [],
+      "accepted_rounds": [
+        2,
+        3,
+        4
+      ],
+      "candidate_queries": 238,
+      "improvement_queries": 192,
+      "mean_checkpoint_correct": 44.4
+    }
+  }
+}

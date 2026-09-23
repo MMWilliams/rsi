@@ -1,0 +1,2608 @@
+{
+  "summary": {
+    "scope": "development only; probe and final labels previously inspected",
+    "overall": {
+      "tasks": 192,
+      "queries": 95,
+      "correct": {
+        "sharp": 143,
+        "context": 107,
+        "two_choice": 161,
+        "full_pool": 166
+      }
+    },
+    "by_bank": {
+      "902234": {
+        "tasks": 32,
+        "queries": 15,
+        "correct": {
+          "sharp": 24,
+          "context": 19,
+          "two_choice": 28,
+          "full_pool": 27
+        }
+      },
+      "902235": {
+        "tasks": 32,
+        "queries": 10,
+        "correct": {
+          "sharp": 28,
+          "context": 20,
+          "two_choice": 28,
+          "full_pool": 30
+        }
+      },
+      "902236": {
+        "tasks": 32,
+        "queries": 18,
+        "correct": {
+          "sharp": 24,
+          "context": 16,
+          "two_choice": 26,
+          "full_pool": 30
+        }
+      },
+      "902237": {
+        "tasks": 32,
+        "queries": 14,
+        "correct": {
+          "sharp": 27,
+          "context": 21,
+          "two_choice": 30,
+          "full_pool": 30
+        }
+      },
+      "902238": {
+        "tasks": 32,
+        "queries": 19,
+        "correct": {
+          "sharp": 21,
+          "context": 14,
+          "two_choice": 24,
+          "full_pool": 26
+        }
+      },
+      "902239": {
+        "tasks": 32,
+        "queries": 19,
+        "correct": {
+          "sharp": 19,
+          "context": 17,
+          "two_choice": 25,
+          "full_pool": 23
+        }
+      }
+    },
+    "by_family": {
+      "mutation_transition": {
+        "tasks": 66,
+        "queries": 30,
+        "correct": {
+          "sharp": 43,
+          "context": 40,
+          "two_choice": 51,
+          "full_pool": 51
+        }
+      },
+      "self_edit_transition": {
+        "tasks": 60,
+        "queries": 32,
+        "correct": {
+          "sharp": 52,
+          "context": 29,
+          "two_choice": 54,
+          "full_pool": 58
+        }
+      },
+      "stack_transition": {
+        "tasks": 66,
+        "queries": 33,
+        "correct": {
+          "sharp": 48,
+          "context": 38,
+          "two_choice": 56,
+          "full_pool": 57
+        }
+      }
+    },
+    "discordant_choices": 179
+  },
+  "tasks": [
+    {
+      "id": "192de6b972dad0e00186e18e",
+      "seed": 902234,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "5cb3ddb47c19a09d0a6565e6",
+      "seed": 902234,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "73ff01906ae08562a51d676a",
+      "seed": 902234,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "0f6ac4a3b6475cf20deb018d",
+      "seed": 902234,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "4c41a936ea7e1b17d5df6da6",
+      "seed": 902234,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "5639fabf2f80d6e936c195a6",
+      "seed": 902234,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "0475cad6a32b9f7439b40225",
+      "seed": 902234,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "db24ff87348f9f8773713944",
+      "seed": 902234,
+      "family": "mutation_transition",
+      "query": 4,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "43dfb8b047faaf02e369cda6",
+      "seed": 902234,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": false,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "d8d333b1a0df317917656bfc",
+      "seed": 902234,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "bc84697e524044180563fc40",
+      "seed": 902234,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "412a90e3f452428759e3d873",
+      "seed": 902234,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": false,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "14ed3513aad93b3ffa436fc6",
+      "seed": 902234,
+      "family": "stack_transition",
+      "query": 4,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "fe60311bf104322a7829591e",
+      "seed": 902234,
+      "family": "mutation_transition",
+      "query": 4,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "2e32417529b05075b2a07ea5",
+      "seed": 902234,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "40af5337cafb2b44fb0213e0",
+      "seed": 902234,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "f8b80fe229461b593332908e",
+      "seed": 902234,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "be00b6908ffc11e6a143d560",
+      "seed": 902234,
+      "family": "self_edit_transition",
+      "query": 4,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "3f62633c7182eff4fbc912fa",
+      "seed": 902234,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "c501043d941fb4147f2df892",
+      "seed": 902234,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "5c95732aa13dd6346581da58",
+      "seed": 902234,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "54ff9ae71b1498ccd2d2cefc",
+      "seed": 902234,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "9cf4879f93fc6d72892491e3",
+      "seed": 902234,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": false,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "2801b2d132ce9f57126899d6",
+      "seed": 902234,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": false,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "4b2f74acfa9b8fc014376d30",
+      "seed": 902234,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "c3ab9069613f3610a3f38f0a",
+      "seed": 902234,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "252e3e0b9b0bf3688a06f9b4",
+      "seed": 902234,
+      "family": "self_edit_transition",
+      "query": 1,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "ff1da51d82a4e9defd1d6d43",
+      "seed": 902234,
+      "family": "stack_transition",
+      "query": 1,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "63a9bb93923de8ba3e300632",
+      "seed": 902234,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "e640a7ef15d69aaf87d0315d",
+      "seed": 902234,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "587b656fb04e2de25d5c35de",
+      "seed": 902234,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "6725d31a0317c92d7d75cd75",
+      "seed": 902234,
+      "family": "mutation_transition",
+      "query": 3,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "c444dc4439340277712d4b5f",
+      "seed": 902235,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "a91f4f26a5a1d20be26c0f1b",
+      "seed": 902235,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "933297fa1af405fc5807d283",
+      "seed": 902235,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "c0c2f5f5e80a902cc11401b8",
+      "seed": 902235,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "99355fa29117d2dbc103666f",
+      "seed": 902235,
+      "family": "mutation_transition",
+      "query": 1,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "30cae99d79b594278eb28498",
+      "seed": 902235,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": false,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "16be0046ea1a60ab273d2593",
+      "seed": 902235,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "bebaa18ca46b209320ce91e5",
+      "seed": 902235,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "849f50a9542379e3d8c756c8",
+      "seed": 902235,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "b456d9c796b3566c9f8a4c4d",
+      "seed": 902235,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "aa0f0826d55a15ff143f8deb",
+      "seed": 902235,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "cdcde1533c29a8b096ac2653",
+      "seed": 902235,
+      "family": "self_edit_transition",
+      "query": 2,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "65475a70df4e11f47f0d57aa",
+      "seed": 902235,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "0f2dffca9d17dafb028d00c2",
+      "seed": 902235,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "77761ba04e24a6b4cfc4da2c",
+      "seed": 902235,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "00e41ee6c505aec92c225927",
+      "seed": 902235,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "afaa54dad5c66448732237cc",
+      "seed": 902235,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "1d2762c4afb5fa7e8da68356",
+      "seed": 902235,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "9de5031e5fab82829b28c306",
+      "seed": 902235,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "3860ded9f922386ea266ee58",
+      "seed": 902235,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "a476eae7410a408bc908b4de",
+      "seed": 902235,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "f0682637d57c4839efa165a3",
+      "seed": 902235,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "c6e83e6c4b6973969f93737e",
+      "seed": 902235,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "c9b94298e66a34fb694d5cfb",
+      "seed": 902235,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "329351210f39dd3e46a5f261",
+      "seed": 902235,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "0b0e1da1e17ae34252c50945",
+      "seed": 902235,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "8256f09ebeca0998051e4e02",
+      "seed": 902235,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "59f14c18bac4e37f3ba34141",
+      "seed": 902235,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "f784116bf474ef52531309f8",
+      "seed": 902235,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "366ff5978ad458e3be0651d4",
+      "seed": 902235,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": false,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "c5044baa7ae532db96d24199",
+      "seed": 902235,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": false,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "fef4e17325b257182b781639",
+      "seed": 902235,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "a8df934bcfb8f3f5dd6a161e",
+      "seed": 902236,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": false,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "79a447f08d395941fd67e74a",
+      "seed": 902236,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": false,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "cfe8edc06feb42124f6c7b9c",
+      "seed": 902236,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "4774ffa41213ad0b85ef6ac1",
+      "seed": 902236,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "3a2dbbd984295bc2e7d6fb54",
+      "seed": 902236,
+      "family": "mutation_transition",
+      "query": 2,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "9ba82d5b953e3b656ada428c",
+      "seed": 902236,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "7627c5c59a4c3de78d3ea3e8",
+      "seed": 902236,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "8f716187614b51f2416c7026",
+      "seed": 902236,
+      "family": "mutation_transition",
+      "query": 1,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "e80af59f5f22748a98e6ba25",
+      "seed": 902236,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "3095391ebc71912f9c383ef6",
+      "seed": 902236,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "304dd6c832b438c31f9cecb5",
+      "seed": 902236,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "4aa12461da3aeb6ad03148e7",
+      "seed": 902236,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "2433b9a4a28277b4727f1ed1",
+      "seed": 902236,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "99b4a8e5cafea8c464a5e286",
+      "seed": 902236,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "1e8e613a019134aa270b00a2",
+      "seed": 902236,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "ebd92b1bfddb5921d92d5df9",
+      "seed": 902236,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "11482aaecaddf81d49d20199",
+      "seed": 902236,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "ebd60e14f89f46305fb179a9",
+      "seed": 902236,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "3b30d918296c515639b2d874",
+      "seed": 902236,
+      "family": "stack_transition",
+      "query": 1,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "1857dd092b818cd61367b996",
+      "seed": 902236,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "95ec10c09635505fb6de9f34",
+      "seed": 902236,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": false,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "2ee985c3f5ff2b579a587a00",
+      "seed": 902236,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "34f0b97e918e24004de8b18f",
+      "seed": 902236,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "1bfcd2bea64d34af87e8ceb4",
+      "seed": 902236,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "6e435cdaef970d707674552a",
+      "seed": 902236,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "0739a4c04e290143fbba1810",
+      "seed": 902236,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "ffa6a639d314ef0d50f587a7",
+      "seed": 902236,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "c163ffe38f668633ab75b1ef",
+      "seed": 902236,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "40d742ca8d2d118238fdff0c",
+      "seed": 902236,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": false,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "b6ae6533765a479367ce309b",
+      "seed": 902236,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "8fefa360a58972ea4902f251",
+      "seed": 902236,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "f56ca5018f9113ba4878963c",
+      "seed": 902236,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "3552f60a2bf785fe80ba1f14",
+      "seed": 902237,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "71cd166440e346d42ef87003",
+      "seed": 902237,
+      "family": "mutation_transition",
+      "query": 2,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "29a094c7873d9891c2e76f82",
+      "seed": 902237,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "439490d773ec84ace32331d8",
+      "seed": 902237,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "7b7619331b54f2f181ec5239",
+      "seed": 902237,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "2eec8a8fb0cd62b679b7d835",
+      "seed": 902237,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "87ce27819f9f59d8d7ae32ff",
+      "seed": 902237,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "2c6191f9c2650c02422e6511",
+      "seed": 902237,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "0ad0921f046468b1ce269f40",
+      "seed": 902237,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "7314e3b6f01b20b623facaa1",
+      "seed": 902237,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "5796a67fbd4c3411320a8cf4",
+      "seed": 902237,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "6f0ece4e7650d9a71b102205",
+      "seed": 902237,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "1b04b30664d83c26f7a40d5d",
+      "seed": 902237,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "4e59dbad567120893f251440",
+      "seed": 902237,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "21c36c1fae3043de5138f58a",
+      "seed": 902237,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "267f376321199208e3fcd105",
+      "seed": 902237,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "a979269ea7580147a792ed9b",
+      "seed": 902237,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "d5449dfc2439351ed6306b44",
+      "seed": 902237,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "44e03d66230d44875414ab58",
+      "seed": 902237,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "577466bc3923b5edf599881b",
+      "seed": 902237,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "3ad9e5040dad9ca9656d17d5",
+      "seed": 902237,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "871ff889f8718a168b233250",
+      "seed": 902237,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "7de847fea0c62ef58d37be92",
+      "seed": 902237,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "8563285b7af6ab88db9090df",
+      "seed": 902237,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": false,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "56bf7dcf1cb8d319b0166bad",
+      "seed": 902237,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "c89126201f14e37a984399f2",
+      "seed": 902237,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "c85386ef1229afc34e8f7797",
+      "seed": 902237,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "290fb9e67cd172c2493847d6",
+      "seed": 902237,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "3e9807c1b0c68fbf0af40d53",
+      "seed": 902237,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "795a2ffddc99c8a75327c78d",
+      "seed": 902237,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "fff234ebc0593167ace001b3",
+      "seed": 902237,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "e02f20c5244daa9f791656fb",
+      "seed": 902237,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "0d16e8fa4ce889ab2991ea7d",
+      "seed": 902238,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "5297daf4bcf30eb4c77df97d",
+      "seed": 902238,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "131dfecf05552c6ab7ebdaf0",
+      "seed": 902238,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "79146daaf1ae31d91366a0cf",
+      "seed": 902238,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "80ecf964cdebb8631464d3e0",
+      "seed": 902238,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "e38163b8b6f19ffaa6e4e050",
+      "seed": 902238,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "55651faf53c2c6b9073d682c",
+      "seed": 902238,
+      "family": "stack_transition",
+      "query": 1,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "06a672d68a879f24a505c17f",
+      "seed": 902238,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "d655a03c088ce5ab013c6a08",
+      "seed": 902238,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "38e0eafe5c24fc168ac6c647",
+      "seed": 902238,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "82f67011adcf93c1e0965d21",
+      "seed": 902238,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "30a03e3ee79e616196825285",
+      "seed": 902238,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "187b618b5befa6bb7ea61534",
+      "seed": 902238,
+      "family": "stack_transition",
+      "query": 2,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "55138e09c081941868a6f267",
+      "seed": 902238,
+      "family": "mutation_transition",
+      "query": 2,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "cd92a92f4f609a08ca654490",
+      "seed": 902238,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "eac04a463aea61c5a3128717",
+      "seed": 902238,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "738b5186e7b199333bc102f9",
+      "seed": 902238,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "e84c02216e6a1e7e501c45cf",
+      "seed": 902238,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "845675844d60361c02fa433a",
+      "seed": 902238,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "043a3ea020b3ba7f20e70966",
+      "seed": 902238,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "c82f859173e897411dd99ccc",
+      "seed": 902238,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "fb2178754f0a7d4c464b9827",
+      "seed": 902238,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "36101bd93a8cdb9ad74aac2d",
+      "seed": 902238,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "b6ca2a21dc223f0a8e250244",
+      "seed": 902238,
+      "family": "self_edit_transition",
+      "query": 1,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "48f8bfcac3ef55e5d2691f4d",
+      "seed": 902238,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "3b5d95d38293bb493f544f56",
+      "seed": 902238,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "7a99a488f4aaf44d8c1c0da4",
+      "seed": 902238,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "c9ff159144995167511e4818",
+      "seed": 902238,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "96c46ec1d4718e71b1a1b88b",
+      "seed": 902238,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "111ff0d88ec5300c3275aba2",
+      "seed": 902238,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": false,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "a23d657db986eef8d7db5cb9",
+      "seed": 902238,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "5e4ab688a68ad6bba71ed5c4",
+      "seed": 902238,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "4068b88e035ebab47a160eee",
+      "seed": 902239,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "8a73bc34fe0b68151cbceeac",
+      "seed": 902239,
+      "family": "mutation_transition",
+      "query": 2,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "f153b69e70fac5c2e2aab854",
+      "seed": 902239,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "f960337d45eb93f4625a8a0c",
+      "seed": 902239,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "a67b1eff323b364e88fbb545",
+      "seed": 902239,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "9e73e9a0222b319478c95955",
+      "seed": 902239,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "396ffe28d10bb0230a092551",
+      "seed": 902239,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "f5b1e64c785f7efd71b2d99e",
+      "seed": 902239,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "5e49be5d21905c287cc6c4a7",
+      "seed": 902239,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "8bb50898aa3763978250b4c9",
+      "seed": 902239,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "9af93fb254b9f646426c1c3f",
+      "seed": 902239,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "b17f3ebae55f2de25977dd0b",
+      "seed": 902239,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "4708cd270df43502f3c15f73",
+      "seed": 902239,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "4dba999996f23816f56df3f1",
+      "seed": 902239,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "2e1acc07c89a83c191ec05e6",
+      "seed": 902239,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "3ab15340ee5b48488da1c736",
+      "seed": 902239,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "69cc7a2a771145c1112642c0",
+      "seed": 902239,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "5774c585def9211f72db1233",
+      "seed": 902239,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "5dc201523719e13ee1d74b6f",
+      "seed": 902239,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "c41f3f2d9cbac70317346990",
+      "seed": 902239,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "bc8c2563fe04a1c4b9fae2fd",
+      "seed": 902239,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "2e7804b64517e1adb0c6039f",
+      "seed": 902239,
+      "family": "stack_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "9a21534dec2a6ed7f66c6658",
+      "seed": 902239,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "e5aad4f2db1dd82edf956293",
+      "seed": 902239,
+      "family": "self_edit_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "fd0fb2b1c9f399ca030485c2",
+      "seed": 902239,
+      "family": "stack_transition",
+      "query": 1,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "c3cc12b11777a314fa9f1a98",
+      "seed": 902239,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "b84eb223ccee1a0846499c54",
+      "seed": 902239,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "c0d090e2f3cc027750a4b20d",
+      "seed": 902239,
+      "family": "stack_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "f858ab5f7ebf912d7a020d0f",
+      "seed": 902239,
+      "family": "mutation_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": false,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "cac47e5607b8ad0ca8eb3bae",
+      "seed": 902239,
+      "family": "self_edit_transition",
+      "query": 0,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": false,
+        "two_choice": false,
+        "full_pool": false
+      }
+    },
+    {
+      "id": "56be1b877e8ca602baffba8d",
+      "seed": 902239,
+      "family": "stack_transition",
+      "query": 2,
+      "different_choices": true,
+      "correct": {
+        "sharp": false,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    },
+    {
+      "id": "b0e12d06c57119288362ceb6",
+      "seed": 902239,
+      "family": "mutation_transition",
+      "query": null,
+      "different_choices": true,
+      "correct": {
+        "sharp": true,
+        "context": true,
+        "two_choice": true,
+        "full_pool": true
+      }
+    }
+  ]
+}

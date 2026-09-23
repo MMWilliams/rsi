@@ -1,0 +1,58 @@
+{
+  "scope": "precondition screen for the recursive action space",
+  "transfer_panel": "candidate-conditioned-query-transfer-20260918",
+  "by_child_history_size": {
+    "3": {
+      "scores": {
+        "flat": 326,
+        "coarse": 325,
+        "default": 325,
+        "fine": 325,
+        "finest": 325
+      },
+      "oracle": 326,
+      "default": 325,
+      "regret": 1
+    },
+    "6": {
+      "scores": {
+        "flat": 332,
+        "coarse": 340,
+        "default": 329,
+        "fine": 340,
+        "finest": 335
+      },
+      "oracle": 340,
+      "default": 329,
+      "regret": 11
+    },
+    "12": {
+      "scores": {
+        "flat": 344,
+        "coarse": 359,
+        "default": 357,
+        "fine": 352,
+        "finest": 349
+      },
+      "oracle": 359,
+      "default": 357,
+      "regret": 2
+    },
+    "24": {
+      "scores": {
+        "flat": 355,
+        "coarse": 376,
+        "default": 368,
+        "fine": 379,
+        "finest": 381
+      },
+      "oracle": 381,
+      "default": 368,
+      "regret": 13
+    }
+  },
+  "limits": [
+    "Opened panels; development only.",
+    "Regret here uses the transfer panel, so it is an upper bound on what any parent could transmit."
+  ]
+}

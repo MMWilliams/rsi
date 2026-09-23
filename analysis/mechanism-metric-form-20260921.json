@@ -1,0 +1,110 @@
+{
+  "scope": "which feature form recovers the weighting a world is built from",
+  "descriptor_dimensions": 385,
+  "active_dimensions": 40,
+  "training_worlds": 400,
+  "seed": 615101,
+  "draws": [
+    {
+      "draw": 0,
+      "worlds": 400,
+      "product": {
+        "pearson": 0.4336013310773181,
+        "spearman": 0.2912314903685983,
+        "active_recall_at_40": 0.325,
+        "nonzero": 203
+      },
+      "squared_difference": {
+        "pearson": 0.42756664244408193,
+        "spearman": 0.2649681582405055,
+        "active_recall_at_40": 0.3,
+        "nonzero": 219
+      }
+    },
+    {
+      "draw": 1,
+      "worlds": 400,
+      "product": {
+        "pearson": 0.24593094640965707,
+        "spearman": 0.27589425146474916,
+        "active_recall_at_40": 0.325,
+        "nonzero": 209
+      },
+      "squared_difference": {
+        "pearson": 0.3604311003359131,
+        "spearman": 0.2747569923575155,
+        "active_recall_at_40": 0.3,
+        "nonzero": 214
+      }
+    },
+    {
+      "draw": 2,
+      "worlds": 400,
+      "product": {
+        "pearson": 0.2585207816945477,
+        "spearman": 0.2619521809097209,
+        "active_recall_at_40": 0.3,
+        "nonzero": 211
+      },
+      "squared_difference": {
+        "pearson": 0.30679927865659656,
+        "spearman": 0.300425992864221,
+        "active_recall_at_40": 0.375,
+        "nonzero": 209
+      }
+    },
+    {
+      "draw": 3,
+      "worlds": 400,
+      "product": {
+        "pearson": 0.23699650492919241,
+        "spearman": 0.21076981293041794,
+        "active_recall_at_40": 0.275,
+        "nonzero": 206
+      },
+      "squared_difference": {
+        "pearson": 0.22257678459531313,
+        "spearman": 0.22869804842605365,
+        "active_recall_at_40": 0.225,
+        "nonzero": 206
+      }
+    },
+    {
+      "draw": 4,
+      "worlds": 400,
+      "product": {
+        "pearson": 0.0983217292182954,
+        "spearman": 0.16046574271570765,
+        "active_recall_at_40": 0.175,
+        "nonzero": 216
+      },
+      "squared_difference": {
+        "pearson": 0.19533664816245314,
+        "spearman": 0.1913678911649039,
+        "active_recall_at_40": 0.225,
+        "nonzero": 210
+      }
+    }
+  ],
+  "mean": {
+    "product": {
+      "pearson": 0.2546742586658021,
+      "spearman": 0.2400626956778388,
+      "active_recall_at_40": 0.28
+    },
+    "squared_difference": {
+      "pearson": 0.30254209083887157,
+      "spearman": 0.2520434166106399,
+      "active_recall_at_40": 0.28500000000000003
+    }
+  },
+  "verdict": {
+    "squared_difference_better": false,
+    "worth_rebuilding": false
+  },
+  "cost": {
+    "wall_seconds": 93.1876312999957,
+    "cpu_seconds": 847.765625,
+    "peak_rss_mb": 179.597312
+  }
+}

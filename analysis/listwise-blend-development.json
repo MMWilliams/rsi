@@ -1,0 +1,3598 @@
+{
+  "summary": {
+    "scope": "development only; previously inspected target labels",
+    "tasks": 192,
+    "overall": {
+      "0": 117,
+      "0.1": 119,
+      "0.2": 123,
+      "0.3": 121,
+      "0.4": 118,
+      "0.5": 123,
+      "0.6": 123,
+      "0.7": 122,
+      "0.8": 133,
+      "0.9": 133,
+      "1": 130
+    },
+    "by_family": {
+      "mutation_transition": {
+        "0": 41,
+        "0.1": 41,
+        "0.2": 45,
+        "0.3": 41,
+        "0.4": 40,
+        "0.5": 41,
+        "0.6": 41,
+        "0.7": 41,
+        "0.8": 44,
+        "0.9": 43,
+        "1": 41
+      },
+      "self_edit_transition": {
+        "0": 32,
+        "0.1": 33,
+        "0.2": 35,
+        "0.3": 35,
+        "0.4": 34,
+        "0.5": 39,
+        "0.6": 39,
+        "0.7": 40,
+        "0.8": 46,
+        "0.9": 48,
+        "1": 49
+      },
+      "stack_transition": {
+        "0": 44,
+        "0.1": 45,
+        "0.2": 43,
+        "0.3": 45,
+        "0.4": 44,
+        "0.5": 43,
+        "0.6": 43,
+        "0.7": 41,
+        "0.8": 43,
+        "0.9": 42,
+        "1": 40
+      }
+    },
+    "by_bank": {
+      "902228": {
+        "0": 20,
+        "0.1": 21,
+        "0.2": 25,
+        "0.3": 25,
+        "0.4": 25,
+        "0.5": 25,
+        "0.6": 25,
+        "0.7": 24,
+        "0.8": 24,
+        "0.9": 25,
+        "1": 23
+      },
+      "902229": {
+        "0": 15,
+        "0.1": 15,
+        "0.2": 15,
+        "0.3": 16,
+        "0.4": 16,
+        "0.5": 18,
+        "0.6": 18,
+        "0.7": 20,
+        "0.8": 20,
+        "0.9": 20,
+        "1": 21
+      },
+      "902230": {
+        "0": 23,
+        "0.1": 23,
+        "0.2": 24,
+        "0.3": 22,
+        "0.4": 22,
+        "0.5": 23,
+        "0.6": 23,
+        "0.7": 22,
+        "0.8": 23,
+        "0.9": 21,
+        "1": 21
+      },
+      "902231": {
+        "0": 22,
+        "0.1": 22,
+        "0.2": 21,
+        "0.3": 20,
+        "0.4": 19,
+        "0.5": 19,
+        "0.6": 20,
+        "0.7": 20,
+        "0.8": 23,
+        "0.9": 23,
+        "1": 21
+      },
+      "902232": {
+        "0": 17,
+        "0.1": 18,
+        "0.2": 18,
+        "0.3": 18,
+        "0.4": 19,
+        "0.5": 19,
+        "0.6": 19,
+        "0.7": 18,
+        "0.8": 19,
+        "0.9": 20,
+        "1": 20
+      },
+      "902233": {
+        "0": 20,
+        "0.1": 20,
+        "0.2": 20,
+        "0.3": 20,
+        "0.4": 17,
+        "0.5": 19,
+        "0.6": 18,
+        "0.7": 18,
+        "0.8": 24,
+        "0.9": 24,
+        "1": 24
+      }
+    }
+  },
+  "tasks": [
+    {
+      "id": "3662dcb802fda5d13ec3d821",
+      "seed": 902228,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "f2b2451a8c1601c4a32536d4",
+      "seed": 902228,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "856dc302103fcf0fc364b61b",
+      "seed": 902228,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "83b65fdb33c2dddc74683edb",
+      "seed": 902228,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "743cbd14a4ea14502ef373e2",
+      "seed": 902228,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "6457a5eeb01022543d13fc32",
+      "seed": 902228,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": false
+      }
+    },
+    {
+      "id": "bfc53d24c4a4f7cd33755353",
+      "seed": 902228,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "4a8a0f132a38009d6219efd8",
+      "seed": 902228,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "bb4c8dddccdc2bec4fad22c8",
+      "seed": 902228,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "b006bab7ea938e0209062140",
+      "seed": 902228,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "08be87eaf3403f6d44c03b4d",
+      "seed": 902228,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "d490fbd2b3761996c3c5597d",
+      "seed": 902228,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "eefdb796e0a8a66c1c3560dd",
+      "seed": 902228,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "3340ac91320163574e2373eb",
+      "seed": 902228,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": false
+      }
+    },
+    {
+      "id": "4d73251de40996ef7adf72c2",
+      "seed": 902228,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "ff14cade6ef23fe5b1139f1c",
+      "seed": 902228,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "8857b82e182ca70c8e31b1d1",
+      "seed": 902228,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "6e2be24e01b1e8c310948d11",
+      "seed": 902228,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "67c4a08b94489609bbc3a382",
+      "seed": 902228,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "200f4a27dffb7d70cb23c5db",
+      "seed": 902228,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "2773dc37db705c2b46dfb9b0",
+      "seed": 902228,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "7e6f341c6725051916b11f18",
+      "seed": 902228,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "7ca781fca2e69b92dfb3ceb7",
+      "seed": 902228,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "2b2ff0691066c0fd0de4cc40",
+      "seed": 902228,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "329581bc551e3153e0cc7f10",
+      "seed": 902228,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "59c84dcdc603deefc950f6be",
+      "seed": 902228,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "fddb00aeb6985a360522fa49",
+      "seed": 902228,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "d2f73a93db9d7c4c1a972bcd",
+      "seed": 902228,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "b5e3621cf22e3eb930f57bfe",
+      "seed": 902228,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "136f3dbec37606bcba8e513e",
+      "seed": 902228,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "aa0dacca3fc636a52cdea986",
+      "seed": 902228,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "c2143f0f1e654d6a288747f0",
+      "seed": 902228,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "3901b223eb67f36bb52050a4",
+      "seed": 902229,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "2e8ee290148d5e1ff08f0611",
+      "seed": 902229,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "92e034ad642d5b8ec757d23e",
+      "seed": 902229,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "e93eb56e3236bffc0cbe827d",
+      "seed": 902229,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "9161d9ce4c164e813b93b7ce",
+      "seed": 902229,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "4ed81571632a879d5bdf0c45",
+      "seed": 902229,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": true
+      }
+    },
+    {
+      "id": "c4e0356a9b8503748a13ca0b",
+      "seed": 902229,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "2df21d98a959348358f4d646",
+      "seed": 902229,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "350a90f76099297cbea996cd",
+      "seed": 902229,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "f4d30d99e1ca67fdfb263912",
+      "seed": 902229,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "9bbdf7d68967ae50e2cd68e2",
+      "seed": 902229,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "9494b723bf12908d3ee260ff",
+      "seed": 902229,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "e9a2076c355a6bcdf0dca2ae",
+      "seed": 902229,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "0be6e584f711ae59e0327804",
+      "seed": 902229,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "5816ab8beaa4c9301f68a58e",
+      "seed": 902229,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "091e0aa9d7750e5caa153bb5",
+      "seed": 902229,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "0afcdf2d6c05872e69612511",
+      "seed": 902229,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "06eb99bde2b82bcfe8767d5b",
+      "seed": 902229,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "8cfdd31b20178b4b140cd2d2",
+      "seed": 902229,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "96cbae7aab79b2fc2de73a52",
+      "seed": 902229,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "dd2c54463c650dbdf8c47b7c",
+      "seed": 902229,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "5f11ef4d12c520a6d9c2e4c4",
+      "seed": 902229,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "5b7161dc5c887f264011df3e",
+      "seed": 902229,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "351ec530d91fe4e94b16a2d3",
+      "seed": 902229,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "f08cc3caac44d3dcfec01a46",
+      "seed": 902229,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "8145f0e90161265bc08c6891",
+      "seed": 902229,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "eadfe1c525749e55ebbafc0f",
+      "seed": 902229,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "58921dd3413249026c03eb68",
+      "seed": 902229,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "7c6c7a80055f40cf0ddc341b",
+      "seed": 902229,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "43d781393bccd05e6f7127e9",
+      "seed": 902229,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "567a3249b4d1ef1cc6d17f9c",
+      "seed": 902229,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "308b92e3cdb879f1123ba86c",
+      "seed": 902229,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "698faca628e97fbea85e1709",
+      "seed": 902230,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "fc9b044f030ce27604e56d01",
+      "seed": 902230,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "047661f06e238661154a7b7f",
+      "seed": 902230,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": true
+      }
+    },
+    {
+      "id": "b762ba806163255d1936bd9d",
+      "seed": 902230,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "c5ea4f4ce0e65d31b28b81db",
+      "seed": 902230,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "c0efe123b67e0d0a80cd4405",
+      "seed": 902230,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "2ce95539c2f77994568c1239",
+      "seed": 902230,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "a1914ad5a52e8d718e8ad0a5",
+      "seed": 902230,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "e8260cce9b4ada82d319c86d",
+      "seed": 902230,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "cdf5b9b1855c6b219736d67c",
+      "seed": 902230,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "208d3b30c6bc5d63905c19ac",
+      "seed": 902230,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": false
+      }
+    },
+    {
+      "id": "c2d72bbc768d8f92d8caf610",
+      "seed": 902230,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": true
+      }
+    },
+    {
+      "id": "61322322b46a6bb808097d46",
+      "seed": 902230,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "c97e8e755e82ba97cdae2fce",
+      "seed": 902230,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "b69d1f660d15789fbaddbe73",
+      "seed": 902230,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "0160a8973baf2f07f156ba47",
+      "seed": 902230,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "1e46e8887d8674342a95db7e",
+      "seed": 902230,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "0524cd7971c78ca6be5da151",
+      "seed": 902230,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": false
+      }
+    },
+    {
+      "id": "17843378d5dccff8c8c75a45",
+      "seed": 902230,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "8336b953a6f7c4d9942da6c8",
+      "seed": 902230,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "850f123f39ee1bcc0490f6a6",
+      "seed": 902230,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "5cf8e832ba41e2e212cf89d8",
+      "seed": 902230,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "d66574e0af6f4d7a85ab460c",
+      "seed": 902230,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "20a58fc2478a92432dee8869",
+      "seed": 902230,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "16034531c0c936fe7f0848d2",
+      "seed": 902230,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "9894e06a8bdd0fcd93aeed96",
+      "seed": 902230,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "a66bf0fcb127515739de5413",
+      "seed": 902230,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "12b78aab5d8e6562b75b9990",
+      "seed": 902230,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "422ca494ca0791140af1b755",
+      "seed": 902230,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "46e72c9c8e3e0a73f75fe997",
+      "seed": 902230,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "c5f575606a8066f3b14f5809",
+      "seed": 902230,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "76e1fb241532786a7d0aaa1e",
+      "seed": 902230,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "1fd9c63a10b0e4885e2adfa2",
+      "seed": 902231,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "502a6d5d7a060ccb130f0aa4",
+      "seed": 902231,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "ca510bbd0312ca344628fd50",
+      "seed": 902231,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "304e306b2f78d9ab21fc5fed",
+      "seed": 902231,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "3ba282eccd835996cbac02bb",
+      "seed": 902231,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "d07e770a8eca6c4246aac759",
+      "seed": 902231,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "bce4bb24ee4988e022ad3e77",
+      "seed": 902231,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "b194e1729bc6f28958fe87c5",
+      "seed": 902231,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "8b5be5e425d794841c94901a",
+      "seed": 902231,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "e297b1ebbfee1bc2a8b381ea",
+      "seed": 902231,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "0481692efa3cd48119a12b11",
+      "seed": 902231,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "2598e07de447b778d4a447e2",
+      "seed": 902231,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "c814fc9f40c38bbb4a5956be",
+      "seed": 902231,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "049ef7498612f7cc5a8012eb",
+      "seed": 902231,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "93e583f856001d6dc5b524ac",
+      "seed": 902231,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "cddc8890bea89d58932baeba",
+      "seed": 902231,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": false
+      }
+    },
+    {
+      "id": "403510126be4657bfb3df310",
+      "seed": 902231,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "6a95439d0c14d8dbe3996124",
+      "seed": 902231,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "43a6253879e78f2afadc3a32",
+      "seed": 902231,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "c3c83aafcefc50a6b148cc7a",
+      "seed": 902231,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": true,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "435c0745546d3f5b3e303910",
+      "seed": 902231,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "dedd3cde7aebcc7d143a2790",
+      "seed": 902231,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "3d1159d8bd228c03a4012a31",
+      "seed": 902231,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "e330cc20543b549cda85da5a",
+      "seed": 902231,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "b61fdaf3252c86e3fbc263f2",
+      "seed": 902231,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "3b17627ebb519fa2d5ed6141",
+      "seed": 902231,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": true,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "321235e88a893ebba4bfe98b",
+      "seed": 902231,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "4a754f10a744b19ca47452b0",
+      "seed": 902231,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "33465ed761cb81293974b3c4",
+      "seed": 902231,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "4eaab40ac636716e5265ccff",
+      "seed": 902231,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "2afc22ae71d58c29bd3ce1e1",
+      "seed": 902231,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": false
+      }
+    },
+    {
+      "id": "2993c6fe2c6b60ff01cdb2f4",
+      "seed": 902231,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "e65e9ca238cf4216cd978b2a",
+      "seed": 902232,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "fa3b7b3211b49fbc58043ed5",
+      "seed": 902232,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "744058b75bdd73daccad9f8e",
+      "seed": 902232,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "8e1fa5fe607d9849da3ac8ac",
+      "seed": 902232,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "697e8bf117052305b23cd776",
+      "seed": 902232,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "be89ca92e789582506584938",
+      "seed": 902232,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "f32e78725e761100ef07b740",
+      "seed": 902232,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "a9b185bba16099d4ae1210ea",
+      "seed": 902232,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "9c3227a5b9818f944d8946cc",
+      "seed": 902232,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "1f3d2baba891db1f880039b6",
+      "seed": 902232,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "7d39ffeef6c0dd27f5b11a21",
+      "seed": 902232,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "3bbdf0ac5a6803ccf0930702",
+      "seed": 902232,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "6cc19da6cc5c2a1b49b06d91",
+      "seed": 902232,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "9d041bf0d65a454521f1f506",
+      "seed": 902232,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "4365bd1ca60741a7c6909572",
+      "seed": 902232,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "47c4aa0d6e70bbfd31754fa9",
+      "seed": 902232,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "15753e6881ea6ba680cd03ba",
+      "seed": 902232,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "7e40be36facb60cf45578f9b",
+      "seed": 902232,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "ceb60ee4d7a037fb30119dc7",
+      "seed": 902232,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "3ab75196885c8f1dee9deed6",
+      "seed": 902232,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "af05d9872db742056b72c047",
+      "seed": 902232,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "5fb35b8370a5b4cd987e420b",
+      "seed": 902232,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "39b5c5fad1d9b4a9575fa96b",
+      "seed": 902232,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "5d51c43dc575c01b84a90644",
+      "seed": 902232,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "1c615326b72a0daa7911cbdb",
+      "seed": 902232,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "1e81e11803b6821a840be09e",
+      "seed": 902232,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "3286da33a9bfe2c7fbc8f34e",
+      "seed": 902232,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "3bce1c498c0a6c0d943b4a97",
+      "seed": 902232,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "da836c498fc367068594e291",
+      "seed": 902232,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "2949a8cc7de7a3c815051a2a",
+      "seed": 902232,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "2589fe0a6ab925873749401c",
+      "seed": 902232,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "f9918c1a9ed1d46767757ae2",
+      "seed": 902232,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "45ec1f1a76dea096629d7a2c",
+      "seed": 902233,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "489bde22a8a9460c35f13c74",
+      "seed": 902233,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "86ffc225b818c8d35c416526",
+      "seed": 902233,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "bd56fb74b7b77e826901bd24",
+      "seed": 902233,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "d3e5ff3bfc2f11bb9b475975",
+      "seed": 902233,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "7197c6fc51a9f3cdb3e6e773",
+      "seed": 902233,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "a5aee356f783dbb16ba86ccf",
+      "seed": 902233,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "847faf3ddb57ee2c12ad0263",
+      "seed": 902233,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "273faf93fe99e5a4e3b45f78",
+      "seed": 902233,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": true
+      }
+    },
+    {
+      "id": "2ede0840372f83f3f57fbcc4",
+      "seed": 902233,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "d0149d5cd7a7087075159d78",
+      "seed": 902233,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "c40c19471167e2e1b29234e4",
+      "seed": 902233,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": false
+      }
+    },
+    {
+      "id": "c8fdeabf6f59a428d6f0a3c1",
+      "seed": 902233,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "35d6a4300231f7efb7557d4f",
+      "seed": 902233,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "95756d6faca3991c4fc6990c",
+      "seed": 902233,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "f791fed54a062083dbcfe93d",
+      "seed": 902233,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "ee94e428d43fd3bd2cf83391",
+      "seed": 902233,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "6e7691e2d1de70d958b8822c",
+      "seed": 902233,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "c7a37907793e23b68060a6c8",
+      "seed": 902233,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "a7a1cbebeb1b6344ed4f0242",
+      "seed": 902233,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": false,
+        "0.9": false,
+        "1": false
+      }
+    },
+    {
+      "id": "7b4181ed1412ab7a0cdad7d5",
+      "seed": 902233,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "6f8b8fb11153444a9a32ae00",
+      "seed": 902233,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "8865ec32864ec8c02a24efda",
+      "seed": 902233,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": true,
+        "0.6": false,
+        "0.7": false,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "23f8af9f78c87cb89d7fcb12",
+      "seed": 902233,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "f8c17465128d73fcee896ece",
+      "seed": 902233,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "72bebbf569e3140a605ea2a3",
+      "seed": 902233,
+      "family": "mutation_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "95d923b25a34053cd06e3c4d",
+      "seed": 902233,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": false,
+        "0.4": false,
+        "0.5": false,
+        "0.6": false,
+        "0.7": false,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "fc17bfac2e619d98ab07591f",
+      "seed": 902233,
+      "family": "stack_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "1594edcde07e3bf58cbc2ef4",
+      "seed": 902233,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "b47c8816e3baa4a5781c0947",
+      "seed": 902233,
+      "family": "self_edit_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "3e2835779e86304283b5bb3e",
+      "seed": 902233,
+      "family": "stack_transition",
+      "correct": {
+        "0": false,
+        "0.1": false,
+        "0.2": false,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    },
+    {
+      "id": "d4aaa4b6c5e69962467ae491",
+      "seed": 902233,
+      "family": "mutation_transition",
+      "correct": {
+        "0": true,
+        "0.1": true,
+        "0.2": true,
+        "0.3": true,
+        "0.4": true,
+        "0.5": true,
+        "0.6": true,
+        "0.7": true,
+        "0.8": true,
+        "0.9": true,
+        "1": true
+      }
+    }
+  ]
+}

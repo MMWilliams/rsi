@@ -1,0 +1,470 @@
+{
+  "summary": {
+    "scope": "development, previous task seed with a new 1/23 example split; never use as fresh confirmation",
+    "tasks": 12,
+    "reachable": 0,
+    "baseline": 0,
+    "discriminating_probe_tasks": 12,
+    "best_one_probe": 0,
+    "modes": {
+      "random": {
+        "one": 0,
+        "two": 0
+      },
+      "entropy": {
+        "one": 0,
+        "two": 0
+      },
+      "weighted_entropy": {
+        "one": 0,
+        "two": 0
+      },
+      "minimax": {
+        "one": 0,
+        "two": 0
+      }
+    },
+    "generation": {
+      "parallel_wall_seconds": 5.212040899990825,
+      "workers": 4,
+      "summed_worker_wall_seconds_by_source": {
+        "v67": 17.57909430001746,
+        "v73": 0.5118386999820359
+      }
+    }
+  },
+  "tasks": [
+    {
+      "id": "42eabb9c180648e0070c1b64",
+      "family": "ast_transition",
+      "candidates": 24,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [
+        3,
+        5,
+        3,
+        4,
+        5,
+        4,
+        4,
+        4
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "067f2d70bd2493ca6933af36",
+      "family": "ast_transition",
+      "candidates": 32,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [
+        6,
+        6,
+        5,
+        4,
+        3,
+        7,
+        5,
+        6
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "cc4ad7d891990555109bc4ec",
+      "family": "ast_transition",
+      "candidates": 32,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [
+        8,
+        5,
+        2,
+        4,
+        3,
+        3,
+        5,
+        3
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "14888a735c387c26648ca373",
+      "family": "ast_transition",
+      "candidates": 32,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [
+        2,
+        3,
+        4,
+        3,
+        2,
+        2,
+        2,
+        2
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "7a9360227b6c0934facd48ad",
+      "family": "ast_transition",
+      "candidates": 16,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [
+        6,
+        3,
+        4,
+        6,
+        2,
+        4,
+        3,
+        3
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "29f5994d3fbf6e84bb5fe8d5",
+      "family": "ast_transition",
+      "candidates": 32,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [
+        4,
+        6,
+        2,
+        4,
+        3,
+        4,
+        2,
+        2
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "a427971186c2ac00031325d6",
+      "family": "ast_transition",
+      "candidates": 26,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [
+        4,
+        3,
+        3,
+        2,
+        3,
+        4,
+        4,
+        3
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "288eb2e167b20caf273a613b",
+      "family": "ast_transition",
+      "candidates": 16,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [
+        5,
+        6,
+        6,
+        3,
+        5,
+        5,
+        5,
+        3
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "035cd14ae4154ab3afa34f04",
+      "family": "ast_transition",
+      "candidates": 16,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [
+        3,
+        2,
+        3,
+        4,
+        2,
+        3,
+        4,
+        4
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "001b0e89e9f25ccadebfeaf0",
+      "family": "ast_transition",
+      "candidates": 24,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [
+        4,
+        2,
+        3,
+        5,
+        4,
+        4,
+        4,
+        3
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "6ba11e0e1edbda6b8684990b",
+      "family": "ast_transition",
+      "candidates": 16,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [
+        4,
+        4,
+        4,
+        6,
+        6,
+        4,
+        6,
+        4
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "d4e7e493f3f35133844dcfa8",
+      "family": "ast_transition",
+      "candidates": 22,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [
+        4,
+        5,
+        4,
+        5,
+        6,
+        4,
+        5,
+        5
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    }
+  ]
+}

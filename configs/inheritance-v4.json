@@ -1,0 +1,17 @@
+{
+  "name": "inheritance-calibration-v4",
+  "protocol": "EXPERIMENT-v4-inheritance.md",
+  "bank_seed": 9162604,
+  "seeds": [17, 29, 43],
+  "generations": 6,
+  "proposals_per_generation": 12,
+  "search_budget": 128,
+  "max_atoms": 4,
+  "visible_examples": 3,
+  "hidden_examples": 13,
+  "bank_counts": {"source_development": 288, "source_admission": 288, "transfer_development": 288, "transfer_admission": 288, "final": 128},
+  "transfer_proposals": 2,
+  "transfer_generations": 6,
+  "conditions": ["g0", "g3", "g6", "scrambled_g6", "random"],
+  "macro_source": "runs/pilot-20260916-v2-complete/common_macros.json"
+}

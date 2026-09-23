@@ -1,0 +1,63 @@
+{
+  "scope": "four-precondition screen of the rule-identity environment, on frozen audited shifted tasks",
+  "why": "all four shifted rules present in Unicode block 0x800, so no public region-matching rule can exist",
+  "train_panel": "beta_dev",
+  "rules": 4,
+  "threshold": 20,
+  "panels": {
+    "beta_transfer": {
+      "tasks": 246,
+      "reachable": 120,
+      "own_rule_oracle_routing": 112,
+      "pooled": 90,
+      "most_confident": 103,
+      "best_constant": 90,
+      "best_constant_action": "pooled",
+      "oracle": 114,
+      "best_default": "most_confident",
+      "best_default_total": 103,
+      "default_regret": 11,
+      "p2c_passed": false,
+      "own_rule_minus_default": {
+        "gain": 9,
+        "positive_banks": 5,
+        "losing_banks": 0,
+        "interval": [
+          3,
+          16
+        ]
+      }
+    },
+    "balanced_control": {
+      "tasks": 291,
+      "reachable": 145,
+      "own_rule_oracle_routing": 140,
+      "pooled": 117,
+      "most_confident": 134,
+      "best_constant": 117,
+      "best_constant_action": "pooled",
+      "oracle": 141,
+      "best_default": "most_confident",
+      "best_default_total": 134,
+      "default_regret": 7,
+      "p2c_passed": false,
+      "own_rule_minus_default": {
+        "gain": 6,
+        "positive_banks": 5,
+        "losing_banks": 0,
+        "interval": [
+          2,
+          11
+        ]
+      }
+    }
+  },
+  "verdict": {
+    "p2c_all_panels": false
+  },
+  "limits": [
+    "Shifted tasks come from frozen, audited heterogeneous-environment panels; nothing new was generated.",
+    "Own-rule routing uses the hidden rule identity and is an upper reference, not a deployable policy. P2d must show a public-feature policy can approach it.",
+    "Specialists train on about 87 tasks per rule, which is small."
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "status": "failed_incomplete",
+  "run": "runs\\frontier-distillation-20260916-v9",
+  "failure": "CUDA error: out of memory\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+  "journal_events": 666,
+  "journal_sha256": "9b4bee929b947e8ffa5b6174148641a03c9d0f1ea7ed0894c2dfe66df6322a7e",
+  "start_utc": "2026-09-16T22:21:23.729897+00:00",
+  "failure_utc": "2026-09-16T22:38:32.607281+00:00",
+  "closed_decisions": 4,
+  "finished_training_updates": 5,
+  "recorded_training_steps": 240,
+  "recorded_supervised_tokens": 21572,
+  "recorded_training_seconds": 39.541666100005386,
+  "finished_physical_sample_calls": 14,
+  "finished_sample_cost": {
+    "generated_tokens": 524554,
+    "generation_seconds": 870.7322766999132,
+    "oracle_string_executions": 0,
+    "prompt_tokens": 9409792,
+    "supervised_tokens": 0,
+    "training_seconds": 0.0,
+    "training_steps": 0
+  },
+  "acquisition": {
+    "cost_including_replay": {
+      "candidate_count": 11856,
+      "expansions": 62424,
+      "generated_nodes": 243204,
+      "model_checks": 0,
+      "primitive_executions": 4698862
+    },
+    "exact_replays": 384,
+    "grade_example_upper_bound": 178688,
+    "logical_arm_search_cost_including_replay": {
+      "baseline_selected": {
+        "candidate_count": 5922,
+        "expansions": 24406,
+        "generated_nodes": 71258,
+        "model_checks": 0,
+        "primitive_executions": 1789324
+      },
+      "corrected_first_verified": {
+        "candidate_count": 5934,
+        "expansions": 38018,
+        "generated_nodes": 171946,
+        "model_checks": 0,
+        "primitive_executions": 2909538
+      },
+      "corrected_frontier": {
+        "candidate_count": 5934,
+        "expansions": 38018,
+        "generated_nodes": 171946,
+        "model_checks": 0,
+        "primitive_executions": 2909538
+      },
+      "corrected_selected": {
+        "candidate_count": 5934,
+        "expansions": 38018,
+        "generated_nodes": 171946,
+        "model_checks": 0,
+        "primitive_executions": 2909538
+      }
+    },
+    "searches": 384,
+    "seconds": 15.503880700009177
+  },
+  "final_scoring_started": false,
+  "limitation": "Interrupted sampling work is not fully journaled; these charges are incomplete. No final outputs were scored for this incident report."
+}

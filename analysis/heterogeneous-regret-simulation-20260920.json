@@ -1,0 +1,115 @@
+{
+  "scope": "resampling simulation on audited fresh-bank rows; no new tasks generated and no policy frozen",
+  "question": "does a heterogeneous-mix environment clear the P2b fixed regret threshold of +20 per 576 tasks",
+  "draws": 200,
+  "banks": 12,
+  "bank_tasks": 48,
+  "budget": 3,
+  "threshold": 20,
+  "profiles": {
+    "iid": {
+      "fixed_regret": {
+        "mean": 12.18,
+        "p10": 8.0,
+        "p90": 16.0
+      },
+      "contextual_minus_constant": {
+        "mean": -7.08,
+        "p10": -13.0,
+        "p90": 0.0
+      },
+      "best_constant": {
+        "mean": 49.96,
+        "p10": 41.0,
+        "p90": 58.0
+      },
+      "hindsight": {
+        "mean": 62.14,
+        "p10": 53.0,
+        "p90": 71.0
+      },
+      "distinct_optima": {
+        "mean": 6.475,
+        "p10": 5.0,
+        "p90": 8.0
+      },
+      "interval_contextual_minus_constant": [
+        -1566,
+        -1269
+      ]
+    },
+    "split": {
+      "fixed_regret": {
+        "mean": 16.79,
+        "p10": 12.0,
+        "p90": 22.099999999999994
+      },
+      "contextual_minus_constant": {
+        "mean": 5.265,
+        "p10": -2.0,
+        "p90": 12.0
+      },
+      "best_constant": {
+        "mean": 50.975,
+        "p10": 43.0,
+        "p90": 59.0
+      },
+      "hindsight": {
+        "mean": 67.765,
+        "p10": 59.0,
+        "p90": 78.0
+      },
+      "distinct_optima": {
+        "mean": 5.135,
+        "p10": 4.0,
+        "p90": 6.0
+      },
+      "interval_contextual_minus_constant": [
+        894,
+        1212
+      ]
+    },
+    "dirichlet": {
+      "fixed_regret": {
+        "mean": 14.725,
+        "p10": 9.900000000000002,
+        "p90": 20.0
+      },
+      "contextual_minus_constant": {
+        "mean": -1.56,
+        "p10": -9.099999999999998,
+        "p90": 6.0
+      },
+      "best_constant": {
+        "mean": 51.735,
+        "p10": 38.0,
+        "p90": 66.0
+      },
+      "hindsight": {
+        "mean": 66.46,
+        "p10": 53.0,
+        "p90": 80.0
+      },
+      "distinct_optima": {
+        "mean": 6.595,
+        "p10": 5.0,
+        "p90": 8.0
+      },
+      "interval_contextual_minus_constant": [
+        -486,
+        -139
+      ]
+    }
+  },
+  "verdict": {
+    "iid": false,
+    "split": false,
+    "dirichlet": false
+  },
+  "limits": [
+    "Rows are resampled with replacement from audited fresh tasks, so bank composition is synthetic while every label is real.",
+    "The specialists were trained on the current i.i.d. source panels; a real heterogeneous generator would retrain them.",
+    "The contextual arm uses nearest-mix transfer, a weak learner chosen to avoid overstating learnability.",
+    "iid is the control and should reproduce the measured +6 and +12."
+  ]
+}

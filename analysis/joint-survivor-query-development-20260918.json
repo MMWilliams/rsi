@@ -1,0 +1,1339 @@
+{
+  "scope": "opened development; candidate and query training panels disjoint",
+  "candidate_source_tasks": 1152,
+  "candidate_source_verified_survivors": 19789,
+  "query_source_tasks": 1152,
+  "query_source_choices_checked": 4608,
+  "query_model_rule": "interaction_100",
+  "targets": {
+    "shifted-ast-seed-transfer-20260918": {
+      "tasks": 96,
+      "budget_per_bank": 4,
+      "zero": 15,
+      "totals": {
+        "e0": {
+          "budgeted": 21,
+          "one_each": 23,
+          "hindsight": 23
+        },
+        "plain": {
+          "budgeted": 24,
+          "one_each": 28,
+          "hindsight": 28
+        },
+        "sensor": {
+          "budgeted": 22,
+          "one_each": 25,
+          "hindsight": 25
+        },
+        "route": {
+          "budgeted": 23,
+          "one_each": 30,
+          "hindsight": 32
+        }
+      },
+      "comparisons": {
+        "plain": {
+          "gain": 3,
+          "positive_banks": 4,
+          "losing_banks": 2,
+          "interval": [
+            -2,
+            9
+          ]
+        },
+        "sensor": {
+          "gain": 1,
+          "positive_banks": 3,
+          "losing_banks": 2,
+          "interval": [
+            -3,
+            5
+          ]
+        },
+        "route": {
+          "gain": 2,
+          "positive_banks": 4,
+          "losing_banks": 3,
+          "interval": [
+            -4,
+            8
+          ]
+        }
+      },
+      "banks": [
+        {
+          "seed": 903000,
+          "zero": 1,
+          "e0": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "plain": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "sensor": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "route": {
+            "budgeted": 2,
+            "one_each": 3,
+            "hindsight": 3
+          }
+        },
+        {
+          "seed": 903001,
+          "zero": 2,
+          "e0": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "plain": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "sensor": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "route": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 3
+          }
+        },
+        {
+          "seed": 903002,
+          "zero": 0,
+          "e0": {
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          },
+          "plain": {
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          },
+          "sensor": {
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          },
+          "route": {
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          }
+        },
+        {
+          "seed": 903003,
+          "zero": 1,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "plain": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "sensor": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "route": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          }
+        },
+        {
+          "seed": 903004,
+          "zero": 1,
+          "e0": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "plain": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "sensor": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "route": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 3
+          }
+        },
+        {
+          "seed": 903005,
+          "zero": 1,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "plain": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "sensor": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "route": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          }
+        },
+        {
+          "seed": 903006,
+          "zero": 1,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "plain": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "sensor": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "route": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          }
+        },
+        {
+          "seed": 903007,
+          "zero": 1,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "plain": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "sensor": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "route": {
+            "budgeted": 2,
+            "one_each": 3,
+            "hindsight": 3
+          }
+        },
+        {
+          "seed": 903008,
+          "zero": 1,
+          "e0": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "plain": {
+            "budgeted": 2,
+            "one_each": 4,
+            "hindsight": 4
+          },
+          "sensor": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "route": {
+            "budgeted": 1,
+            "one_each": 4,
+            "hindsight": 4
+          }
+        },
+        {
+          "seed": 903009,
+          "zero": 1,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "plain": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "sensor": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "route": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          }
+        },
+        {
+          "seed": 903010,
+          "zero": 3,
+          "e0": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "plain": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "sensor": {
+            "budgeted": 4,
+            "one_each": 4,
+            "hindsight": 4
+          },
+          "route": {
+            "budgeted": 4,
+            "one_each": 4,
+            "hindsight": 4
+          }
+        },
+        {
+          "seed": 903011,
+          "zero": 2,
+          "e0": {
+            "budgeted": 3,
+            "one_each": 4,
+            "hindsight": 4
+          },
+          "plain": {
+            "budgeted": 3,
+            "one_each": 4,
+            "hindsight": 4
+          },
+          "sensor": {
+            "budgeted": 3,
+            "one_each": 4,
+            "hindsight": 4
+          },
+          "route": {
+            "budgeted": 3,
+            "one_each": 4,
+            "hindsight": 4
+          }
+        }
+      ],
+      "candidate_choices_checked": 384
+    },
+    "post-query-feedback-transfer-20260918": {
+      "tasks": 192,
+      "budget_per_bank": 4,
+      "zero": 16,
+      "totals": {
+        "e0": {
+          "budgeted": 31,
+          "one_each": 47,
+          "hindsight": 47
+        },
+        "plain": {
+          "budgeted": 31,
+          "one_each": 46,
+          "hindsight": 47
+        },
+        "sensor": {
+          "budgeted": 31,
+          "one_each": 47,
+          "hindsight": 47
+        },
+        "route": {
+          "budgeted": 33,
+          "one_each": 48,
+          "hindsight": 56
+        }
+      },
+      "comparisons": {
+        "plain": {
+          "gain": 0,
+          "positive_banks": 4,
+          "losing_banks": 3,
+          "interval": [
+            -6,
+            6
+          ]
+        },
+        "sensor": {
+          "gain": 0,
+          "positive_banks": 3,
+          "losing_banks": 4,
+          "interval": [
+            -6,
+            6
+          ]
+        },
+        "route": {
+          "gain": 2,
+          "positive_banks": 3,
+          "losing_banks": 2,
+          "interval": [
+            -3,
+            8
+          ]
+        }
+      },
+      "banks": [
+        {
+          "seed": 903100,
+          "zero": 1,
+          "e0": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "plain": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "sensor": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "route": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 3
+          }
+        },
+        {
+          "seed": 903101,
+          "zero": 0,
+          "e0": {
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          },
+          "plain": {
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          },
+          "sensor": {
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          },
+          "route": {
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          }
+        },
+        {
+          "seed": 903102,
+          "zero": 0,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "plain": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "sensor": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "route": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          }
+        },
+        {
+          "seed": 903103,
+          "zero": 1,
+          "e0": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "plain": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "sensor": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "route": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          }
+        },
+        {
+          "seed": 903104,
+          "zero": 0,
+          "e0": {
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          },
+          "plain": {
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          },
+          "sensor": {
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          },
+          "route": {
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          }
+        },
+        {
+          "seed": 903105,
+          "zero": 0,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "plain": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "sensor": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "route": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          }
+        },
+        {
+          "seed": 903106,
+          "zero": 1,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "plain": {
+            "budgeted": 1,
+            "one_each": 0,
+            "hindsight": 1
+          },
+          "sensor": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "route": {
+            "budgeted": 1,
+            "one_each": 0,
+            "hindsight": 3
+          }
+        },
+        {
+          "seed": 903107,
+          "zero": 2,
+          "e0": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "plain": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "sensor": {
+            "budgeted": 2,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "route": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 3
+          }
+        },
+        {
+          "seed": 903108,
+          "zero": 1,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 5,
+            "hindsight": 5
+          },
+          "plain": {
+            "budgeted": 1,
+            "one_each": 4,
+            "hindsight": 4
+          },
+          "sensor": {
+            "budgeted": 1,
+            "one_each": 5,
+            "hindsight": 5
+          },
+          "route": {
+            "budgeted": 1,
+            "one_each": 4,
+            "hindsight": 5
+          }
+        },
+        {
+          "seed": 903109,
+          "zero": 3,
+          "e0": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "plain": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "sensor": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "route": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          }
+        },
+        {
+          "seed": 903110,
+          "zero": 1,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "plain": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "sensor": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "route": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          }
+        },
+        {
+          "seed": 903111,
+          "zero": 0,
+          "e0": {
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          },
+          "plain": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "sensor": {
+            "budgeted": 0,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "route": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          }
+        },
+        {
+          "seed": 903112,
+          "zero": 0,
+          "e0": {
+            "budgeted": 0,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "plain": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "sensor": {
+            "budgeted": 0,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "route": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          }
+        },
+        {
+          "seed": 903113,
+          "zero": 0,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "plain": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "sensor": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "route": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          }
+        },
+        {
+          "seed": 903114,
+          "zero": 0,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "plain": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "sensor": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "route": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 2
+          }
+        },
+        {
+          "seed": 903115,
+          "zero": 1,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "plain": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "sensor": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "route": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          }
+        },
+        {
+          "seed": 903116,
+          "zero": 1,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "plain": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "sensor": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "route": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          }
+        },
+        {
+          "seed": 903117,
+          "zero": 0,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "plain": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "sensor": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "route": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          }
+        },
+        {
+          "seed": 903118,
+          "zero": 1,
+          "e0": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "plain": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "sensor": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "route": {
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          }
+        },
+        {
+          "seed": 903119,
+          "zero": 0,
+          "e0": {
+            "budgeted": 2,
+            "one_each": 4,
+            "hindsight": 4
+          },
+          "plain": {
+            "budgeted": 2,
+            "one_each": 4,
+            "hindsight": 4
+          },
+          "sensor": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "route": {
+            "budgeted": 2,
+            "one_each": 3,
+            "hindsight": 4
+          }
+        },
+        {
+          "seed": 903120,
+          "zero": 1,
+          "e0": {
+            "budgeted": 3,
+            "one_each": 5,
+            "hindsight": 5
+          },
+          "plain": {
+            "budgeted": 2,
+            "one_each": 5,
+            "hindsight": 5
+          },
+          "sensor": {
+            "budgeted": 2,
+            "one_each": 5,
+            "hindsight": 5
+          },
+          "route": {
+            "budgeted": 2,
+            "one_each": 5,
+            "hindsight": 5
+          }
+        },
+        {
+          "seed": 903121,
+          "zero": 0,
+          "e0": {
+            "budgeted": 0,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "plain": {
+            "budgeted": 0,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "sensor": {
+            "budgeted": 0,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "route": {
+            "budgeted": 0,
+            "one_each": 1,
+            "hindsight": 1
+          }
+        },
+        {
+          "seed": 903122,
+          "zero": 1,
+          "e0": {
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "plain": {
+            "budgeted": 1,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "sensor": {
+            "budgeted": 3,
+            "one_each": 4,
+            "hindsight": 4
+          },
+          "route": {
+            "budgeted": 3,
+            "one_each": 5,
+            "hindsight": 5
+          }
+        },
+        {
+          "seed": 903123,
+          "zero": 1,
+          "e0": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "plain": {
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "sensor": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "route": {
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          }
+        }
+      ],
+      "candidate_choices_checked": 768
+    },
+    "combined-ranker-query-transfer-20260918": {
+      "tasks": 576,
+      "budget_per_bank": 8,
+      "zero": 344,
+      "totals": {
+        "e0": {
+          "budgeted": 378,
+          "one_each": 438,
+          "hindsight": 429
+        },
+        "plain": {
+          "budgeted": 374,
+          "one_each": 446,
+          "hindsight": 436
+        },
+        "sensor": {
+          "budgeted": 376,
+          "one_each": 453,
+          "hindsight": 435
+        },
+        "route": {
+          "budgeted": 374,
+          "one_each": 448,
+          "hindsight": 437
+        }
+      },
+      "comparisons": {
+        "plain": {
+          "gain": -4,
+          "positive_banks": 2,
+          "losing_banks": 5,
+          "interval": [
+            -11,
+            4
+          ]
+        },
+        "sensor": {
+          "gain": -2,
+          "positive_banks": 2,
+          "losing_banks": 4,
+          "interval": [
+            -9,
+            5
+          ]
+        },
+        "route": {
+          "gain": -4,
+          "positive_banks": 4,
+          "losing_banks": 6,
+          "interval": [
+            -12,
+            4
+          ]
+        }
+      },
+      "banks": [
+        {
+          "seed": 902558,
+          "zero": 30,
+          "e0": {
+            "budgeted": 31,
+            "one_each": 34,
+            "hindsight": 34
+          },
+          "plain": {
+            "budgeted": 31,
+            "one_each": 35,
+            "hindsight": 35
+          },
+          "sensor": {
+            "budgeted": 31,
+            "one_each": 35,
+            "hindsight": 35
+          },
+          "route": {
+            "budgeted": 31,
+            "one_each": 35,
+            "hindsight": 35
+          }
+        },
+        {
+          "seed": 902559,
+          "zero": 27,
+          "e0": {
+            "budgeted": 32,
+            "one_each": 39,
+            "hindsight": 35
+          },
+          "plain": {
+            "budgeted": 30,
+            "one_each": 41,
+            "hindsight": 35
+          },
+          "sensor": {
+            "budgeted": 30,
+            "one_each": 40,
+            "hindsight": 35
+          },
+          "route": {
+            "budgeted": 29,
+            "one_each": 40,
+            "hindsight": 35
+          }
+        },
+        {
+          "seed": 902560,
+          "zero": 31,
+          "e0": {
+            "budgeted": 34,
+            "one_each": 37,
+            "hindsight": 37
+          },
+          "plain": {
+            "budgeted": 33,
+            "one_each": 38,
+            "hindsight": 38
+          },
+          "sensor": {
+            "budgeted": 34,
+            "one_each": 37,
+            "hindsight": 37
+          },
+          "route": {
+            "budgeted": 33,
+            "one_each": 36,
+            "hindsight": 39
+          }
+        },
+        {
+          "seed": 902561,
+          "zero": 31,
+          "e0": {
+            "budgeted": 32,
+            "one_each": 37,
+            "hindsight": 37
+          },
+          "plain": {
+            "budgeted": 33,
+            "one_each": 39,
+            "hindsight": 39
+          },
+          "sensor": {
+            "budgeted": 32,
+            "one_each": 39,
+            "hindsight": 39
+          },
+          "route": {
+            "budgeted": 33,
+            "one_each": 39,
+            "hindsight": 39
+          }
+        },
+        {
+          "seed": 902562,
+          "zero": 23,
+          "e0": {
+            "budgeted": 25,
+            "one_each": 33,
+            "hindsight": 31
+          },
+          "plain": {
+            "budgeted": 25,
+            "one_each": 34,
+            "hindsight": 31
+          },
+          "sensor": {
+            "budgeted": 25,
+            "one_each": 34,
+            "hindsight": 31
+          },
+          "route": {
+            "budgeted": 26,
+            "one_each": 35,
+            "hindsight": 31
+          }
+        },
+        {
+          "seed": 902563,
+          "zero": 28,
+          "e0": {
+            "budgeted": 32,
+            "one_each": 36,
+            "hindsight": 36
+          },
+          "plain": {
+            "budgeted": 32,
+            "one_each": 35,
+            "hindsight": 36
+          },
+          "sensor": {
+            "budgeted": 33,
+            "one_each": 37,
+            "hindsight": 36
+          },
+          "route": {
+            "budgeted": 33,
+            "one_each": 37,
+            "hindsight": 36
+          }
+        },
+        {
+          "seed": 902564,
+          "zero": 31,
+          "e0": {
+            "budgeted": 34,
+            "one_each": 38,
+            "hindsight": 38
+          },
+          "plain": {
+            "budgeted": 32,
+            "one_each": 39,
+            "hindsight": 39
+          },
+          "sensor": {
+            "budgeted": 34,
+            "one_each": 39,
+            "hindsight": 39
+          },
+          "route": {
+            "budgeted": 33,
+            "one_each": 39,
+            "hindsight": 39
+          }
+        },
+        {
+          "seed": 902565,
+          "zero": 26,
+          "e0": {
+            "budgeted": 27,
+            "one_each": 36,
+            "hindsight": 34
+          },
+          "plain": {
+            "budgeted": 26,
+            "one_each": 38,
+            "hindsight": 34
+          },
+          "sensor": {
+            "budgeted": 26,
+            "one_each": 37,
+            "hindsight": 34
+          },
+          "route": {
+            "budgeted": 26,
+            "one_each": 37,
+            "hindsight": 34
+          }
+        },
+        {
+          "seed": 902566,
+          "zero": 26,
+          "e0": {
+            "budgeted": 28,
+            "one_each": 34,
+            "hindsight": 34
+          },
+          "plain": {
+            "budgeted": 30,
+            "one_each": 34,
+            "hindsight": 34
+          },
+          "sensor": {
+            "budgeted": 30,
+            "one_each": 36,
+            "hindsight": 34
+          },
+          "route": {
+            "budgeted": 29,
+            "one_each": 35,
+            "hindsight": 34
+          }
+        },
+        {
+          "seed": 902567,
+          "zero": 30,
+          "e0": {
+            "budgeted": 33,
+            "one_each": 37,
+            "hindsight": 37
+          },
+          "plain": {
+            "budgeted": 33,
+            "one_each": 37,
+            "hindsight": 38
+          },
+          "sensor": {
+            "budgeted": 33,
+            "one_each": 39,
+            "hindsight": 38
+          },
+          "route": {
+            "budgeted": 33,
+            "one_each": 37,
+            "hindsight": 38
+          }
+        },
+        {
+          "seed": 902568,
+          "zero": 32,
+          "e0": {
+            "budgeted": 38,
+            "one_each": 39,
+            "hindsight": 39
+          },
+          "plain": {
+            "budgeted": 38,
+            "one_each": 38,
+            "hindsight": 40
+          },
+          "sensor": {
+            "budgeted": 37,
+            "one_each": 41,
+            "hindsight": 40
+          },
+          "route": {
+            "budgeted": 37,
+            "one_each": 39,
+            "hindsight": 40
+          }
+        },
+        {
+          "seed": 902569,
+          "zero": 29,
+          "e0": {
+            "budgeted": 32,
+            "one_each": 38,
+            "hindsight": 37
+          },
+          "plain": {
+            "budgeted": 31,
+            "one_each": 38,
+            "hindsight": 37
+          },
+          "sensor": {
+            "budgeted": 31,
+            "one_each": 39,
+            "hindsight": 37
+          },
+          "route": {
+            "budgeted": 31,
+            "one_each": 39,
+            "hindsight": 37
+          }
+        }
+      ],
+      "candidate_choices_checked": 2304
+    }
+  }
+}

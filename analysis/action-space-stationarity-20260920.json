@@ -1,0 +1,316 @@
+{
+  "scope": "stationarity of the region-purchase action space, from audited per-bank rows",
+  "question": "can any contextual or experience-accumulating improver beat a one-observation policy in this environment",
+  "budget": 3,
+  "banks": {
+    "transfer_b": {
+      "banks": 12,
+      "global_best_set": [
+        "transform_transition",
+        "ast_transition",
+        "self_edit_transition"
+      ],
+      "global_best_value": 54,
+      "per_bank_hindsight_value": 60,
+      "fixed_regret": 6,
+      "argmax_stability": {
+        "distinct_optimal_sets": 6,
+        "banks_matching_global_optimum": 2,
+        "most_common": [
+          [
+            "transform_transition",
+            "ast_transition",
+            "stack_transition"
+          ],
+          [
+            "transform_transition",
+            "ast_transition",
+            "novel_operator_transition"
+          ],
+          [
+            "transform_transition",
+            "ast_transition",
+            "self_edit_transition"
+          ]
+        ],
+        "most_common_counts": [
+          4,
+          3,
+          2
+        ]
+      },
+      "mean_region_rank": {
+        "transform_transition": 1.0,
+        "ast_transition": 0.75,
+        "novel_operator_transition": 2.9166666666666665,
+        "stack_transition": 3.25,
+        "mutation_transition": 3.9166666666666665,
+        "self_edit_transition": 3.1666666666666665
+      },
+      "one_shot_sufficiency": {
+        "one_bank_of_experience": 53,
+        "eleven_banks_of_experience": 54,
+        "gain_from_more_experience": 1,
+        "interval": [
+          0,
+          3
+        ]
+      },
+      "per_bank_region_gain": {
+        "907200": {
+          "transform_transition": 0,
+          "ast_transition": 1,
+          "novel_operator_transition": 0,
+          "stack_transition": 0,
+          "mutation_transition": 0,
+          "self_edit_transition": 1
+        },
+        "907201": {
+          "transform_transition": 1,
+          "ast_transition": 3,
+          "novel_operator_transition": 0,
+          "stack_transition": 1,
+          "mutation_transition": -1,
+          "self_edit_transition": 1
+        },
+        "907202": {
+          "transform_transition": 3,
+          "ast_transition": 3,
+          "novel_operator_transition": 0,
+          "stack_transition": 1,
+          "mutation_transition": -1,
+          "self_edit_transition": 0
+        },
+        "907203": {
+          "transform_transition": 3,
+          "ast_transition": 1,
+          "novel_operator_transition": 0,
+          "stack_transition": 0,
+          "mutation_transition": 0,
+          "self_edit_transition": 0
+        },
+        "907204": {
+          "transform_transition": 2,
+          "ast_transition": 1,
+          "novel_operator_transition": 0,
+          "stack_transition": 1,
+          "mutation_transition": 1,
+          "self_edit_transition": 1
+        },
+        "907205": {
+          "transform_transition": 0,
+          "ast_transition": 2,
+          "novel_operator_transition": 1,
+          "stack_transition": 0,
+          "mutation_transition": 1,
+          "self_edit_transition": 2
+        },
+        "907206": {
+          "transform_transition": 2,
+          "ast_transition": 1,
+          "novel_operator_transition": 1,
+          "stack_transition": 0,
+          "mutation_transition": 3,
+          "self_edit_transition": 1
+        },
+        "907207": {
+          "transform_transition": 0,
+          "ast_transition": 3,
+          "novel_operator_transition": 0,
+          "stack_transition": 0,
+          "mutation_transition": -2,
+          "self_edit_transition": 1
+        },
+        "907208": {
+          "transform_transition": 3,
+          "ast_transition": 4,
+          "novel_operator_transition": 1,
+          "stack_transition": 0,
+          "mutation_transition": -1,
+          "self_edit_transition": 1
+        },
+        "907209": {
+          "transform_transition": 1,
+          "ast_transition": 2,
+          "novel_operator_transition": 0,
+          "stack_transition": 1,
+          "mutation_transition": 1,
+          "self_edit_transition": 1
+        },
+        "907210": {
+          "transform_transition": 4,
+          "ast_transition": 2,
+          "novel_operator_transition": 1,
+          "stack_transition": 0,
+          "mutation_transition": -2,
+          "self_edit_transition": 1
+        },
+        "907211": {
+          "transform_transition": 2,
+          "ast_transition": 0,
+          "novel_operator_transition": 1,
+          "stack_transition": 1,
+          "mutation_transition": 0,
+          "self_edit_transition": 0
+        }
+      }
+    },
+    "transfer_c": {
+      "banks": 12,
+      "global_best_set": [
+        "transform_transition",
+        "ast_transition",
+        "self_edit_transition"
+      ],
+      "global_best_value": 44,
+      "per_bank_hindsight_value": 56,
+      "fixed_regret": 12,
+      "argmax_stability": {
+        "distinct_optimal_sets": 6,
+        "banks_matching_global_optimum": 1,
+        "most_common": [
+          [
+            "transform_transition",
+            "ast_transition",
+            "novel_operator_transition"
+          ],
+          [
+            "ast_transition",
+            "novel_operator_transition",
+            "mutation_transition"
+          ],
+          [
+            "transform_transition",
+            "ast_transition",
+            "stack_transition"
+          ]
+        ],
+        "most_common_counts": [
+          5,
+          2,
+          2
+        ]
+      },
+      "mean_region_rank": {
+        "transform_transition": 1.5,
+        "ast_transition": 0.5833333333333334,
+        "novel_operator_transition": 2.5833333333333335,
+        "stack_transition": 3.25,
+        "mutation_transition": 3.5,
+        "self_edit_transition": 3.5833333333333335
+      },
+      "one_shot_sufficiency": {
+        "one_bank_of_experience": 37,
+        "eleven_banks_of_experience": 34,
+        "gain_from_more_experience": -3,
+        "interval": [
+          -11,
+          5
+        ]
+      },
+      "per_bank_region_gain": {
+        "907300": {
+          "transform_transition": 1,
+          "ast_transition": 1,
+          "novel_operator_transition": 1,
+          "stack_transition": 1,
+          "mutation_transition": 2,
+          "self_edit_transition": 1
+        },
+        "907301": {
+          "transform_transition": 1,
+          "ast_transition": 3,
+          "novel_operator_transition": 1,
+          "stack_transition": -1,
+          "mutation_transition": 1,
+          "self_edit_transition": 0
+        },
+        "907302": {
+          "transform_transition": 1,
+          "ast_transition": 2,
+          "novel_operator_transition": 2,
+          "stack_transition": 0,
+          "mutation_transition": 2,
+          "self_edit_transition": 1
+        },
+        "907303": {
+          "transform_transition": 2,
+          "ast_transition": 2,
+          "novel_operator_transition": 1,
+          "stack_transition": 0,
+          "mutation_transition": 0,
+          "self_edit_transition": 0
+        },
+        "907304": {
+          "transform_transition": 2,
+          "ast_transition": 1,
+          "novel_operator_transition": 0,
+          "stack_transition": 4,
+          "mutation_transition": 1,
+          "self_edit_transition": 2
+        },
+        "907305": {
+          "transform_transition": 1,
+          "ast_transition": 2,
+          "novel_operator_transition": 0,
+          "stack_transition": 0,
+          "mutation_transition": 0,
+          "self_edit_transition": -1
+        },
+        "907306": {
+          "transform_transition": 1,
+          "ast_transition": 2,
+          "novel_operator_transition": 0,
+          "stack_transition": 1,
+          "mutation_transition": -1,
+          "self_edit_transition": 2
+        },
+        "907307": {
+          "transform_transition": 0,
+          "ast_transition": 2,
+          "novel_operator_transition": 1,
+          "stack_transition": 0,
+          "mutation_transition": -1,
+          "self_edit_transition": 0
+        },
+        "907308": {
+          "transform_transition": 1,
+          "ast_transition": 3,
+          "novel_operator_transition": 0,
+          "stack_transition": -1,
+          "mutation_transition": 0,
+          "self_edit_transition": 0
+        },
+        "907309": {
+          "transform_transition": 0,
+          "ast_transition": 3,
+          "novel_operator_transition": 1,
+          "stack_transition": 0,
+          "mutation_transition": 1,
+          "self_edit_transition": 1
+        },
+        "907310": {
+          "transform_transition": 1,
+          "ast_transition": 1,
+          "novel_operator_transition": 0,
+          "stack_transition": 1,
+          "mutation_transition": -1,
+          "self_edit_transition": 1
+        },
+        "907311": {
+          "transform_transition": 1,
+          "ast_transition": 2,
+          "novel_operator_transition": 0,
+          "stack_transition": 2,
+          "mutation_transition": -2,
+          "self_edit_transition": 1
+        }
+      }
+    }
+  },
+  "limits": [
+    "Hindsight sets use final labels and are not deployable policies.",
+    "This bounds the region-purchase space only; a construction space with different actions needs its own measurement.",
+    "Leave-one-out uses the first remaining seed as the one-bank sample, so the one-shot arm is a single draw, not an average."
+  ]
+}

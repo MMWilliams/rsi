@@ -1,0 +1,5839 @@
+{
+  "scope": "opened diagnostic; all oracle ceilings use final labels",
+  "tasks": 192,
+  "candidate_labels_rechecked": 93168,
+  "by_domain": {
+    "familiar": {
+      "tasks": 96,
+      "full_reachable": 55,
+      "post_probe_reachable": 55,
+      "width": {
+        "20": {
+          "reachable": 38,
+          "survivor_reachable": 38
+        },
+        "50": {
+          "reachable": 50,
+          "survivor_reachable": 49
+        },
+        "100": {
+          "reachable": 53,
+          "survivor_reachable": 53
+        },
+        "200": {
+          "reachable": 54,
+          "survivor_reachable": 54
+        }
+      },
+      "one_each": {
+        "zero": 17,
+        "e0_one": 36,
+        "specialist_one": 25,
+        "two_action_oracle": 43
+      },
+      "budgeted": {
+        "e0_one": 26,
+        "specialist_one": 23,
+        "two_action_oracle": 30
+      },
+      "top100_survivor_both_actions_miss": 10
+    },
+    "shifted": {
+      "tasks": 96,
+      "full_reachable": 70,
+      "post_probe_reachable": 70,
+      "width": {
+        "20": {
+          "reachable": 35,
+          "survivor_reachable": 35
+        },
+        "50": {
+          "reachable": 51,
+          "survivor_reachable": 51
+        },
+        "100": {
+          "reachable": 61,
+          "survivor_reachable": 61
+        },
+        "200": {
+          "reachable": 66,
+          "survivor_reachable": 66
+        }
+      },
+      "one_each": {
+        "zero": 14,
+        "e0_one": 32,
+        "specialist_one": 52,
+        "two_action_oracle": 54
+      },
+      "budgeted": {
+        "e0_one": 23,
+        "specialist_one": 37,
+        "two_action_oracle": 37
+      },
+      "top100_survivor_both_actions_miss": 7
+    }
+  },
+  "rows": [
+    {
+      "id": "ece544b0038df33d090bc50f",
+      "seed": 903400,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "1e132f291b78ebdc4a1d14e7",
+      "seed": 903400,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "109ab2903cb36b0aeb06c19c",
+      "seed": 903400,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "4a7a18c5b23c84b40aea2756",
+      "seed": 903400,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "ca25ccc407706544e43c0175",
+      "seed": 903400,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "4ac3154e03195c563f92f916",
+      "seed": 903400,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "626e698e6b33df73d5d5ddab",
+      "seed": 903400,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "2edfda2f52870aa5c2f34f1e",
+      "seed": 903400,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "6fbd0559668e4cba000bd5ba",
+      "seed": 903401,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "16e614f2eca76b78032a737c",
+      "seed": 903401,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "428b88270bc67f720a83a3b4",
+      "seed": 903401,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "5ba8f9ae9e6b1fd3e2f6c862",
+      "seed": 903401,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "bfa9cbccc7bdf44d80cf040d",
+      "seed": 903401,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "df6b0dedc04e7d79d028e7f7",
+      "seed": 903401,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "f816d0247d51458c4f572d6c",
+      "seed": 903401,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "e4b787baa7ed4d38d1ae0be0",
+      "seed": 903401,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "676d60014fe3334a6a8e3c6c",
+      "seed": 903402,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "77bce619ab011302e00e6095",
+      "seed": 903402,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "4a7d7d7616064a3be4aac142",
+      "seed": 903402,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "f5b8b4e38bc2fa90403cf95f",
+      "seed": 903402,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "4f741dae14743f5cb2fdd42b",
+      "seed": 903402,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "53d13013f6154d377cc8f8b0",
+      "seed": 903402,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "3c92a75c8fe35aa56538ac05",
+      "seed": 903402,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "939a1a3623d9cabacbab39bb",
+      "seed": 903402,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "30a77394e254933b2ea23e2b",
+      "seed": 903403,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "41f08fc3a2f621f98f08f0c8",
+      "seed": 903403,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "837292cae16a2b2d0f5a6839",
+      "seed": 903403,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "68ff7e1f008f5a1d968ad30e",
+      "seed": 903403,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "63f0a072f874b83ca4193b37",
+      "seed": 903403,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "73ebf0e9989ff18fa1246a1f",
+      "seed": 903403,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "6d2fb0690486d12a443de952",
+      "seed": 903403,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "78200d13d25b731f20f1d588",
+      "seed": 903403,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "4333ca6fd5be82293860e799",
+      "seed": 903404,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "787c95075b0f00433d4dc327",
+      "seed": 903404,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "1ee6a34b75362f8936955934",
+      "seed": 903404,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "cde53431b26345193df2956f",
+      "seed": 903404,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "bdfc9848788a6b267f516bc4",
+      "seed": 903404,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "3c76211940a09795754e76c2",
+      "seed": 903404,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "924dd3c2af908418c4ceb1a5",
+      "seed": 903404,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "d7837f2c95741a82ba2c7c01",
+      "seed": 903404,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "dcf8e643851e86855aab8983",
+      "seed": 903405,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "1312292f89cd34fbf5134724",
+      "seed": 903405,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "8483182a0bc6d7a69a0b42b9",
+      "seed": 903405,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "0374e30dcae7c64910406efe",
+      "seed": 903405,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "2dc1064e3138e7a1d5cafb08",
+      "seed": 903405,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "2fc7813c824c5615495a7310",
+      "seed": 903405,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "1a1a273aa8d04b89f3a1d5e5",
+      "seed": 903405,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "85d67901dd73c9d07dc8cf8f",
+      "seed": 903405,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "338ed6063a7e03bca7e29cf9",
+      "seed": 903406,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "719db536331ed83db4682734",
+      "seed": 903406,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "1577eaa58f0427319352e63a",
+      "seed": 903406,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "0c8f9dcad69d3f41fddae5da",
+      "seed": 903406,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "89db4871dcaff14976de0627",
+      "seed": 903406,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "0b9951898cc4a4ebbd903218",
+      "seed": 903406,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "bcf12ddce52db30a58026725",
+      "seed": 903406,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "e6418d91e8cea0330ae1bec1",
+      "seed": 903406,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "b3df23f0bd91bf5b22928cdb",
+      "seed": 903407,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "a22af015304625f058ed2742",
+      "seed": 903407,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "25b036b8bf8d86084e01aa89",
+      "seed": 903407,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "aba708556e87fe8d5d315c12",
+      "seed": 903407,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "56369bed8c4c5141e0792592",
+      "seed": 903407,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "f78d302b5df86c4aceb6cc10",
+      "seed": 903407,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "6ad21dfbf2b69e4991f86426",
+      "seed": 903407,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "ee8b9289fa75002a848f522e",
+      "seed": 903407,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "7c84c301d6885b6ae52e5034",
+      "seed": 903408,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "fdacf174c0cb2fa2f82d0516",
+      "seed": 903408,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "aba2d36c6590d95bf3f17f4e",
+      "seed": 903408,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "d7a265d1f10debc7bfef9d28",
+      "seed": 903408,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "777d86dadf788030d308ec53",
+      "seed": 903408,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "27a38c7a9429b992006226ec",
+      "seed": 903408,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "11543bf20b1c34e7c08796fa",
+      "seed": 903408,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "36363ab10a37054dba0f7b7b",
+      "seed": 903408,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "afada05a42802a9f07213f33",
+      "seed": 903409,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "83d53c62a1aa83ec5f73d5f3",
+      "seed": 903409,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "205fa72497992724d4f37451",
+      "seed": 903409,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "5e0ecf77f899bd66c44ff20d",
+      "seed": 903409,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "eb26a0d418b2f538f3f1dbcc",
+      "seed": 903409,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "e9d46d5bf0e0572b97ebeef9",
+      "seed": 903409,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "3e5464648af0fb434373e559",
+      "seed": 903409,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "b21f38ddf8fed2ba875a8a07",
+      "seed": 903409,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "c063d6a4b32b8fbd776d58c3",
+      "seed": 903410,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "3c67794df0c7153a1a11d731",
+      "seed": 903410,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "448b5bcf1bd43ce8e46cd2c3",
+      "seed": 903410,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "57b7689e61b77549eb891ded",
+      "seed": 903410,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "ff1a4fba7d2f83481515ba33",
+      "seed": 903410,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "e68f5c63be1ff77d54f211e2",
+      "seed": 903410,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "9d15d6e008ed8c680153f7c5",
+      "seed": 903410,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "944e158746a77d9568ab72c9",
+      "seed": 903410,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "bfbb86b78b7b30e6c9629deb",
+      "seed": 903411,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "67f4820d41d2239261f5eae7",
+      "seed": 903411,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "e6a64b809ff8dd101f336542",
+      "seed": 903411,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "c4d2c1b0e233e85d96f3369c",
+      "seed": 903411,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "234e40a27ac896f57968c518",
+      "seed": 903411,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "d23f9adab8e689405e05d09f",
+      "seed": 903411,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "3d6b53f8613b203f80d9be84",
+      "seed": 903411,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "17d893d1a632b86d6cd5b03b",
+      "seed": 903411,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "6315002bcf8313875d7ce3be",
+      "seed": 903412,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "417b3a03511f4fe0e8037f54",
+      "seed": 903412,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "e6466376e21571d7b907ce2c",
+      "seed": 903412,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "66510afd8ae21d4152e2b08b",
+      "seed": 903412,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "d7308605d51010e382d2bc6f",
+      "seed": 903412,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "43abb18089d819ad6cde2279",
+      "seed": 903412,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "7cddebd3b6588172c34c17dd",
+      "seed": 903412,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "7046dfa0b940e9ac9e7d860e",
+      "seed": 903412,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "d8dee858a4da66537213ab85",
+      "seed": 903413,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "5052f6eba94383e830ca8043",
+      "seed": 903413,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "b06c80d3865f29e5245aa830",
+      "seed": 903413,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "0291276d9d4f8b4a2f6ea517",
+      "seed": 903413,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "398ec72a00f005503afe4503",
+      "seed": 903413,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "747da980b80b87f9568174da",
+      "seed": 903413,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "5dfdacd09f8bc519cf20498e",
+      "seed": 903413,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "8303d2a6de2fe02fa18220f7",
+      "seed": 903413,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "cb3c7be21aa3a7da83c2b61a",
+      "seed": 903414,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "50150a48c7ffb64b3a14a92c",
+      "seed": 903414,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "b91fdbdc1c87ffbe1c55e2ef",
+      "seed": 903414,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "5b0f49883e814c891812c051",
+      "seed": 903414,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "6d0294926c94e431e545f9f5",
+      "seed": 903414,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "d62ab4cb9ad019cb8339e4b3",
+      "seed": 903414,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "709e6b6e0783c0e144759889",
+      "seed": 903414,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "11532a83ac61ea35d582f55f",
+      "seed": 903414,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "adff7cd92027d8164ba8a44d",
+      "seed": 903415,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "1754c688e986eb9419abe529",
+      "seed": 903415,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "87d1a9eecca9f16696669644",
+      "seed": 903415,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "52c82e0509a6dcd37a9ab59b",
+      "seed": 903415,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "f5597f175d679ee726408cfc",
+      "seed": 903415,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "b409f079d8e684cca84f5f9a",
+      "seed": 903415,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "fe521b2cc520307091444b9c",
+      "seed": 903415,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "22b57ad7bb26a72a4ea7a20f",
+      "seed": 903415,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "b80992f33080b1f4fd8881e6",
+      "seed": 903416,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "df01ff39aa0f9b6730665c07",
+      "seed": 903416,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "f5ebec3722f0a413619b1497",
+      "seed": 903416,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "064b1813b5a39960ce0226b0",
+      "seed": 903416,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "c970f2fbdccd2dfa91f960e4",
+      "seed": 903416,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "c4c61d0b1ace5fc2f82ed169",
+      "seed": 903416,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "ef0670c245fe836c8d34c218",
+      "seed": 903416,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "a9c163bdc3871fa7a2aad4d7",
+      "seed": 903416,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "147bb8eeb9b6fde88c4a2708",
+      "seed": 903417,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "770c334af9551ac0dc100ae1",
+      "seed": 903417,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "dacb3b48d341c485e18488cc",
+      "seed": 903417,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "8c1397880646f84c3ca4312c",
+      "seed": 903417,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "de29a3036942889931dd9458",
+      "seed": 903417,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "44fb4df96425deb826bc9bec",
+      "seed": 903417,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "734670ecbf753b0bb5a67ccc",
+      "seed": 903417,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "798a12d32790fdb00199cd5f",
+      "seed": 903417,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "3cf2b4b3d7e789b010323261",
+      "seed": 903418,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "a69a75ab5b3a5b9ae010f726",
+      "seed": 903418,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "4d4f019a46e10539033fc0c4",
+      "seed": 903418,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "85e2d8b48fc312fe36e95faa",
+      "seed": 903418,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "4d1c08ee15f08319e377e1c2",
+      "seed": 903418,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "84cdbbc9fe09ade54f7f0ee3",
+      "seed": 903418,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "17a39d34370c64e63af595db",
+      "seed": 903418,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "364df86a89015dfec6351941",
+      "seed": 903418,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "cc3156acff7bf8c9ae52632a",
+      "seed": 903419,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "fd412ee4f81e575207e04e80",
+      "seed": 903419,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "3bc9337dfb426b56137ceb9b",
+      "seed": 903419,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "b4c002ff986ce741b35f4a6c",
+      "seed": 903419,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "0bb2e584cb71a8f49002f80f",
+      "seed": 903419,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "37e210646d25a056aa72ddcc",
+      "seed": 903419,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "de8db27e5b9f126fd9b82248",
+      "seed": 903419,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "43a876576ed2115dd6c1f95e",
+      "seed": 903419,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "2ac6ca256db6483e5ab7e793",
+      "seed": 903420,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "3c34b25e6cce25e0b57a155c",
+      "seed": 903420,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "9af1590b1650ce57405fa029",
+      "seed": 903420,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "af838ffadfc774c9c641e174",
+      "seed": 903420,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "fe37677992d6449273a019a5",
+      "seed": 903420,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "a9022636518f88dcee470a54",
+      "seed": 903420,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "9e9f57444817e753d78f9103",
+      "seed": 903420,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "5e714cb0970914a5a22ef699",
+      "seed": 903420,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "87145c05398373fe4d4be8a9",
+      "seed": 903421,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "1dff037e141a295d37607d0c",
+      "seed": 903421,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "9adca4252b77083ff9d7bae0",
+      "seed": 903421,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "330a6c2551dec6f881dadb6e",
+      "seed": 903421,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "b085f83d33f911353e1252c8",
+      "seed": 903421,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "f5fdc99d254e8c9dac4b497e",
+      "seed": 903421,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "3f71fa82751b7120ab79cffa",
+      "seed": 903421,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "70ccb1c2e019b10c0c54eda4",
+      "seed": 903421,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "9cc84a0c3e1a2d3377072e1e",
+      "seed": 903422,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "fb25ed31952918e719d9c233",
+      "seed": 903422,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "d441aa7010ddb17894e1ed20",
+      "seed": 903422,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "a549c119c47467a07ce2fdd8",
+      "seed": 903422,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "05cdd639b3099914f00ff6d6",
+      "seed": 903422,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "665ce0a9d0698d02314bbbb7",
+      "seed": 903422,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "9461aa723dc6acfce8706f63",
+      "seed": 903422,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "270541fba29a817b91d79e9d",
+      "seed": 903422,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "1f8ffcbbd98efa2f672fcb76",
+      "seed": 903423,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "e25a1fe55d27eb5f22f9d8ac",
+      "seed": 903423,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "b9f8edcb18ea6465caecbb7f",
+      "seed": 903423,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 0,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "d3e06af121957d702d2b9a0c",
+      "seed": 903423,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "ef11ec9ee3abe6273e86c843",
+      "seed": 903423,
+      "domain": "familiar",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 0,
+      "survivor_reachable": 0,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "200": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        }
+      }
+    },
+    {
+      "id": "e8bb6a6aa7bb7f423c877791",
+      "seed": 903423,
+      "domain": "shifted",
+      "queried": true,
+      "zero": 0,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "af2ba999b426a21b2deeacb2",
+      "seed": 903423,
+      "domain": "familiar",
+      "queried": false,
+      "zero": 1,
+      "e0_one": 1,
+      "specialist_one": 1,
+      "two_action_oracle": 1,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "50": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    },
+    {
+      "id": "7bd66d9b69357908c4e31eb3",
+      "seed": 903423,
+      "domain": "shifted",
+      "queried": false,
+      "zero": 0,
+      "e0_one": 0,
+      "specialist_one": 0,
+      "two_action_oracle": 0,
+      "reachable": 1,
+      "survivor_reachable": 1,
+      "width": {
+        "20": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "50": {
+          "reachable": 0,
+          "survivor_reachable": 0
+        },
+        "100": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        },
+        "200": {
+          "reachable": 1,
+          "survivor_reachable": 1
+        }
+      }
+    }
+  ]
+}

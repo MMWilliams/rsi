@@ -1,0 +1,51 @@
+{
+  "scope": "independent audit of mechanism-growth-confirmation-20260921",
+  "catalog_digest": "1d3c71aff89ba2b6fd72da3ea20591d74afc6aa26ef367c59bed6e57ee5424b8",
+  "replications": {
+    "1": {
+      "decisions": 1920,
+      "journal_sha256": "a44cbfe5bc7b1666e9a7a0a804251f59e5a3e3d69aae4be17b7f74c54dabc202",
+      "interpreter_checks": 1354,
+      "order_checks": 1920,
+      "gates": {
+        "G1": true,
+        "G2": true,
+        "G3": true
+      },
+      "g1_free_set_minus_static": 1601.0,
+      "g1_free_set_minus_wrong_world": 1643.0
+    },
+    "2": {
+      "decisions": 1920,
+      "journal_sha256": "ccae045f97ac61e6c2b0e8d3c4d60146ddcaf53820f02e95e387dd7aa024f848",
+      "interpreter_checks": 1387,
+      "order_checks": 1920,
+      "gates": {
+        "G1": true,
+        "G2": true,
+        "G3": true
+      },
+      "g1_free_set_minus_static": 1603.0,
+      "g1_free_set_minus_wrong_world": 1644.0
+    }
+  },
+  "passed": false,
+  "failures": [
+    "interpreter disagrees with the mask test",
+    "interpreter disagrees with the mask test",
+    "interpreter disagrees with the mask test",
+    "interpreter disagrees with the mask test",
+    "interpreter disagrees with the mask test",
+    "interpreter disagrees with the mask test",
+    "interpreter disagrees with the mask test",
+    "interpreter disagrees with the mask test",
+    "interpreter disagrees with the mask test",
+    "interpreter disagrees with the mask test",
+    "interpreter disagrees with the mask test",
+    "interpreter disagrees with the mask test",
+    "interpreter disagrees with the mask test",
+    "interpreter disagrees with the mask test"
+  ],
+  "failure_count": 14,
+  "wall_seconds": 140.55612039999687
+}

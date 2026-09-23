@@ -1,0 +1,92 @@
+{
+  "scope": "opened development; four-precondition screen of the depth-heterogeneous action set",
+  "actions": [
+    "ast_transition@100",
+    "ast_transition@25",
+    "mutation_transition@100",
+    "mutation_transition@25",
+    "novel_operator_transition@100",
+    "novel_operator_transition@25",
+    "self_edit_transition@100",
+    "self_edit_transition@25",
+    "stack_transition@100",
+    "stack_transition@25",
+    "transform_transition@100",
+    "transform_transition@25"
+  ],
+  "threshold": 20,
+  "panels": {
+    "candidate-query-cost-transfer-20260918": {
+      "tasks": 576,
+      "most_confident": 339,
+      "own_region_deep": 423,
+      "best_constant": 293,
+      "best_constant_action": "self_edit_transition@25",
+      "oracle": 475,
+      "default_regret_vs_most_confident": 136,
+      "default_regret_vs_best_default": 52,
+      "p2c_passed": true,
+      "deep_more_confident_rate": 0.3020833333333333,
+      "deep_more_correct_rate": 0.9756944444444444,
+      "confidence_depth_bias": -0.6736111111111112
+    },
+    "combined-ranker-query-transfer-20260918": {
+      "tasks": 576,
+      "most_confident": 339,
+      "own_region_deep": 412,
+      "best_constant": 307,
+      "best_constant_action": "self_edit_transition@100",
+      "oracle": 467,
+      "default_regret_vs_most_confident": 128,
+      "default_regret_vs_best_default": 55,
+      "p2c_passed": true,
+      "deep_more_confident_rate": 0.2951388888888889,
+      "deep_more_correct_rate": 0.96875,
+      "confidence_depth_bias": -0.6736111111111112
+    },
+    "candidate-conditioned-query-transfer-20260918": {
+      "tasks": 576,
+      "most_confident": 353,
+      "own_region_deep": 418,
+      "best_constant": 314,
+      "best_constant_action": "self_edit_transition@25",
+      "oracle": 461,
+      "default_regret_vs_most_confident": 108,
+      "default_regret_vs_best_default": 43,
+      "p2c_passed": true,
+      "deep_more_confident_rate": 0.2673611111111111,
+      "deep_more_correct_rate": 0.9878472222222222,
+      "confidence_depth_bias": -0.7204861111111112
+    }
+  },
+  "learnability": {
+    "train_panels": [
+      "candidate-query-cost-transfer-20260918",
+      "combined-ranker-query-transfer-20260918"
+    ],
+    "test_panel": "candidate-conditioned-query-transfer-20260918",
+    "learned": 412,
+    "default_used": "own_region_deep",
+    "default": 418,
+    "learned_minus_default": {
+      "gain": -6,
+      "positive_banks": 4,
+      "losing_banks": 7,
+      "interval": [
+        -16,
+        5
+      ]
+    },
+    "p2d_passed": false
+  },
+  "verdict": {
+    "p2c_all_panels": true,
+    "p2d": false
+  },
+  "limits": [
+    "Opened panels; development evidence only.",
+    "Depth 25 and depth 100 models differ in training size and in nothing else, so the confidence comparison is like for like.",
+    "The selector sees each action stated confidence as a feature, so it can learn to distrust depth where that helps.",
+    "Oracle uses final labels and is not deployable."
+  ]
+}

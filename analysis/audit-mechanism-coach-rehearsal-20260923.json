@@ -1,0 +1,53 @@
+{
+  "scope": "independent audit of mechanism-coach-confirmation-20260923",
+  "catalog_digest": "1d3c71aff89ba2b6fd72da3ea20591d74afc6aa26ef367c59bed6e57ee5424b8",
+  "replications": {
+    "dev": {
+      "decisions": 172800,
+      "picks": 75313,
+      "interpreter_sample": 3000,
+      "interpreter_accepts_graded_misses": 11,
+      "lifetimes_replayed": 24,
+      "gates_recomputed": {
+        "improve": {
+          "seen_triple": {
+            "1024": true,
+            "2048": true,
+            "4096": true
+          },
+          "new_triple": {
+            "1024": true,
+            "2048": true,
+            "4096": false
+          },
+          "new_family": {
+            "1024": true,
+            "2048": true,
+            "4096": true
+          }
+        },
+        "safe": {
+          "seen_triple": {
+            "128": true,
+            "256": true,
+            "512": true
+          },
+          "new_triple": {
+            "128": true,
+            "256": true,
+            "512": true
+          },
+          "new_family": {
+            "128": true,
+            "256": true,
+            "512": true
+          }
+        },
+        "passed": false
+      }
+    }
+  },
+  "failures": [],
+  "passed": true,
+  "wall_seconds": 233.75010939998901
+}

@@ -1,0 +1,82 @@
+prepared admission 288
+prepared transfer_b 576
+prepared transfer_c 576
+{
+  "status": "banks frozen",
+  "protocol_sha256": "75af344b7d8ccd8ef34e7cbb873af9bbbbe342a373dda5f10025a3cae6153d28",
+  "runner_sha256": "503d125779ab45bd3cbcf2d7f9b5b0543a6d102ee4316b1867c574e11f4f4c53",
+  "e0_sha256": "d5b0bd406da92cc8aa222f07461e0a77bea9fda869e282d321de3bff50dd9bca",
+  "budget": 3,
+  "width": 100,
+  "specialist_sha256": {
+    "transform_transition": "4924433dd33e1cd9f1ceecd1a4daff85a28040a9bb7ecbf23d730881a34f0ba7",
+    "ast_transition": "7ef5e4e6429cb22a5e7c52ed6a05cceaad6b553bd9cbf580cb57ad0da2c65576",
+    "novel_operator_transition": "b62c29f21479b8605ca9047fbce24da00b17d18adc16792a12f2f89ada9860e7",
+    "stack_transition": "6f11babe6d7d5cc71971fae2d42edc543044e1ca611139373f15c48b0f577887",
+    "mutation_transition": "2642199d0d43645cae2f936d620e637db4ec939636a09e12bb4f4f047c5e47bf",
+    "self_edit_transition": "91de4578919ea76b2c622c782d06c288be3beb86e4e12defcdde95e973c0bfd7"
+  },
+  "banks": {
+    "admission": {
+      "seeds": [
+        907100,
+        907101,
+        907102,
+        907103,
+        907104,
+        907105
+      ],
+      "tasks": 288,
+      "base_candidates": 50726,
+      "extra_ast_candidates": 17410,
+      "candidates_rescored": 27226,
+      "generation_seconds": 536.7063506998238,
+      "records_sha256": "8da5afee4e8a7301b279a0a684e9cb16d71b5c8b426235e45760a547d141a539"
+    },
+    "transfer_b": {
+      "seeds": [
+        907200,
+        907201,
+        907202,
+        907203,
+        907204,
+        907205,
+        907206,
+        907207,
+        907208,
+        907209,
+        907210,
+        907211
+      ],
+      "tasks": 576,
+      "base_candidates": 100920,
+      "extra_ast_candidates": 35444,
+      "candidates_rescored": 54032,
+      "generation_seconds": 1097.2829913004534,
+      "records_sha256": "9e6445c7770eba0e59479508e467c592f4a901893663cae56b409c6d689cc44c"
+    },
+    "transfer_c": {
+      "seeds": [
+        907300,
+        907301,
+        907302,
+        907303,
+        907304,
+        907305,
+        907306,
+        907307,
+        907308,
+        907309,
+        907310,
+        907311
+      ],
+      "tasks": 576,
+      "base_candidates": 101120,
+      "extra_ast_candidates": 34688,
+      "candidates_rescored": 54470,
+      "generation_seconds": 1076.5892978991033,
+      "records_sha256": "f7d02c65c8a6eb3a034dabbd1ad859146e6bfee982f516fa88e6d1a9b4bc51df"
+    }
+  },
+  "preparation_wall_seconds": 528.2669260000112
+}

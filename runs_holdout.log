@@ -1,0 +1,7 @@
+transform_transition       E0=169 held=107 in=218 | held-E0  -62.0 [-77.0, -47.0] | in-E0  +49.0 | gap +111.0 [95.0, 128.0]
+ast_transition             E0= 41 held=  1 in= 88 | held-E0  -40.0 [-52.0, -29.0] | in-E0  +47.0 | gap  +87.0 [73.0, 100.0]
+novel_operator_transition  E0=140 held=114 in=190 | held-E0  -26.0 [-39.0, -13.0] | in-E0  +50.0 | gap  +76.0 [63.0, 90.0]
+stack_transition           E0=238 held=214 in=262 | held-E0  -24.0 [-40.0, -8.0] | in-E0  +24.0 | gap  +48.0 [32.0, 64.0]
+mutation_transition        E0=191 held=169 in=191 | held-E0  -22.0 [-37.0, -7.0] | in-E0   +0.0 | gap  +22.0 [5.0, 39.0]
+self_edit_transition       E0=241 held=111 in=245 | held-E0 -130.0 [-149.0, -111.0] | in-E0   +4.0 | gap +134.0 [117.0, 152.0]
+totals: {'e0': 1020, 'held_out': 716, 'in_distribution': 1194}

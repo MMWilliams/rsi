@@ -1,0 +1,251 @@
+{
+  "summary": {
+    "scope": "post hoc development on opened admission, A and B panels",
+    "method": "interaction ridge 100, feedback example weights",
+    "source_rows": 576,
+    "feedback_rows": 288,
+    "missed_positive_feedback": 38,
+    "selected_zero_gain_feedback": 25,
+    "panels": {
+      "a": {
+        "e0": {
+          "correct": 182,
+          "forecast_mse": 0.1308015053114254
+        },
+        "uniform": {
+          "correct": 183,
+          "forecast_mse": 0.13053601169933202
+        },
+        "new2": {
+          "correct": 184,
+          "forecast_mse": 0.1309481745604081
+        },
+        "new4": {
+          "correct": 184,
+          "forecast_mse": 0.13189993635142874
+        },
+        "positive4": {
+          "correct": 184,
+          "forecast_mse": 0.1542099576360494
+        },
+        "mistake4": {
+          "correct": 186,
+          "forecast_mse": 0.12866744314705197
+        },
+        "missed_gain4": {
+          "correct": 183,
+          "forecast_mse": 0.1444651011255391
+        }
+      },
+      "b": {
+        "e0": {
+          "correct": 160,
+          "forecast_mse": 0.16850832342371763
+        },
+        "uniform": {
+          "correct": 158,
+          "forecast_mse": 0.1699130645575528
+        },
+        "new2": {
+          "correct": 158,
+          "forecast_mse": 0.17111375376362592
+        },
+        "new4": {
+          "correct": 158,
+          "forecast_mse": 0.17277799180951817
+        },
+        "positive4": {
+          "correct": 157,
+          "forecast_mse": 0.18611295155615468
+        },
+        "mistake4": {
+          "correct": 160,
+          "forecast_mse": 0.17003156852905224
+        },
+        "missed_gain4": {
+          "correct": 161,
+          "forecast_mse": 0.17432716751374344
+        }
+      }
+    }
+  },
+  "results": {
+    "a": {
+      "e0": {
+        "correct": 182,
+        "forecast_mse": 0.1308015053114254,
+        "by_bank": [
+          33,
+          29,
+          30,
+          30,
+          29,
+          31
+        ]
+      },
+      "uniform": {
+        "correct": 183,
+        "forecast_mse": 0.13053601169933202,
+        "by_bank": [
+          33,
+          29,
+          30,
+          31,
+          29,
+          31
+        ]
+      },
+      "new2": {
+        "correct": 184,
+        "forecast_mse": 0.1309481745604081,
+        "by_bank": [
+          33,
+          29,
+          31,
+          31,
+          29,
+          31
+        ]
+      },
+      "new4": {
+        "correct": 184,
+        "forecast_mse": 0.13189993635142874,
+        "by_bank": [
+          33,
+          30,
+          31,
+          30,
+          29,
+          31
+        ]
+      },
+      "positive4": {
+        "correct": 184,
+        "forecast_mse": 0.1542099576360494,
+        "by_bank": [
+          33,
+          30,
+          31,
+          30,
+          29,
+          31
+        ]
+      },
+      "mistake4": {
+        "correct": 186,
+        "forecast_mse": 0.12866744314705197,
+        "by_bank": [
+          34,
+          30,
+          31,
+          31,
+          29,
+          31
+        ]
+      },
+      "missed_gain4": {
+        "correct": 183,
+        "forecast_mse": 0.1444651011255391,
+        "by_bank": [
+          33,
+          30,
+          31,
+          30,
+          29,
+          30
+        ]
+      }
+    },
+    "b": {
+      "e0": {
+        "correct": 160,
+        "forecast_mse": 0.16850832342371763,
+        "by_bank": [
+          29,
+          33,
+          25,
+          24,
+          24,
+          25
+        ]
+      },
+      "uniform": {
+        "correct": 158,
+        "forecast_mse": 0.1699130645575528,
+        "by_bank": [
+          29,
+          33,
+          25,
+          24,
+          23,
+          24
+        ]
+      },
+      "new2": {
+        "correct": 158,
+        "forecast_mse": 0.17111375376362592,
+        "by_bank": [
+          29,
+          32,
+          26,
+          24,
+          23,
+          24
+        ]
+      },
+      "new4": {
+        "correct": 158,
+        "forecast_mse": 0.17277799180951817,
+        "by_bank": [
+          28,
+          32,
+          26,
+          25,
+          23,
+          24
+        ]
+      },
+      "positive4": {
+        "correct": 157,
+        "forecast_mse": 0.18611295155615468,
+        "by_bank": [
+          28,
+          32,
+          26,
+          24,
+          23,
+          24
+        ]
+      },
+      "mistake4": {
+        "correct": 160,
+        "forecast_mse": 0.17003156852905224,
+        "by_bank": [
+          29,
+          32,
+          26,
+          24,
+          24,
+          25
+        ]
+      },
+      "missed_gain4": {
+        "correct": 161,
+        "forecast_mse": 0.17432716751374344,
+        "by_bank": [
+          29,
+          32,
+          26,
+          24,
+          24,
+          26
+        ]
+      }
+    }
+  },
+  "limits": [
+    "The validation and transfer panels were already opened before this screen.",
+    "Full counterfactual gain on all feedback tasks is a research-oracle expense.",
+    "Weights were researcher specified, not improver generated."
+  ]
+}

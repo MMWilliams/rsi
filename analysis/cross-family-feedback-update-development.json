@@ -1,0 +1,81 @@
+{
+  "scope": "inspected update pilot; panel B labels were already open",
+  "source_tasks": 576,
+  "new_admission_tasks": 288,
+  "target_tasks": 288,
+  "correct": {
+    "old": 161,
+    "updated": 161,
+    "scrambled_update": 156,
+    "duplicate_source": 159,
+    "fixed_transform_mutation": 152
+  },
+  "gain_brier": {
+    "old": 0.1651583953930375,
+    "updated": 0.1611706283480751,
+    "scrambled_update": 0.17088516154681488,
+    "duplicate_source": 0.16478156516904885
+  },
+  "by_bank": [
+    {
+      "seed": 902414,
+      "correct": {
+        "old": 26,
+        "updated": 26,
+        "scrambled_update": 26,
+        "duplicate_source": 26,
+        "fixed_transform_mutation": 27
+      }
+    },
+    {
+      "seed": 902415,
+      "correct": {
+        "old": 28,
+        "updated": 29,
+        "scrambled_update": 27,
+        "duplicate_source": 27,
+        "fixed_transform_mutation": 26
+      }
+    },
+    {
+      "seed": 902416,
+      "correct": {
+        "old": 26,
+        "updated": 26,
+        "scrambled_update": 24,
+        "duplicate_source": 25,
+        "fixed_transform_mutation": 23
+      }
+    },
+    {
+      "seed": 902417,
+      "correct": {
+        "old": 28,
+        "updated": 27,
+        "scrambled_update": 27,
+        "duplicate_source": 28,
+        "fixed_transform_mutation": 25
+      }
+    },
+    {
+      "seed": 902418,
+      "correct": {
+        "old": 24,
+        "updated": 24,
+        "scrambled_update": 23,
+        "duplicate_source": 23,
+        "fixed_transform_mutation": 22
+      }
+    },
+    {
+      "seed": 902419,
+      "correct": {
+        "old": 29,
+        "updated": 29,
+        "scrambled_update": 29,
+        "duplicate_source": 30,
+        "fixed_transform_mutation": 29
+      }
+    }
+  ]
+}

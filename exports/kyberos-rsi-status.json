@@ -1,0 +1,150 @@
+{
+  "application_directions": [
+    {
+      "aim": "Improve how systems form hypotheses, run experiments and learn from failed results.",
+      "id": "research",
+      "measure": "Reproducible discoveries and stronger subsequent improvers at matched compute.",
+      "status": "research_direction",
+      "title": "Research"
+    },
+    {
+      "aim": "Improve defensive analysis, vulnerability verification and remediation in authorized environments.",
+      "id": "cybersecurity",
+      "measure": "Reproduced findings, validated fixes and false-positive rates on held-out systems.",
+      "status": "research_direction",
+      "title": "Cybersecurity"
+    },
+    {
+      "aim": "Apply improving systems to public-interest problems, with outcomes defined alongside affected communities.",
+      "id": "social-good",
+      "measure": "Useful outcomes, access and error rates across the people and settings served.",
+      "status": "research_direction",
+      "title": "Social good"
+    },
+    {
+      "aim": "Support evidence synthesis, policy comparison and evaluation with traceable sources and explicit uncertainty.",
+      "id": "policy",
+      "measure": "Source fidelity, reproducibility and independently reviewed decision-support quality.",
+      "status": "research_direction",
+      "title": "Policy"
+    }
+  ],
+  "as_of": "2026-09-16",
+  "evidence_limits": "This public summary exposes measurements and archive hashes. Full raw archives remain local. Hashes are integrity references, not signatures or proof of universal correctness. Passing replay checks alone does not establish improvement.",
+  "metric": "Raw pass@64: tasks with at least one independently scored correct program among 64 samples. No search-based selection at evaluation.",
+  "mission": "Develop trustworthy recursive self-improvement for research, cybersecurity, social good and policy, measured independently.",
+  "required_evidence": [
+    "Sustained gains in raw large-k coverage across generations",
+    "Later improvers produce larger gains from the same frozen ancestor",
+    "Intact inheritance beats empty and scrambled controls",
+    "Independent held-out evaluation and total-compute accounting"
+  ],
+  "rsi_demonstrated": false,
+  "schema_version": 1,
+  "scope": "Completed local research pilots; not a capability of the downloadable LEDGER release or the planning demo.",
+  "snapshot_id": "2eea6efde59ba06994cf3dddcdf0da8fe3c510944885ad0f1b4f4daaeba00d13",
+  "status": "Research active; RSI not demonstrated",
+  "studies": [
+    {
+      "audit": {
+        "raw_samples_regraded": 7680,
+        "training_rows_rechecked": 179
+      },
+      "checkpoints": [
+        {
+          "label": "Initial shared bootstrap",
+          "samples_per_task": 64,
+          "solved_tasks": 7,
+          "tasks": 24
+        },
+        {
+          "label": "Search + distillation: round 1",
+          "samples_per_task": 64,
+          "solved_tasks": 8,
+          "tasks": 24
+        },
+        {
+          "label": "Search + distillation: round 2",
+          "samples_per_task": 64,
+          "solved_tasks": 5,
+          "tasks": 24
+        }
+      ],
+      "finding": "Coverage rose, then regressed below the initial model. Inherited edit statistics did not beat the empty and scrambled controls.",
+      "id": "pilot-20260916-v2-complete",
+      "limitations": [
+        "One neural training seed",
+        "24 final neural tasks",
+        "Bounded string-program domain",
+        "Total compute not matched"
+      ],
+      "model": "Qwen3-0.6B",
+      "provenance": {
+        "files_sha256": {
+          "audit.json": "e46c8eb2a8a35ddcb07da7a79d593e909dbae6eeeab1dfa3077fe612623edb2f",
+          "bank_manifest.json": "d859997549b92d0b6a1da1ca4b3dba555ef24ddea40ba4ad2335acec47128a64",
+          "manifest.json": "779ef81b27f8e02c8165e40a8dc7c20ba7ab22d53f0ecfa5028c893fd6dd4ecf",
+          "results.json": "dba3a490da8a7904fb489ed4f5a83779b3abeb29b6cbe974189fcc7a49779d49"
+        },
+        "journal_head_sha256": "cd98f6eff901d84b42a2afc6db7dde1abe554825e679664b87c427d084e16f2b",
+        "run_id": "pilot-20260916-v2-complete"
+      },
+      "status": "completed_pilot",
+      "title": "Search, distillation and inherited edit statistics"
+    },
+    {
+      "audit": {
+        "raw_samples_regraded": 19968,
+        "training_rows_rechecked": 410
+      },
+      "checkpoints": [
+        {
+          "label": "Initial shared bootstrap",
+          "samples_per_task": 64,
+          "solved_tasks": 2,
+          "tasks": 24
+        },
+        {
+          "label": "Fresh data only: final",
+          "samples_per_task": 64,
+          "solved_tasks": 3,
+          "tasks": 24
+        },
+        {
+          "label": "Cumulative replay: final",
+          "samples_per_task": 64,
+          "solved_tasks": 2,
+          "tasks": 24
+        },
+        {
+          "label": "Replay + validation gate: final",
+          "samples_per_task": 64,
+          "solved_tasks": 2,
+          "tasks": 24
+        }
+      ],
+      "finding": "Replay retained more syntactic variety without sustained coverage gains. The validation gate accepted an update that lost two tasks on the separate final bank.",
+      "id": "retention-20260916-v3",
+      "limitations": [
+        "One neural training seed",
+        "24 final tasks; 12 validation tasks per round",
+        "Frozen training harvest",
+        "Different task bank from the first pilot; compare arms within each study",
+        "Total compute not matched"
+      ],
+      "model": "Qwen3-0.6B",
+      "provenance": {
+        "files_sha256": {
+          "audit.json": "2c394c3f8587b901ae8eb178a35402c51c46ddb676886777e715bfc2c0c4a04c",
+          "bank_manifest.json": "9d365aabb4e1adf287339f89c5e65ba4b510b790ade82c066264ff55e43424b6",
+          "manifest.json": "2caf7b2f915a7b34e724cb98110a5b2a5a80e99c0a0565a862874e6a4efd6989",
+          "results.json": "da8bfdc78fa468c31a54fc300b4faad80113475289017de7d503fe3632083d87"
+        },
+        "journal_head_sha256": "a9d5b02477476d2d13f2e3b15f74b355dfc7d9035208b0166b5a01513a0ab38c",
+        "run_id": "retention-20260916-v3"
+      },
+      "status": "completed_pilot",
+      "title": "Verified replay and model promotion"
+    }
+  ]
+}

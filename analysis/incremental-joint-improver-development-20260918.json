@@ -1,0 +1,658 @@
+{
+  "scope": "opened development, not fresh transfer",
+  "same_base_candidate_models": [
+    "analysis\\wide-post-query-models-20260918\\plain.joblib",
+    "analysis\\wide-post-query-models-20260918\\sensor.joblib"
+  ],
+  "i0_effect_tasks": 96,
+  "i1_effect_tasks": 288,
+  "candidate_choices_checked": 1920,
+  "fixed_cheap_e0": 46,
+  "fixed_cheap_plain": 50,
+  "target": {
+    "i1": {
+      "e0": 46,
+      "route": 51,
+      "banks": [
+        {
+          "seed": 903200,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903201,
+          "e0": 2,
+          "route": 3
+        },
+        {
+          "seed": 903202,
+          "e0": 1,
+          "route": 2
+        },
+        {
+          "seed": 903203,
+          "e0": 3,
+          "route": 3
+        },
+        {
+          "seed": 903204,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903205,
+          "e0": 3,
+          "route": 3
+        },
+        {
+          "seed": 903206,
+          "e0": 3,
+          "route": 3
+        },
+        {
+          "seed": 903207,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903208,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903209,
+          "e0": 2,
+          "route": 3
+        },
+        {
+          "seed": 903210,
+          "e0": 3,
+          "route": 3
+        },
+        {
+          "seed": 903211,
+          "e0": 3,
+          "route": 4
+        },
+        {
+          "seed": 903212,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903213,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903214,
+          "e0": 4,
+          "route": 4
+        },
+        {
+          "seed": 903215,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903216,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903217,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903218,
+          "e0": 1,
+          "route": 2
+        },
+        {
+          "seed": 903219,
+          "e0": 0,
+          "route": 0
+        },
+        {
+          "seed": 903220,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903221,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903222,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903223,
+          "e0": 2,
+          "route": 2
+        }
+      ],
+      "comparisons": {
+        "e0": {
+          "gain_vs_prior": 2,
+          "positive_banks": 1,
+          "losing_banks": 0,
+          "interval": [
+            0,
+            6
+          ]
+        },
+        "route": {
+          "gain_vs_prior": 0,
+          "positive_banks": 5,
+          "losing_banks": 5,
+          "interval": [
+            -6,
+            6
+          ]
+        }
+      },
+      "vs_i0": {
+        "e0": {
+          "gain": 2,
+          "positive_banks": 1,
+          "losing_banks": 0,
+          "interval": [
+            0,
+            6
+          ]
+        },
+        "route": {
+          "gain": 0,
+          "positive_banks": 5,
+          "losing_banks": 5,
+          "interval": [
+            -6,
+            6
+          ]
+        }
+      }
+    },
+    "i1_scrambled": {
+      "e0": 40,
+      "route": 48,
+      "banks": [
+        {
+          "seed": 903200,
+          "e0": 1,
+          "route": 2
+        },
+        {
+          "seed": 903201,
+          "e0": 1,
+          "route": 2
+        },
+        {
+          "seed": 903202,
+          "e0": 0,
+          "route": 1
+        },
+        {
+          "seed": 903203,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903204,
+          "e0": 2,
+          "route": 1
+        },
+        {
+          "seed": 903205,
+          "e0": 4,
+          "route": 3
+        },
+        {
+          "seed": 903206,
+          "e0": 3,
+          "route": 2
+        },
+        {
+          "seed": 903207,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903208,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903209,
+          "e0": 3,
+          "route": 2
+        },
+        {
+          "seed": 903210,
+          "e0": 2,
+          "route": 3
+        },
+        {
+          "seed": 903211,
+          "e0": 2,
+          "route": 4
+        },
+        {
+          "seed": 903212,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903213,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903214,
+          "e0": 4,
+          "route": 5
+        },
+        {
+          "seed": 903215,
+          "e0": 0,
+          "route": 2
+        },
+        {
+          "seed": 903216,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903217,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903218,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903219,
+          "e0": 0,
+          "route": 0
+        },
+        {
+          "seed": 903220,
+          "e0": 1,
+          "route": 2
+        },
+        {
+          "seed": 903221,
+          "e0": 1,
+          "route": 2
+        },
+        {
+          "seed": 903222,
+          "e0": 1,
+          "route": 2
+        },
+        {
+          "seed": 903223,
+          "e0": 3,
+          "route": 3
+        }
+      ],
+      "comparisons": {
+        "e0": {
+          "gain_vs_prior": -4,
+          "positive_banks": 5,
+          "losing_banks": 8,
+          "interval": [
+            -12,
+            4
+          ]
+        },
+        "route": {
+          "gain_vs_prior": -3,
+          "positive_banks": 3,
+          "losing_banks": 6,
+          "interval": [
+            -9,
+            3
+          ]
+        }
+      },
+      "vs_i0": {
+        "e0": {
+          "gain": -4,
+          "positive_banks": 5,
+          "losing_banks": 8,
+          "interval": [
+            -12,
+            4
+          ]
+        },
+        "route": {
+          "gain": -3,
+          "positive_banks": 3,
+          "losing_banks": 6,
+          "interval": [
+            -9,
+            3
+          ]
+        }
+      }
+    },
+    "i1_duplicate": {
+      "e0": 46,
+      "route": 50,
+      "banks": [
+        {
+          "seed": 903200,
+          "e0": 1,
+          "route": 2
+        },
+        {
+          "seed": 903201,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903202,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903203,
+          "e0": 3,
+          "route": 3
+        },
+        {
+          "seed": 903204,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903205,
+          "e0": 4,
+          "route": 3
+        },
+        {
+          "seed": 903206,
+          "e0": 3,
+          "route": 2
+        },
+        {
+          "seed": 903207,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903208,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903209,
+          "e0": 2,
+          "route": 3
+        },
+        {
+          "seed": 903210,
+          "e0": 3,
+          "route": 3
+        },
+        {
+          "seed": 903211,
+          "e0": 3,
+          "route": 5
+        },
+        {
+          "seed": 903212,
+          "e0": 2,
+          "route": 3
+        },
+        {
+          "seed": 903213,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903214,
+          "e0": 4,
+          "route": 4
+        },
+        {
+          "seed": 903215,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903216,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903217,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903218,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903219,
+          "e0": 0,
+          "route": 0
+        },
+        {
+          "seed": 903220,
+          "e0": 1,
+          "route": 2
+        },
+        {
+          "seed": 903221,
+          "e0": 2,
+          "route": 1
+        },
+        {
+          "seed": 903222,
+          "e0": 0,
+          "route": 1
+        },
+        {
+          "seed": 903223,
+          "e0": 3,
+          "route": 3
+        }
+      ],
+      "comparisons": {
+        "e0": {
+          "gain_vs_prior": 2,
+          "positive_banks": 3,
+          "losing_banks": 1,
+          "interval": [
+            -2,
+            6
+          ]
+        },
+        "route": {
+          "gain_vs_prior": -1,
+          "positive_banks": 2,
+          "losing_banks": 3,
+          "interval": [
+            -5,
+            3
+          ]
+        }
+      },
+      "vs_i0": {
+        "e0": {
+          "gain": 2,
+          "positive_banks": 3,
+          "losing_banks": 1,
+          "interval": [
+            -2,
+            6
+          ]
+        },
+        "route": {
+          "gain": -1,
+          "positive_banks": 2,
+          "losing_banks": 3,
+          "interval": [
+            -5,
+            3
+          ]
+        }
+      }
+    },
+    "i0": {
+      "e0": 44,
+      "route": 51,
+      "banks": [
+        {
+          "seed": 903200,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903201,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903202,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903203,
+          "e0": 3,
+          "route": 2
+        },
+        {
+          "seed": 903204,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903205,
+          "e0": 3,
+          "route": 4
+        },
+        {
+          "seed": 903206,
+          "e0": 3,
+          "route": 3
+        },
+        {
+          "seed": 903207,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903208,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903209,
+          "e0": 2,
+          "route": 3
+        },
+        {
+          "seed": 903210,
+          "e0": 3,
+          "route": 3
+        },
+        {
+          "seed": 903211,
+          "e0": 3,
+          "route": 5
+        },
+        {
+          "seed": 903212,
+          "e0": 2,
+          "route": 3
+        },
+        {
+          "seed": 903213,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903214,
+          "e0": 4,
+          "route": 4
+        },
+        {
+          "seed": 903215,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903216,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903217,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903218,
+          "e0": 1,
+          "route": 1
+        },
+        {
+          "seed": 903219,
+          "e0": 0,
+          "route": 0
+        },
+        {
+          "seed": 903220,
+          "e0": 1,
+          "route": 2
+        },
+        {
+          "seed": 903221,
+          "e0": 2,
+          "route": 2
+        },
+        {
+          "seed": 903222,
+          "e0": 0,
+          "route": 1
+        },
+        {
+          "seed": 903223,
+          "e0": 2,
+          "route": 3
+        }
+      ],
+      "comparisons": {
+        "e0": {
+          "gain_vs_prior": 0,
+          "positive_banks": 0,
+          "losing_banks": 0,
+          "interval": [
+            0,
+            0
+          ]
+        },
+        "route": {
+          "gain_vs_prior": 0,
+          "positive_banks": 0,
+          "losing_banks": 0,
+          "interval": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  }
+}

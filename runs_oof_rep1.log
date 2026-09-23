@@ -1,0 +1,8 @@
+history= 4 built_insample= 310.8 built_oof= 316.2 pooled= 307.8 pooled_capacity= 344.2 pooled_featured= 303.0
+history= 8 built_insample= 328.2 built_oof= 322.5 pooled= 320.8 pooled_capacity= 366.8 pooled_featured= 317.2
+history=16 built_insample= 344.7 built_oof= 337.2 pooled= 323.8 pooled_capacity= 381.0 pooled_featured= 327.7
+history=24 built_insample= 357.0 built_oof= 343.0 pooled= 328.0 pooled_capacity= 393.0 pooled_featured= 324.0
+vs pooled           E1=+15.0 [-3.0, 37.0]  E3=+6.7 [-12.8, 29.8]
+vs pooled_capacity  E1=-50.0 [-68.0, -33.0]  E3=-22.0 [-45.5, -0.0]
+vs pooled_featured  E1=+19.0 [2.0, 40.0]  E3=+5.8 [-10.7, 26.2]
+in-sample router minus OOF router at 24 banks: +14.0 [1.0, 27.0]

@@ -1,0 +1,141 @@
+{
+  "scope": "opened development; P2d retry with protected override",
+  "train_panels": [
+    "candidate-query-cost-transfer-20260918",
+    "combined-ranker-query-transfer-20260918"
+  ],
+  "test_panel": "candidate-conditioned-query-transfer-20260918",
+  "margin_grid": [
+    0.0,
+    0.02,
+    0.05,
+    0.1,
+    0.15,
+    0.25,
+    0.4
+  ],
+  "train_scores_by_margin": {
+    "0.0": 909,
+    "0.02": 909,
+    "0.05": 905,
+    "0.1": 897,
+    "0.15": 886,
+    "0.25": 867,
+    "0.4": 848
+  },
+  "selected_margin": 0.0,
+  "default_own_region_deep": 418,
+  "oracle": 461,
+  "by_margin": {
+    "0.0": {
+      "total": 412,
+      "tasks_overridden": 298,
+      "vs_default": {
+        "gain": -6,
+        "positive_banks": 4,
+        "losing_banks": 7,
+        "interval": [
+          -16,
+          5
+        ]
+      }
+    },
+    "0.02": {
+      "total": 413,
+      "tasks_overridden": 189,
+      "vs_default": {
+        "gain": -5,
+        "positive_banks": 3,
+        "losing_banks": 5,
+        "interval": [
+          -15,
+          6
+        ]
+      }
+    },
+    "0.05": {
+      "total": 412,
+      "tasks_overridden": 131,
+      "vs_default": {
+        "gain": -6,
+        "positive_banks": 2,
+        "losing_banks": 5,
+        "interval": [
+          -15,
+          3
+        ]
+      }
+    },
+    "0.1": {
+      "total": 415,
+      "tasks_overridden": 60,
+      "vs_default": {
+        "gain": -3,
+        "positive_banks": 2,
+        "losing_banks": 5,
+        "interval": [
+          -10,
+          4
+        ]
+      }
+    },
+    "0.15": {
+      "total": 419,
+      "tasks_overridden": 31,
+      "vs_default": {
+        "gain": 1,
+        "positive_banks": 3,
+        "losing_banks": 2,
+        "interval": [
+          -6,
+          7
+        ]
+      }
+    },
+    "0.25": {
+      "total": 419,
+      "tasks_overridden": 14,
+      "vs_default": {
+        "gain": 1,
+        "positive_banks": 2,
+        "losing_banks": 1,
+        "interval": [
+          -2,
+          4
+        ]
+      }
+    },
+    "0.4": {
+      "total": 418,
+      "tasks_overridden": 7,
+      "vs_default": {
+        "gain": 0,
+        "positive_banks": 1,
+        "losing_banks": 1,
+        "interval": [
+          -3,
+          3
+        ]
+      }
+    }
+  },
+  "selected": {
+    "total": 412,
+    "tasks_overridden": 298,
+    "vs_default": {
+      "gain": -6,
+      "positive_banks": 4,
+      "losing_banks": 7,
+      "interval": [
+        -16,
+        5
+      ]
+    }
+  },
+  "p2d_passed": false,
+  "limits": [
+    "Opened panels; development evidence only.",
+    "The margin is fitted on the training panels only, never on the test panel.",
+    "Oracle uses final labels and is not deployable."
+  ]
+}

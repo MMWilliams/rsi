@@ -1,0 +1,201 @@
+{
+  "scope": "descriptor width at which a world weighting is recoverable",
+  "atoms": 313,
+  "widths": [
+    8,
+    16,
+    32,
+    64,
+    128,
+    385
+  ],
+  "draws": 3,
+  "training_worlds": 300,
+  "seed": 616101,
+  "by_width": {
+    "8": {
+      "dimensions": 8,
+      "active": 2,
+      "draws": [
+        {
+          "pearson": 0.6041785322547013,
+          "spearman": 0.7369886027879208,
+          "active_recall": 1.0,
+          "worlds": 300
+        },
+        {
+          "pearson": 0.9538746950167087,
+          "spearman": 0.7683498199278325,
+          "active_recall": 1.0,
+          "worlds": 300
+        },
+        {
+          "pearson": 0.9682492169130809,
+          "spearman": 0.7506799638749293,
+          "active_recall": 1.0,
+          "worlds": 300
+        }
+      ],
+      "mean": {
+        "pearson": 0.8421008147281636,
+        "spearman": 0.7520061288635608,
+        "active_recall": 1.0
+      }
+    },
+    "16": {
+      "dimensions": 16,
+      "active": 4,
+      "draws": [
+        {
+          "pearson": 0.9184291175831402,
+          "spearman": 0.7569500569452581,
+          "active_recall": 1.0,
+          "worlds": 300
+        },
+        {
+          "pearson": 0.9192858893192779,
+          "spearman": 0.8089372349826546,
+          "active_recall": 1.0,
+          "worlds": 300
+        },
+        {
+          "pearson": 0.9247859825996185,
+          "spearman": 0.9160888142070827,
+          "active_recall": 1.0,
+          "worlds": 300
+        }
+      ],
+      "mean": {
+        "pearson": 0.9208336631673455,
+        "spearman": 0.8273253687116652,
+        "active_recall": 1.0
+      }
+    },
+    "32": {
+      "dimensions": 32,
+      "active": 8,
+      "draws": [
+        {
+          "pearson": 0.9357169553097282,
+          "spearman": 0.8349484227879435,
+          "active_recall": 1.0,
+          "worlds": 300
+        },
+        {
+          "pearson": 0.9181957090741957,
+          "spearman": 0.7951965090349017,
+          "active_recall": 0.875,
+          "worlds": 300
+        },
+        {
+          "pearson": 0.836441776571432,
+          "spearman": 0.7541720202420275,
+          "active_recall": 0.875,
+          "worlds": 300
+        }
+      ],
+      "mean": {
+        "pearson": 0.8967848136517853,
+        "spearman": 0.7947723173549575,
+        "active_recall": 0.9166666666666666
+      }
+    },
+    "64": {
+      "dimensions": 64,
+      "active": 16,
+      "draws": [
+        {
+          "pearson": 0.8045444386691988,
+          "spearman": 0.7114591873049743,
+          "active_recall": 0.8125,
+          "worlds": 300
+        },
+        {
+          "pearson": 0.9045793796578169,
+          "spearman": 0.7838187320897224,
+          "active_recall": 0.9375,
+          "worlds": 300
+        },
+        {
+          "pearson": 0.8812235845596903,
+          "spearman": 0.839809587447224,
+          "active_recall": 0.9375,
+          "worlds": 300
+        }
+      ],
+      "mean": {
+        "pearson": 0.8634491342955686,
+        "spearman": 0.7783625022806402,
+        "active_recall": 0.8958333333333334
+      }
+    },
+    "128": {
+      "dimensions": 128,
+      "active": 32,
+      "draws": [
+        {
+          "pearson": 0.8337825387366008,
+          "spearman": 0.6303377426419348,
+          "active_recall": 0.6875,
+          "worlds": 300
+        },
+        {
+          "pearson": 0.8558325174013075,
+          "spearman": 0.6459257267426604,
+          "active_recall": 0.6875,
+          "worlds": 300
+        },
+        {
+          "pearson": 0.8459195773517039,
+          "spearman": 0.6529635219180572,
+          "active_recall": 0.71875,
+          "worlds": 300
+        }
+      ],
+      "mean": {
+        "pearson": 0.845178211163204,
+        "spearman": 0.6430756637675508,
+        "active_recall": 0.6979166666666666
+      }
+    },
+    "385": {
+      "dimensions": 385,
+      "active": 96,
+      "draws": [
+        {
+          "pearson": 0.1182103432247888,
+          "spearman": 0.060832272543940885,
+          "active_recall": 0.28125,
+          "worlds": 300
+        },
+        {
+          "pearson": 0.1329603054837981,
+          "spearman": 0.11340766720966722,
+          "active_recall": 0.3645833333333333,
+          "worlds": 300
+        },
+        {
+          "pearson": 0.1372769321863817,
+          "spearman": 0.13549149786822604,
+          "active_recall": 0.3541666666666667,
+          "worlds": 300
+        }
+      ],
+      "mean": {
+        "pearson": 0.12948252696498955,
+        "spearman": 0.10324381254061138,
+        "active_recall": 0.3333333333333333
+      }
+    }
+  },
+  "verdict": {
+    "best_width": 8,
+    "best_recall": 1.0,
+    "identifiable": true
+  },
+  "cost": {
+    "wall_seconds": 68.07548919999681,
+    "cpu_seconds": 300.28125,
+    "peak_rss_mb": 189.210624
+  }
+}

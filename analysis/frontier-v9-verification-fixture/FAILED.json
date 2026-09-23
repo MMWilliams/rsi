@@ -1,0 +1,5 @@
+{
+  "type": "KeyError",
+  "message": "'status'",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\reese\\projects\\rsi\\run_frontier_distillation.py\", line 51, in run\n    assert json.loads((source / \"audit.json\").read_text())[\"status\"] == \"passed\"\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\nKeyError: 'status'\n"
+}

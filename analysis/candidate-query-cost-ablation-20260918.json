@@ -1,0 +1,215 @@
+{
+  "scope": "development only; all labels on the third panel opened",
+  "cheap_features": "drop E0/E1 and E0/7-leaf top-choice agreement",
+  "cheap_feature_count": 24,
+  "full_feature_count": 26,
+  "saved_target_inference": "two model predict-proba passes on top-20 features",
+  "summary": {
+    "source_cv": {
+      "full": 724,
+      "cheap": 723
+    },
+    "opened_third_panel": {
+      "full": {
+        "correct": 387,
+        "mse": 0.11143500578543206
+      },
+      "cheap": {
+        "correct": 389,
+        "mse": 0.11155850456553108
+      }
+    },
+    "opened_cheap_minus_full": {
+      "sum": 2,
+      "positive_banks": 3,
+      "interval": [
+        -3,
+        8
+      ]
+    }
+  },
+  "source_cv_by_bank": [
+    {
+      "seed": 902510,
+      "full": 33,
+      "cheap": 33
+    },
+    {
+      "seed": 902511,
+      "full": 23,
+      "cheap": 25
+    },
+    {
+      "seed": 902512,
+      "full": 31,
+      "cheap": 31
+    },
+    {
+      "seed": 902513,
+      "full": 26,
+      "cheap": 26
+    },
+    {
+      "seed": 902514,
+      "full": 32,
+      "cheap": 32
+    },
+    {
+      "seed": 902515,
+      "full": 28,
+      "cheap": 27
+    },
+    {
+      "seed": 902516,
+      "full": 31,
+      "cheap": 31
+    },
+    {
+      "seed": 902517,
+      "full": 29,
+      "cheap": 30
+    },
+    {
+      "seed": 902518,
+      "full": 31,
+      "cheap": 31
+    },
+    {
+      "seed": 902519,
+      "full": 32,
+      "cheap": 32
+    },
+    {
+      "seed": 902520,
+      "full": 29,
+      "cheap": 29
+    },
+    {
+      "seed": 902521,
+      "full": 36,
+      "cheap": 36
+    },
+    {
+      "seed": 902522,
+      "full": 29,
+      "cheap": 29
+    },
+    {
+      "seed": 902523,
+      "full": 26,
+      "cheap": 27
+    },
+    {
+      "seed": 902524,
+      "full": 30,
+      "cheap": 30
+    },
+    {
+      "seed": 902525,
+      "full": 29,
+      "cheap": 28
+    },
+    {
+      "seed": 902526,
+      "full": 32,
+      "cheap": 31
+    },
+    {
+      "seed": 902527,
+      "full": 33,
+      "cheap": 34
+    },
+    {
+      "seed": 902528,
+      "full": 29,
+      "cheap": 28
+    },
+    {
+      "seed": 902529,
+      "full": 27,
+      "cheap": 27
+    },
+    {
+      "seed": 902530,
+      "full": 34,
+      "cheap": 35
+    },
+    {
+      "seed": 902531,
+      "full": 27,
+      "cheap": 26
+    },
+    {
+      "seed": 902532,
+      "full": 36,
+      "cheap": 33
+    },
+    {
+      "seed": 902533,
+      "full": 31,
+      "cheap": 32
+    }
+  ],
+  "opened_target_by_bank": [
+    {
+      "seed": 902534,
+      "full": 31,
+      "cheap": 31
+    },
+    {
+      "seed": 902535,
+      "full": 29,
+      "cheap": 29
+    },
+    {
+      "seed": 902536,
+      "full": 33,
+      "cheap": 32
+    },
+    {
+      "seed": 902537,
+      "full": 35,
+      "cheap": 35
+    },
+    {
+      "seed": 902538,
+      "full": 30,
+      "cheap": 31
+    },
+    {
+      "seed": 902539,
+      "full": 31,
+      "cheap": 31
+    },
+    {
+      "seed": 902540,
+      "full": 32,
+      "cheap": 33
+    },
+    {
+      "seed": 902541,
+      "full": 31,
+      "cheap": 31
+    },
+    {
+      "seed": 902542,
+      "full": 36,
+      "cheap": 36
+    },
+    {
+      "seed": 902543,
+      "full": 31,
+      "cheap": 33
+    },
+    {
+      "seed": 902544,
+      "full": 36,
+      "cheap": 36
+    },
+    {
+      "seed": 902545,
+      "full": 32,
+      "cheap": 31
+    }
+  ]
+}

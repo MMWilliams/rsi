@@ -1,0 +1,214 @@
+scored admission 288
+scored transfer_b 576
+scored transfer_c 576
+{
+  "selections": {
+    "parents": {
+      "initial": [
+        "ast_transition",
+        "mutation_transition",
+        "transform_transition"
+      ],
+      "later": [
+        "ast_transition",
+        "novel_operator_transition",
+        "transform_transition"
+      ],
+      "duplicate": [
+        "ast_transition",
+        "mutation_transition",
+        "transform_transition"
+      ],
+      "scrambled": [
+        "novel_operator_transition",
+        "self_edit_transition",
+        "stack_transition"
+      ],
+      "empty": [
+        "ast_transition",
+        "novel_operator_transition",
+        "stack_transition"
+      ]
+    },
+    "children": {
+      "initial": [
+        "ast_transition",
+        "mutation_transition",
+        "transform_transition"
+      ],
+      "later": [
+        "ast_transition",
+        "novel_operator_transition",
+        "transform_transition"
+      ],
+      "duplicate": [
+        "ast_transition",
+        "mutation_transition",
+        "transform_transition"
+      ],
+      "scrambled": [
+        "novel_operator_transition",
+        "self_edit_transition",
+        "stack_transition"
+      ],
+      "empty": [
+        "ast_transition",
+        "novel_operator_transition",
+        "transform_transition"
+      ]
+    },
+    "fixed": {
+      "largest_pool": [
+        "ast_transition",
+        "novel_operator_transition",
+        "stack_transition"
+      ],
+      "all_six": [
+        "ast_transition",
+        "mutation_transition",
+        "novel_operator_transition",
+        "self_edit_transition",
+        "stack_transition",
+        "transform_transition"
+      ],
+      "e0": []
+    },
+    "oracle_transfer_b": [
+      "ast_transition",
+      "self_edit_transition",
+      "transform_transition"
+    ],
+    "oracle_transfer_c": [
+      "ast_transition",
+      "self_edit_transition",
+      "transform_transition"
+    ]
+  },
+  "admission_observation": {
+    "transform_transition": 10,
+    "ast_transition": 10,
+    "novel_operator_transition": 5,
+    "stack_transition": 3,
+    "mutation_transition": 2,
+    "self_edit_transition": 4
+  },
+  "realized_repayment": {
+    "admission": {
+      "transform_transition": 10,
+      "ast_transition": 10,
+      "novel_operator_transition": 5,
+      "stack_transition": 3,
+      "mutation_transition": 2,
+      "self_edit_transition": 4
+    },
+    "transfer_b": {
+      "transform_transition": 21,
+      "ast_transition": 23,
+      "novel_operator_transition": 5,
+      "stack_transition": 5,
+      "mutation_transition": -1,
+      "self_edit_transition": 10
+    },
+    "transfer_c": {
+      "transform_transition": 12,
+      "ast_transition": 24,
+      "novel_operator_transition": 7,
+      "stack_transition": 7,
+      "mutation_transition": 2,
+      "self_edit_transition": 8
+    }
+  },
+  "totals": {
+    "transfer_b": {
+      "parent_initial": 379,
+      "parent_later": 385,
+      "parent_duplicate": 379,
+      "parent_scrambled": 356,
+      "parent_empty": 369,
+      "largest_pool": 369,
+      "all_six": 399,
+      "e0": 336,
+      "oracle_b3": 390
+    },
+    "transfer_c": {
+      "child_initial": 383,
+      "child_later": 388,
+      "child_duplicate": 383,
+      "child_scrambled": 367,
+      "child_empty": 388,
+      "largest_pool": 383,
+      "all_six": 405,
+      "e0": 345,
+      "oracle_b3": 389
+    }
+  },
+  "gates": {
+    "g1_evaluator_component": {
+      "left": 385,
+      "right": 336,
+      "gain": 49,
+      "banks": 12,
+      "positive_banks": 12,
+      "losing_banks": 0,
+      "interval": [
+        37,
+        62
+      ],
+      "passed": true
+    },
+    "g2_improver_growth": {
+      "later_minus_initial": {
+        "left": 385,
+        "right": 379,
+        "gain": 6,
+        "banks": 12,
+        "positive_banks": 6,
+        "losing_banks": 3,
+        "interval": [
+          -3,
+          15
+        ]
+      },
+      "later_minus_duplicate": {
+        "left": 385,
+        "right": 379,
+        "gain": 6,
+        "banks": 12,
+        "positive_banks": 6,
+        "losing_banks": 3,
+        "interval": [
+          -3,
+          15
+        ]
+      },
+      "passed": false
+    },
+    "g3_recursive_child_growth": {
+      "later_minus_initial": {
+        "left": 388,
+        "right": 383,
+        "gain": 5,
+        "banks": 12,
+        "positive_banks": 5,
+        "losing_banks": 2,
+        "interval": [
+          -1,
+          12
+        ]
+      },
+      "later_minus_duplicate": {
+        "left": 388,
+        "right": 383,
+        "gain": 5,
+        "banks": 12,
+        "positive_banks": 5,
+        "losing_banks": 2,
+        "interval": [
+          -1,
+          12
+        ]
+      },
+      "passed": false
+    }
+  }
+}

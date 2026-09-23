@@ -1,0 +1,80 @@
+{
+  "label": "source/library/193/g6/p1",
+  "request_sha256": "6149d9e0888532ddbab957d86225c3690b349b87a07452ed337e5ddc1669d664",
+  "task": {
+    "id": "63da3e36f41f8b96701b",
+    "visible": [
+      [
+        "Chen John Novak",
+        " /"
+      ],
+      [
+        "Chen Adebayo",
+        " /"
+      ],
+      [
+        "John Smith",
+        " /"
+      ]
+    ]
+  },
+  "config": {
+    "absolute_cost": 1.0,
+    "case_cost": 1.0,
+    "constant_cost": 1.0,
+    "length_cost": 0.15,
+    "macro_discount": 0.25,
+    "match_cost": 1.0,
+    "progress_weight": 1.0,
+    "widening": 0.5
+  },
+  "budget": 128,
+  "max_atoms": 4,
+  "macros": [
+    "Concat(' ', '/')",
+    "Concat(', ')",
+    "Concat(', ', ' ', '.', ' ')",
+    "Concat('-')",
+    "Concat('-', Sub(C4,M(UPPER,2,end)))",
+    "Concat('/', '/', ': ')",
+    "Concat('/', Sub(C-6,C-1))",
+    "Concat(': ')",
+    "Concat(Sub(C-7,M(UPPER,1,end)))",
+    "Concat(Sub(C0,C4))",
+    "Concat(Sub(C0,C5))",
+    "Concat(Sub(M(WORD,1,end),M(WORD,2,start)))",
+    "Concat(Sub(M(WORD,1,end),M(WORD,2,start)), ': ')",
+    "Concat(cap(Sub(C0,M(UPPER,1,end))), ', ', '.')"
+  ],
+  "recorded_result": {
+    "task_id": "63da3e36f41f8b96701b",
+    "program": "Concat(Sub(M(WORD,1,end),M(WORD,2,start)), '/')",
+    "visible_outputs": [
+      " /",
+      " /",
+      " /"
+    ],
+    "source": "search",
+    "visible_fit": true,
+    "trace_sha256": "cbb1c218ddb6edce1a8eb229060a9b0c81897ff913178e5165b1ebc07483e1be",
+    "cost": {
+      "expansions": 85,
+      "generated_nodes": 74,
+      "primitive_executions": 4481,
+      "model_checks": 0,
+      "candidate_count": 37
+    },
+    "replay_sha256": "551e2bf97b015f729d67757ee4eaf6ee08989b6e5d51e2a3ce6d8eacb72ddd7a"
+  },
+  "discarded": [
+    {
+      "atoms": [
+        "' '",
+        "'/'"
+      ],
+      "first_cost": 2.55,
+      "discarded_cost": 1.9124999999999999,
+      "macro_edge": true
+    }
+  ]
+}

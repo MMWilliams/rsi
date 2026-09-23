@@ -1,0 +1,11 @@
+{
+  "protocol": "EXPERIMENT-v8-search-validation.md",
+  "seeds": [269, 281, 293, 307, 317, 331],
+  "tasks_per_seed": 96,
+  "visible_examples": 3,
+  "hidden_examples": 13,
+  "max_atoms": 4,
+  "budgets": [32, 64, 128, 512],
+  "modes": ["baseline", "partial_empty"],
+  "macro_source": "runs/library-inheritance-20260916-v7/common_macros.json"
+}

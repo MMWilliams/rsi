@@ -1,0 +1,881 @@
+{
+  "scope": "inspected development banks only",
+  "tasks": 384,
+  "development_tasks": 288,
+  "validation_tasks": 96,
+  "candidates": {
+    "basic_linear:1.0:None": {
+      "learned": 108,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    },
+    "basic_linear:10.0:None": {
+      "learned": 109,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    },
+    "basic_linear:100.0:None": {
+      "learned": 108,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    },
+    "expanded_linear:1.0:None": {
+      "learned": 106,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    },
+    "expanded_linear:10.0:None": {
+      "learned": 106,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    },
+    "expanded_linear:100.0:None": {
+      "learned": 107,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    },
+    "expanded_rbf:0.1:0.05": {
+      "learned": 108,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    },
+    "expanded_rbf:0.1:0.2": {
+      "learned": 108,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    },
+    "expanded_rbf:0.1:1.0": {
+      "learned": 110,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    },
+    "expanded_rbf:1.0:0.05": {
+      "learned": 109,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    },
+    "expanded_rbf:1.0:0.2": {
+      "learned": 109,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    },
+    "expanded_rbf:1.0:1.0": {
+      "learned": 113,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    },
+    "expanded_rbf:10.0:0.05": {
+      "learned": 102,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    },
+    "expanded_rbf:10.0:0.2": {
+      "learned": 106,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    },
+    "expanded_rbf:10.0:1.0": {
+      "learned": 106,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    }
+  },
+  "chosen": "expanded_rbf:1.0:1.0",
+  "source_cv": {
+    "correct": {
+      "learned": 113,
+      "one_each": 100,
+      "random": 93,
+      "entropy": 86,
+      "disagreement": 75
+    },
+    "banks": [
+      {
+        "seed": 902318,
+        "stream": "mixed",
+        "correct": {
+          "learned": 5,
+          "one_each": 5,
+          "random": 4,
+          "entropy": 3,
+          "disagreement": 2
+        },
+        "actions": [
+          0,
+          0,
+          2,
+          2,
+          2,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "seed": 902319,
+        "stream": "mixed",
+        "correct": {
+          "learned": 3,
+          "one_each": 2,
+          "random": 2,
+          "entropy": 3,
+          "disagreement": 2
+        },
+        "actions": [
+          1,
+          2,
+          0,
+          2,
+          0,
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "seed": 902320,
+        "stream": "mixed",
+        "correct": {
+          "learned": 4,
+          "one_each": 4,
+          "random": 4,
+          "entropy": 3,
+          "disagreement": 3
+        },
+        "actions": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          0,
+          2,
+          2
+        ]
+      },
+      {
+        "seed": 902321,
+        "stream": "mixed",
+        "correct": {
+          "learned": 5,
+          "one_each": 4,
+          "random": 4,
+          "entropy": 4,
+          "disagreement": 4
+        },
+        "actions": [
+          2,
+          0,
+          0,
+          1,
+          2,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "seed": 902322,
+        "stream": "mixed",
+        "correct": {
+          "learned": 3,
+          "one_each": 3,
+          "random": 3,
+          "entropy": 2,
+          "disagreement": 2
+        },
+        "actions": [
+          1,
+          2,
+          0,
+          0,
+          1,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "seed": 902323,
+        "stream": "mixed",
+        "correct": {
+          "learned": 3,
+          "one_each": 1,
+          "random": 2,
+          "entropy": 1,
+          "disagreement": 1
+        },
+        "actions": [
+          1,
+          0,
+          2,
+          1,
+          2,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "seed": 902324,
+        "stream": "ast_only",
+        "correct": {
+          "learned": 3,
+          "one_each": 3,
+          "random": 2,
+          "entropy": 1,
+          "disagreement": 1
+        },
+        "actions": [
+          1,
+          2,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "seed": 902325,
+        "stream": "ast_only",
+        "correct": {
+          "learned": 4,
+          "one_each": 4,
+          "random": 5,
+          "entropy": 4,
+          "disagreement": 4
+        },
+        "actions": [
+          1,
+          1,
+          0,
+          2,
+          2,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "seed": 902326,
+        "stream": "ast_only",
+        "correct": {
+          "learned": 4,
+          "one_each": 3,
+          "random": 3,
+          "entropy": 2,
+          "disagreement": 3
+        },
+        "actions": [
+          0,
+          1,
+          2,
+          0,
+          2,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "seed": 902327,
+        "stream": "ast_only",
+        "correct": {
+          "learned": 5,
+          "one_each": 5,
+          "random": 4,
+          "entropy": 5,
+          "disagreement": 3
+        },
+        "actions": [
+          1,
+          1,
+          0,
+          1,
+          2,
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "seed": 902328,
+        "stream": "ast_only",
+        "correct": {
+          "learned": 1,
+          "one_each": 1,
+          "random": 0,
+          "entropy": 1,
+          "disagreement": 0
+        },
+        "actions": [
+          0,
+          2,
+          1,
+          1,
+          2,
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "seed": 902329,
+        "stream": "ast_only",
+        "correct": {
+          "learned": 2,
+          "one_each": 1,
+          "random": 2,
+          "entropy": 2,
+          "disagreement": 1
+        },
+        "actions": [
+          0,
+          2,
+          0,
+          0,
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "seed": 902330,
+        "stream": "mixed",
+        "correct": {
+          "learned": 2,
+          "one_each": 2,
+          "random": 1,
+          "entropy": 1,
+          "disagreement": 1
+        },
+        "actions": [
+          2,
+          0,
+          1,
+          1,
+          0,
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "seed": 902331,
+        "stream": "mixed",
+        "correct": {
+          "learned": 3,
+          "one_each": 3,
+          "random": 2,
+          "entropy": 3,
+          "disagreement": 3
+        },
+        "actions": [
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 902332,
+        "stream": "mixed",
+        "correct": {
+          "learned": 1,
+          "one_each": 1,
+          "random": 0,
+          "entropy": 0,
+          "disagreement": 0
+        },
+        "actions": [
+          0,
+          1,
+          2,
+          2,
+          2,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "seed": 902333,
+        "stream": "mixed",
+        "correct": {
+          "learned": 4,
+          "one_each": 4,
+          "random": 4,
+          "entropy": 3,
+          "disagreement": 3
+        },
+        "actions": [
+          0,
+          1,
+          2,
+          1,
+          1,
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "seed": 902334,
+        "stream": "mixed",
+        "correct": {
+          "learned": 2,
+          "one_each": 1,
+          "random": 1,
+          "entropy": 2,
+          "disagreement": 1
+        },
+        "actions": [
+          1,
+          1,
+          1,
+          2,
+          0,
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "seed": 902335,
+        "stream": "mixed",
+        "correct": {
+          "learned": 4,
+          "one_each": 2,
+          "random": 2,
+          "entropy": 2,
+          "disagreement": 2
+        },
+        "actions": [
+          0,
+          0,
+          1,
+          0,
+          2,
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "seed": 902336,
+        "stream": "ast_only",
+        "correct": {
+          "learned": 3,
+          "one_each": 2,
+          "random": 3,
+          "entropy": 3,
+          "disagreement": 3
+        },
+        "actions": [
+          2,
+          1,
+          1,
+          1,
+          2,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "seed": 902337,
+        "stream": "ast_only",
+        "correct": {
+          "learned": 4,
+          "one_each": 4,
+          "random": 4,
+          "entropy": 3,
+          "disagreement": 3
+        },
+        "actions": [
+          0,
+          0,
+          1,
+          2,
+          2,
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "seed": 902338,
+        "stream": "ast_only",
+        "correct": {
+          "learned": 2,
+          "one_each": 2,
+          "random": 2,
+          "entropy": 1,
+          "disagreement": 1
+        },
+        "actions": [
+          0,
+          0,
+          2,
+          1,
+          1,
+          0,
+          2,
+          2
+        ]
+      },
+      {
+        "seed": 902339,
+        "stream": "ast_only",
+        "correct": {
+          "learned": 2,
+          "one_each": 2,
+          "random": 2,
+          "entropy": 2,
+          "disagreement": 1
+        },
+        "actions": [
+          2,
+          0,
+          0,
+          1,
+          2,
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "seed": 902340,
+        "stream": "ast_only",
+        "correct": {
+          "learned": 3,
+          "one_each": 3,
+          "random": 3,
+          "entropy": 4,
+          "disagreement": 2
+        },
+        "actions": [
+          0,
+          1,
+          0,
+          2,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "seed": 902341,
+        "stream": "ast_only",
+        "correct": {
+          "learned": 5,
+          "one_each": 5,
+          "random": 5,
+          "entropy": 4,
+          "disagreement": 4
+        },
+        "actions": [
+          1,
+          0,
+          2,
+          1,
+          2,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "seed": 902342,
+        "stream": "mixed",
+        "correct": {
+          "learned": 4,
+          "one_each": 3,
+          "random": 3,
+          "entropy": 3,
+          "disagreement": 3
+        },
+        "actions": [
+          1,
+          1,
+          0,
+          1,
+          2,
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "seed": 902343,
+        "stream": "mixed",
+        "correct": {
+          "learned": 3,
+          "one_each": 3,
+          "random": 2,
+          "entropy": 1,
+          "disagreement": 2
+        },
+        "actions": [
+          1,
+          2,
+          0,
+          0,
+          0,
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "seed": 902344,
+        "stream": "mixed",
+        "correct": {
+          "learned": 1,
+          "one_each": 2,
+          "random": 1,
+          "entropy": 1,
+          "disagreement": 0
+        },
+        "actions": [
+          1,
+          0,
+          2,
+          0,
+          1,
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "seed": 902345,
+        "stream": "mixed",
+        "correct": {
+          "learned": 5,
+          "one_each": 3,
+          "random": 3,
+          "entropy": 3,
+          "disagreement": 3
+        },
+        "actions": [
+          2,
+          0,
+          1,
+          2,
+          0,
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "seed": 902346,
+        "stream": "mixed",
+        "correct": {
+          "learned": 4,
+          "one_each": 4,
+          "random": 4,
+          "entropy": 4,
+          "disagreement": 4
+        },
+        "actions": [
+          0,
+          2,
+          2,
+          2,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "seed": 902347,
+        "stream": "mixed",
+        "correct": {
+          "learned": 3,
+          "one_each": 1,
+          "random": 2,
+          "entropy": 2,
+          "disagreement": 3
+        },
+        "actions": [
+          0,
+          2,
+          1,
+          1,
+          2,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "seed": 902348,
+        "stream": "mixed",
+        "correct": {
+          "learned": 0,
+          "one_each": 0,
+          "random": 0,
+          "entropy": 0,
+          "disagreement": 1
+        },
+        "actions": [
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "seed": 902349,
+        "stream": "mixed",
+        "correct": {
+          "learned": 5,
+          "one_each": 5,
+          "random": 4,
+          "entropy": 4,
+          "disagreement": 2
+        },
+        "actions": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "seed": 902350,
+        "stream": "mixed",
+        "correct": {
+          "learned": 1,
+          "one_each": 1,
+          "random": 0,
+          "entropy": 1,
+          "disagreement": 0
+        },
+        "actions": [
+          1,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "seed": 902351,
+        "stream": "ast_only",
+        "correct": {
+          "learned": 3,
+          "one_each": 2,
+          "random": 3,
+          "entropy": 3,
+          "disagreement": 1
+        },
+        "actions": [
+          0,
+          1,
+          2,
+          0,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "seed": 902352,
+        "stream": "ast_only",
+        "correct": {
+          "learned": 2,
+          "one_each": 4,
+          "random": 3,
+          "entropy": 2,
+          "disagreement": 3
+        },
+        "actions": [
+          2,
+          1,
+          1,
+          1,
+          0,
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "seed": 902353,
+        "stream": "ast_only",
+        "correct": {
+          "learned": 5,
+          "one_each": 5,
+          "random": 4,
+          "entropy": 3,
+          "disagreement": 3
+        },
+        "actions": [
+          1,
+          2,
+          1,
+          1,
+          0,
+          0,
+          1,
+          2
+        ]
+      }
+    ]
+  }
+}

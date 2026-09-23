@@ -1,0 +1,7 @@
+# Loss-edit catalog: source feedback and extension limits
+
+The source-only selector trained all five listwise loss temperatures on each of two whole-task folds, then chose the rule with the most held-out top-choice successes. It selected temperature **0.25**, tied with 0.5 at **125/192** held-out source tasks, versus 124 for temperature 1.0. The fixed tie rule preferred the smaller temperature. The ten 120-epoch fits took **425 seconds** on this machine, beyond the shared 31,500 candidate labels. This shows an automatic path to the successful edit but is a weak selection margin and a costly improver procedure. It does not beat a fixed 0.25 rule.
+
+The next generated edit proposals made the loss sharper: temperatures 0.1875, 0.125, and 0.0625. On the already inspected 192-task transfer bank they scored **146, 142, and 138** versus **149** for 0.25. Source fit increased to 189–191/192, showing why training fit is an unsafe edit-admission metric. These proposals were rejected before any new confirmation run. The proposed edit direction has a local transfer optimum near 0.25 on this development distribution; it is not a global optimum claim.
+
+Code and data: `loss_catalog_improver_development.py`, `analysis/loss-catalog-improver-development.json`, `temperature_extension_development.py`, and `analysis/temperature-extension-development.json`. All results here are development only and use source or already inspected banks.

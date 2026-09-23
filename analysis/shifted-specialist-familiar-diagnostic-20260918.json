@@ -1,0 +1,105 @@
+{
+  "scope": "opened familiar AST diagnostic, one query per AST task",
+  "ast_tasks": 96,
+  "logical_output_calls": 96,
+  "new_model_predictions": 3378,
+  "totals": {
+    "e0": 36,
+    "a_plain100": 25,
+    "ab_plain100": 24
+  },
+  "comparisons": {
+    "a_plain100": {
+      "gain": -11,
+      "positive_banks": 3,
+      "losing_banks": 8,
+      "interval": [
+        -20,
+        -2
+      ]
+    },
+    "ab_plain100": {
+      "gain": -12,
+      "positive_banks": 2,
+      "losing_banks": 8,
+      "interval": [
+        -20,
+        -4
+      ]
+    }
+  },
+  "banks": [
+    {
+      "seed": 902558,
+      "e0": 2,
+      "a_plain100": 2,
+      "ab_plain100": 2
+    },
+    {
+      "seed": 902559,
+      "e0": 3,
+      "a_plain100": 1,
+      "ab_plain100": 1
+    },
+    {
+      "seed": 902560,
+      "e0": 2,
+      "a_plain100": 1,
+      "ab_plain100": 0
+    },
+    {
+      "seed": 902561,
+      "e0": 2,
+      "a_plain100": 3,
+      "ab_plain100": 3
+    },
+    {
+      "seed": 902562,
+      "e0": 4,
+      "a_plain100": 2,
+      "ab_plain100": 1
+    },
+    {
+      "seed": 902563,
+      "e0": 3,
+      "a_plain100": 2,
+      "ab_plain100": 2
+    },
+    {
+      "seed": 902564,
+      "e0": 4,
+      "a_plain100": 1,
+      "ab_plain100": 2
+    },
+    {
+      "seed": 902565,
+      "e0": 4,
+      "a_plain100": 2,
+      "ab_plain100": 3
+    },
+    {
+      "seed": 902566,
+      "e0": 2,
+      "a_plain100": 1,
+      "ab_plain100": 1
+    },
+    {
+      "seed": 902567,
+      "e0": 3,
+      "a_plain100": 4,
+      "ab_plain100": 4
+    },
+    {
+      "seed": 902568,
+      "e0": 3,
+      "a_plain100": 4,
+      "ab_plain100": 3
+    },
+    {
+      "seed": 902569,
+      "e0": 4,
+      "a_plain100": 2,
+      "ab_plain100": 2
+    }
+  ]
+}

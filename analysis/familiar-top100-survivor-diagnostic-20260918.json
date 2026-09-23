@@ -1,0 +1,347 @@
+{
+  "scope": "opened diagnostic after protected transfer",
+  "source_tasks": 1152,
+  "source_verified_survivor_labels": 35291,
+  "source_positive_labels": 22769,
+  "model_sha256": "1ffea929c4d4b4cb90fa632bb8985a2c6ac095ef05e06d70fb126d18387a91c2",
+  "target_tasks": 192,
+  "target_model_predictions": 3264,
+  "totals": {
+    "one_one_each": 53,
+    "one_budgeted": 45,
+    "e0_one_each": 56,
+    "e0_budgeted": 44,
+    "a_plain100_one_each": 80,
+    "a_plain100_budgeted": 61,
+    "ab_plain100_one_each": 87,
+    "ab_plain100_budgeted": 67
+  },
+  "comparisons": {
+    "e0": {
+      "one_each": {
+        "gain": -3,
+        "positive_banks": 1,
+        "losing_banks": 4,
+        "interval": [
+          -7,
+          1
+        ]
+      },
+      "budgeted": {
+        "gain": 1,
+        "positive_banks": 1,
+        "losing_banks": 0,
+        "interval": [
+          0,
+          3
+        ]
+      }
+    },
+    "a_plain100": {
+      "one_each": {
+        "gain": -27,
+        "positive_banks": 0,
+        "losing_banks": 17,
+        "interval": [
+          -35,
+          -19
+        ]
+      },
+      "budgeted": {
+        "gain": -16,
+        "positive_banks": 1,
+        "losing_banks": 14,
+        "interval": [
+          -23,
+          -9
+        ]
+      }
+    },
+    "ab_plain100": {
+      "one_each": {
+        "gain": -34,
+        "positive_banks": 1,
+        "losing_banks": 19,
+        "interval": [
+          -45,
+          -23
+        ]
+      },
+      "budgeted": {
+        "gain": -22,
+        "positive_banks": 0,
+        "losing_banks": 17,
+        "interval": [
+          -30,
+          -15
+        ]
+      }
+    }
+  },
+  "banks": [
+    {
+      "seed": 903300,
+      "one_one_each": 3,
+      "one_budgeted": 3,
+      "e0_one_each": 3,
+      "e0_budgeted": 3,
+      "a_plain100_one_each": 4,
+      "a_plain100_budgeted": 4,
+      "ab_plain100_one_each": 4,
+      "ab_plain100_budgeted": 4
+    },
+    {
+      "seed": 903301,
+      "one_one_each": 0,
+      "one_budgeted": 0,
+      "e0_one_each": 0,
+      "e0_budgeted": 0,
+      "a_plain100_one_each": 0,
+      "a_plain100_budgeted": 0,
+      "ab_plain100_one_each": 0,
+      "ab_plain100_budgeted": 0
+    },
+    {
+      "seed": 903302,
+      "one_one_each": 2,
+      "one_budgeted": 1,
+      "e0_one_each": 2,
+      "e0_budgeted": 1,
+      "a_plain100_one_each": 3,
+      "a_plain100_budgeted": 1,
+      "ab_plain100_one_each": 3,
+      "ab_plain100_budgeted": 1
+    },
+    {
+      "seed": 903303,
+      "one_one_each": 1,
+      "one_budgeted": 1,
+      "e0_one_each": 1,
+      "e0_budgeted": 1,
+      "a_plain100_one_each": 2,
+      "a_plain100_budgeted": 1,
+      "ab_plain100_one_each": 3,
+      "ab_plain100_budgeted": 1
+    },
+    {
+      "seed": 903304,
+      "one_one_each": 2,
+      "one_budgeted": 2,
+      "e0_one_each": 2,
+      "e0_budgeted": 2,
+      "a_plain100_one_each": 3,
+      "a_plain100_budgeted": 3,
+      "ab_plain100_one_each": 4,
+      "ab_plain100_budgeted": 3
+    },
+    {
+      "seed": 903305,
+      "one_one_each": 2,
+      "one_budgeted": 2,
+      "e0_one_each": 2,
+      "e0_budgeted": 2,
+      "a_plain100_one_each": 3,
+      "a_plain100_budgeted": 3,
+      "ab_plain100_one_each": 3,
+      "ab_plain100_budgeted": 3
+    },
+    {
+      "seed": 903306,
+      "one_one_each": 3,
+      "one_budgeted": 4,
+      "e0_one_each": 4,
+      "e0_budgeted": 4,
+      "a_plain100_one_each": 5,
+      "a_plain100_budgeted": 4,
+      "ab_plain100_one_each": 7,
+      "ab_plain100_budgeted": 6
+    },
+    {
+      "seed": 903307,
+      "one_one_each": 0,
+      "one_budgeted": 0,
+      "e0_one_each": 0,
+      "e0_budgeted": 0,
+      "a_plain100_one_each": 0,
+      "a_plain100_budgeted": 0,
+      "ab_plain100_one_each": 0,
+      "ab_plain100_budgeted": 0
+    },
+    {
+      "seed": 903308,
+      "one_one_each": 2,
+      "one_budgeted": 1,
+      "e0_one_each": 2,
+      "e0_budgeted": 1,
+      "a_plain100_one_each": 4,
+      "a_plain100_budgeted": 3,
+      "ab_plain100_one_each": 5,
+      "ab_plain100_budgeted": 4
+    },
+    {
+      "seed": 903309,
+      "one_one_each": 5,
+      "one_budgeted": 4,
+      "e0_one_each": 4,
+      "e0_budgeted": 3,
+      "a_plain100_one_each": 5,
+      "a_plain100_budgeted": 4,
+      "ab_plain100_one_each": 4,
+      "ab_plain100_budgeted": 4
+    },
+    {
+      "seed": 903310,
+      "one_one_each": 2,
+      "one_budgeted": 1,
+      "e0_one_each": 3,
+      "e0_budgeted": 1,
+      "a_plain100_one_each": 4,
+      "a_plain100_budgeted": 2,
+      "ab_plain100_one_each": 4,
+      "ab_plain100_budgeted": 2
+    },
+    {
+      "seed": 903311,
+      "one_one_each": 2,
+      "one_budgeted": 1,
+      "e0_one_each": 2,
+      "e0_budgeted": 1,
+      "a_plain100_one_each": 4,
+      "a_plain100_budgeted": 3,
+      "ab_plain100_one_each": 4,
+      "ab_plain100_budgeted": 3
+    },
+    {
+      "seed": 903312,
+      "one_one_each": 1,
+      "one_budgeted": 1,
+      "e0_one_each": 1,
+      "e0_budgeted": 1,
+      "a_plain100_one_each": 3,
+      "a_plain100_budgeted": 2,
+      "ab_plain100_one_each": 3,
+      "ab_plain100_budgeted": 2
+    },
+    {
+      "seed": 903313,
+      "one_one_each": 3,
+      "one_budgeted": 2,
+      "e0_one_each": 3,
+      "e0_budgeted": 2,
+      "a_plain100_one_each": 4,
+      "a_plain100_budgeted": 3,
+      "ab_plain100_one_each": 4,
+      "ab_plain100_budgeted": 3
+    },
+    {
+      "seed": 903314,
+      "one_one_each": 4,
+      "one_budgeted": 4,
+      "e0_one_each": 4,
+      "e0_budgeted": 4,
+      "a_plain100_one_each": 4,
+      "a_plain100_budgeted": 4,
+      "ab_plain100_one_each": 4,
+      "ab_plain100_budgeted": 4
+    },
+    {
+      "seed": 903315,
+      "one_one_each": 2,
+      "one_budgeted": 1,
+      "e0_one_each": 2,
+      "e0_budgeted": 1,
+      "a_plain100_one_each": 2,
+      "a_plain100_budgeted": 1,
+      "ab_plain100_one_each": 2,
+      "ab_plain100_budgeted": 1
+    },
+    {
+      "seed": 903316,
+      "one_one_each": 0,
+      "one_budgeted": 0,
+      "e0_one_each": 0,
+      "e0_budgeted": 0,
+      "a_plain100_one_each": 1,
+      "a_plain100_budgeted": 1,
+      "ab_plain100_one_each": 1,
+      "ab_plain100_budgeted": 1
+    },
+    {
+      "seed": 903317,
+      "one_one_each": 4,
+      "one_budgeted": 4,
+      "e0_one_each": 4,
+      "e0_budgeted": 4,
+      "a_plain100_one_each": 5,
+      "a_plain100_budgeted": 5,
+      "ab_plain100_one_each": 5,
+      "ab_plain100_budgeted": 5
+    },
+    {
+      "seed": 903318,
+      "one_one_each": 4,
+      "one_budgeted": 4,
+      "e0_one_each": 4,
+      "e0_budgeted": 4,
+      "a_plain100_one_each": 4,
+      "a_plain100_budgeted": 3,
+      "ab_plain100_one_each": 6,
+      "ab_plain100_budgeted": 5
+    },
+    {
+      "seed": 903319,
+      "one_one_each": 1,
+      "one_budgeted": 1,
+      "e0_one_each": 2,
+      "e0_budgeted": 1,
+      "a_plain100_one_each": 3,
+      "a_plain100_budgeted": 2,
+      "ab_plain100_one_each": 2,
+      "ab_plain100_budgeted": 2
+    },
+    {
+      "seed": 903320,
+      "one_one_each": 1,
+      "one_budgeted": 0,
+      "e0_one_each": 1,
+      "e0_budgeted": 0,
+      "a_plain100_one_each": 3,
+      "a_plain100_budgeted": 1,
+      "ab_plain100_one_each": 3,
+      "ab_plain100_budgeted": 1
+    },
+    {
+      "seed": 903321,
+      "one_one_each": 2,
+      "one_budgeted": 2,
+      "e0_one_each": 2,
+      "e0_budgeted": 2,
+      "a_plain100_one_each": 5,
+      "a_plain100_budgeted": 4,
+      "ab_plain100_one_each": 5,
+      "ab_plain100_budgeted": 4
+    },
+    {
+      "seed": 903322,
+      "one_one_each": 4,
+      "one_budgeted": 3,
+      "e0_one_each": 4,
+      "e0_budgeted": 3,
+      "a_plain100_one_each": 4,
+      "a_plain100_budgeted": 3,
+      "ab_plain100_one_each": 5,
+      "ab_plain100_budgeted": 4
+    },
+    {
+      "seed": 903323,
+      "one_one_each": 3,
+      "one_budgeted": 3,
+      "e0_one_each": 4,
+      "e0_budgeted": 3,
+      "a_plain100_one_each": 5,
+      "a_plain100_budgeted": 4,
+      "ab_plain100_one_each": 6,
+      "ab_plain100_budgeted": 4
+    }
+  ]
+}

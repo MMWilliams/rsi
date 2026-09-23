@@ -1,0 +1,524 @@
+{
+  "scope": "opened development; source candidate model disjoint from router rows",
+  "training_tasks": 384,
+  "target_tasks": 480,
+  "effect_source_distribution": {
+    "positive": 53,
+    "negative": 37,
+    "zero": 294
+  },
+  "routes_to_specialist": {
+    "visible_route": 272,
+    "effect_route": 256
+  },
+  "target": {
+    "domains": {
+      "familiar": {
+        "tasks": 96,
+        "banks": [
+          {
+            "seed": 902558,
+            "e0": 2,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 902559,
+            "e0": 3,
+            "specialist": 1,
+            "visible_route": 1,
+            "effect_route": 2
+          },
+          {
+            "seed": 902560,
+            "e0": 2,
+            "specialist": 1,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 902561,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 2,
+            "effect_route": 3
+          },
+          {
+            "seed": 902562,
+            "e0": 4,
+            "specialist": 2,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 902563,
+            "e0": 3,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 902564,
+            "e0": 4,
+            "specialist": 1,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 902565,
+            "e0": 4,
+            "specialist": 2,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 902566,
+            "e0": 2,
+            "specialist": 1,
+            "visible_route": 2,
+            "effect_route": 1
+          },
+          {
+            "seed": 902567,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 3
+          },
+          {
+            "seed": 902568,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 902569,
+            "e0": 4,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 3
+          }
+        ],
+        "totals": {
+          "e0": 36,
+          "specialist": 25,
+          "visible_route": 28,
+          "effect_route": 29
+        },
+        "comparisons": {
+          "specialist": {
+            "gain": -11,
+            "positive_banks": 3,
+            "losing_banks": 8,
+            "interval": [
+              -20,
+              -2
+            ]
+          },
+          "visible_route": {
+            "gain": -8,
+            "positive_banks": 1,
+            "losing_banks": 6,
+            "interval": [
+              -14,
+              -2
+            ]
+          },
+          "effect_route": {
+            "gain": -7,
+            "positive_banks": 1,
+            "losing_banks": 7,
+            "interval": [
+              -12,
+              -2
+            ]
+          }
+        }
+      },
+      "shifted": {
+        "tasks": 384,
+        "banks": [
+          {
+            "seed": 903200,
+            "e0": 2,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903201,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 903202,
+            "e0": 1,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          },
+          {
+            "seed": 903203,
+            "e0": 3,
+            "specialist": 5,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903204,
+            "e0": 2,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903205,
+            "e0": 4,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          },
+          {
+            "seed": 903206,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903207,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 903208,
+            "e0": 2,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903209,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 903210,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 903211,
+            "e0": 3,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          },
+          {
+            "seed": 903212,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903213,
+            "e0": 1,
+            "specialist": 1,
+            "visible_route": 1,
+            "effect_route": 1
+          },
+          {
+            "seed": 903214,
+            "e0": 4,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          },
+          {
+            "seed": 903215,
+            "e0": 2,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903216,
+            "e0": 2,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903217,
+            "e0": 1,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 1
+          },
+          {
+            "seed": 903218,
+            "e0": 3,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 4
+          },
+          {
+            "seed": 903219,
+            "e0": 0,
+            "specialist": 0,
+            "visible_route": 0,
+            "effect_route": 0
+          },
+          {
+            "seed": 903220,
+            "e0": 2,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          },
+          {
+            "seed": 903221,
+            "e0": 2,
+            "specialist": 4,
+            "visible_route": 3,
+            "effect_route": 4
+          },
+          {
+            "seed": 903222,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 3,
+            "effect_route": 2
+          },
+          {
+            "seed": 903223,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903300,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 3
+          },
+          {
+            "seed": 903301,
+            "e0": 0,
+            "specialist": 0,
+            "visible_route": 0,
+            "effect_route": 0
+          },
+          {
+            "seed": 903302,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 2,
+            "effect_route": 3
+          },
+          {
+            "seed": 903303,
+            "e0": 1,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903304,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 903305,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 2,
+            "effect_route": 3
+          },
+          {
+            "seed": 903306,
+            "e0": 4,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          },
+          {
+            "seed": 903307,
+            "e0": 0,
+            "specialist": 0,
+            "visible_route": 0,
+            "effect_route": 0
+          },
+          {
+            "seed": 903308,
+            "e0": 2,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 3
+          },
+          {
+            "seed": 903309,
+            "e0": 4,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          },
+          {
+            "seed": 903310,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 3,
+            "effect_route": 4
+          },
+          {
+            "seed": 903311,
+            "e0": 2,
+            "specialist": 4,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 903312,
+            "e0": 1,
+            "specialist": 3,
+            "visible_route": 2,
+            "effect_route": 3
+          },
+          {
+            "seed": 903313,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903314,
+            "e0": 4,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903315,
+            "e0": 2,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903316,
+            "e0": 0,
+            "specialist": 1,
+            "visible_route": 1,
+            "effect_route": 1
+          },
+          {
+            "seed": 903317,
+            "e0": 4,
+            "specialist": 5,
+            "visible_route": 4,
+            "effect_route": 5
+          },
+          {
+            "seed": 903318,
+            "e0": 4,
+            "specialist": 4,
+            "visible_route": 5,
+            "effect_route": 4
+          },
+          {
+            "seed": 903319,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903320,
+            "e0": 1,
+            "specialist": 3,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903321,
+            "e0": 2,
+            "specialist": 5,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903322,
+            "e0": 4,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903323,
+            "e0": 4,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          }
+        ],
+        "totals": {
+          "e0": 111,
+          "specialist": 163,
+          "visible_route": 151,
+          "effect_route": 151
+        },
+        "comparisons": {
+          "specialist": {
+            "gain": 52,
+            "positive_banks": 36,
+            "losing_banks": 0,
+            "interval": [
+              40,
+              64
+            ]
+          },
+          "visible_route": {
+            "gain": 40,
+            "positive_banks": 30,
+            "losing_banks": 0,
+            "interval": [
+              29,
+              52
+            ]
+          },
+          "effect_route": {
+            "gain": 40,
+            "positive_banks": 30,
+            "losing_banks": 0,
+            "interval": [
+              29,
+              52
+            ]
+          }
+        }
+      }
+    },
+    "total": {
+      "e0": 147,
+      "specialist": 188,
+      "visible_route": 179,
+      "effect_route": 180
+    }
+  }
+}

@@ -1,0 +1,2322 @@
+{
+  "scope": "opened-bank candidate labels; research-only cache",
+  "panel": "meta_a",
+  "tasks": 288,
+  "top_k": 20,
+  "candidate_labels_checked": 5654,
+  "baseline_correct": 166,
+  "top20_reachable": 232,
+  "source_sha256": {
+    "sealed_bank.json": "c50e80dbfd25919d76d1c55ee3b3838c68d945f5ba1e83f79e4baf3298bde829",
+    "base_pools.json": "720a311e61d1bc9d719d92a24fa17735cf4b3d0b5ca5594de366281a8ca03968",
+    "ast_wide_pools.json": "0ba2733abd47d6ca0bbe3f17091a8692f5c4f1d023f6fc0aea4ae971b7de4bca",
+    "frozen_records.json": "1ba82c77fa555ce7790c703fa8f5c3da8de0f8fdc51d335761d9b43cddf6871e",
+    "results.json": "7b94eeeae4f097ebb1ff164d90b46dc4d2ee681c7d22e879779cc062038735b3"
+  },
+  "tasks_detail": [
+    {
+      "id": "a69a08f345275a14b3a02c0b",
+      "seed": 902426,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "3e92980bd12637b98ec61e5e",
+      "seed": 902426,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "fa57aa7988e44221ead42cb6",
+      "seed": 902426,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "a2a82b7a57169ab1eec9c50a",
+      "seed": 902426,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "9e1e77f5c1288df5659fa4ef",
+      "seed": 902426,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c69e8e9f6654e0dac38310ee",
+      "seed": 902426,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "4db2b39edf48e3a70ad1aabd",
+      "seed": 902426,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "865e73cc5f6cc9584eda3d29",
+      "seed": 902426,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "3a4a19813ee0d96c558e387c",
+      "seed": 902426,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "ecdefd346565d57b7e19f13e",
+      "seed": 902426,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "a9f9f3ea624d9df1ee3190be",
+      "seed": 902426,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "6171b09c5b8188d9a43f8813",
+      "seed": 902426,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "97d23dd16d353f185746b48f",
+      "seed": 902426,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "07eb20d163f8fc760244f35a",
+      "seed": 902426,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "cdc31f47165f3e1a2424a55f",
+      "seed": 902426,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "ef1526a9c3bc2df5059c96c4",
+      "seed": 902426,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "427285386810e0686e764018",
+      "seed": 902426,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "4dfe6f872d863244d829acfb",
+      "seed": 902426,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "3d88d32acf5b3694f9c8ffec",
+      "seed": 902426,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "f01bf95a1d38e0a9e3f3ab93",
+      "seed": 902426,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "3e990fa87c0c9a247f8c609c",
+      "seed": 902426,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "27c6a5e1a7b3a48fd0863ddb",
+      "seed": 902426,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "8465f80735be765d30919ba8",
+      "seed": 902426,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "1ec20893f7ff3164e066fc80",
+      "seed": 902426,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "4c9345921e4ed96631c7bf90",
+      "seed": 902426,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "5f62598ae45ed34b34dc2287",
+      "seed": 902426,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "cca4cfb7a9a36b643717341f",
+      "seed": 902426,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "0a797df2a8b56544e891cf1d",
+      "seed": 902426,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "30ee1577ee882807eb8a7e30",
+      "seed": 902426,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "774216f529be7a74447deac9",
+      "seed": 902426,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "06e3967b04c8bbfc344b3e31",
+      "seed": 902426,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "f5a94465c39a5c2c0aad1db1",
+      "seed": 902426,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "6de3141de096a3437343557c",
+      "seed": 902426,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "91a3da47c3a7a2ef4741a89a",
+      "seed": 902426,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "788ecd518d28c2eee0cd6a34",
+      "seed": 902426,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "843e684ca49583f972e29462",
+      "seed": 902426,
+      "family": "self_edit_transition",
+      "candidate_count": 2,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "b1a9fcbc44add6b0e10c4547",
+      "seed": 902426,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c4757719f7e3e913c47f850e",
+      "seed": 902426,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "05293e4c46b4dc98292e0c4c",
+      "seed": 902426,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "adbba2454a6f401b96216fb8",
+      "seed": 902426,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "3df7a89826817306d514ea49",
+      "seed": 902426,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "b1c14ac54d43e7d16c14653c",
+      "seed": 902426,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "32d254342caa46625216d0d3",
+      "seed": 902426,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "fadc6e19b87a6daf61dd3e66",
+      "seed": 902426,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "20047745688c7c07e37246c7",
+      "seed": 902426,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "b95970c9fea7ec9d73aef4da",
+      "seed": 902426,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "1ec01897f688777998b84980",
+      "seed": 902426,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c4b915740e3b7c370d4ee3cb",
+      "seed": 902426,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "e5742da441f38bbe95c93a37",
+      "seed": 902427,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "f70d822083706a76737bf025",
+      "seed": 902427,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "57064cddb0d7e0e6e356cbce",
+      "seed": 902427,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "be33e1127a09c8f9bfa9973e",
+      "seed": 902427,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "2d32edcedc64fb8eb2f0d5b9",
+      "seed": 902427,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "cfda292b23f472fb0437f3a1",
+      "seed": 902427,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c1a42b1a038ba354cff6af67",
+      "seed": 902427,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "d7dcb09e3762df8857789bed",
+      "seed": 902427,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "04b404c08a803a6acf3b27a0",
+      "seed": 902427,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "81c12c4b05bf42fff8a8fab7",
+      "seed": 902427,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "460573d2a48c0edd01591375",
+      "seed": 902427,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "45fdaae27337b68c29bce6ac",
+      "seed": 902427,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "237fe28576befe9d443525fa",
+      "seed": 902427,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "0adc21f774b655f65e4a32b3",
+      "seed": 902427,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "5a5774214b4021523b9bff8e",
+      "seed": 902427,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "18bb1ab1effda45251487003",
+      "seed": 902427,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "61abb3fac0b6e8c4757458c2",
+      "seed": 902427,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "2ed6d8fedd46be5ed418c751",
+      "seed": 902427,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "5b931c9ddf326e5136e293de",
+      "seed": 902427,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "e82fc2228f8041ee2fae5fde",
+      "seed": 902427,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "89a34f7ac76dd6aeed1286ac",
+      "seed": 902427,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "22e633d3cb5729df5bbe827f",
+      "seed": 902427,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "6a64cb1e19ded629d4bc59f6",
+      "seed": 902427,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "bfb75b157339c404ca1006b4",
+      "seed": 902427,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "df1c4da9e5409e0f13cb33ca",
+      "seed": 902427,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "faab5e8c433539a2b5a22299",
+      "seed": 902427,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "5f74cfdb7df739e81f7d8027",
+      "seed": 902427,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "73c965f96c5faad6531f3ad1",
+      "seed": 902427,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "6e2f3c182199e9878871c5af",
+      "seed": 902427,
+      "family": "mutation_transition",
+      "candidate_count": 10,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "ce9195876f26243add6272e3",
+      "seed": 902427,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "83da924d474f557c5c17d8ed",
+      "seed": 902427,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "8ad130ec7dd1de8aa310bf30",
+      "seed": 902427,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "07e7b7fdd8393c1bdbffd351",
+      "seed": 902427,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "43d172d7679d8bc39f5f4837",
+      "seed": 902427,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "608370a5da6db9b1d2e7ce56",
+      "seed": 902427,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "2847f05a1f557ef7763a08de",
+      "seed": 902427,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "b65d264a3c96096d1c946999",
+      "seed": 902427,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "54fc2caa0e8ade701ea88d73",
+      "seed": 902427,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "de0d0d5d055b7570e3befeb2",
+      "seed": 902427,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "ba4c72460e18824edaadb47e",
+      "seed": 902427,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "39a5d30ca4483ccd94501de3",
+      "seed": 902427,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "bff36cf30a6375cfc036b93e",
+      "seed": 902427,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "58693a05e9a9ba0db4ececb9",
+      "seed": 902427,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "0c269263244258b46d916498",
+      "seed": 902427,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "77f8dbad07081d1d36cb0bb3",
+      "seed": 902427,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "a44440a5f69c5340498997d2",
+      "seed": 902427,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "91a5adc4ff32562f210edae6",
+      "seed": 902427,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "449a0d8fac2a5f4790975bad",
+      "seed": 902427,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "3150fcba813d1c0cd84de445",
+      "seed": 902428,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "0cc3f98998393dee1831b7ec",
+      "seed": 902428,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "12e67e93140b08490a52e2b2",
+      "seed": 902428,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "9631336e41eac77180a46b38",
+      "seed": 902428,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c06583bb6ae6ef3665bcb915",
+      "seed": 902428,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "258c9260acd4540ef00b0df2",
+      "seed": 902428,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "30e2834387dc4cfaf3464d13",
+      "seed": 902428,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "9df798e4dc11aa000179770f",
+      "seed": 902428,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "0dcec393d559de0e7069a6c8",
+      "seed": 902428,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "4dd7a5213d4680eb11cb02aa",
+      "seed": 902428,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "d04597892b65e11c4581f225",
+      "seed": 902428,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "b4aea55271db5604e61d7b99",
+      "seed": 902428,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "98860851f77e92b581a95707",
+      "seed": 902428,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "cb8bf0c68b1212643ee15448",
+      "seed": 902428,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "d9fd99814c3375b660b549ba",
+      "seed": 902428,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "5348b52210ab86589b7ae2da",
+      "seed": 902428,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c8c55c2be2b82f3c35feba32",
+      "seed": 902428,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "e48bdb33c417f9794125321a",
+      "seed": 902428,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "694ff0d89d43eaf4120bb796",
+      "seed": 902428,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "96e75940ab88a8d9a0d76cad",
+      "seed": 902428,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "5c8a3bd1071987247e0dd2b2",
+      "seed": 902428,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "013f367445b77524af4a9def",
+      "seed": 902428,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "a0445e00cffa399499845c11",
+      "seed": 902428,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "7696691b6475c9e3efd568f6",
+      "seed": 902428,
+      "family": "self_edit_transition",
+      "candidate_count": 14,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c831b14bbc9b4d92077a3e0b",
+      "seed": 902428,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "9d59f038426782df744bd695",
+      "seed": 902428,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "2b76897fc4e4339eb927b7ce",
+      "seed": 902428,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "d2f65f2bf697e700fa9e1428",
+      "seed": 902428,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "618ee8c39fbb4720c872a636",
+      "seed": 902428,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "bb0f3b7a58202529819ccc70",
+      "seed": 902428,
+      "family": "self_edit_transition",
+      "candidate_count": 6,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "f33a093521a53a9a2b8c2051",
+      "seed": 902428,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "74204ace1c3cb8b75e62d20c",
+      "seed": 902428,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "a2ab641ebd2b3af0360388f3",
+      "seed": 902428,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "92292919b73490b77d5d9639",
+      "seed": 902428,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "ccf2b386fec0ab44c453fa08",
+      "seed": 902428,
+      "family": "mutation_transition",
+      "candidate_count": 4,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "790ee979950b7e3e048cbac1",
+      "seed": 902428,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "788f19517378c1a4094296f0",
+      "seed": 902428,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "1a48cd79348904cdd22b4bd6",
+      "seed": 902428,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "9b5b7e930c030ff7fa4f5270",
+      "seed": 902428,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "d6a91552aa6bd53fe8d5b198",
+      "seed": 902428,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "5d17a04a809aabe21253ba6f",
+      "seed": 902428,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "85003c282c1af125d8e380b2",
+      "seed": 902428,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "13859032d18058f52287a5d8",
+      "seed": 902428,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "1ac5c890b1ad240331a73a9d",
+      "seed": 902428,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "bb68e18880e20159f574f476",
+      "seed": 902428,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "9cec8ec6ef1bfe75b5a0872c",
+      "seed": 902428,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c7539d74b370343979f6a3e2",
+      "seed": 902428,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "161422fee39cc06ff8e12c24",
+      "seed": 902428,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "ee515ee709197ef463fd78b8",
+      "seed": 902429,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "3005f13b7db83d858ecdd8d1",
+      "seed": 902429,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "4330b8b67411b492ceb90f37",
+      "seed": 902429,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "864e7ac7d2a027bb93c0090b",
+      "seed": 902429,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "ac2b13c259d0398ca75add4a",
+      "seed": 902429,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "a49b382a55556723a83319f5",
+      "seed": 902429,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "e0dfd6374fb1f97509d4c7e0",
+      "seed": 902429,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "2f6bb3a098321037a94273a1",
+      "seed": 902429,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "8b6966dd6fd6c4ff6edcb284",
+      "seed": 902429,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "6fe54927eb32520a6ae2ea07",
+      "seed": 902429,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "33299169823ffe86e8ee63fd",
+      "seed": 902429,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "87300f083b7f88ce6b775e8d",
+      "seed": 902429,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "e9a0611b21676478b8325f5b",
+      "seed": 902429,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c4e6187366459b2d79cbf6d0",
+      "seed": 902429,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "2aa10dda0c5efe90f5cfd2b0",
+      "seed": 902429,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "700327a125ac36682ac705cc",
+      "seed": 902429,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "44cd075e669d06d0dd9d0757",
+      "seed": 902429,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "20f9d52687d85106b4d83eb5",
+      "seed": 902429,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "0c84fe2bfac1d40cd4d3e906",
+      "seed": 902429,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "d34f36e26c6b153b409080e3",
+      "seed": 902429,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "870cf227c28126e2ed76a9d9",
+      "seed": 902429,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "ebbc6ce4fe397afcf2df07f1",
+      "seed": 902429,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "cd1fa0bbfa0bdb1e999b6ee8",
+      "seed": 902429,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "27b782630392cfe6d8d3398d",
+      "seed": 902429,
+      "family": "self_edit_transition",
+      "candidate_count": 2,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "3cf8c8d27f3bb6722b748a75",
+      "seed": 902429,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "59814dca0e35e13f80bc6552",
+      "seed": 902429,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "4a7423ed92efd22f492cb489",
+      "seed": 902429,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "ebee048839ca7d034ae7ea0b",
+      "seed": 902429,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "96cd057746ce4492d6f207c1",
+      "seed": 902429,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "0e6a540eeb0b696ba65c36a1",
+      "seed": 902429,
+      "family": "self_edit_transition",
+      "candidate_count": 18,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "41143de17774fea2a7c4d2b6",
+      "seed": 902429,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "1a69319803091c5b71753761",
+      "seed": 902429,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "f110bf0c150a283905c44ec3",
+      "seed": 902429,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "828024029f07323d40191c21",
+      "seed": 902429,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "515b6c84ccc09c85297775a0",
+      "seed": 902429,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "10985a0068897bc06516d0f9",
+      "seed": 902429,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "b9b7a68e8c89dabc841cbd16",
+      "seed": 902429,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "38fd8dad5b2519619a65891b",
+      "seed": 902429,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "4b3718959941280bc2431fa4",
+      "seed": 902429,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "b10869eadd065081646a195e",
+      "seed": 902429,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "d27a85933ee924c8736e58bd",
+      "seed": 902429,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "7359ea5f96de7baf3f18c248",
+      "seed": 902429,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "da1d90a17568ecd0e6a86c4f",
+      "seed": 902429,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "b5f127ce67e76e133ac43863",
+      "seed": 902429,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "338c885257b627151e2474dc",
+      "seed": 902429,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "3efdb1a4b11cd3282ae7e191",
+      "seed": 902429,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "7f1bf3f5e47d229abd2f80b6",
+      "seed": 902429,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "230ef37540c44f02edc5df08",
+      "seed": 902429,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "d4ded3889de38a7712e97cbd",
+      "seed": 902430,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "5b9bc483ee9242faa77cf16d",
+      "seed": 902430,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "cb145c6dceacd90472136ad3",
+      "seed": 902430,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "564166257a15bb86cc4d835c",
+      "seed": 902430,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "914f3056530fdecc74fced95",
+      "seed": 902430,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "9f566a135043be50909599cd",
+      "seed": 902430,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "8c28190ef3f130fd5d8fbba9",
+      "seed": 902430,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c1785413c4de57546af131f6",
+      "seed": 902430,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "012b1feafbd74f343e2ea851",
+      "seed": 902430,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "21a6e7df44b3a723a02d430a",
+      "seed": 902430,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "6b4a3d072e36eeb1955105dc",
+      "seed": 902430,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "08367c66dac40258330cbac7",
+      "seed": 902430,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "f7fbb69f82acdff5fe1c1715",
+      "seed": 902430,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "04d7bb26cbe5cc029eaeebc8",
+      "seed": 902430,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "16f24e152743af0f6aaf6e79",
+      "seed": 902430,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "6369db5902fccdaf374ece06",
+      "seed": 902430,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "9c12e02ab059e7ed39f6eae5",
+      "seed": 902430,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "919a41e8a65244b3a53f0a4a",
+      "seed": 902430,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "38b2ed777407afa31f049788",
+      "seed": 902430,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "b30a645b2b7c4a3c46423aba",
+      "seed": 902430,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "86121aec92b2b3b3f1d8c4bd",
+      "seed": 902430,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "2a1ff700a0a0108e20fe41e3",
+      "seed": 902430,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "d4aa20340dd3120bdd6d8594",
+      "seed": 902430,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "d2068ee197444d2de9a80c6b",
+      "seed": 902430,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "7e80a451220b16d0198879d0",
+      "seed": 902430,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "535b8fc25cd484be81b2b049",
+      "seed": 902430,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "72f0aaa3f4e1a2cc4f1b1759",
+      "seed": 902430,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "eb7f9619265e07ad0bfdabfc",
+      "seed": 902430,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c9a6f8ab13eeeb0a01da776d",
+      "seed": 902430,
+      "family": "mutation_transition",
+      "candidate_count": 4,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "5080994d988ff8fcd428f23a",
+      "seed": 902430,
+      "family": "self_edit_transition",
+      "candidate_count": 14,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "d036d39056def9a525452ba8",
+      "seed": 902430,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "915ee09475eba37d393f6050",
+      "seed": 902430,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "70028053e01bef12dfd34cae",
+      "seed": 902430,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "b5a20242ef1065985630c7a2",
+      "seed": 902430,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "565a2ab3a5e8c2f235a5909d",
+      "seed": 902430,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "787e3342a2a13d126923fa0e",
+      "seed": 902430,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "8990d9882d78d3832e24c14a",
+      "seed": 902430,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "5df6b1bd52e6f9523f4fadcb",
+      "seed": 902430,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "a833e79b42f7d0a6296dc59e",
+      "seed": 902430,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "531a853d0a7485c6f36ae223",
+      "seed": 902430,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "1872b1d3f470e01c35cbbdf1",
+      "seed": 902430,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "9414b6b25dade20a8ce46aaf",
+      "seed": 902430,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "acdb26d14231baa5510a6590",
+      "seed": 902430,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "ec724729e9235cbbc50087d7",
+      "seed": 902430,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "09b7949e282926f84f85275d",
+      "seed": 902430,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "c179c265f5f748c8b3e0191b",
+      "seed": 902430,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "e04fbcbd961b59f491e97291",
+      "seed": 902430,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "d0491eadd822f86cbf171a3f",
+      "seed": 902430,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "b4d8d6b2ab0296def2cc2e49",
+      "seed": 902431,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "306e127f304e516d9cd71ab3",
+      "seed": 902431,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "e8257d71c2ba3d53a40f717f",
+      "seed": 902431,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "10046ba690a2a786d9b50f1e",
+      "seed": 902431,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "5a45024dcb62217d682984a0",
+      "seed": 902431,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "eb6e7b4962cc3737f6246494",
+      "seed": 902431,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "6bae32bea9e9cfea558e4a80",
+      "seed": 902431,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "e39b68c1b363574c6e3167d9",
+      "seed": 902431,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "ecaa1b6edd68c1bbceed64b9",
+      "seed": 902431,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "d04078ccadb90a0ce31d5903",
+      "seed": 902431,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c255e3590a7ce4b603588127",
+      "seed": 902431,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "64146abbc0e13b149b2f85f4",
+      "seed": 902431,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c04ccc3cafacbe22edc60936",
+      "seed": 902431,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "1a2c8b37927c66225a086061",
+      "seed": 902431,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "f1726a1cee6a05cf5f23598a",
+      "seed": 902431,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "a71a4fdb607c9457ba096c62",
+      "seed": 902431,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "dd96af11c3de34353ca35d7b",
+      "seed": 902431,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "7b4624937551bdff4cdc9256",
+      "seed": 902431,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "d1d8cc21952813a8b7a577f3",
+      "seed": 902431,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "d18612441c3ef23e79549e45",
+      "seed": 902431,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c61ec9a549c4d4159f632350",
+      "seed": 902431,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "f8e56ec0819fc7a1ca281481",
+      "seed": 902431,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "017283928fae4280cc6bd27e",
+      "seed": 902431,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "932c8f023b94f05716dc3aba",
+      "seed": 902431,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "acd0db68cbd257870d348cfb",
+      "seed": 902431,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "8840fa5b40e578e716bc1407",
+      "seed": 902431,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "088257c7a8e48440d64fde61",
+      "seed": 902431,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "8cd22d94b0b2b6ecafafcc45",
+      "seed": 902431,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "1d4f95429e0a6006e7a38407",
+      "seed": 902431,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "6c681c772807910b619566bb",
+      "seed": 902431,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "f0761fc2c1e623a1db994ef1",
+      "seed": 902431,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c3b9e0c5e71a267429b11ebf",
+      "seed": 902431,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "62430ad6e3032a10df98fdf1",
+      "seed": 902431,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "aa78c71911fcc7a49e47106b",
+      "seed": 902431,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "ef33ae824cf3baf9f5155f0c",
+      "seed": 902431,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "1e538bc33f6b9464be9c8332",
+      "seed": 902431,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "0da4e2b63fa56ed537fbaaf6",
+      "seed": 902431,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "77574b48b8e8ed960e638e2b",
+      "seed": 902431,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 0
+    },
+    {
+      "id": "85aa528fe4ec297056b2fc62",
+      "seed": 902431,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "8f59636e26f18bde916dce75",
+      "seed": 902431,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "ba1c5d7061bcd521811b315a",
+      "seed": 902431,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "f0776a8bbfeaa9d404ba8173",
+      "seed": 902431,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "2b46b9371bc8bb30d311fd71",
+      "seed": 902431,
+      "family": "transform_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c077b9ab9f512ae86675fc7f",
+      "seed": 902431,
+      "family": "ast_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "5ddc4ed6531de3948da193ed",
+      "seed": 902431,
+      "family": "novel_operator_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "9dbb69725555b9f5d8f78a2f",
+      "seed": 902431,
+      "family": "stack_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    },
+    {
+      "id": "c7dbcbec6e2be2a3dfe8f123",
+      "seed": 902431,
+      "family": "mutation_transition",
+      "candidate_count": 20,
+      "baseline_correct": 0,
+      "top20_reachable": 1
+    },
+    {
+      "id": "8d9904937af2441542b20c5f",
+      "seed": 902431,
+      "family": "self_edit_transition",
+      "candidate_count": 20,
+      "baseline_correct": 1,
+      "top20_reachable": 1
+    }
+  ]
+}

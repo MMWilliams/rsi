@@ -1,0 +1,122 @@
+[
+  {
+    "label": "routing rep 1",
+    "run": "complexity-improver-confirmation-20260920",
+    "protocol": "EXPERIMENT-complexity-improver-confirmation.md",
+    "protocol_sha16": "2cac1e3e408e25be",
+    "protocol_sha_now16": "2cac1e3e408e25be",
+    "seeds": {
+      "history_a": [
+        912100,
+        912111
+      ],
+      "history_b": [
+        912200,
+        912211
+      ],
+      "transfer": [
+        912300,
+        912311
+      ]
+    },
+    "gates": {
+      "C1_contextual_value": true,
+      "C2_improver_growth": true
+    },
+    "audit_passed": true,
+    "tasks_rebuilt": 1728,
+    "labels_rechecked": 160912,
+    "audit_failures": 0
+  },
+  {
+    "label": "routing rep 2",
+    "run": "complexity-improver-confirmation-rep2-20260920",
+    "protocol": "EXPERIMENT-complexity-improver-confirmation.md",
+    "protocol_sha16": "2cac1e3e408e25be",
+    "protocol_sha_now16": "2cac1e3e408e25be",
+    "seeds": {
+      "history_a": [
+        913100,
+        913111
+      ],
+      "history_b": [
+        913200,
+        913211
+      ],
+      "transfer": [
+        913300,
+        913311
+      ]
+    },
+    "gates": {
+      "C1_contextual_value": true,
+      "C2_improver_growth": true
+    },
+    "audit_passed": true,
+    "tasks_rebuilt": 1728,
+    "labels_rechecked": 161932,
+    "audit_failures": 0
+  },
+  {
+    "label": "construction rep 1",
+    "run": "construction-improver-confirmation-20260921",
+    "protocol": "EXPERIMENT-construction-improver-confirmation.md",
+    "protocol_sha16": "0ce1ad60bae102cf",
+    "protocol_sha_now16": "0ce1ad60bae102cf",
+    "seeds": {
+      "history_a": [
+        916100,
+        916111
+      ],
+      "history_b": [
+        916200,
+        916211
+      ],
+      "transfer": [
+        916300,
+        916311
+      ]
+    },
+    "gates": {
+      "E1_construction_beats_pooling": true,
+      "E2_construction_growth": true,
+      "E3_growth_exceeds_data_volume": true,
+      "E4_monotone": true
+    },
+    "audit_passed": true,
+    "tasks_rebuilt": 1728,
+    "labels_rechecked": 161452,
+    "audit_failures": 0
+  },
+  {
+    "label": "construction rep 2",
+    "run": "construction-improver-confirmation-rep2-20260921",
+    "protocol": "EXPERIMENT-construction-improver-confirmation.md",
+    "protocol_sha16": "0ce1ad60bae102cf",
+    "protocol_sha_now16": "0ce1ad60bae102cf",
+    "seeds": {
+      "history_a": [
+        917100,
+        917111
+      ],
+      "history_b": [
+        917200,
+        917211
+      ],
+      "transfer": [
+        917300,
+        917311
+      ]
+    },
+    "gates": {
+      "E1_construction_beats_pooling": true,
+      "E2_construction_growth": true,
+      "E3_growth_exceeds_data_volume": true,
+      "E4_monotone": false
+    },
+    "audit_passed": true,
+    "tasks_rebuilt": 1728,
+    "labels_rechecked": 161732,
+    "audit_failures": 0
+  }
+]

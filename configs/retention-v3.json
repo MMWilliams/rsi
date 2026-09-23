@@ -1,0 +1,22 @@
+{
+  "name": "retention-v3",
+  "protocol": "EXPERIMENT-v3-retention.md",
+  "source_run": "runs/pilot-20260916-v2-complete",
+  "bank_seed": 9162603,
+  "max_atoms": 4,
+  "visible_examples": 3,
+  "hidden_examples": 13,
+  "bank_counts": {"validation_round1": 12, "validation_round2": 12, "final": 24},
+  "model_id": "Qwen/Qwen3-0.6B",
+  "model_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "neural_seed": 17,
+  "samples_per_final_task": 64,
+  "validation_samples": 64,
+  "pass_k": [1, 4, 8, 16, 32, 64],
+  "max_new_tokens": 96,
+  "generation_batch_size": 64,
+  "lora_steps": 48,
+  "lora_batch_size": 8,
+  "lora_learning_rate": 0.0002,
+  "device": "cuda:1"
+}

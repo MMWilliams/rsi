@@ -1,0 +1,474 @@
+{
+  "scope": "opened development",
+  "source_tasks": 96,
+  "source_survivor_labels": 1527,
+  "target": {
+    "tasks": 192,
+    "candidate_choices_checked": 960,
+    "new_model_predictions": 2847,
+    "zero_e0": 26,
+    "top100_survivor_rows": 2847,
+    "totals": {
+      "one_each": {
+        "e0": 55,
+        "familiar_plain50": 59,
+        "familiar_sensor50": 60,
+        "a_plain100": 83
+      },
+      "budgeted": {
+        "e0": 46,
+        "familiar_plain50": 50,
+        "familiar_sensor50": 48,
+        "a_plain100": 62
+      }
+    },
+    "comparisons": {
+      "familiar_plain50": {
+        "one_each": {
+          "gain": 4,
+          "positive_banks": 3,
+          "losing_banks": 1,
+          "interval": [
+            -1,
+            11
+          ]
+        },
+        "budgeted": {
+          "gain": 4,
+          "positive_banks": 4,
+          "losing_banks": 0,
+          "interval": [
+            1,
+            8
+          ]
+        }
+      },
+      "familiar_sensor50": {
+        "one_each": {
+          "gain": 5,
+          "positive_banks": 6,
+          "losing_banks": 1,
+          "interval": [
+            0,
+            10
+          ]
+        },
+        "budgeted": {
+          "gain": 2,
+          "positive_banks": 3,
+          "losing_banks": 1,
+          "interval": [
+            -2,
+            6
+          ]
+        }
+      },
+      "a_plain100": {
+        "one_each": {
+          "gain": 28,
+          "positive_banks": 18,
+          "losing_banks": 0,
+          "interval": [
+            19,
+            38
+          ]
+        },
+        "budgeted": {
+          "gain": 16,
+          "positive_banks": 14,
+          "losing_banks": 0,
+          "interval": [
+            10,
+            22
+          ]
+        }
+      }
+    },
+    "banks": [
+      {
+        "seed": 903200,
+        "zero": 1,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_plain100": 2
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_plain100": 2
+        }
+      },
+      {
+        "seed": 903201,
+        "zero": 1,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 3,
+          "a_plain100": 3
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_plain100": 2
+        }
+      },
+      {
+        "seed": 903202,
+        "zero": 0,
+        "one_each": {
+          "e0": 1,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 2,
+          "a_plain100": 5
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 1,
+          "a_plain100": 3
+        }
+      },
+      {
+        "seed": 903203,
+        "zero": 2,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_plain100": 5
+        },
+        "budgeted": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_plain100": 4
+        }
+      },
+      {
+        "seed": 903204,
+        "zero": 1,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_plain100": 2
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_plain100": 2
+        }
+      },
+      {
+        "seed": 903205,
+        "zero": 2,
+        "one_each": {
+          "e0": 4,
+          "familiar_plain50": 4,
+          "familiar_sensor50": 4,
+          "a_plain100": 5
+        },
+        "budgeted": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_plain100": 3
+        }
+      },
+      {
+        "seed": 903206,
+        "zero": 3,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 3,
+          "a_plain100": 4
+        },
+        "budgeted": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_plain100": 4
+        }
+      },
+      {
+        "seed": 903207,
+        "zero": 1,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_plain100": 3
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_plain100": 3
+        }
+      },
+      {
+        "seed": 903208,
+        "zero": 0,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 1,
+          "a_plain100": 2
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 0,
+          "a_plain100": 1
+        }
+      },
+      {
+        "seed": 903209,
+        "zero": 2,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 4,
+          "a_plain100": 4
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_plain100": 3
+        }
+      },
+      {
+        "seed": 903210,
+        "zero": 2,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_plain100": 4
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_plain100": 3
+        }
+      },
+      {
+        "seed": 903211,
+        "zero": 1,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 5,
+          "familiar_sensor50": 4,
+          "a_plain100": 5
+        },
+        "budgeted": {
+          "e0": 3,
+          "familiar_plain50": 4,
+          "familiar_sensor50": 3,
+          "a_plain100": 4
+        }
+      },
+      {
+        "seed": 903212,
+        "zero": 1,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_plain100": 4
+        },
+        "budgeted": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_plain100": 3
+        }
+      },
+      {
+        "seed": 903213,
+        "zero": 1,
+        "one_each": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 1,
+          "a_plain100": 1
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 1,
+          "a_plain100": 1
+        }
+      },
+      {
+        "seed": 903214,
+        "zero": 3,
+        "one_each": {
+          "e0": 4,
+          "familiar_plain50": 5,
+          "familiar_sensor50": 4,
+          "a_plain100": 5
+        },
+        "budgeted": {
+          "e0": 4,
+          "familiar_plain50": 5,
+          "familiar_sensor50": 4,
+          "a_plain100": 5
+        }
+      },
+      {
+        "seed": 903215,
+        "zero": 0,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_plain100": 4
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 1,
+          "a_plain100": 2
+        }
+      },
+      {
+        "seed": 903216,
+        "zero": 0,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 3,
+          "a_plain100": 2
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 2,
+          "a_plain100": 1
+        }
+      },
+      {
+        "seed": 903217,
+        "zero": 1,
+        "one_each": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 1,
+          "a_plain100": 2
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 1,
+          "a_plain100": 2
+        }
+      },
+      {
+        "seed": 903218,
+        "zero": 0,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_plain100": 5
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 1,
+          "a_plain100": 2
+        }
+      },
+      {
+        "seed": 903219,
+        "zero": 0,
+        "one_each": {
+          "e0": 0,
+          "familiar_plain50": 0,
+          "familiar_sensor50": 0,
+          "a_plain100": 0
+        },
+        "budgeted": {
+          "e0": 0,
+          "familiar_plain50": 0,
+          "familiar_sensor50": 0,
+          "a_plain100": 0
+        }
+      },
+      {
+        "seed": 903220,
+        "zero": 1,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_plain100": 5
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_plain100": 3
+        }
+      },
+      {
+        "seed": 903221,
+        "zero": 1,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 3,
+          "a_plain100": 4
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 3,
+          "a_plain100": 4
+        }
+      },
+      {
+        "seed": 903222,
+        "zero": 0,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_plain100": 3
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 1,
+          "a_plain100": 2
+        }
+      },
+      {
+        "seed": 903223,
+        "zero": 2,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_plain100": 4
+        },
+        "budgeted": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_plain100": 3
+        }
+      }
+    ]
+  }
+}

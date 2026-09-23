@@ -1,0 +1,231 @@
+{
+  "scope": "opened development; improver growth in the complexity-partition environment",
+  "history_pool_banks": 24,
+  "target_panel": "candidate-conditioned-query-transfer-20260918",
+  "target_banks": 12,
+  "default_rule": "most confident specialist per task, zero knowledge",
+  "default_total": 350,
+  "oracle_total": 439,
+  "curve": {
+    "2": {
+      "windows": 23,
+      "expected_total": 343.304347826087,
+      "min_total": 338,
+      "max_total": 349,
+      "expected_per_bank": [
+        29.043478260869566,
+        26.130434782608695,
+        29.17391304347826,
+        31.565217391304348,
+        26.695652173913043,
+        25.869565217391305,
+        29.043478260869566,
+        28.130434782608695,
+        30.217391304347824,
+        28.565217391304348,
+        31.956521739130434,
+        26.91304347826087
+      ],
+      "vs_default": {
+        "gain": -6,
+        "positive_banks": 3,
+        "losing_banks": 6,
+        "interval": [
+          -15,
+          3
+        ]
+      }
+    },
+    "4": {
+      "windows": 21,
+      "expected_total": 351.8571428571429,
+      "min_total": 341,
+      "max_total": 360,
+      "expected_per_bank": [
+        31.238095238095237,
+        28.238095238095237,
+        29.714285714285715,
+        30.428571428571427,
+        28.19047619047619,
+        27.904761904761905,
+        29.761904761904763,
+        30.095238095238095,
+        32.904761904761905,
+        27.666666666666668,
+        29.238095238095237,
+        26.476190476190474
+      ],
+      "vs_default": {
+        "gain": 1,
+        "positive_banks": 4,
+        "losing_banks": 6,
+        "interval": [
+          -11,
+          14
+        ]
+      }
+    },
+    "8": {
+      "windows": 17,
+      "expected_total": 360.52941176470586,
+      "min_total": 352,
+      "max_total": 368,
+      "expected_per_bank": [
+        32.76470588235294,
+        28.41176470588235,
+        30.235294117647058,
+        30.176470588235293,
+        29.941176470588236,
+        29.11764705882353,
+        30.11764705882353,
+        30.647058823529413,
+        34.35294117647059,
+        28.352941176470587,
+        28.823529411764707,
+        27.58823529411765
+      ],
+      "vs_default": {
+        "gain": 10,
+        "positive_banks": 7,
+        "losing_banks": 4,
+        "interval": [
+          -4,
+          24
+        ]
+      }
+    },
+    "12": {
+      "windows": 13,
+      "expected_total": 362.8461538461539,
+      "min_total": 354,
+      "max_total": 372,
+      "expected_per_bank": [
+        33.46153846153846,
+        29.076923076923077,
+        29.692307692307693,
+        29.153846153846153,
+        30.923076923076923,
+        29.076923076923077,
+        30.846153846153847,
+        29.76923076923077,
+        34.53846153846154,
+        28.846153846153847,
+        29.615384615384617,
+        27.846153846153847
+      ],
+      "vs_default": {
+        "gain": 14,
+        "positive_banks": 7,
+        "losing_banks": 3,
+        "interval": [
+          -1,
+          29
+        ]
+      }
+    },
+    "16": {
+      "windows": 9,
+      "expected_total": 363.6666666666667,
+      "min_total": 358,
+      "max_total": 368,
+      "expected_per_bank": [
+        33.111111111111114,
+        29.22222222222222,
+        29.88888888888889,
+        29.88888888888889,
+        30.0,
+        28.333333333333332,
+        30.333333333333332,
+        30.11111111111111,
+        34.77777777777778,
+        29.0,
+        30.444444444444443,
+        28.555555555555557
+      ],
+      "vs_default": {
+        "gain": 13,
+        "positive_banks": 7,
+        "losing_banks": 3,
+        "interval": [
+          0,
+          26
+        ]
+      }
+    },
+    "24": {
+      "windows": 1,
+      "expected_total": 369.0,
+      "min_total": 369,
+      "max_total": 369,
+      "expected_per_bank": [
+        31.0,
+        30.0,
+        31.0,
+        29.0,
+        31.0,
+        28.0,
+        32.0,
+        35.0,
+        34.0,
+        29.0,
+        31.0,
+        28.0
+      ],
+      "vs_default": {
+        "gain": 19,
+        "positive_banks": 8,
+        "losing_banks": 2,
+        "interval": [
+          5,
+          33
+        ]
+      }
+    }
+  },
+  "growth_largest_minus_smallest": {
+    "gain": 25,
+    "positive_banks": 9,
+    "losing_banks": 2,
+    "interval": [
+      8,
+      42
+    ]
+  },
+  "contextual_largest_minus_default": {
+    "gain": 19,
+    "positive_banks": 8,
+    "losing_banks": 2,
+    "interval": [
+      5,
+      33
+    ]
+  },
+  "gates": {
+    "C1_contextual_value": {
+      "gain": 19,
+      "positive_banks": 8,
+      "losing_banks": 2,
+      "interval": [
+        5,
+        33
+      ],
+      "passed": true
+    },
+    "C2_improver_growth": {
+      "gain": 25,
+      "positive_banks": 9,
+      "losing_banks": 2,
+      "interval": [
+        8,
+        42
+      ],
+      "passed": true
+    }
+  },
+  "limits": [
+    "Opened panels; development evidence. A frozen fresh-bank confirmation is a separate run.",
+    "Contiguous windows over the same history pool are not independent samples.",
+    "The complexity bin defining the specialists is latent but derived from the old ranker order, so it is not independent of it.",
+    "Oracle uses final labels and is not deployable."
+  ]
+}

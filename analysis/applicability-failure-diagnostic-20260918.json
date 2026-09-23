@@ -1,0 +1,276 @@
+{
+  "scope": "opened diagnostic; oracle action uses final labels",
+  "domains": {
+    "familiar": {
+      "tasks": 96,
+      "all": {
+        "tasks": 96,
+        "positive_effect": 7,
+        "negative_effect": 18,
+        "effect_mse": 0.2620820073953201,
+        "conservative": {
+          "accepted": 12,
+          "positive_accepted": 3,
+          "negative_accepted": 2,
+          "realized_gain": 1,
+          "missed_positive": 4
+        },
+        "zero": {
+          "accepted": 48,
+          "positive_accepted": 5,
+          "negative_accepted": 10,
+          "realized_gain": -5,
+          "missed_positive": 2
+        }
+      },
+      "queried": {
+        "tasks": 47,
+        "positive_effect": 4,
+        "negative_effect": 7,
+        "effect_mse": 0.2218836970288886,
+        "conservative": {
+          "accepted": 6,
+          "positive_accepted": 3,
+          "negative_accepted": 0,
+          "realized_gain": 3,
+          "missed_positive": 1
+        },
+        "zero": {
+          "accepted": 25,
+          "positive_accepted": 3,
+          "negative_accepted": 3,
+          "realized_gain": 0,
+          "missed_positive": 1
+        }
+      }
+    },
+    "shifted": {
+      "tasks": 96,
+      "all": {
+        "tasks": 96,
+        "positive_effect": 22,
+        "negative_effect": 2,
+        "effect_mse": 0.20375087541448836,
+        "conservative": {
+          "accepted": 19,
+          "positive_accepted": 9,
+          "negative_accepted": 0,
+          "realized_gain": 9,
+          "missed_positive": 13
+        },
+        "zero": {
+          "accepted": 59,
+          "positive_accepted": 18,
+          "negative_accepted": 1,
+          "realized_gain": 17,
+          "missed_positive": 4
+        }
+      },
+      "queried": {
+        "tasks": 49,
+        "positive_effect": 14,
+        "negative_effect": 0,
+        "effect_mse": 0.22520476805206824,
+        "conservative": {
+          "accepted": 9,
+          "positive_accepted": 4,
+          "negative_accepted": 0,
+          "realized_gain": 4,
+          "missed_positive": 10
+        },
+        "zero": {
+          "accepted": 32,
+          "positive_accepted": 12,
+          "negative_accepted": 0,
+          "realized_gain": 12,
+          "missed_positive": 2
+        }
+      }
+    }
+  },
+  "totals": {
+    "oracle_action_gain": 18,
+    "always_gain": 11,
+    "conservative_gain": 7,
+    "zero_gain": 12
+  },
+  "zero_vs_always": {
+    "gain": 1,
+    "positive_banks": 4,
+    "losing_banks": 2,
+    "interval": [
+      -5,
+      7
+    ]
+  },
+  "banks": [
+    {
+      "seed": 903400,
+      "oracle_action_gain": 1,
+      "always_gain": 1,
+      "conservative_gain": 0,
+      "zero_gain": 1
+    },
+    {
+      "seed": 903401,
+      "oracle_action_gain": 0,
+      "always_gain": -1,
+      "conservative_gain": 0,
+      "zero_gain": 0
+    },
+    {
+      "seed": 903402,
+      "oracle_action_gain": 0,
+      "always_gain": 0,
+      "conservative_gain": 0,
+      "zero_gain": 0
+    },
+    {
+      "seed": 903403,
+      "oracle_action_gain": 0,
+      "always_gain": -1,
+      "conservative_gain": 0,
+      "zero_gain": -1
+    },
+    {
+      "seed": 903404,
+      "oracle_action_gain": 0,
+      "always_gain": 0,
+      "conservative_gain": 0,
+      "zero_gain": 0
+    },
+    {
+      "seed": 903405,
+      "oracle_action_gain": 1,
+      "always_gain": 1,
+      "conservative_gain": 0,
+      "zero_gain": 1
+    },
+    {
+      "seed": 903406,
+      "oracle_action_gain": 0,
+      "always_gain": 0,
+      "conservative_gain": 0,
+      "zero_gain": 0
+    },
+    {
+      "seed": 903407,
+      "oracle_action_gain": 0,
+      "always_gain": 0,
+      "conservative_gain": 0,
+      "zero_gain": 0
+    },
+    {
+      "seed": 903408,
+      "oracle_action_gain": 1,
+      "always_gain": 0,
+      "conservative_gain": 1,
+      "zero_gain": 1
+    },
+    {
+      "seed": 903409,
+      "oracle_action_gain": 1,
+      "always_gain": 0,
+      "conservative_gain": 1,
+      "zero_gain": 1
+    },
+    {
+      "seed": 903410,
+      "oracle_action_gain": 1,
+      "always_gain": 1,
+      "conservative_gain": 0,
+      "zero_gain": 1
+    },
+    {
+      "seed": 903411,
+      "oracle_action_gain": 0,
+      "always_gain": 0,
+      "conservative_gain": 0,
+      "zero_gain": 0
+    },
+    {
+      "seed": 903412,
+      "oracle_action_gain": 2,
+      "always_gain": 1,
+      "conservative_gain": 0,
+      "zero_gain": 1
+    },
+    {
+      "seed": 903413,
+      "oracle_action_gain": 1,
+      "always_gain": 1,
+      "conservative_gain": 0,
+      "zero_gain": 1
+    },
+    {
+      "seed": 903414,
+      "oracle_action_gain": 2,
+      "always_gain": 1,
+      "conservative_gain": 2,
+      "zero_gain": 2
+    },
+    {
+      "seed": 903415,
+      "oracle_action_gain": 0,
+      "always_gain": -1,
+      "conservative_gain": 0,
+      "zero_gain": -1
+    },
+    {
+      "seed": 903416,
+      "oracle_action_gain": 1,
+      "always_gain": 1,
+      "conservative_gain": 1,
+      "zero_gain": 1
+    },
+    {
+      "seed": 903417,
+      "oracle_action_gain": 0,
+      "always_gain": 0,
+      "conservative_gain": 0,
+      "zero_gain": 0
+    },
+    {
+      "seed": 903418,
+      "oracle_action_gain": 2,
+      "always_gain": 2,
+      "conservative_gain": 0,
+      "zero_gain": 0
+    },
+    {
+      "seed": 903419,
+      "oracle_action_gain": 2,
+      "always_gain": 2,
+      "conservative_gain": 0,
+      "zero_gain": 2
+    },
+    {
+      "seed": 903420,
+      "oracle_action_gain": 2,
+      "always_gain": 2,
+      "conservative_gain": 2,
+      "zero_gain": 2
+    },
+    {
+      "seed": 903421,
+      "oracle_action_gain": 0,
+      "always_gain": 0,
+      "conservative_gain": 0,
+      "zero_gain": 0
+    },
+    {
+      "seed": 903422,
+      "oracle_action_gain": 1,
+      "always_gain": 1,
+      "conservative_gain": 0,
+      "zero_gain": 0
+    },
+    {
+      "seed": 903423,
+      "oracle_action_gain": 0,
+      "always_gain": 0,
+      "conservative_gain": 0,
+      "zero_gain": 0
+    }
+  ]
+}

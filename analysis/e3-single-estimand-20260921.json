@@ -1,0 +1,225 @@
+{
+  "scope": "E1/E2/E3 recomputed as single unrounded estimands with paired intervals; the frozen results.json rounded per-bank differences before summing, which is why E2 and pooled growth were 45/21 and 49/29 there instead of 46.2/20.2 and 48.3/29.3",
+  "runs": {
+    "rep1": {
+      "E1": {
+        "sum": 29.0,
+        "per_bank": [
+          2.0,
+          2.0,
+          3.0,
+          10.0,
+          0.0,
+          3.0,
+          2.0,
+          6.0,
+          0.0,
+          1.0,
+          -1.0,
+          1.0
+        ],
+        "positive_banks": 9,
+        "losing_banks": 1,
+        "bootstrap_interval": [
+          12.0,
+          50.0
+        ],
+        "exact_interval_on_rounded": [
+          12,
+          50
+        ]
+      },
+      "E2": {
+        "sum": 46.16666666666667,
+        "per_bank": [
+          2.67,
+          3.0,
+          4.17,
+          10.33,
+          0.67,
+          4.17,
+          1.17,
+          9.83,
+          3.17,
+          1.17,
+          2.5,
+          3.33
+        ],
+        "positive_banks": 12,
+        "losing_banks": 0,
+        "bootstrap_interval": [
+          28.166666666666675,
+          68.49999999999999
+        ],
+        "exact_interval_on_rounded": [
+          27,
+          67
+        ]
+      },
+      "pooled_growth": {
+        "sum": 20.166666666666668,
+        "per_bank": [
+          0.67,
+          1.5,
+          1.17,
+          0.17,
+          1.0,
+          1.83,
+          -1.33,
+          4.17,
+          3.83,
+          0.33,
+          3.83,
+          3.0
+        ],
+        "positive_banks": 11,
+        "losing_banks": 1,
+        "bootstrap_interval": [
+          9.166666666666668,
+          31.33333333333333
+        ],
+        "exact_interval_on_rounded": [
+          10,
+          32
+        ]
+      },
+      "E3": {
+        "sum": 26.000000000000004,
+        "per_bank": [
+          2.0,
+          1.5,
+          3.0,
+          10.17,
+          -0.33,
+          2.33,
+          2.5,
+          5.67,
+          -0.67,
+          0.83,
+          -1.33,
+          0.33
+        ],
+        "positive_banks": 9,
+        "losing_banks": 3,
+        "bootstrap_interval": [
+          7.833333333333346,
+          48.99999999999999
+        ],
+        "exact_interval_on_rounded": [
+          8,
+          48
+        ]
+      }
+    },
+    "rep2": {
+      "E1": {
+        "sum": 26.0,
+        "per_bank": [
+          6.0,
+          2.0,
+          2.0,
+          0.0,
+          3.0,
+          3.0,
+          8.0,
+          1.0,
+          -5.0,
+          2.0,
+          1.0,
+          3.0
+        ],
+        "positive_banks": 10,
+        "losing_banks": 1,
+        "bootstrap_interval": [
+          5.0,
+          46.0
+        ],
+        "exact_interval_on_rounded": [
+          5,
+          46
+        ]
+      },
+      "E2": {
+        "sum": 48.333333333333314,
+        "per_bank": [
+          8.33,
+          3.5,
+          2.33,
+          2.33,
+          4.83,
+          5.5,
+          6.5,
+          2.0,
+          1.5,
+          3.83,
+          3.83,
+          3.83
+        ],
+        "positive_banks": 12,
+        "losing_banks": 0,
+        "bootstrap_interval": [
+          36.16666666666666,
+          62.16666666666664
+        ],
+        "exact_interval_on_rounded": [
+          37,
+          62
+        ]
+      },
+      "pooled_growth": {
+        "sum": 29.33333333333334,
+        "per_bank": [
+          2.5,
+          2.67,
+          1.17,
+          2.17,
+          2.0,
+          2.67,
+          -0.67,
+          2.0,
+          5.67,
+          3.17,
+          3.5,
+          2.5
+        ],
+        "positive_banks": 11,
+        "losing_banks": 1,
+        "bootstrap_interval": [
+          19.66666666666667,
+          38.83333333333334
+        ],
+        "exact_interval_on_rounded": [
+          18,
+          40
+        ]
+      },
+      "E3": {
+        "sum": 18.999999999999986,
+        "per_bank": [
+          5.83,
+          0.83,
+          1.17,
+          0.17,
+          2.83,
+          2.83,
+          7.17,
+          0.0,
+          -4.17,
+          0.67,
+          0.33,
+          1.33
+        ],
+        "positive_banks": 10,
+        "losing_banks": 1,
+        "bootstrap_interval": [
+          0.1666666666666501,
+          38.33333333333333
+        ],
+        "exact_interval_on_rounded": [
+          0,
+          38
+        ]
+      }
+    }
+  }
+}

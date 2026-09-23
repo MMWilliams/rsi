@@ -1,0 +1,48 @@
+{
+  "scope": "full-budget selection among consistent hypotheses",
+  "catalog": {
+    "rows": 157878,
+    "digest": "64f81e1f091f7dd098385a88663b3546da58f45c06ad5b16ce229ad4a1d7c4c3"
+  },
+  "tasks": 4000,
+  "seed": 512101,
+  "free_rules_all_tasks": {
+    "occam": 0.702,
+    "density": 0.60525,
+    "slack": 0.718,
+    "consensus": 0.709,
+    "random": 0.6225
+  },
+  "mechanism_holdout": {
+    "test_tasks": 1937,
+    "learned": 0.7315436241610739,
+    "free": {
+      "occam": 0.7057305110996386,
+      "density": 0.5988642230252968,
+      "slack": 0.7279297883324729,
+      "consensus": 0.7186370676303562,
+      "random": 0.6159008776458441
+    }
+  },
+  "family_holdout": {
+    "withheld": [
+      "mod",
+      "popcount"
+    ],
+    "fit_tasks": 263,
+    "test_tasks": 3737,
+    "learned": 0.6944072785656944,
+    "free": {
+      "occam": 0.6936044955846936,
+      "density": 0.5921862456515922,
+      "slack": 0.704040674337704,
+      "consensus": 0.6952100615466952,
+      "random": 0.6034252073856035
+    }
+  },
+  "cost": {
+    "wall_seconds": 59.42799720000039,
+    "cpu_seconds": 138.71875,
+    "peak_rss_mb": 291.24608
+  }
+}

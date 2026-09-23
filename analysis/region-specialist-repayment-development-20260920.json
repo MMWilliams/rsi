@@ -1,0 +1,638 @@
+{
+  "scope": "opened development only; no frozen policy",
+  "question": "does one acquisition unit repay differently by region, and is that repayment stable and publicly predictable",
+  "acquisition_unit": "all verified top-100 candidate labels for one region across both source panels",
+  "width": 100,
+  "source_panels": [
+    "candidate-reranker-transfer-20260918",
+    "candidate-reranker-replication-20260918"
+  ],
+  "target_panels": [
+    "candidate-query-cost-transfer-20260918",
+    "combined-ranker-query-transfer-20260918",
+    "candidate-conditioned-query-transfer-20260918"
+  ],
+  "source": {
+    "transform_transition": {
+      "tasks": 192,
+      "labels": 19200,
+      "positive": 2038
+    },
+    "ast_transition": {
+      "tasks": 192,
+      "labels": 19152,
+      "positive": 364
+    },
+    "novel_operator_transition": {
+      "tasks": 192,
+      "labels": 19194,
+      "positive": 4385
+    },
+    "stack_transition": {
+      "tasks": 192,
+      "labels": 19006,
+      "positive": 7019
+    },
+    "mutation_transition": {
+      "tasks": 192,
+      "labels": 17792,
+      "positive": 7322
+    },
+    "self_edit_transition": {
+      "tasks": 192,
+      "labels": 14720,
+      "positive": 1778
+    }
+  },
+  "panels": {
+    "candidate-query-cost-transfer-20260918": {
+      "tasks": 576,
+      "reachable_head": 490,
+      "e0_total": 327,
+      "own_region_total": 423,
+      "own_region_repayment": {
+        "transform_transition": {
+          "tasks": 96,
+          "e0": 53,
+          "specialist": 81,
+          "gain": 28,
+          "banks": 12,
+          "positive_banks": 12,
+          "losing_banks": 0,
+          "interval": [
+            20,
+            37
+          ]
+        },
+        "ast_transition": {
+          "tasks": 96,
+          "e0": 12,
+          "specialist": 44,
+          "gain": 32,
+          "banks": 12,
+          "positive_banks": 11,
+          "losing_banks": 0,
+          "interval": [
+            23,
+            42
+          ]
+        },
+        "novel_operator_transition": {
+          "tasks": 96,
+          "e0": 45,
+          "specialist": 55,
+          "gain": 10,
+          "banks": 12,
+          "positive_banks": 7,
+          "losing_banks": 0,
+          "interval": [
+            4,
+            16
+          ]
+        },
+        "stack_transition": {
+          "tasks": 96,
+          "e0": 82,
+          "specialist": 90,
+          "gain": 8,
+          "banks": 12,
+          "positive_banks": 8,
+          "losing_banks": 1,
+          "interval": [
+            3,
+            13
+          ]
+        },
+        "mutation_transition": {
+          "tasks": 96,
+          "e0": 56,
+          "specialist": 70,
+          "gain": 14,
+          "banks": 12,
+          "positive_banks": 8,
+          "losing_banks": 2,
+          "interval": [
+            4,
+            24
+          ]
+        },
+        "self_edit_transition": {
+          "tasks": 96,
+          "e0": 79,
+          "specialist": 83,
+          "gain": 4,
+          "banks": 12,
+          "positive_banks": 3,
+          "losing_banks": 0,
+          "interval": [
+            0,
+            9
+          ]
+        }
+      },
+      "cross_region_gain": {
+        "transform_transition": {
+          "transform_transition": 28,
+          "ast_transition": -29,
+          "novel_operator_transition": -20,
+          "stack_transition": -5,
+          "mutation_transition": -21,
+          "self_edit_transition": -13
+        },
+        "ast_transition": {
+          "transform_transition": -11,
+          "ast_transition": 32,
+          "novel_operator_transition": -10,
+          "stack_transition": -9,
+          "mutation_transition": -9,
+          "self_edit_transition": -5
+        },
+        "novel_operator_transition": {
+          "transform_transition": -27,
+          "ast_transition": -18,
+          "novel_operator_transition": 10,
+          "stack_transition": -3,
+          "mutation_transition": -24,
+          "self_edit_transition": -15
+        },
+        "stack_transition": {
+          "transform_transition": -52,
+          "ast_transition": -12,
+          "novel_operator_transition": -23,
+          "stack_transition": 8,
+          "mutation_transition": -19,
+          "self_edit_transition": -4
+        },
+        "mutation_transition": {
+          "transform_transition": -40,
+          "ast_transition": -8,
+          "novel_operator_transition": -26,
+          "stack_transition": -2,
+          "mutation_transition": 14,
+          "self_edit_transition": -12
+        },
+        "self_edit_transition": {
+          "transform_transition": -43,
+          "ast_transition": -16,
+          "novel_operator_transition": -54,
+          "stack_transition": -48,
+          "mutation_transition": -42,
+          "self_edit_transition": 4
+        }
+      },
+      "region_statistics": {
+        "transform_transition": {
+          "pool": 158.625,
+          "head": 100.0,
+          "margin": 0.9886813363089546,
+          "spread": 3.3775182783302724,
+          "distinct": 1.0,
+          "log_pool": 5.054524382640355
+        },
+        "ast_transition": {
+          "pool": 512.7083333333334,
+          "head": 99.02083333333333,
+          "margin": 0.2684505838432111,
+          "spread": 1.4579468612608515,
+          "distinct": 1.0,
+          "log_pool": 6.194780339475277
+        },
+        "novel_operator_transition": {
+          "pool": 252.4375,
+          "head": 99.3125,
+          "margin": 0.20105249352402207,
+          "spread": 1.5314286157139358,
+          "distinct": 1.0,
+          "log_pool": 5.52250751341712
+        },
+        "stack_transition": {
+          "pool": 218.02083333333334,
+          "head": 98.875,
+          "margin": 0.35799474422254757,
+          "spread": 2.0288069851530297,
+          "distinct": 1.0,
+          "log_pool": 5.34612351098027
+        },
+        "mutation_transition": {
+          "pool": 148.58333333333334,
+          "head": 89.5625,
+          "margin": 0.2826259697330329,
+          "spread": 1.9404543059379862,
+          "distinct": 1.0,
+          "log_pool": 4.8587121918293175
+        },
+        "self_edit_transition": {
+          "pool": 114.27083333333333,
+          "head": 72.10416666666667,
+          "margin": 0.8140018356548312,
+          "spread": 2.774060677966137,
+          "distinct": 1.0,
+          "log_pool": 4.383395810169474
+        }
+      }
+    },
+    "combined-ranker-query-transfer-20260918": {
+      "tasks": 576,
+      "reachable_head": 487,
+      "e0_total": 344,
+      "own_region_total": 412,
+      "own_region_repayment": {
+        "transform_transition": {
+          "tasks": 96,
+          "e0": 59,
+          "specialist": 77,
+          "gain": 18,
+          "banks": 12,
+          "positive_banks": 10,
+          "losing_banks": 0,
+          "interval": [
+            12,
+            24
+          ]
+        },
+        "ast_transition": {
+          "tasks": 96,
+          "e0": 13,
+          "specialist": 45,
+          "gain": 32,
+          "banks": 12,
+          "positive_banks": 12,
+          "losing_banks": 0,
+          "interval": [
+            25,
+            39
+          ]
+        },
+        "novel_operator_transition": {
+          "tasks": 96,
+          "e0": 43,
+          "specialist": 57,
+          "gain": 14,
+          "banks": 12,
+          "positive_banks": 10,
+          "losing_banks": 1,
+          "interval": [
+            7,
+            22
+          ]
+        },
+        "stack_transition": {
+          "tasks": 96,
+          "e0": 79,
+          "specialist": 84,
+          "gain": 5,
+          "banks": 12,
+          "positive_banks": 5,
+          "losing_banks": 2,
+          "interval": [
+            -1,
+            12
+          ]
+        },
+        "mutation_transition": {
+          "tasks": 96,
+          "e0": 68,
+          "specialist": 62,
+          "gain": -6,
+          "banks": 12,
+          "positive_banks": 4,
+          "losing_banks": 6,
+          "interval": [
+            -18,
+            6
+          ]
+        },
+        "self_edit_transition": {
+          "tasks": 96,
+          "e0": 82,
+          "specialist": 87,
+          "gain": 5,
+          "banks": 12,
+          "positive_banks": 3,
+          "losing_banks": 0,
+          "interval": [
+            0,
+            12
+          ]
+        }
+      },
+      "cross_region_gain": {
+        "transform_transition": {
+          "transform_transition": 18,
+          "ast_transition": -26,
+          "novel_operator_transition": -33,
+          "stack_transition": -15,
+          "mutation_transition": -28,
+          "self_edit_transition": -17
+        },
+        "ast_transition": {
+          "transform_transition": -12,
+          "ast_transition": 32,
+          "novel_operator_transition": -13,
+          "stack_transition": -13,
+          "mutation_transition": -9,
+          "self_edit_transition": -2
+        },
+        "novel_operator_transition": {
+          "transform_transition": -28,
+          "ast_transition": -16,
+          "novel_operator_transition": 14,
+          "stack_transition": -3,
+          "mutation_transition": -14,
+          "self_edit_transition": -11
+        },
+        "stack_transition": {
+          "transform_transition": -47,
+          "ast_transition": -18,
+          "novel_operator_transition": -17,
+          "stack_transition": 5,
+          "mutation_transition": -24,
+          "self_edit_transition": -7
+        },
+        "mutation_transition": {
+          "transform_transition": -46,
+          "ast_transition": -1,
+          "novel_operator_transition": -31,
+          "stack_transition": -8,
+          "mutation_transition": -6,
+          "self_edit_transition": -5
+        },
+        "self_edit_transition": {
+          "transform_transition": -39,
+          "ast_transition": -10,
+          "novel_operator_transition": -53,
+          "stack_transition": -49,
+          "mutation_transition": -45,
+          "self_edit_transition": 5
+        }
+      },
+      "region_statistics": {
+        "transform_transition": {
+          "pool": 157.3125,
+          "head": 100.0,
+          "margin": 0.9176990879809063,
+          "spread": 3.3228752153154484,
+          "distinct": 1.0,
+          "log_pool": 5.046629695713464
+        },
+        "ast_transition": {
+          "pool": 503.9375,
+          "head": 99.6875,
+          "margin": 0.24471013804388728,
+          "spread": 1.4184622243404326,
+          "distinct": 1.0,
+          "log_pool": 6.180849595889376
+        },
+        "novel_operator_transition": {
+          "pool": 250.91666666666666,
+          "head": 99.25,
+          "margin": 0.19301129667144326,
+          "spread": 1.5335118381475903,
+          "distinct": 1.0,
+          "log_pool": 5.513465988174031
+        },
+        "stack_transition": {
+          "pool": 223.125,
+          "head": 100.0,
+          "margin": 0.2864098511345935,
+          "spread": 1.8267152545420071,
+          "distinct": 1.0,
+          "log_pool": 5.390458106475793
+        },
+        "mutation_transition": {
+          "pool": 140.66666666666666,
+          "head": 85.33333333333333,
+          "margin": 0.3103082350679973,
+          "spread": 2.039400106475201,
+          "distinct": 1.0,
+          "log_pool": 4.6915232202660535
+        },
+        "self_edit_transition": {
+          "pool": 122.6875,
+          "head": 73.79166666666667,
+          "margin": 0.9192275887360767,
+          "spread": 2.702991317572971,
+          "distinct": 1.0,
+          "log_pool": 4.355769097194671
+        }
+      }
+    },
+    "candidate-conditioned-query-transfer-20260918": {
+      "tasks": 576,
+      "reachable_head": 483,
+      "e0_total": 349,
+      "own_region_total": 418,
+      "own_region_repayment": {
+        "transform_transition": {
+          "tasks": 96,
+          "e0": 57,
+          "specialist": 84,
+          "gain": 27,
+          "banks": 12,
+          "positive_banks": 11,
+          "losing_banks": 0,
+          "interval": [
+            17,
+            38
+          ]
+        },
+        "ast_transition": {
+          "tasks": 96,
+          "e0": 16,
+          "specialist": 35,
+          "gain": 19,
+          "banks": 12,
+          "positive_banks": 9,
+          "losing_banks": 0,
+          "interval": [
+            12,
+            26
+          ]
+        },
+        "novel_operator_transition": {
+          "tasks": 96,
+          "e0": 52,
+          "specialist": 69,
+          "gain": 17,
+          "banks": 12,
+          "positive_banks": 9,
+          "losing_banks": 0,
+          "interval": [
+            10,
+            24
+          ]
+        },
+        "stack_transition": {
+          "tasks": 96,
+          "e0": 77,
+          "specialist": 86,
+          "gain": 9,
+          "banks": 12,
+          "positive_banks": 9,
+          "losing_banks": 1,
+          "interval": [
+            4,
+            14
+          ]
+        },
+        "mutation_transition": {
+          "tasks": 96,
+          "e0": 67,
+          "specialist": 60,
+          "gain": -7,
+          "banks": 12,
+          "positive_banks": 3,
+          "losing_banks": 5,
+          "interval": [
+            -19,
+            4
+          ]
+        },
+        "self_edit_transition": {
+          "tasks": 96,
+          "e0": 80,
+          "specialist": 84,
+          "gain": 4,
+          "banks": 12,
+          "positive_banks": 4,
+          "losing_banks": 0,
+          "interval": [
+            1,
+            7
+          ]
+        }
+      },
+      "cross_region_gain": {
+        "transform_transition": {
+          "transform_transition": 27,
+          "ast_transition": -28,
+          "novel_operator_transition": -35,
+          "stack_transition": -20,
+          "mutation_transition": -27,
+          "self_edit_transition": -17
+        },
+        "ast_transition": {
+          "transform_transition": -15,
+          "ast_transition": 19,
+          "novel_operator_transition": -15,
+          "stack_transition": -16,
+          "mutation_transition": -16,
+          "self_edit_transition": -2
+        },
+        "novel_operator_transition": {
+          "transform_transition": -35,
+          "ast_transition": -14,
+          "novel_operator_transition": 17,
+          "stack_transition": -6,
+          "mutation_transition": -24,
+          "self_edit_transition": -13
+        },
+        "stack_transition": {
+          "transform_transition": -51,
+          "ast_transition": -15,
+          "novel_operator_transition": -20,
+          "stack_transition": 9,
+          "mutation_transition": -15,
+          "self_edit_transition": -8
+        },
+        "mutation_transition": {
+          "transform_transition": -46,
+          "ast_transition": -6,
+          "novel_operator_transition": -39,
+          "stack_transition": -6,
+          "mutation_transition": -7,
+          "self_edit_transition": -3
+        },
+        "self_edit_transition": {
+          "transform_transition": -47,
+          "ast_transition": -8,
+          "novel_operator_transition": -46,
+          "stack_transition": -48,
+          "mutation_transition": -42,
+          "self_edit_transition": 4
+        }
+      },
+      "region_statistics": {
+        "transform_transition": {
+          "pool": 159.16666666666666,
+          "head": 100.0,
+          "margin": 0.8876958019540796,
+          "spread": 3.1997098722799007,
+          "distinct": 1.0,
+          "log_pool": 5.0579422218095065
+        },
+        "ast_transition": {
+          "pool": 509.1458333333333,
+          "head": 100.0,
+          "margin": 0.28937894265402425,
+          "spread": 1.5886061256804898,
+          "distinct": 1.0,
+          "log_pool": 6.20408192075021
+        },
+        "novel_operator_transition": {
+          "pool": 251.97916666666666,
+          "head": 99.47916666666667,
+          "margin": 0.22249467366436204,
+          "spread": 1.542097501661326,
+          "distinct": 1.0,
+          "log_pool": 5.523948188124621
+        },
+        "stack_transition": {
+          "pool": 215.9375,
+          "head": 100.0,
+          "margin": 0.3334831393519692,
+          "spread": 2.071437284462252,
+          "distinct": 1.0,
+          "log_pool": 5.353109945534393
+        },
+        "mutation_transition": {
+          "pool": 146.64583333333334,
+          "head": 91.52083333333333,
+          "margin": 0.29349190280691545,
+          "spread": 1.9579994069612638,
+          "distinct": 1.0,
+          "log_pool": 4.873234096315482
+        },
+        "self_edit_transition": {
+          "pool": 109.77083333333333,
+          "head": 65.0,
+          "margin": 0.8904253384821595,
+          "spread": 2.577562048997279,
+          "distinct": 1.0,
+          "log_pool": 4.137374476675465
+        }
+      }
+    }
+  },
+  "repayment_rank_by_panel": {
+    "candidate-query-cost-transfer-20260918": [
+      "ast_transition",
+      "transform_transition",
+      "mutation_transition",
+      "novel_operator_transition",
+      "stack_transition",
+      "self_edit_transition"
+    ],
+    "combined-ranker-query-transfer-20260918": [
+      "ast_transition",
+      "transform_transition",
+      "novel_operator_transition",
+      "stack_transition",
+      "self_edit_transition",
+      "mutation_transition"
+    ],
+    "candidate-conditioned-query-transfer-20260918": [
+      "transform_transition",
+      "ast_transition",
+      "novel_operator_transition",
+      "stack_transition",
+      "self_edit_transition",
+      "mutation_transition"
+    ]
+  },
+  "limits": [
+    "Opened panels; all gains are development evidence.",
+    "Specialists share E0 candidate order and pool, so this isolates ranking, not coverage.",
+    "Region identity is public via the Unicode block audit."
+  ]
+}

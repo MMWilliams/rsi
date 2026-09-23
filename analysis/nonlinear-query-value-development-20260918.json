@@ -1,0 +1,2420 @@
+{
+  "scope": "all target banks already opened; method screen only",
+  "source_rows": 576,
+  "early_feedback_rows": 288,
+  "later_feedback_rows": 864,
+  "sklearn_version": "1.7.2",
+  "panels": {
+    "meta_transfer": {
+      "logistic_c0.1": {
+        "correct": 343,
+        "selected_gain": 39,
+        "ast_calls": 0,
+        "brier": 0.14767658858578847,
+        "by_bank": [
+          {
+            "seed": 902426,
+            "correct": 33,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902427,
+            "correct": 30,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902428,
+            "correct": 31,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902429,
+            "correct": 31,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902430,
+            "correct": 29,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902431,
+            "correct": 31,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902432,
+            "correct": 28,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902433,
+            "correct": 33,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902434,
+            "correct": 25,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902435,
+            "correct": 23,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902436,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902437,
+            "correct": 25,
+            "selected_gain": 4,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "logistic_c1": {
+        "correct": 346,
+        "selected_gain": 42,
+        "ast_calls": 4,
+        "brier": 0.14833711033286429,
+        "by_bank": [
+          {
+            "seed": 902426,
+            "correct": 34,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902427,
+            "correct": 30,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902428,
+            "correct": 32,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902429,
+            "correct": 31,
+            "selected_gain": 3,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902430,
+            "correct": 30,
+            "selected_gain": 2,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902431,
+            "correct": 31,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902432,
+            "correct": 27,
+            "selected_gain": 3,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902433,
+            "correct": 33,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902434,
+            "correct": 26,
+            "selected_gain": 3,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902435,
+            "correct": 23,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902436,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902437,
+            "correct": 25,
+            "selected_gain": 4,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "hgb_leaf5": {
+        "correct": 342,
+        "selected_gain": 38,
+        "ast_calls": 3,
+        "brier": 0.1466417789548015,
+        "by_bank": [
+          {
+            "seed": 902426,
+            "correct": 33,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902427,
+            "correct": 30,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902428,
+            "correct": 33,
+            "selected_gain": 5,
+            "ast_calls": 2
+          },
+          {
+            "seed": 902429,
+            "correct": 31,
+            "selected_gain": 3,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902430,
+            "correct": 29,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902431,
+            "correct": 30,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902432,
+            "correct": 28,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902433,
+            "correct": 33,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902434,
+            "correct": 24,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902435,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902436,
+            "correct": 23,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902437,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "hgb_leaf9": {
+        "correct": 339,
+        "selected_gain": 35,
+        "ast_calls": 6,
+        "brier": 0.14927056308998926,
+        "by_bank": [
+          {
+            "seed": 902426,
+            "correct": 32,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902427,
+            "correct": 31,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902428,
+            "correct": 32,
+            "selected_gain": 4,
+            "ast_calls": 2
+          },
+          {
+            "seed": 902429,
+            "correct": 31,
+            "selected_gain": 3,
+            "ast_calls": 2
+          },
+          {
+            "seed": 902430,
+            "correct": 29,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902431,
+            "correct": 29,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902432,
+            "correct": 27,
+            "selected_gain": 3,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902433,
+            "correct": 33,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902434,
+            "correct": 25,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902435,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902436,
+            "correct": 23,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902437,
+            "correct": 23,
+            "selected_gain": 2,
+            "ast_calls": 1
+          }
+        ]
+      },
+      "extra_depth3": {
+        "correct": 334,
+        "selected_gain": 30,
+        "ast_calls": 0,
+        "brier": 0.15119775757398138,
+        "by_bank": [
+          {
+            "seed": 902426,
+            "correct": 32,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902427,
+            "correct": 29,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902428,
+            "correct": 31,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902429,
+            "correct": 30,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902430,
+            "correct": 29,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902431,
+            "correct": 29,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902432,
+            "correct": 28,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902433,
+            "correct": 32,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902434,
+            "correct": 24,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902435,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902436,
+            "correct": 22,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902437,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "extra_depth5": {
+        "correct": 341,
+        "selected_gain": 37,
+        "ast_calls": 1,
+        "brier": 0.1478285972571306,
+        "by_bank": [
+          {
+            "seed": 902426,
+            "correct": 33,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902427,
+            "correct": 30,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902428,
+            "correct": 30,
+            "selected_gain": 2,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902429,
+            "correct": 31,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902430,
+            "correct": 29,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902431,
+            "correct": 30,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902432,
+            "correct": 28,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902433,
+            "correct": 33,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902434,
+            "correct": 25,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902435,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902436,
+            "correct": 23,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902437,
+            "correct": 25,
+            "selected_gain": 4,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "ridge10": {
+        "correct": 342,
+        "selected_gain": 38,
+        "ast_calls": 2,
+        "brier": 0.15008433867081236,
+        "by_bank": [
+          {
+            "seed": 902426,
+            "correct": 34,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902427,
+            "correct": 29,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902428,
+            "correct": 31,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902429,
+            "correct": 31,
+            "selected_gain": 3,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902430,
+            "correct": 29,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902431,
+            "correct": 30,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902432,
+            "correct": 28,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902433,
+            "correct": 33,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902434,
+            "correct": 25,
+            "selected_gain": 2,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902435,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902436,
+            "correct": 23,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902437,
+            "correct": 25,
+            "selected_gain": 4,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "ridge100": {
+        "correct": 341,
+        "selected_gain": 37,
+        "ast_calls": 0,
+        "brier": 0.1502245381284424,
+        "by_bank": [
+          {
+            "seed": 902426,
+            "correct": 33,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902427,
+            "correct": 29,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902428,
+            "correct": 30,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902429,
+            "correct": 31,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902430,
+            "correct": 29,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902431,
+            "correct": 31,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902432,
+            "correct": 29,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902433,
+            "correct": 33,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902434,
+            "correct": 25,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902435,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902436,
+            "correct": 23,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902437,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "pairwise001": {
+        "correct": 346,
+        "selected_gain": 42,
+        "ast_calls": 6,
+        "brier": 3.413751731896527,
+        "by_bank": [
+          {
+            "seed": 902426,
+            "correct": 34,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902427,
+            "correct": 30,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902428,
+            "correct": 32,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902429,
+            "correct": 32,
+            "selected_gain": 4,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902430,
+            "correct": 30,
+            "selected_gain": 2,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902431,
+            "correct": 30,
+            "selected_gain": 5,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902432,
+            "correct": 26,
+            "selected_gain": 2,
+            "ast_calls": 2
+          },
+          {
+            "seed": 902433,
+            "correct": 32,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902434,
+            "correct": 27,
+            "selected_gain": 4,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902435,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902436,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902437,
+            "correct": 25,
+            "selected_gain": 4,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "e0": {
+        "correct": 342,
+        "selected_gain": 38,
+        "ast_calls": 0,
+        "brier": 0.1496549143675715,
+        "by_bank": [
+          {
+            "seed": 902426,
+            "correct": 33,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902427,
+            "correct": 29,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902428,
+            "correct": 30,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902429,
+            "correct": 30,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902430,
+            "correct": 29,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902431,
+            "correct": 31,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902432,
+            "correct": 29,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902433,
+            "correct": 33,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902434,
+            "correct": 25,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902435,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902436,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902437,
+            "correct": 25,
+            "selected_gain": 4,
+            "ast_calls": 0
+          }
+        ]
+      }
+    },
+    "focused_opened": {
+      "logistic_c0.1": {
+        "correct": 347,
+        "selected_gain": 40,
+        "ast_calls": 0,
+        "brier": 0.14588016191480982,
+        "by_bank": [
+          {
+            "seed": 902486,
+            "correct": 27,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902487,
+            "correct": 28,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902488,
+            "correct": 30,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902489,
+            "correct": 25,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902490,
+            "correct": 27,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902491,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902492,
+            "correct": 29,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902493,
+            "correct": 36,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902494,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902495,
+            "correct": 33,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902496,
+            "correct": 29,
+            "selected_gain": 7,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902497,
+            "correct": 31,
+            "selected_gain": 1,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "logistic_c1": {
+        "correct": 346,
+        "selected_gain": 39,
+        "ast_calls": 3,
+        "brier": 0.14665136353829056,
+        "by_bank": [
+          {
+            "seed": 902486,
+            "correct": 28,
+            "selected_gain": 4,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902487,
+            "correct": 27,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902488,
+            "correct": 28,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902489,
+            "correct": 26,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902490,
+            "correct": 26,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902491,
+            "correct": 23,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902492,
+            "correct": 29,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902493,
+            "correct": 37,
+            "selected_gain": 2,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902494,
+            "correct": 29,
+            "selected_gain": 6,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902495,
+            "correct": 33,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902496,
+            "correct": 29,
+            "selected_gain": 7,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902497,
+            "correct": 31,
+            "selected_gain": 1,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "hgb_leaf5": {
+        "correct": 341,
+        "selected_gain": 34,
+        "ast_calls": 1,
+        "brier": 0.14468605614531266,
+        "by_bank": [
+          {
+            "seed": 902486,
+            "correct": 27,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902487,
+            "correct": 28,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902488,
+            "correct": 28,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902489,
+            "correct": 27,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902490,
+            "correct": 25,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902491,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902492,
+            "correct": 28,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902493,
+            "correct": 37,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902494,
+            "correct": 29,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902495,
+            "correct": 31,
+            "selected_gain": 3,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902496,
+            "correct": 26,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902497,
+            "correct": 31,
+            "selected_gain": 1,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "hgb_leaf9": {
+        "correct": 345,
+        "selected_gain": 38,
+        "ast_calls": 4,
+        "brier": 0.14446502614626935,
+        "by_bank": [
+          {
+            "seed": 902486,
+            "correct": 28,
+            "selected_gain": 4,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902487,
+            "correct": 28,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902488,
+            "correct": 29,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902489,
+            "correct": 27,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902490,
+            "correct": 27,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902491,
+            "correct": 23,
+            "selected_gain": 2,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902492,
+            "correct": 27,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902493,
+            "correct": 37,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902494,
+            "correct": 29,
+            "selected_gain": 6,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902495,
+            "correct": 31,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902496,
+            "correct": 26,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902497,
+            "correct": 33,
+            "selected_gain": 3,
+            "ast_calls": 1
+          }
+        ]
+      },
+      "extra_depth3": {
+        "correct": 345,
+        "selected_gain": 38,
+        "ast_calls": 0,
+        "brier": 0.15149090031402965,
+        "by_bank": [
+          {
+            "seed": 902486,
+            "correct": 28,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902487,
+            "correct": 27,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902488,
+            "correct": 30,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902489,
+            "correct": 26,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902490,
+            "correct": 26,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902491,
+            "correct": 25,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902492,
+            "correct": 28,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902493,
+            "correct": 36,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902494,
+            "correct": 29,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902495,
+            "correct": 32,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902496,
+            "correct": 27,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902497,
+            "correct": 31,
+            "selected_gain": 1,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "extra_depth5": {
+        "correct": 346,
+        "selected_gain": 39,
+        "ast_calls": 0,
+        "brier": 0.14766331517134534,
+        "by_bank": [
+          {
+            "seed": 902486,
+            "correct": 29,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902487,
+            "correct": 27,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902488,
+            "correct": 30,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902489,
+            "correct": 26,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902490,
+            "correct": 27,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902491,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902492,
+            "correct": 28,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902493,
+            "correct": 36,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902494,
+            "correct": 29,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902495,
+            "correct": 32,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902496,
+            "correct": 27,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902497,
+            "correct": 31,
+            "selected_gain": 1,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "ridge10": {
+        "correct": 346,
+        "selected_gain": 39,
+        "ast_calls": 1,
+        "brier": 0.14887796964481378,
+        "by_bank": [
+          {
+            "seed": 902486,
+            "correct": 27,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902487,
+            "correct": 27,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902488,
+            "correct": 29,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902489,
+            "correct": 26,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902490,
+            "correct": 26,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902491,
+            "correct": 25,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902492,
+            "correct": 29,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902493,
+            "correct": 36,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902494,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902495,
+            "correct": 33,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902496,
+            "correct": 29,
+            "selected_gain": 7,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902497,
+            "correct": 31,
+            "selected_gain": 1,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "ridge100": {
+        "correct": 344,
+        "selected_gain": 37,
+        "ast_calls": 0,
+        "brier": 0.14848328609084138,
+        "by_bank": [
+          {
+            "seed": 902486,
+            "correct": 27,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902487,
+            "correct": 27,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902488,
+            "correct": 30,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902489,
+            "correct": 25,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902490,
+            "correct": 27,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902491,
+            "correct": 25,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902492,
+            "correct": 29,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902493,
+            "correct": 36,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902494,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902495,
+            "correct": 31,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902496,
+            "correct": 28,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902497,
+            "correct": 31,
+            "selected_gain": 1,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "pairwise001": {
+        "correct": 348,
+        "selected_gain": 41,
+        "ast_calls": 3,
+        "brier": 3.4372796312012843,
+        "by_bank": [
+          {
+            "seed": 902486,
+            "correct": 28,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902487,
+            "correct": 27,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902488,
+            "correct": 28,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902489,
+            "correct": 26,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902490,
+            "correct": 27,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902491,
+            "correct": 24,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902492,
+            "correct": 29,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902493,
+            "correct": 37,
+            "selected_gain": 2,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902494,
+            "correct": 29,
+            "selected_gain": 6,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902495,
+            "correct": 33,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902496,
+            "correct": 28,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902497,
+            "correct": 32,
+            "selected_gain": 2,
+            "ast_calls": 1
+          }
+        ]
+      },
+      "e0": {
+        "correct": 345,
+        "selected_gain": 38,
+        "ast_calls": 0,
+        "brier": 0.1487327622387164,
+        "by_bank": [
+          {
+            "seed": 902486,
+            "correct": 27,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902487,
+            "correct": 27,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902488,
+            "correct": 29,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902489,
+            "correct": 27,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902490,
+            "correct": 27,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902491,
+            "correct": 25,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902492,
+            "correct": 28,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902493,
+            "correct": 36,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902494,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902495,
+            "correct": 32,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902496,
+            "correct": 28,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902497,
+            "correct": 31,
+            "selected_gain": 1,
+            "ast_calls": 0
+          }
+        ]
+      }
+    },
+    "pairwise_opened": {
+      "logistic_c0.1": {
+        "correct": 338,
+        "selected_gain": 42,
+        "ast_calls": 0,
+        "brier": 0.15065586315282528,
+        "by_bank": [
+          {
+            "seed": 902498,
+            "correct": 32,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902499,
+            "correct": 27,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902500,
+            "correct": 29,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902501,
+            "correct": 24,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902502,
+            "correct": 25,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902503,
+            "correct": 32,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902504,
+            "correct": 25,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902505,
+            "correct": 32,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902506,
+            "correct": 26,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902507,
+            "correct": 29,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902508,
+            "correct": 29,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902509,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "logistic_c1": {
+        "correct": 339,
+        "selected_gain": 43,
+        "ast_calls": 1,
+        "brier": 0.1519000768863793,
+        "by_bank": [
+          {
+            "seed": 902498,
+            "correct": 32,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902499,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902500,
+            "correct": 29,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902501,
+            "correct": 25,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902502,
+            "correct": 25,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902503,
+            "correct": 32,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902504,
+            "correct": 25,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902505,
+            "correct": 32,
+            "selected_gain": 5,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902506,
+            "correct": 25,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902507,
+            "correct": 29,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902508,
+            "correct": 29,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902509,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "hgb_leaf5": {
+        "correct": 333,
+        "selected_gain": 37,
+        "ast_calls": 5,
+        "brier": 0.14969917320349355,
+        "by_bank": [
+          {
+            "seed": 902498,
+            "correct": 31,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902499,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902500,
+            "correct": 31,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902501,
+            "correct": 24,
+            "selected_gain": 2,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902502,
+            "correct": 26,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902503,
+            "correct": 32,
+            "selected_gain": 1,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902504,
+            "correct": 23,
+            "selected_gain": 0,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902505,
+            "correct": 30,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902506,
+            "correct": 25,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902507,
+            "correct": 30,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902508,
+            "correct": 28,
+            "selected_gain": 4,
+            "ast_calls": 2
+          },
+          {
+            "seed": 902509,
+            "correct": 25,
+            "selected_gain": 2,
+            "ast_calls": 1
+          }
+        ]
+      },
+      "hgb_leaf9": {
+        "correct": 335,
+        "selected_gain": 39,
+        "ast_calls": 9,
+        "brier": 0.14958832635898286,
+        "by_bank": [
+          {
+            "seed": 902498,
+            "correct": 31,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902499,
+            "correct": 27,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902500,
+            "correct": 31,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902501,
+            "correct": 25,
+            "selected_gain": 3,
+            "ast_calls": 2
+          },
+          {
+            "seed": 902502,
+            "correct": 26,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902503,
+            "correct": 32,
+            "selected_gain": 1,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902504,
+            "correct": 25,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902505,
+            "correct": 31,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902506,
+            "correct": 24,
+            "selected_gain": 2,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902507,
+            "correct": 29,
+            "selected_gain": 2,
+            "ast_calls": 2
+          },
+          {
+            "seed": 902508,
+            "correct": 28,
+            "selected_gain": 4,
+            "ast_calls": 2
+          },
+          {
+            "seed": 902509,
+            "correct": 26,
+            "selected_gain": 3,
+            "ast_calls": 1
+          }
+        ]
+      },
+      "extra_depth3": {
+        "correct": 338,
+        "selected_gain": 42,
+        "ast_calls": 0,
+        "brier": 0.15737553220417497,
+        "by_bank": [
+          {
+            "seed": 902498,
+            "correct": 31,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902499,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902500,
+            "correct": 29,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902501,
+            "correct": 24,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902502,
+            "correct": 25,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902503,
+            "correct": 33,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902504,
+            "correct": 25,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902505,
+            "correct": 32,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902506,
+            "correct": 26,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902507,
+            "correct": 29,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902508,
+            "correct": 28,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902509,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "extra_depth5": {
+        "correct": 339,
+        "selected_gain": 43,
+        "ast_calls": 0,
+        "brier": 0.15136685666680771,
+        "by_bank": [
+          {
+            "seed": 902498,
+            "correct": 31,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902499,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902500,
+            "correct": 30,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902501,
+            "correct": 24,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902502,
+            "correct": 26,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902503,
+            "correct": 33,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902504,
+            "correct": 24,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902505,
+            "correct": 31,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902506,
+            "correct": 26,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902507,
+            "correct": 29,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902508,
+            "correct": 29,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902509,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "ridge10": {
+        "correct": 340,
+        "selected_gain": 44,
+        "ast_calls": 0,
+        "brier": 0.15473601073874402,
+        "by_bank": [
+          {
+            "seed": 902498,
+            "correct": 32,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902499,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902500,
+            "correct": 29,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902501,
+            "correct": 25,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902502,
+            "correct": 25,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902503,
+            "correct": 32,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902504,
+            "correct": 26,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902505,
+            "correct": 33,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902506,
+            "correct": 26,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902507,
+            "correct": 28,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902508,
+            "correct": 28,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902509,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "ridge100": {
+        "correct": 343,
+        "selected_gain": 47,
+        "ast_calls": 0,
+        "brier": 0.15347593593107312,
+        "by_bank": [
+          {
+            "seed": 902498,
+            "correct": 32,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902499,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902500,
+            "correct": 29,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902501,
+            "correct": 26,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902502,
+            "correct": 25,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902503,
+            "correct": 33,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902504,
+            "correct": 25,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902505,
+            "correct": 33,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902506,
+            "correct": 26,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902507,
+            "correct": 28,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902508,
+            "correct": 29,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902509,
+            "correct": 29,
+            "selected_gain": 6,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "pairwise001": {
+        "correct": 339,
+        "selected_gain": 43,
+        "ast_calls": 2,
+        "brier": 3.5557039978703977,
+        "by_bank": [
+          {
+            "seed": 902498,
+            "correct": 32,
+            "selected_gain": 6,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902499,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902500,
+            "correct": 29,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902501,
+            "correct": 25,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902502,
+            "correct": 25,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902503,
+            "correct": 32,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902504,
+            "correct": 25,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902505,
+            "correct": 32,
+            "selected_gain": 5,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902506,
+            "correct": 25,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902507,
+            "correct": 28,
+            "selected_gain": 1,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902508,
+            "correct": 30,
+            "selected_gain": 6,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902509,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "e0": {
+        "correct": 338,
+        "selected_gain": 42,
+        "ast_calls": 0,
+        "brier": 0.1523043591724615,
+        "by_bank": [
+          {
+            "seed": 902498,
+            "correct": 31,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902499,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902500,
+            "correct": 28,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902501,
+            "correct": 24,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902502,
+            "correct": 25,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902503,
+            "correct": 33,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902504,
+            "correct": 26,
+            "selected_gain": 3,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902505,
+            "correct": 31,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902506,
+            "correct": 26,
+            "selected_gain": 4,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902507,
+            "correct": 29,
+            "selected_gain": 2,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902508,
+            "correct": 29,
+            "selected_gain": 5,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902509,
+            "correct": 28,
+            "selected_gain": 5,
+            "ast_calls": 0
+          }
+        ]
+      }
+    }
+  },
+  "limits": [
+    "No fresh promotion claim from these panels.",
+    "All training gain labels require one-query counterfactuals from an exact research oracle.",
+    "The pairwise ranking score is uncalibrated, so its Brier number is not interpretable."
+  ]
+}

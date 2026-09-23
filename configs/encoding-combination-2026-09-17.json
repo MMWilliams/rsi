@@ -1,0 +1,12 @@
+{
+  "protocol": "EXPERIMENT-encoding-combination-2026-09-17.md",
+  "source_run": "runs/generic-body-evolution-v86-encoding-adaptive-20261017",
+  "bank_seed": 203216,
+  "bank_counts": {"final": 24},
+  "families": {"final": "stack_transition"},
+  "encodings": {"final": "xor55"},
+  "visible_examples": 40,
+  "hidden_examples": 13,
+  "adaptive_encodings": ["identity", "xor55", "affine5", "rotate3"],
+  "combine_policy": "direct_if_available_else_adaptive"
+}

@@ -1,0 +1,217 @@
+"""Independent reconstruction and oracle replay for rich query-value transfer."""
+from __future__ import annotations
+
+import json
+import sys
+from concurrent.futures import ProcessPoolExecutor
+
+import numpy as np
+
+from rsi.common import ROOT,digest,write_json
+from rsi.semantic_invention import evaluate_program
+from gated_ast_feedback import pools_for,public_block,BLOCK_AST,FIXED
+from gated_ast_replay_integration import models as evaluator_models
+from ast_feedback_replay_update import updated_model
+from ast_probe_sensor_transfer import predicted_outputs,rank
+from ast_probe_sensor_development import choose_probe
+from ast_query_allocation_development import features as base_features
+from rich_query_feature_extraction import row_features
+from rich_query_value_development import fit,select,METHODS
+from rich_query_improver_development import tables,train_state,PARENTS,OUT as DEVELOPMENT
+from cross_family_query_value_development import choose as fixed_choose,CONTROLS
+from rich_query_improver_transfer import (DEST,PROTOCOL,TEMP,RANKER,STAGES,
+    PARENTS_NAMES,FIXED_METHODS,SOURCE_FILES,sha,tasks_for,admission_gate,summarize)
+
+
+def source():
+    manifest=json.loads((DEST/'source_manifest.json').read_text())
+    assert manifest['protocol_sha256']==sha(PROTOCOL)
+    assert manifest['runner_sha256']==sha(ROOT/'rich_query_improver_transfer.py')
+    assert manifest['feature_sha256']==sha(ROOT/'rich_query_feature_extraction.py')
+    assert manifest['value_sha256']==sha(ROOT/'rich_query_value_development.py')
+    assert manifest['trainer_sha256']==sha(ROOT/'rich_query_improver_development.py')
+    assert manifest['development_sha256']==sha(DEVELOPMENT)
+    assert manifest['source_models_sha256']==sha(PARENTS)
+    assert manifest['methods']==list(METHODS)
+    assert manifest['source_files_sha256']=={str(p.relative_to(ROOT)):sha(p) for p in SOURCE_FILES}
+    source_tables=tables()
+    assert manifest['parent_rows']=={name:len(source_tables[name]) for name in PARENTS_NAMES}
+    states={name:train_state(source_tables[name])[0] for name in PARENTS_NAMES}
+    assert states==json.loads((DEST/'parent_models.json').read_text())
+    result={'passed':True,'parents_retrained':len(states),
+            'source_rows':manifest['parent_rows'],'source_files_rechecked':len(SOURCE_FILES)}
+    write_json(DEST/'audit_source.json',result)
+    print(json.dumps(result,indent=2))
+
+
+def read(stage):
+    directory=DEST/stage
+    return tuple(json.loads((directory/name).read_text()) for name in (
+        'manifest.json','sealed_bank.json','base_pools.json','ast_wide_pools.json',
+        'predicted_probe_outputs.json','frozen_records.json','frozen_allocations.json'))
+
+
+def check_manifest(stage,manifest):
+    assert manifest['stage']==stage and tuple(manifest['seeds'])==STAGES[stage]
+    assert manifest['protocol_sha256']==sha(PROTOCOL)
+    assert manifest['runner_sha256']==sha(ROOT/'rich_query_improver_transfer.py')
+    assert manifest['feature_sha256']==sha(ROOT/'rich_query_feature_extraction.py')
+    assert manifest['value_sha256']==sha(ROOT/'rich_query_value_development.py')
+    assert manifest['sensor_sha256']==sha(ROOT/'ast_probe_sensor_development.py')
+    assert manifest['temperature_sha256']==sha(TEMP)
+    assert manifest['ranker_sha256']==sha(RANKER)
+    model_path=DEST/('parent_models.json' if stage=='admission' else 'child_models.json')
+    assert manifest['models_sha256']==sha(model_path)
+    assert manifest['gate_sha256']==(None if stage=='admission' else sha(DEST/'admission_gate.json'))
+
+
+def children():
+    source_tables=tables()
+    records=json.loads((DEST/'admission/frozen_records.json').read_text())
+    outcomes=json.loads((DEST/'admission/results.json').read_text())['tasks']
+    assert len(records)==len(outcomes)==288
+    extra=[]
+    for r,o in zip(records,outcomes):
+        assert r['id']==o['id']
+        extra.append({'id':r['id'],'seed':r['seed'],'family':r['family'],
+                      'public_block':r['public_block'],
+                      'base_features':r['base_features'],'rich_features':r['rich_features'],
+                      'zero':int(o['zero']),'one':int(o['one']),
+                      'gain':int(o['one'])-int(o['zero'])})
+    states={name:train_state(source_tables[name]+extra)[0] for name in PARENTS_NAMES}
+    parents=json.loads((DEST/'parent_models.json').read_text())
+    states['parent_initial']=parents['initial'];states['parent_later']=parents['later']
+    later_rows=source_tables['later']+extra
+    for name,method in FIXED_METHODS.items():
+        states[name]={'source_rows':len(later_rows),
+                      'unique_source_tasks':len({r['id'] for r in later_rows}),
+                      'selected_method':method,'model':fit(later_rows,method),
+                      'source_task_ids':[r['id'] for r in later_rows]}
+    assert states==json.loads((DEST/'child_models.json').read_text())
+    admission=json.loads((DEST/'admission/results.json').read_text())['summary']
+    assert admission_gate(admission)==json.loads((DEST/'admission_gate.json').read_text())
+    training=json.loads((DEST/'child_training.json').read_text())
+    assert training['admission_results_sha256']==sha(DEST/'admission/results.json')
+    assert training['new_task_ids']==[r['id'] for r in extra]
+    result={'passed':True,'shared_new_effects':len(extra),'states_retrained':len(states),
+            'child_methods':training['child_methods']}
+    write_json(DEST/'audit_children.json',result)
+    print(json.dumps(result,indent=2))
+
+
+def prepare(stage):
+    manifest,tasks,base,wide,predicted,records,choices=read(stage)
+    check_manifest(stage,manifest)
+    assert tasks==tasks_for(stage)
+    regenerated,regenerated_wide,_=pools_for(tasks)
+    assert regenerated==base and regenerated_wide==wide
+    public=[({'id':t['id'],'probe_inputs':[v for v,_ in t['hidden'][:8]]},
+             wide.get(t['id'],base[t['id']])) for t in tasks]
+    with ProcessPoolExecutor(max_workers=8) as executor:
+        assert dict(executor.map(predicted_outputs,public))==predicted
+    evaluators=evaluator_models();replay=updated_model()
+    for task,record in zip(tasks,records):
+        key=task['id'];block=public_block(task);pool=wide.get(key,base[key])
+        assert key==record['id'] and block==record['public_block']
+        assert record['base_sha256']==digest(base[key])
+        assert record['pool_sha256']==digest(pool)
+        model=replay if block==BLOCK_AST else evaluators[FIXED[block]]
+        scores,order=rank(task,pool,model)
+        assert order==record['order'] and np.allclose(scores,record['scores'],atol=1e-6)
+        first=choose_probe(key,predicted[key],order,scores,
+                           set(range(len(pool))),[],'top20_entropy')
+        assert first==record['first_probe']
+        x=base_features(task,{'scores':scores,'order':order,
+                              'first_probe':{'top20_entropy':first}},predicted[key])
+        assert np.allclose(x,record['base_features'],atol=1e-6)
+        richer=row_features({'scores':scores,'order':order,'first_probe':first},
+                            pool,predicted[key])
+        assert np.allclose(richer,record['rich_features'],atol=1e-6)
+    model_path=DEST/('parent_models.json' if stage=='admission' else 'child_models.json')
+    states=json.loads(model_path.read_text())
+    gate=json.loads((DEST/'admission_gate.json').read_text()) if stage!='admission' else None
+    lookup={r['id']:r for r in records};rebuilt={}
+    for seed in STAGES[stage]:
+        group=[lookup[t['id']] for t in tasks if t['seed']==seed]
+        bank={name:sorted(fixed_choose(group,name)) for name in CONTROLS}
+        for name,state in states.items():bank[name]=sorted(select(group,state['model']))
+        if gate is not None:
+            bank['protected_later']=(bank['later'] if gate['admit'] else bank['initial'])
+        rebuilt[str(seed)]=bank
+    assert rebuilt==choices
+    result={'passed':True,'stage':stage,'tasks':len(tasks),
+            'base_candidates_rechecked':sum(map(len,base.values())),
+            'ast_wide_candidates_rechecked':sum(map(len,wide.values())),
+            'predicted_output_cells_rechecked':sum(len(wide.get(t['id'],base[t['id']]))*8
+                                                 for t in tasks),
+            'allocations_rechecked':len(STAGES[stage])*len(next(iter(choices.values())))}
+    write_json(DEST/f'audit_prepare_{stage}.json',result)
+    print(json.dumps(result,indent=2))
+
+
+def score(stage):
+    manifest,tasks,base,wide,predicted,records,choices=read(stage)
+    check_manifest(stage,manifest)
+    saved=json.loads((DEST/stage/'results.json').read_text())
+    outcomes=[];checked=0
+    for task,record in zip(tasks,records):
+        key=task['id'];pool=wide.get(key,base[key]);matrix=predicted[key]
+        labels=[bool(evaluate_program(row['program'],task['hidden'][8:])) for row in pool]
+        checked+=len(labels)
+        order=record['order'];first=record['first_probe']
+        matching={i for i in range(len(pool)) if matrix[i][first]==task['hidden'][first][1]}
+        remaining=matching if matching else set(range(len(pool)))
+        selected=next(i for i in order if i in remaining)
+        outcomes.append({'id':key,'seed':task['seed'],'family':task['family'],
+                         'reachable':any(labels),'zero':bool(labels[order[0]]),
+                         'one':bool(labels[selected]),'selected_after_query':selected})
+    assert outcomes==saved['tasks']
+    summary=saved['summary']
+    assert summary['candidate_labels_checked']==checked
+    assert summary['reachable']==sum(r['reachable'] for r in outcomes)
+    for bank in summary['by_bank']:
+        group=[r for r in outcomes if r['seed']==bank['seed']]
+        assert len(group)==48
+        assert bank['no_query']==sum(r['zero'] for r in group)
+        assert bank['one_each_all']==sum(r['one'] for r in group)
+        for policy,ids in choices[str(bank['seed'])].items():
+            assert len(ids)==len(set(ids))==8
+            assert bank['correct'][policy]==sum(r['one'] if r['id'] in set(ids) else r['zero']
+                                                for r in group)
+    assert summary['correct']=={name:sum(b['correct'][name] for b in summary['by_bank'])
+                                for name in summary['correct']}
+    result={'passed':True,'stage':stage,'tasks':len(tasks),
+            'candidate_labels_rechecked':checked,
+            'bank_policy_scores_rechecked':len(STAGES[stage])*len(summary['correct'])}
+    write_json(DEST/f'audit_score_{stage}.json',result)
+    print(json.dumps(result,indent=2))
+
+
+def final():
+    names=('source','prepare_admission','score_admission','children',
+           'prepare_a','score_a','prepare_b','score_b')
+    parts={name:json.loads((DEST/f'audit_{name}.json').read_text()) for name in names}
+    assert all(v['passed'] for v in parts.values())
+    reported=json.loads((DEST/'summary.json').read_text())
+    assert reported==summarize()
+    banks=[b for s in ('a','b') for b in
+           json.loads((DEST/s/'results.json').read_text())['summary']['by_bank']]
+    assert reported['transfer']['correct']=={name:sum(b['correct'][name] for b in banks)
+                                             for name in banks[0]['correct']}
+    assert reported['primary_recursive_gate']['differences']==[
+        b['correct']['later']-b['correct']['initial'] for b in banks]
+    result={'passed':True,'parts':parts,
+            'candidate_labels_rechecked':sum(parts[f'score_{s}']['candidate_labels_rechecked']
+                                              for s in STAGES),
+            'predicted_output_cells_rechecked':sum(parts[f'prepare_{s}']['predicted_output_cells_rechecked']
+                                                   for s in STAGES)}
+    write_json(DEST/'audit.json',result)
+    print(json.dumps(result,indent=2))
+
+
+if __name__=='__main__':
+    actions={'source':source,'children':children,'final':final}
+    for stage in STAGES:
+        actions[f'prepare_{stage}']=lambda stage=stage:prepare(stage)
+        actions[f'score_{stage}']=lambda stage=stage:score(stage)
+    actions[sys.argv[1]]()

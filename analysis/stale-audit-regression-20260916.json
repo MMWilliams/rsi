@@ -1,0 +1,18 @@
+{
+  "purpose": "Historical stale-audit bug reproduction; deliberately corrupted fixture, not a research result",
+  "old_renderer_sha256": "f6f2acf6ac677ebced7d64d116815668c0e05fd017a45bb4fe3a5cc2634c970e",
+  "invalid_report_sha256": "b143f9ea61b52ce7c78545870bc143ccbaf266d2dd840e03294e830ee0355144",
+  "reported_pool_rows": {
+    "anchor": 46,
+    "harvest": 7
+  },
+  "reported_pool_tasks": {
+    "anchor": 46,
+    "harvest": 7
+  },
+  "attack": "Append an oracle-labelled row with fabricated task_id to a copied training pool, retaining old audit.json and artifact manifest",
+  "old_behavior": "Report emitted; test expected rejection and failed with DID NOT RAISE",
+  "fixed_behavior": "Both stale-hash and coherently resealed variants rejected before any report is written",
+  "verification": "tests/test_frontier_reporting.py: 5 passed in 10.71 seconds",
+  "new_renderer_sha256": "fc39cfe6625049b63a8fdefa765db85edd8f6e547a9a8c5353407f736dfe1d76"
+}

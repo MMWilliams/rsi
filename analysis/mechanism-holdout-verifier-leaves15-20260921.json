@@ -1,0 +1,232 @@
+{
+  "scope": "leave-one-family-out transfer of the pooled-60 evaluator",
+  "leaves": 15,
+  "families": {
+    "transform_transition": {
+      "tasks": 288,
+      "e0": 169,
+      "held_out": 124,
+      "in_distribution": 167,
+      "held_out_minus_e0": {
+        "sum": -45.0,
+        "banks": 36,
+        "positive_banks": 2,
+        "losing_banks": 28,
+        "bootstrap_interval": [
+          -58.0,
+          -32.0
+        ]
+      },
+      "in_dist_minus_e0": {
+        "sum": -2.0,
+        "banks": 36,
+        "positive_banks": 11,
+        "losing_banks": 13,
+        "bootstrap_interval": [
+          -15.0,
+          10.0
+        ]
+      },
+      "transfer_gap_in_dist_minus_held_out": {
+        "sum": 43.0,
+        "banks": 36,
+        "positive_banks": 24,
+        "losing_banks": 2,
+        "bootstrap_interval": [
+          27.0,
+          60.0
+        ]
+      }
+    },
+    "ast_transition": {
+      "tasks": 288,
+      "e0": 41,
+      "held_out": 9,
+      "in_distribution": 23,
+      "held_out_minus_e0": {
+        "sum": -32.0,
+        "banks": 36,
+        "positive_banks": 1,
+        "losing_banks": 20,
+        "bootstrap_interval": [
+          -44.0,
+          -21.0
+        ]
+      },
+      "in_dist_minus_e0": {
+        "sum": -18.0,
+        "banks": 36,
+        "positive_banks": 5,
+        "losing_banks": 16,
+        "bootstrap_interval": [
+          -30.0,
+          -7.0
+        ]
+      },
+      "transfer_gap_in_dist_minus_held_out": {
+        "sum": 14.0,
+        "banks": 36,
+        "positive_banks": 16,
+        "losing_banks": 2,
+        "bootstrap_interval": [
+          7.0,
+          21.0
+        ]
+      }
+    },
+    "novel_operator_transition": {
+      "tasks": 288,
+      "e0": 140,
+      "held_out": 97,
+      "in_distribution": 165,
+      "held_out_minus_e0": {
+        "sum": -43.0,
+        "banks": 36,
+        "positive_banks": 0,
+        "losing_banks": 27,
+        "bootstrap_interval": [
+          -55.0,
+          -32.0
+        ]
+      },
+      "in_dist_minus_e0": {
+        "sum": 25.0,
+        "banks": 36,
+        "positive_banks": 21,
+        "losing_banks": 4,
+        "bootstrap_interval": [
+          14.0,
+          36.0
+        ]
+      },
+      "transfer_gap_in_dist_minus_held_out": {
+        "sum": 68.0,
+        "banks": 36,
+        "positive_banks": 35,
+        "losing_banks": 0,
+        "bootstrap_interval": [
+          57.0,
+          79.0
+        ]
+      }
+    },
+    "stack_transition": {
+      "tasks": 288,
+      "e0": 238,
+      "held_out": 231,
+      "in_distribution": 240,
+      "held_out_minus_e0": {
+        "sum": -7.0,
+        "banks": 36,
+        "positive_banks": 9,
+        "losing_banks": 12,
+        "bootstrap_interval": [
+          -22.0,
+          7.0
+        ]
+      },
+      "in_dist_minus_e0": {
+        "sum": 2.0,
+        "banks": 36,
+        "positive_banks": 10,
+        "losing_banks": 7,
+        "bootstrap_interval": [
+          -7.0,
+          11.0
+        ]
+      },
+      "transfer_gap_in_dist_minus_held_out": {
+        "sum": 9.0,
+        "banks": 36,
+        "positive_banks": 12,
+        "losing_banks": 8,
+        "bootstrap_interval": [
+          -4.0,
+          23.0
+        ]
+      }
+    },
+    "mutation_transition": {
+      "tasks": 288,
+      "e0": 191,
+      "held_out": 180,
+      "in_distribution": 192,
+      "held_out_minus_e0": {
+        "sum": -11.0,
+        "banks": 36,
+        "positive_banks": 8,
+        "losing_banks": 17,
+        "bootstrap_interval": [
+          -23.0,
+          2.0
+        ]
+      },
+      "in_dist_minus_e0": {
+        "sum": 1.0,
+        "banks": 36,
+        "positive_banks": 9,
+        "losing_banks": 9,
+        "bootstrap_interval": [
+          -9.0,
+          11.0
+        ]
+      },
+      "transfer_gap_in_dist_minus_held_out": {
+        "sum": 12.0,
+        "banks": 36,
+        "positive_banks": 15,
+        "losing_banks": 8,
+        "bootstrap_interval": [
+          -1.0,
+          25.0
+        ]
+      }
+    },
+    "self_edit_transition": {
+      "tasks": 288,
+      "e0": 241,
+      "held_out": 121,
+      "in_distribution": 213,
+      "held_out_minus_e0": {
+        "sum": -120.0,
+        "banks": 36,
+        "positive_banks": 0,
+        "losing_banks": 34,
+        "bootstrap_interval": [
+          -141.0,
+          -99.0
+        ]
+      },
+      "in_dist_minus_e0": {
+        "sum": -28.0,
+        "banks": 36,
+        "positive_banks": 3,
+        "losing_banks": 21,
+        "bootstrap_interval": [
+          -41.0,
+          -15.0
+        ]
+      },
+      "transfer_gap_in_dist_minus_held_out": {
+        "sum": 92.0,
+        "banks": 36,
+        "positive_banks": 33,
+        "losing_banks": 0,
+        "bootstrap_interval": [
+          74.0,
+          110.0
+        ]
+      }
+    }
+  },
+  "totals": {
+    "e0": 1020,
+    "held_out": 762,
+    "in_distribution": 1000
+  },
+  "limits": [
+    "Opened cached panels; development evidence.",
+    "Held-out models see five of six families; the family mix of the remaining source data is unchanged, so this is mechanism holdout, not a change in the base ranker or candidate generator.",
+    "E0 itself was trained with all six families present."
+  ]
+}

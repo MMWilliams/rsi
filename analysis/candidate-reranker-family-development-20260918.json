@@ -1,0 +1,141 @@
+{
+  "scope": "all panels opened; family gate is post hoc development",
+  "panels": {
+    "focused": {
+      "tasks": 576,
+      "old": 307,
+      "new": 347,
+      "self_edit_gate": 348,
+      "by_family": {
+        "transform_transition": {
+          "tasks": 96,
+          "old": 33,
+          "new": 51,
+          "effect": 18
+        },
+        "ast_transition": {
+          "tasks": 96,
+          "old": 10,
+          "new": 16,
+          "effect": 6
+        },
+        "novel_operator_transition": {
+          "tasks": 96,
+          "old": 41,
+          "new": 55,
+          "effect": 14
+        },
+        "stack_transition": {
+          "tasks": 96,
+          "old": 72,
+          "new": 81,
+          "effect": 9
+        },
+        "mutation_transition": {
+          "tasks": 96,
+          "old": 66,
+          "new": 60,
+          "effect": -6
+        },
+        "self_edit_transition": {
+          "tasks": 96,
+          "old": 85,
+          "new": 84,
+          "effect": -1
+        }
+      }
+    },
+    "pairwise": {
+      "tasks": 576,
+      "old": 296,
+      "new": 343,
+      "self_edit_gate": 344,
+      "by_family": {
+        "transform_transition": {
+          "tasks": 96,
+          "old": 39,
+          "new": 59,
+          "effect": 20
+        },
+        "ast_transition": {
+          "tasks": 96,
+          "old": 11,
+          "new": 16,
+          "effect": 5
+        },
+        "novel_operator_transition": {
+          "tasks": 96,
+          "old": 29,
+          "new": 46,
+          "effect": 17
+        },
+        "stack_transition": {
+          "tasks": 96,
+          "old": 77,
+          "new": 82,
+          "effect": 5
+        },
+        "mutation_transition": {
+          "tasks": 96,
+          "old": 59,
+          "new": 60,
+          "effect": 1
+        },
+        "self_edit_transition": {
+          "tasks": 96,
+          "old": 81,
+          "new": 80,
+          "effect": -1
+        }
+      }
+    },
+    "fresh_opened": {
+      "tasks": 576,
+      "old": 284,
+      "new": 334,
+      "self_edit_gate": 337,
+      "by_family": {
+        "transform_transition": {
+          "tasks": 96,
+          "old": 35,
+          "new": 57,
+          "effect": 22
+        },
+        "ast_transition": {
+          "tasks": 96,
+          "old": 12,
+          "new": 19,
+          "effect": 7
+        },
+        "novel_operator_transition": {
+          "tasks": 96,
+          "old": 38,
+          "new": 50,
+          "effect": 12
+        },
+        "stack_transition": {
+          "tasks": 96,
+          "old": 75,
+          "new": 83,
+          "effect": 8
+        },
+        "mutation_transition": {
+          "tasks": 96,
+          "old": 49,
+          "new": 53,
+          "effect": 4
+        },
+        "self_edit_transition": {
+          "tasks": 96,
+          "old": 75,
+          "new": 72,
+          "effect": -3
+        }
+      }
+    }
+  },
+  "limits": [
+    "E1 was trained on meta admission/A/B only; these three panels are disjoint from training.",
+    "The self-edit gate was chosen after seeing these labels and needs fresh confirmation."
+  ]
+}

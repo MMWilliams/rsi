@@ -1,0 +1,55 @@
+{
+  "scope": "opened-bank developmental diagnostics",
+  "tasks": 576,
+  "calls_per_checkpoint": 96,
+  "metrics": {
+    "e0": {
+      "forecast_mse": 0.1496549143675715,
+      "forecast_mae": 0.30924979522392054,
+      "forecast_bias": 0.007849896174486575,
+      "selected_true_gain": 38,
+      "oracle_best_eight_gain": 90
+    },
+    "e3": {
+      "forecast_mse": 0.14975927399242883,
+      "forecast_mae": 0.30866936839005554,
+      "forecast_bias": 0.00933381988057324,
+      "selected_true_gain": 35,
+      "oracle_best_eight_gain": 90
+    },
+    "e6": {
+      "forecast_mse": 0.1502245381284424,
+      "forecast_mae": 0.30856331580828555,
+      "forecast_bias": 0.010534166870124859,
+      "selected_true_gain": 37,
+      "oracle_best_eight_gain": 90
+    },
+    "scrambled_e6": {
+      "forecast_mse": 0.15301314451647546,
+      "forecast_mae": 0.3149749717285031,
+      "forecast_bias": 0.008269984903020918,
+      "selected_true_gain": 32,
+      "oracle_best_eight_gain": 90
+    },
+    "duplicate_e6": {
+      "forecast_mse": 0.1506239029094142,
+      "forecast_mae": 0.3101854905909314,
+      "forecast_bias": 0.009768311543760292,
+      "selected_true_gain": 37,
+      "oracle_best_eight_gain": 90
+    }
+  },
+  "selected_call_overlap": {
+    "e0_e3": 80,
+    "e0_e6": 87,
+    "e6_scrambled": 65
+  },
+  "source_sha256": {
+    "runs\\cross-family-meta-improver-transfer-20260918\\admission\\frozen_records.json": "59449292d8f9d75da858b7798393c57a47cb1d5c6ab59dd7529cde3811fc8f2f",
+    "runs\\cross-family-meta-improver-transfer-20260918\\admission\\results.json": "d2564af24b2fae844301aa95a90c8f80b8f8fbed9311cdaf3c9094bb24cbe021",
+    "runs\\cross-family-meta-improver-transfer-20260918\\a\\frozen_records.json": "1ba82c77fa555ce7790c703fa8f5c3da8de0f8fdc51d335761d9b43cddf6871e",
+    "runs\\cross-family-meta-improver-transfer-20260918\\a\\results.json": "7b94eeeae4f097ebb1ff164d90b46dc4d2ee681c7d22e879779cc062038735b3",
+    "runs\\cross-family-meta-improver-transfer-20260918\\b\\frozen_records.json": "55aa655dae7f7218641321d412421f7fe9302a9269174172ce8dcb431c01ee6a",
+    "runs\\cross-family-meta-improver-transfer-20260918\\b\\results.json": "41831126a9a41ef69a57aa83c78f20d9fe71c45876d4c4da897ef4a87a95ffd9"
+  }
+}

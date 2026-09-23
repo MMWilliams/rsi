@@ -1,0 +1,8 @@
+candidate-query-cost-transfer-20 pooled15=326 pooled60=396 pooled120=412 most_confident15=339 own_bin_latent15=392 oracle15=462 oracle_all=470
+   best free=pooled120 regret(vs oracle_all)=+58 regret(vs oracle15)=+50 P2c=True  latent-best=-20 [-41, 0]
+combined-ranker-query-transfer-2 pooled15=333 pooled60=397 pooled120=405 most_confident15=346 own_bin_latent15=401 oracle15=447 oracle_all=457
+   best free=pooled120 regret(vs oracle_all)=+52 regret(vs oracle15)=+42 P2c=True  latent-best=-4 [-17, 11]
+candidate-conditioned-query-tran pooled15=341 pooled60=401 pooled120=413 most_confident15=350 own_bin_latent15=400 oracle15=439 oracle_all=451
+   best free=pooled120 regret(vs oracle_all)=+38 regret(vs oracle15)=+26 P2c=True  latent-best=-13 [-31, 6]
+P2d: learned=411 vs pooled120=413 -> -2 3w/5l [-10, 7] passed=False
+verdict: {'p2c_all_panels': True, 'p2d': False}

@@ -1,0 +1,509 @@
+{
+  "scope": "opened development; source tasks disjoint from E0 candidate training",
+  "source_tasks": 1152,
+  "source_candidate_labels": 8681,
+  "source_positive_labels": 6660,
+  "source_panels": [
+    {
+      "panel": "candidate-reranker-transfer-20260918",
+      "candidate_labels": 4437
+    },
+    {
+      "panel": "candidate-reranker-replication-20260918",
+      "candidate_labels": 4244
+    }
+  ],
+  "model_sha256": {
+    "plain": "c3b54a6f3967fb0ebfd483cdbc37b502003c7e0aca8ee876590b5488c7691cae",
+    "sensor": "c53fc51593a4554de38d5a3ed5bf9328f4a42fcd08eecff3118e4ad886859312"
+  },
+  "targets": {
+    "shifted-ast-seed-transfer-20260918": {
+      "tasks": 96,
+      "candidate_choices_checked": 288,
+      "totals": {
+        "e0": {
+          "one_each": 23,
+          "budgeted": 21
+        },
+        "plain": {
+          "one_each": 27,
+          "budgeted": 22
+        },
+        "sensor": {
+          "one_each": 27,
+          "budgeted": 23
+        }
+      },
+      "comparisons": {
+        "plain": {
+          "one_each": {
+            "gain": 4,
+            "positive_banks": 4,
+            "losing_banks": 1,
+            "interval": [
+              -1,
+              9
+            ]
+          },
+          "budgeted": {
+            "gain": 1,
+            "positive_banks": 3,
+            "losing_banks": 2,
+            "interval": [
+              -3,
+              5
+            ]
+          }
+        },
+        "sensor": {
+          "one_each": {
+            "gain": 4,
+            "positive_banks": 4,
+            "losing_banks": 0,
+            "interval": [
+              1,
+              7
+            ]
+          },
+          "budgeted": {
+            "gain": 2,
+            "positive_banks": 2,
+            "losing_banks": 0,
+            "interval": [
+              0,
+              5
+            ]
+          }
+        }
+      },
+      "by_bank": [
+        {
+          "seed": 903000,
+          "e0": {
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "plain": {
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "sensor": {
+            "one_each": 3,
+            "budgeted": 3
+          }
+        },
+        {
+          "seed": 903001,
+          "e0": {
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "plain": {
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "sensor": {
+            "one_each": 3,
+            "budgeted": 3
+          }
+        },
+        {
+          "seed": 903002,
+          "e0": {
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "plain": {
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "sensor": {
+            "one_each": 0,
+            "budgeted": 0
+          }
+        },
+        {
+          "seed": 903003,
+          "e0": {
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "plain": {
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "sensor": {
+            "one_each": 1,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903004,
+          "e0": {
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "plain": {
+            "one_each": 3,
+            "budgeted": 2
+          },
+          "sensor": {
+            "one_each": 3,
+            "budgeted": 3
+          }
+        },
+        {
+          "seed": 903005,
+          "e0": {
+            "one_each": 2,
+            "budgeted": 1
+          },
+          "plain": {
+            "one_each": 3,
+            "budgeted": 1
+          },
+          "sensor": {
+            "one_each": 2,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903006,
+          "e0": {
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "plain": {
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "sensor": {
+            "one_each": 2,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903007,
+          "e0": {
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "plain": {
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "sensor": {
+            "one_each": 1,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903008,
+          "e0": {
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "plain": {
+            "one_each": 4,
+            "budgeted": 3
+          },
+          "sensor": {
+            "one_each": 3,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903009,
+          "e0": {
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "plain": {
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "sensor": {
+            "one_each": 1,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903010,
+          "e0": {
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "plain": {
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "sensor": {
+            "one_each": 4,
+            "budgeted": 3
+          }
+        },
+        {
+          "seed": 903011,
+          "e0": {
+            "one_each": 4,
+            "budgeted": 3
+          },
+          "plain": {
+            "one_each": 3,
+            "budgeted": 2
+          },
+          "sensor": {
+            "one_each": 4,
+            "budgeted": 3
+          }
+        }
+      ],
+      "tasks_with_no_top20_survivor": 20
+    },
+    "combined-ranker-query-transfer-20260918": {
+      "tasks": 576,
+      "candidate_choices_checked": 1728,
+      "totals": {
+        "e0": {
+          "one_each": 438,
+          "budgeted": 380
+        },
+        "plain": {
+          "one_each": 441,
+          "budgeted": 377
+        },
+        "sensor": {
+          "one_each": 448,
+          "budgeted": 381
+        }
+      },
+      "comparisons": {
+        "plain": {
+          "one_each": {
+            "gain": 3,
+            "positive_banks": 4,
+            "losing_banks": 2,
+            "interval": [
+              -4,
+              10
+            ]
+          },
+          "budgeted": {
+            "gain": -3,
+            "positive_banks": 2,
+            "losing_banks": 3,
+            "interval": [
+              -10,
+              3
+            ]
+          }
+        },
+        "sensor": {
+          "one_each": {
+            "gain": 10,
+            "positive_banks": 9,
+            "losing_banks": 0,
+            "interval": [
+              6,
+              14
+            ]
+          },
+          "budgeted": {
+            "gain": 1,
+            "positive_banks": 2,
+            "losing_banks": 1,
+            "interval": [
+              -2,
+              4
+            ]
+          }
+        }
+      },
+      "by_bank": [
+        {
+          "seed": 902558,
+          "e0": {
+            "one_each": 34,
+            "budgeted": 31
+          },
+          "plain": {
+            "one_each": 34,
+            "budgeted": 31
+          },
+          "sensor": {
+            "one_each": 35,
+            "budgeted": 31
+          }
+        },
+        {
+          "seed": 902559,
+          "e0": {
+            "one_each": 39,
+            "budgeted": 32
+          },
+          "plain": {
+            "one_each": 39,
+            "budgeted": 31
+          },
+          "sensor": {
+            "one_each": 40,
+            "budgeted": 31
+          }
+        },
+        {
+          "seed": 902560,
+          "e0": {
+            "one_each": 37,
+            "budgeted": 34
+          },
+          "plain": {
+            "one_each": 36,
+            "budgeted": 32
+          },
+          "sensor": {
+            "one_each": 38,
+            "budgeted": 34
+          }
+        },
+        {
+          "seed": 902561,
+          "e0": {
+            "one_each": 37,
+            "budgeted": 32
+          },
+          "plain": {
+            "one_each": 39,
+            "budgeted": 33
+          },
+          "sensor": {
+            "one_each": 38,
+            "budgeted": 32
+          }
+        },
+        {
+          "seed": 902562,
+          "e0": {
+            "one_each": 33,
+            "budgeted": 26
+          },
+          "plain": {
+            "one_each": 33,
+            "budgeted": 26
+          },
+          "sensor": {
+            "one_each": 34,
+            "budgeted": 27
+          }
+        },
+        {
+          "seed": 902563,
+          "e0": {
+            "one_each": 36,
+            "budgeted": 33
+          },
+          "plain": {
+            "one_each": 36,
+            "budgeted": 33
+          },
+          "sensor": {
+            "one_each": 37,
+            "budgeted": 34
+          }
+        },
+        {
+          "seed": 902564,
+          "e0": {
+            "one_each": 38,
+            "budgeted": 34
+          },
+          "plain": {
+            "one_each": 39,
+            "budgeted": 34
+          },
+          "sensor": {
+            "one_each": 39,
+            "budgeted": 34
+          }
+        },
+        {
+          "seed": 902565,
+          "e0": {
+            "one_each": 36,
+            "budgeted": 27
+          },
+          "plain": {
+            "one_each": 36,
+            "budgeted": 27
+          },
+          "sensor": {
+            "one_each": 36,
+            "budgeted": 27
+          }
+        },
+        {
+          "seed": 902566,
+          "e0": {
+            "one_each": 34,
+            "budgeted": 29
+          },
+          "plain": {
+            "one_each": 36,
+            "budgeted": 30
+          },
+          "sensor": {
+            "one_each": 36,
+            "budgeted": 29
+          }
+        },
+        {
+          "seed": 902567,
+          "e0": {
+            "one_each": 37,
+            "budgeted": 33
+          },
+          "plain": {
+            "one_each": 37,
+            "budgeted": 33
+          },
+          "sensor": {
+            "one_each": 37,
+            "budgeted": 33
+          }
+        },
+        {
+          "seed": 902568,
+          "e0": {
+            "one_each": 39,
+            "budgeted": 37
+          },
+          "plain": {
+            "one_each": 37,
+            "budgeted": 35
+          },
+          "sensor": {
+            "one_each": 40,
+            "budgeted": 37
+          }
+        },
+        {
+          "seed": 902569,
+          "e0": {
+            "one_each": 38,
+            "budgeted": 32
+          },
+          "plain": {
+            "one_each": 39,
+            "budgeted": 32
+          },
+          "sensor": {
+            "one_each": 38,
+            "budgeted": 32
+          }
+        }
+      ],
+      "tasks_with_no_top20_survivor": 33
+    }
+  },
+  "wall_seconds": 41.68955749995075
+}

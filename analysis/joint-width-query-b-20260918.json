@@ -1,0 +1,1451 @@
+{
+  "scope": "opened-bank joint width/query simulation; not prospective promotion evidence",
+  "stage": "b",
+  "tasks": 288,
+  "banks": [
+    {
+      "seed": 902480,
+      "policies": {
+        "base_all": {
+          "correct": {
+            "no_query": 27,
+            "fixed_10": 29,
+            "fixed_100": 29,
+            "transform_only": 29,
+            "one_each": 32,
+            "hindsight_eight": 32
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0b39f134ad18e33eb2e2cdb9",
+              "1ac43c5d8cbf4ab48e19529a",
+              "2ac0e06ba9fde6a907c04dd5",
+              "38dbb74d8bc8c5688ad37d08",
+              "428a793cbcdeed1b08d09e7e",
+              "78bc8c63df4733b8f3bd7b10",
+              "9e128849134adf3351acb949",
+              "adaeb90ad12ead67adf2ab12"
+            ],
+            "fixed_100": [
+              "0b39f134ad18e33eb2e2cdb9",
+              "1ac43c5d8cbf4ab48e19529a",
+              "2ac0e06ba9fde6a907c04dd5",
+              "38dbb74d8bc8c5688ad37d08",
+              "428a793cbcdeed1b08d09e7e",
+              "78bc8c63df4733b8f3bd7b10",
+              "9e128849134adf3351acb949",
+              "adaeb90ad12ead67adf2ab12"
+            ]
+          },
+          "effective_extra_candidates": 0,
+          "selected_width_ids": []
+        },
+        "random": {
+          "correct": {
+            "no_query": 27,
+            "fixed_10": 29,
+            "fixed_100": 29,
+            "transform_only": 29,
+            "one_each": 32,
+            "hindsight_eight": 32
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0b39f134ad18e33eb2e2cdb9",
+              "1ac43c5d8cbf4ab48e19529a",
+              "2ac0e06ba9fde6a907c04dd5",
+              "38dbb74d8bc8c5688ad37d08",
+              "428a793cbcdeed1b08d09e7e",
+              "78bc8c63df4733b8f3bd7b10",
+              "9e128849134adf3351acb949",
+              "adaeb90ad12ead67adf2ab12"
+            ],
+            "fixed_100": [
+              "0b39f134ad18e33eb2e2cdb9",
+              "1ac43c5d8cbf4ab48e19529a",
+              "2ac0e06ba9fde6a907c04dd5",
+              "38dbb74d8bc8c5688ad37d08",
+              "428a793cbcdeed1b08d09e7e",
+              "78bc8c63df4733b8f3bd7b10",
+              "9e128849134adf3351acb949",
+              "adaeb90ad12ead67adf2ab12"
+            ]
+          },
+          "effective_extra_candidates": 1152,
+          "selected_width_ids": [
+            "1fbfbdf6a024704deb3afb72",
+            "49b21dad1a2a1558e8a9b69c",
+            "7b32552b012beaf65e9a7fc0",
+            "f99e398323013c65f7d75a5b"
+          ]
+        },
+        "low_gap": {
+          "correct": {
+            "no_query": 27,
+            "fixed_10": 29,
+            "fixed_100": 29,
+            "transform_only": 29,
+            "one_each": 33,
+            "hindsight_eight": 33
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0b39f134ad18e33eb2e2cdb9",
+              "1ac43c5d8cbf4ab48e19529a",
+              "2ac0e06ba9fde6a907c04dd5",
+              "38dbb74d8bc8c5688ad37d08",
+              "428a793cbcdeed1b08d09e7e",
+              "78bc8c63df4733b8f3bd7b10",
+              "9e128849134adf3351acb949",
+              "adaeb90ad12ead67adf2ab12"
+            ],
+            "fixed_100": [
+              "0b39f134ad18e33eb2e2cdb9",
+              "1ac43c5d8cbf4ab48e19529a",
+              "2ac0e06ba9fde6a907c04dd5",
+              "38dbb74d8bc8c5688ad37d08",
+              "428a793cbcdeed1b08d09e7e",
+              "78bc8c63df4733b8f3bd7b10",
+              "9e128849134adf3351acb949",
+              "adaeb90ad12ead67adf2ab12"
+            ]
+          },
+          "effective_extra_candidates": 1152,
+          "selected_width_ids": [
+            "0821ca12501431a297b5142a",
+            "3d886452e13be348e197504c",
+            "49b21dad1a2a1558e8a9b69c",
+            "f99e398323013c65f7d75a5b"
+          ]
+        },
+        "initial": {
+          "correct": {
+            "no_query": 28,
+            "fixed_10": 30,
+            "fixed_100": 30,
+            "transform_only": 30,
+            "one_each": 34,
+            "hindsight_eight": 34
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0b39f134ad18e33eb2e2cdb9",
+              "1ac43c5d8cbf4ab48e19529a",
+              "2ac0e06ba9fde6a907c04dd5",
+              "38dbb74d8bc8c5688ad37d08",
+              "428a793cbcdeed1b08d09e7e",
+              "78bc8c63df4733b8f3bd7b10",
+              "9e128849134adf3351acb949",
+              "adaeb90ad12ead67adf2ab12"
+            ],
+            "fixed_100": [
+              "0b39f134ad18e33eb2e2cdb9",
+              "1ac43c5d8cbf4ab48e19529a",
+              "2ac0e06ba9fde6a907c04dd5",
+              "38dbb74d8bc8c5688ad37d08",
+              "428a793cbcdeed1b08d09e7e",
+              "78bc8c63df4733b8f3bd7b10",
+              "9e128849134adf3351acb949",
+              "adaeb90ad12ead67adf2ab12"
+            ]
+          },
+          "effective_extra_candidates": 1152,
+          "selected_width_ids": [
+            "0821ca12501431a297b5142a",
+            "27cab220115e60093944e6bb",
+            "3d886452e13be348e197504c",
+            "49b21dad1a2a1558e8a9b69c"
+          ]
+        },
+        "later": {
+          "correct": {
+            "no_query": 28,
+            "fixed_10": 30,
+            "fixed_100": 30,
+            "transform_only": 30,
+            "one_each": 34,
+            "hindsight_eight": 34
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0b39f134ad18e33eb2e2cdb9",
+              "1ac43c5d8cbf4ab48e19529a",
+              "2ac0e06ba9fde6a907c04dd5",
+              "38dbb74d8bc8c5688ad37d08",
+              "428a793cbcdeed1b08d09e7e",
+              "78bc8c63df4733b8f3bd7b10",
+              "9e128849134adf3351acb949",
+              "adaeb90ad12ead67adf2ab12"
+            ],
+            "fixed_100": [
+              "0b39f134ad18e33eb2e2cdb9",
+              "1ac43c5d8cbf4ab48e19529a",
+              "2ac0e06ba9fde6a907c04dd5",
+              "38dbb74d8bc8c5688ad37d08",
+              "428a793cbcdeed1b08d09e7e",
+              "78bc8c63df4733b8f3bd7b10",
+              "9e128849134adf3351acb949",
+              "adaeb90ad12ead67adf2ab12"
+            ]
+          },
+          "effective_extra_candidates": 1152,
+          "selected_width_ids": [
+            "0821ca12501431a297b5142a",
+            "27cab220115e60093944e6bb",
+            "49b21dad1a2a1558e8a9b69c",
+            "f99e398323013c65f7d75a5b"
+          ]
+        },
+        "fullwide": {
+          "correct": {
+            "no_query": 28,
+            "fixed_10": 30,
+            "fixed_100": 30,
+            "transform_only": 30,
+            "one_each": 34,
+            "hindsight_eight": 34
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0b39f134ad18e33eb2e2cdb9",
+              "1ac43c5d8cbf4ab48e19529a",
+              "2ac0e06ba9fde6a907c04dd5",
+              "38dbb74d8bc8c5688ad37d08",
+              "428a793cbcdeed1b08d09e7e",
+              "78bc8c63df4733b8f3bd7b10",
+              "9e128849134adf3351acb949",
+              "adaeb90ad12ead67adf2ab12"
+            ],
+            "fixed_100": [
+              "0b39f134ad18e33eb2e2cdb9",
+              "1ac43c5d8cbf4ab48e19529a",
+              "2ac0e06ba9fde6a907c04dd5",
+              "38dbb74d8bc8c5688ad37d08",
+              "428a793cbcdeed1b08d09e7e",
+              "78bc8c63df4733b8f3bd7b10",
+              "9e128849134adf3351acb949",
+              "adaeb90ad12ead67adf2ab12"
+            ]
+          },
+          "effective_extra_candidates": 2688,
+          "selected_width_ids": [
+            "0821ca12501431a297b5142a",
+            "1fbfbdf6a024704deb3afb72",
+            "27cab220115e60093944e6bb",
+            "3d886452e13be348e197504c",
+            "49b21dad1a2a1558e8a9b69c",
+            "68e3b8be6d92115f11890f5d",
+            "7b32552b012beaf65e9a7fc0",
+            "f99e398323013c65f7d75a5b"
+          ]
+        }
+      }
+    },
+    {
+      "seed": 902481,
+      "policies": {
+        "base_all": {
+          "correct": {
+            "no_query": 25,
+            "fixed_10": 26,
+            "fixed_100": 26,
+            "transform_only": 27,
+            "one_each": 32,
+            "hindsight_eight": 32
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "1bac3b11bc34c31ab686db20",
+              "6c99a4916703944ed6cfebd7",
+              "8d7492b2227201625539f6c9",
+              "984523e9f4d657a5bd112353",
+              "b12e11d4b1f6886ddb81d0a2",
+              "bf9370f969e4f12974296e62",
+              "cf2c4a4983b35f136c520c1e",
+              "f96a2cce9b432016e0cd71db"
+            ],
+            "fixed_100": [
+              "1bac3b11bc34c31ab686db20",
+              "1ffd2cf05f98bc5460a35742",
+              "6c99a4916703944ed6cfebd7",
+              "8d7492b2227201625539f6c9",
+              "984523e9f4d657a5bd112353",
+              "b12e11d4b1f6886ddb81d0a2",
+              "bf9370f969e4f12974296e62",
+              "f96a2cce9b432016e0cd71db"
+            ]
+          },
+          "effective_extra_candidates": 0,
+          "selected_width_ids": []
+        },
+        "random": {
+          "correct": {
+            "no_query": 24,
+            "fixed_10": 25,
+            "fixed_100": 25,
+            "transform_only": 26,
+            "one_each": 33,
+            "hindsight_eight": 32
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "1bac3b11bc34c31ab686db20",
+              "6c99a4916703944ed6cfebd7",
+              "8d7492b2227201625539f6c9",
+              "984523e9f4d657a5bd112353",
+              "b12e11d4b1f6886ddb81d0a2",
+              "bf9370f969e4f12974296e62",
+              "cf2c4a4983b35f136c520c1e",
+              "f96a2cce9b432016e0cd71db"
+            ],
+            "fixed_100": [
+              "1bac3b11bc34c31ab686db20",
+              "1ffd2cf05f98bc5460a35742",
+              "6c99a4916703944ed6cfebd7",
+              "8d7492b2227201625539f6c9",
+              "984523e9f4d657a5bd112353",
+              "b12e11d4b1f6886ddb81d0a2",
+              "bf9370f969e4f12974296e62",
+              "f96a2cce9b432016e0cd71db"
+            ]
+          },
+          "effective_extra_candidates": 1536,
+          "selected_width_ids": [
+            "74fa40f859ed24c82c7025f2",
+            "99c4f1a262d04e338449a73f",
+            "d08e3381fd154d276c578b8b",
+            "fd0b0ee02715a48b89119f3b"
+          ]
+        },
+        "low_gap": {
+          "correct": {
+            "no_query": 24,
+            "fixed_10": 25,
+            "fixed_100": 25,
+            "transform_only": 26,
+            "one_each": 33,
+            "hindsight_eight": 32
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "1bac3b11bc34c31ab686db20",
+              "6c99a4916703944ed6cfebd7",
+              "8d7492b2227201625539f6c9",
+              "984523e9f4d657a5bd112353",
+              "b12e11d4b1f6886ddb81d0a2",
+              "bf9370f969e4f12974296e62",
+              "cf2c4a4983b35f136c520c1e",
+              "f96a2cce9b432016e0cd71db"
+            ],
+            "fixed_100": [
+              "1bac3b11bc34c31ab686db20",
+              "1ffd2cf05f98bc5460a35742",
+              "6c99a4916703944ed6cfebd7",
+              "8d7492b2227201625539f6c9",
+              "984523e9f4d657a5bd112353",
+              "b12e11d4b1f6886ddb81d0a2",
+              "bf9370f969e4f12974296e62",
+              "f96a2cce9b432016e0cd71db"
+            ]
+          },
+          "effective_extra_candidates": 1536,
+          "selected_width_ids": [
+            "0580995e14e04dce727bcdb8",
+            "529592043159d03a268631f7",
+            "99c4f1a262d04e338449a73f",
+            "d08e3381fd154d276c578b8b"
+          ]
+        },
+        "initial": {
+          "correct": {
+            "no_query": 24,
+            "fixed_10": 25,
+            "fixed_100": 25,
+            "transform_only": 26,
+            "one_each": 34,
+            "hindsight_eight": 32
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "1bac3b11bc34c31ab686db20",
+              "6c99a4916703944ed6cfebd7",
+              "8d7492b2227201625539f6c9",
+              "984523e9f4d657a5bd112353",
+              "b12e11d4b1f6886ddb81d0a2",
+              "bf9370f969e4f12974296e62",
+              "cf2c4a4983b35f136c520c1e",
+              "f96a2cce9b432016e0cd71db"
+            ],
+            "fixed_100": [
+              "1bac3b11bc34c31ab686db20",
+              "1ffd2cf05f98bc5460a35742",
+              "6c99a4916703944ed6cfebd7",
+              "8d7492b2227201625539f6c9",
+              "984523e9f4d657a5bd112353",
+              "b12e11d4b1f6886ddb81d0a2",
+              "bf9370f969e4f12974296e62",
+              "f96a2cce9b432016e0cd71db"
+            ]
+          },
+          "effective_extra_candidates": 1536,
+          "selected_width_ids": [
+            "74fa40f859ed24c82c7025f2",
+            "99c4f1a262d04e338449a73f",
+            "a61a47b091c222693c1893c1",
+            "d08e3381fd154d276c578b8b"
+          ]
+        },
+        "later": {
+          "correct": {
+            "no_query": 24,
+            "fixed_10": 25,
+            "fixed_100": 25,
+            "transform_only": 26,
+            "one_each": 34,
+            "hindsight_eight": 32
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "1bac3b11bc34c31ab686db20",
+              "6c99a4916703944ed6cfebd7",
+              "8d7492b2227201625539f6c9",
+              "984523e9f4d657a5bd112353",
+              "b12e11d4b1f6886ddb81d0a2",
+              "bf9370f969e4f12974296e62",
+              "cf2c4a4983b35f136c520c1e",
+              "f96a2cce9b432016e0cd71db"
+            ],
+            "fixed_100": [
+              "1bac3b11bc34c31ab686db20",
+              "1ffd2cf05f98bc5460a35742",
+              "6c99a4916703944ed6cfebd7",
+              "8d7492b2227201625539f6c9",
+              "984523e9f4d657a5bd112353",
+              "b12e11d4b1f6886ddb81d0a2",
+              "bf9370f969e4f12974296e62",
+              "f96a2cce9b432016e0cd71db"
+            ]
+          },
+          "effective_extra_candidates": 1536,
+          "selected_width_ids": [
+            "74fa40f859ed24c82c7025f2",
+            "99c4f1a262d04e338449a73f",
+            "a61a47b091c222693c1893c1",
+            "d08e3381fd154d276c578b8b"
+          ]
+        },
+        "fullwide": {
+          "correct": {
+            "no_query": 24,
+            "fixed_10": 25,
+            "fixed_100": 25,
+            "transform_only": 26,
+            "one_each": 34,
+            "hindsight_eight": 32
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "1bac3b11bc34c31ab686db20",
+              "6c99a4916703944ed6cfebd7",
+              "8d7492b2227201625539f6c9",
+              "984523e9f4d657a5bd112353",
+              "b12e11d4b1f6886ddb81d0a2",
+              "bf9370f969e4f12974296e62",
+              "cf2c4a4983b35f136c520c1e",
+              "f96a2cce9b432016e0cd71db"
+            ],
+            "fixed_100": [
+              "1bac3b11bc34c31ab686db20",
+              "1ffd2cf05f98bc5460a35742",
+              "6c99a4916703944ed6cfebd7",
+              "8d7492b2227201625539f6c9",
+              "984523e9f4d657a5bd112353",
+              "b12e11d4b1f6886ddb81d0a2",
+              "bf9370f969e4f12974296e62",
+              "f96a2cce9b432016e0cd71db"
+            ]
+          },
+          "effective_extra_candidates": 3072,
+          "selected_width_ids": [
+            "0580995e14e04dce727bcdb8",
+            "529592043159d03a268631f7",
+            "74fa40f859ed24c82c7025f2",
+            "99c4f1a262d04e338449a73f",
+            "a61a47b091c222693c1893c1",
+            "d08e3381fd154d276c578b8b",
+            "fa1ae679a33e295b111bae0f",
+            "fd0b0ee02715a48b89119f3b"
+          ]
+        }
+      }
+    },
+    {
+      "seed": 902482,
+      "policies": {
+        "base_all": {
+          "correct": {
+            "no_query": 25,
+            "fixed_10": 28,
+            "fixed_100": 28,
+            "transform_only": 28,
+            "one_each": 32,
+            "hindsight_eight": 32
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "1f07269978f52ed7addc3e3f",
+              "33972629825b9ff4f7a916bf",
+              "7b1cacc458274df59f578f3d",
+              "bf0734963d25e16ccc7235da",
+              "cdb0def7f65e337db9115999",
+              "f2a022c919f7f87babf726f0",
+              "f7032a8e925788e893617acf",
+              "fa6361f583cc0f897f8409d9"
+            ],
+            "fixed_100": [
+              "33972629825b9ff4f7a916bf",
+              "7b1cacc458274df59f578f3d",
+              "980a5e9cf025d82c04930666",
+              "b189ec2608116cfb9be1785b",
+              "bf0734963d25e16ccc7235da",
+              "cdb0def7f65e337db9115999",
+              "f7032a8e925788e893617acf",
+              "fa6361f583cc0f897f8409d9"
+            ]
+          },
+          "effective_extra_candidates": 0,
+          "selected_width_ids": []
+        },
+        "random": {
+          "correct": {
+            "no_query": 25,
+            "fixed_10": 28,
+            "fixed_100": 28,
+            "transform_only": 28,
+            "one_each": 32,
+            "hindsight_eight": 32
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "1f07269978f52ed7addc3e3f",
+              "33972629825b9ff4f7a916bf",
+              "7b1cacc458274df59f578f3d",
+              "bf0734963d25e16ccc7235da",
+              "cdb0def7f65e337db9115999",
+              "f2a022c919f7f87babf726f0",
+              "f7032a8e925788e893617acf",
+              "fa6361f583cc0f897f8409d9"
+            ],
+            "fixed_100": [
+              "33972629825b9ff4f7a916bf",
+              "7b1cacc458274df59f578f3d",
+              "980a5e9cf025d82c04930666",
+              "b189ec2608116cfb9be1785b",
+              "bf0734963d25e16ccc7235da",
+              "cdb0def7f65e337db9115999",
+              "f7032a8e925788e893617acf",
+              "fa6361f583cc0f897f8409d9"
+            ]
+          },
+          "effective_extra_candidates": 1536,
+          "selected_width_ids": [
+            "12554c99a275988915f5bc2a",
+            "339a59230e28af6cc3ceb664",
+            "5a5a0a50b056d7039b6eced4",
+            "e148058a279ec27b5835f0ae"
+          ]
+        },
+        "low_gap": {
+          "correct": {
+            "no_query": 23,
+            "fixed_10": 26,
+            "fixed_100": 26,
+            "transform_only": 26,
+            "one_each": 32,
+            "hindsight_eight": 31
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "1f07269978f52ed7addc3e3f",
+              "33972629825b9ff4f7a916bf",
+              "7b1cacc458274df59f578f3d",
+              "bf0734963d25e16ccc7235da",
+              "cdb0def7f65e337db9115999",
+              "f2a022c919f7f87babf726f0",
+              "f7032a8e925788e893617acf",
+              "fa6361f583cc0f897f8409d9"
+            ],
+            "fixed_100": [
+              "33972629825b9ff4f7a916bf",
+              "7b1cacc458274df59f578f3d",
+              "980a5e9cf025d82c04930666",
+              "b189ec2608116cfb9be1785b",
+              "bf0734963d25e16ccc7235da",
+              "cdb0def7f65e337db9115999",
+              "f7032a8e925788e893617acf",
+              "fa6361f583cc0f897f8409d9"
+            ]
+          },
+          "effective_extra_candidates": 1278,
+          "selected_width_ids": [
+            "2fb3fd41d7b96db3ddf5b8b9",
+            "374c39af866d4f7a7fdfafe5",
+            "49b6e546f0216956042169fd",
+            "e0b804604bf2fc6a67d178a0"
+          ]
+        },
+        "initial": {
+          "correct": {
+            "no_query": 25,
+            "fixed_10": 28,
+            "fixed_100": 28,
+            "transform_only": 28,
+            "one_each": 32,
+            "hindsight_eight": 32
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "1f07269978f52ed7addc3e3f",
+              "33972629825b9ff4f7a916bf",
+              "7b1cacc458274df59f578f3d",
+              "bf0734963d25e16ccc7235da",
+              "cdb0def7f65e337db9115999",
+              "f2a022c919f7f87babf726f0",
+              "f7032a8e925788e893617acf",
+              "fa6361f583cc0f897f8409d9"
+            ],
+            "fixed_100": [
+              "33972629825b9ff4f7a916bf",
+              "7b1cacc458274df59f578f3d",
+              "980a5e9cf025d82c04930666",
+              "b189ec2608116cfb9be1785b",
+              "bf0734963d25e16ccc7235da",
+              "cdb0def7f65e337db9115999",
+              "f7032a8e925788e893617acf",
+              "fa6361f583cc0f897f8409d9"
+            ]
+          },
+          "effective_extra_candidates": 1278,
+          "selected_width_ids": [
+            "12554c99a275988915f5bc2a",
+            "339a59230e28af6cc3ceb664",
+            "5a5a0a50b056d7039b6eced4",
+            "e0b804604bf2fc6a67d178a0"
+          ]
+        },
+        "later": {
+          "correct": {
+            "no_query": 25,
+            "fixed_10": 28,
+            "fixed_100": 28,
+            "transform_only": 28,
+            "one_each": 32,
+            "hindsight_eight": 32
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "1f07269978f52ed7addc3e3f",
+              "33972629825b9ff4f7a916bf",
+              "7b1cacc458274df59f578f3d",
+              "bf0734963d25e16ccc7235da",
+              "cdb0def7f65e337db9115999",
+              "f2a022c919f7f87babf726f0",
+              "f7032a8e925788e893617acf",
+              "fa6361f583cc0f897f8409d9"
+            ],
+            "fixed_100": [
+              "33972629825b9ff4f7a916bf",
+              "7b1cacc458274df59f578f3d",
+              "980a5e9cf025d82c04930666",
+              "b189ec2608116cfb9be1785b",
+              "bf0734963d25e16ccc7235da",
+              "cdb0def7f65e337db9115999",
+              "f7032a8e925788e893617acf",
+              "fa6361f583cc0f897f8409d9"
+            ]
+          },
+          "effective_extra_candidates": 1278,
+          "selected_width_ids": [
+            "12554c99a275988915f5bc2a",
+            "5a5a0a50b056d7039b6eced4",
+            "e0b804604bf2fc6a67d178a0",
+            "e148058a279ec27b5835f0ae"
+          ]
+        },
+        "fullwide": {
+          "correct": {
+            "no_query": 23,
+            "fixed_10": 26,
+            "fixed_100": 26,
+            "transform_only": 26,
+            "one_each": 32,
+            "hindsight_eight": 31
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "1f07269978f52ed7addc3e3f",
+              "33972629825b9ff4f7a916bf",
+              "7b1cacc458274df59f578f3d",
+              "bf0734963d25e16ccc7235da",
+              "cdb0def7f65e337db9115999",
+              "f2a022c919f7f87babf726f0",
+              "f7032a8e925788e893617acf",
+              "fa6361f583cc0f897f8409d9"
+            ],
+            "fixed_100": [
+              "33972629825b9ff4f7a916bf",
+              "7b1cacc458274df59f578f3d",
+              "980a5e9cf025d82c04930666",
+              "b189ec2608116cfb9be1785b",
+              "bf0734963d25e16ccc7235da",
+              "cdb0def7f65e337db9115999",
+              "f7032a8e925788e893617acf",
+              "fa6361f583cc0f897f8409d9"
+            ]
+          },
+          "effective_extra_candidates": 2814,
+          "selected_width_ids": [
+            "12554c99a275988915f5bc2a",
+            "2fb3fd41d7b96db3ddf5b8b9",
+            "339a59230e28af6cc3ceb664",
+            "374c39af866d4f7a7fdfafe5",
+            "49b6e546f0216956042169fd",
+            "5a5a0a50b056d7039b6eced4",
+            "e0b804604bf2fc6a67d178a0",
+            "e148058a279ec27b5835f0ae"
+          ]
+        }
+      }
+    },
+    {
+      "seed": 902483,
+      "policies": {
+        "base_all": {
+          "correct": {
+            "no_query": 21,
+            "fixed_10": 25,
+            "fixed_100": 26,
+            "transform_only": 25,
+            "one_each": 34,
+            "hindsight_eight": 29
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0d9d817758e19da7d246eca6",
+              "20cef8d8505a3099569c4690",
+              "2dd0400abe38f4b0f36049e9",
+              "3027090a3d21084ff24d5c44",
+              "98c474b112e6a7adca04f901",
+              "afc2e18c710b3d08e49f55de",
+              "e57fa94ecc0ed90bf9c836d6",
+              "f4cfc30a7e242575e959a3b5"
+            ],
+            "fixed_100": [
+              "0d9d817758e19da7d246eca6",
+              "20cef8d8505a3099569c4690",
+              "2dd0400abe38f4b0f36049e9",
+              "3027090a3d21084ff24d5c44",
+              "32448be9085ab4e5a521fcce",
+              "98c474b112e6a7adca04f901",
+              "e57fa94ecc0ed90bf9c836d6",
+              "f4cfc30a7e242575e959a3b5"
+            ]
+          },
+          "effective_extra_candidates": 0,
+          "selected_width_ids": []
+        },
+        "random": {
+          "correct": {
+            "no_query": 21,
+            "fixed_10": 25,
+            "fixed_100": 26,
+            "transform_only": 25,
+            "one_each": 35,
+            "hindsight_eight": 29
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0d9d817758e19da7d246eca6",
+              "20cef8d8505a3099569c4690",
+              "2dd0400abe38f4b0f36049e9",
+              "3027090a3d21084ff24d5c44",
+              "98c474b112e6a7adca04f901",
+              "afc2e18c710b3d08e49f55de",
+              "e57fa94ecc0ed90bf9c836d6",
+              "f4cfc30a7e242575e959a3b5"
+            ],
+            "fixed_100": [
+              "0d9d817758e19da7d246eca6",
+              "20cef8d8505a3099569c4690",
+              "2dd0400abe38f4b0f36049e9",
+              "3027090a3d21084ff24d5c44",
+              "32448be9085ab4e5a521fcce",
+              "98c474b112e6a7adca04f901",
+              "e57fa94ecc0ed90bf9c836d6",
+              "f4cfc30a7e242575e959a3b5"
+            ]
+          },
+          "effective_extra_candidates": 1536,
+          "selected_width_ids": [
+            "182ddd27a5d680407cc842af",
+            "d179ba88d3612be23a1da49c",
+            "e8aefc5d72b2bc5ec01c85bb",
+            "f7d98686477db9354bcd9b94"
+          ]
+        },
+        "low_gap": {
+          "correct": {
+            "no_query": 21,
+            "fixed_10": 25,
+            "fixed_100": 26,
+            "transform_only": 25,
+            "one_each": 36,
+            "hindsight_eight": 29
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0d9d817758e19da7d246eca6",
+              "20cef8d8505a3099569c4690",
+              "2dd0400abe38f4b0f36049e9",
+              "3027090a3d21084ff24d5c44",
+              "98c474b112e6a7adca04f901",
+              "afc2e18c710b3d08e49f55de",
+              "e57fa94ecc0ed90bf9c836d6",
+              "f4cfc30a7e242575e959a3b5"
+            ],
+            "fixed_100": [
+              "0d9d817758e19da7d246eca6",
+              "20cef8d8505a3099569c4690",
+              "2dd0400abe38f4b0f36049e9",
+              "3027090a3d21084ff24d5c44",
+              "32448be9085ab4e5a521fcce",
+              "98c474b112e6a7adca04f901",
+              "e57fa94ecc0ed90bf9c836d6",
+              "f4cfc30a7e242575e959a3b5"
+            ]
+          },
+          "effective_extra_candidates": 1536,
+          "selected_width_ids": [
+            "182ddd27a5d680407cc842af",
+            "390a583b780005f7f340f9c8",
+            "549656f6a1d8ce4ddedd4243",
+            "abc7af4d4afc1c5469682ccb"
+          ]
+        },
+        "initial": {
+          "correct": {
+            "no_query": 21,
+            "fixed_10": 25,
+            "fixed_100": 26,
+            "transform_only": 25,
+            "one_each": 36,
+            "hindsight_eight": 29
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0d9d817758e19da7d246eca6",
+              "20cef8d8505a3099569c4690",
+              "2dd0400abe38f4b0f36049e9",
+              "3027090a3d21084ff24d5c44",
+              "98c474b112e6a7adca04f901",
+              "afc2e18c710b3d08e49f55de",
+              "e57fa94ecc0ed90bf9c836d6",
+              "f4cfc30a7e242575e959a3b5"
+            ],
+            "fixed_100": [
+              "0d9d817758e19da7d246eca6",
+              "20cef8d8505a3099569c4690",
+              "2dd0400abe38f4b0f36049e9",
+              "3027090a3d21084ff24d5c44",
+              "32448be9085ab4e5a521fcce",
+              "98c474b112e6a7adca04f901",
+              "e57fa94ecc0ed90bf9c836d6",
+              "f4cfc30a7e242575e959a3b5"
+            ]
+          },
+          "effective_extra_candidates": 1536,
+          "selected_width_ids": [
+            "73e91d52878cade310d7464e",
+            "abc7af4d4afc1c5469682ccb",
+            "d179ba88d3612be23a1da49c",
+            "e8aefc5d72b2bc5ec01c85bb"
+          ]
+        },
+        "later": {
+          "correct": {
+            "no_query": 21,
+            "fixed_10": 25,
+            "fixed_100": 26,
+            "transform_only": 25,
+            "one_each": 35,
+            "hindsight_eight": 29
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0d9d817758e19da7d246eca6",
+              "20cef8d8505a3099569c4690",
+              "2dd0400abe38f4b0f36049e9",
+              "3027090a3d21084ff24d5c44",
+              "98c474b112e6a7adca04f901",
+              "afc2e18c710b3d08e49f55de",
+              "e57fa94ecc0ed90bf9c836d6",
+              "f4cfc30a7e242575e959a3b5"
+            ],
+            "fixed_100": [
+              "0d9d817758e19da7d246eca6",
+              "20cef8d8505a3099569c4690",
+              "2dd0400abe38f4b0f36049e9",
+              "3027090a3d21084ff24d5c44",
+              "32448be9085ab4e5a521fcce",
+              "98c474b112e6a7adca04f901",
+              "e57fa94ecc0ed90bf9c836d6",
+              "f4cfc30a7e242575e959a3b5"
+            ]
+          },
+          "effective_extra_candidates": 1536,
+          "selected_width_ids": [
+            "182ddd27a5d680407cc842af",
+            "73e91d52878cade310d7464e",
+            "d179ba88d3612be23a1da49c",
+            "f7d98686477db9354bcd9b94"
+          ]
+        },
+        "fullwide": {
+          "correct": {
+            "no_query": 21,
+            "fixed_10": 25,
+            "fixed_100": 26,
+            "transform_only": 25,
+            "one_each": 37,
+            "hindsight_eight": 29
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0d9d817758e19da7d246eca6",
+              "20cef8d8505a3099569c4690",
+              "2dd0400abe38f4b0f36049e9",
+              "3027090a3d21084ff24d5c44",
+              "98c474b112e6a7adca04f901",
+              "afc2e18c710b3d08e49f55de",
+              "e57fa94ecc0ed90bf9c836d6",
+              "f4cfc30a7e242575e959a3b5"
+            ],
+            "fixed_100": [
+              "0d9d817758e19da7d246eca6",
+              "20cef8d8505a3099569c4690",
+              "2dd0400abe38f4b0f36049e9",
+              "3027090a3d21084ff24d5c44",
+              "32448be9085ab4e5a521fcce",
+              "98c474b112e6a7adca04f901",
+              "e57fa94ecc0ed90bf9c836d6",
+              "f4cfc30a7e242575e959a3b5"
+            ]
+          },
+          "effective_extra_candidates": 3072,
+          "selected_width_ids": [
+            "182ddd27a5d680407cc842af",
+            "390a583b780005f7f340f9c8",
+            "549656f6a1d8ce4ddedd4243",
+            "73e91d52878cade310d7464e",
+            "abc7af4d4afc1c5469682ccb",
+            "d179ba88d3612be23a1da49c",
+            "e8aefc5d72b2bc5ec01c85bb",
+            "f7d98686477db9354bcd9b94"
+          ]
+        }
+      }
+    },
+    {
+      "seed": 902484,
+      "policies": {
+        "base_all": {
+          "correct": {
+            "no_query": 20,
+            "fixed_10": 22,
+            "fixed_100": 23,
+            "transform_only": 23,
+            "one_each": 30,
+            "hindsight_eight": 28
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "022393ad193698b8fd32dfef",
+              "290231e54128c8f58b2be209",
+              "6a2bcb18305431a042b5c211",
+              "b24dc9aa21db8045c1420bf0",
+              "c3c35d982af9d7d78d7e66b0",
+              "c92fbe4660bf3509328a1c3f",
+              "d3aae4f5608e169d21e82e34",
+              "fe760d3d4632ececb51891d7"
+            ],
+            "fixed_100": [
+              "022393ad193698b8fd32dfef",
+              "290231e54128c8f58b2be209",
+              "6a2bcb18305431a042b5c211",
+              "8ec3a6bbb67b0701c2e27b4f",
+              "b24dc9aa21db8045c1420bf0",
+              "c3c35d982af9d7d78d7e66b0",
+              "c92fbe4660bf3509328a1c3f",
+              "d3aae4f5608e169d21e82e34"
+            ]
+          },
+          "effective_extra_candidates": 0,
+          "selected_width_ids": []
+        },
+        "random": {
+          "correct": {
+            "no_query": 20,
+            "fixed_10": 22,
+            "fixed_100": 23,
+            "transform_only": 23,
+            "one_each": 30,
+            "hindsight_eight": 28
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "022393ad193698b8fd32dfef",
+              "290231e54128c8f58b2be209",
+              "6a2bcb18305431a042b5c211",
+              "b24dc9aa21db8045c1420bf0",
+              "c3c35d982af9d7d78d7e66b0",
+              "c92fbe4660bf3509328a1c3f",
+              "d3aae4f5608e169d21e82e34",
+              "fe760d3d4632ececb51891d7"
+            ],
+            "fixed_100": [
+              "022393ad193698b8fd32dfef",
+              "290231e54128c8f58b2be209",
+              "6a2bcb18305431a042b5c211",
+              "8ec3a6bbb67b0701c2e27b4f",
+              "b24dc9aa21db8045c1420bf0",
+              "c3c35d982af9d7d78d7e66b0",
+              "c92fbe4660bf3509328a1c3f",
+              "d3aae4f5608e169d21e82e34"
+            ]
+          },
+          "effective_extra_candidates": 1536,
+          "selected_width_ids": [
+            "1a32ac35a42a8ca01e921a3d",
+            "47d4d4e7aa185bcab1ad166f",
+            "e776978c7e706b94934f6925",
+            "f8df463442cc8553a522c279"
+          ]
+        },
+        "low_gap": {
+          "correct": {
+            "no_query": 20,
+            "fixed_10": 22,
+            "fixed_100": 23,
+            "transform_only": 23,
+            "one_each": 30,
+            "hindsight_eight": 28
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "022393ad193698b8fd32dfef",
+              "290231e54128c8f58b2be209",
+              "6a2bcb18305431a042b5c211",
+              "b24dc9aa21db8045c1420bf0",
+              "c3c35d982af9d7d78d7e66b0",
+              "c92fbe4660bf3509328a1c3f",
+              "d3aae4f5608e169d21e82e34",
+              "fe760d3d4632ececb51891d7"
+            ],
+            "fixed_100": [
+              "022393ad193698b8fd32dfef",
+              "290231e54128c8f58b2be209",
+              "6a2bcb18305431a042b5c211",
+              "8ec3a6bbb67b0701c2e27b4f",
+              "b24dc9aa21db8045c1420bf0",
+              "c3c35d982af9d7d78d7e66b0",
+              "c92fbe4660bf3509328a1c3f",
+              "d3aae4f5608e169d21e82e34"
+            ]
+          },
+          "effective_extra_candidates": 1152,
+          "selected_width_ids": [
+            "47d4d4e7aa185bcab1ad166f",
+            "546cfea8a1243cc553cec361",
+            "e776978c7e706b94934f6925",
+            "fa50fabaaf7a67753cdd3c39"
+          ]
+        },
+        "initial": {
+          "correct": {
+            "no_query": 20,
+            "fixed_10": 22,
+            "fixed_100": 23,
+            "transform_only": 23,
+            "one_each": 30,
+            "hindsight_eight": 28
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "022393ad193698b8fd32dfef",
+              "290231e54128c8f58b2be209",
+              "6a2bcb18305431a042b5c211",
+              "b24dc9aa21db8045c1420bf0",
+              "c3c35d982af9d7d78d7e66b0",
+              "c92fbe4660bf3509328a1c3f",
+              "d3aae4f5608e169d21e82e34",
+              "fe760d3d4632ececb51891d7"
+            ],
+            "fixed_100": [
+              "022393ad193698b8fd32dfef",
+              "290231e54128c8f58b2be209",
+              "6a2bcb18305431a042b5c211",
+              "8ec3a6bbb67b0701c2e27b4f",
+              "b24dc9aa21db8045c1420bf0",
+              "c3c35d982af9d7d78d7e66b0",
+              "c92fbe4660bf3509328a1c3f",
+              "d3aae4f5608e169d21e82e34"
+            ]
+          },
+          "effective_extra_candidates": 1152,
+          "selected_width_ids": [
+            "1a32ac35a42a8ca01e921a3d",
+            "4da2e8e79af022ed4f8a2acf",
+            "546cfea8a1243cc553cec361",
+            "92f72d6af72f44f736fc9020"
+          ]
+        },
+        "later": {
+          "correct": {
+            "no_query": 20,
+            "fixed_10": 22,
+            "fixed_100": 23,
+            "transform_only": 23,
+            "one_each": 30,
+            "hindsight_eight": 28
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "022393ad193698b8fd32dfef",
+              "290231e54128c8f58b2be209",
+              "6a2bcb18305431a042b5c211",
+              "b24dc9aa21db8045c1420bf0",
+              "c3c35d982af9d7d78d7e66b0",
+              "c92fbe4660bf3509328a1c3f",
+              "d3aae4f5608e169d21e82e34",
+              "fe760d3d4632ececb51891d7"
+            ],
+            "fixed_100": [
+              "022393ad193698b8fd32dfef",
+              "290231e54128c8f58b2be209",
+              "6a2bcb18305431a042b5c211",
+              "8ec3a6bbb67b0701c2e27b4f",
+              "b24dc9aa21db8045c1420bf0",
+              "c3c35d982af9d7d78d7e66b0",
+              "c92fbe4660bf3509328a1c3f",
+              "d3aae4f5608e169d21e82e34"
+            ]
+          },
+          "effective_extra_candidates": 1152,
+          "selected_width_ids": [
+            "1a32ac35a42a8ca01e921a3d",
+            "4da2e8e79af022ed4f8a2acf",
+            "546cfea8a1243cc553cec361",
+            "92f72d6af72f44f736fc9020"
+          ]
+        },
+        "fullwide": {
+          "correct": {
+            "no_query": 20,
+            "fixed_10": 22,
+            "fixed_100": 23,
+            "transform_only": 23,
+            "one_each": 30,
+            "hindsight_eight": 28
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "022393ad193698b8fd32dfef",
+              "290231e54128c8f58b2be209",
+              "6a2bcb18305431a042b5c211",
+              "b24dc9aa21db8045c1420bf0",
+              "c3c35d982af9d7d78d7e66b0",
+              "c92fbe4660bf3509328a1c3f",
+              "d3aae4f5608e169d21e82e34",
+              "fe760d3d4632ececb51891d7"
+            ],
+            "fixed_100": [
+              "022393ad193698b8fd32dfef",
+              "290231e54128c8f58b2be209",
+              "6a2bcb18305431a042b5c211",
+              "8ec3a6bbb67b0701c2e27b4f",
+              "b24dc9aa21db8045c1420bf0",
+              "c3c35d982af9d7d78d7e66b0",
+              "c92fbe4660bf3509328a1c3f",
+              "d3aae4f5608e169d21e82e34"
+            ]
+          },
+          "effective_extra_candidates": 2688,
+          "selected_width_ids": [
+            "1a32ac35a42a8ca01e921a3d",
+            "47d4d4e7aa185bcab1ad166f",
+            "4da2e8e79af022ed4f8a2acf",
+            "546cfea8a1243cc553cec361",
+            "92f72d6af72f44f736fc9020",
+            "e776978c7e706b94934f6925",
+            "f8df463442cc8553a522c279",
+            "fa50fabaaf7a67753cdd3c39"
+          ]
+        }
+      }
+    },
+    {
+      "seed": 902485,
+      "policies": {
+        "base_all": {
+          "correct": {
+            "no_query": 28,
+            "fixed_10": 31,
+            "fixed_100": 31,
+            "transform_only": 29,
+            "one_each": 38,
+            "hindsight_eight": 36
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0b14d7f7e1c371f8a7c5174d",
+              "559df7807348d7eef441c460",
+              "560e3dd0122a0241f6e14292",
+              "683e1cb4828b701389a7cc1f",
+              "79c8d63d572a3abe5c430f5c",
+              "81ee2ffe9695b7f02383482c",
+              "83e9c709229dfa67a3583c90",
+              "9733508abbae38c3108d5e5a"
+            ],
+            "fixed_100": [
+              "0b14d7f7e1c371f8a7c5174d",
+              "559df7807348d7eef441c460",
+              "560e3dd0122a0241f6e14292",
+              "683e1cb4828b701389a7cc1f",
+              "79c8d63d572a3abe5c430f5c",
+              "81ee2ffe9695b7f02383482c",
+              "83e9c709229dfa67a3583c90",
+              "9733508abbae38c3108d5e5a"
+            ]
+          },
+          "effective_extra_candidates": 0,
+          "selected_width_ids": []
+        },
+        "random": {
+          "correct": {
+            "no_query": 28,
+            "fixed_10": 31,
+            "fixed_100": 31,
+            "transform_only": 29,
+            "one_each": 39,
+            "hindsight_eight": 36
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0b14d7f7e1c371f8a7c5174d",
+              "559df7807348d7eef441c460",
+              "560e3dd0122a0241f6e14292",
+              "683e1cb4828b701389a7cc1f",
+              "79c8d63d572a3abe5c430f5c",
+              "81ee2ffe9695b7f02383482c",
+              "83e9c709229dfa67a3583c90",
+              "9733508abbae38c3108d5e5a"
+            ],
+            "fixed_100": [
+              "0b14d7f7e1c371f8a7c5174d",
+              "559df7807348d7eef441c460",
+              "560e3dd0122a0241f6e14292",
+              "683e1cb4828b701389a7cc1f",
+              "79c8d63d572a3abe5c430f5c",
+              "81ee2ffe9695b7f02383482c",
+              "83e9c709229dfa67a3583c90",
+              "9733508abbae38c3108d5e5a"
+            ]
+          },
+          "effective_extra_candidates": 1444,
+          "selected_width_ids": [
+            "3f1e914f9cbc66ce14b4a853",
+            "6a0f225ee7a8ed83d7c644e9",
+            "94e52c7c09f6af449b9fa03d",
+            "ff475557640e5f161f019d2d"
+          ]
+        },
+        "low_gap": {
+          "correct": {
+            "no_query": 28,
+            "fixed_10": 31,
+            "fixed_100": 31,
+            "transform_only": 29,
+            "one_each": 39,
+            "hindsight_eight": 36
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0b14d7f7e1c371f8a7c5174d",
+              "559df7807348d7eef441c460",
+              "560e3dd0122a0241f6e14292",
+              "683e1cb4828b701389a7cc1f",
+              "79c8d63d572a3abe5c430f5c",
+              "81ee2ffe9695b7f02383482c",
+              "83e9c709229dfa67a3583c90",
+              "9733508abbae38c3108d5e5a"
+            ],
+            "fixed_100": [
+              "0b14d7f7e1c371f8a7c5174d",
+              "559df7807348d7eef441c460",
+              "560e3dd0122a0241f6e14292",
+              "683e1cb4828b701389a7cc1f",
+              "79c8d63d572a3abe5c430f5c",
+              "81ee2ffe9695b7f02383482c",
+              "83e9c709229dfa67a3583c90",
+              "9733508abbae38c3108d5e5a"
+            ]
+          },
+          "effective_extra_candidates": 1312,
+          "selected_width_ids": [
+            "0658b3a966c76aca57581e03",
+            "474af9d830b5c7855ddc97af",
+            "6a0f225ee7a8ed83d7c644e9",
+            "ff475557640e5f161f019d2d"
+          ]
+        },
+        "initial": {
+          "correct": {
+            "no_query": 28,
+            "fixed_10": 31,
+            "fixed_100": 31,
+            "transform_only": 29,
+            "one_each": 37,
+            "hindsight_eight": 36
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0b14d7f7e1c371f8a7c5174d",
+              "559df7807348d7eef441c460",
+              "560e3dd0122a0241f6e14292",
+              "683e1cb4828b701389a7cc1f",
+              "79c8d63d572a3abe5c430f5c",
+              "81ee2ffe9695b7f02383482c",
+              "83e9c709229dfa67a3583c90",
+              "9733508abbae38c3108d5e5a"
+            ],
+            "fixed_100": [
+              "0b14d7f7e1c371f8a7c5174d",
+              "559df7807348d7eef441c460",
+              "560e3dd0122a0241f6e14292",
+              "683e1cb4828b701389a7cc1f",
+              "79c8d63d572a3abe5c430f5c",
+              "81ee2ffe9695b7f02383482c",
+              "83e9c709229dfa67a3583c90",
+              "9733508abbae38c3108d5e5a"
+            ]
+          },
+          "effective_extra_candidates": 1312,
+          "selected_width_ids": [
+            "0658b3a966c76aca57581e03",
+            "474af9d830b5c7855ddc97af",
+            "5647c11c96d9a0277896fb86",
+            "94e52c7c09f6af449b9fa03d"
+          ]
+        },
+        "later": {
+          "correct": {
+            "no_query": 28,
+            "fixed_10": 31,
+            "fixed_100": 31,
+            "transform_only": 29,
+            "one_each": 37,
+            "hindsight_eight": 36
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0b14d7f7e1c371f8a7c5174d",
+              "559df7807348d7eef441c460",
+              "560e3dd0122a0241f6e14292",
+              "683e1cb4828b701389a7cc1f",
+              "79c8d63d572a3abe5c430f5c",
+              "81ee2ffe9695b7f02383482c",
+              "83e9c709229dfa67a3583c90",
+              "9733508abbae38c3108d5e5a"
+            ],
+            "fixed_100": [
+              "0b14d7f7e1c371f8a7c5174d",
+              "559df7807348d7eef441c460",
+              "560e3dd0122a0241f6e14292",
+              "683e1cb4828b701389a7cc1f",
+              "79c8d63d572a3abe5c430f5c",
+              "81ee2ffe9695b7f02383482c",
+              "83e9c709229dfa67a3583c90",
+              "9733508abbae38c3108d5e5a"
+            ]
+          },
+          "effective_extra_candidates": 1312,
+          "selected_width_ids": [
+            "0658b3a966c76aca57581e03",
+            "474af9d830b5c7855ddc97af",
+            "5647c11c96d9a0277896fb86",
+            "94e52c7c09f6af449b9fa03d"
+          ]
+        },
+        "fullwide": {
+          "correct": {
+            "no_query": 28,
+            "fixed_10": 31,
+            "fixed_100": 31,
+            "transform_only": 29,
+            "one_each": 38,
+            "hindsight_eight": 36
+          },
+          "selected_ids": {
+            "fixed_10": [
+              "0b14d7f7e1c371f8a7c5174d",
+              "559df7807348d7eef441c460",
+              "560e3dd0122a0241f6e14292",
+              "683e1cb4828b701389a7cc1f",
+              "79c8d63d572a3abe5c430f5c",
+              "81ee2ffe9695b7f02383482c",
+              "83e9c709229dfa67a3583c90",
+              "9733508abbae38c3108d5e5a"
+            ],
+            "fixed_100": [
+              "0b14d7f7e1c371f8a7c5174d",
+              "559df7807348d7eef441c460",
+              "560e3dd0122a0241f6e14292",
+              "683e1cb4828b701389a7cc1f",
+              "79c8d63d572a3abe5c430f5c",
+              "81ee2ffe9695b7f02383482c",
+              "83e9c709229dfa67a3583c90",
+              "9733508abbae38c3108d5e5a"
+            ]
+          },
+          "effective_extra_candidates": 2756,
+          "selected_width_ids": [
+            "0658b3a966c76aca57581e03",
+            "33953ed2866612eaf8761775",
+            "3f1e914f9cbc66ce14b4a853",
+            "474af9d830b5c7855ddc97af",
+            "5647c11c96d9a0277896fb86",
+            "6a0f225ee7a8ed83d7c644e9",
+            "94e52c7c09f6af449b9fa03d",
+            "ff475557640e5f161f019d2d"
+          ]
+        }
+      }
+    }
+  ],
+  "model_source_sha256": "c8d993970a46890427a57ceb82063379d2ce7b5a5960b972aaa22543f7af9ad0",
+  "source_sha256": {
+    "sealed_bank.json": "ad7c10d5d3ac22457980d292234159aad1b0056cf626dbbb927adedfc2297c1d",
+    "base_pools.json": "607d808f91a58fee266ac2709cac2f6a8292088c5741932577634a259895dab7",
+    "ast_wide_pools.json": "54502e1132c7582c55379b4ff08be42db71402a74822f375426b60fb3cb25156",
+    "predicted_probe_outputs.json": "3ca0c96c7dafca13a8c6bae970c52b48529487509487bd9a8453c399a92db8d1",
+    "frozen_records.json": "0ca7a571e7459d5a58d6bdad52138584aeaed439efdce06a98d95a4cebedcf79",
+    "frozen_allocations.json": "5dc6a5996323dc85946c91f2517c1eba703d65ebdf1cd4a2a0049d442dd54773",
+    "results.json": "8d685194f19304de26e0cd516028f0754bfd2955b245382eb427064c6de7b7bf"
+  },
+  "new_nonast_predicted_output_cells": 347760,
+  "limits": [
+    "All non-AST predicted outputs and their cost are newly computed for this development simulation.",
+    "Both query models were frozen before these width-run tasks, but this comparison was designed after opening their labels.",
+    "Hindsight uses unavailable final labels."
+  ]
+}

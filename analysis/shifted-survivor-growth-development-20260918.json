@@ -1,0 +1,764 @@
+{
+  "scope": "opened development; no fresh promotion claim",
+  "shifted_source_tasks_a": 96,
+  "shifted_source_tasks_ab": 288,
+  "source_survivor_labels_a": 1527,
+  "source_survivor_labels_ab": 4862,
+  "source_positive_labels_ab": 501,
+  "model_sha256": {
+    "a_sensor100": "6f8b4033dea127f645dc7d98822441e2c4d8b6199e95982778474074e93e0c98",
+    "ab_sensor100": "23c08cd76743301fa05b44c5ce40e4df0900c43c4de9068a9cf6fe07ddd16db2",
+    "ab_plain100": "cdcf3c5d4551ff5a32b498f67298e36733d6edace2390c4d1bf3d6f119cbc799",
+    "ab_sensor50": "9f4a3f6c4a0d3a21ef05942b2e5a4be656e548850af0306469eef88131fde320",
+    "ab_scrambled100": "8f3cf7a78c4b7da20772082129e8a63bb913292d2703e418e4df7e3289208e0e"
+  },
+  "target": {
+    "tasks": 192,
+    "candidate_choices_checked": 1728,
+    "new_model_predictions": 12880,
+    "zero_e0": 26,
+    "top100_survivor_rows": 2847,
+    "totals": {
+      "one_each": {
+        "e0": 55,
+        "familiar_plain50": 59,
+        "familiar_sensor50": 60,
+        "a_sensor100": 82,
+        "ab_sensor100": 85,
+        "ab_plain100": 86,
+        "ab_sensor50": 79,
+        "ab_scrambled100": 75
+      },
+      "budgeted": {
+        "e0": 46,
+        "familiar_plain50": 50,
+        "familiar_sensor50": 48,
+        "a_sensor100": 61,
+        "ab_sensor100": 62,
+        "ab_plain100": 64,
+        "ab_sensor50": 61,
+        "ab_scrambled100": 59
+      }
+    },
+    "comparisons": {
+      "familiar_plain50": {
+        "one_each": {
+          "gain": 4,
+          "positive_banks": 3,
+          "losing_banks": 1,
+          "interval": [
+            -1,
+            11
+          ]
+        },
+        "budgeted": {
+          "gain": 4,
+          "positive_banks": 4,
+          "losing_banks": 0,
+          "interval": [
+            1,
+            8
+          ]
+        }
+      },
+      "familiar_sensor50": {
+        "one_each": {
+          "gain": 5,
+          "positive_banks": 6,
+          "losing_banks": 1,
+          "interval": [
+            0,
+            10
+          ]
+        },
+        "budgeted": {
+          "gain": 2,
+          "positive_banks": 3,
+          "losing_banks": 1,
+          "interval": [
+            -2,
+            6
+          ]
+        }
+      },
+      "a_sensor100": {
+        "one_each": {
+          "gain": 27,
+          "positive_banks": 17,
+          "losing_banks": 0,
+          "interval": [
+            17,
+            39
+          ]
+        },
+        "budgeted": {
+          "gain": 15,
+          "positive_banks": 12,
+          "losing_banks": 0,
+          "interval": [
+            8,
+            23
+          ]
+        }
+      },
+      "ab_sensor100": {
+        "one_each": {
+          "gain": 30,
+          "positive_banks": 17,
+          "losing_banks": 0,
+          "interval": [
+            20,
+            40
+          ]
+        },
+        "budgeted": {
+          "gain": 16,
+          "positive_banks": 13,
+          "losing_banks": 0,
+          "interval": [
+            10,
+            23
+          ]
+        }
+      },
+      "ab_plain100": {
+        "one_each": {
+          "gain": 31,
+          "positive_banks": 18,
+          "losing_banks": 0,
+          "interval": [
+            21,
+            41
+          ]
+        },
+        "budgeted": {
+          "gain": 18,
+          "positive_banks": 14,
+          "losing_banks": 0,
+          "interval": [
+            11,
+            25
+          ]
+        }
+      },
+      "ab_sensor50": {
+        "one_each": {
+          "gain": 24,
+          "positive_banks": 16,
+          "losing_banks": 0,
+          "interval": [
+            16,
+            32
+          ]
+        },
+        "budgeted": {
+          "gain": 15,
+          "positive_banks": 13,
+          "losing_banks": 0,
+          "interval": [
+            9,
+            21
+          ]
+        }
+      },
+      "ab_scrambled100": {
+        "one_each": {
+          "gain": 20,
+          "positive_banks": 15,
+          "losing_banks": 1,
+          "interval": [
+            12,
+            29
+          ]
+        },
+        "budgeted": {
+          "gain": 13,
+          "positive_banks": 11,
+          "losing_banks": 0,
+          "interval": [
+            7,
+            19
+          ]
+        }
+      }
+    },
+    "banks": [
+      {
+        "seed": 903200,
+        "zero": 1,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_sensor100": 2,
+          "ab_sensor100": 2,
+          "ab_plain100": 2,
+          "ab_sensor50": 2,
+          "ab_scrambled100": 2
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_sensor100": 2,
+          "ab_sensor100": 2,
+          "ab_plain100": 2,
+          "ab_sensor50": 2,
+          "ab_scrambled100": 2
+        }
+      },
+      {
+        "seed": 903201,
+        "zero": 1,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 3,
+          "a_sensor100": 3,
+          "ab_sensor100": 3,
+          "ab_plain100": 3,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 3
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_sensor100": 2,
+          "ab_sensor100": 2,
+          "ab_plain100": 2,
+          "ab_sensor50": 2,
+          "ab_scrambled100": 2
+        }
+      },
+      {
+        "seed": 903202,
+        "zero": 0,
+        "one_each": {
+          "e0": 1,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 2,
+          "a_sensor100": 6,
+          "ab_sensor100": 5,
+          "ab_plain100": 5,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 4
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 1,
+          "a_sensor100": 4,
+          "ab_sensor100": 3,
+          "ab_plain100": 3,
+          "ab_sensor50": 2,
+          "ab_scrambled100": 3
+        }
+      },
+      {
+        "seed": 903203,
+        "zero": 2,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_sensor100": 5,
+          "ab_sensor100": 5,
+          "ab_plain100": 5,
+          "ab_sensor50": 5,
+          "ab_scrambled100": 4
+        },
+        "budgeted": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_sensor100": 4,
+          "ab_sensor100": 4,
+          "ab_plain100": 4,
+          "ab_sensor50": 4,
+          "ab_scrambled100": 3
+        }
+      },
+      {
+        "seed": 903204,
+        "zero": 1,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_sensor100": 2,
+          "ab_sensor100": 3,
+          "ab_plain100": 3,
+          "ab_sensor50": 2,
+          "ab_scrambled100": 2
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_sensor100": 2,
+          "ab_sensor100": 2,
+          "ab_plain100": 2,
+          "ab_sensor50": 2,
+          "ab_scrambled100": 2
+        }
+      },
+      {
+        "seed": 903205,
+        "zero": 2,
+        "one_each": {
+          "e0": 4,
+          "familiar_plain50": 4,
+          "familiar_sensor50": 4,
+          "a_sensor100": 5,
+          "ab_sensor100": 4,
+          "ab_plain100": 4,
+          "ab_sensor50": 4,
+          "ab_scrambled100": 5
+        },
+        "budgeted": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_sensor100": 3,
+          "ab_sensor100": 3,
+          "ab_plain100": 3,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 3
+        }
+      },
+      {
+        "seed": 903206,
+        "zero": 3,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 3,
+          "a_sensor100": 4,
+          "ab_sensor100": 4,
+          "ab_plain100": 4,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 4
+        },
+        "budgeted": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_sensor100": 4,
+          "ab_sensor100": 4,
+          "ab_plain100": 4,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 4
+        }
+      },
+      {
+        "seed": 903207,
+        "zero": 1,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_sensor100": 3,
+          "ab_sensor100": 3,
+          "ab_plain100": 3,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 3
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_sensor100": 3,
+          "ab_sensor100": 3,
+          "ab_plain100": 3,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 3
+        }
+      },
+      {
+        "seed": 903208,
+        "zero": 0,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 1,
+          "a_sensor100": 3,
+          "ab_sensor100": 4,
+          "ab_plain100": 5,
+          "ab_sensor50": 4,
+          "ab_scrambled100": 2
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 0,
+          "a_sensor100": 1,
+          "ab_sensor100": 2,
+          "ab_plain100": 3,
+          "ab_sensor50": 2,
+          "ab_scrambled100": 1
+        }
+      },
+      {
+        "seed": 903209,
+        "zero": 2,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 4,
+          "a_sensor100": 4,
+          "ab_sensor100": 5,
+          "ab_plain100": 4,
+          "ab_sensor50": 4,
+          "ab_scrambled100": 4
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_sensor100": 3,
+          "ab_sensor100": 3,
+          "ab_plain100": 3,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 3
+        }
+      },
+      {
+        "seed": 903210,
+        "zero": 2,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_sensor100": 3,
+          "ab_sensor100": 3,
+          "ab_plain100": 3,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 3
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_sensor100": 2,
+          "ab_sensor100": 2,
+          "ab_plain100": 2,
+          "ab_sensor50": 2,
+          "ab_scrambled100": 2
+        }
+      },
+      {
+        "seed": 903211,
+        "zero": 1,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 5,
+          "familiar_sensor50": 4,
+          "a_sensor100": 5,
+          "ab_sensor100": 5,
+          "ab_plain100": 5,
+          "ab_sensor50": 5,
+          "ab_scrambled100": 5
+        },
+        "budgeted": {
+          "e0": 3,
+          "familiar_plain50": 4,
+          "familiar_sensor50": 3,
+          "a_sensor100": 4,
+          "ab_sensor100": 4,
+          "ab_plain100": 4,
+          "ab_sensor50": 4,
+          "ab_scrambled100": 4
+        }
+      },
+      {
+        "seed": 903212,
+        "zero": 1,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_sensor100": 4,
+          "ab_sensor100": 4,
+          "ab_plain100": 4,
+          "ab_sensor50": 4,
+          "ab_scrambled100": 4
+        },
+        "budgeted": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_sensor100": 3,
+          "ab_sensor100": 3,
+          "ab_plain100": 3,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 3
+        }
+      },
+      {
+        "seed": 903213,
+        "zero": 1,
+        "one_each": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 1,
+          "a_sensor100": 1,
+          "ab_sensor100": 1,
+          "ab_plain100": 1,
+          "ab_sensor50": 1,
+          "ab_scrambled100": 1
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 1,
+          "a_sensor100": 1,
+          "ab_sensor100": 1,
+          "ab_plain100": 1,
+          "ab_sensor50": 1,
+          "ab_scrambled100": 1
+        }
+      },
+      {
+        "seed": 903214,
+        "zero": 3,
+        "one_each": {
+          "e0": 4,
+          "familiar_plain50": 5,
+          "familiar_sensor50": 4,
+          "a_sensor100": 5,
+          "ab_sensor100": 5,
+          "ab_plain100": 5,
+          "ab_sensor50": 5,
+          "ab_scrambled100": 5
+        },
+        "budgeted": {
+          "e0": 4,
+          "familiar_plain50": 5,
+          "familiar_sensor50": 4,
+          "a_sensor100": 5,
+          "ab_sensor100": 5,
+          "ab_plain100": 5,
+          "ab_sensor50": 5,
+          "ab_scrambled100": 5
+        }
+      },
+      {
+        "seed": 903215,
+        "zero": 0,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_sensor100": 4,
+          "ab_sensor100": 4,
+          "ab_plain100": 4,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 4
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 1,
+          "a_sensor100": 2,
+          "ab_sensor100": 2,
+          "ab_plain100": 2,
+          "ab_sensor50": 1,
+          "ab_scrambled100": 2
+        }
+      },
+      {
+        "seed": 903216,
+        "zero": 0,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 3,
+          "a_sensor100": 2,
+          "ab_sensor100": 2,
+          "ab_plain100": 2,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 1
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 2,
+          "a_sensor100": 1,
+          "ab_sensor100": 1,
+          "ab_plain100": 1,
+          "ab_sensor50": 2,
+          "ab_scrambled100": 1
+        }
+      },
+      {
+        "seed": 903217,
+        "zero": 1,
+        "one_each": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 1,
+          "a_sensor100": 3,
+          "ab_sensor100": 3,
+          "ab_plain100": 3,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 3
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 1,
+          "a_sensor100": 3,
+          "ab_sensor100": 3,
+          "ab_plain100": 3,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 3
+        }
+      },
+      {
+        "seed": 903218,
+        "zero": 0,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_sensor100": 4,
+          "ab_sensor100": 5,
+          "ab_plain100": 5,
+          "ab_sensor50": 5,
+          "ab_scrambled100": 3
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 1,
+          "a_sensor100": 2,
+          "ab_sensor100": 2,
+          "ab_plain100": 2,
+          "ab_sensor50": 2,
+          "ab_scrambled100": 2
+        }
+      },
+      {
+        "seed": 903219,
+        "zero": 0,
+        "one_each": {
+          "e0": 0,
+          "familiar_plain50": 0,
+          "familiar_sensor50": 0,
+          "a_sensor100": 0,
+          "ab_sensor100": 0,
+          "ab_plain100": 0,
+          "ab_sensor50": 1,
+          "ab_scrambled100": 0
+        },
+        "budgeted": {
+          "e0": 0,
+          "familiar_plain50": 0,
+          "familiar_sensor50": 0,
+          "a_sensor100": 0,
+          "ab_sensor100": 0,
+          "ab_plain100": 0,
+          "ab_sensor50": 1,
+          "ab_scrambled100": 0
+        }
+      },
+      {
+        "seed": 903220,
+        "zero": 1,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_sensor100": 5,
+          "ab_sensor100": 5,
+          "ab_plain100": 5,
+          "ab_sensor50": 4,
+          "ab_scrambled100": 4
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_sensor100": 3,
+          "ab_sensor100": 3,
+          "ab_plain100": 3,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 3
+        }
+      },
+      {
+        "seed": 903221,
+        "zero": 1,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 3,
+          "a_sensor100": 3,
+          "ab_sensor100": 4,
+          "ab_plain100": 4,
+          "ab_sensor50": 4,
+          "ab_scrambled100": 3
+        },
+        "budgeted": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 3,
+          "a_sensor100": 3,
+          "ab_sensor100": 4,
+          "ab_plain100": 4,
+          "ab_sensor50": 4,
+          "ab_scrambled100": 3
+        }
+      },
+      {
+        "seed": 903222,
+        "zero": 0,
+        "one_each": {
+          "e0": 2,
+          "familiar_plain50": 2,
+          "familiar_sensor50": 2,
+          "a_sensor100": 2,
+          "ab_sensor100": 2,
+          "ab_plain100": 3,
+          "ab_sensor50": 2,
+          "ab_scrambled100": 2
+        },
+        "budgeted": {
+          "e0": 1,
+          "familiar_plain50": 1,
+          "familiar_sensor50": 1,
+          "a_sensor100": 1,
+          "ab_sensor100": 1,
+          "ab_plain100": 2,
+          "ab_sensor50": 1,
+          "ab_scrambled100": 1
+        }
+      },
+      {
+        "seed": 903223,
+        "zero": 2,
+        "one_each": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_sensor100": 4,
+          "ab_sensor100": 4,
+          "ab_plain100": 4,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 4
+        },
+        "budgeted": {
+          "e0": 3,
+          "familiar_plain50": 3,
+          "familiar_sensor50": 3,
+          "a_sensor100": 3,
+          "ab_sensor100": 3,
+          "ab_plain100": 3,
+          "ab_sensor50": 3,
+          "ab_scrambled100": 3
+        }
+      }
+    ]
+  }
+}

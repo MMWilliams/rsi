@@ -1,0 +1,29 @@
+region train= 25 test= 25 gain=+177
+region train= 25 test= 50 gain=+207
+region train= 25 test=100 gain=+205
+region train= 50 test= 25 gain=+194
+region train= 50 test= 50 gain=+219
+region train= 50 test=100 gain=+226
+region train=100 test= 25 gain=+179
+region train=100 test= 50 gain=+218
+region train=100 test=100 gain=+233
+global train= 25 test= 25 gain= +53
+Traceback (most recent call last):
+  File "C:\Users\reese\projects\rsi\region_depth_development.py", line 143, in <module>
+    main()
+  File "C:\Users\reese\projects\rsi\region_depth_development.py", line 111, in main
+    global_grid[f'train{depth}_test{width}'] = score(pick, width)
+                                               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reese\projects\rsi\region_depth_development.py", line 56, in score
+    x, meta = load_cache(name)
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\reese\projects\rsi\region_specialist_repayment_development.py", line 95, in load_cache
+    x = np.load(CACHE / f'{name}.npz')['x']
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\reese\projects\rsi\.venv\Lib\site-packages\numpy\lib\_npyio_impl.py", line 257, in __getitem__
+    return format.read_array(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reese\projects\rsi\.venv\Lib\site-packages\numpy\lib\_format_impl.py", line 862, in read_array
+    array = numpy.ndarray(count, dtype=dtype)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 37.5 MiB for an array with shape (9821184,) and data type float32

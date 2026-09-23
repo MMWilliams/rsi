@@ -1,0 +1,817 @@
+{
+  "scope": "post hoc opened-bank development; no promotion evidence",
+  "panels": {
+    "meta_transfer": {
+      "ridge100": {
+        "correct": 341,
+        "ast_calls": 0,
+        "by_bank": [
+          {
+            "seed": 902426,
+            "correct": 33,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902427,
+            "correct": 29,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902428,
+            "correct": 30,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902429,
+            "correct": 31,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902430,
+            "correct": 29,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902431,
+            "correct": 31,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902432,
+            "correct": 29,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902433,
+            "correct": 33,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902434,
+            "correct": 25,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902435,
+            "correct": 24,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902436,
+            "correct": 23,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902437,
+            "correct": 24,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "residual_0.01": {
+        "correct": 313,
+        "ast_calls": 41,
+        "by_bank": [
+          {
+            "seed": 902426,
+            "correct": 32,
+            "ast_calls": 3
+          },
+          {
+            "seed": 902427,
+            "correct": 27,
+            "ast_calls": 2
+          },
+          {
+            "seed": 902428,
+            "correct": 29,
+            "ast_calls": 4
+          },
+          {
+            "seed": 902429,
+            "correct": 30,
+            "ast_calls": 2
+          },
+          {
+            "seed": 902430,
+            "correct": 28,
+            "ast_calls": 3
+          },
+          {
+            "seed": 902431,
+            "correct": 25,
+            "ast_calls": 4
+          },
+          {
+            "seed": 902432,
+            "correct": 24,
+            "ast_calls": 3
+          },
+          {
+            "seed": 902433,
+            "correct": 28,
+            "ast_calls": 1
+          },
+          {
+            "seed": 902434,
+            "correct": 23,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902435,
+            "correct": 24,
+            "ast_calls": 4
+          },
+          {
+            "seed": 902436,
+            "correct": 22,
+            "ast_calls": 5
+          },
+          {
+            "seed": 902437,
+            "correct": 21,
+            "ast_calls": 3
+          }
+        ],
+        "training_hard_pairs": 392
+      },
+      "residual_0.1": {
+        "correct": 318,
+        "ast_calls": 72,
+        "by_bank": [
+          {
+            "seed": 902426,
+            "correct": 31,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902427,
+            "correct": 27,
+            "ast_calls": 4
+          },
+          {
+            "seed": 902428,
+            "correct": 29,
+            "ast_calls": 6
+          },
+          {
+            "seed": 902429,
+            "correct": 31,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902430,
+            "correct": 28,
+            "ast_calls": 6
+          },
+          {
+            "seed": 902431,
+            "correct": 26,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902432,
+            "correct": 25,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902433,
+            "correct": 29,
+            "ast_calls": 3
+          },
+          {
+            "seed": 902434,
+            "correct": 23,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902435,
+            "correct": 24,
+            "ast_calls": 6
+          },
+          {
+            "seed": 902436,
+            "correct": 23,
+            "ast_calls": 6
+          },
+          {
+            "seed": 902437,
+            "correct": 22,
+            "ast_calls": 6
+          }
+        ],
+        "training_hard_pairs": 392
+      },
+      "residual_1.0": {
+        "correct": 329,
+        "ast_calls": 95,
+        "by_bank": [
+          {
+            "seed": 902426,
+            "correct": 31,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902427,
+            "correct": 29,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902428,
+            "correct": 30,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902429,
+            "correct": 32,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902430,
+            "correct": 29,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902431,
+            "correct": 27,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902432,
+            "correct": 25,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902433,
+            "correct": 31,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902434,
+            "correct": 23,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902435,
+            "correct": 26,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902436,
+            "correct": 24,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902437,
+            "correct": 22,
+            "ast_calls": 8
+          }
+        ],
+        "training_hard_pairs": 392
+      }
+    },
+    "focused_opened": {
+      "ridge100": {
+        "correct": 344,
+        "ast_calls": 0,
+        "by_bank": [
+          {
+            "seed": 902486,
+            "correct": 27,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902487,
+            "correct": 27,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902488,
+            "correct": 30,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902489,
+            "correct": 25,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902490,
+            "correct": 27,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902491,
+            "correct": 25,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902492,
+            "correct": 29,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902493,
+            "correct": 36,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902494,
+            "correct": 28,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902495,
+            "correct": 31,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902496,
+            "correct": 28,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902497,
+            "correct": 31,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "residual_0.01": {
+        "correct": 318,
+        "ast_calls": 54,
+        "by_bank": [
+          {
+            "seed": 902486,
+            "correct": 25,
+            "ast_calls": 3
+          },
+          {
+            "seed": 902487,
+            "correct": 27,
+            "ast_calls": 6
+          },
+          {
+            "seed": 902488,
+            "correct": 26,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902489,
+            "correct": 23,
+            "ast_calls": 5
+          },
+          {
+            "seed": 902490,
+            "correct": 25,
+            "ast_calls": 5
+          },
+          {
+            "seed": 902491,
+            "correct": 22,
+            "ast_calls": 4
+          },
+          {
+            "seed": 902492,
+            "correct": 27,
+            "ast_calls": 4
+          },
+          {
+            "seed": 902493,
+            "correct": 35,
+            "ast_calls": 5
+          },
+          {
+            "seed": 902494,
+            "correct": 25,
+            "ast_calls": 4
+          },
+          {
+            "seed": 902495,
+            "correct": 31,
+            "ast_calls": 5
+          },
+          {
+            "seed": 902496,
+            "correct": 22,
+            "ast_calls": 3
+          },
+          {
+            "seed": 902497,
+            "correct": 30,
+            "ast_calls": 3
+          }
+        ],
+        "training_hard_pairs": 743
+      },
+      "residual_0.1": {
+        "correct": 326,
+        "ast_calls": 79,
+        "by_bank": [
+          {
+            "seed": 902486,
+            "correct": 26,
+            "ast_calls": 5
+          },
+          {
+            "seed": 902487,
+            "correct": 27,
+            "ast_calls": 6
+          },
+          {
+            "seed": 902488,
+            "correct": 26,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902489,
+            "correct": 24,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902490,
+            "correct": 26,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902491,
+            "correct": 22,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902492,
+            "correct": 27,
+            "ast_calls": 5
+          },
+          {
+            "seed": 902493,
+            "correct": 37,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902494,
+            "correct": 27,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902495,
+            "correct": 30,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902496,
+            "correct": 24,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902497,
+            "correct": 30,
+            "ast_calls": 5
+          }
+        ],
+        "training_hard_pairs": 743
+      },
+      "residual_1.0": {
+        "correct": 330,
+        "ast_calls": 91,
+        "by_bank": [
+          {
+            "seed": 902486,
+            "correct": 27,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902487,
+            "correct": 27,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902488,
+            "correct": 26,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902489,
+            "correct": 24,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902490,
+            "correct": 26,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902491,
+            "correct": 22,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902492,
+            "correct": 27,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902493,
+            "correct": 37,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902494,
+            "correct": 28,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902495,
+            "correct": 31,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902496,
+            "correct": 24,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902497,
+            "correct": 31,
+            "ast_calls": 8
+          }
+        ],
+        "training_hard_pairs": 743
+      }
+    },
+    "pairwise_opened": {
+      "ridge100": {
+        "correct": 343,
+        "ast_calls": 0,
+        "by_bank": [
+          {
+            "seed": 902498,
+            "correct": 32,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902499,
+            "correct": 28,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902500,
+            "correct": 29,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902501,
+            "correct": 26,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902502,
+            "correct": 25,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902503,
+            "correct": 33,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902504,
+            "correct": 25,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902505,
+            "correct": 33,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902506,
+            "correct": 26,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902507,
+            "correct": 28,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902508,
+            "correct": 29,
+            "ast_calls": 0
+          },
+          {
+            "seed": 902509,
+            "correct": 29,
+            "ast_calls": 0
+          }
+        ]
+      },
+      "residual_0.01": {
+        "correct": 304,
+        "ast_calls": 53,
+        "by_bank": [
+          {
+            "seed": 902498,
+            "correct": 27,
+            "ast_calls": 4
+          },
+          {
+            "seed": 902499,
+            "correct": 23,
+            "ast_calls": 4
+          },
+          {
+            "seed": 902500,
+            "correct": 27,
+            "ast_calls": 4
+          },
+          {
+            "seed": 902501,
+            "correct": 22,
+            "ast_calls": 4
+          },
+          {
+            "seed": 902502,
+            "correct": 22,
+            "ast_calls": 4
+          },
+          {
+            "seed": 902503,
+            "correct": 33,
+            "ast_calls": 3
+          },
+          {
+            "seed": 902504,
+            "correct": 24,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902505,
+            "correct": 27,
+            "ast_calls": 4
+          },
+          {
+            "seed": 902506,
+            "correct": 23,
+            "ast_calls": 6
+          },
+          {
+            "seed": 902507,
+            "correct": 27,
+            "ast_calls": 3
+          },
+          {
+            "seed": 902508,
+            "correct": 25,
+            "ast_calls": 5
+          },
+          {
+            "seed": 902509,
+            "correct": 24,
+            "ast_calls": 5
+          }
+        ],
+        "training_hard_pairs": 743
+      },
+      "residual_0.1": {
+        "correct": 305,
+        "ast_calls": 77,
+        "by_bank": [
+          {
+            "seed": 902498,
+            "correct": 27,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902499,
+            "correct": 23,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902500,
+            "correct": 27,
+            "ast_calls": 6
+          },
+          {
+            "seed": 902501,
+            "correct": 22,
+            "ast_calls": 5
+          },
+          {
+            "seed": 902502,
+            "correct": 22,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902503,
+            "correct": 32,
+            "ast_calls": 5
+          },
+          {
+            "seed": 902504,
+            "correct": 24,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902505,
+            "correct": 27,
+            "ast_calls": 6
+          },
+          {
+            "seed": 902506,
+            "correct": 23,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902507,
+            "correct": 28,
+            "ast_calls": 6
+          },
+          {
+            "seed": 902508,
+            "correct": 25,
+            "ast_calls": 6
+          },
+          {
+            "seed": 902509,
+            "correct": 25,
+            "ast_calls": 7
+          }
+        ],
+        "training_hard_pairs": 743
+      },
+      "residual_1.0": {
+        "correct": 308,
+        "ast_calls": 89,
+        "by_bank": [
+          {
+            "seed": 902498,
+            "correct": 28,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902499,
+            "correct": 23,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902500,
+            "correct": 27,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902501,
+            "correct": 22,
+            "ast_calls": 6
+          },
+          {
+            "seed": 902502,
+            "correct": 23,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902503,
+            "correct": 33,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902504,
+            "correct": 24,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902505,
+            "correct": 27,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902506,
+            "correct": 23,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902507,
+            "correct": 28,
+            "ast_calls": 8
+          },
+          {
+            "seed": 902508,
+            "correct": 25,
+            "ast_calls": 7
+          },
+          {
+            "seed": 902509,
+            "correct": 25,
+            "ast_calls": 7
+          }
+        ],
+        "training_hard_pairs": 743
+      }
+    }
+  },
+  "limits": [
+    "Full task counterfactual labels are used to construct hard pairs.",
+    "All target labels had already been opened before this method screen.",
+    "Correction scores are not calibrated probabilities."
+  ]
+}

@@ -1,0 +1,778 @@
+{
+  "scope": "opened development only",
+  "config": {
+    "width": 200,
+    "features": 191,
+    "listwise_temperature": 0.25,
+    "epochs": 120,
+    "seed": 905200
+  },
+  "source": {
+    "early_tasks": 384,
+    "later_tasks": 576,
+    "early_candidate_labels": 75024,
+    "later_candidate_labels": 112610
+  },
+  "targets": {
+    "dual-specialist-integration-transfer-20260918": {
+      "tasks": 192,
+      "totals": {
+        "reachable": 110,
+        "dual200": 88,
+        "candidate_mean200": 90,
+        "early_listwise": 94,
+        "later_listwise": 107,
+        "scrambled_listwise": 59,
+        "duplicate_listwise": 95,
+        "early_bce": 95,
+        "later_bce": 97
+      },
+      "comparisons": {
+        "candidate_mean200_minus_dual": {
+          "gain": 2,
+          "positive_banks": 2,
+          "negative_banks": 0,
+          "interval": [
+            0,
+            5
+          ]
+        },
+        "early_listwise_minus_dual": {
+          "gain": 6,
+          "positive_banks": 8,
+          "negative_banks": 3,
+          "interval": [
+            -2,
+            14
+          ]
+        },
+        "later_listwise_minus_dual": {
+          "gain": 19,
+          "positive_banks": 16,
+          "negative_banks": 0,
+          "interval": [
+            13,
+            26
+          ]
+        },
+        "scrambled_listwise_minus_dual": {
+          "gain": -29,
+          "positive_banks": 0,
+          "negative_banks": 16,
+          "interval": [
+            -41,
+            -18
+          ]
+        },
+        "duplicate_listwise_minus_dual": {
+          "gain": 7,
+          "positive_banks": 10,
+          "negative_banks": 4,
+          "interval": [
+            -2,
+            16
+          ]
+        },
+        "early_bce_minus_dual": {
+          "gain": 7,
+          "positive_banks": 7,
+          "negative_banks": 1,
+          "interval": [
+            1,
+            13
+          ]
+        },
+        "later_bce_minus_dual": {
+          "gain": 9,
+          "positive_banks": 9,
+          "negative_banks": 1,
+          "interval": [
+            3,
+            15
+          ]
+        }
+      },
+      "banks": [
+        {
+          "seed": 903900,
+          "reachable": 6,
+          "dual200": 5,
+          "candidate_mean200": 5,
+          "early_listwise": 5,
+          "later_listwise": 6,
+          "scrambled_listwise": 4,
+          "duplicate_listwise": 6,
+          "early_bce": 5,
+          "later_bce": 5
+        },
+        {
+          "seed": 903901,
+          "reachable": 6,
+          "dual200": 5,
+          "candidate_mean200": 5,
+          "early_listwise": 5,
+          "later_listwise": 6,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 5,
+          "early_bce": 6,
+          "later_bce": 6
+        },
+        {
+          "seed": 903902,
+          "reachable": 5,
+          "dual200": 4,
+          "candidate_mean200": 4,
+          "early_listwise": 5,
+          "later_listwise": 5,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 5,
+          "early_bce": 5,
+          "later_bce": 5
+        },
+        {
+          "seed": 903903,
+          "reachable": 7,
+          "dual200": 7,
+          "candidate_mean200": 7,
+          "early_listwise": 7,
+          "later_listwise": 7,
+          "scrambled_listwise": 3,
+          "duplicate_listwise": 7,
+          "early_bce": 7,
+          "later_bce": 7
+        },
+        {
+          "seed": 903904,
+          "reachable": 2,
+          "dual200": 1,
+          "candidate_mean200": 1,
+          "early_listwise": 1,
+          "later_listwise": 2,
+          "scrambled_listwise": 0,
+          "duplicate_listwise": 1,
+          "early_bce": 1,
+          "later_bce": 2
+        },
+        {
+          "seed": 903905,
+          "reachable": 4,
+          "dual200": 2,
+          "candidate_mean200": 2,
+          "early_listwise": 4,
+          "later_listwise": 4,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 4,
+          "early_bce": 4,
+          "later_bce": 4
+        },
+        {
+          "seed": 903906,
+          "reachable": 5,
+          "dual200": 4,
+          "candidate_mean200": 5,
+          "early_listwise": 5,
+          "later_listwise": 5,
+          "scrambled_listwise": 4,
+          "duplicate_listwise": 5,
+          "early_bce": 5,
+          "later_bce": 5
+        },
+        {
+          "seed": 903907,
+          "reachable": 1,
+          "dual200": 1,
+          "candidate_mean200": 1,
+          "early_listwise": 0,
+          "later_listwise": 1,
+          "scrambled_listwise": 0,
+          "duplicate_listwise": 0,
+          "early_bce": 1,
+          "later_bce": 1
+        },
+        {
+          "seed": 903908,
+          "reachable": 7,
+          "dual200": 5,
+          "candidate_mean200": 5,
+          "early_listwise": 6,
+          "later_listwise": 6,
+          "scrambled_listwise": 5,
+          "duplicate_listwise": 6,
+          "early_bce": 5,
+          "later_bce": 5
+        },
+        {
+          "seed": 903909,
+          "reachable": 6,
+          "dual200": 5,
+          "candidate_mean200": 5,
+          "early_listwise": 5,
+          "later_listwise": 5,
+          "scrambled_listwise": 4,
+          "duplicate_listwise": 4,
+          "early_bce": 6,
+          "later_bce": 5
+        },
+        {
+          "seed": 903910,
+          "reachable": 2,
+          "dual200": 2,
+          "candidate_mean200": 2,
+          "early_listwise": 2,
+          "later_listwise": 2,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 2,
+          "early_bce": 2,
+          "later_bce": 2
+        },
+        {
+          "seed": 903911,
+          "reachable": 3,
+          "dual200": 2,
+          "candidate_mean200": 2,
+          "early_listwise": 2,
+          "later_listwise": 3,
+          "scrambled_listwise": 1,
+          "duplicate_listwise": 2,
+          "early_bce": 2,
+          "later_bce": 2
+        },
+        {
+          "seed": 903912,
+          "reachable": 3,
+          "dual200": 2,
+          "candidate_mean200": 2,
+          "early_listwise": 3,
+          "later_listwise": 3,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 3,
+          "early_bce": 2,
+          "later_bce": 2
+        },
+        {
+          "seed": 903913,
+          "reachable": 5,
+          "dual200": 2,
+          "candidate_mean200": 2,
+          "early_listwise": 4,
+          "later_listwise": 5,
+          "scrambled_listwise": 1,
+          "duplicate_listwise": 4,
+          "early_bce": 3,
+          "later_bce": 3
+        },
+        {
+          "seed": 903914,
+          "reachable": 7,
+          "dual200": 6,
+          "candidate_mean200": 6,
+          "early_listwise": 6,
+          "later_listwise": 7,
+          "scrambled_listwise": 3,
+          "duplicate_listwise": 7,
+          "early_bce": 6,
+          "later_bce": 7
+        },
+        {
+          "seed": 903915,
+          "reachable": 4,
+          "dual200": 4,
+          "candidate_mean200": 4,
+          "early_listwise": 4,
+          "later_listwise": 4,
+          "scrambled_listwise": 1,
+          "duplicate_listwise": 4,
+          "early_bce": 4,
+          "later_bce": 4
+        },
+        {
+          "seed": 903916,
+          "reachable": 5,
+          "dual200": 4,
+          "candidate_mean200": 4,
+          "early_listwise": 4,
+          "later_listwise": 5,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 4,
+          "early_bce": 3,
+          "later_bce": 4
+        },
+        {
+          "seed": 903917,
+          "reachable": 3,
+          "dual200": 2,
+          "candidate_mean200": 2,
+          "early_listwise": 2,
+          "later_listwise": 3,
+          "scrambled_listwise": 1,
+          "duplicate_listwise": 2,
+          "early_bce": 2,
+          "later_bce": 2
+        },
+        {
+          "seed": 903918,
+          "reachable": 6,
+          "dual200": 5,
+          "candidate_mean200": 5,
+          "early_listwise": 6,
+          "later_listwise": 6,
+          "scrambled_listwise": 5,
+          "duplicate_listwise": 6,
+          "early_bce": 5,
+          "later_bce": 5
+        },
+        {
+          "seed": 903919,
+          "reachable": 4,
+          "dual200": 3,
+          "candidate_mean200": 3,
+          "early_listwise": 1,
+          "later_listwise": 3,
+          "scrambled_listwise": 3,
+          "duplicate_listwise": 1,
+          "early_bce": 3,
+          "later_bce": 3
+        },
+        {
+          "seed": 903920,
+          "reachable": 5,
+          "dual200": 5,
+          "candidate_mean200": 5,
+          "early_listwise": 4,
+          "later_listwise": 5,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 4,
+          "early_bce": 5,
+          "later_bce": 4
+        },
+        {
+          "seed": 903921,
+          "reachable": 4,
+          "dual200": 4,
+          "candidate_mean200": 4,
+          "early_listwise": 4,
+          "later_listwise": 4,
+          "scrambled_listwise": 3,
+          "duplicate_listwise": 4,
+          "early_bce": 4,
+          "later_bce": 4
+        },
+        {
+          "seed": 903922,
+          "reachable": 5,
+          "dual200": 4,
+          "candidate_mean200": 5,
+          "early_listwise": 4,
+          "later_listwise": 5,
+          "scrambled_listwise": 3,
+          "duplicate_listwise": 4,
+          "early_bce": 5,
+          "later_bce": 5
+        },
+        {
+          "seed": 903923,
+          "reachable": 5,
+          "dual200": 4,
+          "candidate_mean200": 4,
+          "early_listwise": 5,
+          "later_listwise": 5,
+          "scrambled_listwise": 4,
+          "duplicate_listwise": 5,
+          "early_bce": 4,
+          "later_bce": 5
+        }
+      ]
+    },
+    "candidate-stacking-feedback-transfer-20260918": {
+      "tasks": 192,
+      "totals": {
+        "reachable": 89,
+        "dual200": 68,
+        "candidate_mean200": 69,
+        "early_listwise": 72,
+        "later_listwise": 74,
+        "scrambled_listwise": 59,
+        "duplicate_listwise": 71,
+        "early_bce": 71,
+        "later_bce": 70
+      },
+      "comparisons": {
+        "candidate_mean200_minus_dual": {
+          "gain": 1,
+          "positive_banks": 2,
+          "negative_banks": 1,
+          "interval": [
+            -2,
+            4
+          ]
+        },
+        "early_listwise_minus_dual": {
+          "gain": 4,
+          "positive_banks": 5,
+          "negative_banks": 3,
+          "interval": [
+            -3,
+            11
+          ]
+        },
+        "later_listwise_minus_dual": {
+          "gain": 6,
+          "positive_banks": 6,
+          "negative_banks": 1,
+          "interval": [
+            1,
+            12
+          ]
+        },
+        "scrambled_listwise_minus_dual": {
+          "gain": -9,
+          "positive_banks": 3,
+          "negative_banks": 11,
+          "interval": [
+            -19,
+            2
+          ]
+        },
+        "duplicate_listwise_minus_dual": {
+          "gain": 3,
+          "positive_banks": 5,
+          "negative_banks": 3,
+          "interval": [
+            -3,
+            10
+          ]
+        },
+        "early_bce_minus_dual": {
+          "gain": 3,
+          "positive_banks": 5,
+          "negative_banks": 3,
+          "interval": [
+            -3,
+            10
+          ]
+        },
+        "later_bce_minus_dual": {
+          "gain": 2,
+          "positive_banks": 4,
+          "negative_banks": 3,
+          "interval": [
+            -4,
+            8
+          ]
+        }
+      },
+      "banks": [
+        {
+          "seed": 905100,
+          "reachable": 3,
+          "dual200": 3,
+          "candidate_mean200": 3,
+          "early_listwise": 3,
+          "later_listwise": 3,
+          "scrambled_listwise": 3,
+          "duplicate_listwise": 3,
+          "early_bce": 3,
+          "later_bce": 3
+        },
+        {
+          "seed": 905101,
+          "reachable": 4,
+          "dual200": 4,
+          "candidate_mean200": 3,
+          "early_listwise": 3,
+          "later_listwise": 4,
+          "scrambled_listwise": 3,
+          "duplicate_listwise": 3,
+          "early_bce": 4,
+          "later_bce": 4
+        },
+        {
+          "seed": 905102,
+          "reachable": 4,
+          "dual200": 3,
+          "candidate_mean200": 3,
+          "early_listwise": 3,
+          "later_listwise": 3,
+          "scrambled_listwise": 3,
+          "duplicate_listwise": 3,
+          "early_bce": 3,
+          "later_bce": 2
+        },
+        {
+          "seed": 905103,
+          "reachable": 3,
+          "dual200": 2,
+          "candidate_mean200": 2,
+          "early_listwise": 2,
+          "later_listwise": 2,
+          "scrambled_listwise": 1,
+          "duplicate_listwise": 2,
+          "early_bce": 1,
+          "later_bce": 2
+        },
+        {
+          "seed": 905104,
+          "reachable": 3,
+          "dual200": 3,
+          "candidate_mean200": 3,
+          "early_listwise": 3,
+          "later_listwise": 3,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 3,
+          "early_bce": 3,
+          "later_bce": 3
+        },
+        {
+          "seed": 905105,
+          "reachable": 4,
+          "dual200": 1,
+          "candidate_mean200": 1,
+          "early_listwise": 3,
+          "later_listwise": 3,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 3,
+          "early_bce": 3,
+          "later_bce": 3
+        },
+        {
+          "seed": 905106,
+          "reachable": 5,
+          "dual200": 3,
+          "candidate_mean200": 3,
+          "early_listwise": 3,
+          "later_listwise": 4,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 3,
+          "early_bce": 3,
+          "later_bce": 3
+        },
+        {
+          "seed": 905107,
+          "reachable": 5,
+          "dual200": 4,
+          "candidate_mean200": 4,
+          "early_listwise": 4,
+          "later_listwise": 4,
+          "scrambled_listwise": 3,
+          "duplicate_listwise": 4,
+          "early_bce": 5,
+          "later_bce": 5
+        },
+        {
+          "seed": 905108,
+          "reachable": 4,
+          "dual200": 1,
+          "candidate_mean200": 2,
+          "early_listwise": 3,
+          "later_listwise": 2,
+          "scrambled_listwise": 4,
+          "duplicate_listwise": 2,
+          "early_bce": 1,
+          "later_bce": 1
+        },
+        {
+          "seed": 905109,
+          "reachable": 3,
+          "dual200": 2,
+          "candidate_mean200": 3,
+          "early_listwise": 3,
+          "later_listwise": 3,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 3,
+          "early_bce": 2,
+          "later_bce": 2
+        },
+        {
+          "seed": 905110,
+          "reachable": 5,
+          "dual200": 4,
+          "candidate_mean200": 4,
+          "early_listwise": 3,
+          "later_listwise": 4,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 3,
+          "early_bce": 4,
+          "later_bce": 3
+        },
+        {
+          "seed": 905111,
+          "reachable": 2,
+          "dual200": 2,
+          "candidate_mean200": 2,
+          "early_listwise": 2,
+          "later_listwise": 2,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 2,
+          "early_bce": 2,
+          "later_bce": 2
+        },
+        {
+          "seed": 905112,
+          "reachable": 3,
+          "dual200": 3,
+          "candidate_mean200": 3,
+          "early_listwise": 3,
+          "later_listwise": 3,
+          "scrambled_listwise": 3,
+          "duplicate_listwise": 3,
+          "early_bce": 3,
+          "later_bce": 2
+        },
+        {
+          "seed": 905113,
+          "reachable": 5,
+          "dual200": 3,
+          "candidate_mean200": 3,
+          "early_listwise": 3,
+          "later_listwise": 3,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 3,
+          "early_bce": 4,
+          "later_bce": 4
+        },
+        {
+          "seed": 905114,
+          "reachable": 8,
+          "dual200": 6,
+          "candidate_mean200": 6,
+          "early_listwise": 6,
+          "later_listwise": 6,
+          "scrambled_listwise": 4,
+          "duplicate_listwise": 6,
+          "early_bce": 6,
+          "later_bce": 6
+        },
+        {
+          "seed": 905115,
+          "reachable": 2,
+          "dual200": 2,
+          "candidate_mean200": 2,
+          "early_listwise": 1,
+          "later_listwise": 1,
+          "scrambled_listwise": 0,
+          "duplicate_listwise": 1,
+          "early_bce": 1,
+          "later_bce": 2
+        },
+        {
+          "seed": 905116,
+          "reachable": 3,
+          "dual200": 3,
+          "candidate_mean200": 3,
+          "early_listwise": 3,
+          "later_listwise": 3,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 3,
+          "early_bce": 2,
+          "later_bce": 3
+        },
+        {
+          "seed": 905117,
+          "reachable": 3,
+          "dual200": 2,
+          "candidate_mean200": 2,
+          "early_listwise": 2,
+          "later_listwise": 2,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 2,
+          "early_bce": 2,
+          "later_bce": 2
+        },
+        {
+          "seed": 905118,
+          "reachable": 3,
+          "dual200": 3,
+          "candidate_mean200": 3,
+          "early_listwise": 3,
+          "later_listwise": 3,
+          "scrambled_listwise": 3,
+          "duplicate_listwise": 3,
+          "early_bce": 3,
+          "later_bce": 3
+        },
+        {
+          "seed": 905119,
+          "reachable": 3,
+          "dual200": 2,
+          "candidate_mean200": 2,
+          "early_listwise": 3,
+          "later_listwise": 3,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 3,
+          "early_bce": 3,
+          "later_bce": 2
+        },
+        {
+          "seed": 905120,
+          "reachable": 3,
+          "dual200": 2,
+          "candidate_mean200": 2,
+          "early_listwise": 3,
+          "later_listwise": 3,
+          "scrambled_listwise": 2,
+          "duplicate_listwise": 3,
+          "early_bce": 3,
+          "later_bce": 3
+        },
+        {
+          "seed": 905121,
+          "reachable": 4,
+          "dual200": 4,
+          "candidate_mean200": 4,
+          "early_listwise": 4,
+          "later_listwise": 4,
+          "scrambled_listwise": 4,
+          "duplicate_listwise": 4,
+          "early_bce": 4,
+          "later_bce": 4
+        },
+        {
+          "seed": 905122,
+          "reachable": 3,
+          "dual200": 2,
+          "candidate_mean200": 2,
+          "early_listwise": 2,
+          "later_listwise": 2,
+          "scrambled_listwise": 3,
+          "duplicate_listwise": 2,
+          "early_bce": 2,
+          "later_bce": 2
+        },
+        {
+          "seed": 905123,
+          "reachable": 4,
+          "dual200": 4,
+          "candidate_mean200": 4,
+          "early_listwise": 4,
+          "later_listwise": 4,
+          "scrambled_listwise": 3,
+          "duplicate_listwise": 4,
+          "early_bce": 4,
+          "later_bce": 4
+        }
+      ]
+    }
+  },
+  "training": {
+    "early_listwise": {
+      "active_tasks": 196,
+      "training_loss": 0.16010504961013794,
+      "device": "cuda"
+    },
+    "later_listwise": {
+      "active_tasks": 306,
+      "training_loss": 0.17735031247138977,
+      "device": "cuda"
+    },
+    "scrambled_listwise": {
+      "active_tasks": 306,
+      "training_loss": 1.129889965057373,
+      "device": "cuda"
+    },
+    "duplicate_listwise": {
+      "active_tasks": 298,
+      "training_loss": 0.14037492871284485,
+      "device": "cuda"
+    }
+  }
+}

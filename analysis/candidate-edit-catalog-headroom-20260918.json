@@ -1,0 +1,98 @@
+{
+  "scope": "opened-bank hindsight catalog bound; final labels unavailable to a deployed improver",
+  "tasks": 576,
+  "policies": [
+    "old",
+    "e0",
+    "e1",
+    "leaf7"
+  ],
+  "policy_correct": {
+    "old": 284,
+    "e0": 323,
+    "e1": 334,
+    "leaf7": 309
+  },
+  "best_fixed": "e1",
+  "best_fixed_correct": 334,
+  "unavailable_best_family_route": {
+    "transform_transition": "e1",
+    "ast_transition": "e1",
+    "novel_operator_transition": "e1",
+    "stack_transition": "e1",
+    "mutation_transition": "e1",
+    "self_edit_transition": "old"
+  },
+  "unavailable_best_family_correct": 337,
+  "unavailable_best_task_correct": 351,
+  "task_route_headroom": 17,
+  "top20_reachable": 447,
+  "full_reachable": 492,
+  "by_family": {
+    "transform_transition": {
+      "tasks": 96,
+      "correct": {
+        "old": 35,
+        "e0": 54,
+        "e1": 57,
+        "leaf7": 55
+      },
+      "oracle_task_best": 58
+    },
+    "ast_transition": {
+      "tasks": 96,
+      "correct": {
+        "old": 12,
+        "e0": 16,
+        "e1": 19,
+        "leaf7": 12
+      },
+      "oracle_task_best": 19
+    },
+    "novel_operator_transition": {
+      "tasks": 96,
+      "correct": {
+        "old": 38,
+        "e0": 48,
+        "e1": 50,
+        "leaf7": 47
+      },
+      "oracle_task_best": 51
+    },
+    "stack_transition": {
+      "tasks": 96,
+      "correct": {
+        "old": 75,
+        "e0": 82,
+        "e1": 83,
+        "leaf7": 78
+      },
+      "oracle_task_best": 88
+    },
+    "mutation_transition": {
+      "tasks": 96,
+      "correct": {
+        "old": 49,
+        "e0": 52,
+        "e1": 53,
+        "leaf7": 51
+      },
+      "oracle_task_best": 60
+    },
+    "self_edit_transition": {
+      "tasks": 96,
+      "correct": {
+        "old": 75,
+        "e0": 71,
+        "e1": 72,
+        "leaf7": 66
+      },
+      "oracle_task_best": 75
+    }
+  },
+  "limits": [
+    "Both oracle routes use hidden final labels; this is action-space headroom, not achieved improvement.",
+    "The catalog contains only already tested candidate rankers on a fixed pool.",
+    "Deploying multiple models has additional training and inference cost."
+  ]
+}

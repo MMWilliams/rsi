@@ -1,0 +1,9 @@
+# Full mixed-bank integration of replay-updated AST specialist
+
+Frozen before final labels on 2026-09-17. Seeds 902312–902317 generate six 48-task mixed banks, eight tasks per synthetic mechanism, with one visible and 23 host-held examples per task. The prior global temperature-0.25 evaluator, first AST specialist and replay-updated AST specialist are fixed by saved model hashes. Final correctness uses the last 15 host-held examples; no inference oracle output queries are purchased.
+
+Candidate generation uses the previous six-family source map and cap 128 per source; AST alone also gets a cap-512 V67/V73 pool. The source map uses the simulator's host family tag as in prior benchmark studies. Evaluator choice uses only public examples and candidate programs. A fixed public Unicode block 0x800 routes AST cases to a specialist; other blocks retain either the global parent or the prior fixed block-temperature map.
+
+Compare on paired pools: parent 0.25 on cap-128 and widened pools, global replay specialist on widened pools, parent plus first specialist gate, parent plus replay specialist gate, prior fixed temperature map, and fixed map plus replay specialist. Primary integrated endpoint is fixed map plus replay specialist minus fixed map on identical widened pools. Require at least five positive banks, a positive exact six-bank resampling interval, and no non-AST loss to promote integrated performance. Also report replay gate versus first-specialist gate, reachability, by-mechanism correctness, candidate counts and preparation time. Freeze tasks, pools, model hashes and choices before final labels. Regenerate and replay all of them in an audit.
+
+This is still a researcher-specified route and feedback update. A better whole-system result would not establish that the improver learned to create, select, or inherit the edit; that requires the separate matched-budget parent/child improver experiment.

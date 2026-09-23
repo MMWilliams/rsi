@@ -1,0 +1,2108 @@
+{
+  "summary": {
+    "scope": "development-only mechanism/candidate diagnostic",
+    "seed": 902200,
+    "per_family": 8,
+    "candidate_cap_per_source": 64,
+    "sources": {
+      "transform_transition": [
+        "v65",
+        "v67"
+      ],
+      "ast_transition": [
+        "v67",
+        "v73"
+      ],
+      "novel_operator_transition": [
+        "v67",
+        "v69"
+      ],
+      "stack_transition": [
+        "v67",
+        "v70"
+      ],
+      "mutation_transition": [
+        "v70",
+        "v72"
+      ],
+      "self_edit_transition": [
+        "v70",
+        "v73"
+      ]
+    },
+    "generation_and_study_wall_seconds": 17.90400559999398,
+    "families": {
+      "transform_transition": {
+        "tasks": 8,
+        "mean_candidates": 66.75,
+        "reachable": 8,
+        "baseline": 5,
+        "discriminating": 7,
+        "oracle_best_one": 8,
+        "methods": {
+          "random": [
+            6,
+            7
+          ],
+          "entropy": [
+            7,
+            8
+          ],
+          "weighted_entropy": [
+            7,
+            8
+          ],
+          "minimax": [
+            7,
+            8
+          ]
+        }
+      },
+      "ast_transition": {
+        "tasks": 8,
+        "mean_candidates": 57.25,
+        "reachable": 8,
+        "baseline": 2,
+        "discriminating": 8,
+        "oracle_best_one": 4,
+        "methods": {
+          "random": [
+            2,
+            3
+          ],
+          "entropy": [
+            4,
+            5
+          ],
+          "weighted_entropy": [
+            4,
+            5
+          ],
+          "minimax": [
+            3,
+            5
+          ]
+        }
+      },
+      "novel_operator_transition": {
+        "tasks": 8,
+        "mean_candidates": 104.0,
+        "reachable": 4,
+        "baseline": 3,
+        "discriminating": 7,
+        "oracle_best_one": 4,
+        "methods": {
+          "random": [
+            3,
+            4
+          ],
+          "entropy": [
+            4,
+            4
+          ],
+          "weighted_entropy": [
+            4,
+            4
+          ],
+          "minimax": [
+            4,
+            4
+          ]
+        }
+      },
+      "stack_transition": {
+        "tasks": 8,
+        "mean_candidates": 84.75,
+        "reachable": 8,
+        "baseline": 6,
+        "discriminating": 6,
+        "oracle_best_one": 8,
+        "methods": {
+          "random": [
+            8,
+            8
+          ],
+          "entropy": [
+            8,
+            8
+          ],
+          "weighted_entropy": [
+            8,
+            8
+          ],
+          "minimax": [
+            8,
+            8
+          ]
+        }
+      },
+      "mutation_transition": {
+        "tasks": 8,
+        "mean_candidates": 69.5,
+        "reachable": 8,
+        "baseline": 6,
+        "discriminating": 2,
+        "oracle_best_one": 8,
+        "methods": {
+          "random": [
+            7,
+            8
+          ],
+          "entropy": [
+            7,
+            8
+          ],
+          "weighted_entropy": [
+            7,
+            8
+          ],
+          "minimax": [
+            8,
+            8
+          ]
+        }
+      },
+      "self_edit_transition": {
+        "tasks": 8,
+        "mean_candidates": 25.5,
+        "reachable": 8,
+        "baseline": 7,
+        "discriminating": 3,
+        "oracle_best_one": 8,
+        "methods": {
+          "random": [
+            8,
+            8
+          ],
+          "entropy": [
+            8,
+            8
+          ],
+          "weighted_entropy": [
+            8,
+            8
+          ],
+          "minimax": [
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  "tasks": [
+    {
+      "id": "1ea48ace4fa67cde08cc573a",
+      "family": "transform_transition",
+      "candidates": 74,
+      "reachable": true,
+      "baseline": false,
+      "probe_classes": [
+        7,
+        4,
+        3,
+        4,
+        4,
+        5,
+        6,
+        4
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          false,
+          true
+        ],
+        "weighted_entropy": [
+          false,
+          true
+        ],
+        "minimax": [
+          false,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "c26f0a58bf92f79989297d7d",
+      "family": "ast_transition",
+      "candidates": 80,
+      "reachable": true,
+      "baseline": false,
+      "probe_classes": [
+        6,
+        4,
+        6,
+        6,
+        5,
+        8,
+        5,
+        4
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "9f8564a88352e81ac7a45618",
+      "family": "novel_operator_transition",
+      "candidates": 128,
+      "reachable": true,
+      "baseline": false,
+      "probe_classes": [
+        2,
+        2,
+        3,
+        3,
+        2,
+        3,
+        1,
+        2
+      ],
+      "modes": {
+        "random": [
+          false,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "c2d4d3b276668780223a7082",
+      "family": "stack_transition",
+      "candidates": 72,
+      "reachable": true,
+      "baseline": false,
+      "probe_classes": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        3,
+        3
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "fb14ea6e9f2b7d7e71b4f515",
+      "family": "mutation_transition",
+      "candidates": 78,
+      "reachable": true,
+      "baseline": false,
+      "probe_classes": [
+        5,
+        4,
+        4,
+        2,
+        5,
+        5,
+        4,
+        3
+      ],
+      "modes": {
+        "random": [
+          false,
+          true
+        ],
+        "entropy": [
+          false,
+          true
+        ],
+        "weighted_entropy": [
+          false,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "97fb0f33bd3638ea6f45e7f0",
+      "family": "self_edit_transition",
+      "candidates": 2,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "e1e7bc64d5877e2c0f727a0e",
+      "family": "transform_transition",
+      "candidates": 66,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        3
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "1761d3fba33a68ac90288aae",
+      "family": "ast_transition",
+      "candidates": 56,
+      "reachable": true,
+      "baseline": false,
+      "probe_classes": [
+        1,
+        8,
+        4,
+        1,
+        4,
+        2,
+        4,
+        3
+      ],
+      "modes": {
+        "random": [
+          false,
+          true
+        ],
+        "entropy": [
+          false,
+          true
+        ],
+        "weighted_entropy": [
+          false,
+          true
+        ],
+        "minimax": [
+          false,
+          true
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "a7199a18c8ca7b422f31d2da",
+      "family": "novel_operator_transition",
+      "candidates": 128,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [
+        3,
+        4,
+        1,
+        3,
+        3,
+        3,
+        2,
+        3
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "d6725165f33d3c0c5a6c6e7a",
+      "family": "stack_transition",
+      "candidates": 128,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        3,
+        4,
+        3,
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "0fae1521044b3bfc6edd00e4",
+      "family": "mutation_transition",
+      "candidates": 82,
+      "reachable": true,
+      "baseline": false,
+      "probe_classes": [
+        3,
+        5,
+        2,
+        2,
+        2,
+        3,
+        4,
+        2
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "af6120931f8247c439752362",
+      "family": "self_edit_transition",
+      "candidates": 24,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "8407ddf9c295386752274fa0",
+      "family": "transform_transition",
+      "candidates": 68,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        5,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "3f3df3efff18d92fbd0107f4",
+      "family": "ast_transition",
+      "candidates": 44,
+      "reachable": true,
+      "baseline": false,
+      "probe_classes": [
+        2,
+        2,
+        3,
+        6,
+        1,
+        3,
+        2,
+        4
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "bc8c3c1a1e85ee5330f3f972",
+      "family": "novel_operator_transition",
+      "candidates": 128,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [
+        4,
+        3,
+        6,
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "e9114c3afb8c6b044c9d59ac",
+      "family": "stack_transition",
+      "candidates": 76,
+      "reachable": true,
+      "baseline": false,
+      "probe_classes": [
+        5,
+        3,
+        2,
+        5,
+        3,
+        4,
+        2,
+        3
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "61b5e50e6ecb47241382caac",
+      "family": "mutation_transition",
+      "candidates": 78,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "8694db2127bf4073006beb7b",
+      "family": "self_edit_transition",
+      "candidates": 24,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "b5df0ed8308a4fee5b728100",
+      "family": "transform_transition",
+      "candidates": 72,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        4,
+        3,
+        3,
+        3,
+        5,
+        6,
+        3,
+        4
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "6e3c90a86ba268a871151044",
+      "family": "ast_transition",
+      "candidates": 62,
+      "reachable": true,
+      "baseline": false,
+      "probe_classes": [
+        1,
+        2,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "dea6518493b6cf702e7dc2cc",
+      "family": "novel_operator_transition",
+      "candidates": 128,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "3971e183de83f6f761b3ef46",
+      "family": "stack_transition",
+      "candidates": 64,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "c9a8716c43c5da05b96c4af2",
+      "family": "mutation_transition",
+      "candidates": 78,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "d12eeb4bb78823d7143cd44b",
+      "family": "self_edit_transition",
+      "candidates": 10,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "8fbe7f7ded9756bf8a9f3d43",
+      "family": "transform_transition",
+      "candidates": 66,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "94dd3717e5a1a7d1aa1d616f",
+      "family": "ast_transition",
+      "candidates": 64,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        3,
+        3,
+        3,
+        3,
+        1,
+        4,
+        3,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "6eac619666bb6936c74d55ef",
+      "family": "novel_operator_transition",
+      "candidates": 64,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "736ea5ad1bacc37d5a30b797",
+      "family": "stack_transition",
+      "candidates": 90,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "e4fd9c458a2cefdfabfc21ea",
+      "family": "mutation_transition",
+      "candidates": 6,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "ddd9be191abfe3f7e49d2cba",
+      "family": "self_edit_transition",
+      "candidates": 2,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "70f8900f7476db7d79491ad4",
+      "family": "transform_transition",
+      "candidates": 68,
+      "reachable": true,
+      "baseline": false,
+      "probe_classes": [
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "modes": {
+        "random": [
+          false,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "35084588827a0a8bad5d1a66",
+      "family": "ast_transition",
+      "candidates": 64,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        2,
+        2,
+        1,
+        2,
+        3,
+        2,
+        2,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "b5a0c0c6b963a85637f811f9",
+      "family": "novel_operator_transition",
+      "candidates": 128,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        2,
+        2,
+        1,
+        2,
+        3,
+        3,
+        1,
+        2
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "bd1d8136ee21d3793dee253b",
+      "family": "stack_transition",
+      "candidates": 64,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "d18aae127cff6093514d087f",
+      "family": "mutation_transition",
+      "candidates": 78,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "65be843cbaa914ff7a6c4415",
+      "family": "self_edit_transition",
+      "candidates": 78,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        12,
+        6,
+        8,
+        7,
+        7,
+        5,
+        4,
+        5
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "553f9ce89ae2eeaccd2aea3e",
+      "family": "transform_transition",
+      "candidates": 52,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "9e8a255f5cce1637fdddf060",
+      "family": "ast_transition",
+      "candidates": 64,
+      "reachable": true,
+      "baseline": false,
+      "probe_classes": [
+        5,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3,
+        1
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          false,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "e8e3be0cf2282c1798712ba4",
+      "family": "novel_operator_transition",
+      "candidates": 0,
+      "reachable": false,
+      "baseline": false,
+      "probe_classes": [],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          false,
+          false
+        ],
+        "weighted_entropy": [
+          false,
+          false
+        ],
+        "minimax": [
+          false,
+          false
+        ]
+      },
+      "best_one_probe": false
+    },
+    {
+      "id": "9d59a532434b75a17f6da2f9",
+      "family": "stack_transition",
+      "candidates": 94,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        2,
+        2,
+        3,
+        1,
+        1,
+        3,
+        2
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "4cab932255e7723eeeb67d9d",
+      "family": "mutation_transition",
+      "candidates": 78,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "b42999d552ef487cf70e9a60",
+      "family": "self_edit_transition",
+      "candidates": 28,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        2,
+        1,
+        1,
+        3,
+        3,
+        1,
+        1,
+        2
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "f072833014033296f0266d2f",
+      "family": "transform_transition",
+      "candidates": 68,
+      "reachable": true,
+      "baseline": false,
+      "probe_classes": [
+        2,
+        1,
+        3,
+        3,
+        3,
+        3,
+        4,
+        3
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "472e44525b220d006c4137bd",
+      "family": "ast_transition",
+      "candidates": 24,
+      "reachable": true,
+      "baseline": false,
+      "probe_classes": [
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "modes": {
+        "random": [
+          false,
+          false
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "3ac5177a1618565de14b0edd",
+      "family": "novel_operator_transition",
+      "candidates": 128,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        4,
+        4,
+        6,
+        3,
+        5,
+        4,
+        4,
+        4
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "a14f3085ec50c63eae6e2f50",
+      "family": "stack_transition",
+      "candidates": 90,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "ce107c2b0a81de4a54f9457d",
+      "family": "mutation_transition",
+      "candidates": 78,
+      "reachable": true,
+      "baseline": true,
+      "probe_classes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    },
+    {
+      "id": "aecad638b31540ada9231d0f",
+      "family": "self_edit_transition",
+      "candidates": 36,
+      "reachable": true,
+      "baseline": false,
+      "probe_classes": [
+        5,
+        4,
+        5,
+        5,
+        5,
+        7,
+        4,
+        3
+      ],
+      "modes": {
+        "random": [
+          true,
+          true
+        ],
+        "entropy": [
+          true,
+          true
+        ],
+        "weighted_entropy": [
+          true,
+          true
+        ],
+        "minimax": [
+          true,
+          true
+        ]
+      },
+      "best_one_probe": true
+    }
+  ],
+  "generation_times": {
+    "1ea48ace4fa67cde08cc573a": {
+      "v65": 0.01694069997756742,
+      "v67": 2.3849283999879844
+    },
+    "c26f0a58bf92f79989297d7d": {
+      "v67": 1.307324499997776,
+      "v73": 0.04024649999337271
+    },
+    "9f8564a88352e81ac7a45618": {
+      "v67": 2.4941232999844942,
+      "v69": 1.232923599978676
+    },
+    "c2d4d3b276668780223a7082": {
+      "v67": 0.6729202000133228,
+      "v70": 0.29956500002299435
+    },
+    "fb14ea6e9f2b7d7e71b4f515": {
+      "v70": 0.2506996000010986,
+      "v72": 0.13842339999973774
+    },
+    "97fb0f33bd3638ea6f45e7f0": {
+      "v70": 0.019757600006414577,
+      "v73": 0.012403500004438683
+    },
+    "e1e7bc64d5877e2c0f727a0e": {
+      "v65": 0.008892200014088303,
+      "v67": 1.4433016999973916
+    },
+    "1761d3fba33a68ac90288aae": {
+      "v67": 1.0582467000058386,
+      "v73": 0.0020757000020239502
+    },
+    "a7199a18c8ca7b422f31d2da": {
+      "v67": 2.500991900014924,
+      "v69": 0.6324404000188224
+    },
+    "d6725165f33d3c0c5a6c6e7a": {
+      "v67": 1.1163442000106443,
+      "v70": 0.353366300027119
+    },
+    "0fae1521044b3bfc6edd00e4": {
+      "v70": 0.6480248000007123,
+      "v72": 0.1931754999968689
+    },
+    "af6120931f8247c439752362": {
+      "v70": 0.08931549999397248,
+      "v73": 0.0052921999886166304
+    },
+    "8407ddf9c295386752274fa0": {
+      "v65": 0.007067099999403581,
+      "v67": 0.9816278999787755
+    },
+    "3f3df3efff18d92fbd0107f4": {
+      "v67": 0.8783685000089463,
+      "v73": 0.0025963000080082566
+    },
+    "bc8c3c1a1e85ee5330f3f972": {
+      "v67": 2.350589100009529,
+      "v69": 0.38932889999705367
+    },
+    "e9114c3afb8c6b044c9d59ac": {
+      "v67": 0.8103157000150532,
+      "v70": 0.03485210001235828
+    },
+    "61b5e50e6ecb47241382caac": {
+      "v70": 0.31669659999897704,
+      "v72": 0.17519789998186752
+    },
+    "8694db2127bf4073006beb7b": {
+      "v70": 0.10066759999608621,
+      "v73": 0.008997099997941405
+    },
+    "b5df0ed8308a4fee5b728100": {
+      "v65": 0.014372500008903444,
+      "v67": 2.2340676999883726
+    },
+    "6e3c90a86ba268a871151044": {
+      "v67": 1.2385465999832377,
+      "v73": 0.002443500008666888
+    },
+    "dea6518493b6cf702e7dc2cc": {
+      "v67": 2.3974689000169747,
+      "v69": 0.4961622999981046
+    },
+    "3971e183de83f6f761b3ef46": {
+      "v67": 0.9186317000130657,
+      "v70": 0.4106898999889381
+    },
+    "c9a8716c43c5da05b96c4af2": {
+      "v70": 0.3265854000055697,
+      "v72": 0.15179150001495145
+    },
+    "d12eeb4bb78823d7143cd44b": {
+      "v70": 0.03541350000887178,
+      "v73": 0.01388569999835454
+    },
+    "8fbe7f7ded9756bf8a9f3d43": {
+      "v65": 0.005475899990415201,
+      "v67": 1.1160295000008773
+    },
+    "94dd3717e5a1a7d1aa1d616f": {
+      "v67": 0.9240518999868073,
+      "v73": 0.0017550000047776848
+    },
+    "6eac619666bb6936c74d55ef": {
+      "v67": 1.2730899000016507,
+      "v69": 0.43470919999526814
+    },
+    "736ea5ad1bacc37d5a30b797": {
+      "v67": 2.251554999995278,
+      "v70": 0.08130229997914284
+    },
+    "e4fd9c458a2cefdfabfc21ea": {
+      "v70": 0.02804249999462627,
+      "v72": 0.10105890000704676
+    },
+    "ddd9be191abfe3f7e49d2cba": {
+      "v70": 0.013459599984344095,
+      "v73": 0.011658900009933859
+    },
+    "70f8900f7476db7d79491ad4": {
+      "v65": 0.012718899990431964,
+      "v67": 1.486131599987857
+    },
+    "35084588827a0a8bad5d1a66": {
+      "v67": 1.077237800025614,
+      "v73": 0.0021510000224225223
+    },
+    "b5a0c0c6b963a85637f811f9": {
+      "v67": 2.388617000018712,
+      "v69": 0.4980144999863114
+    },
+    "bd1d8136ee21d3793dee253b": {
+      "v67": 0.6963901999988593,
+      "v70": 0.3382609999971464
+    },
+    "d18aae127cff6093514d087f": {
+      "v70": 0.35122039998532273,
+      "v72": 0.18084950000047684
+    },
+    "65be843cbaa914ff7a6c4415": {
+      "v70": 0.18474660001811571,
+      "v73": 0.04537599999457598
+    },
+    "553f9ce89ae2eeaccd2aea3e": {
+      "v65": 0.009400199982337654,
+      "v67": 0.9667561000096612
+    },
+    "9e8a255f5cce1637fdddf060": {
+      "v67": 1.171033399994485,
+      "v73": 0.002087999979266897
+    },
+    "e8e3be0cf2282c1798712ba4": {
+      "v67": 0.8367780999979004,
+      "v69": 0.1941301999904681
+    },
+    "9d59a532434b75a17f6da2f9": {
+      "v67": 2.3602401000098325,
+      "v70": 0.09042960000806488
+    },
+    "4cab932255e7723eeeb67d9d": {
+      "v70": 0.38824170001316816,
+      "v72": 0.1652981999795884
+    },
+    "b42999d552ef487cf70e9a60": {
+      "v70": 0.08524250000482425,
+      "v73": 0.009624800004530698
+    },
+    "f072833014033296f0266d2f": {
+      "v65": 0.00930309999966994,
+      "v67": 1.2316672999877483
+    },
+    "472e44525b220d006c4137bd": {
+      "v67": 1.40920080000069,
+      "v73": 0.001816000003600493
+    },
+    "3ac5177a1618565de14b0edd": {
+      "v67": 2.143913899984909,
+      "v69": 0.5542490000079852
+    },
+    "a14f3085ec50c63eae6e2f50": {
+      "v67": 2.196522599988384,
+      "v70": 0.08385100000305101
+    },
+    "ce107c2b0a81de4a54f9457d": {
+      "v70": 0.33952590002445504,
+      "v72": 0.1642813000071328
+    },
+    "aecad638b31540ada9231d0f": {
+      "v70": 0.10250400000950322,
+      "v73": 0.015640500001609325
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "scope": "descriptive analysis of opened, previously frozen synthetic banks",
+  "cross_component": {
+    "tasks": 288,
+    "by_family": {
+      "transform_transition": {
+        "tasks": 48,
+        "base_reachable": 48,
+        "wide_reachable": 48,
+        "correct": {
+          "fixed_map": 21,
+          "sharp_global": 17,
+          "ast_ranker": 21,
+          "sharp_ast_ranker": 17,
+          "top20_one": 21,
+          "sharp_top20_one": 17,
+          "minimax_one": 21,
+          "sharp_minimax_one": 17,
+          "adaptive": 21,
+          "sharp_adaptive": 17
+        },
+        "sharp_minus_fixed": -4,
+        "ranker_minus_fixed": 0,
+        "top20_minus_ranker": 0,
+        "adaptive_minus_top20": 0
+      },
+      "ast_transition": {
+        "tasks": 48,
+        "base_reachable": 9,
+        "wide_reachable": 23,
+        "correct": {
+          "fixed_map": 0,
+          "sharp_global": 0,
+          "ast_ranker": 3,
+          "sharp_ast_ranker": 3,
+          "top20_one": 14,
+          "sharp_top20_one": 14,
+          "minimax_one": 13,
+          "sharp_minimax_one": 13,
+          "adaptive": 16,
+          "sharp_adaptive": 16
+        },
+        "sharp_minus_fixed": 0,
+        "ranker_minus_fixed": 3,
+        "top20_minus_ranker": 11,
+        "adaptive_minus_top20": 2
+      },
+      "novel_operator_transition": {
+        "tasks": 48,
+        "base_reachable": 30,
+        "wide_reachable": 30,
+        "correct": {
+          "fixed_map": 21,
+          "sharp_global": 21,
+          "ast_ranker": 21,
+          "sharp_ast_ranker": 21,
+          "top20_one": 21,
+          "sharp_top20_one": 21,
+          "minimax_one": 21,
+          "sharp_minimax_one": 21,
+          "adaptive": 21,
+          "sharp_adaptive": 21
+        },
+        "sharp_minus_fixed": 0,
+        "ranker_minus_fixed": 0,
+        "top20_minus_ranker": 0,
+        "adaptive_minus_top20": 0
+      },
+      "stack_transition": {
+        "tasks": 48,
+        "base_reachable": 48,
+        "wide_reachable": 48,
+        "correct": {
+          "fixed_map": 37,
+          "sharp_global": 37,
+          "ast_ranker": 37,
+          "sharp_ast_ranker": 37,
+          "top20_one": 37,
+          "sharp_top20_one": 37,
+          "minimax_one": 37,
+          "sharp_minimax_one": 37,
+          "adaptive": 37,
+          "sharp_adaptive": 37
+        },
+        "sharp_minus_fixed": 0,
+        "ranker_minus_fixed": 0,
+        "top20_minus_ranker": 0,
+        "adaptive_minus_top20": 0
+      },
+      "mutation_transition": {
+        "tasks": 48,
+        "base_reachable": 48,
+        "wide_reachable": 48,
+        "correct": {
+          "fixed_map": 23,
+          "sharp_global": 23,
+          "ast_ranker": 23,
+          "sharp_ast_ranker": 23,
+          "top20_one": 23,
+          "sharp_top20_one": 23,
+          "minimax_one": 23,
+          "sharp_minimax_one": 23,
+          "adaptive": 23,
+          "sharp_adaptive": 23
+        },
+        "sharp_minus_fixed": 0,
+        "ranker_minus_fixed": 0,
+        "top20_minus_ranker": 0,
+        "adaptive_minus_top20": 0
+      },
+      "self_edit_transition": {
+        "tasks": 48,
+        "base_reachable": 48,
+        "wide_reachable": 48,
+        "correct": {
+          "fixed_map": 43,
+          "sharp_global": 41,
+          "ast_ranker": 43,
+          "sharp_ast_ranker": 41,
+          "top20_one": 43,
+          "sharp_top20_one": 41,
+          "minimax_one": 43,
+          "sharp_minimax_one": 41,
+          "adaptive": 43,
+          "sharp_adaptive": 41
+        },
+        "sharp_minus_fixed": -2,
+        "ranker_minus_fixed": 0,
+        "top20_minus_ranker": 0,
+        "adaptive_minus_top20": 0
+      }
+    },
+    "overall_correct": {
+      "fixed_map": 145,
+      "sharp_global": 139,
+      "ast_ranker": 148,
+      "sharp_ast_ranker": 142,
+      "top20_one": 159,
+      "sharp_top20_one": 153,
+      "minimax_one": 158,
+      "sharp_minimax_one": 152,
+      "adaptive": 161,
+      "sharp_adaptive": 155
+    }
+  },
+  "fresh_query": {
+    "tasks": 576,
+    "banks": 12,
+    "reachable": 492,
+    "no_query_correct": 304,
+    "one_query_each_correct": 424,
+    "query_gains": 120,
+    "query_harms": 0,
+    "oracle_hindsight_eight_per_bank": 396,
+    "learned_eight_per_bank_correct": 349,
+    "ranking_misses_among_reachable": 188,
+    "remaining_after_one_each": 68,
+    "allocation_regret_to_hindsight": 47,
+    "by_family": {
+      "transform_transition": {
+        "tasks": 96,
+        "reachable": 96,
+        "zero_correct": 36,
+        "one_each_correct": 73
+      },
+      "ast_transition": {
+        "tasks": 96,
+        "reachable": 40,
+        "zero_correct": 10,
+        "one_each_correct": 25
+      },
+      "novel_operator_transition": {
+        "tasks": 96,
+        "reachable": 70,
+        "zero_correct": 41,
+        "one_each_correct": 63
+      },
+      "stack_transition": {
+        "tasks": 96,
+        "reachable": 96,
+        "zero_correct": 74,
+        "one_each_correct": 92
+      },
+      "mutation_transition": {
+        "tasks": 96,
+        "reachable": 94,
+        "zero_correct": 55,
+        "one_each_correct": 75
+      },
+      "self_edit_transition": {
+        "tasks": 96,
+        "reachable": 96,
+        "zero_correct": 88,
+        "one_each_correct": 96
+      }
+    }
+  },
+  "limits": [
+    "Hindsight query allocation uses unavailable final labels.",
+    "Correctness uses fifteen held-out examples, not universal equivalence.",
+    "Opened banks are development evidence for future design."
+  ]
+}

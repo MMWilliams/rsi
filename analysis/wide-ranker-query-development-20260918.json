@@ -1,0 +1,606 @@
+{
+  "scope": "opened development; candidate models and query source disjoint",
+  "candidate_model_source_tasks": 1152,
+  "query_model_source_tasks": 1152,
+  "query_source_candidate_choices_checked": 6912,
+  "targets": {
+    "shifted-ast-seed-transfer-20260918": {
+      "tasks": 96,
+      "budget_per_bank": 4,
+      "totals": {
+        "e0": {
+          "zero": 15,
+          "budgeted": 21,
+          "one_each": 23,
+          "hindsight": 23
+        },
+        "top20_same": {
+          "zero": 14,
+          "budgeted": 22,
+          "one_each": 25,
+          "hindsight": 25
+        },
+        "top50": {
+          "zero": 8,
+          "budgeted": 19,
+          "one_each": 28,
+          "hindsight": 28
+        }
+      },
+      "comparisons": {
+        "top20_same": {
+          "gain": 1,
+          "positive_banks": 3,
+          "losing_banks": 2,
+          "interval": [
+            -3,
+            5
+          ]
+        },
+        "top50": {
+          "gain": -2,
+          "positive_banks": 2,
+          "losing_banks": 4,
+          "interval": [
+            -7,
+            3
+          ]
+        }
+      },
+      "by_bank": [
+        {
+          "seed": 903000,
+          "e0": {
+            "zero": 1,
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "top20_same": {
+            "zero": 2,
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "top50": {
+            "zero": 0,
+            "budgeted": 1,
+            "one_each": 3,
+            "hindsight": 3
+          }
+        },
+        {
+          "seed": 903001,
+          "e0": {
+            "zero": 2,
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "top20_same": {
+            "zero": 2,
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "top50": {
+            "zero": 1,
+            "budgeted": 2,
+            "one_each": 3,
+            "hindsight": 3
+          }
+        },
+        {
+          "seed": 903002,
+          "e0": {
+            "zero": 0,
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          },
+          "top20_same": {
+            "zero": 0,
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          },
+          "top50": {
+            "zero": 0,
+            "budgeted": 0,
+            "one_each": 0,
+            "hindsight": 0
+          }
+        },
+        {
+          "seed": 903003,
+          "e0": {
+            "zero": 1,
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "top20_same": {
+            "zero": 1,
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "top50": {
+            "zero": 1,
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          }
+        },
+        {
+          "seed": 903004,
+          "e0": {
+            "zero": 1,
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "top20_same": {
+            "zero": 1,
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "top50": {
+            "zero": 1,
+            "budgeted": 2,
+            "one_each": 3,
+            "hindsight": 3
+          }
+        },
+        {
+          "seed": 903005,
+          "e0": {
+            "zero": 1,
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "top20_same": {
+            "zero": 1,
+            "budgeted": 1,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "top50": {
+            "zero": 0,
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          }
+        },
+        {
+          "seed": 903006,
+          "e0": {
+            "zero": 1,
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "top20_same": {
+            "zero": 1,
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "top50": {
+            "zero": 1,
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          }
+        },
+        {
+          "seed": 903007,
+          "e0": {
+            "zero": 1,
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "top20_same": {
+            "zero": 1,
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "top50": {
+            "zero": 0,
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          }
+        },
+        {
+          "seed": 903008,
+          "e0": {
+            "zero": 1,
+            "budgeted": 2,
+            "one_each": 2,
+            "hindsight": 2
+          },
+          "top20_same": {
+            "zero": 0,
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "top50": {
+            "zero": 0,
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          }
+        },
+        {
+          "seed": 903009,
+          "e0": {
+            "zero": 1,
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "top20_same": {
+            "zero": 1,
+            "budgeted": 1,
+            "one_each": 1,
+            "hindsight": 1
+          },
+          "top50": {
+            "zero": 1,
+            "budgeted": 1,
+            "one_each": 2,
+            "hindsight": 2
+          }
+        },
+        {
+          "seed": 903010,
+          "e0": {
+            "zero": 3,
+            "budgeted": 3,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "top20_same": {
+            "zero": 2,
+            "budgeted": 2,
+            "one_each": 3,
+            "hindsight": 3
+          },
+          "top50": {
+            "zero": 2,
+            "budgeted": 4,
+            "one_each": 4,
+            "hindsight": 4
+          }
+        },
+        {
+          "seed": 903011,
+          "e0": {
+            "zero": 2,
+            "budgeted": 3,
+            "one_each": 4,
+            "hindsight": 4
+          },
+          "top20_same": {
+            "zero": 2,
+            "budgeted": 4,
+            "one_each": 4,
+            "hindsight": 4
+          },
+          "top50": {
+            "zero": 1,
+            "budgeted": 3,
+            "one_each": 4,
+            "hindsight": 4
+          }
+        }
+      ],
+      "candidate_choices_checked": 576
+    },
+    "combined-ranker-query-transfer-20260918": {
+      "tasks": 576,
+      "budget_per_bank": 8,
+      "totals": {
+        "e0": {
+          "zero": 344,
+          "budgeted": 378,
+          "one_each": 438,
+          "hindsight": 429
+        },
+        "top20_same": {
+          "zero": 352,
+          "budgeted": 384,
+          "one_each": 442,
+          "hindsight": 435
+        },
+        "top50": {
+          "zero": 339,
+          "budgeted": 378,
+          "one_each": 442,
+          "hindsight": 427
+        }
+      },
+      "comparisons": {
+        "top20_same": {
+          "gain": 6,
+          "positive_banks": 7,
+          "losing_banks": 5,
+          "interval": [
+            -12,
+            23
+          ]
+        },
+        "top50": {
+          "gain": 0,
+          "positive_banks": 5,
+          "losing_banks": 6,
+          "interval": [
+            -21,
+            22
+          ]
+        }
+      },
+      "by_bank": [
+        {
+          "seed": 902558,
+          "e0": {
+            "zero": 30,
+            "budgeted": 31,
+            "one_each": 34,
+            "hindsight": 34
+          },
+          "top20_same": {
+            "zero": 29,
+            "budgeted": 30,
+            "one_each": 33,
+            "hindsight": 33
+          },
+          "top50": {
+            "zero": 29,
+            "budgeted": 29,
+            "one_each": 35,
+            "hindsight": 35
+          }
+        },
+        {
+          "seed": 902559,
+          "e0": {
+            "zero": 27,
+            "budgeted": 32,
+            "one_each": 39,
+            "hindsight": 35
+          },
+          "top20_same": {
+            "zero": 30,
+            "budgeted": 34,
+            "one_each": 41,
+            "hindsight": 38
+          },
+          "top50": {
+            "zero": 26,
+            "budgeted": 32,
+            "one_each": 40,
+            "hindsight": 34
+          }
+        },
+        {
+          "seed": 902560,
+          "e0": {
+            "zero": 31,
+            "budgeted": 34,
+            "one_each": 37,
+            "hindsight": 37
+          },
+          "top20_same": {
+            "zero": 30,
+            "budgeted": 32,
+            "one_each": 36,
+            "hindsight": 36
+          },
+          "top50": {
+            "zero": 28,
+            "budgeted": 31,
+            "one_each": 38,
+            "hindsight": 36
+          }
+        },
+        {
+          "seed": 902561,
+          "e0": {
+            "zero": 31,
+            "budgeted": 32,
+            "one_each": 37,
+            "hindsight": 37
+          },
+          "top20_same": {
+            "zero": 30,
+            "budgeted": 33,
+            "one_each": 39,
+            "hindsight": 38
+          },
+          "top50": {
+            "zero": 29,
+            "budgeted": 33,
+            "one_each": 38,
+            "hindsight": 37
+          }
+        },
+        {
+          "seed": 902562,
+          "e0": {
+            "zero": 23,
+            "budgeted": 25,
+            "one_each": 33,
+            "hindsight": 31
+          },
+          "top20_same": {
+            "zero": 24,
+            "budgeted": 28,
+            "one_each": 34,
+            "hindsight": 32
+          },
+          "top50": {
+            "zero": 25,
+            "budgeted": 29,
+            "one_each": 33,
+            "hindsight": 33
+          }
+        },
+        {
+          "seed": 902563,
+          "e0": {
+            "zero": 28,
+            "budgeted": 32,
+            "one_each": 36,
+            "hindsight": 36
+          },
+          "top20_same": {
+            "zero": 28,
+            "budgeted": 33,
+            "one_each": 37,
+            "hindsight": 36
+          },
+          "top50": {
+            "zero": 28,
+            "budgeted": 31,
+            "one_each": 34,
+            "hindsight": 34
+          }
+        },
+        {
+          "seed": 902564,
+          "e0": {
+            "zero": 31,
+            "budgeted": 34,
+            "one_each": 38,
+            "hindsight": 38
+          },
+          "top20_same": {
+            "zero": 30,
+            "budgeted": 33,
+            "one_each": 38,
+            "hindsight": 38
+          },
+          "top50": {
+            "zero": 28,
+            "budgeted": 31,
+            "one_each": 39,
+            "hindsight": 36
+          }
+        },
+        {
+          "seed": 902565,
+          "e0": {
+            "zero": 26,
+            "budgeted": 27,
+            "one_each": 36,
+            "hindsight": 34
+          },
+          "top20_same": {
+            "zero": 28,
+            "budgeted": 30,
+            "one_each": 36,
+            "hindsight": 36
+          },
+          "top50": {
+            "zero": 29,
+            "budgeted": 32,
+            "one_each": 38,
+            "hindsight": 37
+          }
+        },
+        {
+          "seed": 902566,
+          "e0": {
+            "zero": 26,
+            "budgeted": 28,
+            "one_each": 34,
+            "hindsight": 34
+          },
+          "top20_same": {
+            "zero": 33,
+            "budgeted": 33,
+            "one_each": 36,
+            "hindsight": 36
+          },
+          "top50": {
+            "zero": 29,
+            "budgeted": 33,
+            "one_each": 35,
+            "hindsight": 35
+          }
+        },
+        {
+          "seed": 902567,
+          "e0": {
+            "zero": 30,
+            "budgeted": 33,
+            "one_each": 37,
+            "hindsight": 37
+          },
+          "top20_same": {
+            "zero": 28,
+            "budgeted": 30,
+            "one_each": 36,
+            "hindsight": 36
+          },
+          "top50": {
+            "zero": 28,
+            "budgeted": 31,
+            "one_each": 38,
+            "hindsight": 36
+          }
+        },
+        {
+          "seed": 902568,
+          "e0": {
+            "zero": 32,
+            "budgeted": 38,
+            "one_each": 39,
+            "hindsight": 39
+          },
+          "top20_same": {
+            "zero": 32,
+            "budgeted": 34,
+            "one_each": 39,
+            "hindsight": 39
+          },
+          "top50": {
+            "zero": 30,
+            "budgeted": 33,
+            "one_each": 38,
+            "hindsight": 38
+          }
+        },
+        {
+          "seed": 902569,
+          "e0": {
+            "zero": 29,
+            "budgeted": 32,
+            "one_each": 38,
+            "hindsight": 37
+          },
+          "top20_same": {
+            "zero": 30,
+            "budgeted": 34,
+            "one_each": 37,
+            "hindsight": 37
+          },
+          "top50": {
+            "zero": 30,
+            "budgeted": 33,
+            "one_each": 36,
+            "hindsight": 36
+          }
+        }
+      ],
+      "candidate_choices_checked": 3456
+    }
+  }
+}

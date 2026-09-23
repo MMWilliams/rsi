@@ -1,0 +1,145 @@
+{
+  "scope": "resampling simulation on audited dual-specialist rows; nothing generated, no policy frozen",
+  "question": "does between-bank mechanism heterogeneity clear the P2b fixed-regret threshold of +20 per 576 tasks",
+  "source": "runs\\dual-specialist-integration-transfer-20260918\\results.json",
+  "per_domain_repayment": {
+    "familiar_model": {
+      "familiar_tasks": 35,
+      "shifted_tasks": -2
+    },
+    "shifted_model": {
+      "familiar_tasks": -14,
+      "shifted_tasks": 26
+    }
+  },
+  "draws": 200,
+  "banks": 12,
+  "bank_tasks": 48,
+  "threshold": 20,
+  "profiles": {
+    "balanced": {
+      "fixed_regret": {
+        "mean": 2.91,
+        "p10": 0.0,
+        "p90": 7.099999999999994
+      },
+      "contextual_minus_constant": {
+        "mean": -0.825,
+        "p10": -5.0,
+        "p90": 2.0
+      },
+      "best_constant": {
+        "mean": 98.445,
+        "p10": 83.0,
+        "p90": 113.0
+      },
+      "hindsight": {
+        "mean": 101.355,
+        "p10": 87.0,
+        "p90": 116.0
+      },
+      "distinct_optima": {
+        "mean": 1.725,
+        "p10": 1.0,
+        "p90": 2.0
+      },
+      "draws_where_context_wins": 0.135
+    },
+    "beta": {
+      "fixed_regret": {
+        "mean": 48.31,
+        "p10": 22.900000000000002,
+        "p90": 71.0
+      },
+      "contextual_minus_constant": {
+        "mean": 41.4,
+        "p10": 11.0,
+        "p90": 67.0
+      },
+      "best_constant": {
+        "mean": 99.315,
+        "p10": 71.0,
+        "p90": 136.2
+      },
+      "hindsight": {
+        "mean": 147.625,
+        "p10": 128.8,
+        "p90": 166.0
+      },
+      "distinct_optima": {
+        "mean": 2.015,
+        "p10": 2.0,
+        "p90": 2.0
+      },
+      "draws_where_context_wins": 0.95
+    },
+    "drifting": {
+      "fixed_regret": {
+        "mean": 38.35,
+        "p10": 29.0,
+        "p90": 49.0
+      },
+      "contextual_minus_constant": {
+        "mean": 30.88,
+        "p10": 14.0,
+        "p90": 44.099999999999994
+      },
+      "best_constant": {
+        "mean": 98.74,
+        "p10": 85.9,
+        "p90": 112.0
+      },
+      "hindsight": {
+        "mean": 137.09,
+        "p10": 122.0,
+        "p90": 152.1
+      },
+      "distinct_optima": {
+        "mean": 2.025,
+        "p10": 2.0,
+        "p90": 2.0
+      },
+      "draws_where_context_wins": 0.97
+    },
+    "split": {
+      "fixed_regret": {
+        "mean": 83.375,
+        "p10": 74.9,
+        "p90": 93.0
+      },
+      "contextual_minus_constant": {
+        "mean": 83.285,
+        "p10": 74.9,
+        "p90": 93.0
+      },
+      "best_constant": {
+        "mean": 99.705,
+        "p10": 87.0,
+        "p90": 113.0
+      },
+      "hindsight": {
+        "mean": 183.08,
+        "p10": 169.0,
+        "p90": 198.0
+      },
+      "distinct_optima": {
+        "mean": 2.0,
+        "p10": 2.0,
+        "p90": 2.0
+      },
+      "draws_where_context_wins": 1.0
+    }
+  },
+  "verdict": {
+    "balanced": false,
+    "beta": true,
+    "drifting": true,
+    "split": true
+  },
+  "limits": [
+    "Rows are resampled with replacement from audited tasks, so bank composition is synthetic while every label is real.",
+    "Both specialists were trained before this simulation; a real generator would retrain them per environment.",
+    "The contextual arm is nearest-neighbour on the public familiar share, a deliberately weak learner.",
+    "balanced is the control and matches the original run design."
+  ]
+}

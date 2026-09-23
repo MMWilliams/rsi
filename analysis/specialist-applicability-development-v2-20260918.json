@@ -1,0 +1,4846 @@
+{
+  "scope": "opened development; source candidate model disjoint from router rows",
+  "training_tasks": 384,
+  "target_tasks": 480,
+  "effect_source_distribution": {
+    "positive": 53,
+    "negative": 37,
+    "zero": 294
+  },
+  "routes_to_specialist": {
+    "visible_route": 272,
+    "effect_route": 256
+  },
+  "target_rows": [
+    {
+      "id": "96d86fb10e45fd5944160e08",
+      "seed": 903200,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4263803448123395,
+      "predicted_effect": -0.15048386842668499
+    },
+    {
+      "id": "b3298f5863ac68fe68aba6f8",
+      "seed": 903200,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5961436901096889,
+      "predicted_effect": 0.18183116752778622
+    },
+    {
+      "id": "9451e61f185948df3da6eef8",
+      "seed": 903200,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.543968660632203,
+      "predicted_effect": -0.008383727464074264
+    },
+    {
+      "id": "30475a02f71d2a376c953996",
+      "seed": 903200,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7110558228754474,
+      "predicted_effect": -0.13608992478289614
+    },
+    {
+      "id": "3f78418bfd7b5216daa6d14d",
+      "seed": 903200,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3823527837914864,
+      "predicted_effect": -0.10067948135515278
+    },
+    {
+      "id": "f24280fa21874e38c76585e0",
+      "seed": 903200,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6900211183236277,
+      "predicted_effect": 0.04676685793583334
+    },
+    {
+      "id": "30838129f7e2f5e8dee74a4f",
+      "seed": 903200,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.258825360763555,
+      "predicted_effect": 0.07622244761767794
+    },
+    {
+      "id": "16423107a6c7d03d0e5146c7",
+      "seed": 903200,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4069414047929358,
+      "predicted_effect": 0.08619927815764834
+    },
+    {
+      "id": "56c999c25190bdc1a7974a2c",
+      "seed": 903201,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.49366269287134584,
+      "predicted_effect": -0.013140798011489195
+    },
+    {
+      "id": "97deeaa9fe92eb1a54343116",
+      "seed": 903201,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6239337341639531,
+      "predicted_effect": 0.10561864609809966
+    },
+    {
+      "id": "3892768740d96bb019cee98e",
+      "seed": 903201,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5822785217309334,
+      "predicted_effect": 0.0727893075902574
+    },
+    {
+      "id": "6318a2765774c8c71db4b896",
+      "seed": 903201,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.5646049860237861,
+      "predicted_effect": 0.20128811507821004
+    },
+    {
+      "id": "79940defba2e3ae841b22bde",
+      "seed": 903201,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.48622189363743495,
+      "predicted_effect": 0.035914961295027976
+    },
+    {
+      "id": "ca0d1d4451c008f2bfd30e9b",
+      "seed": 903201,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5918379412691515,
+      "predicted_effect": -0.23141067667938736
+    },
+    {
+      "id": "24f9fae4b80d2f096c551ba4",
+      "seed": 903201,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.8274811359357875,
+      "predicted_effect": 0.18808420827107417
+    },
+    {
+      "id": "74982789e57e77d4db2496ae",
+      "seed": 903201,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4358983979341973,
+      "predicted_effect": 0.05164465406682258
+    },
+    {
+      "id": "9d4fcc964e19e01e80b4f015",
+      "seed": 903202,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6634224657096182,
+      "predicted_effect": 0.42082318366392973
+    },
+    {
+      "id": "b4cc35f00c458172e8fc52a3",
+      "seed": 903202,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4685135045616248,
+      "predicted_effect": -0.01608999339364997
+    },
+    {
+      "id": "04871eff336120e414c0564b",
+      "seed": 903202,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.596287208323263,
+      "predicted_effect": 0.12654646356240834
+    },
+    {
+      "id": "9013a9bda553f9a10fc22446",
+      "seed": 903202,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6065133369755528,
+      "predicted_effect": 0.14180247971720383
+    },
+    {
+      "id": "fa8f19c331bf01c994342735",
+      "seed": 903202,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6475715385029934,
+      "predicted_effect": 0.1602847516873408
+    },
+    {
+      "id": "fe68cbe602fefce67cfd3f45",
+      "seed": 903202,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.722900449802547,
+      "predicted_effect": 0.5467038102609221
+    },
+    {
+      "id": "9ba39834fc6c9668b8032f39",
+      "seed": 903202,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5823216570102889,
+      "predicted_effect": -0.02419861215101532
+    },
+    {
+      "id": "5493128ca5344a22167e2609",
+      "seed": 903202,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.44037219139434125,
+      "predicted_effect": 0.12822714184607784
+    },
+    {
+      "id": "935a6c106990d0e211de5b0d",
+      "seed": 903203,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.703898347511745,
+      "predicted_effect": 0.12608985516562604
+    },
+    {
+      "id": "daf56bda6ef783abce0673e1",
+      "seed": 903203,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6489669062298365,
+      "predicted_effect": 0.1848188186801484
+    },
+    {
+      "id": "2565d97e8508c2dfe0ff6e22",
+      "seed": 903203,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5329931312659316,
+      "predicted_effect": -0.08452817534138425
+    },
+    {
+      "id": "33cd1288a23ef565e2c63562",
+      "seed": 903203,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.33266298344704365,
+      "predicted_effect": 0.030470723743506265
+    },
+    {
+      "id": "f1a39df1f0e0853634474c2f",
+      "seed": 903203,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.4951009681913622,
+      "predicted_effect": -0.020996567524157593
+    },
+    {
+      "id": "9ce5d5e9b9fc40d471f7ccd4",
+      "seed": 903203,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5227652884145098,
+      "predicted_effect": -0.0023929675414223984
+    },
+    {
+      "id": "67aa8ebb5b8f9b7d82596f55",
+      "seed": 903203,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.7811806247626649,
+      "predicted_effect": 0.03297729302164186
+    },
+    {
+      "id": "2eec9dc06da2369adf2e24e8",
+      "seed": 903203,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4768031072684315,
+      "predicted_effect": 0.013041743910063852
+    },
+    {
+      "id": "fdbce402a100a8fa8e454cf4",
+      "seed": 903204,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4494503402068024,
+      "predicted_effect": 0.044369714777132904
+    },
+    {
+      "id": "da03f56487e5858755f06b9d",
+      "seed": 903204,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6090791705489185,
+      "predicted_effect": 0.08238549796641874
+    },
+    {
+      "id": "6bb7ba30bd86ab8bc6429622",
+      "seed": 903204,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4402751029051683,
+      "predicted_effect": 0.09975142971845923
+    },
+    {
+      "id": "49e0e3bf9d3a21ea1f8864a0",
+      "seed": 903204,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4265074283018795,
+      "predicted_effect": -0.04865269794493333
+    },
+    {
+      "id": "22a9f7bccf22b98ae7086c53",
+      "seed": 903204,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6333101127545823,
+      "predicted_effect": -0.027126004452258476
+    },
+    {
+      "id": "063bd847717534dc9ec24b14",
+      "seed": 903204,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4657062652610451,
+      "predicted_effect": -0.04862240323452022
+    },
+    {
+      "id": "e5602b32a5eeca045291139c",
+      "seed": 903204,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.41915674591491797,
+      "predicted_effect": -0.019583240491217353
+    },
+    {
+      "id": "ee673a15a45397f9a19e8eca",
+      "seed": 903204,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6902996799489827,
+      "predicted_effect": 0.06654071286489796
+    },
+    {
+      "id": "7a3c1b0d0d1c3d8d1b2aa050",
+      "seed": 903205,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5966265398198151,
+      "predicted_effect": 0.31270623741767134
+    },
+    {
+      "id": "465de78c39257a8976f52dfc",
+      "seed": 903205,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3438612285338113,
+      "predicted_effect": 0.049406090801216156
+    },
+    {
+      "id": "19e1034a2dc5d00ee86ac0c9",
+      "seed": 903205,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.7222785851746767,
+      "predicted_effect": -0.012431324440458441
+    },
+    {
+      "id": "7b96319b78084dc6cff1d0fd",
+      "seed": 903205,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.7704739182035019,
+      "predicted_effect": 0.10266292784476005
+    },
+    {
+      "id": "bf8ec4d54e3e4476179a08a6",
+      "seed": 903205,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.5289267146096495,
+      "predicted_effect": 0.3167179536289313
+    },
+    {
+      "id": "124f754a4e482393d0fb0923",
+      "seed": 903205,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.615280991528875,
+      "predicted_effect": 0.04563491428660197
+    },
+    {
+      "id": "2b15fc5388e427b7b739fd73",
+      "seed": 903205,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4019045119235765,
+      "predicted_effect": -0.029324257589459578
+    },
+    {
+      "id": "e2ec8539aa7d21960f041e2d",
+      "seed": 903205,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5547022082898917,
+      "predicted_effect": 0.25455380699781277
+    },
+    {
+      "id": "8e043153876b99bd829101d4",
+      "seed": 903206,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.5870317695910207,
+      "predicted_effect": 0.26901576610586286
+    },
+    {
+      "id": "85efbfa40a22b794f7516112",
+      "seed": 903206,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.35059167208053477,
+      "predicted_effect": -0.06309081919743321
+    },
+    {
+      "id": "2b2d9e4dfc385b5702908b12",
+      "seed": 903206,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.673685314248701,
+      "predicted_effect": -0.04332781499187601
+    },
+    {
+      "id": "cde2608f71b30c246b1fc85d",
+      "seed": 903206,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3645184620515946,
+      "predicted_effect": 0.060083508847587105
+    },
+    {
+      "id": "d87471336b787cd8ba247008",
+      "seed": 903206,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5971477825599024,
+      "predicted_effect": 0.10579101430389296
+    },
+    {
+      "id": "02e32ebb1d8b6a126752997c",
+      "seed": 903206,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.25735517683936526,
+      "predicted_effect": -0.056863338977230615
+    },
+    {
+      "id": "d3c89ae463ec1b323addb4a6",
+      "seed": 903206,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6629178744526263,
+      "predicted_effect": 0.3145824064908305
+    },
+    {
+      "id": "137e7452b87935b7ea5d66f9",
+      "seed": 903206,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4183430181620832,
+      "predicted_effect": -0.08194617605635274
+    },
+    {
+      "id": "41f59bf74f425f905bb81b01",
+      "seed": 903207,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5103213175230266,
+      "predicted_effect": -0.026988351382458732
+    },
+    {
+      "id": "b958abefd1f6129bf2a97c84",
+      "seed": 903207,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5766055378743944,
+      "predicted_effect": -0.05200431120583829
+    },
+    {
+      "id": "76ad4de6132b45f9fe3803fa",
+      "seed": 903207,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.44736626004144214,
+      "predicted_effect": 0.04536676714900554
+    },
+    {
+      "id": "da88d533fff8b42b8e1c72c6",
+      "seed": 903207,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.36713718403452283,
+      "predicted_effect": 0.04450583633963012
+    },
+    {
+      "id": "3e93ad148d86c1f95108b1ae",
+      "seed": 903207,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5091238887901026,
+      "predicted_effect": -0.00830201622864713
+    },
+    {
+      "id": "84b266504fb7942a1bee2489",
+      "seed": 903207,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.493427557293492,
+      "predicted_effect": -0.09510238138974692
+    },
+    {
+      "id": "ea4c0b52bd60dc7fae1ef3a3",
+      "seed": 903207,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.5445276528400249,
+      "predicted_effect": 0.35702171285797196
+    },
+    {
+      "id": "6052b694149f6e5ce7cd4921",
+      "seed": 903207,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.40684582826802634,
+      "predicted_effect": -0.003793361192157326
+    },
+    {
+      "id": "075b8d77250ef6963f2c1140",
+      "seed": 903208,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.34463279701626703,
+      "predicted_effect": -0.02443474144903101
+    },
+    {
+      "id": "7c6733e877f2604683130f15",
+      "seed": 903208,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5473282771978271,
+      "predicted_effect": -0.023229663257084577
+    },
+    {
+      "id": "ce2b69ae22960d90f607f5c4",
+      "seed": 903208,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.41556280792632677,
+      "predicted_effect": -0.07585561839245396
+    },
+    {
+      "id": "ce9392b7492c9303c27e2b8c",
+      "seed": 903208,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.531332896168987,
+      "predicted_effect": 0.013376039433198275
+    },
+    {
+      "id": "132ea82fd78cebd5d95629a0",
+      "seed": 903208,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4995248973399537,
+      "predicted_effect": 0.013757779987901153
+    },
+    {
+      "id": "81736f8c828b7a5ff6741772",
+      "seed": 903208,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3861903731843375,
+      "predicted_effect": -0.15679340855529086
+    },
+    {
+      "id": "c5f1fe8dd4f969e24eab168f",
+      "seed": 903208,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.576770051415742,
+      "predicted_effect": -0.07359229960115928
+    },
+    {
+      "id": "9e5f7bc9db77eb0b4ac812c4",
+      "seed": 903208,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4344649197439882,
+      "predicted_effect": -0.09829870234965361
+    },
+    {
+      "id": "10e5d736b49d0905d6756214",
+      "seed": 903209,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.37836209972091217,
+      "predicted_effect": -0.18977031554545382
+    },
+    {
+      "id": "8d827ec949d23e4427a791b5",
+      "seed": 903209,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.356737909623422,
+      "predicted_effect": -0.24409612777923903
+    },
+    {
+      "id": "05405447e5fac3dbc5fbab1f",
+      "seed": 903209,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4344649197439882,
+      "predicted_effect": 0.19421124618661254
+    },
+    {
+      "id": "e3ba7c46a93eef2117e2174d",
+      "seed": 903209,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7536456292410596,
+      "predicted_effect": -0.15628623804165945
+    },
+    {
+      "id": "416323b9840cef9c3551c616",
+      "seed": 903209,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.2730036570174022,
+      "predicted_effect": 0.3613585890726461
+    },
+    {
+      "id": "30ee07f32a439341e5551c98",
+      "seed": 903209,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.5740149162105567,
+      "predicted_effect": 0.1670400778512791
+    },
+    {
+      "id": "7376ea3718ec070705cecf22",
+      "seed": 903209,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5794783635698493,
+      "predicted_effect": -0.15425061501014953
+    },
+    {
+      "id": "8c578a99608916fd949e8e99",
+      "seed": 903209,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6555984278643766,
+      "predicted_effect": -0.12807213605355425
+    },
+    {
+      "id": "52dbb0dae37dc3aaf61e5338",
+      "seed": 903210,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4409047841850504,
+      "predicted_effect": -0.021749861077771472
+    },
+    {
+      "id": "bf42baf7cb3bb72ac47c6e9a",
+      "seed": 903210,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4320052108795845,
+      "predicted_effect": 0.07258639851200636
+    },
+    {
+      "id": "dceb6fca98d8f3a12202b3e5",
+      "seed": 903210,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5488572420701794,
+      "predicted_effect": -0.19673872512056306
+    },
+    {
+      "id": "6ee2d6cbdda7f209b6f4520a",
+      "seed": 903210,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5369979651150462,
+      "predicted_effect": 0.09226078864255104
+    },
+    {
+      "id": "1b381ba8a9d83ca1e5c5ebaa",
+      "seed": 903210,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5430613598104133,
+      "predicted_effect": -0.014470831115978145
+    },
+    {
+      "id": "9897ef49f262033e094ec726",
+      "seed": 903210,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.46375973425824635,
+      "predicted_effect": -0.02843022103951242
+    },
+    {
+      "id": "f43834a980bd0c37dc892ad2",
+      "seed": 903210,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4763799985578158,
+      "predicted_effect": 0.049020773203009876
+    },
+    {
+      "id": "1312629bd70336b6bb8b3017",
+      "seed": 903210,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6092868114914605,
+      "predicted_effect": 0.18099542444680905
+    },
+    {
+      "id": "de0f753b0454945e08a550dd",
+      "seed": 903211,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.5671514705040022,
+      "predicted_effect": 0.33801740372475775
+    },
+    {
+      "id": "af05c59c93aec2985dc06653",
+      "seed": 903211,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5699165242269469,
+      "predicted_effect": 0.08126417682186228
+    },
+    {
+      "id": "7577ba0ac564e8e41b379b92",
+      "seed": 903211,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5744870819871212,
+      "predicted_effect": 0.24546379259426127
+    },
+    {
+      "id": "c3a402cd65a8431b5d080ca7",
+      "seed": 903211,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.5102814902280559,
+      "predicted_effect": 0.11743202558626716
+    },
+    {
+      "id": "879b583d538de5f88c897082",
+      "seed": 903211,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.22524883683208288,
+      "predicted_effect": -0.017157781346506012
+    },
+    {
+      "id": "f45d7c242f324b85cf63c26a",
+      "seed": 903211,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6316499994971454,
+      "predicted_effect": -0.06596324674539514
+    },
+    {
+      "id": "5739c84e9387b8af0fac9c9e",
+      "seed": 903211,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.7565883234213261,
+      "predicted_effect": -0.04575264146764305
+    },
+    {
+      "id": "0e8067b32664b36bcd61681b",
+      "seed": 903211,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4354269962102307,
+      "predicted_effect": 0.08821992080353831
+    },
+    {
+      "id": "179d39d997cc64f83d65f31f",
+      "seed": 903212,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6503538691112162,
+      "predicted_effect": 0.42434143932366014
+    },
+    {
+      "id": "c15a62cbb78aeb2c29f10bbd",
+      "seed": 903212,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5540743538285535,
+      "predicted_effect": 0.015062694248826867
+    },
+    {
+      "id": "959dfcb21a5326d35e3d0f2b",
+      "seed": 903212,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.48854786533725636,
+      "predicted_effect": -0.07998026875404414
+    },
+    {
+      "id": "ef4d9429a95bc41b5b171af1",
+      "seed": 903212,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.36929634097102026,
+      "predicted_effect": -0.03777834671842601
+    },
+    {
+      "id": "4d575fbf2b95a2055187fe76",
+      "seed": 903212,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.7040153371835606,
+      "predicted_effect": 0.09427435703714103
+    },
+    {
+      "id": "b126f3b7d303d84b4b69bc39",
+      "seed": 903212,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.41731883168237127,
+      "predicted_effect": 0.26545242178057643
+    },
+    {
+      "id": "83047c8741e7a1ad22a8961a",
+      "seed": 903212,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6350101607377103,
+      "predicted_effect": -0.06275442240974384
+    },
+    {
+      "id": "f1bfe7cc16694b61601b70dc",
+      "seed": 903212,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6100596043172127,
+      "predicted_effect": 0.09119779659593648
+    },
+    {
+      "id": "897a74d6ba8814bba2608451",
+      "seed": 903213,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.44114352211322244,
+      "predicted_effect": 0.12304651089432854
+    },
+    {
+      "id": "2013a4ecfc0edf9a36f40627",
+      "seed": 903213,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5749249772503249,
+      "predicted_effect": -0.009205997698078297
+    },
+    {
+      "id": "45927b4d2f96d31408e9098b",
+      "seed": 903213,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.48937340011961744,
+      "predicted_effect": -0.09449564019426684
+    },
+    {
+      "id": "41ebf52cde0425180020e443",
+      "seed": 903213,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7530526144147885,
+      "predicted_effect": 0.07841253208892346
+    },
+    {
+      "id": "19bf358b83a4206aeff2fa3f",
+      "seed": 903213,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.39391746966764846,
+      "predicted_effect": -0.17895067940117504
+    },
+    {
+      "id": "88616efb7675334ce1924b2a",
+      "seed": 903213,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4911967837907014,
+      "predicted_effect": -0.03572533695612334
+    },
+    {
+      "id": "54d1756f67f56b395b33eab5",
+      "seed": 903213,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6587936101360383,
+      "predicted_effect": 0.03382147799679298
+    },
+    {
+      "id": "59fb2867a0b0b192868a34c2",
+      "seed": 903213,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.33497950139667065,
+      "predicted_effect": -0.08808764944435715
+    },
+    {
+      "id": "16373d2df17e7f5755877ca4",
+      "seed": 903214,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6053688601347819,
+      "predicted_effect": -0.12320166166075258
+    },
+    {
+      "id": "7c1b9d9a4c0da5770e2e00c5",
+      "seed": 903214,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5674302051691178,
+      "predicted_effect": 0.16994313239849862
+    },
+    {
+      "id": "3ed9f56ca11f84cba56aefa2",
+      "seed": 903214,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.46505256416138124,
+      "predicted_effect": -0.19882341596953296
+    },
+    {
+      "id": "23b8020004298bd93c59b31d",
+      "seed": 903214,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4898625892618243,
+      "predicted_effect": -0.11355276209873275
+    },
+    {
+      "id": "8dbbec14dfdd9fc60e63253c",
+      "seed": 903214,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.7218038267388627,
+      "predicted_effect": 0.251013318858123
+    },
+    {
+      "id": "785c6562f40e7616f4770114",
+      "seed": 903214,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5473808061800701,
+      "predicted_effect": -0.15400439212226263
+    },
+    {
+      "id": "d87d7f4f1c8bf32cf9e73076",
+      "seed": 903214,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6037448725390571,
+      "predicted_effect": -0.1786521567754421
+    },
+    {
+      "id": "458abf4b37210c70ccd2560e",
+      "seed": 903214,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.394282308078378,
+      "predicted_effect": 0.24176199104573026
+    },
+    {
+      "id": "6e3dd39e9cdb289466fbf929",
+      "seed": 903215,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6007447571623443,
+      "predicted_effect": 0.1601754471511212
+    },
+    {
+      "id": "4c2f634dfd33bf5c46bfa1fe",
+      "seed": 903215,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6218630542626704,
+      "predicted_effect": -0.028132418342085214
+    },
+    {
+      "id": "ba9ca9743b19158dbee8b9ab",
+      "seed": 903215,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.512188531818458,
+      "predicted_effect": 0.06914648074877879
+    },
+    {
+      "id": "0ebbd366b15bd197303d6277",
+      "seed": 903215,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.48316262825969986,
+      "predicted_effect": 0.06328813636688699
+    },
+    {
+      "id": "8d7eae8882580235b415e09a",
+      "seed": 903215,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4771770254584716,
+      "predicted_effect": -0.14713825313104817
+    },
+    {
+      "id": "4052cb8dfeb5c751a66327d8",
+      "seed": 903215,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5070438411975047,
+      "predicted_effect": -0.012181154638244216
+    },
+    {
+      "id": "3beb9df38ec62b68716c1df6",
+      "seed": 903215,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.7196734449723597,
+      "predicted_effect": 0.010539442318677277
+    },
+    {
+      "id": "d9f905e331f2332a690fb85a",
+      "seed": 903215,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4778949502072124,
+      "predicted_effect": 0.040349397411324074
+    },
+    {
+      "id": "adbd08dea08c4e3792fb42ea",
+      "seed": 903216,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.45438521102857643,
+      "predicted_effect": -0.06695954483775733
+    },
+    {
+      "id": "3ff26dc09a5baf98fbe4df12",
+      "seed": 903216,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7288479424819005,
+      "predicted_effect": 0.07854697058712813
+    },
+    {
+      "id": "f19c7b68298cf6f0980d4b73",
+      "seed": 903216,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5467802019569096,
+      "predicted_effect": -0.012339379700590238
+    },
+    {
+      "id": "0c59420cf58c06acd0498d19",
+      "seed": 903216,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6696404661148518,
+      "predicted_effect": 0.10149257064022542
+    },
+    {
+      "id": "7ce09777c8b4c4853e9a4175",
+      "seed": 903216,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6005575295245921,
+      "predicted_effect": 0.3451535024583676
+    },
+    {
+      "id": "5eff4a0d72ce54c23f1efe22",
+      "seed": 903216,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4283002008367987,
+      "predicted_effect": 0.05583403713124525
+    },
+    {
+      "id": "605db2045c5127d380dcf1b2",
+      "seed": 903216,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5389465514449141,
+      "predicted_effect": 0.07126458528938204
+    },
+    {
+      "id": "d87b4ec3298d1282d8eda28e",
+      "seed": 903216,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5523202873182353,
+      "predicted_effect": 0.1528049876988306
+    },
+    {
+      "id": "9cecd59f9ad763078b31f0a9",
+      "seed": 903217,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4893929651588621,
+      "predicted_effect": -0.03837562593067861
+    },
+    {
+      "id": "c494a55398ed6911f177b477",
+      "seed": 903217,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6370215921437941,
+      "predicted_effect": -0.00303162228084306
+    },
+    {
+      "id": "cdda8ca732450e75a1e828f0",
+      "seed": 903217,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.5154324238526204,
+      "predicted_effect": -0.06104835743736039
+    },
+    {
+      "id": "56572f6e3e9b4c2f7bb32833",
+      "seed": 903217,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4348043817154561,
+      "predicted_effect": -0.0447858684598991
+    },
+    {
+      "id": "6bd7ee695f95a9004232c6b7",
+      "seed": 903217,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5092288839747633,
+      "predicted_effect": 0.03794207585223624
+    },
+    {
+      "id": "650f5a1ea5600d4ada8d7b8c",
+      "seed": 903217,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.34922595627856057,
+      "predicted_effect": -0.07409443754350234
+    },
+    {
+      "id": "5e7e8fabba134cb60357364c",
+      "seed": 903217,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4838418778444053,
+      "predicted_effect": -0.043997734604703666
+    },
+    {
+      "id": "d6274398cb70b81e36ccbe10",
+      "seed": 903217,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6942602104217078,
+      "predicted_effect": -0.23940557772644833
+    },
+    {
+      "id": "77348cbe179c87cfa7b3aa5d",
+      "seed": 903218,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6047292039958965,
+      "predicted_effect": -0.04680724445863617
+    },
+    {
+      "id": "e9e70bd4d25c45de3f761deb",
+      "seed": 903218,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4854297064568853,
+      "predicted_effect": -0.005496197944445632
+    },
+    {
+      "id": "71684594193a749e69dc9412",
+      "seed": 903218,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.5446069258400447,
+      "predicted_effect": -0.03396608908163457
+    },
+    {
+      "id": "89ef096a468ad650e031ec86",
+      "seed": 903218,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6320409912160834,
+      "predicted_effect": 0.30764439564925317
+    },
+    {
+      "id": "31f8700c558263aefa216843",
+      "seed": 903218,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.3864140917970513,
+      "predicted_effect": 0.08364121802043367
+    },
+    {
+      "id": "fb88fe6d85496bc52ecc33d0",
+      "seed": 903218,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.660859946774424,
+      "predicted_effect": 0.3776466692051776
+    },
+    {
+      "id": "75169f1cc6848aaeb86f2ba8",
+      "seed": 903218,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.5304400984973531,
+      "predicted_effect": 0.019020464499723
+    },
+    {
+      "id": "380b19cdf9fd45242e658a6b",
+      "seed": 903218,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.45231306626442475,
+      "predicted_effect": -0.019054898655688733
+    },
+    {
+      "id": "0f0440d0fae63ed66255b659",
+      "seed": 903219,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5282441200381712,
+      "predicted_effect": 0.14510567253108975
+    },
+    {
+      "id": "e182344ea6333ecb456b52b4",
+      "seed": 903219,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.358048930260816,
+      "predicted_effect": -0.10293751168810689
+    },
+    {
+      "id": "695acb026010d1984155ac75",
+      "seed": 903219,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5348248987908871,
+      "predicted_effect": -0.033933487720097376
+    },
+    {
+      "id": "78efaa784e59f0104d9578ac",
+      "seed": 903219,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6194013100044793,
+      "predicted_effect": 0.06409509146105315
+    },
+    {
+      "id": "cf64d2ed21707a6c3d7f0076",
+      "seed": 903219,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5357452223594761,
+      "predicted_effect": -0.09695388967584684
+    },
+    {
+      "id": "0d6e0aeea674ff84e7d37528",
+      "seed": 903219,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.53661267725128,
+      "predicted_effect": 0.10838772635147377
+    },
+    {
+      "id": "ba3e7574e95ac3dff5b4a225",
+      "seed": 903219,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6382638155822032,
+      "predicted_effect": 0.04834693634421738
+    },
+    {
+      "id": "5db0d270a7bf20304946f4c3",
+      "seed": 903219,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.31474227665418175,
+      "predicted_effect": 0.20159540327413447
+    },
+    {
+      "id": "ea8fd255a56592de7234a5bc",
+      "seed": 903220,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.7161722131119633,
+      "predicted_effect": 0.22673644881794783
+    },
+    {
+      "id": "45a272f623446a65c61f7340",
+      "seed": 903220,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.242470251795743,
+      "predicted_effect": -0.010732763331774274
+    },
+    {
+      "id": "09f2da6cb40c4324dca4351e",
+      "seed": 903220,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5086786604787131,
+      "predicted_effect": 0.14026550285681386
+    },
+    {
+      "id": "a2a2d0d54be83886aeac0724",
+      "seed": 903220,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.49554095491183553,
+      "predicted_effect": -0.03558636807337226
+    },
+    {
+      "id": "85d1a6bcdec7cd56ad5a17ef",
+      "seed": 903220,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.5408776387417279,
+      "predicted_effect": 0.6712987583830281
+    },
+    {
+      "id": "ac36bde992fb10d10148d16e",
+      "seed": 903220,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6575714267544911,
+      "predicted_effect": 0.11474182401588348
+    },
+    {
+      "id": "3adf5c061cdb67cc71d7af31",
+      "seed": 903220,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5334972561436994,
+      "predicted_effect": 0.0006619011788556082
+    },
+    {
+      "id": "c877bb7a76211759bed6655d",
+      "seed": 903220,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5823372625005414,
+      "predicted_effect": 0.031639953035435216
+    },
+    {
+      "id": "ca8e301b2824035be8d9582b",
+      "seed": 903221,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6709694093063434,
+      "predicted_effect": -0.1672673885970103
+    },
+    {
+      "id": "71bb4663e2d98f3b2aa528da",
+      "seed": 903221,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.47256366486122475,
+      "predicted_effect": -0.1270167844200287
+    },
+    {
+      "id": "fe573a6562f850dd48e3fbbc",
+      "seed": 903221,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.40897023968836316,
+      "predicted_effect": 0.20728870329323257
+    },
+    {
+      "id": "e1bd2fdc9b5938fd96aca8ff",
+      "seed": 903221,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.646735000951933,
+      "predicted_effect": 0.2218178389634994
+    },
+    {
+      "id": "70ad5e5716613a928d3bec2c",
+      "seed": 903221,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.38421358826671675,
+      "predicted_effect": -0.060757648078566505
+    },
+    {
+      "id": "4344cd8801b3a3ffdca43885",
+      "seed": 903221,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6226043217467203,
+      "predicted_effect": 0.03958943886665523
+    },
+    {
+      "id": "9c2df3f1f74023627b58654a",
+      "seed": 903221,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.515436677267368,
+      "predicted_effect": 0.06341493788415112
+    },
+    {
+      "id": "07392e42557cf93aa20e53a2",
+      "seed": 903221,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6846227026259859,
+      "predicted_effect": 0.09864819335243921
+    },
+    {
+      "id": "858564c05f519a5930248550",
+      "seed": 903222,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.396744408177025,
+      "predicted_effect": 0.007703507908587031
+    },
+    {
+      "id": "7a7e9df1aaef335b7e4ed38a",
+      "seed": 903222,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.7671115400431102,
+      "predicted_effect": -0.054430147674072483
+    },
+    {
+      "id": "f426077218c0cdd5c4f90878",
+      "seed": 903222,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6270665521822529,
+      "predicted_effect": 0.1673966905375249
+    },
+    {
+      "id": "01471ee1a3bdd71d4213bc52",
+      "seed": 903222,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5474511452413221,
+      "predicted_effect": -0.04290524427274165
+    },
+    {
+      "id": "4a297d9908a17c93f74530f0",
+      "seed": 903222,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6199604254095026,
+      "predicted_effect": 0.04344969698260434
+    },
+    {
+      "id": "45a2361d26145897f2527383",
+      "seed": 903222,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.390288513967645,
+      "predicted_effect": 0.08196450595405856
+    },
+    {
+      "id": "87b394254f4f162e64582335",
+      "seed": 903222,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.3479374313715665,
+      "predicted_effect": 0.02536122576858081
+    },
+    {
+      "id": "77fa7d931726bdbba719181a",
+      "seed": 903222,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.49680051027990935,
+      "predicted_effect": 0.044461547282076026
+    },
+    {
+      "id": "7d74baa8ef94c720344fb90f",
+      "seed": 903223,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5205296163010501,
+      "predicted_effect": -0.23557591204973366
+    },
+    {
+      "id": "c0dc9953710790aa7b7871a7",
+      "seed": 903223,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5636021614677598,
+      "predicted_effect": -0.016193082713736213
+    },
+    {
+      "id": "a34509d406eb6d7e39874063",
+      "seed": 903223,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.49495646340463345,
+      "predicted_effect": -0.19626457209904086
+    },
+    {
+      "id": "1d8d416640c7727e5236895d",
+      "seed": 903223,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6294982468124183,
+      "predicted_effect": -0.061521260254047125
+    },
+    {
+      "id": "3f26f68c1cf875493858472e",
+      "seed": 903223,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.5262671810824812,
+      "predicted_effect": 0.13118670573616584
+    },
+    {
+      "id": "60b6cea754b6c29a23a8221e",
+      "seed": 903223,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7359811325980311,
+      "predicted_effect": -0.0018168664995928392
+    },
+    {
+      "id": "e222ad56a894d15c93df3dce",
+      "seed": 903223,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.3585905380760529,
+      "predicted_effect": 0.008963005274796647
+    },
+    {
+      "id": "64fb6e16605851a24d8ed657",
+      "seed": 903223,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7451192016891666,
+      "predicted_effect": -0.06731368981680019
+    },
+    {
+      "id": "784b58fc183ace18120172d9",
+      "seed": 903300,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.29795070086666475,
+      "predicted_effect": 0.029772862456429607
+    },
+    {
+      "id": "e7b2456b4cade8fb0e0fe50d",
+      "seed": 903300,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.35749347720925423,
+      "predicted_effect": 0.02011740669889744
+    },
+    {
+      "id": "e2d7aefd416b5234479df7eb",
+      "seed": 903300,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7822338903730238,
+      "predicted_effect": 0.00914178950001459
+    },
+    {
+      "id": "8756d93584f980f05fe23de1",
+      "seed": 903300,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.7123602297803138,
+      "predicted_effect": -0.24030819794606786
+    },
+    {
+      "id": "11944655c3771dd529d22fa2",
+      "seed": 903300,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.7132911273503842,
+      "predicted_effect": 0.33035467746484026
+    },
+    {
+      "id": "6faa9240e36e5b733a948099",
+      "seed": 903300,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5100091986867988,
+      "predicted_effect": -0.00041201002389038683
+    },
+    {
+      "id": "5c88f5e12287ee5f120ee5f0",
+      "seed": 903300,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4316316060150246,
+      "predicted_effect": -0.13327591769515748
+    },
+    {
+      "id": "2aaa29f35a0a3e53b4e2b5b4",
+      "seed": 903300,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6767353897867151,
+      "predicted_effect": -0.050067456242078395
+    },
+    {
+      "id": "fd9c58c93c8c1468660c36d1",
+      "seed": 903301,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7517814340355297,
+      "predicted_effect": -0.044448945147246816
+    },
+    {
+      "id": "8720b6a3e18bebb1ec90e1fb",
+      "seed": 903301,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6948479191655759,
+      "predicted_effect": 0.16117024884532663
+    },
+    {
+      "id": "1d392a5c9c3af536269f4a31",
+      "seed": 903301,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7495216643418802,
+      "predicted_effect": 0.12443182847477464
+    },
+    {
+      "id": "3f7d0779aa394cdf3e067027",
+      "seed": 903301,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4452328872019649,
+      "predicted_effect": -0.09153468151737114
+    },
+    {
+      "id": "528077e0c86825e29780d83e",
+      "seed": 903301,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6499475626282876,
+      "predicted_effect": 0.12886453802628392
+    },
+    {
+      "id": "e2324df0d5b1f609dff53198",
+      "seed": 903301,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6830878143009985,
+      "predicted_effect": 0.04455610807414406
+    },
+    {
+      "id": "649c2060f140509d9345346b",
+      "seed": 903301,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6469016028323284,
+      "predicted_effect": -0.0048340352407732715
+    },
+    {
+      "id": "d0cf6663f51e3258772f759c",
+      "seed": 903301,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.686460112837337,
+      "predicted_effect": -0.0035325313811081453
+    },
+    {
+      "id": "8c347d6f7216b8b3e2d21f11",
+      "seed": 903302,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4188039977025942,
+      "predicted_effect": -0.025964901574568114
+    },
+    {
+      "id": "18c3acd8191e39886bb3f0f2",
+      "seed": 903302,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.3841868608706458,
+      "predicted_effect": -0.04697042528303641
+    },
+    {
+      "id": "3fab9c308c961c6f862cf9bb",
+      "seed": 903302,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3855692128142589,
+      "predicted_effect": 0.027724614504189535
+    },
+    {
+      "id": "c02efdc0791e69d7beadce80",
+      "seed": 903302,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.46291706415012723,
+      "predicted_effect": 0.34142526720756133
+    },
+    {
+      "id": "696498496846d502cd07e797",
+      "seed": 903302,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5788287443562276,
+      "predicted_effect": 0.3302213299861274
+    },
+    {
+      "id": "a417f5c628a633da9f521764",
+      "seed": 903302,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3614221796694718,
+      "predicted_effect": 0.04919169100057949
+    },
+    {
+      "id": "755632796ed81bc1628f9b68",
+      "seed": 903302,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.36252595115109554,
+      "predicted_effect": 0.004404652921920974
+    },
+    {
+      "id": "1b40334db532804abd9a7e60",
+      "seed": 903302,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.27793226862553005,
+      "predicted_effect": -0.0341160599551336
+    },
+    {
+      "id": "2078044c3509f418968fe75a",
+      "seed": 903303,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.7233192816296279,
+      "predicted_effect": 0.25641833270716413
+    },
+    {
+      "id": "fb9f4d803798010e6ad2a338",
+      "seed": 903303,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.22095088825594578,
+      "predicted_effect": -0.005591947316576513
+    },
+    {
+      "id": "08c0184236dbd9a8c3f686b9",
+      "seed": 903303,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4370224977553296,
+      "predicted_effect": 0.05825228702946847
+    },
+    {
+      "id": "1061eb12a1e1d79e8d52ed1f",
+      "seed": 903303,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7219863973191789,
+      "predicted_effect": -0.012584358184658128
+    },
+    {
+      "id": "41ca33f5bd5eb80a21db999e",
+      "seed": 903303,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.34668615812890624,
+      "predicted_effect": 0.13735553566327569
+    },
+    {
+      "id": "c2ebd867e1e4e5a8d026ebd8",
+      "seed": 903303,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5027441700026861,
+      "predicted_effect": 0.0811905611280563
+    },
+    {
+      "id": "fa5b32dbb2604b13e53b487d",
+      "seed": 903303,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.509366415872168,
+      "predicted_effect": -0.01717537167818613
+    },
+    {
+      "id": "44dbc790c0770238ab3cfd18",
+      "seed": 903303,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5349530228415806,
+      "predicted_effect": 0.0072201451463013416
+    },
+    {
+      "id": "45f7cee7cd9d36dd37585de2",
+      "seed": 903304,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.5742193800430746,
+      "predicted_effect": 0.03932582256400678
+    },
+    {
+      "id": "eca70d100f9a6b3de4ec6085",
+      "seed": 903304,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7684298261624699,
+      "predicted_effect": 0.1277329429129732
+    },
+    {
+      "id": "034254054849fd060b0bf280",
+      "seed": 903304,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.47695754816763897,
+      "predicted_effect": 0.05719921423118806
+    },
+    {
+      "id": "34edd25f2262e71560290cb2",
+      "seed": 903304,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5554258123653099,
+      "predicted_effect": -0.03551233701512277
+    },
+    {
+      "id": "3f0c1fb0f0fdacab019ae984",
+      "seed": 903304,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.7463703660828773,
+      "predicted_effect": -0.0675535305343863
+    },
+    {
+      "id": "88b76384e83802efdf73ce7e",
+      "seed": 903304,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5977945365944568,
+      "predicted_effect": 0.09842854862021058
+    },
+    {
+      "id": "dd3d06afa1a94b32169e18fb",
+      "seed": 903304,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.44643462029714537,
+      "predicted_effect": -0.09433918593632916
+    },
+    {
+      "id": "6ce0789f36b49f7e62a8a9b0",
+      "seed": 903304,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5157198490779833,
+      "predicted_effect": -0.17600120014091095
+    },
+    {
+      "id": "8f416bd1f4c97b32e8c3a298",
+      "seed": 903305,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.43214557640064755,
+      "predicted_effect": -0.10145186842940326
+    },
+    {
+      "id": "685df97b15940599607ed658",
+      "seed": 903305,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.43246661344799225,
+      "predicted_effect": -0.008050530454295185
+    },
+    {
+      "id": "00e1c07d8ebfd5179a847bdb",
+      "seed": 903305,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6516277483019777,
+      "predicted_effect": 0.04220916895426689
+    },
+    {
+      "id": "467d67f3a8f252e0c4e2378d",
+      "seed": 903305,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6675339081100292,
+      "predicted_effect": -0.08041958899412634
+    },
+    {
+      "id": "0800c8e7b65db5b40d5f790d",
+      "seed": 903305,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.49484214308424473,
+      "predicted_effect": 0.16873151704595282
+    },
+    {
+      "id": "852acaba573282abfa8996ff",
+      "seed": 903305,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.49931846887835957,
+      "predicted_effect": 0.02713238411418368
+    },
+    {
+      "id": "a6b1e1fa79975b8d07ecc110",
+      "seed": 903305,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6822751448520681,
+      "predicted_effect": -0.08372555751340456
+    },
+    {
+      "id": "b986df4562b2b06c378babef",
+      "seed": 903305,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6370991320523087,
+      "predicted_effect": 0.07995803495494577
+    },
+    {
+      "id": "dd144a553a500cbd4312965d",
+      "seed": 903306,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.576464161090281,
+      "predicted_effect": 0.07516119014677841
+    },
+    {
+      "id": "684cae9339ba81ad9c309f61",
+      "seed": 903306,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6361284417284745,
+      "predicted_effect": -0.05603339621915711
+    },
+    {
+      "id": "5c25301bb811ce1035169168",
+      "seed": 903306,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.7286321519783604,
+      "predicted_effect": -0.014253541391684714
+    },
+    {
+      "id": "7e36ba28a1d73263d4c6b45c",
+      "seed": 903306,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6024066265747839,
+      "predicted_effect": 0.23814631418210214
+    },
+    {
+      "id": "c101212fc6300b148e04e460",
+      "seed": 903306,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5609814334603284,
+      "predicted_effect": 0.30991034362057496
+    },
+    {
+      "id": "20b832b35d3e0c84c3926d1c",
+      "seed": 903306,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5716110089868879,
+      "predicted_effect": -0.17710343010611018
+    },
+    {
+      "id": "babb072b426d9d5236f5cc9f",
+      "seed": 903306,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.516815400163814,
+      "predicted_effect": 0.2052996368187867
+    },
+    {
+      "id": "6557f42bbd02c69178cbf573",
+      "seed": 903306,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5061260232169367,
+      "predicted_effect": 0.029767916276390555
+    },
+    {
+      "id": "9f383b09a865b143301ad37e",
+      "seed": 903307,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5560450274161453,
+      "predicted_effect": -0.06982486253704041
+    },
+    {
+      "id": "e0db27a859942c79b3054b3f",
+      "seed": 903307,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5044869834035238,
+      "predicted_effect": 0.04436040033243281
+    },
+    {
+      "id": "65c8548d1e920306d8e6b59b",
+      "seed": 903307,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.35875083863045765,
+      "predicted_effect": 0.1035891007747103
+    },
+    {
+      "id": "7d436e2da0b94101cd145f56",
+      "seed": 903307,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3683924348259921,
+      "predicted_effect": 0.05160506674651106
+    },
+    {
+      "id": "4c64516673e83787759e2812",
+      "seed": 903307,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3219209002051515,
+      "predicted_effect": 0.10758650489430367
+    },
+    {
+      "id": "afdc5272e602fd044ef6dc6e",
+      "seed": 903307,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5216662249975388,
+      "predicted_effect": -0.004502932077080012
+    },
+    {
+      "id": "c7618c4ab5f0eaa8fc4a5ca5",
+      "seed": 903307,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.48814430138398474,
+      "predicted_effect": 0.08102777948721569
+    },
+    {
+      "id": "87e2742fc43bed4e9be2fe50",
+      "seed": 903307,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.628171311675346,
+      "predicted_effect": 0.2446411308922562
+    },
+    {
+      "id": "ed7a71976211c14cb08bdea6",
+      "seed": 903308,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5888972802314285,
+      "predicted_effect": 0.016609316281170777
+    },
+    {
+      "id": "64bd2238ff533385b0399a76",
+      "seed": 903308,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4903620999869472,
+      "predicted_effect": -0.03578630826261494
+    },
+    {
+      "id": "36057703af423f870a4e517c",
+      "seed": 903308,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.706253305984411,
+      "predicted_effect": -0.08449354326433557
+    },
+    {
+      "id": "c1a6409c8f00d6693538a694",
+      "seed": 903308,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7277300318609347,
+      "predicted_effect": 0.022094825659219608
+    },
+    {
+      "id": "2ce10498586d192a4d815c4e",
+      "seed": 903308,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4239557514384251,
+      "predicted_effect": 0.012050500735317497
+    },
+    {
+      "id": "0ea7b11f84c4536c5ae85be0",
+      "seed": 903308,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6790689443627912,
+      "predicted_effect": 0.35678434726772695
+    },
+    {
+      "id": "5da10b7e66c1066e8df740d5",
+      "seed": 903308,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4391450806786831,
+      "predicted_effect": 0.267104222688625
+    },
+    {
+      "id": "e3b9153ac350a68abfa7b3ed",
+      "seed": 903308,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6281957607173849,
+      "predicted_effect": 0.3249703666323519
+    },
+    {
+      "id": "b3faa88939f8e7951ee6265f",
+      "seed": 903309,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5260975763288656,
+      "predicted_effect": -0.07045085336620291
+    },
+    {
+      "id": "9f5ecbd1b5d5bea1d2751ab1",
+      "seed": 903309,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5452984441102513,
+      "predicted_effect": -0.01619953208916065
+    },
+    {
+      "id": "29d77e6ae5e48bac603267aa",
+      "seed": 903309,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.42895157724452226,
+      "predicted_effect": 0.05442674762367384
+    },
+    {
+      "id": "7404ac041826a6e38a60b8d7",
+      "seed": 903309,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6553147873013302,
+      "predicted_effect": 0.22948787177483979
+    },
+    {
+      "id": "df8f796532c6fbec5050f36f",
+      "seed": 903309,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4572696874668431,
+      "predicted_effect": 0.061132938749014626
+    },
+    {
+      "id": "0d1794758a13a7a023e8b90a",
+      "seed": 903309,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4350204195163488,
+      "predicted_effect": 0.043140094613111135
+    },
+    {
+      "id": "272a8f9602a999c93d3985c5",
+      "seed": 903309,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6137859404992136,
+      "predicted_effect": 0.14812224824190834
+    },
+    {
+      "id": "b7d39eb426d767618f61a75f",
+      "seed": 903309,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6295534850601674,
+      "predicted_effect": -0.08030022546488039
+    },
+    {
+      "id": "8be49eb8b0deca61ef1f71c2",
+      "seed": 903310,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.47583484067935844,
+      "predicted_effect": -0.04512109573117465
+    },
+    {
+      "id": "70605efebc198263f94c7e5e",
+      "seed": 903310,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.46263874695468915,
+      "predicted_effect": -0.27103518545657435
+    },
+    {
+      "id": "36381985a2ff429b0897be3b",
+      "seed": 903310,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.705284569935008,
+      "predicted_effect": 0.010048797956526523
+    },
+    {
+      "id": "f0a026be929c641e6b1c87e6",
+      "seed": 903310,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4845497325296173,
+      "predicted_effect": -0.11367255604990624
+    },
+    {
+      "id": "c74d034c1529f2a1fa3a5b60",
+      "seed": 903310,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.28362581872333653,
+      "predicted_effect": -0.005384300811785121
+    },
+    {
+      "id": "550744e5c6865e0daa3beb0d",
+      "seed": 903310,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4619069147922762,
+      "predicted_effect": -0.056291440694343886
+    },
+    {
+      "id": "3fd2657b5a7edd3bb6bdbcba",
+      "seed": 903310,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5222591727915544,
+      "predicted_effect": -0.0009069461258741683
+    },
+    {
+      "id": "370dd824164815c8210e731a",
+      "seed": 903310,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.4377448893597784,
+      "predicted_effect": 0.012340762559217736
+    },
+    {
+      "id": "182f1ea1460f81caf07c7698",
+      "seed": 903311,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6950844945671706,
+      "predicted_effect": 0.0033679244266640613
+    },
+    {
+      "id": "ff6a40f58360d43d64454601",
+      "seed": 903311,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.759943179378057,
+      "predicted_effect": -0.023366803202645028
+    },
+    {
+      "id": "9693503b1c1c24e21a5e822b",
+      "seed": 903311,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.7166122138227469,
+      "predicted_effect": 0.15872473519663818
+    },
+    {
+      "id": "82241152e3cb2792e8618e6d",
+      "seed": 903311,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.37019037683590394,
+      "predicted_effect": -0.12025982034550975
+    },
+    {
+      "id": "e2927ef41c8a9e07e6c6fce7",
+      "seed": 903311,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.29634129557487726,
+      "predicted_effect": -0.05822664302281715
+    },
+    {
+      "id": "9bb99dd2f58cc6f8ac4d4633",
+      "seed": 903311,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.43609993548151793,
+      "predicted_effect": -0.036532645292209585
+    },
+    {
+      "id": "627b61143216ee0d9839323e",
+      "seed": 903311,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.45455176879418197,
+      "predicted_effect": 0.03573338772861296
+    },
+    {
+      "id": "0a162eb3f0a68e9c6d81fba4",
+      "seed": 903311,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6389176134511358,
+      "predicted_effect": 0.23658041094601764
+    },
+    {
+      "id": "61a87546d5a0401b0f643ba7",
+      "seed": 903312,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.31784408169391387,
+      "predicted_effect": 0.022734257253934187
+    },
+    {
+      "id": "9342b7b4e6a0fbb1a0f7a252",
+      "seed": 903312,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5782047614164516,
+      "predicted_effect": 0.009215230367218653
+    },
+    {
+      "id": "e0229aa16aa76e9048cc6d1b",
+      "seed": 903312,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6999396122130233,
+      "predicted_effect": 0.4790930438878744
+    },
+    {
+      "id": "3b1df8292080634a3ffb21ab",
+      "seed": 903312,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5375673033489212,
+      "predicted_effect": 0.0998060684020701
+    },
+    {
+      "id": "8022517aaf0cc520859e1f8d",
+      "seed": 903312,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.43792935379801995,
+      "predicted_effect": 0.15707479379133416
+    },
+    {
+      "id": "6ecda920cf0a56e3ef9bcd6f",
+      "seed": 903312,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7023256380917414,
+      "predicted_effect": -0.0033102195363684953
+    },
+    {
+      "id": "97f8a78a08188247f9b9525f",
+      "seed": 903312,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.4773351623468625,
+      "predicted_effect": 0.22801156741961953
+    },
+    {
+      "id": "488f97090f0c7a0582fd7e1d",
+      "seed": 903312,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4564845749592282,
+      "predicted_effect": -0.06275613640806056
+    },
+    {
+      "id": "d30de838d3d7d2b5caf93752",
+      "seed": 903313,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5525495267695898,
+      "predicted_effect": -0.02450444947608911
+    },
+    {
+      "id": "5125618c25a82276b0d70f51",
+      "seed": 903313,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.572101741906143,
+      "predicted_effect": 0.024182411913115567
+    },
+    {
+      "id": "b27815fd839fc5770137b668",
+      "seed": 903313,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4059565619404488,
+      "predicted_effect": 0.09885512627111795
+    },
+    {
+      "id": "84a5c55cb83bf4bad8efd64a",
+      "seed": 903313,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.447510875128364,
+      "predicted_effect": -0.18980911093608605
+    },
+    {
+      "id": "fdde597ed8d955ffe771cab5",
+      "seed": 903313,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6457508331650282,
+      "predicted_effect": -0.009224917530643558
+    },
+    {
+      "id": "81f95e28b166e5d84d5bcded",
+      "seed": 903313,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5360649794646354,
+      "predicted_effect": 0.04878862845131364
+    },
+    {
+      "id": "8aa867c277dca55c06d449ba",
+      "seed": 903313,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.589702870442038,
+      "predicted_effect": 0.0423168913054056
+    },
+    {
+      "id": "bfce74158a12363e4a40673e",
+      "seed": 903313,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6999396122130233,
+      "predicted_effect": 0.18095664691809354
+    },
+    {
+      "id": "70cd0898af1b7da73baf8019",
+      "seed": 903314,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.38499133289339627,
+      "predicted_effect": -0.012695640599339893
+    },
+    {
+      "id": "a54b071fcb94be2680e3c023",
+      "seed": 903314,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.8045104361212402,
+      "predicted_effect": 0.08966092570519321
+    },
+    {
+      "id": "d79d92f2a2095b68a1e9ad62",
+      "seed": 903314,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.782780595697197,
+      "predicted_effect": 0.08302187154816447
+    },
+    {
+      "id": "2287e540a28de56961fd527d",
+      "seed": 903314,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4651097707616865,
+      "predicted_effect": 0.07008524241931285
+    },
+    {
+      "id": "276607eac600a58153079718",
+      "seed": 903314,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.39255928531130924,
+      "predicted_effect": 0.1944865367241535
+    },
+    {
+      "id": "e2a998a3ccb80c86982f779e",
+      "seed": 903314,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5535742410562088,
+      "predicted_effect": -0.14834441287199074
+    },
+    {
+      "id": "2160eb8f8a8a1495ac2a832b",
+      "seed": 903314,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6435459531951748,
+      "predicted_effect": -0.05662077215931528
+    },
+    {
+      "id": "6baff4a093e4d8d43b3a6c4d",
+      "seed": 903314,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6007463473727682,
+      "predicted_effect": 0.19023308822998253
+    },
+    {
+      "id": "8e874b7c6d75e8950ef497b8",
+      "seed": 903315,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3566322302441979,
+      "predicted_effect": 0.03314633463521653
+    },
+    {
+      "id": "472b7160a99160fe3df058fb",
+      "seed": 903315,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6079180814644825,
+      "predicted_effect": -0.00146860389954332
+    },
+    {
+      "id": "ec46ce7448f349919253da68",
+      "seed": 903315,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.784918910543386,
+      "predicted_effect": -0.3758724554048338
+    },
+    {
+      "id": "b6ef08d78ab43616107e64ee",
+      "seed": 903315,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.2656659715433851,
+      "predicted_effect": 0.04617142279233861
+    },
+    {
+      "id": "88be859bbaef2490ab9540ec",
+      "seed": 903315,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.7288479424819005,
+      "predicted_effect": 0.08095482054447078
+    },
+    {
+      "id": "7817be6aaf70510e6431ade0",
+      "seed": 903315,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5050780380776487,
+      "predicted_effect": -0.015461994131721177
+    },
+    {
+      "id": "995252fbb97c5d4078d9bb77",
+      "seed": 903315,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3349748391033548,
+      "predicted_effect": -0.049859038566170605
+    },
+    {
+      "id": "98c137af4e2a2fb2c630fbdd",
+      "seed": 903315,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6753843805819914,
+      "predicted_effect": 0.00716956465266807
+    },
+    {
+      "id": "bcd5a32651362637695834fb",
+      "seed": 903316,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6849283825814045,
+      "predicted_effect": 0.005890391513840473
+    },
+    {
+      "id": "c9ae6ff0063a7630289d920c",
+      "seed": 903316,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7054385762229537,
+      "predicted_effect": -0.06707829342395036
+    },
+    {
+      "id": "6dab6ebc4ba3756362344565",
+      "seed": 903316,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6170216494121251,
+      "predicted_effect": -0.08042803966881391
+    },
+    {
+      "id": "5dc184a5d30cfb79aedeaa94",
+      "seed": 903316,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.526123082378788,
+      "predicted_effect": -0.005851574862496483
+    },
+    {
+      "id": "2a221b243218255b1f5ef14b",
+      "seed": 903316,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.542092478760802,
+      "predicted_effect": -0.011076098995004394
+    },
+    {
+      "id": "e6e411c1cbb2434940291f5e",
+      "seed": 903316,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5656487246298949,
+      "predicted_effect": -0.053369828253848055
+    },
+    {
+      "id": "659a579ab7d42367896dbefe",
+      "seed": 903316,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5298211709694167,
+      "predicted_effect": 0.1882618068643378
+    },
+    {
+      "id": "971b79c1cc4dd6ea87a94e21",
+      "seed": 903316,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4364663266494871,
+      "predicted_effect": 0.010410460900896059
+    },
+    {
+      "id": "0217c6804924798bc6ebdebf",
+      "seed": 903317,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.48247699588030024,
+      "predicted_effect": 0.03511865650966784
+    },
+    {
+      "id": "dc35732e690660090ee1decf",
+      "seed": 903317,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3638612154436709,
+      "predicted_effect": -0.054112537475871185
+    },
+    {
+      "id": "4ae4d0f60ccc3eede4946e41",
+      "seed": 903317,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.38013278875950396,
+      "predicted_effect": 0.05932104590999433
+    },
+    {
+      "id": "70757f750928a109eeb8e330",
+      "seed": 903317,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6015257602809095,
+      "predicted_effect": 0.05721806731798423
+    },
+    {
+      "id": "baa151199ab794d9df617e2f",
+      "seed": 903317,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6035809465995008,
+      "predicted_effect": 0.15803200873432113
+    },
+    {
+      "id": "4177b9d9ebddcf4b9952cd93",
+      "seed": 903317,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3247395923678887,
+      "predicted_effect": -0.19357719613362057
+    },
+    {
+      "id": "425cecd590d86ec11183c248",
+      "seed": 903317,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.30330418227114275,
+      "predicted_effect": 0.05014549249153291
+    },
+    {
+      "id": "7d17c44290e01fb82d2b33ee",
+      "seed": 903317,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7193681624869057,
+      "predicted_effect": -0.06995319370034533
+    },
+    {
+      "id": "430b8e0928f250289d8186de",
+      "seed": 903318,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6830395661228111,
+      "predicted_effect": -0.13804924291319282
+    },
+    {
+      "id": "f203eaa66e1e84db6208a194",
+      "seed": 903318,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5213228944980637,
+      "predicted_effect": -0.025374476878566414
+    },
+    {
+      "id": "940d4fa81b3eca5d3fe1438f",
+      "seed": 903318,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6779246421453184,
+      "predicted_effect": -0.08036434479112745
+    },
+    {
+      "id": "99d2121c429ae6f1c8889f7f",
+      "seed": 903318,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.5559229482119523,
+      "predicted_effect": -0.08990598759295818
+    },
+    {
+      "id": "8f4e111b9f2222b5a32e3d43",
+      "seed": 903318,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6597858511065857,
+      "predicted_effect": -0.031701776861322
+    },
+    {
+      "id": "7ec287c746d5e7a572aa1484",
+      "seed": 903318,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.28861948697470047,
+      "predicted_effect": -0.0410090741954618
+    },
+    {
+      "id": "cecc6d446aae09af8b0d24a0",
+      "seed": 903318,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.3630721888816681,
+      "predicted_effect": -0.10231604867959251
+    },
+    {
+      "id": "5d81e1534d8ad324e6a8fe5f",
+      "seed": 903318,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.4494753416950601,
+      "predicted_effect": -0.019834971292421438
+    },
+    {
+      "id": "495e5ed321e0442919b3cd7c",
+      "seed": 903319,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.665700115243565,
+      "predicted_effect": -0.05241015398160364
+    },
+    {
+      "id": "71f161f452a53aa98df495cf",
+      "seed": 903319,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.682615078575598,
+      "predicted_effect": 0.04467123670868547
+    },
+    {
+      "id": "cadc242443e28b984526bc07",
+      "seed": 903319,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.589783021454438,
+      "predicted_effect": 0.08158956876429493
+    },
+    {
+      "id": "8f431d42f5783df1d5dc8147",
+      "seed": 903319,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.4735590737648751,
+      "predicted_effect": -0.23740511119796096
+    },
+    {
+      "id": "a1e976b8124f0b0911645e5a",
+      "seed": 903319,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.8103720128228583,
+      "predicted_effect": 0.005868259600871971
+    },
+    {
+      "id": "8ee13aea855049a44d56b441",
+      "seed": 903319,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.38375933953068947,
+      "predicted_effect": 0.1388897614288306
+    },
+    {
+      "id": "c91302e444fc3a4e2e1edb8b",
+      "seed": 903319,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.49070109763046693,
+      "predicted_effect": -0.04157684453592282
+    },
+    {
+      "id": "4b57a6c51e96fa08d5323629",
+      "seed": 903319,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5777572587524193,
+      "predicted_effect": 0.08962073294734409
+    },
+    {
+      "id": "4bb6f4668ad7a459332f9583",
+      "seed": 903320,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6388681453972167,
+      "predicted_effect": 0.09388821875440038
+    },
+    {
+      "id": "e6a3b65f87586faab942cce6",
+      "seed": 903320,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5513841553886218,
+      "predicted_effect": -0.010130681556654982
+    },
+    {
+      "id": "24ab8de0d2026160d1ba8ff7",
+      "seed": 903320,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.27117155284501687,
+      "predicted_effect": -0.06707189315363452
+    },
+    {
+      "id": "1cefd68796786021de3b4954",
+      "seed": 903320,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5343311611959124,
+      "predicted_effect": -0.018041813550784776
+    },
+    {
+      "id": "73e033c2da54dd6435569291",
+      "seed": 903320,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.520784183567169,
+      "predicted_effect": 0.09325461824188395
+    },
+    {
+      "id": "fbe52dcf2838d833a7ba8f30",
+      "seed": 903320,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.635808259319566,
+      "predicted_effect": -0.06199133878586019
+    },
+    {
+      "id": "32d1eb63e7b79c52a4d18ed1",
+      "seed": 903320,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.5122358005390272,
+      "predicted_effect": 0.4264653467920432
+    },
+    {
+      "id": "2ac2e57e96f94cec15894d3f",
+      "seed": 903320,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.45629020763819894,
+      "predicted_effect": -0.026979044717840052
+    },
+    {
+      "id": "f43f06316732de28a59368aa",
+      "seed": 903321,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6691943448103682,
+      "predicted_effect": 0.0010924309941292886
+    },
+    {
+      "id": "5abf4afda0f622ba0e9dd43e",
+      "seed": 903321,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5636409331379529,
+      "predicted_effect": 0.079772884527927
+    },
+    {
+      "id": "dd9d8db1a9d02c08fb524eb0",
+      "seed": 903321,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.4603671789919224,
+      "predicted_effect": 0.4036019065740877
+    },
+    {
+      "id": "9ea7fb078ce950eefed25cdf",
+      "seed": 903321,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.433445834302394,
+      "predicted_effect": 0.07102311246888358
+    },
+    {
+      "id": "cbbcfe3f65b43f8c6fb07149",
+      "seed": 903321,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.5919021257221715,
+      "predicted_effect": -0.10419371680566758
+    },
+    {
+      "id": "2f28b74cce667df6901022c1",
+      "seed": 903321,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5425922978115544,
+      "predicted_effect": -0.0115010280872587
+    },
+    {
+      "id": "b38104fd127805f8c553c403",
+      "seed": 903321,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.3309232366561686,
+      "predicted_effect": -0.02433502370690782
+    },
+    {
+      "id": "c648c37789700fea4418f970",
+      "seed": 903321,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.690644545459087,
+      "predicted_effect": -0.006210973218581687
+    },
+    {
+      "id": "c5da04d8156cfdcf4062ce5e",
+      "seed": 903322,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.35945838809703373,
+      "predicted_effect": 0.23641990610351196
+    },
+    {
+      "id": "3aac3be9de24e8a09106c781",
+      "seed": 903322,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5579692574738125,
+      "predicted_effect": 0.0314987492358684
+    },
+    {
+      "id": "f063c34cea7b72309b8ef6c1",
+      "seed": 903322,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6785524681909257,
+      "predicted_effect": 0.22667232000212287
+    },
+    {
+      "id": "20735414b1e01df905023ec6",
+      "seed": 903322,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.618167365966686,
+      "predicted_effect": -0.22304523687306657
+    },
+    {
+      "id": "b9a0c1dd1a4dd4f701f620c0",
+      "seed": 903322,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4946089422533321,
+      "predicted_effect": 0.21869194081490453
+    },
+    {
+      "id": "192e34bfdc15820d37ae7b74",
+      "seed": 903322,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6530776423590441,
+      "predicted_effect": 0.016538122383283338
+    },
+    {
+      "id": "b39bf3304a220a64eaee3254",
+      "seed": 903322,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.2653739889343088,
+      "predicted_effect": 0.15587623433756678
+    },
+    {
+      "id": "ef7149b40a27f18fac19da22",
+      "seed": 903322,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5221326944526052,
+      "predicted_effect": 0.006483234671015286
+    },
+    {
+      "id": "864d8cf4658da4832e5cab0c",
+      "seed": 903323,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.3560734043205146,
+      "predicted_effect": 0.021997862191733754
+    },
+    {
+      "id": "4a4085ad4af0ce62bd6286ae",
+      "seed": 903323,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6991492410115965,
+      "predicted_effect": 0.22779058164297755
+    },
+    {
+      "id": "c30f85fc19b1dbc4ebc70afd",
+      "seed": 903323,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6285091653480235,
+      "predicted_effect": 0.07020665789607125
+    },
+    {
+      "id": "822d8e6352caa1573c8cf1ea",
+      "seed": 903323,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.7780823416044194,
+      "predicted_effect": 0.12397627417941147
+    },
+    {
+      "id": "fccbb8fb2314ea395ff894aa",
+      "seed": 903323,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.3925431111301152,
+      "predicted_effect": 0.04210213297569167
+    },
+    {
+      "id": "096d66b1f2d6cacfdeea31ca",
+      "seed": 903323,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5656857186172393,
+      "predicted_effect": -0.01415636884494325
+    },
+    {
+      "id": "0650377d9cfc3c08340a286b",
+      "seed": 903323,
+      "domain": "shifted",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5757201684774947,
+      "predicted_effect": 0.06225241767107696
+    },
+    {
+      "id": "b25c0ac2e03f41da1dd38d05",
+      "seed": 903323,
+      "domain": "shifted",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.49323448420545324,
+      "predicted_effect": 0.015099747455959359
+    },
+    {
+      "id": "ae2df3584977118a6ff43852",
+      "seed": 902558,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4739649741497154,
+      "predicted_effect": -0.008075632721198614
+    },
+    {
+      "id": "2539739be799b0429d301b71",
+      "seed": 902558,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.45352707398927955,
+      "predicted_effect": -0.08014303570551165
+    },
+    {
+      "id": "de684c764a02a30bae85284c",
+      "seed": 902558,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.1380055313693539,
+      "predicted_effect": 0.0022407196024502897
+    },
+    {
+      "id": "06a3fcf394e34f1532dcf5de",
+      "seed": 902558,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.2937316025415209,
+      "predicted_effect": -0.009556414737450603
+    },
+    {
+      "id": "204c34bbdf7227a3d8191c79",
+      "seed": 902558,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4902829383497843,
+      "predicted_effect": 0.1494114345653251
+    },
+    {
+      "id": "728a13ba6896e5a32d428d01",
+      "seed": 902558,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3369119242972773,
+      "predicted_effect": -0.035540552632968306
+    },
+    {
+      "id": "85c29913c8d75ca572a1eb85",
+      "seed": 902558,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3770408961740422,
+      "predicted_effect": -0.0902772922826127
+    },
+    {
+      "id": "1aa25e0ac802ba5927ebf67e",
+      "seed": 902558,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.35208525131305657,
+      "predicted_effect": 0.2710174649336038
+    },
+    {
+      "id": "37643d58122c831c66447185",
+      "seed": 902559,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.26632749791344673,
+      "predicted_effect": 0.044289630547257895
+    },
+    {
+      "id": "829a222b12ef04157d19fabd",
+      "seed": 902559,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.5619875659041853,
+      "predicted_effect": 0.07789762109132665
+    },
+    {
+      "id": "e2b2c339b90083e84da63c2e",
+      "seed": 902559,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5506535605877938,
+      "predicted_effect": -0.013805976104645946
+    },
+    {
+      "id": "15256e790af124bd395a0c57",
+      "seed": 902559,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5661581422388099,
+      "predicted_effect": 0.028224680665477887
+    },
+    {
+      "id": "c2488d670fdb641662dc525d",
+      "seed": 902559,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5348140811526587,
+      "predicted_effect": 0.2621855285907047
+    },
+    {
+      "id": "e328acf9388d691a2ad71ecd",
+      "seed": 902559,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7622640151273419,
+      "predicted_effect": -0.047761557514429176
+    },
+    {
+      "id": "53d20d47d3d62e620dff7bea",
+      "seed": 902559,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5473975531020032,
+      "predicted_effect": 0.06998809686037173
+    },
+    {
+      "id": "d54fb7666f9131dae8c82e33",
+      "seed": 902559,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.6619496793862959,
+      "predicted_effect": -0.060158074532714906
+    },
+    {
+      "id": "70908c64cac5510a40f91a61",
+      "seed": 902560,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4079118090145655,
+      "predicted_effect": -0.058507996875094156
+    },
+    {
+      "id": "333c25d2df26d5bb985ec147",
+      "seed": 902560,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6099995853985682,
+      "predicted_effect": 0.04760022062980486
+    },
+    {
+      "id": "275fd8d8f11722f7ab6741b6",
+      "seed": 902560,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3131165086345839,
+      "predicted_effect": 0.07521192214356523
+    },
+    {
+      "id": "7469f4a9faf4dd2b348fcf76",
+      "seed": 902560,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.35414829728130176,
+      "predicted_effect": 0.023703496649099424
+    },
+    {
+      "id": "97715c0a143cf1155c043080",
+      "seed": 902560,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.2865015364813415,
+      "predicted_effect": -0.1732828459934764
+    },
+    {
+      "id": "02848887265a3f5d22a3cecd",
+      "seed": 902560,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.46691842594811367,
+      "predicted_effect": 0.15731503943170727
+    },
+    {
+      "id": "8b18bf5c60fe54727776be72",
+      "seed": 902560,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5051827526041925,
+      "predicted_effect": -0.05069177500745911
+    },
+    {
+      "id": "f9ebab779c6d23eb351eedd9",
+      "seed": 902560,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.201715195089158,
+      "predicted_effect": -0.004785715911453461
+    },
+    {
+      "id": "6513f88311bc95ba32bf8f84",
+      "seed": 902561,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4542647619149805,
+      "predicted_effect": -0.04842113666541927
+    },
+    {
+      "id": "8884e1a63edf8438974fce57",
+      "seed": 902561,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6556185117431906,
+      "predicted_effect": -0.06175255530016151
+    },
+    {
+      "id": "b34230f472fed9016d7f3b52",
+      "seed": 902561,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5448175436439127,
+      "predicted_effect": -0.06646163905819293
+    },
+    {
+      "id": "45c1be75de5e2e20b72fad9b",
+      "seed": 902561,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6848115308543158,
+      "predicted_effect": 0.034620284601455456
+    },
+    {
+      "id": "0bb083285a4d80aace8075ef",
+      "seed": 902561,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.42792194706031605,
+      "predicted_effect": 0.09755757304634398
+    },
+    {
+      "id": "3de5b3e400a9625016eed720",
+      "seed": 902561,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6132414510056174,
+      "predicted_effect": -0.06088260138393523
+    },
+    {
+      "id": "172c2df81876da97e09d4925",
+      "seed": 902561,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3965530814241312,
+      "predicted_effect": -0.02352836517109209
+    },
+    {
+      "id": "68f0a183e3ab4a4b5e72974e",
+      "seed": 902561,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.43645265694352825,
+      "predicted_effect": 0.027862799309233133
+    },
+    {
+      "id": "5eef2980d6faa8364a697970",
+      "seed": 902562,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.48778188518362775,
+      "predicted_effect": 0.022482293178245166
+    },
+    {
+      "id": "f6028e3ae5724247756027ac",
+      "seed": 902562,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.3693309304544279,
+      "predicted_effect": -0.04409197772834529
+    },
+    {
+      "id": "f963829a6723d6ec7b130ced",
+      "seed": 902562,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.297713385800557,
+      "predicted_effect": 0.09920783959984454
+    },
+    {
+      "id": "5234e12a2eae8492e5b40169",
+      "seed": 902562,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5105157099582041,
+      "predicted_effect": 0.013430148504064243
+    },
+    {
+      "id": "227c800c6b11cf96ccad6a22",
+      "seed": 902562,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.18882562268846176,
+      "predicted_effect": 0.0052064893388225
+    },
+    {
+      "id": "b2e5c956f1a2157f23e882b6",
+      "seed": 902562,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.6027673102874865,
+      "predicted_effect": -0.02109416086942602
+    },
+    {
+      "id": "75aa77566d120fbd3b5d6bac",
+      "seed": 902562,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6231629504762392,
+      "predicted_effect": -0.1730872994148133
+    },
+    {
+      "id": "5a41bcd917e6644714ff5bf7",
+      "seed": 902562,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.4817080198529733,
+      "predicted_effect": 0.09106033416055853
+    },
+    {
+      "id": "29a79c29ca104ef6b925c465",
+      "seed": 902563,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4024068144060634,
+      "predicted_effect": -0.0807177185114386
+    },
+    {
+      "id": "fcffe1ab6a2102a50687e3f0",
+      "seed": 902563,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.5441479499452105,
+      "predicted_effect": 0.038004951705410135
+    },
+    {
+      "id": "117d34b798541c42188413a7",
+      "seed": 902563,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.2089485801326491,
+      "predicted_effect": 0.17166891620152305
+    },
+    {
+      "id": "b9dc5000ccc8626760577d0c",
+      "seed": 902563,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5119908325244042,
+      "predicted_effect": 0.15379942713542305
+    },
+    {
+      "id": "1e76990c00d45a8fecd928c7",
+      "seed": 902563,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5920432876387433,
+      "predicted_effect": -0.00023301577417865807
+    },
+    {
+      "id": "5fdb5f55be696acbc3d4ef5f",
+      "seed": 902563,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4356161455827416,
+      "predicted_effect": -0.027225315987632264
+    },
+    {
+      "id": "1c6eaa78ba4d7a8819cff990",
+      "seed": 902563,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.4314343891514225,
+      "predicted_effect": 0.110210358397716
+    },
+    {
+      "id": "d836cbf1eac5e12c94f3df85",
+      "seed": 902563,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7193681624869057,
+      "predicted_effect": -0.007206691229109404
+    },
+    {
+      "id": "e9eb0e17bb712e3224d39cce",
+      "seed": 902564,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4332876046033139,
+      "predicted_effect": -0.016095052518156575
+    },
+    {
+      "id": "8d6acbc592f76035fcab53b1",
+      "seed": 902564,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6088924490985312,
+      "predicted_effect": 0.008141751631993667
+    },
+    {
+      "id": "fcfcce8c09ffb1e2d23b4023",
+      "seed": 902564,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.7496922284847367,
+      "predicted_effect": 0.0877304955072026
+    },
+    {
+      "id": "fd4ee15e7f247494c0561c63",
+      "seed": 902564,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.594891642609883,
+      "predicted_effect": 0.10295527557334494
+    },
+    {
+      "id": "617cfa106a328c8e0973e6c6",
+      "seed": 902564,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6084867488535728,
+      "predicted_effect": -0.07805863146450323
+    },
+    {
+      "id": "6deb22df0385f4cc14dfa734",
+      "seed": 902564,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.45797549837508944,
+      "predicted_effect": -0.01282564983655726
+    },
+    {
+      "id": "8c9b22bb4edf34c590d7acb6",
+      "seed": 902564,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6267277906281169,
+      "predicted_effect": -0.006147625262478978
+    },
+    {
+      "id": "a4788981eab3fcc9c464b443",
+      "seed": 902564,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.42315565382176645,
+      "predicted_effect": -0.2700670600601524
+    },
+    {
+      "id": "a5871e1191696f8edf8e133a",
+      "seed": 902565,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4071787546987742,
+      "predicted_effect": -0.05873640512392233
+    },
+    {
+      "id": "7dd76ad3977ca216c0487cdb",
+      "seed": 902565,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.7383544115414361,
+      "predicted_effect": 0.2318370973057977
+    },
+    {
+      "id": "f75cfd7396a6f1c56f925b75",
+      "seed": 902565,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5236276495775292,
+      "predicted_effect": -0.014980390545166066
+    },
+    {
+      "id": "92833b57aaddf0185d633b93",
+      "seed": 902565,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.7298438582365647,
+      "predicted_effect": 0.34678364039465076
+    },
+    {
+      "id": "19e23c04c2d160f8609be537",
+      "seed": 902565,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4337326852604804,
+      "predicted_effect": 0.0583531008018451
+    },
+    {
+      "id": "4db7eb871007ec92af571161",
+      "seed": 902565,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4240716915890121,
+      "predicted_effect": 0.11045099924770602
+    },
+    {
+      "id": "724812cc81dc4c5c9d788d66",
+      "seed": 902565,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.30066611442786456,
+      "predicted_effect": -0.009954717102603473
+    },
+    {
+      "id": "e514d64d33419738989f0f65",
+      "seed": 902565,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.4806259917597672,
+      "predicted_effect": -0.09490563996959182
+    },
+    {
+      "id": "3784276ae4c687e83b0f2d68",
+      "seed": 902566,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.47215279668186383,
+      "predicted_effect": 0.030049422053298754
+    },
+    {
+      "id": "250ea31afecd06aa955be5ce",
+      "seed": 902566,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.36578152030410754,
+      "predicted_effect": -0.028865063731477077
+    },
+    {
+      "id": "0dbb31d0d42afbe9e3e7265c",
+      "seed": 902566,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.21966958255798913,
+      "predicted_effect": -0.014042882158885075
+    },
+    {
+      "id": "e819170b2641269bf72cf210",
+      "seed": 902566,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.42948029821479605,
+      "predicted_effect": 0.13260196345212613
+    },
+    {
+      "id": "7e0ea85d2f610d8aa8fce6f9",
+      "seed": 902566,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.7326544541654468,
+      "predicted_effect": -0.048597503006778724
+    },
+    {
+      "id": "ddc522d6c3930f402a1222bf",
+      "seed": 902566,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6620292497225778,
+      "predicted_effect": -0.018515996529091815
+    },
+    {
+      "id": "7fc86626d491b050a8b51c4e",
+      "seed": 902566,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.15002146470565422,
+      "predicted_effect": -0.04205480354828725
+    },
+    {
+      "id": "08b6c8e5615bd1228ccd4342",
+      "seed": 902566,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.5216491902824985,
+      "predicted_effect": -0.01820487661025276
+    },
+    {
+      "id": "b61632df03378f82ec209db1",
+      "seed": 902567,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.6228455093853816,
+      "predicted_effect": -0.20368935358238824
+    },
+    {
+      "id": "91d0f002a93e8e1e352e48e0",
+      "seed": 902567,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.3366170026958884,
+      "predicted_effect": 0.18414351994805275
+    },
+    {
+      "id": "f88501877e9008e724e69eef",
+      "seed": 902567,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.524132858025621,
+      "predicted_effect": 0.025668943388072234
+    },
+    {
+      "id": "de297a7b27f979d0f34ef787",
+      "seed": 902567,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5057245382906548,
+      "predicted_effect": 0.016532998499918804
+    },
+    {
+      "id": "532f1af9c08d41694d891c23",
+      "seed": 902567,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.6736773075123512,
+      "predicted_effect": -0.0010757505564159033
+    },
+    {
+      "id": "cf3007b1f39f707e935c3047",
+      "seed": 902567,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.2207740291149711,
+      "predicted_effect": 0.005012647632002146
+    },
+    {
+      "id": "9a66005c022c7d751764bdad",
+      "seed": 902567,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.5021774139914904,
+      "predicted_effect": -0.05887721351617158
+    },
+    {
+      "id": "2ef3f38a33c50cb98ad77fd7",
+      "seed": 902567,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.26385763758717773,
+      "predicted_effect": 0.07507931771407741
+    },
+    {
+      "id": "de8110f9d4ea871323f6ca90",
+      "seed": 902568,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.494275245203707,
+      "predicted_effect": 0.19523828857413164
+    },
+    {
+      "id": "c60cc3d1fc14ed8c3b19c2a9",
+      "seed": 902568,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6149024785508033,
+      "predicted_effect": -0.014657161419301226
+    },
+    {
+      "id": "6f7d08ac36ffbf701bc435f2",
+      "seed": 902568,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 1,
+      "visible_probability": 0.4503954328788478,
+      "predicted_effect": -0.020556336521848587
+    },
+    {
+      "id": "0eb4d5d6c5f6026c118045b8",
+      "seed": 902568,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.22158993955298592,
+      "predicted_effect": -0.050881957289269274
+    },
+    {
+      "id": "86a1b31b7c410ddca3189f3b",
+      "seed": 902568,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4825576737617831,
+      "predicted_effect": -0.004571823600131664
+    },
+    {
+      "id": "267a1f4c9492123e36f4e522",
+      "seed": 902568,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.267327052466903,
+      "predicted_effect": -0.05543882821614339
+    },
+    {
+      "id": "aa7536f1f4f202a4225bc700",
+      "seed": 902568,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6894041895608795,
+      "predicted_effect": 0.15400053443556105
+    },
+    {
+      "id": "2bde4611750eef3176768e6d",
+      "seed": 902568,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.35763188880965563,
+      "predicted_effect": 0.23072790510108618
+    },
+    {
+      "id": "b484e41b4970378f4a17c47b",
+      "seed": 902569,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.21859947857520873,
+      "predicted_effect": -0.001240124114148488
+    },
+    {
+      "id": "3344254936c67eeaad5d32e8",
+      "seed": 902569,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.6403502429481902,
+      "predicted_effect": 0.01575968690841066
+    },
+    {
+      "id": "4314055c35fab65dc3f8778e",
+      "seed": 902569,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.5396205911219473,
+      "predicted_effect": -0.05247399206868536
+    },
+    {
+      "id": "a5b61394fe437e5a798f7e46",
+      "seed": 902569,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.432615935243595,
+      "predicted_effect": 0.018435237387400598
+    },
+    {
+      "id": "448c728c8ec0487f999fdf57",
+      "seed": 902569,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.4658663357432348,
+      "predicted_effect": -0.07200743494485837
+    },
+    {
+      "id": "d0453418c9ef34786f0fbd89",
+      "seed": 902569,
+      "domain": "familiar",
+      "e0": 0,
+      "specialist": 0,
+      "visible_probability": 0.40247412587500897,
+      "predicted_effect": 0.23314864156873108
+    },
+    {
+      "id": "0c6af04fe4527b4686b1342d",
+      "seed": 902569,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 0,
+      "visible_probability": 0.5683495257955503,
+      "predicted_effect": 0.04275743576066335
+    },
+    {
+      "id": "67359559030ffaac3dce3f07",
+      "seed": 902569,
+      "domain": "familiar",
+      "e0": 1,
+      "specialist": 1,
+      "visible_probability": 0.40960236558141094,
+      "predicted_effect": -0.21472304671314263
+    }
+  ],
+  "target": {
+    "domains": {
+      "familiar": {
+        "tasks": 96,
+        "banks": [
+          {
+            "seed": 902558,
+            "e0": 2,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 902559,
+            "e0": 3,
+            "specialist": 1,
+            "visible_route": 1,
+            "effect_route": 2
+          },
+          {
+            "seed": 902560,
+            "e0": 2,
+            "specialist": 1,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 902561,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 2,
+            "effect_route": 3
+          },
+          {
+            "seed": 902562,
+            "e0": 4,
+            "specialist": 2,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 902563,
+            "e0": 3,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 902564,
+            "e0": 4,
+            "specialist": 1,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 902565,
+            "e0": 4,
+            "specialist": 2,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 902566,
+            "e0": 2,
+            "specialist": 1,
+            "visible_route": 2,
+            "effect_route": 1
+          },
+          {
+            "seed": 902567,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 3
+          },
+          {
+            "seed": 902568,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 902569,
+            "e0": 4,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 3
+          }
+        ],
+        "totals": {
+          "e0": 36,
+          "specialist": 25,
+          "visible_route": 28,
+          "effect_route": 29
+        },
+        "comparisons": {
+          "specialist": {
+            "gain": -11,
+            "positive_banks": 3,
+            "losing_banks": 8,
+            "interval": [
+              -20,
+              -2
+            ]
+          },
+          "visible_route": {
+            "gain": -8,
+            "positive_banks": 1,
+            "losing_banks": 6,
+            "interval": [
+              -14,
+              -2
+            ]
+          },
+          "effect_route": {
+            "gain": -7,
+            "positive_banks": 1,
+            "losing_banks": 7,
+            "interval": [
+              -12,
+              -2
+            ]
+          }
+        }
+      },
+      "shifted": {
+        "tasks": 384,
+        "banks": [
+          {
+            "seed": 903200,
+            "e0": 2,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903201,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 903202,
+            "e0": 1,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          },
+          {
+            "seed": 903203,
+            "e0": 3,
+            "specialist": 5,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903204,
+            "e0": 2,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903205,
+            "e0": 4,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          },
+          {
+            "seed": 903206,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903207,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 903208,
+            "e0": 2,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903209,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 903210,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 903211,
+            "e0": 3,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          },
+          {
+            "seed": 903212,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903213,
+            "e0": 1,
+            "specialist": 1,
+            "visible_route": 1,
+            "effect_route": 1
+          },
+          {
+            "seed": 903214,
+            "e0": 4,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          },
+          {
+            "seed": 903215,
+            "e0": 2,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903216,
+            "e0": 2,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903217,
+            "e0": 1,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 1
+          },
+          {
+            "seed": 903218,
+            "e0": 3,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 4
+          },
+          {
+            "seed": 903219,
+            "e0": 0,
+            "specialist": 0,
+            "visible_route": 0,
+            "effect_route": 0
+          },
+          {
+            "seed": 903220,
+            "e0": 2,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          },
+          {
+            "seed": 903221,
+            "e0": 2,
+            "specialist": 4,
+            "visible_route": 3,
+            "effect_route": 4
+          },
+          {
+            "seed": 903222,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 3,
+            "effect_route": 2
+          },
+          {
+            "seed": 903223,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903300,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 3
+          },
+          {
+            "seed": 903301,
+            "e0": 0,
+            "specialist": 0,
+            "visible_route": 0,
+            "effect_route": 0
+          },
+          {
+            "seed": 903302,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 2,
+            "effect_route": 3
+          },
+          {
+            "seed": 903303,
+            "e0": 1,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903304,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 903305,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 2,
+            "effect_route": 3
+          },
+          {
+            "seed": 903306,
+            "e0": 4,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          },
+          {
+            "seed": 903307,
+            "e0": 0,
+            "specialist": 0,
+            "visible_route": 0,
+            "effect_route": 0
+          },
+          {
+            "seed": 903308,
+            "e0": 2,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 3
+          },
+          {
+            "seed": 903309,
+            "e0": 4,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          },
+          {
+            "seed": 903310,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 3,
+            "effect_route": 4
+          },
+          {
+            "seed": 903311,
+            "e0": 2,
+            "specialist": 4,
+            "visible_route": 3,
+            "effect_route": 3
+          },
+          {
+            "seed": 903312,
+            "e0": 1,
+            "specialist": 3,
+            "visible_route": 2,
+            "effect_route": 3
+          },
+          {
+            "seed": 903313,
+            "e0": 3,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903314,
+            "e0": 4,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903315,
+            "e0": 2,
+            "specialist": 2,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903316,
+            "e0": 0,
+            "specialist": 1,
+            "visible_route": 1,
+            "effect_route": 1
+          },
+          {
+            "seed": 903317,
+            "e0": 4,
+            "specialist": 5,
+            "visible_route": 4,
+            "effect_route": 5
+          },
+          {
+            "seed": 903318,
+            "e0": 4,
+            "specialist": 4,
+            "visible_route": 5,
+            "effect_route": 4
+          },
+          {
+            "seed": 903319,
+            "e0": 2,
+            "specialist": 3,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903320,
+            "e0": 1,
+            "specialist": 3,
+            "visible_route": 2,
+            "effect_route": 2
+          },
+          {
+            "seed": 903321,
+            "e0": 2,
+            "specialist": 5,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903322,
+            "e0": 4,
+            "specialist": 4,
+            "visible_route": 4,
+            "effect_route": 4
+          },
+          {
+            "seed": 903323,
+            "e0": 4,
+            "specialist": 5,
+            "visible_route": 5,
+            "effect_route": 5
+          }
+        ],
+        "totals": {
+          "e0": 111,
+          "specialist": 163,
+          "visible_route": 151,
+          "effect_route": 151
+        },
+        "comparisons": {
+          "specialist": {
+            "gain": 52,
+            "positive_banks": 36,
+            "losing_banks": 0,
+            "interval": [
+              40,
+              64
+            ]
+          },
+          "visible_route": {
+            "gain": 40,
+            "positive_banks": 30,
+            "losing_banks": 0,
+            "interval": [
+              29,
+              52
+            ]
+          },
+          "effect_route": {
+            "gain": 40,
+            "positive_banks": 30,
+            "losing_banks": 0,
+            "interval": [
+              29,
+              52
+            ]
+          }
+        }
+      }
+    },
+    "total": {
+      "e0": 147,
+      "specialist": 188,
+      "visible_route": 179,
+      "effect_route": 180
+    }
+  }
+}

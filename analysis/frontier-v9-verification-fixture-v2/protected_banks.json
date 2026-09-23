@@ -1,0 +1,4694 @@
+{
+  "harvest_round1": [
+    {
+      "id": "c31d0561ce4dbd37d1fd",
+      "reference": "Concat(upper(Sub(C1,C3)), '/', Sub(C-5,M(LOWER,2,start)), Sub(M(LOWER,1,end),C-6))",
+      "visible": [
+        [
+          "Omar Priya Novak",
+          "MA/ Priya"
+        ],
+        [
+          "Chen Khan",
+          "HE/ K"
+        ],
+        [
+          "Omar Priya Adebayo",
+          "MA/ Priya A"
+        ]
+      ],
+      "hidden": [
+        [
+          "Omar Novak",
+          "MA/N"
+        ],
+        [
+          "Omar Chen Adebayo",
+          "MA/ Chen A"
+        ],
+        [
+          "Ana Ana Lee",
+          "NA/ A"
+        ],
+        [
+          "Priya Zoe Garcia",
+          "RI/ Zoe "
+        ],
+        [
+          "john.souza@example.com",
+          "OH/.souza@examp"
+        ],
+        [
+          "Ana Novak",
+          "NA/N"
+        ],
+        [
+          "Zoe Khan",
+          "OE/ K"
+        ],
+        [
+          "Chen Priya Ito",
+          "HE/ Pri"
+        ],
+        [
+          "Chen Omar Ito",
+          "HE/ Om"
+        ],
+        [
+          "Ana Garcia",
+          "NA/ "
+        ],
+        [
+          "John Chen Smith",
+          "OH/ Chen"
+        ],
+        [
+          "Zoe Zoe Ito",
+          "OE/ Z"
+        ],
+        [
+          "Zoe Ito",
+          "OE/e I"
+        ]
+      ]
+    },
+    {
+      "id": "698934af64e4d72e6fbf",
+      "reference": "Concat(upper(Sub(C-3,M(WORD,1,end))), Sub(M(UPPER,1,start),C8), Sub(C-1,M(WORD,1,start)))",
+      "visible": [
+        [
+          "Zoe Garcia",
+          "Zoe Garc"
+        ],
+        [
+          "Ana Ana Ito",
+          "Ana Ana "
+        ],
+        [
+          "Lucas Zoe Garcia",
+          "Lucas Zo"
+        ]
+      ],
+      "hidden": [
+        [
+          "John Ana Smith",
+          "John Ana"
+        ],
+        [
+          "Omar Garcia",
+          "Omar Gar"
+        ],
+        [
+          "Chen Ana Khan",
+          "Chen Ana"
+        ],
+        [
+          "Lucas Novak",
+          "Lucas No"
+        ],
+        [
+          "Lucas Ana Smith",
+          "Lucas An"
+        ],
+        [
+          "Omar Khan",
+          "Omar Kha"
+        ],
+        [
+          "Ana Omar Smith",
+          "Ana Omar"
+        ],
+        [
+          "Priya Zoe Adebayo",
+          "Priya Zo"
+        ],
+        [
+          "Omar Lucas Ito",
+          "Omar Luc"
+        ],
+        [
+          "Priya Mary Adebayo",
+          "Priya Ma"
+        ],
+        [
+          "Omar Adebayo",
+          "Omar Ade"
+        ],
+        [
+          "Lucas Mary Lee",
+          "Lucas Ma"
+        ],
+        [
+          "Priya Khan",
+          "Priya Kh"
+        ]
+      ]
+    },
+    {
+      "id": "669441274d8f925f0182",
+      "reference": "Concat(Sub(C1,C5), '/', Sub(M(UPPER,2,start),C7), Sub(C-4,C2))",
+      "visible": [
+        [
+          "Chen Lucas Adebayo",
+          "hen /Lu"
+        ],
+        [
+          "Zoe Garcia",
+          "oe G/Gar"
+        ],
+        [
+          "Zoe Smith",
+          "oe S/Smi"
+        ]
+      ],
+      "hidden": [
+        [
+          "Priya Souza",
+          "riya/S"
+        ],
+        [
+          "Mary Omar Khan",
+          "ary /Om"
+        ],
+        [
+          "Lucas Smith",
+          "ucas/S"
+        ],
+        [
+          "Priya Lee",
+          "riya/L"
+        ],
+        [
+          "Lucas Novak",
+          "ucas/N"
+        ],
+        [
+          "Lucas Khan",
+          "ucas/K"
+        ],
+        [
+          "Chen Omar Adebayo",
+          "hen /Om"
+        ],
+        [
+          "Zoe Adebayo",
+          "oe A/Ade"
+        ],
+        [
+          "Mary Zoe Smith",
+          "ary /Zo"
+        ],
+        [
+          "Ana Omar Smith",
+          "na O/Oma"
+        ],
+        [
+          "Chen Ana Lee",
+          "hen /An"
+        ],
+        [
+          "Ana Lee",
+          "na L/Lee"
+        ],
+        [
+          "Chen Garcia",
+          "hen /Ga"
+        ]
+      ]
+    },
+    {
+      "id": "cffaf47eb40d78dfe82d",
+      "reference": "Concat(cap(': '), Sub(M(LOWER,2,start),M(WORD,1,end)), Sub(C-1,C-2), Sub(M(LOWER,2,end),C-2))",
+      "visible": [
+        [
+          "Lucas Ana Adebayo",
+          ":  Adeba"
+        ],
+        [
+          "mary.lee@example.com",
+          ": @example.c"
+        ],
+        [
+          "Ana Chen Ito",
+          ":  I"
+        ]
+      ],
+      "hidden": [
+        [
+          "Priya Zoe Lee",
+          ":  L"
+        ],
+        [
+          "priya.lee@example.com",
+          ": @example.c"
+        ],
+        [
+          "lucas.adebayo@example.com",
+          ": @example.c"
+        ],
+        [
+          "Ana Priya Garcia",
+          ":  Garc"
+        ],
+        [
+          "Zoe Souza",
+          ": "
+        ],
+        [
+          "zoe.novak@example.com",
+          ": @example.c"
+        ],
+        [
+          "Zoe Novak",
+          ": "
+        ],
+        [
+          "Omar Zoe Souza",
+          ":  Sou"
+        ],
+        [
+          "Mary Ana Lee",
+          ":  L"
+        ],
+        [
+          "Priya Chen Ito",
+          ":  I"
+        ],
+        [
+          "Omar Souza",
+          ": "
+        ],
+        [
+          "Zoe Zoe Souza",
+          ":  Sou"
+        ],
+        [
+          "zoe.lee@example.com",
+          ": @example.c"
+        ]
+      ]
+    },
+    {
+      "id": "67b74fdcc02e9640f0e9",
+      "reference": "Concat(cap(Sub(C3,C2)), '.', Sub(M(UPPER,2,end),C4), ', ')",
+      "visible": [
+        [
+          "Zoe Mary Adebayo",
+          "., "
+        ],
+        [
+          "Zoe Mary Novak",
+          "., "
+        ],
+        [
+          "Chen Khan",
+          "., "
+        ]
+      ],
+      "hidden": [
+        [
+          "Lucas Lucas Garcia",
+          "., "
+        ],
+        [
+          "Priya Khan",
+          "., "
+        ],
+        [
+          "Zoe Adebayo",
+          "., "
+        ],
+        [
+          "Lucas Adebayo",
+          "., "
+        ],
+        [
+          "Ana Omar Adebayo",
+          "., "
+        ],
+        [
+          "Chen Ito",
+          "., "
+        ],
+        [
+          "Ana Novak",
+          "., "
+        ],
+        [
+          "Lucas Ana Smith",
+          "., "
+        ],
+        [
+          "Zoe Novak",
+          "., "
+        ],
+        [
+          "Omar Chen Adebayo",
+          "., "
+        ],
+        [
+          "Zoe Priya Ito",
+          "., "
+        ],
+        [
+          "Priya Garcia",
+          "., "
+        ],
+        [
+          "Zoe Lucas Garcia",
+          "., "
+        ]
+      ]
+    },
+    {
+      "id": "97ca4e9f2ce189fce460",
+      "reference": "Concat(Sub(C-4,M(DIGITS,1,start)), '-')",
+      "visible": [
+        [
+          "2028-07-20",
+          "-"
+        ],
+        [
+          "2020-04-11",
+          "-"
+        ],
+        [
+          "2027-07-22",
+          "-"
+        ]
+      ],
+      "hidden": [
+        [
+          "GEA-4835",
+          "-"
+        ],
+        [
+          "BBG-1760",
+          "-"
+        ],
+        [
+          "EEA-3505",
+          "-"
+        ],
+        [
+          "GHC-6138",
+          "-"
+        ],
+        [
+          "17/09/2025",
+          "-"
+        ],
+        [
+          "EDG-4365",
+          "-"
+        ],
+        [
+          "BBH-2997",
+          "-"
+        ],
+        [
+          "25/06/2024",
+          "-"
+        ],
+        [
+          "DGC-8799",
+          "-"
+        ],
+        [
+          "2024-05-16",
+          "-"
+        ],
+        [
+          "EBC-6117",
+          "-"
+        ],
+        [
+          "2014-08-10",
+          "-"
+        ],
+        [
+          "2009-08-16",
+          "-"
+        ]
+      ]
+    },
+    {
+      "id": "e9ee758f5c2b8a7903da",
+      "reference": "Concat(Sub(M(LOWER,1,end),C-5), Sub(C6,C-4))",
+      "visible": [
+        [
+          "Zoe Ana Garcia",
+          " Ana Ga Ga"
+        ],
+        [
+          "john.khan@example.com",
+          ".khan@examplhan@example"
+        ],
+        [
+          "Omar Adebayo",
+          " Adde"
+        ]
+      ],
+      "hidden": [
+        [
+          "Ana Smith",
+          " "
+        ],
+        [
+          "priya.ito@example.com",
+          ".ito@examplito@example"
+        ],
+        [
+          "John Chen Ito",
+          " Chehen"
+        ],
+        [
+          "Omar Chen Novak",
+          " Chen hen N"
+        ],
+        [
+          "priya.lee@example.com",
+          ".lee@exampllee@example"
+        ],
+        [
+          "Lucas John Souza",
+          " John John S"
+        ],
+        [
+          "zoe.lee@example.com",
+          ".lee@example@example"
+        ],
+        [
+          "Zoe Priya Souza",
+          " Priya iya S"
+        ],
+        [
+          "Mary Garcia",
+          " Ga"
+        ],
+        [
+          "Ana Garcia",
+          " G"
+        ],
+        [
+          "Lucas John Novak",
+          " John John N"
+        ],
+        [
+          "Mary Omar Garcia",
+          " Omar Gmar Ga"
+        ],
+        [
+          "mary.lee@example.com",
+          ".lee@examplee@example"
+        ]
+      ]
+    },
+    {
+      "id": "2f7e3f4225b762430589",
+      "reference": "Concat(Sub(C-5,C0), '/')",
+      "visible": [
+        [
+          "2014-04-27",
+          "/"
+        ],
+        [
+          "Omar Lee",
+          "/"
+        ],
+        [
+          "Lucas Souza",
+          "/"
+        ]
+      ],
+      "hidden": [
+        [
+          "Ana Adebayo",
+          "/"
+        ],
+        [
+          "Omar Ito",
+          "/"
+        ],
+        [
+          "09/05/2003",
+          "/"
+        ],
+        [
+          "John Lee",
+          "/"
+        ],
+        [
+          "Chen Ito",
+          "/"
+        ],
+        [
+          "Priya John Adebayo",
+          "/"
+        ],
+        [
+          "FGH-5655",
+          "/"
+        ],
+        [
+          "2026-12-16",
+          "/"
+        ],
+        [
+          "Zoe Ito",
+          "/"
+        ],
+        [
+          "John Souza",
+          "/"
+        ],
+        [
+          "EHD-5413",
+          "/"
+        ],
+        [
+          "EBD-8481",
+          "/"
+        ],
+        [
+          "24/04/2008",
+          "/"
+        ]
+      ]
+    }
+  ],
+  "harvest_round2": [
+    {
+      "id": "31a74a23ab84f2b36e64",
+      "reference": "Concat(lower(Sub(M(UPPER,2,start),C6)), Sub(M(UPPER,1,start),M(UPPER,1,start)), ', ')",
+      "visible": [
+        [
+          "Lucas Garcia",
+          ", "
+        ],
+        [
+          "Chen Ito",
+          "i, "
+        ],
+        [
+          "John Omar Ito",
+          "o, "
+        ]
+      ],
+      "hidden": [
+        [
+          "Chen Lee",
+          "l, "
+        ],
+        [
+          "Ana Souza",
+          "so, "
+        ],
+        [
+          "Mary Ito",
+          "i, "
+        ],
+        [
+          "Lucas Lucas Souza",
+          ", "
+        ],
+        [
+          "Zoe Souza",
+          "so, "
+        ],
+        [
+          "John Khan",
+          "k, "
+        ],
+        [
+          "Ana Ito",
+          "it, "
+        ],
+        [
+          "Priya Lee",
+          ", "
+        ],
+        [
+          "Omar Chen Souza",
+          "c, "
+        ],
+        [
+          "Omar Khan",
+          "k, "
+        ],
+        [
+          "Omar Smith",
+          "s, "
+        ],
+        [
+          "Mary Smith",
+          "s, "
+        ],
+        [
+          "Zoe Garcia",
+          "ga, "
+        ]
+      ]
+    },
+    {
+      "id": "5804a9340dd924575203",
+      "reference": "Concat(Sub(M(WORD,1,end),M(WORD,2,end)), ', ', upper(Sub(C-1,M(LOWER,1,end))))",
+      "visible": [
+        [
+          "lucas.souza@example.com",
+          ".souza, "
+        ],
+        [
+          "Omar Priya Adebayo",
+          " Priya, "
+        ],
+        [
+          "Ana Novak",
+          " Novak, "
+        ]
+      ],
+      "hidden": [
+        [
+          "chen.khan@example.com",
+          ".khan, "
+        ],
+        [
+          "Ana Priya Khan",
+          " Priya, "
+        ],
+        [
+          "Chen Souza",
+          " Souza, "
+        ],
+        [
+          "mary.ito@example.com",
+          ".ito, "
+        ],
+        [
+          "john.novak@example.com",
+          ".novak, "
+        ],
+        [
+          "Zoe Adebayo",
+          " Adebayo, "
+        ],
+        [
+          "John Smith",
+          " Smith, "
+        ],
+        [
+          "ana.smith@example.com",
+          ".smith, "
+        ],
+        [
+          "Mary Zoe Novak",
+          " Zoe, "
+        ],
+        [
+          "Lucas Lee",
+          " Lee, "
+        ],
+        [
+          "Lucas Souza",
+          " Souza, "
+        ],
+        [
+          "priya.smith@example.com",
+          ".smith, "
+        ],
+        [
+          "Mary Garcia",
+          " Garcia, "
+        ]
+      ]
+    },
+    {
+      "id": "f894a7b01a7519254d0c",
+      "reference": "Concat(', ', ', ', Sub(C0,C5), '-')",
+      "visible": [
+        [
+          "2002-10-13",
+          ", , 2002--"
+        ],
+        [
+          "zoe.adebayo@example.com",
+          ", , zoe.a-"
+        ],
+        [
+          "2021-03-16",
+          ", , 2021--"
+        ]
+      ],
+      "hidden": [
+        [
+          "priya.ito@example.com",
+          ", , priya-"
+        ],
+        [
+          "Ana Chen Lee",
+          ", , Ana C-"
+        ],
+        [
+          "Priya Chen Khan",
+          ", , Priya-"
+        ],
+        [
+          "21/09/2013",
+          ", , 21/09-"
+        ],
+        [
+          "zoe.ito@example.com",
+          ", , zoe.i-"
+        ],
+        [
+          "17/10/2010",
+          ", , 17/10-"
+        ],
+        [
+          "priya.adebayo@example.com",
+          ", , priya-"
+        ],
+        [
+          "CGH-1608",
+          ", , CGH-1-"
+        ],
+        [
+          "Zoe Lucas Novak",
+          ", , Zoe L-"
+        ],
+        [
+          "Chen Ana Ito",
+          ", , Chen -"
+        ],
+        [
+          "chen.garcia@example.com",
+          ", , chen.-"
+        ],
+        [
+          "lucas.lee@example.com",
+          ", , lucas-"
+        ],
+        [
+          "2019-03-01",
+          ", , 2019--"
+        ]
+      ]
+    },
+    {
+      "id": "aa1c00f55e6e4b1babb7",
+      "reference": "Concat(Sub(C-7,C7))",
+      "visible": [
+        [
+          "18/04/2000",
+          "04/2"
+        ],
+        [
+          "ADC-7180",
+          "DC-718"
+        ],
+        [
+          "Omar Chen Lee",
+          "h"
+        ]
+      ],
+      "hidden": [
+        [
+          "Zoe Smith",
+          "e Smi"
+        ],
+        [
+          "Ana Novak",
+          "a Nov"
+        ],
+        [
+          "2017-07-09",
+          "7-07"
+        ],
+        [
+          "John Ana Ito",
+          "An"
+        ],
+        [
+          "21/12/2022",
+          "12/2"
+        ],
+        [
+          "Mary Lee",
+          "ary Le"
+        ],
+        [
+          "Chen Ito",
+          "hen It"
+        ],
+        [
+          "GEB-3661",
+          "EB-366"
+        ],
+        [
+          "12/03/2002",
+          "03/2"
+        ],
+        [
+          "Mary Garcia",
+          " Ga"
+        ],
+        [
+          "ECA-1418",
+          "CA-141"
+        ],
+        [
+          "John Smith",
+          "n Sm"
+        ],
+        [
+          "BHB-2315",
+          "HB-231"
+        ]
+      ]
+    },
+    {
+      "id": "854b3e324d8df4e815c9",
+      "reference": "Concat(Sub(C-7,M(DIGITS,2,start)), Sub(C3,C4))",
+      "visible": [
+        [
+          "16/10/2029",
+          "1"
+        ],
+        [
+          "2005-10-04",
+          "5-5"
+        ],
+        [
+          "2014-09-06",
+          "4-4"
+        ]
+      ],
+      "hidden": [
+        [
+          "2016-09-27",
+          "6-6"
+        ],
+        [
+          "2000-03-12",
+          "0-0"
+        ],
+        [
+          "2011-10-10",
+          "1-1"
+        ],
+        [
+          "2018-06-07",
+          "8-8"
+        ],
+        [
+          "2007-11-18",
+          "7-7"
+        ],
+        [
+          "13/07/2030",
+          "0"
+        ],
+        [
+          "2020-05-18",
+          "0-0"
+        ],
+        [
+          "2009-07-05",
+          "9-9"
+        ],
+        [
+          "05/01/2015",
+          "0"
+        ],
+        [
+          "2030-02-22",
+          "0-0"
+        ],
+        [
+          "17/08/2015",
+          "0"
+        ],
+        [
+          "19/06/2020",
+          "0"
+        ],
+        [
+          "26/05/2021",
+          "0"
+        ]
+      ]
+    },
+    {
+      "id": "2fcb49139e6ce47346c1",
+      "reference": "Concat('.', Sub(C2,C3), '.', cap(Sub(M(UPPER,1,end),C5)))",
+      "visible": [
+        [
+          "Chen Khan",
+          ".e.Hen "
+        ],
+        [
+          "Chen Mary Lee",
+          ".e.Hen "
+        ],
+        [
+          "John Smith",
+          ".h.Ohn "
+        ]
+      ],
+      "hidden": [
+        [
+          "HFF-2029",
+          ".F.-2"
+        ],
+        [
+          "Lucas Ito",
+          ".c.Ucas"
+        ],
+        [
+          "Zoe Novak",
+          ".e.Oe n"
+        ],
+        [
+          "Ana Khan",
+          ".a.Na k"
+        ],
+        [
+          "Chen Adebayo",
+          ".e.Hen "
+        ],
+        [
+          "Omar John Garcia",
+          ".a.Mar "
+        ],
+        [
+          "Omar Garcia",
+          ".a.Mar "
+        ],
+        [
+          "Priya Omar Khan",
+          ".i.Riya"
+        ],
+        [
+          "Omar Lee",
+          ".a.Mar "
+        ],
+        [
+          "Omar Adebayo",
+          ".a.Mar "
+        ],
+        [
+          "Ana Zoe Souza",
+          ".a.Na z"
+        ],
+        [
+          "John Lucas Smith",
+          ".h.Ohn "
+        ],
+        [
+          "Omar Omar Garcia",
+          ".a.Mar "
+        ]
+      ]
+    },
+    {
+      "id": "9a33a6814cb141ce859a",
+      "reference": "Concat(' ', Sub(M(WORD,1,end),C-2), Sub(C-2,M(WORD,1,end)), Sub(C6,C-5))",
+      "visible": [
+        [
+          "chen.ito@example.com",
+          " .ito@example.cto@exampl"
+        ],
+        [
+          "CHC-4129",
+          " -41"
+        ],
+        [
+          "Lucas Adebayo",
+          "  AdebaAd"
+        ]
+      ],
+      "hidden": [
+        [
+          "BFC-1873",
+          " -18"
+        ],
+        [
+          "Mary Priya Souza",
+          "  Priya Souriya "
+        ],
+        [
+          "Ana Omar Garcia",
+          "  Omar Garcar G"
+        ],
+        [
+          "mary.souza@example.com",
+          " .souza@example.couza@exampl"
+        ],
+        [
+          "ana.novak@example.com",
+          " .novak@example.cvak@exampl"
+        ],
+        [
+          "John Lucas Souza",
+          "  Lucas Souucas "
+        ],
+        [
+          "ADG-7727",
+          " -77"
+        ],
+        [
+          "Chen Garcia",
+          "  Garc"
+        ],
+        [
+          "Omar Lucas Smith",
+          "  Lucas Smiucas "
+        ],
+        [
+          "Priya Novak",
+          "  Nov"
+        ],
+        [
+          "john.smith@example.com",
+          " .smith@example.cmith@exampl"
+        ],
+        [
+          "omar.garcia@example.com",
+          " .garcia@example.carcia@exampl"
+        ],
+        [
+          "Ana Chen Smith",
+          "  Chen Smien "
+        ]
+      ]
+    },
+    {
+      "id": "fe944b30d5aa4a48d08d",
+      "reference": "Concat(Sub(M(LOWER,2,end),C-8), ', ', upper(Sub(C-4,C-2)))",
+      "visible": [
+        [
+          "Omar Chen Souza",
+          ", OU"
+        ],
+        [
+          "Zoe Zoe Lee",
+          ",  L"
+        ],
+        [
+          "Omar Priya Khan",
+          ", KH"
+        ]
+      ],
+      "hidden": [
+        [
+          "zoe.lee@example.com",
+          "@exa, .C"
+        ],
+        [
+          "Lucas Ana Souza",
+          ", OU"
+        ],
+        [
+          "Priya Khan",
+          ", KH"
+        ],
+        [
+          "Ana Lucas Lee",
+          ",  L"
+        ],
+        [
+          "Priya Smith",
+          ", MI"
+        ],
+        [
+          "Mary Garcia",
+          ", RC"
+        ],
+        [
+          "Omar Chen Lee",
+          ",  L"
+        ],
+        [
+          "omar.smith@example.com",
+          "@exa, .C"
+        ],
+        [
+          "ana.adebayo@example.com",
+          "@exa, .C"
+        ],
+        [
+          "priya.khan@example.com",
+          "@exa, .C"
+        ],
+        [
+          "Omar Omar Souza",
+          ", OU"
+        ],
+        [
+          "lucas.garcia@example.com",
+          "@exa, .C"
+        ],
+        [
+          "ana.ito@example.com",
+          "@exa, .C"
+        ]
+      ]
+    }
+  ],
+  "validation_round1": [
+    {
+      "id": "62e14f0f5bec063f9b70",
+      "reference": "Concat(upper(': '), Sub(C5,C-2), Sub(M(DIGITS,1,start),C5), '/')",
+      "visible": [
+        [
+          "BEC-5323",
+          ": 35/"
+        ],
+        [
+          "14/01/2026",
+          ": /2014/01/"
+        ],
+        [
+          "09/09/2024",
+          ": /2009/09/"
+        ]
+      ],
+      "hidden": [
+        [
+          "20/03/2023",
+          ": /2020/03/"
+        ],
+        [
+          "DBH-9644",
+          ": 69/"
+        ],
+        [
+          "AAE-4396",
+          ": 34/"
+        ],
+        [
+          "2024-03-17",
+          ": 03-2024-/"
+        ],
+        [
+          "2003-10-04",
+          ": 10-2003-/"
+        ],
+        [
+          "2009-03-01",
+          ": 03-2009-/"
+        ],
+        [
+          "15/10/2025",
+          ": /2015/10/"
+        ],
+        [
+          "CDG-9397",
+          ": 39/"
+        ],
+        [
+          "21/11/2010",
+          ": /2021/11/"
+        ],
+        [
+          "2009-10-24",
+          ": 10-2009-/"
+        ],
+        [
+          "EGA-1084",
+          ": 01/"
+        ],
+        [
+          "2028-08-28",
+          ": 08-2028-/"
+        ],
+        [
+          "GEF-2184",
+          ": 12/"
+        ]
+      ]
+    }
+  ],
+  "validation_round2": [
+    {
+      "id": "4d085213da7ae08d35d6",
+      "reference": "Concat(Sub(M(LOWER,2,end),M(LOWER,1,end)), ', ', Sub(C2,M(WORD,1,end)))",
+      "visible": [
+        [
+          "John Novak",
+          ", hn"
+        ],
+        [
+          "Priya Omar Souza",
+          ", iya"
+        ],
+        [
+          "Omar John Garcia",
+          ", ar"
+        ]
+      ],
+      "hidden": [
+        [
+          "Priya Priya Khan",
+          ", iya"
+        ],
+        [
+          "chen.garcia@example.com",
+          ", en"
+        ],
+        [
+          "Ana Lee",
+          ", a"
+        ],
+        [
+          "Chen Zoe Adebayo",
+          ", en"
+        ],
+        [
+          "john.novak@example.com",
+          ", hn"
+        ],
+        [
+          "Ana Smith",
+          ", a"
+        ],
+        [
+          "lucas.novak@example.com",
+          ", cas"
+        ],
+        [
+          "John Adebayo",
+          ", hn"
+        ],
+        [
+          "Zoe Priya Smith",
+          ", e"
+        ],
+        [
+          "Mary Omar Smith",
+          ", ry"
+        ],
+        [
+          "John Lucas Ito",
+          ", hn"
+        ],
+        [
+          "John Garcia",
+          ", hn"
+        ],
+        [
+          "Chen Ana Garcia",
+          ", en"
+        ]
+      ]
+    }
+  ],
+  "final": [
+    {
+      "id": "32b69258802d8b98edb1",
+      "reference": "Concat(Sub(C-4,C-8), Sub(M(WORD,2,start),C-2), Sub(C8,C6), Sub(M(LOWER,1,end),M(WORD,1,start)))",
+      "visible": [
+        [
+          "John Lucas Souza",
+          "Lucas Sou"
+        ],
+        [
+          "john.ito@example.com",
+          "ito@example.c"
+        ],
+        [
+          "john.souza@example.com",
+          "souza@example.c"
+        ]
+      ],
+      "hidden": [
+        [
+          "Zoe Souza",
+          "Sou"
+        ],
+        [
+          "Zoe Chen Adebayo",
+          "Chen Adeba"
+        ],
+        [
+          "John Souza",
+          "Sou"
+        ],
+        [
+          "omar.adebayo@example.com",
+          "adebayo@example.c"
+        ],
+        [
+          "Chen Souza",
+          "Sou"
+        ],
+        [
+          "Mary Ito",
+          "I"
+        ],
+        [
+          "Omar Novak",
+          "Nov"
+        ],
+        [
+          "Zoe Lucas Novak",
+          "Lucas Nov"
+        ],
+        [
+          "Priya John Lee",
+          "John L"
+        ],
+        [
+          "Lucas Priya Smith",
+          "Priya Smi"
+        ],
+        [
+          "Mary Khan",
+          "Kh"
+        ],
+        [
+          "omar.lee@example.com",
+          "lee@example.c"
+        ],
+        [
+          "priya.souza@example.com",
+          "souza@example.c"
+        ]
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "id": "65497e91122b6e88982a",
+      "reference": "Concat(' ', Sub(M(WORD,2,end),M(UPPER,2,end)), ': ')",
+      "visible": [
+        [
+          "Priya Ito",
+          " : "
+        ],
+        [
+          "Zoe Adebayo",
+          " : "
+        ],
+        [
+          "John Lee",
+          " : "
+        ]
+      ],
+      "hidden": [
+        [
+          "Mary Zoe Smith",
+          " : "
+        ],
+        [
+          "Zoe John Smith",
+          " : "
+        ],
+        [
+          "Omar Ana Lee",
+          " : "
+        ],
+        [
+          "Chen Ana Garcia",
+          " : "
+        ],
+        [
+          "Lucas Omar Smith",
+          " : "
+        ],
+        [
+          "Lucas Lucas Garcia",
+          " : "
+        ],
+        [
+          "Chen Souza",
+          " : "
+        ],
+        [
+          "Lucas Mary Souza",
+          " : "
+        ],
+        [
+          "John Zoe Ito",
+          " : "
+        ],
+        [
+          "Lucas Ana Khan",
+          " : "
+        ],
+        [
+          "Priya Souza",
+          " : "
+        ],
+        [
+          "Priya Zoe Khan",
+          " : "
+        ],
+        [
+          "Ana Adebayo",
+          " : "
+        ]
+      ]
+    },
+    {
+      "id": "82f6c4bbb59647b1159e",
+      "reference": "Concat(', ')",
+      "visible": [
+        [
+          "BDE-7407",
+          ", "
+        ],
+        [
+          "09/01/2019",
+          ", "
+        ],
+        [
+          "ECE-7895",
+          ", "
+        ]
+      ],
+      "hidden": [
+        [
+          "Omar Novak",
+          ", "
+        ],
+        [
+          "20/03/2005",
+          ", "
+        ],
+        [
+          "Priya Smith",
+          ", "
+        ],
+        [
+          "01/05/2020",
+          ", "
+        ],
+        [
+          "john.adebayo@example.com",
+          ", "
+        ],
+        [
+          "26/12/2012",
+          ", "
+        ],
+        [
+          "Priya Lee",
+          ", "
+        ],
+        [
+          "Chen Omar Lee",
+          ", "
+        ],
+        [
+          "Priya Zoe Garcia",
+          ", "
+        ],
+        [
+          "Priya Ana Khan",
+          ", "
+        ],
+        [
+          "zoe.ito@example.com",
+          ", "
+        ],
+        [
+          "2015-12-02",
+          ", "
+        ],
+        [
+          "priya.garcia@example.com",
+          ", "
+        ]
+      ]
+    },
+    {
+      "id": "e4fb4987da1df5ced51b",
+      "reference": "Concat('/', '/', ': ', Sub(C5,C0))",
+      "visible": [
+        [
+          "Mary Smith",
+          "//: "
+        ],
+        [
+          "BHG-5853",
+          "//: "
+        ],
+        [
+          "25/12/2001",
+          "//: "
+        ]
+      ],
+      "hidden": [
+        [
+          "Mary Lucas Ito",
+          "//: "
+        ],
+        [
+          "Mary Chen Adebayo",
+          "//: "
+        ],
+        [
+          "Zoe Ito",
+          "//: "
+        ],
+        [
+          "Lucas Novak",
+          "//: "
+        ],
+        [
+          "John Omar Garcia",
+          "//: "
+        ],
+        [
+          "Ana Garcia",
+          "//: "
+        ],
+        [
+          "GHE-2290",
+          "//: "
+        ],
+        [
+          "2013-09-07",
+          "//: "
+        ],
+        [
+          "2023-04-17",
+          "//: "
+        ],
+        [
+          "09/06/2028",
+          "//: "
+        ],
+        [
+          "omar.adebayo@example.com",
+          "//: "
+        ],
+        [
+          "2026-08-05",
+          "//: "
+        ],
+        [
+          "Priya Zoe Souza",
+          "//: "
+        ]
+      ]
+    },
+    {
+      "id": "c39a17fcd01dfdc201a7",
+      "reference": "Concat(cap(Sub(M(UPPER,1,start),M(UPPER,1,end))), ', ', '.')",
+      "visible": [
+        [
+          "EEF-5203",
+          "Eef, ."
+        ],
+        [
+          "Omar Mary Novak",
+          "O, ."
+        ],
+        [
+          "John Novak",
+          "J, ."
+        ]
+      ],
+      "hidden": [
+        [
+          "Mary Chen Novak",
+          "M, ."
+        ],
+        [
+          "FFA-4137",
+          "Ffa, ."
+        ],
+        [
+          "AFF-2207",
+          "Aff, ."
+        ],
+        [
+          "GFA-8553",
+          "Gfa, ."
+        ],
+        [
+          "Chen Priya Ito",
+          "C, ."
+        ],
+        [
+          "BBD-8811",
+          "Bbd, ."
+        ],
+        [
+          "EDD-3804",
+          "Edd, ."
+        ],
+        [
+          "Chen Chen Adebayo",
+          "C, ."
+        ],
+        [
+          "HGE-8307",
+          "Hge, ."
+        ],
+        [
+          "Ana Omar Ito",
+          "A, ."
+        ],
+        [
+          "Priya Mary Smith",
+          "P, ."
+        ],
+        [
+          "Ana Novak",
+          "A, ."
+        ],
+        [
+          "Mary Souza",
+          "M, ."
+        ]
+      ]
+    },
+    {
+      "id": "3f4a010cd11ae74e3eed",
+      "reference": "Concat('-', Sub(C4,M(UPPER,2,end)), Sub(C8,C-8))",
+      "visible": [
+        [
+          "Zoe Souza",
+          "-S"
+        ],
+        [
+          "Omar Lucas Ito",
+          "- L"
+        ],
+        [
+          "Ana Ana Novak",
+          "-A"
+        ]
+      ],
+      "hidden": [
+        [
+          "Chen Priya Souza",
+          "- P"
+        ],
+        [
+          "Omar Adebayo",
+          "- A"
+        ],
+        [
+          "Lucas Mary Souza",
+          "-s M"
+        ],
+        [
+          "Omar Smith",
+          "- S"
+        ],
+        [
+          "Omar Chen Souza",
+          "- C"
+        ],
+        [
+          "Zoe Khan",
+          "-K"
+        ],
+        [
+          "John Omar Smith",
+          "- O"
+        ],
+        [
+          "Priya Adebayo",
+          "-a A"
+        ],
+        [
+          "John Priya Ito",
+          "- P"
+        ],
+        [
+          "Zoe Priya Ito",
+          "-P"
+        ],
+        [
+          "Lucas Lucas Ito",
+          "-s L"
+        ],
+        [
+          "Priya Garcia",
+          "-a G"
+        ],
+        [
+          "Chen Ito",
+          "- I"
+        ]
+      ]
+    },
+    {
+      "id": "1acce46d9935d8800348",
+      "reference": "Concat(Sub(M(WORD,1,start),C5), Sub(C3,M(WORD,1,start)))",
+      "visible": [
+        [
+          "John Mary Khan",
+          "John "
+        ],
+        [
+          "mary.smith@example.com",
+          "mary."
+        ],
+        [
+          "Ana John Souza",
+          "Ana J"
+        ]
+      ],
+      "hidden": [
+        [
+          "Priya Adebayo",
+          "Priya"
+        ],
+        [
+          "AHG-8062",
+          "AHG-8"
+        ],
+        [
+          "BGF-1956",
+          "BGF-1"
+        ],
+        [
+          "Lucas Zoe Adebayo",
+          "Lucas"
+        ],
+        [
+          "Chen Khan",
+          "Chen "
+        ],
+        [
+          "omar.garcia@example.com",
+          "omar."
+        ],
+        [
+          "Lucas Chen Souza",
+          "Lucas"
+        ],
+        [
+          "Priya Souza",
+          "Priya"
+        ],
+        [
+          "Ana Zoe Adebayo",
+          "Ana Z"
+        ],
+        [
+          "FCD-1296",
+          "FCD-1"
+        ],
+        [
+          "Omar Smith",
+          "Omar "
+        ],
+        [
+          "Mary Chen Ito",
+          "Mary "
+        ],
+        [
+          "Omar Lee",
+          "Omar "
+        ]
+      ]
+    },
+    {
+      "id": "3fa0951589fa623f7898",
+      "reference": "Concat(', ', ' ', '.', ' ')",
+      "visible": [
+        [
+          "Chen Chen Khan",
+          ",  . "
+        ],
+        [
+          "25/06/2013",
+          ",  . "
+        ],
+        [
+          "2010-05-02",
+          ",  . "
+        ]
+      ],
+      "hidden": [
+        [
+          "HFE-5788",
+          ",  . "
+        ],
+        [
+          "mary.novak@example.com",
+          ",  . "
+        ],
+        [
+          "Omar Zoe Adebayo",
+          ",  . "
+        ],
+        [
+          "lucas.souza@example.com",
+          ",  . "
+        ],
+        [
+          "2010-07-26",
+          ",  . "
+        ],
+        [
+          "Lucas Novak",
+          ",  . "
+        ],
+        [
+          "2009-12-19",
+          ",  . "
+        ],
+        [
+          "24/07/2010",
+          ",  . "
+        ],
+        [
+          "2009-07-23",
+          ",  . "
+        ],
+        [
+          "John Omar Souza",
+          ",  . "
+        ],
+        [
+          "john.garcia@example.com",
+          ",  . "
+        ],
+        [
+          "2006-12-17",
+          ",  . "
+        ],
+        [
+          "27/03/2013",
+          ",  . "
+        ]
+      ]
+    },
+    {
+      "id": "a81ccf012ec073600096",
+      "reference": "Concat(Sub(M(UPPER,1,end),M(UPPER,1,end)), ': ')",
+      "visible": [
+        [
+          "GDB-3189",
+          ": "
+        ],
+        [
+          "Zoe Mary Smith",
+          ": "
+        ],
+        [
+          "John Adebayo",
+          ": "
+        ]
+      ],
+      "hidden": [
+        [
+          "DDF-7253",
+          ": "
+        ],
+        [
+          "ADC-5488",
+          ": "
+        ],
+        [
+          "Ana Souza",
+          ": "
+        ],
+        [
+          "Chen Souza",
+          ": "
+        ],
+        [
+          "CAF-1468",
+          ": "
+        ],
+        [
+          "AGC-4023",
+          ": "
+        ],
+        [
+          "Ana Ito",
+          ": "
+        ],
+        [
+          "EGG-3810",
+          ": "
+        ],
+        [
+          "Zoe Omar Ito",
+          ": "
+        ],
+        [
+          "Mary Ana Garcia",
+          ": "
+        ],
+        [
+          "Lucas Ito",
+          ": "
+        ],
+        [
+          "Lucas Ana Smith",
+          ": "
+        ],
+        [
+          "Zoe Souza",
+          ": "
+        ]
+      ]
+    },
+    {
+      "id": "86e5c7c294d93180b281",
+      "reference": "Concat('-')",
+      "visible": [
+        [
+          "15/01/2003",
+          "-"
+        ],
+        [
+          "2024-08-09",
+          "-"
+        ],
+        [
+          "Lucas Chen Souza",
+          "-"
+        ]
+      ],
+      "hidden": [
+        [
+          "2022-12-13",
+          "-"
+        ],
+        [
+          "06/05/2029",
+          "-"
+        ],
+        [
+          "lucas.souza@example.com",
+          "-"
+        ],
+        [
+          "mary.smith@example.com",
+          "-"
+        ],
+        [
+          "2020-12-01",
+          "-"
+        ],
+        [
+          "17/05/2019",
+          "-"
+        ],
+        [
+          "DFE-2965",
+          "-"
+        ],
+        [
+          "AEB-5971",
+          "-"
+        ],
+        [
+          "Chen Ito",
+          "-"
+        ],
+        [
+          "Omar Souza",
+          "-"
+        ],
+        [
+          "Omar Khan",
+          "-"
+        ],
+        [
+          "09/01/2020",
+          "-"
+        ],
+        [
+          "GGE-2635",
+          "-"
+        ]
+      ]
+    },
+    {
+      "id": "bc02f884a7960cb08b82",
+      "reference": "Concat(Sub(C-7,M(UPPER,1,end)))",
+      "visible": [
+        [
+          "ACF-8588",
+          "CF"
+        ],
+        [
+          "Zoe Ito",
+          "Z"
+        ],
+        [
+          "AFH-1633",
+          "FH"
+        ]
+      ],
+      "hidden": [
+        [
+          "CHG-9529",
+          "HG"
+        ],
+        [
+          "FDH-3174",
+          "DH"
+        ],
+        [
+          "CEE-9348",
+          "EE"
+        ],
+        [
+          "GGB-6225",
+          "GB"
+        ],
+        [
+          "BGG-7015",
+          "GG"
+        ],
+        [
+          "CAB-3864",
+          "AB"
+        ],
+        [
+          "HBG-8336",
+          "BG"
+        ],
+        [
+          "CCB-5088",
+          "CB"
+        ],
+        [
+          "AFA-5173",
+          "FA"
+        ],
+        [
+          "EAF-1165",
+          "AF"
+        ],
+        [
+          "BFA-9958",
+          "FA"
+        ],
+        [
+          "BDB-8360",
+          "DB"
+        ],
+        [
+          "BEC-4979",
+          "EC"
+        ]
+      ]
+    },
+    {
+      "id": "5d5a6f228a5e474566b5",
+      "reference": "Concat(' ', Sub(M(LOWER,2,end),M(UPPER,1,end)))",
+      "visible": [
+        [
+          "Ana Lee",
+          " "
+        ],
+        [
+          "Mary Lucas Smith",
+          " "
+        ],
+        [
+          "John Garcia",
+          " "
+        ]
+      ],
+      "hidden": [
+        [
+          "Priya Ito",
+          " "
+        ],
+        [
+          "Lucas Lucas Souza",
+          " "
+        ],
+        [
+          "Zoe Lee",
+          " "
+        ],
+        [
+          "Lucas Ito",
+          " "
+        ],
+        [
+          "Mary Omar Smith",
+          " "
+        ],
+        [
+          "Chen Ito",
+          " "
+        ],
+        [
+          "Mary John Khan",
+          " "
+        ],
+        [
+          "Omar Smith",
+          " "
+        ],
+        [
+          "Mary Ito",
+          " "
+        ],
+        [
+          "Zoe Zoe Souza",
+          " "
+        ],
+        [
+          "Lucas Omar Novak",
+          " "
+        ],
+        [
+          "Omar Lee",
+          " "
+        ],
+        [
+          "Ana Novak",
+          " "
+        ]
+      ]
+    },
+    {
+      "id": "64ffd9067f385386c624",
+      "reference": "Concat('/', Sub(C-6,C-1))",
+      "visible": [
+        [
+          "10/07/2010",
+          "/7/201"
+        ],
+        [
+          "Priya John Smith",
+          "/ Smit"
+        ],
+        [
+          "BEC-5442",
+          "/C-544"
+        ]
+      ],
+      "hidden": [
+        [
+          "07/06/2006",
+          "/6/200"
+        ],
+        [
+          "GDF-3120",
+          "/F-312"
+        ],
+        [
+          "Lucas Priya Adebayo",
+          "/debay"
+        ],
+        [
+          "Zoe Mary Novak",
+          "/ Nova"
+        ],
+        [
+          "FFD-9238",
+          "/D-923"
+        ],
+        [
+          "2017-10-22",
+          "/-10-2"
+        ],
+        [
+          "Lucas Zoe Ito",
+          "/oe It"
+        ],
+        [
+          "HBE-1767",
+          "/E-176"
+        ],
+        [
+          "John Lee",
+          "/hn Le"
+        ],
+        [
+          "Chen Mary Lee",
+          "/ry Le"
+        ],
+        [
+          "Ana Lucas Khan",
+          "/s Kha"
+        ],
+        [
+          "ACC-5832",
+          "/C-583"
+        ],
+        [
+          "2017-10-16",
+          "/-10-1"
+        ]
+      ]
+    },
+    {
+      "id": "99992fb28d90b84407ab",
+      "reference": "Concat(Sub(C0,C4), Sub(C8,C8))",
+      "visible": [
+        [
+          "05/02/2018",
+          "05/0"
+        ],
+        [
+          "04/08/2002",
+          "04/0"
+        ],
+        [
+          "ABA-8535",
+          "ABA-"
+        ]
+      ],
+      "hidden": [
+        [
+          "04/04/2010",
+          "04/0"
+        ],
+        [
+          "2017-09-18",
+          "2017"
+        ],
+        [
+          "08/07/2008",
+          "08/0"
+        ],
+        [
+          "FCF-1034",
+          "FCF-"
+        ],
+        [
+          "John Lucas Garcia",
+          "John"
+        ],
+        [
+          "08/01/2014",
+          "08/0"
+        ],
+        [
+          "chen.khan@example.com",
+          "chen"
+        ],
+        [
+          "2027-07-01",
+          "2027"
+        ],
+        [
+          "2008-02-01",
+          "2008"
+        ],
+        [
+          "2012-12-17",
+          "2012"
+        ],
+        [
+          "Priya Novak",
+          "Priy"
+        ],
+        [
+          "Lucas Omar Khan",
+          "Luca"
+        ],
+        [
+          "zoe.lee@example.com",
+          "zoe."
+        ]
+      ]
+    },
+    {
+      "id": "f5293b1a0ec5a5d67081",
+      "reference": "Concat(Sub(C-4,C2), ', ', Sub(C-2,M(DIGITS,1,start)))",
+      "visible": [
+        [
+          "14/10/2003",
+          ", "
+        ],
+        [
+          "05/12/2017",
+          ", "
+        ],
+        [
+          "04/05/2017",
+          ", "
+        ]
+      ],
+      "hidden": [
+        [
+          "CCG-6571",
+          ", "
+        ],
+        [
+          "BBB-5649",
+          ", "
+        ],
+        [
+          "2016-04-07",
+          ", "
+        ],
+        [
+          "2019-03-13",
+          ", "
+        ],
+        [
+          "18/12/2024",
+          ", "
+        ],
+        [
+          "2028-07-25",
+          ", "
+        ],
+        [
+          "17/07/2018",
+          ", "
+        ],
+        [
+          "2010-02-03",
+          ", "
+        ],
+        [
+          "25/12/2028",
+          ", "
+        ],
+        [
+          "15/07/2002",
+          ", "
+        ],
+        [
+          "27/07/2018",
+          ", "
+        ],
+        [
+          "2007-06-24",
+          ", "
+        ],
+        [
+          "2023-10-09",
+          ", "
+        ]
+      ]
+    },
+    {
+      "id": "974c39a82e5724c63f6f",
+      "reference": "Concat(Sub(M(UPPER,1,start),C3), '-', Sub(C5,C7), Sub(C5,M(UPPER,1,start)))",
+      "visible": [
+        [
+          "ADE-3160",
+          "ADE-16"
+        ],
+        [
+          "Ana Zoe Novak",
+          "Ana-oe"
+        ],
+        [
+          "Lucas Khan",
+          "Luc- K"
+        ]
+      ],
+      "hidden": [
+        [
+          "Ana Chen Adebayo",
+          "Ana-he"
+        ],
+        [
+          "Omar Ana Adebayo",
+          "Oma-An"
+        ],
+        [
+          "John Chen Adebayo",
+          "Joh-Ch"
+        ],
+        [
+          "Chen Adebayo",
+          "Che-Ad"
+        ],
+        [
+          "EDG-7400",
+          "EDG-40"
+        ],
+        [
+          "EDA-2603",
+          "EDA-60"
+        ],
+        [
+          "John Smith",
+          "Joh-Sm"
+        ],
+        [
+          "Lucas Omar Khan",
+          "Luc- O"
+        ],
+        [
+          "Zoe Khan",
+          "Zoe-ha"
+        ],
+        [
+          "GFB-9903",
+          "GFB-90"
+        ],
+        [
+          "Mary Zoe Ito",
+          "Mar-Zo"
+        ],
+        [
+          "GFB-9206",
+          "GFB-20"
+        ],
+        [
+          "Priya Souza",
+          "Pri- S"
+        ]
+      ]
+    },
+    {
+      "id": "4f69ccca84aee67806f2",
+      "reference": "Concat(' ')",
+      "visible": [
+        [
+          "04/12/2008",
+          " "
+        ],
+        [
+          "2001-05-20",
+          " "
+        ],
+        [
+          "John Novak",
+          " "
+        ]
+      ],
+      "hidden": [
+        [
+          "05/12/2029",
+          " "
+        ],
+        [
+          "john.souza@example.com",
+          " "
+        ],
+        [
+          "22/07/2030",
+          " "
+        ],
+        [
+          "01/02/2020",
+          " "
+        ],
+        [
+          "EGG-9457",
+          " "
+        ],
+        [
+          "2000-09-21",
+          " "
+        ],
+        [
+          "john.garcia@example.com",
+          " "
+        ],
+        [
+          "2023-06-14",
+          " "
+        ],
+        [
+          "Lucas Lucas Novak",
+          " "
+        ],
+        [
+          "Priya Mary Khan",
+          " "
+        ],
+        [
+          "Priya Zoe Souza",
+          " "
+        ],
+        [
+          "2000-06-07",
+          " "
+        ],
+        [
+          "2030-11-23",
+          " "
+        ]
+      ]
+    },
+    {
+      "id": "d06eac99fcc045eb26e1",
+      "reference": "Concat(lower('-'), Sub(M(WORD,2,end),M(LOWER,2,start)), Sub(C5,C2))",
+      "visible": [
+        [
+          "ana.lee@example.com",
+          "-"
+        ],
+        [
+          "Mary Souza",
+          "-"
+        ],
+        [
+          "mary.smith@example.com",
+          "-"
+        ]
+      ],
+      "hidden": [
+        [
+          "Chen Smith",
+          "-"
+        ],
+        [
+          "mary.adebayo@example.com",
+          "-"
+        ],
+        [
+          "zoe.khan@example.com",
+          "-"
+        ],
+        [
+          "john.smith@example.com",
+          "-"
+        ],
+        [
+          "Ana Priya Lee",
+          "-"
+        ],
+        [
+          "chen.smith@example.com",
+          "-"
+        ],
+        [
+          "Zoe Garcia",
+          "-"
+        ],
+        [
+          "zoe.souza@example.com",
+          "-"
+        ],
+        [
+          "Zoe Novak",
+          "-"
+        ],
+        [
+          "Mary Novak",
+          "-"
+        ],
+        [
+          "Ana Mary Smith",
+          "-"
+        ],
+        [
+          "Zoe Khan",
+          "-"
+        ],
+        [
+          "ana.adebayo@example.com",
+          "-"
+        ]
+      ]
+    },
+    {
+      "id": "b76be42c2f3f4f9a84b1",
+      "reference": "Concat(Sub(M(LOWER,2,start),C8), upper('.'))",
+      "visible": [
+        [
+          "priya.garcia@example.com",
+          "ga."
+        ],
+        [
+          "ana.ito@example.com",
+          "ito@."
+        ],
+        [
+          "Mary Zoe Adebayo",
+          "oe."
+        ]
+      ],
+      "hidden": [
+        [
+          "Zoe Ana Ito",
+          "na ."
+        ],
+        [
+          "Ana Adebayo",
+          "deb."
+        ],
+        [
+          "lucas.souza@example.com",
+          "so."
+        ],
+        [
+          "Chen Omar Ito",
+          "ma."
+        ],
+        [
+          "priya.adebayo@example.com",
+          "ad."
+        ],
+        [
+          "Priya Ito",
+          "t."
+        ],
+        [
+          "priya.ito@example.com",
+          "it."
+        ],
+        [
+          "chen.novak@example.com",
+          "nov."
+        ],
+        [
+          "Lucas Lee",
+          "e."
+        ],
+        [
+          "priya.souza@example.com",
+          "so."
+        ],
+        [
+          "Chen Priya Smith",
+          "ri."
+        ],
+        [
+          "omar.khan@example.com",
+          "kha."
+        ],
+        [
+          "Omar John Adebayo",
+          "oh."
+        ]
+      ]
+    },
+    {
+      "id": "97cd64e26218e4a61fa5",
+      "reference": "Concat(Sub(M(LOWER,1,end),M(UPPER,2,end)), ': ')",
+      "visible": [
+        [
+          "Ana Khan",
+          " K: "
+        ],
+        [
+          "Mary Khan",
+          " K: "
+        ],
+        [
+          "Zoe Omar Khan",
+          " O: "
+        ]
+      ],
+      "hidden": [
+        [
+          "Lucas Omar Souza",
+          " O: "
+        ],
+        [
+          "Mary Zoe Khan",
+          " Z: "
+        ],
+        [
+          "John Mary Smith",
+          " M: "
+        ],
+        [
+          "Chen Smith",
+          " S: "
+        ],
+        [
+          "Ana Zoe Khan",
+          " Z: "
+        ],
+        [
+          "Priya Omar Smith",
+          " O: "
+        ],
+        [
+          "Lucas Garcia",
+          " G: "
+        ],
+        [
+          "Mary Mary Lee",
+          " M: "
+        ],
+        [
+          "Mary Ito",
+          " I: "
+        ],
+        [
+          "Zoe Adebayo",
+          " A: "
+        ],
+        [
+          "John Ito",
+          " I: "
+        ],
+        [
+          "Chen John Adebayo",
+          " J: "
+        ],
+        [
+          "Mary Mary Smith",
+          " M: "
+        ]
+      ]
+    },
+    {
+      "id": "764359ab640de27d171a",
+      "reference": "Concat(cap(Sub(C2,C-5)), Sub(C0,M(DIGITS,1,end)))",
+      "visible": [
+        [
+          "01/05/2001",
+          "/0501"
+        ],
+        [
+          "EDE-3820",
+          "EEDE-3820"
+        ],
+        [
+          "CGC-2791",
+          "CCGC-2791"
+        ]
+      ],
+      "hidden": [
+        [
+          "07/12/2022",
+          "/1207"
+        ],
+        [
+          "01/04/2005",
+          "/0401"
+        ],
+        [
+          "18/06/2010",
+          "/0618"
+        ],
+        [
+          "20/06/2009",
+          "/0620"
+        ],
+        [
+          "2019-01-04",
+          "19-2019"
+        ],
+        [
+          "08/12/2008",
+          "/1208"
+        ],
+        [
+          "2015-07-24",
+          "15-2015"
+        ],
+        [
+          "03/08/2022",
+          "/0803"
+        ],
+        [
+          "EAA-4934",
+          "AEAA-4934"
+        ],
+        [
+          "16/12/2030",
+          "/1216"
+        ],
+        [
+          "GBH-4401",
+          "HGBH-4401"
+        ],
+        [
+          "CEE-2387",
+          "ECEE-2387"
+        ],
+        [
+          "2025-11-14",
+          "25-2025"
+        ]
+      ]
+    },
+    {
+      "id": "6d879842b1680afc335e",
+      "reference": "Concat(Sub(C7,C1), Sub(C8,C4), lower(Sub(M(UPPER,1,start),M(WORD,1,end))))",
+      "visible": [
+        [
+          "Priya Ito",
+          "priya"
+        ],
+        [
+          "BGF-9189",
+          "bgf"
+        ],
+        [
+          "DFE-2604",
+          "dfe"
+        ]
+      ],
+      "hidden": [
+        [
+          "BED-6789",
+          "bed"
+        ],
+        [
+          "Chen Ana Souza",
+          "chen"
+        ],
+        [
+          "GGE-5068",
+          "gge"
+        ],
+        [
+          "EGD-1568",
+          "egd"
+        ],
+        [
+          "DHE-1727",
+          "dhe"
+        ],
+        [
+          "EBH-1088",
+          "ebh"
+        ],
+        [
+          "EAB-7593",
+          "eab"
+        ],
+        [
+          "HFD-1635",
+          "hfd"
+        ],
+        [
+          "Omar Smith",
+          "omar"
+        ],
+        [
+          "Lucas Zoe Ito",
+          "lucas"
+        ],
+        [
+          "EAH-5443",
+          "eah"
+        ],
+        [
+          "Omar Ito",
+          "omar"
+        ],
+        [
+          "Priya Lucas Souza",
+          "priya"
+        ]
+      ]
+    },
+    {
+      "id": "06365729278186383846",
+      "reference": "Concat(Sub(M(LOWER,1,start),M(LOWER,1,start)), '-', upper(': '))",
+      "visible": [
+        [
+          "Chen Priya Smith",
+          "-: "
+        ],
+        [
+          "Zoe Ito",
+          "-: "
+        ],
+        [
+          "Lucas Lee",
+          "-: "
+        ]
+      ],
+      "hidden": [
+        [
+          "Lucas Omar Adebayo",
+          "-: "
+        ],
+        [
+          "John John Novak",
+          "-: "
+        ],
+        [
+          "mary.khan@example.com",
+          "-: "
+        ],
+        [
+          "mary.lee@example.com",
+          "-: "
+        ],
+        [
+          "zoe.adebayo@example.com",
+          "-: "
+        ],
+        [
+          "Priya Ana Khan",
+          "-: "
+        ],
+        [
+          "zoe.smith@example.com",
+          "-: "
+        ],
+        [
+          "Zoe Lucas Garcia",
+          "-: "
+        ],
+        [
+          "Chen Zoe Smith",
+          "-: "
+        ],
+        [
+          "Priya John Smith",
+          "-: "
+        ],
+        [
+          "mary.adebayo@example.com",
+          "-: "
+        ],
+        [
+          "Ana Mary Adebayo",
+          "-: "
+        ],
+        [
+          "zoe.novak@example.com",
+          "-: "
+        ]
+      ]
+    },
+    {
+      "id": "769018756e5faf52a99f",
+      "reference": "Concat(lower('/'), lower(Sub(C1,M(UPPER,2,start))))",
+      "visible": [
+        [
+          "Ana Priya Adebayo",
+          "/na "
+        ],
+        [
+          "Priya Mary Novak",
+          "/riya "
+        ],
+        [
+          "Chen Adebayo",
+          "/hen "
+        ]
+      ],
+      "hidden": [
+        [
+          "Mary Lucas Ito",
+          "/ary "
+        ],
+        [
+          "Chen Novak",
+          "/hen "
+        ],
+        [
+          "Ana Smith",
+          "/na "
+        ],
+        [
+          "Chen Zoe Khan",
+          "/hen "
+        ],
+        [
+          "Lucas Priya Garcia",
+          "/ucas "
+        ],
+        [
+          "Lucas Garcia",
+          "/ucas "
+        ],
+        [
+          "Ana Ito",
+          "/na "
+        ],
+        [
+          "Zoe John Khan",
+          "/oe "
+        ],
+        [
+          "Zoe Zoe Souza",
+          "/oe "
+        ],
+        [
+          "Mary Souza",
+          "/ary "
+        ],
+        [
+          "Zoe Souza",
+          "/oe "
+        ],
+        [
+          "Mary John Adebayo",
+          "/ary "
+        ],
+        [
+          "Ana Mary Smith",
+          "/na "
+        ]
+      ]
+    },
+    {
+      "id": "d6bd289ed0bfbc2b3297",
+      "reference": "Concat(Sub(C2,M(DIGITS,1,end)))",
+      "visible": [
+        [
+          "2022-06-01",
+          "22"
+        ],
+        [
+          "AHG-8453",
+          "G-8453"
+        ],
+        [
+          "2005-12-13",
+          "05"
+        ]
+      ],
+      "hidden": [
+        [
+          "2008-02-17",
+          "08"
+        ],
+        [
+          "2018-02-11",
+          "18"
+        ],
+        [
+          "CHH-1148",
+          "H-1148"
+        ],
+        [
+          "2008-11-17",
+          "08"
+        ],
+        [
+          "GFA-1091",
+          "A-1091"
+        ],
+        [
+          "2005-04-07",
+          "05"
+        ],
+        [
+          "2004-05-19",
+          "04"
+        ],
+        [
+          "2001-09-18",
+          "01"
+        ],
+        [
+          "2028-11-09",
+          "28"
+        ],
+        [
+          "HBF-8645",
+          "F-8645"
+        ],
+        [
+          "BEE-6262",
+          "E-6262"
+        ],
+        [
+          "AHG-6528",
+          "G-6528"
+        ],
+        [
+          "2011-05-03",
+          "11"
+        ]
+      ]
+    },
+    {
+      "id": "beebdbdc63b19bf6034d",
+      "reference": "Concat(', ', '.', Sub(M(DIGITS,1,end),C2))",
+      "visible": [
+        [
+          "EAE-7207",
+          ", ."
+        ],
+        [
+          "19/08/2016",
+          ", ."
+        ],
+        [
+          "2008-12-08",
+          ", ."
+        ]
+      ],
+      "hidden": [
+        [
+          "24/01/2015",
+          ", ."
+        ],
+        [
+          "2016-12-11",
+          ", ."
+        ],
+        [
+          "01/10/2012",
+          ", ."
+        ],
+        [
+          "2028-06-01",
+          ", ."
+        ],
+        [
+          "2001-12-14",
+          ", ."
+        ],
+        [
+          "09/10/2001",
+          ", ."
+        ],
+        [
+          "28/09/2023",
+          ", ."
+        ],
+        [
+          "17/10/2018",
+          ", ."
+        ],
+        [
+          "27/12/2030",
+          ", ."
+        ],
+        [
+          "2008-10-17",
+          ", ."
+        ],
+        [
+          "2024-06-02",
+          ", ."
+        ],
+        [
+          "01/08/2028",
+          ", ."
+        ],
+        [
+          "15/02/2008",
+          ", ."
+        ]
+      ]
+    },
+    {
+      "id": "b86ad70788fb459331ba",
+      "reference": "Concat('.', upper('/'))",
+      "visible": [
+        [
+          "Lucas Omar Lee",
+          "./"
+        ],
+        [
+          "HDF-4345",
+          "./"
+        ],
+        [
+          "2008-11-27",
+          "./"
+        ]
+      ],
+      "hidden": [
+        [
+          "lucas.adebayo@example.com",
+          "./"
+        ],
+        [
+          "10/10/2029",
+          "./"
+        ],
+        [
+          "ana.souza@example.com",
+          "./"
+        ],
+        [
+          "chen.khan@example.com",
+          "./"
+        ],
+        [
+          "Priya Adebayo",
+          "./"
+        ],
+        [
+          "lucas.khan@example.com",
+          "./"
+        ],
+        [
+          "CEE-6977",
+          "./"
+        ],
+        [
+          "CAH-4578",
+          "./"
+        ],
+        [
+          "2009-05-12",
+          "./"
+        ],
+        [
+          "19/03/2016",
+          "./"
+        ],
+        [
+          "2022-02-27",
+          "./"
+        ],
+        [
+          "ACB-2670",
+          "./"
+        ],
+        [
+          "Mary Chen Lee",
+          "./"
+        ]
+      ]
+    },
+    {
+      "id": "3158d98ef0de21da35e9",
+      "reference": "Concat(Sub(M(WORD,2,end),C5), '/', cap('/'))",
+      "visible": [
+        [
+          "zoe.smith@example.com",
+          "//"
+        ],
+        [
+          "mary.novak@example.com",
+          "//"
+        ],
+        [
+          "chen.souza@example.com",
+          "//"
+        ]
+      ],
+      "hidden": [
+        [
+          "Zoe Smith",
+          "//"
+        ],
+        [
+          "john.lee@example.com",
+          "//"
+        ],
+        [
+          "Ana Zoe Souza",
+          "//"
+        ],
+        [
+          "Chen Lucas Ito",
+          "//"
+        ],
+        [
+          "John Priya Adebayo",
+          "//"
+        ],
+        [
+          "mary.adebayo@example.com",
+          "//"
+        ],
+        [
+          "Zoe John Adebayo",
+          "//"
+        ],
+        [
+          "Lucas Zoe Adebayo",
+          "//"
+        ],
+        [
+          "priya.souza@example.com",
+          "//"
+        ],
+        [
+          "ana.ito@example.com",
+          "//"
+        ],
+        [
+          "john.ito@example.com",
+          "//"
+        ],
+        [
+          "Ana Lucas Adebayo",
+          "//"
+        ],
+        [
+          "Zoe Ana Souza",
+          "//"
+        ]
+      ]
+    },
+    {
+      "id": "d9ed0aaf66a42bb9d2a4",
+      "reference": "Concat(Sub(C7,C-7))",
+      "visible": [
+        [
+          "ana.lee@example.com",
+          "@exam"
+        ],
+        [
+          "omar.ito@example.com",
+          "o@exam"
+        ],
+        [
+          "Priya Chen Novak",
+          "he"
+        ]
+      ],
+      "hidden": [
+        [
+          "lucas.ito@example.com",
+          "to@exam"
+        ],
+        [
+          "Lucas Chen Smith",
+          "he"
+        ],
+        [
+          "priya.souza@example.com",
+          "ouza@exam"
+        ],
+        [
+          "mary.souza@example.com",
+          "uza@exam"
+        ],
+        [
+          "zoe.adebayo@example.com",
+          "bayo@exam"
+        ],
+        [
+          "john.khan@example.com",
+          "an@exam"
+        ],
+        [
+          "mary.novak@example.com",
+          "vak@exam"
+        ],
+        [
+          "ana.novak@example.com",
+          "ak@exam"
+        ],
+        [
+          "chen.novak@example.com",
+          "vak@exam"
+        ],
+        [
+          "ana.garcia@example.com",
+          "cia@exam"
+        ],
+        [
+          "mary.adebayo@example.com",
+          "ebayo@exam"
+        ],
+        [
+          "mary.garcia@example.com",
+          "rcia@exam"
+        ],
+        [
+          "john.garcia@example.com",
+          "rcia@exam"
+        ]
+      ]
+    },
+    {
+      "id": "979cb07e01446190fa11",
+      "reference": "Concat(upper('.'), '.', upper('/'), Sub(C5,C4))",
+      "visible": [
+        [
+          "Lucas John Novak",
+          "../"
+        ],
+        [
+          "DAE-7987",
+          "../"
+        ],
+        [
+          "lucas.adebayo@example.com",
+          "../"
+        ]
+      ],
+      "hidden": [
+        [
+          "HAH-8345",
+          "../"
+        ],
+        [
+          "DGG-6497",
+          "../"
+        ],
+        [
+          "2002-04-27",
+          "../"
+        ],
+        [
+          "Chen Lee",
+          "../"
+        ],
+        [
+          "CBG-9310",
+          "../"
+        ],
+        [
+          "john.khan@example.com",
+          "../"
+        ],
+        [
+          "Ana Priya Khan",
+          "../"
+        ],
+        [
+          "chen.khan@example.com",
+          "../"
+        ],
+        [
+          "Lucas Omar Souza",
+          "../"
+        ],
+        [
+          "Omar Zoe Adebayo",
+          "../"
+        ],
+        [
+          "2022-05-27",
+          "../"
+        ],
+        [
+          "omar.khan@example.com",
+          "../"
+        ],
+        [
+          "Ana John Garcia",
+          "../"
+        ]
+      ]
+    },
+    {
+      "id": "15ecb15725c262c40c1f",
+      "reference": "Concat(' ', Sub(C1,C6))",
+      "visible": [
+        [
+          "2025-12-14",
+          " 025-1"
+        ],
+        [
+          "2003-12-18",
+          " 003-1"
+        ],
+        [
+          "zoe.smith@example.com",
+          " oe.sm"
+        ]
+      ],
+      "hidden": [
+        [
+          "27/04/2025",
+          " 7/04/"
+        ],
+        [
+          "Priya Zoe Novak",
+          " riya "
+        ],
+        [
+          "Zoe Chen Novak",
+          " oe Ch"
+        ],
+        [
+          "Omar Priya Adebayo",
+          " mar P"
+        ],
+        [
+          "CDB-3089",
+          " DB-30"
+        ],
+        [
+          "priya.smith@example.com",
+          " riya."
+        ],
+        [
+          "Priya Chen Smith",
+          " riya "
+        ],
+        [
+          "ana.adebayo@example.com",
+          " na.ad"
+        ],
+        [
+          "BCA-4772",
+          " CA-47"
+        ],
+        [
+          "DFF-3643",
+          " FF-36"
+        ],
+        [
+          "08/03/2003",
+          " 8/03/"
+        ],
+        [
+          "2009-12-22",
+          " 009-1"
+        ],
+        [
+          "ana.khan@example.com",
+          " na.kh"
+        ]
+      ]
+    },
+    {
+      "id": "8dd3a083962d965f3529",
+      "reference": "Concat(upper(Sub(C1,M(LOWER,1,end))), cap(Sub(M(UPPER,2,start),C-2)))",
+      "visible": [
+        [
+          "Mary John Garcia",
+          "ARYJohn garc"
+        ],
+        [
+          "Zoe Chen Souza",
+          "OEChen sou"
+        ],
+        [
+          "John Chen Lee",
+          "OHNChen l"
+        ]
+      ],
+      "hidden": [
+        [
+          "Omar Novak",
+          "MARNov"
+        ],
+        [
+          "Ana Zoe Garcia",
+          "NAZoe garc"
+        ],
+        [
+          "John Omar Novak",
+          "OHNOmar nov"
+        ],
+        [
+          "Ana Omar Lee",
+          "NAOmar l"
+        ],
+        [
+          "Zoe Chen Khan",
+          "OEChen kh"
+        ],
+        [
+          "Omar Ito",
+          "MARI"
+        ],
+        [
+          "John Khan",
+          "OHNKh"
+        ],
+        [
+          "Ana Ana Souza",
+          "NAAna sou"
+        ],
+        [
+          "John Ana Adebayo",
+          "OHNAna adeba"
+        ],
+        [
+          "Lucas John Khan",
+          "UCASJohn kh"
+        ],
+        [
+          "Lucas Mary Garcia",
+          "UCASMary garc"
+        ],
+        [
+          "Ana Ana Ito",
+          "NAAna i"
+        ],
+        [
+          "Priya Garcia",
+          "RIYAGarc"
+        ]
+      ]
+    },
+    {
+      "id": "cc8f75ac4534d0959c10",
+      "reference": "Concat(lower(', '))",
+      "visible": [
+        [
+          "mary.novak@example.com",
+          ", "
+        ],
+        [
+          "Ana Omar Smith",
+          ", "
+        ],
+        [
+          "omar.ito@example.com",
+          ", "
+        ]
+      ],
+      "hidden": [
+        [
+          "05/05/2016",
+          ", "
+        ],
+        [
+          "2024-01-02",
+          ", "
+        ],
+        [
+          "omar.adebayo@example.com",
+          ", "
+        ],
+        [
+          "Lucas Adebayo",
+          ", "
+        ],
+        [
+          "Lucas Mary Adebayo",
+          ", "
+        ],
+        [
+          "lucas.lee@example.com",
+          ", "
+        ],
+        [
+          "HFF-6819",
+          ", "
+        ],
+        [
+          "2026-05-07",
+          ", "
+        ],
+        [
+          "AEC-1521",
+          ", "
+        ],
+        [
+          "chen.souza@example.com",
+          ", "
+        ],
+        [
+          "priya.ito@example.com",
+          ", "
+        ],
+        [
+          "HFG-6511",
+          ", "
+        ],
+        [
+          "HAE-5209",
+          ", "
+        ]
+      ]
+    },
+    {
+      "id": "ba47fc84a17e4889b47e",
+      "reference": "Concat(Sub(M(UPPER,1,start),C-2), cap('.'))",
+      "visible": [
+        [
+          "CGB-6159",
+          "CGB-61."
+        ],
+        [
+          "FFB-6353",
+          "FFB-63."
+        ],
+        [
+          "Zoe Lucas Adebayo",
+          "Zoe Lucas Adeba."
+        ]
+      ],
+      "hidden": [
+        [
+          "Ana Omar Smith",
+          "Ana Omar Smi."
+        ],
+        [
+          "Chen Omar Garcia",
+          "Chen Omar Garc."
+        ],
+        [
+          "Omar Ito",
+          "Omar I."
+        ],
+        [
+          "Omar Khan",
+          "Omar Kh."
+        ],
+        [
+          "Zoe Omar Novak",
+          "Zoe Omar Nov."
+        ],
+        [
+          "Zoe Khan",
+          "Zoe Kh."
+        ],
+        [
+          "Mary Ana Novak",
+          "Mary Ana Nov."
+        ],
+        [
+          "Priya Lucas Ito",
+          "Priya Lucas I."
+        ],
+        [
+          "GDE-9327",
+          "GDE-93."
+        ],
+        [
+          "Lucas Lucas Souza",
+          "Lucas Lucas Sou."
+        ],
+        [
+          "HDH-1042",
+          "HDH-10."
+        ],
+        [
+          "Lucas Zoe Adebayo",
+          "Lucas Zoe Adeba."
+        ],
+        [
+          "Priya Zoe Ito",
+          "Priya Zoe I."
+        ]
+      ]
+    },
+    {
+      "id": "e3c0b17c070e8d15984b",
+      "reference": "Concat(cap(Sub(C0,C-7)), Sub(M(LOWER,1,end),M(WORD,2,start)))",
+      "visible": [
+        [
+          "John Mary Lee",
+          "John m "
+        ],
+        [
+          "Omar Priya Ito",
+          "Omar pr "
+        ],
+        [
+          "Lucas Mary Novak",
+          "Lucas mar "
+        ]
+      ],
+      "hidden": [
+        [
+          "omar.smith@example.com",
+          "Omar.smith@exam."
+        ],
+        [
+          "Chen Khan",
+          "Ch "
+        ],
+        [
+          "Ana Omar Adebayo",
+          "Ana omar  "
+        ],
+        [
+          "John Omar Novak",
+          "John oma "
+        ],
+        [
+          "Priya Chen Ito",
+          "Priya c "
+        ],
+        [
+          "Omar Lee",
+          "O "
+        ],
+        [
+          "Ana Zoe Ito",
+          "Ana  "
+        ],
+        [
+          "Mary Zoe Garcia",
+          "Mary zoe "
+        ],
+        [
+          "Lucas Lee",
+          "Lu "
+        ],
+        [
+          "Priya Zoe Garcia",
+          "Priya zoe "
+        ],
+        [
+          "priya.novak@example.com",
+          "Priya.novak@exam."
+        ],
+        [
+          "omar.souza@example.com",
+          "Omar.souza@exam."
+        ],
+        [
+          "john.lee@example.com",
+          "John.lee@exam."
+        ]
+      ]
+    },
+    {
+      "id": "2eb7d17c9b6d5020fd8b",
+      "reference": "Concat(Sub(C1,M(WORD,1,end)), '/')",
+      "visible": [
+        [
+          "CAC-8925",
+          "AC/"
+        ],
+        [
+          "john.smith@example.com",
+          "ohn/"
+        ],
+        [
+          "ana.adebayo@example.com",
+          "na/"
+        ]
+      ],
+      "hidden": [
+        [
+          "Zoe Souza",
+          "oe/"
+        ],
+        [
+          "Omar Chen Lee",
+          "mar/"
+        ],
+        [
+          "AFA-2103",
+          "FA/"
+        ],
+        [
+          "John Adebayo",
+          "ohn/"
+        ],
+        [
+          "Mary Zoe Khan",
+          "ary/"
+        ],
+        [
+          "EEE-8385",
+          "EE/"
+        ],
+        [
+          "Mary Khan",
+          "ary/"
+        ],
+        [
+          "Priya Novak",
+          "riya/"
+        ],
+        [
+          "Chen Omar Smith",
+          "hen/"
+        ],
+        [
+          "zoe.adebayo@example.com",
+          "oe/"
+        ],
+        [
+          "HAA-6719",
+          "AA/"
+        ],
+        [
+          "Zoe Smith",
+          "oe/"
+        ],
+        [
+          "omar.khan@example.com",
+          "mar/"
+        ]
+      ]
+    },
+    {
+      "id": "a22744668188a5f25984",
+      "reference": "Concat('-', Sub(C4,C7))",
+      "visible": [
+        [
+          "FCF-2723",
+          "-272"
+        ],
+        [
+          "2007-12-13",
+          "--12"
+        ],
+        [
+          "2011-04-24",
+          "--04"
+        ]
+      ],
+      "hidden": [
+        [
+          "Mary Adebayo",
+          "- Ad"
+        ],
+        [
+          "BFB-4998",
+          "-499"
+        ],
+        [
+          "2021-05-05",
+          "--05"
+        ],
+        [
+          "Mary Lee",
+          "- Le"
+        ],
+        [
+          "2023-01-23",
+          "--01"
+        ],
+        [
+          "2023-02-18",
+          "--02"
+        ],
+        [
+          "2030-10-17",
+          "--10"
+        ],
+        [
+          "ana.garcia@example.com",
+          "-gar"
+        ],
+        [
+          "CHC-2979",
+          "-297"
+        ],
+        [
+          "FGF-8364",
+          "-836"
+        ],
+        [
+          "Priya Omar Lee",
+          "-a O"
+        ],
+        [
+          "chen.smith@example.com",
+          "-.sm"
+        ],
+        [
+          "10/02/2022",
+          "-2/2"
+        ]
+      ]
+    },
+    {
+      "id": "4b6e7deeb6995456bdfc",
+      "reference": "Concat('.', Sub(C2,M(DIGITS,2,start)))",
+      "visible": [
+        [
+          "2001-10-01",
+          ".01-"
+        ],
+        [
+          "2030-11-22",
+          ".30-"
+        ],
+        [
+          "26/01/2005",
+          "./"
+        ]
+      ],
+      "hidden": [
+        [
+          "2023-12-20",
+          ".23-"
+        ],
+        [
+          "2009-10-19",
+          ".09-"
+        ],
+        [
+          "2004-12-20",
+          ".04-"
+        ],
+        [
+          "22/10/2007",
+          "./"
+        ],
+        [
+          "2022-11-12",
+          ".22-"
+        ],
+        [
+          "2023-10-21",
+          ".23-"
+        ],
+        [
+          "14/03/2020",
+          "./"
+        ],
+        [
+          "2015-04-26",
+          ".15-"
+        ],
+        [
+          "2023-04-18",
+          ".23-"
+        ],
+        [
+          "18/10/2002",
+          "./"
+        ],
+        [
+          "03/12/2004",
+          "./"
+        ],
+        [
+          "08/08/2012",
+          "./"
+        ],
+        [
+          "11/02/2006",
+          "./"
+        ]
+      ]
+    },
+    {
+      "id": "48376bdfb30998b1e768",
+      "reference": "Concat('/', Sub(C3,M(UPPER,2,start)))",
+      "visible": [
+        [
+          "Ana Khan",
+          "/ "
+        ],
+        [
+          "John Smith",
+          "/n "
+        ],
+        [
+          "Omar Lee",
+          "/r "
+        ]
+      ],
+      "hidden": [
+        [
+          "John Lucas Khan",
+          "/n "
+        ],
+        [
+          "Omar Priya Smith",
+          "/r "
+        ],
+        [
+          "Ana Lee",
+          "/ "
+        ],
+        [
+          "Ana John Khan",
+          "/ "
+        ],
+        [
+          "Lucas Adebayo",
+          "/as "
+        ],
+        [
+          "Zoe Smith",
+          "/ "
+        ],
+        [
+          "Priya John Novak",
+          "/ya "
+        ],
+        [
+          "Omar Lucas Lee",
+          "/r "
+        ],
+        [
+          "Zoe Priya Lee",
+          "/ "
+        ],
+        [
+          "Priya Chen Lee",
+          "/ya "
+        ],
+        [
+          "Priya Smith",
+          "/ya "
+        ],
+        [
+          "Ana Novak",
+          "/ "
+        ],
+        [
+          "Mary Priya Novak",
+          "/y "
+        ]
+      ]
+    },
+    {
+      "id": "9bf4a2caef0baea1d2d8",
+      "reference": "Concat('/')",
+      "visible": [
+        [
+          "Omar Chen Smith",
+          "/"
+        ],
+        [
+          "BBC-4961",
+          "/"
+        ],
+        [
+          "17/08/2027",
+          "/"
+        ]
+      ],
+      "hidden": [
+        [
+          "Chen Smith",
+          "/"
+        ],
+        [
+          "GHD-5545",
+          "/"
+        ],
+        [
+          "ana.lee@example.com",
+          "/"
+        ],
+        [
+          "Zoe Garcia",
+          "/"
+        ],
+        [
+          "27/08/2011",
+          "/"
+        ],
+        [
+          "2006-06-07",
+          "/"
+        ],
+        [
+          "2013-02-22",
+          "/"
+        ],
+        [
+          "lucas.novak@example.com",
+          "/"
+        ],
+        [
+          "HCA-8820",
+          "/"
+        ],
+        [
+          "Zoe Mary Khan",
+          "/"
+        ],
+        [
+          "Mary Ana Ito",
+          "/"
+        ],
+        [
+          "08/06/2007",
+          "/"
+        ],
+        [
+          "20/07/2008",
+          "/"
+        ]
+      ]
+    },
+    {
+      "id": "f70f656c7b06da15ca26",
+      "reference": "Concat(cap(Sub(C-8,C-2)), '/')",
+      "visible": [
+        [
+          "18/11/2028",
+          "/11/20/"
+        ],
+        [
+          "Lucas Omar Adebayo",
+          " adeba/"
+        ],
+        [
+          "BCC-9304",
+          "Bcc-93/"
+        ]
+      ],
+      "hidden": [
+        [
+          "14/06/2022",
+          "/06/20/"
+        ],
+        [
+          "Lucas Adebayo",
+          " adeba/"
+        ],
+        [
+          "Omar Smith",
+          "Ar smi/"
+        ],
+        [
+          "DEG-6582",
+          "Deg-65/"
+        ],
+        [
+          "Ana Mary Adebayo",
+          " adeba/"
+        ],
+        [
+          "18/02/2021",
+          "/02/20/"
+        ],
+        [
+          "HGC-5120",
+          "Hgc-51/"
+        ],
+        [
+          "Omar Ana Souza",
+          "Na sou/"
+        ],
+        [
+          "Ana John Souza",
+          "Hn sou/"
+        ],
+        [
+          "2017-08-16",
+          "17-08-/"
+        ],
+        [
+          "Lucas Ito",
+          "Ucas i/"
+        ],
+        [
+          "Omar Ito",
+          "Omar i/"
+        ],
+        [
+          "05/12/2024",
+          "/12/20/"
+        ]
+      ]
+    },
+    {
+      "id": "c04401fde7f0b7177986",
+      "reference": "Concat(cap(Sub(C4,M(WORD,2,end))))",
+      "visible": [
+        [
+          "Lucas Chen Souza",
+          "S chen"
+        ],
+        [
+          "Ana Garcia",
+          "Garcia"
+        ],
+        [
+          "Priya Chen Lee",
+          "A chen"
+        ]
+      ],
+      "hidden": [
+        [
+          "John Novak",
+          " novak"
+        ],
+        [
+          "John Lucas Garcia",
+          " lucas"
+        ],
+        [
+          "Omar Khan",
+          " khan"
+        ],
+        [
+          "Chen Omar Khan",
+          " omar"
+        ],
+        [
+          "Ana John Lee",
+          "John"
+        ],
+        [
+          "Priya Zoe Khan",
+          "A zoe"
+        ],
+        [
+          "Chen Lee",
+          " lee"
+        ],
+        [
+          "zoe.smith@example.com",
+          "Smith"
+        ],
+        [
+          "omar.lee@example.com",
+          ".lee"
+        ],
+        [
+          "zoe.ito@example.com",
+          "Ito"
+        ],
+        [
+          "Omar Smith",
+          " smith"
+        ],
+        [
+          "ana.novak@example.com",
+          "Novak"
+        ],
+        [
+          "Lucas Chen Lee",
+          "S chen"
+        ]
+      ]
+    },
+    {
+      "id": "5ea5da95dc714257167d",
+      "reference": "Concat(Sub(C8,C-1))",
+      "visible": [
+        [
+          "21/09/2010",
+          "1"
+        ],
+        [
+          "Chen Zoe Souza",
+          " Souz"
+        ],
+        [
+          "27/10/2014",
+          "1"
+        ]
+      ],
+      "hidden": [
+        [
+          "22/07/2012",
+          "1"
+        ],
+        [
+          "john.khan@example.com",
+          "n@example.co"
+        ],
+        [
+          "John John Adebayo",
+          "n Adebay"
+        ],
+        [
+          "Priya Priya Ito",
+          "iya It"
+        ],
+        [
+          "03/04/2023",
+          "2"
+        ],
+        [
+          "chen.souza@example.com",
+          "za@example.co"
+        ],
+        [
+          "priya.souza@example.com",
+          "uza@example.co"
+        ],
+        [
+          "Priya Mary Lee",
+          "ry Le"
+        ],
+        [
+          "zoe.garcia@example.com",
+          "ia@example.co"
+        ],
+        [
+          "Zoe Adebayo",
+          "ay"
+        ],
+        [
+          "02/10/2002",
+          "0"
+        ],
+        [
+          "Chen Omar Khan",
+          "r Kha"
+        ],
+        [
+          "Zoe John Ito",
+          " It"
+        ]
+      ]
+    },
+    {
+      "id": "28ba909ccd72f38570db",
+      "reference": "Concat(Sub(C0,C3), Sub(C3,M(UPPER,1,end)))",
+      "visible": [
+        [
+          "Priya Souza",
+          "Pri"
+        ],
+        [
+          "Lucas Adebayo",
+          "Luc"
+        ],
+        [
+          "Mary Khan",
+          "Mar"
+        ]
+      ],
+      "hidden": [
+        [
+          "Chen Lucas Lee",
+          "Che"
+        ],
+        [
+          "John Omar Khan",
+          "Joh"
+        ],
+        [
+          "BAH-4662",
+          "BAH"
+        ],
+        [
+          "Zoe Lee",
+          "Zoe"
+        ],
+        [
+          "Lucas Khan",
+          "Luc"
+        ],
+        [
+          "CBG-3219",
+          "CBG"
+        ],
+        [
+          "Mary Priya Souza",
+          "Mar"
+        ],
+        [
+          "BCH-9351",
+          "BCH"
+        ],
+        [
+          "Ana Khan",
+          "Ana"
+        ],
+        [
+          "CAD-9079",
+          "CAD"
+        ],
+        [
+          "Zoe Lucas Adebayo",
+          "Zoe"
+        ],
+        [
+          "Chen Garcia",
+          "Che"
+        ],
+        [
+          "ABF-7469",
+          "ABF"
+        ]
+      ]
+    },
+    {
+      "id": "5c6cca3cd81d7a45c9b4",
+      "reference": "Concat(': ', Sub(M(WORD,1,end),C4), Sub(M(DIGITS,1,start),M(DIGITS,1,start)))",
+      "visible": [
+        [
+          "FBB-4227",
+          ": -"
+        ],
+        [
+          "HFB-1647",
+          ": -"
+        ],
+        [
+          "EBD-4558",
+          ": -"
+        ]
+      ],
+      "hidden": [
+        [
+          "DCG-2424",
+          ": -"
+        ],
+        [
+          "EHD-1261",
+          ": -"
+        ],
+        [
+          "GHD-7205",
+          ": -"
+        ],
+        [
+          "DEB-7723",
+          ": -"
+        ],
+        [
+          "GDG-1072",
+          ": -"
+        ],
+        [
+          "DHD-9898",
+          ": -"
+        ],
+        [
+          "GDA-2827",
+          ": -"
+        ],
+        [
+          "CGB-8390",
+          ": -"
+        ],
+        [
+          "GHC-4526",
+          ": -"
+        ],
+        [
+          "BGC-1621",
+          ": -"
+        ],
+        [
+          "CBD-1340",
+          ": -"
+        ],
+        [
+          "EFH-8395",
+          ": -"
+        ],
+        [
+          "FDB-9880",
+          ": -"
+        ]
+      ]
+    },
+    {
+      "id": "e70fc0e02b3090b30af7",
+      "reference": "Concat('/', ': ', ': ')",
+      "visible": [
+        [
+          "lucas.novak@example.com",
+          "/: : "
+        ],
+        [
+          "HAA-2407",
+          "/: : "
+        ],
+        [
+          "28/07/2001",
+          "/: : "
+        ]
+      ],
+      "hidden": [
+        [
+          "john.souza@example.com",
+          "/: : "
+        ],
+        [
+          "DAE-6185",
+          "/: : "
+        ],
+        [
+          "FED-6749",
+          "/: : "
+        ],
+        [
+          "BBC-4329",
+          "/: : "
+        ],
+        [
+          "2018-09-23",
+          "/: : "
+        ],
+        [
+          "13/04/2012",
+          "/: : "
+        ],
+        [
+          "24/09/2025",
+          "/: : "
+        ],
+        [
+          "Zoe Novak",
+          "/: : "
+        ],
+        [
+          "Zoe Garcia",
+          "/: : "
+        ],
+        [
+          "Ana Adebayo",
+          "/: : "
+        ],
+        [
+          "2005-06-25",
+          "/: : "
+        ],
+        [
+          "2015-02-05",
+          "/: : "
+        ],
+        [
+          "Omar Novak",
+          "/: : "
+        ]
+      ]
+    },
+    {
+      "id": "0c267f9eef700116d9f8",
+      "reference": "Concat(Sub(M(WORD,2,start),M(LOWER,2,end)))",
+      "visible": [
+        [
+          "John Smith",
+          "Smith"
+        ],
+        [
+          "Zoe Souza",
+          "Souza"
+        ],
+        [
+          "Chen Ana Smith",
+          "Ana"
+        ]
+      ],
+      "hidden": [
+        [
+          "Mary Smith",
+          "Smith"
+        ],
+        [
+          "zoe.lee@example.com",
+          "lee"
+        ],
+        [
+          "omar.adebayo@example.com",
+          "adebayo"
+        ],
+        [
+          "zoe.ito@example.com",
+          "ito"
+        ],
+        [
+          "Chen Khan",
+          "Khan"
+        ],
+        [
+          "Lucas Priya Adebayo",
+          "Priya"
+        ],
+        [
+          "ana.novak@example.com",
+          "novak"
+        ],
+        [
+          "Lucas John Lee",
+          "John"
+        ],
+        [
+          "Lucas Ana Garcia",
+          "Ana"
+        ],
+        [
+          "Mary Souza",
+          "Souza"
+        ],
+        [
+          "Lucas Ito",
+          "Ito"
+        ],
+        [
+          "omar.garcia@example.com",
+          "garcia"
+        ],
+        [
+          "chen.lee@example.com",
+          "lee"
+        ]
+      ]
+    }
+  ]
+}

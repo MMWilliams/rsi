@@ -1,0 +1,7008 @@
+{
+  "scope": "Six independent whole learning episodes, 12 frozen policy arms",
+  "primary": "I4 versus I0 under identical new bases and label allowance",
+  "screen": {
+    "I4_minus_I0_by_episode": [
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "I4_wins": 0,
+    "mean_I4_minus_I0": -0.16666666666666666,
+    "mean_I4": 40.166666666666664,
+    "mean_fixed_uncertainty": 39.666666666666664,
+    "mean_fixed_disagreement": 39.166666666666664,
+    "passed": false
+  },
+  "episodes": [
+    {
+      "offset": 3000,
+      "audit": {
+        "status": "passed",
+        "offset": 3000,
+        "candidate_calls_replayed": 268,
+        "arms": 12,
+        "checkpoints_per_arm": 5,
+        "equal_improvement_labels_per_arm": 192,
+        "scope": "same host interpreter; no independent semantic oracle"
+      },
+      "initial_controls": {
+        "base": 39,
+        "deployed": 40,
+        "lexical": 38,
+        "structural": 41,
+        "behavior": 40,
+        "ensemble": 40,
+        "guarded": 39
+      },
+      "reachable": 41,
+      "reachability_by_panel": {
+        "final_mixed": 23,
+        "final_ast": 12,
+        "final_changed": 6
+      },
+      "curves": {
+        "I0": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "I2": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "I4": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "I4_scrambled": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "empty": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "I0_online": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "I4_online": [
+          40,
+          40,
+          40,
+          41,
+          41
+        ],
+        "fixed_uniform": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "fixed_novelty": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "fixed_disagreement": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "fixed_combined": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "fixed_uncertainty_strict": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ]
+      },
+      "updates": {
+        "I0": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I2": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I4": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I4_scrambled": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "empty": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I0_online": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I4_online": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "3764f481fe9fbd84c0f1b852"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_uniform": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_novelty": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_disagreement": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_combined": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_uncertainty_strict": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ]
+      },
+      "panels": {
+        "I0": {
+          "final_mixed": [
+            23,
+            23,
+            23,
+            23,
+            23
+          ],
+          "final_ast": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "I2": {
+          "final_mixed": [
+            23,
+            23,
+            23,
+            23,
+            23
+          ],
+          "final_ast": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "I4": {
+          "final_mixed": [
+            23,
+            23,
+            23,
+            23,
+            23
+          ],
+          "final_ast": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "I4_scrambled": {
+          "final_mixed": [
+            23,
+            23,
+            23,
+            23,
+            23
+          ],
+          "final_ast": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "empty": {
+          "final_mixed": [
+            23,
+            23,
+            23,
+            23,
+            23
+          ],
+          "final_ast": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "I0_online": {
+          "final_mixed": [
+            23,
+            23,
+            23,
+            23,
+            23
+          ],
+          "final_ast": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "I4_online": {
+          "final_mixed": [
+            23,
+            23,
+            23,
+            23,
+            23
+          ],
+          "final_ast": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            5,
+            5,
+            5,
+            6,
+            6
+          ]
+        },
+        "fixed_uniform": {
+          "final_mixed": [
+            23,
+            23,
+            23,
+            23,
+            23
+          ],
+          "final_ast": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "fixed_novelty": {
+          "final_mixed": [
+            23,
+            23,
+            23,
+            23,
+            23
+          ],
+          "final_ast": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "fixed_disagreement": {
+          "final_mixed": [
+            23,
+            23,
+            23,
+            23,
+            23
+          ],
+          "final_ast": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "fixed_combined": {
+          "final_mixed": [
+            23,
+            23,
+            23,
+            23,
+            23
+          ],
+          "final_ast": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "fixed_uncertainty_strict": {
+          "final_mixed": [
+            23,
+            23,
+            23,
+            23,
+            23
+          ],
+          "final_ast": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        }
+      },
+      "costs": {
+        "I0": {
+          "wall_seconds": 2.557605500012869,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 452,
+          "admission_assessments": 5
+        },
+        "I2": {
+          "wall_seconds": 0.8968925999943167,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 452,
+          "admission_assessments": 5
+        },
+        "I4": {
+          "wall_seconds": 0.49334009998710826,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 452,
+          "admission_assessments": 5
+        },
+        "I4_scrambled": {
+          "wall_seconds": 0.38055389997316524,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 452,
+          "admission_assessments": 5
+        },
+        "empty": {
+          "wall_seconds": 0.5239630000141915,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 452,
+          "admission_assessments": 5
+        },
+        "I0_online": {
+          "wall_seconds": 0.32924399999319576,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 452,
+          "admission_assessments": 5
+        },
+        "I4_online": {
+          "wall_seconds": 0.4633914000005461,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 452,
+          "admission_assessments": 5
+        },
+        "fixed_uniform": {
+          "wall_seconds": 0.32250730000669137,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 452,
+          "admission_assessments": 5
+        },
+        "fixed_novelty": {
+          "wall_seconds": 0.3754373000119813,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 452,
+          "admission_assessments": 5
+        },
+        "fixed_disagreement": {
+          "wall_seconds": 0.32929979998152703,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 452,
+          "admission_assessments": 5
+        },
+        "fixed_combined": {
+          "wall_seconds": 0.36040619999403134,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 452,
+          "admission_assessments": 5
+        },
+        "fixed_uncertainty_strict": {
+          "wall_seconds": 0.4122283999749925,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 452,
+          "admission_assessments": 5
+        }
+      },
+      "candidate_generation": {
+        "parallel_wall_seconds": 226.93783719997737,
+        "workers": 4,
+        "summed_worker_wall_seconds_by_source": {
+          "v67": 890.3483124001068,
+          "v73": 8.957288200093899
+        }
+      },
+      "paired_final": {
+        "I0": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I2": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I4_scrambled": {
+          "right_only": [],
+          "left_only": []
+        },
+        "empty": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I0_online": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I4_online": {
+          "right_only": [],
+          "left_only": [
+            "3764f481fe9fbd84c0f1b852"
+          ]
+        },
+        "fixed_uniform": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_novelty": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_disagreement": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_combined": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_uncertainty_strict": {
+          "right_only": [],
+          "left_only": []
+        }
+      }
+    },
+    {
+      "offset": 4000,
+      "audit": {
+        "status": "passed",
+        "offset": 4000,
+        "candidate_calls_replayed": 268,
+        "arms": 12,
+        "checkpoints_per_arm": 5,
+        "equal_improvement_labels_per_arm": 192,
+        "scope": "same host interpreter; no independent semantic oracle"
+      },
+      "initial_controls": {
+        "base": 35,
+        "deployed": 38,
+        "lexical": 37,
+        "structural": 37,
+        "behavior": 40,
+        "ensemble": 38,
+        "guarded": 35
+      },
+      "reachable": 41,
+      "reachability_by_panel": {
+        "final_mixed": 23,
+        "final_ast": 12,
+        "final_changed": 6
+      },
+      "curves": {
+        "I0": [
+          38,
+          38,
+          38,
+          38,
+          41
+        ],
+        "I2": [
+          38,
+          38,
+          38,
+          38,
+          40
+        ],
+        "I4": [
+          38,
+          38,
+          38,
+          38,
+          40
+        ],
+        "I4_scrambled": [
+          38,
+          38,
+          38,
+          41,
+          41
+        ],
+        "empty": [
+          38,
+          38,
+          38,
+          38,
+          38
+        ],
+        "I0_online": [
+          38,
+          38,
+          38,
+          38,
+          41
+        ],
+        "I4_online": [
+          38,
+          38,
+          38,
+          38,
+          38
+        ],
+        "fixed_uniform": [
+          38,
+          38,
+          38,
+          38,
+          38
+        ],
+        "fixed_novelty": [
+          38,
+          38,
+          38,
+          38,
+          38
+        ],
+        "fixed_disagreement": [
+          38,
+          38,
+          38,
+          41,
+          41
+        ],
+        "fixed_combined": [
+          38,
+          38,
+          38,
+          38,
+          38
+        ],
+        "fixed_uncertainty_strict": [
+          38,
+          38,
+          38,
+          38,
+          40
+        ]
+      },
+      "updates": {
+        "I0": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 3,
+            "tasks": {
+              "right_only": [
+                "93357dfd84f5496115c0a60c",
+                "2004cac9e2c019bb7f65d932",
+                "d954fdf1520511c327956681"
+              ],
+              "left_only": []
+            }
+          }
+        ],
+        "I2": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "93357dfd84f5496115c0a60c",
+                "2004cac9e2c019bb7f65d932",
+                "d954fdf1520511c327956681"
+              ],
+              "left_only": [
+                "3f1d0ef255bd95c8d5b68638"
+              ]
+            }
+          }
+        ],
+        "I4": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "93357dfd84f5496115c0a60c",
+                "2004cac9e2c019bb7f65d932",
+                "d954fdf1520511c327956681"
+              ],
+              "left_only": [
+                "3f1d0ef255bd95c8d5b68638"
+              ]
+            }
+          }
+        ],
+        "I4_scrambled": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 3,
+            "tasks": {
+              "right_only": [
+                "93357dfd84f5496115c0a60c",
+                "2004cac9e2c019bb7f65d932",
+                "d954fdf1520511c327956681"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "empty": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I0_online": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "novelty",
+            "delta": 3,
+            "tasks": {
+              "right_only": [
+                "93357dfd84f5496115c0a60c",
+                "2004cac9e2c019bb7f65d932",
+                "d954fdf1520511c327956681"
+              ],
+              "left_only": []
+            }
+          }
+        ],
+        "I4_online": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_uniform": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_novelty": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_disagreement": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 3,
+            "tasks": {
+              "right_only": [
+                "93357dfd84f5496115c0a60c",
+                "2004cac9e2c019bb7f65d932",
+                "d954fdf1520511c327956681"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_combined": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_uncertainty_strict": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "93357dfd84f5496115c0a60c",
+                "2004cac9e2c019bb7f65d932",
+                "d954fdf1520511c327956681"
+              ],
+              "left_only": [
+                "3f1d0ef255bd95c8d5b68638"
+              ]
+            }
+          }
+        ]
+      },
+      "panels": {
+        "I0": {
+          "final_mixed": [
+            22,
+            22,
+            22,
+            22,
+            23
+          ],
+          "final_ast": [
+            10,
+            10,
+            10,
+            10,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I2": {
+          "final_mixed": [
+            22,
+            22,
+            22,
+            22,
+            23
+          ],
+          "final_ast": [
+            10,
+            10,
+            10,
+            10,
+            11
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I4": {
+          "final_mixed": [
+            22,
+            22,
+            22,
+            22,
+            23
+          ],
+          "final_ast": [
+            10,
+            10,
+            10,
+            10,
+            11
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I4_scrambled": {
+          "final_mixed": [
+            22,
+            22,
+            22,
+            23,
+            23
+          ],
+          "final_ast": [
+            10,
+            10,
+            10,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "empty": {
+          "final_mixed": [
+            22,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I0_online": {
+          "final_mixed": [
+            22,
+            22,
+            22,
+            22,
+            23
+          ],
+          "final_ast": [
+            10,
+            10,
+            10,
+            10,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I4_online": {
+          "final_mixed": [
+            22,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_uniform": {
+          "final_mixed": [
+            22,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_novelty": {
+          "final_mixed": [
+            22,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_disagreement": {
+          "final_mixed": [
+            22,
+            22,
+            22,
+            23,
+            23
+          ],
+          "final_ast": [
+            10,
+            10,
+            10,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_combined": {
+          "final_mixed": [
+            22,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_uncertainty_strict": {
+          "final_mixed": [
+            22,
+            22,
+            22,
+            22,
+            23
+          ],
+          "final_ast": [
+            10,
+            10,
+            10,
+            10,
+            11
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        }
+      },
+      "costs": {
+        "I0": {
+          "wall_seconds": 2.8553169000078924,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 374,
+          "admission_assessments": 5
+        },
+        "I2": {
+          "wall_seconds": 0.6286833000194747,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 374,
+          "admission_assessments": 5
+        },
+        "I4": {
+          "wall_seconds": 0.33534409999265336,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 374,
+          "admission_assessments": 5
+        },
+        "I4_scrambled": {
+          "wall_seconds": 0.4247940000204835,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 374,
+          "admission_assessments": 5
+        },
+        "empty": {
+          "wall_seconds": 0.5176529999880586,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 374,
+          "admission_assessments": 5
+        },
+        "I0_online": {
+          "wall_seconds": 0.3480578000016976,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 374,
+          "admission_assessments": 5
+        },
+        "I4_online": {
+          "wall_seconds": 0.3076166000100784,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 374,
+          "admission_assessments": 5
+        },
+        "fixed_uniform": {
+          "wall_seconds": 0.31131859999732114,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 374,
+          "admission_assessments": 5
+        },
+        "fixed_novelty": {
+          "wall_seconds": 0.4250811999954749,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 374,
+          "admission_assessments": 5
+        },
+        "fixed_disagreement": {
+          "wall_seconds": 0.45610549999400973,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 374,
+          "admission_assessments": 5
+        },
+        "fixed_combined": {
+          "wall_seconds": 0.32792670000344515,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 374,
+          "admission_assessments": 5
+        },
+        "fixed_uncertainty_strict": {
+          "wall_seconds": 0.34257680000155233,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 374,
+          "admission_assessments": 5
+        }
+      },
+      "candidate_generation": {
+        "parallel_wall_seconds": 215.67652920002,
+        "workers": 4,
+        "summed_worker_wall_seconds_by_source": {
+          "v67": 844.8544762002421,
+          "v73": 9.910796099924482
+        }
+      },
+      "paired_final": {
+        "I0": {
+          "right_only": [],
+          "left_only": [
+            "3f1d0ef255bd95c8d5b68638"
+          ]
+        },
+        "I2": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I4_scrambled": {
+          "right_only": [],
+          "left_only": [
+            "3f1d0ef255bd95c8d5b68638"
+          ]
+        },
+        "empty": {
+          "right_only": [
+            "93357dfd84f5496115c0a60c",
+            "2004cac9e2c019bb7f65d932",
+            "d954fdf1520511c327956681"
+          ],
+          "left_only": [
+            "3f1d0ef255bd95c8d5b68638"
+          ]
+        },
+        "I0_online": {
+          "right_only": [],
+          "left_only": [
+            "3f1d0ef255bd95c8d5b68638"
+          ]
+        },
+        "I4_online": {
+          "right_only": [
+            "93357dfd84f5496115c0a60c",
+            "2004cac9e2c019bb7f65d932",
+            "d954fdf1520511c327956681"
+          ],
+          "left_only": [
+            "3f1d0ef255bd95c8d5b68638"
+          ]
+        },
+        "fixed_uniform": {
+          "right_only": [
+            "93357dfd84f5496115c0a60c",
+            "2004cac9e2c019bb7f65d932",
+            "d954fdf1520511c327956681"
+          ],
+          "left_only": [
+            "3f1d0ef255bd95c8d5b68638"
+          ]
+        },
+        "fixed_novelty": {
+          "right_only": [
+            "93357dfd84f5496115c0a60c",
+            "2004cac9e2c019bb7f65d932",
+            "d954fdf1520511c327956681"
+          ],
+          "left_only": [
+            "3f1d0ef255bd95c8d5b68638"
+          ]
+        },
+        "fixed_disagreement": {
+          "right_only": [],
+          "left_only": [
+            "3f1d0ef255bd95c8d5b68638"
+          ]
+        },
+        "fixed_combined": {
+          "right_only": [
+            "93357dfd84f5496115c0a60c",
+            "2004cac9e2c019bb7f65d932",
+            "d954fdf1520511c327956681"
+          ],
+          "left_only": [
+            "3f1d0ef255bd95c8d5b68638"
+          ]
+        },
+        "fixed_uncertainty_strict": {
+          "right_only": [],
+          "left_only": []
+        }
+      }
+    },
+    {
+      "offset": 5000,
+      "audit": {
+        "status": "passed",
+        "offset": 5000,
+        "candidate_calls_replayed": 268,
+        "arms": 12,
+        "checkpoints_per_arm": 5,
+        "equal_improvement_labels_per_arm": 192,
+        "scope": "same host interpreter; no independent semantic oracle"
+      },
+      "initial_controls": {
+        "base": 31,
+        "deployed": 33,
+        "lexical": 31,
+        "structural": 32,
+        "behavior": 39,
+        "ensemble": 33,
+        "guarded": 32
+      },
+      "reachable": 40,
+      "reachability_by_panel": {
+        "final_mixed": 22,
+        "final_ast": 12,
+        "final_changed": 6
+      },
+      "curves": {
+        "I0": [
+          33,
+          34,
+          33,
+          40,
+          40
+        ],
+        "I2": [
+          33,
+          34,
+          34,
+          40,
+          40
+        ],
+        "I4": [
+          33,
+          34,
+          34,
+          40,
+          40
+        ],
+        "I4_scrambled": [
+          33,
+          34,
+          40,
+          40,
+          40
+        ],
+        "empty": [
+          33,
+          33,
+          33,
+          33,
+          33
+        ],
+        "I0_online": [
+          33,
+          34,
+          34,
+          34,
+          34
+        ],
+        "I4_online": [
+          33,
+          34,
+          34,
+          40,
+          40
+        ],
+        "fixed_uniform": [
+          33,
+          33,
+          33,
+          33,
+          33
+        ],
+        "fixed_novelty": [
+          33,
+          33,
+          40,
+          40,
+          40
+        ],
+        "fixed_disagreement": [
+          33,
+          34,
+          33,
+          34,
+          34
+        ],
+        "fixed_combined": [
+          33,
+          34,
+          34,
+          34,
+          34
+        ],
+        "fixed_uncertainty_strict": [
+          33,
+          33,
+          40,
+          40,
+          40
+        ]
+      },
+      "updates": {
+        "I0": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "a03af9530abb280de35557f5"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": -1,
+            "tasks": {
+              "right_only": [],
+              "left_only": [
+                "a03af9530abb280de35557f5"
+              ]
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 7,
+            "tasks": {
+              "right_only": [
+                "7c3df86d1a7f020938ce55cd",
+                "e0d5e92b6fbca20b82dec927",
+                "a03af9530abb280de35557f5",
+                "580af71e1c7ed4d25a2499d4",
+                "2ee6cdb45df311239854a152",
+                "5f2cc0400a4af6e4424b4d3d",
+                "db7541d7d4ac064dd49f588c"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I2": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "2ee6cdb45df311239854a152"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 6,
+            "tasks": {
+              "right_only": [
+                "7c3df86d1a7f020938ce55cd",
+                "e0d5e92b6fbca20b82dec927",
+                "a03af9530abb280de35557f5",
+                "580af71e1c7ed4d25a2499d4",
+                "5f2cc0400a4af6e4424b4d3d",
+                "db7541d7d4ac064dd49f588c"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I4": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "2ee6cdb45df311239854a152"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 6,
+            "tasks": {
+              "right_only": [
+                "7c3df86d1a7f020938ce55cd",
+                "e0d5e92b6fbca20b82dec927",
+                "a03af9530abb280de35557f5",
+                "580af71e1c7ed4d25a2499d4",
+                "5f2cc0400a4af6e4424b4d3d",
+                "db7541d7d4ac064dd49f588c"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I4_scrambled": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "a03af9530abb280de35557f5"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 6,
+            "tasks": {
+              "right_only": [
+                "7c3df86d1a7f020938ce55cd",
+                "e0d5e92b6fbca20b82dec927",
+                "580af71e1c7ed4d25a2499d4",
+                "2ee6cdb45df311239854a152",
+                "5f2cc0400a4af6e4424b4d3d",
+                "db7541d7d4ac064dd49f588c"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "empty": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I0_online": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "a03af9530abb280de35557f5"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [
+                "2ee6cdb45df311239854a152"
+              ],
+              "left_only": [
+                "a03af9530abb280de35557f5"
+              ]
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I4_online": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "2ee6cdb45df311239854a152"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 6,
+            "tasks": {
+              "right_only": [
+                "7c3df86d1a7f020938ce55cd",
+                "e0d5e92b6fbca20b82dec927",
+                "a03af9530abb280de35557f5",
+                "580af71e1c7ed4d25a2499d4",
+                "5f2cc0400a4af6e4424b4d3d",
+                "db7541d7d4ac064dd49f588c"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_uniform": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_novelty": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "novelty",
+            "delta": 7,
+            "tasks": {
+              "right_only": [
+                "7c3df86d1a7f020938ce55cd",
+                "e0d5e92b6fbca20b82dec927",
+                "a03af9530abb280de35557f5",
+                "580af71e1c7ed4d25a2499d4",
+                "2ee6cdb45df311239854a152",
+                "5f2cc0400a4af6e4424b4d3d",
+                "db7541d7d4ac064dd49f588c"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_disagreement": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "a03af9530abb280de35557f5"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": -1,
+            "tasks": {
+              "right_only": [],
+              "left_only": [
+                "a03af9530abb280de35557f5"
+              ]
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "e0d5e92b6fbca20b82dec927"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_combined": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "a03af9530abb280de35557f5"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_uncertainty_strict": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 7,
+            "tasks": {
+              "right_only": [
+                "7c3df86d1a7f020938ce55cd",
+                "e0d5e92b6fbca20b82dec927",
+                "a03af9530abb280de35557f5",
+                "580af71e1c7ed4d25a2499d4",
+                "2ee6cdb45df311239854a152",
+                "5f2cc0400a4af6e4424b4d3d",
+                "db7541d7d4ac064dd49f588c"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ]
+      },
+      "panels": {
+        "I0": {
+          "final_mixed": [
+            20,
+            20,
+            20,
+            22,
+            22
+          ],
+          "final_ast": [
+            7,
+            8,
+            7,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I2": {
+          "final_mixed": [
+            20,
+            20,
+            20,
+            22,
+            22
+          ],
+          "final_ast": [
+            7,
+            8,
+            8,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I4": {
+          "final_mixed": [
+            20,
+            20,
+            20,
+            22,
+            22
+          ],
+          "final_ast": [
+            7,
+            8,
+            8,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I4_scrambled": {
+          "final_mixed": [
+            20,
+            20,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            7,
+            8,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "empty": {
+          "final_mixed": [
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "final_ast": [
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I0_online": {
+          "final_mixed": [
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "final_ast": [
+            7,
+            8,
+            8,
+            8,
+            8
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I4_online": {
+          "final_mixed": [
+            20,
+            20,
+            20,
+            22,
+            22
+          ],
+          "final_ast": [
+            7,
+            8,
+            8,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_uniform": {
+          "final_mixed": [
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "final_ast": [
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_novelty": {
+          "final_mixed": [
+            20,
+            20,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            7,
+            7,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_disagreement": {
+          "final_mixed": [
+            20,
+            20,
+            20,
+            21,
+            21
+          ],
+          "final_ast": [
+            7,
+            8,
+            7,
+            7,
+            7
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_combined": {
+          "final_mixed": [
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "final_ast": [
+            7,
+            8,
+            8,
+            8,
+            8
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_uncertainty_strict": {
+          "final_mixed": [
+            20,
+            20,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            7,
+            7,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        }
+      },
+      "costs": {
+        "I0": {
+          "wall_seconds": 2.7574905999936163,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 440,
+          "admission_assessments": 5
+        },
+        "I2": {
+          "wall_seconds": 0.7331865000014659,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 440,
+          "admission_assessments": 5
+        },
+        "I4": {
+          "wall_seconds": 0.4703888999938499,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 440,
+          "admission_assessments": 5
+        },
+        "I4_scrambled": {
+          "wall_seconds": 0.5250883000262547,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 440,
+          "admission_assessments": 5
+        },
+        "empty": {
+          "wall_seconds": 0.7590022000076715,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 440,
+          "admission_assessments": 5
+        },
+        "I0_online": {
+          "wall_seconds": 0.5188333000114653,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 440,
+          "admission_assessments": 5
+        },
+        "I4_online": {
+          "wall_seconds": 0.540903499990236,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 440,
+          "admission_assessments": 5
+        },
+        "fixed_uniform": {
+          "wall_seconds": 0.3364735999784898,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 440,
+          "admission_assessments": 5
+        },
+        "fixed_novelty": {
+          "wall_seconds": 0.7709099999919999,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 440,
+          "admission_assessments": 5
+        },
+        "fixed_disagreement": {
+          "wall_seconds": 0.5432444999751169,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 440,
+          "admission_assessments": 5
+        },
+        "fixed_combined": {
+          "wall_seconds": 0.4230293000000529,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 440,
+          "admission_assessments": 5
+        },
+        "fixed_uncertainty_strict": {
+          "wall_seconds": 0.4228777000098489,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 440,
+          "admission_assessments": 5
+        }
+      },
+      "candidate_generation": {
+        "parallel_wall_seconds": 232.41347989998758,
+        "workers": 4,
+        "summed_worker_wall_seconds_by_source": {
+          "v67": 913.2728356002481,
+          "v73": 8.232120100146858
+        }
+      },
+      "paired_final": {
+        "I0": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I2": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I4_scrambled": {
+          "right_only": [],
+          "left_only": []
+        },
+        "empty": {
+          "right_only": [
+            "7c3df86d1a7f020938ce55cd",
+            "e0d5e92b6fbca20b82dec927",
+            "a03af9530abb280de35557f5",
+            "580af71e1c7ed4d25a2499d4",
+            "2ee6cdb45df311239854a152",
+            "5f2cc0400a4af6e4424b4d3d",
+            "db7541d7d4ac064dd49f588c"
+          ],
+          "left_only": []
+        },
+        "I0_online": {
+          "right_only": [
+            "7c3df86d1a7f020938ce55cd",
+            "e0d5e92b6fbca20b82dec927",
+            "a03af9530abb280de35557f5",
+            "580af71e1c7ed4d25a2499d4",
+            "5f2cc0400a4af6e4424b4d3d",
+            "db7541d7d4ac064dd49f588c"
+          ],
+          "left_only": []
+        },
+        "I4_online": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_uniform": {
+          "right_only": [
+            "7c3df86d1a7f020938ce55cd",
+            "e0d5e92b6fbca20b82dec927",
+            "a03af9530abb280de35557f5",
+            "580af71e1c7ed4d25a2499d4",
+            "2ee6cdb45df311239854a152",
+            "5f2cc0400a4af6e4424b4d3d",
+            "db7541d7d4ac064dd49f588c"
+          ],
+          "left_only": []
+        },
+        "fixed_novelty": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_disagreement": {
+          "right_only": [
+            "7c3df86d1a7f020938ce55cd",
+            "a03af9530abb280de35557f5",
+            "580af71e1c7ed4d25a2499d4",
+            "2ee6cdb45df311239854a152",
+            "5f2cc0400a4af6e4424b4d3d",
+            "db7541d7d4ac064dd49f588c"
+          ],
+          "left_only": []
+        },
+        "fixed_combined": {
+          "right_only": [
+            "7c3df86d1a7f020938ce55cd",
+            "e0d5e92b6fbca20b82dec927",
+            "580af71e1c7ed4d25a2499d4",
+            "2ee6cdb45df311239854a152",
+            "5f2cc0400a4af6e4424b4d3d",
+            "db7541d7d4ac064dd49f588c"
+          ],
+          "left_only": []
+        },
+        "fixed_uncertainty_strict": {
+          "right_only": [],
+          "left_only": []
+        }
+      }
+    },
+    {
+      "offset": 6000,
+      "audit": {
+        "status": "passed",
+        "offset": 6000,
+        "candidate_calls_replayed": 268,
+        "arms": 12,
+        "checkpoints_per_arm": 5,
+        "equal_improvement_labels_per_arm": 192,
+        "scope": "same host interpreter; no independent semantic oracle"
+      },
+      "initial_controls": {
+        "base": 38,
+        "deployed": 40,
+        "lexical": 38,
+        "structural": 40,
+        "behavior": 40,
+        "ensemble": 40,
+        "guarded": 39
+      },
+      "reachable": 42,
+      "reachability_by_panel": {
+        "final_mixed": 24,
+        "final_ast": 12,
+        "final_changed": 6
+      },
+      "curves": {
+        "I0": [
+          40,
+          42,
+          42,
+          42,
+          42
+        ],
+        "I2": [
+          40,
+          40,
+          40,
+          40,
+          42
+        ],
+        "I4": [
+          40,
+          40,
+          40,
+          40,
+          42
+        ],
+        "I4_scrambled": [
+          40,
+          42,
+          42,
+          42,
+          42
+        ],
+        "empty": [
+          40,
+          40,
+          42,
+          42,
+          42
+        ],
+        "I0_online": [
+          40,
+          42,
+          42,
+          42,
+          42
+        ],
+        "I4_online": [
+          40,
+          40,
+          42,
+          42,
+          42
+        ],
+        "fixed_uniform": [
+          40,
+          40,
+          42,
+          42,
+          42
+        ],
+        "fixed_novelty": [
+          40,
+          42,
+          42,
+          42,
+          42
+        ],
+        "fixed_disagreement": [
+          40,
+          42,
+          42,
+          42,
+          42
+        ],
+        "fixed_combined": [
+          40,
+          42,
+          42,
+          42,
+          42
+        ],
+        "fixed_uncertainty_strict": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ]
+      },
+      "updates": {
+        "I0": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "c8f03ae67a4dfa18b5449281",
+                "828a8b4349a71a7e7bac0774"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I2": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "c8f03ae67a4dfa18b5449281",
+                "828a8b4349a71a7e7bac0774"
+              ],
+              "left_only": []
+            }
+          }
+        ],
+        "I4": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "c8f03ae67a4dfa18b5449281",
+                "828a8b4349a71a7e7bac0774"
+              ],
+              "left_only": []
+            }
+          }
+        ],
+        "I4_scrambled": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "c8f03ae67a4dfa18b5449281",
+                "828a8b4349a71a7e7bac0774"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "empty": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "c8f03ae67a4dfa18b5449281",
+                "828a8b4349a71a7e7bac0774"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I0_online": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "c8f03ae67a4dfa18b5449281",
+                "828a8b4349a71a7e7bac0774"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I4_online": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "c8f03ae67a4dfa18b5449281",
+                "828a8b4349a71a7e7bac0774"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_uniform": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "c8f03ae67a4dfa18b5449281",
+                "828a8b4349a71a7e7bac0774"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_novelty": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "novelty",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "c8f03ae67a4dfa18b5449281",
+                "828a8b4349a71a7e7bac0774"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_disagreement": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "c8f03ae67a4dfa18b5449281",
+                "828a8b4349a71a7e7bac0774"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_combined": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "c8f03ae67a4dfa18b5449281",
+                "828a8b4349a71a7e7bac0774"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_uncertainty_strict": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ]
+      },
+      "panels": {
+        "I0": {
+          "final_mixed": [
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "final_ast": [
+            10,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I2": {
+          "final_mixed": [
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "final_ast": [
+            10,
+            10,
+            10,
+            10,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I4": {
+          "final_mixed": [
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "final_ast": [
+            10,
+            10,
+            10,
+            10,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I4_scrambled": {
+          "final_mixed": [
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "final_ast": [
+            10,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "empty": {
+          "final_mixed": [
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "final_ast": [
+            10,
+            10,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I0_online": {
+          "final_mixed": [
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "final_ast": [
+            10,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I4_online": {
+          "final_mixed": [
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "final_ast": [
+            10,
+            10,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_uniform": {
+          "final_mixed": [
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "final_ast": [
+            10,
+            10,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_novelty": {
+          "final_mixed": [
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "final_ast": [
+            10,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_disagreement": {
+          "final_mixed": [
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "final_ast": [
+            10,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_combined": {
+          "final_mixed": [
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "final_ast": [
+            10,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_uncertainty_strict": {
+          "final_mixed": [
+            24,
+            24,
+            24,
+            24,
+            24
+          ],
+          "final_ast": [
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        }
+      },
+      "costs": {
+        "I0": {
+          "wall_seconds": 2.389762699982384,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "I2": {
+          "wall_seconds": 0.74863170000026,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "I4": {
+          "wall_seconds": 0.3314453999919351,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "I4_scrambled": {
+          "wall_seconds": 0.5478834999958053,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "empty": {
+          "wall_seconds": 0.7598134999861941,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "I0_online": {
+          "wall_seconds": 0.5367062999866903,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "I4_online": {
+          "wall_seconds": 0.4695828999974765,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "fixed_uniform": {
+          "wall_seconds": 0.4650786000129301,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "fixed_novelty": {
+          "wall_seconds": 0.5854626999935135,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "fixed_disagreement": {
+          "wall_seconds": 0.47283579999930225,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "fixed_combined": {
+          "wall_seconds": 0.5940786999999546,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "fixed_uncertainty_strict": {
+          "wall_seconds": 0.2987689000146929,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        }
+      },
+      "candidate_generation": {
+        "parallel_wall_seconds": 225.2989465999999,
+        "workers": 4,
+        "summed_worker_wall_seconds_by_source": {
+          "v67": 884.9595387001173,
+          "v73": 8.207238500093808
+        }
+      },
+      "paired_final": {
+        "I0": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I2": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I4_scrambled": {
+          "right_only": [],
+          "left_only": []
+        },
+        "empty": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I0_online": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I4_online": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_uniform": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_novelty": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_disagreement": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_combined": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_uncertainty_strict": {
+          "right_only": [
+            "c8f03ae67a4dfa18b5449281",
+            "828a8b4349a71a7e7bac0774"
+          ],
+          "left_only": []
+        }
+      }
+    },
+    {
+      "offset": 7000,
+      "audit": {
+        "status": "passed",
+        "offset": 7000,
+        "candidate_calls_replayed": 268,
+        "arms": 12,
+        "checkpoints_per_arm": 5,
+        "equal_improvement_labels_per_arm": 192,
+        "scope": "same host interpreter; no independent semantic oracle"
+      },
+      "initial_controls": {
+        "base": 34,
+        "deployed": 37,
+        "lexical": 34,
+        "structural": 34,
+        "behavior": 39,
+        "ensemble": 37,
+        "guarded": 36
+      },
+      "reachable": 40,
+      "reachability_by_panel": {
+        "final_mixed": 22,
+        "final_ast": 12,
+        "final_changed": 6
+      },
+      "curves": {
+        "I0": [
+          37,
+          39,
+          39,
+          40,
+          40
+        ],
+        "I2": [
+          37,
+          39,
+          40,
+          40,
+          40
+        ],
+        "I4": [
+          37,
+          39,
+          40,
+          40,
+          40
+        ],
+        "I4_scrambled": [
+          37,
+          39,
+          39,
+          39,
+          39
+        ],
+        "empty": [
+          37,
+          39,
+          39,
+          40,
+          40
+        ],
+        "I0_online": [
+          37,
+          39,
+          40,
+          40,
+          40
+        ],
+        "I4_online": [
+          37,
+          39,
+          40,
+          40,
+          40
+        ],
+        "fixed_uniform": [
+          37,
+          39,
+          39,
+          40,
+          40
+        ],
+        "fixed_novelty": [
+          37,
+          40,
+          40,
+          40,
+          40
+        ],
+        "fixed_disagreement": [
+          37,
+          39,
+          39,
+          39,
+          39
+        ],
+        "fixed_combined": [
+          37,
+          40,
+          40,
+          40,
+          40
+        ],
+        "fixed_uncertainty_strict": [
+          37,
+          39,
+          40,
+          40,
+          40
+        ]
+      },
+      "updates": {
+        "I0": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "aed91a5950c302832d78385b",
+                "61c77f95b0d619c1024747ea"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "5f0addf826d8b3ade7a76dad"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I2": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "aed91a5950c302832d78385b",
+                "61c77f95b0d619c1024747ea"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "5f0addf826d8b3ade7a76dad"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I4": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "aed91a5950c302832d78385b",
+                "61c77f95b0d619c1024747ea"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "5f0addf826d8b3ade7a76dad"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I4_scrambled": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "aed91a5950c302832d78385b",
+                "61c77f95b0d619c1024747ea"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "empty": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "aed91a5950c302832d78385b",
+                "61c77f95b0d619c1024747ea"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "5f0addf826d8b3ade7a76dad"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I0_online": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "aed91a5950c302832d78385b",
+                "61c77f95b0d619c1024747ea"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "5f0addf826d8b3ade7a76dad"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I4_online": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "aed91a5950c302832d78385b",
+                "61c77f95b0d619c1024747ea"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "5f0addf826d8b3ade7a76dad"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_uniform": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "aed91a5950c302832d78385b",
+                "61c77f95b0d619c1024747ea"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "5f0addf826d8b3ade7a76dad"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_novelty": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "novelty",
+            "delta": 3,
+            "tasks": {
+              "right_only": [
+                "aed91a5950c302832d78385b",
+                "61c77f95b0d619c1024747ea",
+                "5f0addf826d8b3ade7a76dad"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_disagreement": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "aed91a5950c302832d78385b",
+                "61c77f95b0d619c1024747ea"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_combined": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 3,
+            "tasks": {
+              "right_only": [
+                "aed91a5950c302832d78385b",
+                "61c77f95b0d619c1024747ea",
+                "5f0addf826d8b3ade7a76dad"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_uncertainty_strict": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 2,
+            "tasks": {
+              "right_only": [
+                "aed91a5950c302832d78385b",
+                "61c77f95b0d619c1024747ea"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "5f0addf826d8b3ade7a76dad"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ]
+      },
+      "panels": {
+        "I0": {
+          "final_mixed": [
+            21,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            11,
+            11,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I2": {
+          "final_mixed": [
+            21,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            11,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I4": {
+          "final_mixed": [
+            21,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            11,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I4_scrambled": {
+          "final_mixed": [
+            21,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            11,
+            11,
+            11,
+            11
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "empty": {
+          "final_mixed": [
+            21,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            11,
+            11,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I0_online": {
+          "final_mixed": [
+            21,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            11,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I4_online": {
+          "final_mixed": [
+            21,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            11,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_uniform": {
+          "final_mixed": [
+            21,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            11,
+            11,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_novelty": {
+          "final_mixed": [
+            21,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_disagreement": {
+          "final_mixed": [
+            21,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            11,
+            11,
+            11,
+            11
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_combined": {
+          "final_mixed": [
+            21,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_uncertainty_strict": {
+          "final_mixed": [
+            21,
+            22,
+            22,
+            22,
+            22
+          ],
+          "final_ast": [
+            10,
+            11,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        }
+      },
+      "costs": {
+        "I0": {
+          "wall_seconds": 2.5288948999950662,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 424,
+          "admission_assessments": 5
+        },
+        "I2": {
+          "wall_seconds": 0.9865412999934051,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 424,
+          "admission_assessments": 5
+        },
+        "I4": {
+          "wall_seconds": 0.5421627000032458,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 424,
+          "admission_assessments": 5
+        },
+        "I4_scrambled": {
+          "wall_seconds": 0.5211009999911766,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 424,
+          "admission_assessments": 5
+        },
+        "empty": {
+          "wall_seconds": 0.6889338000037242,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 424,
+          "admission_assessments": 5
+        },
+        "I0_online": {
+          "wall_seconds": 0.5420817999984138,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 424,
+          "admission_assessments": 5
+        },
+        "I4_online": {
+          "wall_seconds": 0.5164906000136398,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 424,
+          "admission_assessments": 5
+        },
+        "fixed_uniform": {
+          "wall_seconds": 0.5382859999954235,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 424,
+          "admission_assessments": 5
+        },
+        "fixed_novelty": {
+          "wall_seconds": 0.5870351999765262,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 424,
+          "admission_assessments": 5
+        },
+        "fixed_disagreement": {
+          "wall_seconds": 0.6336970999836922,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 424,
+          "admission_assessments": 5
+        },
+        "fixed_combined": {
+          "wall_seconds": 0.48222920001717284,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 424,
+          "admission_assessments": 5
+        },
+        "fixed_uncertainty_strict": {
+          "wall_seconds": 0.4722679999831598,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 26,
+          "common_admission_candidate_labels": 424,
+          "admission_assessments": 5
+        }
+      },
+      "candidate_generation": {
+        "parallel_wall_seconds": 223.68834739999147,
+        "workers": 4,
+        "summed_worker_wall_seconds_by_source": {
+          "v67": 879.4795486002113,
+          "v73": 9.277439599856734
+        }
+      },
+      "paired_final": {
+        "I0": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I2": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I4_scrambled": {
+          "right_only": [
+            "5f0addf826d8b3ade7a76dad"
+          ],
+          "left_only": []
+        },
+        "empty": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I0_online": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I4_online": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_uniform": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_novelty": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_disagreement": {
+          "right_only": [
+            "5f0addf826d8b3ade7a76dad"
+          ],
+          "left_only": []
+        },
+        "fixed_combined": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_uncertainty_strict": {
+          "right_only": [],
+          "left_only": []
+        }
+      }
+    },
+    {
+      "offset": 8000,
+      "audit": {
+        "status": "passed",
+        "offset": 8000,
+        "candidate_calls_replayed": 268,
+        "arms": 12,
+        "checkpoints_per_arm": 5,
+        "equal_improvement_labels_per_arm": 192,
+        "scope": "same host interpreter; no independent semantic oracle"
+      },
+      "initial_controls": {
+        "base": 35,
+        "deployed": 38,
+        "lexical": 34,
+        "structural": 38,
+        "behavior": 38,
+        "ensemble": 38,
+        "guarded": 37
+      },
+      "reachable": 39,
+      "reachability_by_panel": {
+        "final_mixed": 21,
+        "final_ast": 12,
+        "final_changed": 6
+      },
+      "curves": {
+        "I0": [
+          38,
+          38,
+          39,
+          39,
+          39
+        ],
+        "I2": [
+          38,
+          38,
+          39,
+          39,
+          39
+        ],
+        "I4": [
+          38,
+          38,
+          39,
+          39,
+          39
+        ],
+        "I4_scrambled": [
+          38,
+          38,
+          39,
+          39,
+          39
+        ],
+        "empty": [
+          38,
+          38,
+          39,
+          39,
+          39
+        ],
+        "I0_online": [
+          38,
+          38,
+          38,
+          38,
+          39
+        ],
+        "I4_online": [
+          38,
+          38,
+          38,
+          39,
+          39
+        ],
+        "fixed_uniform": [
+          38,
+          38,
+          39,
+          39,
+          39
+        ],
+        "fixed_novelty": [
+          38,
+          39,
+          39,
+          39,
+          39
+        ],
+        "fixed_disagreement": [
+          38,
+          38,
+          39,
+          39,
+          39
+        ],
+        "fixed_combined": [
+          38,
+          39,
+          39,
+          39,
+          39
+        ],
+        "fixed_uncertainty_strict": [
+          38,
+          38,
+          38,
+          38,
+          38
+        ]
+      },
+      "updates": {
+        "I0": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "939fc3ccd86724e54930d8b8"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I2": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "939fc3ccd86724e54930d8b8"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I4": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "939fc3ccd86724e54930d8b8"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I4_scrambled": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "939fc3ccd86724e54930d8b8"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "empty": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "939fc3ccd86724e54930d8b8"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "I0_online": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "939fc3ccd86724e54930d8b8"
+              ],
+              "left_only": []
+            }
+          }
+        ],
+        "I4_online": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "939fc3ccd86724e54930d8b8"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_uniform": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "939fc3ccd86724e54930d8b8"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uniform",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_novelty": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "novelty",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "939fc3ccd86724e54930d8b8"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "novelty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_disagreement": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "939fc3ccd86724e54930d8b8"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "disagreement",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_combined": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 1,
+            "tasks": {
+              "right_only": [
+                "939fc3ccd86724e54930d8b8"
+              ],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ],
+        "fixed_uncertainty_strict": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "delta": 0,
+            "tasks": {
+              "right_only": [],
+              "left_only": []
+            }
+          }
+        ]
+      },
+      "panels": {
+        "I0": {
+          "final_mixed": [
+            21,
+            21,
+            21,
+            21,
+            21
+          ],
+          "final_ast": [
+            11,
+            11,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I2": {
+          "final_mixed": [
+            21,
+            21,
+            21,
+            21,
+            21
+          ],
+          "final_ast": [
+            11,
+            11,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I4": {
+          "final_mixed": [
+            21,
+            21,
+            21,
+            21,
+            21
+          ],
+          "final_ast": [
+            11,
+            11,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I4_scrambled": {
+          "final_mixed": [
+            21,
+            21,
+            21,
+            21,
+            21
+          ],
+          "final_ast": [
+            11,
+            11,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "empty": {
+          "final_mixed": [
+            21,
+            21,
+            21,
+            21,
+            21
+          ],
+          "final_ast": [
+            11,
+            11,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I0_online": {
+          "final_mixed": [
+            21,
+            21,
+            21,
+            21,
+            21
+          ],
+          "final_ast": [
+            11,
+            11,
+            11,
+            11,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "I4_online": {
+          "final_mixed": [
+            21,
+            21,
+            21,
+            21,
+            21
+          ],
+          "final_ast": [
+            11,
+            11,
+            11,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_uniform": {
+          "final_mixed": [
+            21,
+            21,
+            21,
+            21,
+            21
+          ],
+          "final_ast": [
+            11,
+            11,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_novelty": {
+          "final_mixed": [
+            21,
+            21,
+            21,
+            21,
+            21
+          ],
+          "final_ast": [
+            11,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_disagreement": {
+          "final_mixed": [
+            21,
+            21,
+            21,
+            21,
+            21
+          ],
+          "final_ast": [
+            11,
+            11,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_combined": {
+          "final_mixed": [
+            21,
+            21,
+            21,
+            21,
+            21
+          ],
+          "final_ast": [
+            11,
+            12,
+            12,
+            12,
+            12
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "fixed_uncertainty_strict": {
+          "final_mixed": [
+            21,
+            21,
+            21,
+            21,
+            21
+          ],
+          "final_ast": [
+            11,
+            11,
+            11,
+            11,
+            11
+          ],
+          "final_changed": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        }
+      },
+      "costs": {
+        "I0": {
+          "wall_seconds": 2.6645357999950647,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "I2": {
+          "wall_seconds": 0.7342697999847587,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "I4": {
+          "wall_seconds": 0.7063629000040237,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "I4_scrambled": {
+          "wall_seconds": 0.5856694999965839,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "empty": {
+          "wall_seconds": 0.8428150000108872,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "I0_online": {
+          "wall_seconds": 0.540774799999781,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "I4_online": {
+          "wall_seconds": 0.6056240999896545,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "fixed_uniform": {
+          "wall_seconds": 0.5458930000022519,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "fixed_novelty": {
+          "wall_seconds": 0.608169099985389,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "fixed_disagreement": {
+          "wall_seconds": 0.5925260999938473,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "fixed_combined": {
+          "wall_seconds": 0.5639302999770734,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        },
+        "fixed_uncertainty_strict": {
+          "wall_seconds": 0.3499409999931231,
+          "model_fits": 5,
+          "improvement_oracle_labels": 192,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 398,
+          "admission_assessments": 5
+        }
+      },
+      "candidate_generation": {
+        "parallel_wall_seconds": 223.0740415000182,
+        "workers": 4,
+        "summed_worker_wall_seconds_by_source": {
+          "v67": 875.688776399882,
+          "v73": 10.740098500042222
+        }
+      },
+      "paired_final": {
+        "I0": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I2": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I4_scrambled": {
+          "right_only": [],
+          "left_only": []
+        },
+        "empty": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I0_online": {
+          "right_only": [],
+          "left_only": []
+        },
+        "I4_online": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_uniform": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_novelty": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_disagreement": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_combined": {
+          "right_only": [],
+          "left_only": []
+        },
+        "fixed_uncertainty_strict": {
+          "right_only": [
+            "939fc3ccd86724e54930d8b8"
+          ],
+          "left_only": []
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "I0": {
+      "final": [
+        40,
+        41,
+        40,
+        42,
+        40,
+        39
+      ],
+      "initial": [
+        40,
+        38,
+        33,
+        40,
+        37,
+        38
+      ],
+      "net": [
+        0,
+        3,
+        7,
+        2,
+        3,
+        1
+      ],
+      "useful_updates": 7,
+      "net_harmful_updates": 1,
+      "updates_with_task_loss": 1,
+      "accepted_updates": 16
+    },
+    "I2": {
+      "final": [
+        40,
+        40,
+        40,
+        42,
+        40,
+        39
+      ],
+      "initial": [
+        40,
+        38,
+        33,
+        40,
+        37,
+        38
+      ],
+      "net": [
+        0,
+        2,
+        7,
+        2,
+        3,
+        1
+      ],
+      "useful_updates": 7,
+      "net_harmful_updates": 0,
+      "updates_with_task_loss": 1,
+      "accepted_updates": 15
+    },
+    "I4": {
+      "final": [
+        40,
+        40,
+        40,
+        42,
+        40,
+        39
+      ],
+      "initial": [
+        40,
+        38,
+        33,
+        40,
+        37,
+        38
+      ],
+      "net": [
+        0,
+        2,
+        7,
+        2,
+        3,
+        1
+      ],
+      "useful_updates": 7,
+      "net_harmful_updates": 0,
+      "updates_with_task_loss": 1,
+      "accepted_updates": 15
+    },
+    "I4_scrambled": {
+      "final": [
+        40,
+        41,
+        40,
+        42,
+        39,
+        39
+      ],
+      "initial": [
+        40,
+        38,
+        33,
+        40,
+        37,
+        38
+      ],
+      "net": [
+        0,
+        3,
+        7,
+        2,
+        2,
+        1
+      ],
+      "useful_updates": 6,
+      "net_harmful_updates": 0,
+      "updates_with_task_loss": 0,
+      "accepted_updates": 12
+    },
+    "empty": {
+      "final": [
+        40,
+        38,
+        33,
+        42,
+        40,
+        39
+      ],
+      "initial": [
+        40,
+        38,
+        33,
+        40,
+        37,
+        38
+      ],
+      "net": [
+        0,
+        0,
+        0,
+        2,
+        3,
+        1
+      ],
+      "useful_updates": 4,
+      "net_harmful_updates": 0,
+      "updates_with_task_loss": 0,
+      "accepted_updates": 11
+    },
+    "I0_online": {
+      "final": [
+        40,
+        41,
+        34,
+        42,
+        40,
+        39
+      ],
+      "initial": [
+        40,
+        38,
+        33,
+        40,
+        37,
+        38
+      ],
+      "net": [
+        0,
+        3,
+        1,
+        2,
+        3,
+        1
+      ],
+      "useful_updates": 6,
+      "net_harmful_updates": 0,
+      "updates_with_task_loss": 1,
+      "accepted_updates": 15
+    },
+    "I4_online": {
+      "final": [
+        41,
+        38,
+        40,
+        42,
+        40,
+        39
+      ],
+      "initial": [
+        40,
+        38,
+        33,
+        40,
+        37,
+        38
+      ],
+      "net": [
+        1,
+        0,
+        7,
+        2,
+        3,
+        1
+      ],
+      "useful_updates": 7,
+      "net_harmful_updates": 0,
+      "updates_with_task_loss": 0,
+      "accepted_updates": 16
+    },
+    "fixed_uniform": {
+      "final": [
+        40,
+        38,
+        33,
+        42,
+        40,
+        39
+      ],
+      "initial": [
+        40,
+        38,
+        33,
+        40,
+        37,
+        38
+      ],
+      "net": [
+        0,
+        0,
+        0,
+        2,
+        3,
+        1
+      ],
+      "useful_updates": 4,
+      "net_harmful_updates": 0,
+      "updates_with_task_loss": 0,
+      "accepted_updates": 11
+    },
+    "fixed_novelty": {
+      "final": [
+        40,
+        38,
+        40,
+        42,
+        40,
+        39
+      ],
+      "initial": [
+        40,
+        38,
+        33,
+        40,
+        37,
+        38
+      ],
+      "net": [
+        0,
+        0,
+        7,
+        2,
+        3,
+        1
+      ],
+      "useful_updates": 4,
+      "net_harmful_updates": 0,
+      "updates_with_task_loss": 0,
+      "accepted_updates": 13
+    },
+    "fixed_disagreement": {
+      "final": [
+        40,
+        41,
+        34,
+        42,
+        39,
+        39
+      ],
+      "initial": [
+        40,
+        38,
+        33,
+        40,
+        37,
+        38
+      ],
+      "net": [
+        0,
+        3,
+        1,
+        2,
+        2,
+        1
+      ],
+      "useful_updates": 6,
+      "net_harmful_updates": 1,
+      "updates_with_task_loss": 1,
+      "accepted_updates": 16
+    },
+    "fixed_combined": {
+      "final": [
+        40,
+        38,
+        34,
+        42,
+        40,
+        39
+      ],
+      "initial": [
+        40,
+        38,
+        33,
+        40,
+        37,
+        38
+      ],
+      "net": [
+        0,
+        0,
+        1,
+        2,
+        3,
+        1
+      ],
+      "useful_updates": 4,
+      "net_harmful_updates": 0,
+      "updates_with_task_loss": 0,
+      "accepted_updates": 13
+    },
+    "fixed_uncertainty_strict": {
+      "final": [
+        40,
+        40,
+        40,
+        40,
+        40,
+        38
+      ],
+      "initial": [
+        40,
+        38,
+        33,
+        40,
+        37,
+        38
+      ],
+      "net": [
+        0,
+        2,
+        7,
+        0,
+        3,
+        0
+      ],
+      "useful_updates": 4,
+      "net_harmful_updates": 0,
+      "updates_with_task_loss": 1,
+      "accepted_updates": 4
+    }
+  },
+  "source_acquisition_unique_labels_across_all_archived_arms": {
+    "seed-source-search-20260917": 732,
+    "seed-integration-v2-20260917": 854,
+    "seed-v2-replica-1": 832,
+    "seed-v2-replica-2": 900
+  },
+  "duplicate_public_example_sets_across_source_donor_transfer": 0,
+  "source_state_lengths": {
+    "I0": 60,
+    "I2": 66,
+    "I4": 72,
+    "I4_scrambled": 72,
+    "empty": 0,
+    "I0_online": 60,
+    "I4_online": 72,
+    "fixed_uniform": 0,
+    "fixed_novelty": 0,
+    "fixed_disagreement": 0,
+    "fixed_combined": 0,
+    "fixed_uncertainty_strict": 0
+  }
+}

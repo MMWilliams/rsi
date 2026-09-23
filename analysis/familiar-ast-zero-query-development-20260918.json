@@ -1,0 +1,615 @@
+{
+  "scope": "opened development only",
+  "source": {
+    "early_tasks": 192,
+    "later_tasks": 288,
+    "early_labels": 19152,
+    "later_labels": 28722,
+    "early_positive": 364,
+    "later_positive": 539
+  },
+  "targets": {
+    "zero-query-mixed-integration-transfer-20260918": {
+      "tasks": 96,
+      "totals": {
+        "e0": 15,
+        "early": 39,
+        "later": 40,
+        "scrambled": 37,
+        "duplicate": 39,
+        "ab": 4,
+        "pooled": 20
+      },
+      "comparisons": {
+        "early_minus_e0": {
+          "gain": 24,
+          "wins": 18,
+          "losses": 0,
+          "interval": [
+            17,
+            32
+          ]
+        },
+        "later_minus_early": {
+          "gain": 1,
+          "wins": 2,
+          "losses": 1,
+          "interval": [
+            -2,
+            4
+          ]
+        },
+        "later_minus_scrambled": {
+          "gain": 3,
+          "wins": 3,
+          "losses": 0,
+          "interval": [
+            0,
+            6
+          ]
+        },
+        "later_minus_duplicate": {
+          "gain": 1,
+          "wins": 2,
+          "losses": 1,
+          "interval": [
+            -2,
+            4
+          ]
+        },
+        "later_minus_pooled": {
+          "gain": 20,
+          "wins": 15,
+          "losses": 0,
+          "interval": [
+            13,
+            28
+          ]
+        }
+      },
+      "banks": [
+        {
+          "seed": 903600,
+          "e0": 0,
+          "early": 0,
+          "later": 0,
+          "scrambled": 0,
+          "duplicate": 0,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903601,
+          "e0": 1,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 1,
+          "pooled": 1
+        },
+        {
+          "seed": 903602,
+          "e0": 0,
+          "early": 2,
+          "later": 1,
+          "scrambled": 1,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903603,
+          "e0": 0,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903604,
+          "e0": 1,
+          "early": 1,
+          "later": 1,
+          "scrambled": 1,
+          "duplicate": 1,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903605,
+          "e0": 0,
+          "early": 0,
+          "later": 1,
+          "scrambled": 0,
+          "duplicate": 0,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903606,
+          "e0": 1,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 1,
+          "pooled": 2
+        },
+        {
+          "seed": 903607,
+          "e0": 0,
+          "early": 1,
+          "later": 1,
+          "scrambled": 1,
+          "duplicate": 1,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903608,
+          "e0": 1,
+          "early": 4,
+          "later": 4,
+          "scrambled": 4,
+          "duplicate": 4,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903609,
+          "e0": 0,
+          "early": 0,
+          "later": 0,
+          "scrambled": 0,
+          "duplicate": 0,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903610,
+          "e0": 0,
+          "early": 1,
+          "later": 1,
+          "scrambled": 1,
+          "duplicate": 1,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903611,
+          "e0": 2,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903612,
+          "e0": 1,
+          "early": 1,
+          "later": 1,
+          "scrambled": 1,
+          "duplicate": 1,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903613,
+          "e0": 0,
+          "early": 1,
+          "later": 1,
+          "scrambled": 1,
+          "duplicate": 1,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903614,
+          "e0": 1,
+          "early": 2,
+          "later": 2,
+          "scrambled": 1,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903615,
+          "e0": 1,
+          "early": 3,
+          "later": 3,
+          "scrambled": 3,
+          "duplicate": 3,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903616,
+          "e0": 0,
+          "early": 1,
+          "later": 1,
+          "scrambled": 1,
+          "duplicate": 1,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903617,
+          "e0": 2,
+          "early": 3,
+          "later": 3,
+          "scrambled": 3,
+          "duplicate": 3,
+          "ab": 1,
+          "pooled": 2
+        },
+        {
+          "seed": 903618,
+          "e0": 1,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 2
+        },
+        {
+          "seed": 903619,
+          "e0": 1,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903620,
+          "e0": 0,
+          "early": 1,
+          "later": 1,
+          "scrambled": 1,
+          "duplicate": 1,
+          "ab": 1,
+          "pooled": 1
+        },
+        {
+          "seed": 903621,
+          "e0": 0,
+          "early": 1,
+          "later": 2,
+          "scrambled": 1,
+          "duplicate": 1,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903622,
+          "e0": 1,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903623,
+          "e0": 1,
+          "early": 3,
+          "later": 3,
+          "scrambled": 3,
+          "duplicate": 3,
+          "ab": 0,
+          "pooled": 3
+        }
+      ]
+    },
+    "three-action-improver-transfer-20260918": {
+      "tasks": 96,
+      "totals": {
+        "e0": 15,
+        "early": 43,
+        "later": 44,
+        "scrambled": 39,
+        "duplicate": 42,
+        "ab": 0,
+        "pooled": 17
+      },
+      "comparisons": {
+        "early_minus_e0": {
+          "gain": 28,
+          "wins": 19,
+          "losses": 0,
+          "interval": [
+            20,
+            36
+          ]
+        },
+        "later_minus_early": {
+          "gain": 1,
+          "wins": 1,
+          "losses": 0,
+          "interval": [
+            0,
+            3
+          ]
+        },
+        "later_minus_scrambled": {
+          "gain": 5,
+          "wins": 5,
+          "losses": 0,
+          "interval": [
+            1,
+            9
+          ]
+        },
+        "later_minus_duplicate": {
+          "gain": 2,
+          "wins": 2,
+          "losses": 0,
+          "interval": [
+            0,
+            5
+          ]
+        },
+        "later_minus_pooled": {
+          "gain": 27,
+          "wins": 18,
+          "losses": 0,
+          "interval": [
+            18,
+            36
+          ]
+        }
+      },
+      "banks": [
+        {
+          "seed": 903700,
+          "e0": 1,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903701,
+          "e0": 0,
+          "early": 3,
+          "later": 3,
+          "scrambled": 2,
+          "duplicate": 3,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903702,
+          "e0": 0,
+          "early": 2,
+          "later": 2,
+          "scrambled": 1,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903703,
+          "e0": 2,
+          "early": 3,
+          "later": 3,
+          "scrambled": 3,
+          "duplicate": 3,
+          "ab": 0,
+          "pooled": 2
+        },
+        {
+          "seed": 903704,
+          "e0": 1,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903705,
+          "e0": 1,
+          "early": 3,
+          "later": 3,
+          "scrambled": 3,
+          "duplicate": 3,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903706,
+          "e0": 1,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 2
+        },
+        {
+          "seed": 903707,
+          "e0": 0,
+          "early": 0,
+          "later": 0,
+          "scrambled": 0,
+          "duplicate": 0,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903708,
+          "e0": 0,
+          "early": 1,
+          "later": 1,
+          "scrambled": 1,
+          "duplicate": 1,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903709,
+          "e0": 0,
+          "early": 0,
+          "later": 0,
+          "scrambled": 0,
+          "duplicate": 0,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903710,
+          "e0": 1,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903711,
+          "e0": 1,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903712,
+          "e0": 0,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903713,
+          "e0": 1,
+          "early": 1,
+          "later": 1,
+          "scrambled": 1,
+          "duplicate": 1,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903714,
+          "e0": 1,
+          "early": 2,
+          "later": 2,
+          "scrambled": 1,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903715,
+          "e0": 1,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903716,
+          "e0": 0,
+          "early": 0,
+          "later": 0,
+          "scrambled": 0,
+          "duplicate": 0,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903717,
+          "e0": 1,
+          "early": 1,
+          "later": 1,
+          "scrambled": 1,
+          "duplicate": 1,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903718,
+          "e0": 0,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 1,
+          "ab": 0,
+          "pooled": 1
+        },
+        {
+          "seed": 903719,
+          "e0": 0,
+          "early": 3,
+          "later": 3,
+          "scrambled": 2,
+          "duplicate": 3,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903720,
+          "e0": 2,
+          "early": 3,
+          "later": 3,
+          "scrambled": 3,
+          "duplicate": 3,
+          "ab": 0,
+          "pooled": 2
+        },
+        {
+          "seed": 903721,
+          "e0": 0,
+          "early": 1,
+          "later": 1,
+          "scrambled": 1,
+          "duplicate": 1,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903722,
+          "e0": 0,
+          "early": 2,
+          "later": 3,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 0
+        },
+        {
+          "seed": 903723,
+          "e0": 1,
+          "early": 2,
+          "later": 2,
+          "scrambled": 2,
+          "duplicate": 2,
+          "ab": 0,
+          "pooled": 2
+        }
+      ]
+    }
+  }
+}

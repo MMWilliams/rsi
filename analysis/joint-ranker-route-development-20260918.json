@@ -1,0 +1,529 @@
+{
+  "scope": "opened source cross-validation only, no fresh gate",
+  "panels": {
+    "candidate-reranker-transfer-20260918": 576,
+    "candidate-reranker-replication-20260918": 576,
+    "candidate-conditioned-query-transfer-20260918": 576,
+    "candidate-query-cost-transfer-20260918": 576
+  },
+  "tasks": 2304,
+  "banks": 48,
+  "feature_count": 31,
+  "totals": {
+    "e1": 1362,
+    "e0": 1325,
+    "old": 1188,
+    "hindsight_task": 1452,
+    "family_mean": 1354,
+    "family_100": 1370,
+    "interaction_100": 1370
+  },
+  "comparisons": {
+    "family_mean": {
+      "gain_vs_e1": -8,
+      "positive_banks": 8,
+      "interval": [
+        -21,
+        4
+      ]
+    },
+    "family_100": {
+      "gain_vs_e1": 8,
+      "positive_banks": 10,
+      "interval": [
+        0,
+        17
+      ]
+    },
+    "interaction_100": {
+      "gain_vs_e1": 8,
+      "positive_banks": 10,
+      "interval": [
+        -3,
+        20
+      ]
+    }
+  },
+  "by_bank": [
+    {
+      "seed": 902510,
+      "e1": 31,
+      "e0": 29,
+      "old": 26,
+      "hindsight_task": 32,
+      "family_mean": 30,
+      "family_100": 32,
+      "interaction_100": 32
+    },
+    {
+      "seed": 902511,
+      "e1": 21,
+      "e0": 20,
+      "old": 19,
+      "hindsight_task": 22,
+      "family_mean": 22,
+      "family_100": 20,
+      "interaction_100": 20
+    },
+    {
+      "seed": 902512,
+      "e1": 31,
+      "e0": 30,
+      "old": 28,
+      "hindsight_task": 31,
+      "family_mean": 31,
+      "family_100": 31,
+      "interaction_100": 31
+    },
+    {
+      "seed": 902513,
+      "e1": 22,
+      "e0": 22,
+      "old": 20,
+      "hindsight_task": 24,
+      "family_mean": 22,
+      "family_100": 22,
+      "interaction_100": 22
+    },
+    {
+      "seed": 902514,
+      "e1": 29,
+      "e0": 28,
+      "old": 21,
+      "hindsight_task": 29,
+      "family_mean": 29,
+      "family_100": 29,
+      "interaction_100": 29
+    },
+    {
+      "seed": 902515,
+      "e1": 25,
+      "e0": 26,
+      "old": 23,
+      "hindsight_task": 29,
+      "family_mean": 26,
+      "family_100": 25,
+      "interaction_100": 25
+    },
+    {
+      "seed": 902516,
+      "e1": 30,
+      "e0": 30,
+      "old": 24,
+      "hindsight_task": 31,
+      "family_mean": 30,
+      "family_100": 31,
+      "interaction_100": 31
+    },
+    {
+      "seed": 902517,
+      "e1": 24,
+      "e0": 24,
+      "old": 22,
+      "hindsight_task": 25,
+      "family_mean": 24,
+      "family_100": 24,
+      "interaction_100": 24
+    },
+    {
+      "seed": 902518,
+      "e1": 26,
+      "e0": 27,
+      "old": 25,
+      "hindsight_task": 27,
+      "family_mean": 26,
+      "family_100": 26,
+      "interaction_100": 26
+    },
+    {
+      "seed": 902519,
+      "e1": 34,
+      "e0": 30,
+      "old": 27,
+      "hindsight_task": 34,
+      "family_mean": 33,
+      "family_100": 34,
+      "interaction_100": 34
+    },
+    {
+      "seed": 902520,
+      "e1": 27,
+      "e0": 26,
+      "old": 24,
+      "hindsight_task": 31,
+      "family_mean": 27,
+      "family_100": 28,
+      "interaction_100": 27
+    },
+    {
+      "seed": 902521,
+      "e1": 34,
+      "e0": 31,
+      "old": 25,
+      "hindsight_task": 36,
+      "family_mean": 32,
+      "family_100": 34,
+      "interaction_100": 34
+    },
+    {
+      "seed": 902522,
+      "e1": 29,
+      "e0": 27,
+      "old": 27,
+      "hindsight_task": 30,
+      "family_mean": 28,
+      "family_100": 29,
+      "interaction_100": 29
+    },
+    {
+      "seed": 902523,
+      "e1": 24,
+      "e0": 22,
+      "old": 22,
+      "hindsight_task": 26,
+      "family_mean": 24,
+      "family_100": 24,
+      "interaction_100": 24
+    },
+    {
+      "seed": 902524,
+      "e1": 29,
+      "e0": 28,
+      "old": 23,
+      "hindsight_task": 31,
+      "family_mean": 29,
+      "family_100": 30,
+      "interaction_100": 30
+    },
+    {
+      "seed": 902525,
+      "e1": 25,
+      "e0": 25,
+      "old": 25,
+      "hindsight_task": 27,
+      "family_mean": 26,
+      "family_100": 25,
+      "interaction_100": 25
+    },
+    {
+      "seed": 902526,
+      "e1": 28,
+      "e0": 28,
+      "old": 24,
+      "hindsight_task": 31,
+      "family_mean": 26,
+      "family_100": 27,
+      "interaction_100": 27
+    },
+    {
+      "seed": 902527,
+      "e1": 31,
+      "e0": 31,
+      "old": 25,
+      "hindsight_task": 33,
+      "family_mean": 31,
+      "family_100": 32,
+      "interaction_100": 31
+    },
+    {
+      "seed": 902528,
+      "e1": 25,
+      "e0": 25,
+      "old": 18,
+      "hindsight_task": 27,
+      "family_mean": 24,
+      "family_100": 25,
+      "interaction_100": 25
+    },
+    {
+      "seed": 902529,
+      "e1": 26,
+      "e0": 25,
+      "old": 22,
+      "hindsight_task": 27,
+      "family_mean": 24,
+      "family_100": 26,
+      "interaction_100": 26
+    },
+    {
+      "seed": 902530,
+      "e1": 28,
+      "e0": 28,
+      "old": 28,
+      "hindsight_task": 33,
+      "family_mean": 30,
+      "family_100": 28,
+      "interaction_100": 28
+    },
+    {
+      "seed": 902531,
+      "e1": 23,
+      "e0": 25,
+      "old": 23,
+      "hindsight_task": 27,
+      "family_mean": 25,
+      "family_100": 24,
+      "interaction_100": 26
+    },
+    {
+      "seed": 902532,
+      "e1": 35,
+      "e0": 33,
+      "old": 29,
+      "hindsight_task": 36,
+      "family_mean": 36,
+      "family_100": 36,
+      "interaction_100": 36
+    },
+    {
+      "seed": 902533,
+      "e1": 28,
+      "e0": 29,
+      "old": 25,
+      "hindsight_task": 30,
+      "family_mean": 28,
+      "family_100": 28,
+      "interaction_100": 28
+    },
+    {
+      "seed": 902534,
+      "e1": 31,
+      "e0": 29,
+      "old": 26,
+      "hindsight_task": 32,
+      "family_mean": 31,
+      "family_100": 31,
+      "interaction_100": 31
+    },
+    {
+      "seed": 902535,
+      "e1": 28,
+      "e0": 26,
+      "old": 21,
+      "hindsight_task": 28,
+      "family_mean": 26,
+      "family_100": 28,
+      "interaction_100": 28
+    },
+    {
+      "seed": 902536,
+      "e1": 28,
+      "e0": 29,
+      "old": 24,
+      "hindsight_task": 30,
+      "family_mean": 28,
+      "family_100": 28,
+      "interaction_100": 28
+    },
+    {
+      "seed": 902537,
+      "e1": 30,
+      "e0": 31,
+      "old": 31,
+      "hindsight_task": 33,
+      "family_mean": 31,
+      "family_100": 30,
+      "interaction_100": 31
+    },
+    {
+      "seed": 902538,
+      "e1": 29,
+      "e0": 26,
+      "old": 24,
+      "hindsight_task": 30,
+      "family_mean": 28,
+      "family_100": 29,
+      "interaction_100": 29
+    },
+    {
+      "seed": 902539,
+      "e1": 27,
+      "e0": 27,
+      "old": 23,
+      "hindsight_task": 31,
+      "family_mean": 27,
+      "family_100": 30,
+      "interaction_100": 30
+    },
+    {
+      "seed": 902540,
+      "e1": 31,
+      "e0": 30,
+      "old": 28,
+      "hindsight_task": 33,
+      "family_mean": 31,
+      "family_100": 31,
+      "interaction_100": 32
+    },
+    {
+      "seed": 902541,
+      "e1": 29,
+      "e0": 28,
+      "old": 26,
+      "hindsight_task": 31,
+      "family_mean": 29,
+      "family_100": 29,
+      "interaction_100": 29
+    },
+    {
+      "seed": 902542,
+      "e1": 34,
+      "e0": 33,
+      "old": 25,
+      "hindsight_task": 35,
+      "family_mean": 34,
+      "family_100": 34,
+      "interaction_100": 34
+    },
+    {
+      "seed": 902543,
+      "e1": 28,
+      "e0": 28,
+      "old": 27,
+      "hindsight_task": 29,
+      "family_mean": 29,
+      "family_100": 28,
+      "interaction_100": 28
+    },
+    {
+      "seed": 902544,
+      "e1": 34,
+      "e0": 34,
+      "old": 31,
+      "hindsight_task": 34,
+      "family_mean": 34,
+      "family_100": 34,
+      "interaction_100": 34
+    },
+    {
+      "seed": 902545,
+      "e1": 26,
+      "e0": 28,
+      "old": 26,
+      "hindsight_task": 31,
+      "family_mean": 26,
+      "family_100": 26,
+      "interaction_100": 26
+    },
+    {
+      "seed": 902546,
+      "e1": 28,
+      "e0": 30,
+      "old": 27,
+      "hindsight_task": 32,
+      "family_mean": 28,
+      "family_100": 29,
+      "interaction_100": 29
+    },
+    {
+      "seed": 902547,
+      "e1": 28,
+      "e0": 28,
+      "old": 22,
+      "hindsight_task": 30,
+      "family_mean": 27,
+      "family_100": 28,
+      "interaction_100": 27
+    },
+    {
+      "seed": 902548,
+      "e1": 28,
+      "e0": 24,
+      "old": 24,
+      "hindsight_task": 29,
+      "family_mean": 28,
+      "family_100": 27,
+      "interaction_100": 27
+    },
+    {
+      "seed": 902549,
+      "e1": 27,
+      "e0": 23,
+      "old": 19,
+      "hindsight_task": 29,
+      "family_mean": 25,
+      "family_100": 27,
+      "interaction_100": 25
+    },
+    {
+      "seed": 902550,
+      "e1": 29,
+      "e0": 26,
+      "old": 25,
+      "hindsight_task": 30,
+      "family_mean": 29,
+      "family_100": 29,
+      "interaction_100": 29
+    },
+    {
+      "seed": 902551,
+      "e1": 32,
+      "e0": 30,
+      "old": 28,
+      "hindsight_task": 33,
+      "family_mean": 32,
+      "family_100": 33,
+      "interaction_100": 33
+    },
+    {
+      "seed": 902552,
+      "e1": 25,
+      "e0": 25,
+      "old": 22,
+      "hindsight_task": 25,
+      "family_mean": 25,
+      "family_100": 25,
+      "interaction_100": 25
+    },
+    {
+      "seed": 902553,
+      "e1": 32,
+      "e0": 28,
+      "old": 27,
+      "hindsight_task": 33,
+      "family_mean": 32,
+      "family_100": 32,
+      "interaction_100": 32
+    },
+    {
+      "seed": 902554,
+      "e1": 27,
+      "e0": 28,
+      "old": 24,
+      "hindsight_task": 31,
+      "family_mean": 27,
+      "family_100": 26,
+      "interaction_100": 27
+    },
+    {
+      "seed": 902555,
+      "e1": 27,
+      "e0": 25,
+      "old": 27,
+      "hindsight_task": 28,
+      "family_mean": 27,
+      "family_100": 27,
+      "interaction_100": 27
+    },
+    {
+      "seed": 902556,
+      "e1": 27,
+      "e0": 28,
+      "old": 25,
+      "hindsight_task": 32,
+      "family_mean": 26,
+      "family_100": 27,
+      "interaction_100": 27
+    },
+    {
+      "seed": 902557,
+      "e1": 32,
+      "e0": 32,
+      "old": 31,
+      "hindsight_task": 34,
+      "family_mean": 31,
+      "family_100": 32,
+      "interaction_100": 32
+    }
+  ]
+}

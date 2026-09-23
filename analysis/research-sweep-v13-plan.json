@@ -1,0 +1,2936 @@
+{
+  "schema_version": 1,
+  "status": "planned_not_executed",
+  "base_config": {
+    "protocol": "EXPERIMENT-v11-frontier-contract-repair.md",
+    "source_run": "runs/retention-20260916-v3",
+    "checkpoint_relative_path": "adapters/initial/bootstrap/adapter_model.safetensors",
+    "macro_source": "runs/library-inheritance-20260916-v7/common_macros.json",
+    "bank_seed": 9162612,
+    "bank_counts": {
+      "harvest_round1": 96,
+      "harvest_round2": 96,
+      "validation_round1": 32,
+      "validation_round2": 32,
+      "final": 64
+    },
+    "visible_examples": 3,
+    "hidden_examples": 13,
+    "max_atoms": 4,
+    "search_budget": 128,
+    "arms": [
+      "baseline_selected",
+      "corrected_selected",
+      "corrected_first_verified",
+      "corrected_frontier"
+    ],
+    "training_seeds": [
+      17,
+      29,
+      43
+    ],
+    "rounds": 2,
+    "model_id": "Qwen/Qwen3-0.6B",
+    "model_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "neural_seed": 17,
+    "samples_per_task": 64,
+    "pass_k": [
+      1,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "max_new_tokens": 96,
+    "generation_batch_size": 32,
+    "lora_steps": 48,
+    "lora_batch_size": 8,
+    "anchor_per_batch": 4,
+    "lora_learning_rate": 0.0002,
+    "device": "cuda:1"
+  },
+  "seed": 20260917,
+  "requested_variants": 64,
+  "variable_space": {
+    "search_budget": {
+      "values": [
+        64,
+        128,
+        256,
+        512
+      ]
+    },
+    "max_atoms": {
+      "values": [
+        3,
+        4,
+        5
+      ]
+    },
+    "samples_per_task": {
+      "values": [
+        16,
+        32,
+        64,
+        128
+      ]
+    },
+    "max_new_tokens": {
+      "values": [
+        48,
+        96,
+        192
+      ]
+    },
+    "generation_batch_size": {
+      "values": [
+        8,
+        16,
+        32,
+        64
+      ]
+    },
+    "lora_steps": {
+      "values": [
+        16,
+        48,
+        96,
+        192
+      ]
+    },
+    "lora_batch_size": {
+      "values": [
+        4,
+        8,
+        16
+      ]
+    },
+    "anchor_per_batch": {
+      "values": [
+        1,
+        2,
+        4,
+        6
+      ]
+    },
+    "lora_learning_rate": {
+      "low": 3e-05,
+      "high": 0.0008
+    },
+    "search.progress_weight": {
+      "low": 0.1,
+      "high": 4.0
+    },
+    "search.widening": {
+      "low": 0.25,
+      "high": 1.0
+    },
+    "search.macro_discount": {
+      "low": 0.0,
+      "high": 0.8
+    },
+    "sampling.temperature": {
+      "low": 0.2,
+      "high": 1.2
+    },
+    "sampling.top_p": {
+      "low": 0.6,
+      "high": 1.0
+    },
+    "sampling.top_k": {
+      "values": [
+        0,
+        10,
+        20,
+        50
+      ]
+    },
+    "training.replay_mode": {
+      "values": [
+        "fresh",
+        "cumulative",
+        "prioritized",
+        "novelty"
+      ]
+    },
+    "training.curriculum": {
+      "values": [
+        "uniform",
+        "easy_to_hard",
+        "hard_to_easy",
+        "self_paced"
+      ]
+    },
+    "controller.algorithm": {
+      "values": [
+        "fixed",
+        "ucb1",
+        "thompson",
+        "epsilon_greedy",
+        "contextual_bandit"
+      ]
+    },
+    "controller.reward": {
+      "values": [
+        "pass_at_1",
+        "pass_at_64",
+        "pareto_coverage_cost",
+        "novelty_adjusted"
+      ]
+    },
+    "program_search": {
+      "values": [
+        "best_first",
+        "mcts",
+        "beam",
+        "enumerative",
+        "novelty_search"
+      ]
+    }
+  },
+  "framework_catalog": {
+    "ml": [
+      "factorial_ablation",
+      "latin_hypercube",
+      "multi_fidelity_successive_halving",
+      "pareto_model_selection"
+    ],
+    "rl": [
+      "ucb1_bandit",
+      "thompson_sampling",
+      "contextual_bandit",
+      "off_policy_replay",
+      "self_paced_curriculum"
+    ],
+    "ai": [
+      "mcts_program_search",
+      "novelty_search",
+      "map_elites_archive",
+      "self_consistency",
+      "reflection_proposals"
+    ],
+    "cs": [
+      "program_synthesis",
+      "mdl_complexity_penalty",
+      "causal_ablation",
+      "property_based_testing",
+      "metamorphic_testing"
+    ]
+  },
+  "variants": [
+    {
+      "id": "baseline-frontier-v11",
+      "status": "reference",
+      "overrides": {},
+      "frameworks": [
+        "existing_audited_pipeline"
+      ],
+      "hypothesis": "Reference condition for all exploratory contrasts.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0001-b9989a28a5b5",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 4,
+        "samples_per_task": 64,
+        "max_new_tokens": 192,
+        "generation_batch_size": 32,
+        "lora_steps": 192,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 0.0006420612265458802,
+        "search.progress_weight": 3.802385300709892,
+        "search.widening": 0.8251142010257265,
+        "search.macro_discount": 0.12466060843208399,
+        "sampling.temperature": 0.41422212001847614,
+        "sampling.top_p": 0.8792392854726268,
+        "sampling.top_k": 0,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "fixed",
+        "controller.reward": "pass_at_64",
+        "program_search": "enumerative"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0002-54faab67767c",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 3,
+        "samples_per_task": 32,
+        "max_new_tokens": 48,
+        "generation_batch_size": 32,
+        "lora_steps": 16,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 0.0004950782000662482,
+        "search.progress_weight": 2.4600377536141798,
+        "search.widening": 0.27923130366593885,
+        "search.macro_discount": 0.49665123714790477,
+        "sampling.temperature": 0.6250593091722944,
+        "sampling.top_p": 0.8269550195714765,
+        "sampling.top_k": 10,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "ucb1",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "best_first"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0003-b9defc36d2bf",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 5,
+        "samples_per_task": 128,
+        "max_new_tokens": 192,
+        "generation_batch_size": 64,
+        "lora_steps": 96,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 0.000334532212067767,
+        "search.progress_weight": 3.175507952245772,
+        "search.widening": 0.9300757996478721,
+        "search.macro_discount": 0.7432631173378877,
+        "sampling.temperature": 0.3170565436706733,
+        "sampling.top_p": 0.8367804303980131,
+        "sampling.top_k": 0,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "ucb1",
+        "controller.reward": "pass_at_1",
+        "program_search": "novelty_search"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0004-4008376fcb75",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 4,
+        "samples_per_task": 16,
+        "max_new_tokens": 96,
+        "generation_batch_size": 8,
+        "lora_steps": 16,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 0.0005153717803675382,
+        "search.progress_weight": 1.3156650758477828,
+        "search.widening": 0.7962368917088023,
+        "search.macro_discount": 0.3231103366406729,
+        "sampling.temperature": 1.1918248918475114,
+        "sampling.top_p": 0.8402130806105905,
+        "sampling.top_k": 10,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "ucb1",
+        "controller.reward": "pass_at_64",
+        "program_search": "best_first"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0005-0e5b15b435f0",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 4,
+        "samples_per_task": 16,
+        "max_new_tokens": 48,
+        "generation_batch_size": 64,
+        "lora_steps": 16,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 0.00048255654638544766,
+        "search.progress_weight": 2.1223240619412573,
+        "search.widening": 0.6259383626071855,
+        "search.macro_discount": 0.07181987675973403,
+        "sampling.temperature": 0.2782585330887699,
+        "sampling.top_p": 0.7977723561282949,
+        "sampling.top_k": 50,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "thompson",
+        "controller.reward": "pass_at_64",
+        "program_search": "mcts"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0006-a272da403cd5",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 3,
+        "samples_per_task": 128,
+        "max_new_tokens": 48,
+        "generation_batch_size": 64,
+        "lora_steps": 192,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 5.873579021188788e-05,
+        "search.progress_weight": 1.4476681619060967,
+        "search.widening": 0.5947681364482065,
+        "search.macro_discount": 0.753679081447014,
+        "sampling.temperature": 0.8134044003095133,
+        "sampling.top_p": 0.9655870467119038,
+        "sampling.top_k": 0,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "ucb1",
+        "controller.reward": "pass_at_64",
+        "program_search": "novelty_search"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0007-03a19addfa1c",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 5,
+        "samples_per_task": 16,
+        "max_new_tokens": 96,
+        "generation_batch_size": 8,
+        "lora_steps": 192,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 0.0007972884956076171,
+        "search.progress_weight": 3.305574385732264,
+        "search.widening": 0.7808894727481837,
+        "search.macro_discount": 0.4268321373968175,
+        "sampling.temperature": 1.1357444491469733,
+        "sampling.top_p": 0.9413685767183603,
+        "sampling.top_k": 10,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "epsilon_greedy",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "mcts"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0008-2a2265672d1c",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 5,
+        "samples_per_task": 16,
+        "max_new_tokens": 192,
+        "generation_batch_size": 64,
+        "lora_steps": 96,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 0.0005451558616374598,
+        "search.progress_weight": 2.57398670080784,
+        "search.widening": 0.7443521256525987,
+        "search.macro_discount": 0.6757317114639081,
+        "sampling.temperature": 0.5890922644019279,
+        "sampling.top_p": 0.9741767827880721,
+        "sampling.top_k": 10,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "epsilon_greedy",
+        "controller.reward": "pass_at_64",
+        "program_search": "best_first"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0009-78b15a3077ca",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 5,
+        "samples_per_task": 64,
+        "max_new_tokens": 96,
+        "generation_batch_size": 32,
+        "lora_steps": 192,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 0.0006182608986995356,
+        "search.progress_weight": 0.5984366068523916,
+        "search.widening": 0.29162373130742997,
+        "search.macro_discount": 0.5778097302934827,
+        "sampling.temperature": 0.9542124683871509,
+        "sampling.top_p": 0.8506999921279628,
+        "sampling.top_k": 0,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "contextual_bandit",
+        "controller.reward": "pass_at_1",
+        "program_search": "novelty_search"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0010-df49b00cda41",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 3,
+        "samples_per_task": 32,
+        "max_new_tokens": 48,
+        "generation_batch_size": 8,
+        "lora_steps": 16,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 0.0007304593316590105,
+        "search.progress_weight": 3.1226548415590836,
+        "search.widening": 0.2975231759890595,
+        "search.macro_discount": 0.029338343393877,
+        "sampling.temperature": 0.6792943158641948,
+        "sampling.top_p": 0.6100202277515063,
+        "sampling.top_k": 20,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "thompson",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "mcts"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0011-2c17a58d4ef3",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 4,
+        "samples_per_task": 16,
+        "max_new_tokens": 192,
+        "generation_batch_size": 16,
+        "lora_steps": 96,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 5.01599709704374e-05,
+        "search.progress_weight": 3.497071989375875,
+        "search.widening": 0.4810268580368362,
+        "search.macro_discount": 0.5411312794647162,
+        "sampling.temperature": 0.6489253255323659,
+        "sampling.top_p": 0.7843738342276025,
+        "sampling.top_k": 0,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "contextual_bandit",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "best_first"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0012-a25b5bacea50",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 4,
+        "samples_per_task": 128,
+        "max_new_tokens": 192,
+        "generation_batch_size": 32,
+        "lora_steps": 96,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 0.0007168038126442771,
+        "search.progress_weight": 3.4126083849355062,
+        "search.widening": 0.4499004071312018,
+        "search.macro_discount": 0.5112672923640958,
+        "sampling.temperature": 0.8563074136087374,
+        "sampling.top_p": 0.8047923170736662,
+        "sampling.top_k": 50,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "thompson",
+        "controller.reward": "pass_at_64",
+        "program_search": "best_first"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0013-c3d9da4ac317",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 4,
+        "samples_per_task": 128,
+        "max_new_tokens": 96,
+        "generation_batch_size": 64,
+        "lora_steps": 48,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 0.0007461779353250749,
+        "search.progress_weight": 1.8319698206293389,
+        "search.widening": 0.37310239648581534,
+        "search.macro_discount": 0.2530387743507558,
+        "sampling.temperature": 1.0757630163406042,
+        "sampling.top_p": 0.9590377558272404,
+        "sampling.top_k": 50,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "contextual_bandit",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "novelty_search"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0014-53294154edd1",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 5,
+        "samples_per_task": 16,
+        "max_new_tokens": 48,
+        "generation_batch_size": 64,
+        "lora_steps": 48,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 0.00016456097822831363,
+        "search.progress_weight": 3.9357969868167846,
+        "search.widening": 0.9799173044043755,
+        "search.macro_discount": 0.7771350472083307,
+        "sampling.temperature": 1.0217261621941611,
+        "sampling.top_p": 0.6234177570022748,
+        "sampling.top_k": 20,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "fixed",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "mcts"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0015-01195224fea4",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 4,
+        "samples_per_task": 64,
+        "max_new_tokens": 48,
+        "generation_batch_size": 64,
+        "lora_steps": 192,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 0.00017592252168842462,
+        "search.progress_weight": 1.7263815118648513,
+        "search.widening": 0.6421422369744758,
+        "search.macro_discount": 0.15363579259326485,
+        "sampling.temperature": 0.8814964218417884,
+        "sampling.top_p": 0.9894186792119265,
+        "sampling.top_k": 20,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "fixed",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "beam"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0016-27984c5be582",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 3,
+        "samples_per_task": 32,
+        "max_new_tokens": 192,
+        "generation_batch_size": 8,
+        "lora_steps": 48,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 0.0007060595637209385,
+        "search.progress_weight": 2.018451547548667,
+        "search.widening": 0.9281067078405637,
+        "search.macro_discount": 0.3460257472708672,
+        "sampling.temperature": 0.35442645579710597,
+        "sampling.top_p": 0.6797764693269999,
+        "sampling.top_k": 0,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "fixed",
+        "controller.reward": "pass_at_1",
+        "program_search": "beam"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0017-237c5367ced6",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 5,
+        "samples_per_task": 128,
+        "max_new_tokens": 48,
+        "generation_batch_size": 16,
+        "lora_steps": 192,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 0.0006289129159255466,
+        "search.progress_weight": 1.380938270739769,
+        "search.widening": 0.492482146245391,
+        "search.macro_discount": 0.625915070958678,
+        "sampling.temperature": 1.1479792248274696,
+        "sampling.top_p": 0.7589901303945725,
+        "sampling.top_k": 20,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "fixed",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "enumerative"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0018-774759c862aa",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 3,
+        "samples_per_task": 64,
+        "max_new_tokens": 96,
+        "generation_batch_size": 16,
+        "lora_steps": 16,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 0.0007716178498828848,
+        "search.progress_weight": 2.3323799523162596,
+        "search.widening": 0.44510582792375664,
+        "search.macro_discount": 0.640053293445686,
+        "sampling.temperature": 0.3367808896761835,
+        "sampling.top_p": 0.7534423591420065,
+        "sampling.top_k": 0,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "fixed",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "beam"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0019-b88d4674df7e",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 5,
+        "samples_per_task": 16,
+        "max_new_tokens": 48,
+        "generation_batch_size": 8,
+        "lora_steps": 48,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 0.00019722853255295681,
+        "search.progress_weight": 0.7701724813780966,
+        "search.widening": 0.42987257940614,
+        "search.macro_discount": 0.4130850062920199,
+        "sampling.temperature": 1.03891546948707,
+        "sampling.top_p": 0.7727242456019623,
+        "sampling.top_k": 20,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "epsilon_greedy",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "best_first"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0020-1c3b6758aeda",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 4,
+        "samples_per_task": 128,
+        "max_new_tokens": 96,
+        "generation_batch_size": 8,
+        "lora_steps": 16,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 0.0005567038106296799,
+        "search.progress_weight": 1.0510120392739593,
+        "search.widening": 0.8014631894521312,
+        "search.macro_discount": 0.32648648602296093,
+        "sampling.temperature": 0.5417254471930757,
+        "sampling.top_p": 0.7112510414921691,
+        "sampling.top_k": 0,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "thompson",
+        "controller.reward": "pass_at_64",
+        "program_search": "enumerative"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0021-405a24f4b1ce",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 5,
+        "samples_per_task": 16,
+        "max_new_tokens": 96,
+        "generation_batch_size": 32,
+        "lora_steps": 192,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 0.0004035866300862241,
+        "search.progress_weight": 3.9454246021582846,
+        "search.widening": 0.34564822006534124,
+        "search.macro_discount": 0.4865958542882032,
+        "sampling.temperature": 0.7084592168724513,
+        "sampling.top_p": 0.9285330923206818,
+        "sampling.top_k": 20,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "contextual_bandit",
+        "controller.reward": "pass_at_64",
+        "program_search": "beam"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0022-d012e9224c92",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 3,
+        "samples_per_task": 32,
+        "max_new_tokens": 192,
+        "generation_batch_size": 8,
+        "lora_steps": 16,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 0.0006633281052197016,
+        "search.progress_weight": 3.0657225821916314,
+        "search.widening": 0.9732603804779942,
+        "search.macro_discount": 0.140815917648129,
+        "sampling.temperature": 1.0031627133444492,
+        "sampling.top_p": 0.8097883983210732,
+        "sampling.top_k": 20,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "fixed",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "enumerative"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0023-f7bdfe6d928c",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 5,
+        "samples_per_task": 16,
+        "max_new_tokens": 48,
+        "generation_batch_size": 16,
+        "lora_steps": 192,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 0.0005663445791715286,
+        "search.progress_weight": 2.612347383948594,
+        "search.widening": 0.8418256085113573,
+        "search.macro_discount": 0.2351487053765524,
+        "sampling.temperature": 0.22034020890351402,
+        "sampling.top_p": 0.8498747245010558,
+        "sampling.top_k": 50,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "thompson",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "beam"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0024-f74767bedea5",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 4,
+        "samples_per_task": 64,
+        "max_new_tokens": 96,
+        "generation_batch_size": 32,
+        "lora_steps": 16,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 0.00042270988904936755,
+        "search.progress_weight": 2.919325950332282,
+        "search.widening": 0.3187194651742261,
+        "search.macro_discount": 0.40425163870706404,
+        "sampling.temperature": 0.9880287336801512,
+        "sampling.top_p": 0.918430217360384,
+        "sampling.top_k": 50,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "epsilon_greedy",
+        "controller.reward": "pass_at_64",
+        "program_search": "enumerative"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0025-1a7174f1ce7d",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 3,
+        "samples_per_task": 16,
+        "max_new_tokens": 48,
+        "generation_batch_size": 64,
+        "lora_steps": 16,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 0.00034457978077134707,
+        "search.progress_weight": 0.94680319248348,
+        "search.widening": 0.8516665685860401,
+        "search.macro_discount": 0.6218806968283497,
+        "sampling.temperature": 0.2610419049582485,
+        "sampling.top_p": 0.7424089077508761,
+        "sampling.top_k": 50,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "thompson",
+        "controller.reward": "pass_at_1",
+        "program_search": "enumerative"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0026-ed02d7669d7a",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 4,
+        "samples_per_task": 64,
+        "max_new_tokens": 192,
+        "generation_batch_size": 8,
+        "lora_steps": 48,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 0.0004597384961655208,
+        "search.progress_weight": 1.5705575191689285,
+        "search.widening": 0.9446520158934958,
+        "search.macro_discount": 0.5956462193604976,
+        "sampling.temperature": 0.5728253371748577,
+        "sampling.top_p": 0.815565081512984,
+        "sampling.top_k": 20,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "thompson",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "novelty_search"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0027-fb939427ba74",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 5,
+        "samples_per_task": 64,
+        "max_new_tokens": 192,
+        "generation_batch_size": 16,
+        "lora_steps": 48,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 0.00025989741768496255,
+        "search.progress_weight": 3.2197007115549017,
+        "search.widening": 0.5286467070720144,
+        "search.macro_discount": 0.7735009962510389,
+        "sampling.temperature": 0.838511095935877,
+        "sampling.top_p": 0.6744979264706863,
+        "sampling.top_k": 10,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "ucb1",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "enumerative"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0028-b44dbee353f0",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 3,
+        "samples_per_task": 64,
+        "max_new_tokens": 96,
+        "generation_batch_size": 8,
+        "lora_steps": 16,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 0.00014454103284359786,
+        "search.progress_weight": 0.5662075842140615,
+        "search.widening": 0.7571629855544136,
+        "search.macro_discount": 0.015607548181213585,
+        "sampling.temperature": 0.5088109415549378,
+        "sampling.top_p": 0.934845748403307,
+        "sampling.top_k": 50,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "ucb1",
+        "controller.reward": "pass_at_1",
+        "program_search": "mcts"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0029-0df5f92ac801",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 3,
+        "samples_per_task": 128,
+        "max_new_tokens": 96,
+        "generation_batch_size": 64,
+        "lora_steps": 96,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 0.0002287695399269516,
+        "search.progress_weight": 0.25371503517800176,
+        "search.widening": 0.4152913424862409,
+        "search.macro_discount": 0.18149714626272462,
+        "sampling.temperature": 0.8881201487154937,
+        "sampling.top_p": 0.6308191780840582,
+        "sampling.top_k": 50,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "fixed",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "beam"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0030-f5a837917d8d",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 5,
+        "samples_per_task": 128,
+        "max_new_tokens": 48,
+        "generation_batch_size": 32,
+        "lora_steps": 48,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 3.253800318939275e-05,
+        "search.progress_weight": 3.7473764709039252,
+        "search.widening": 0.3859459522344484,
+        "search.macro_discount": 0.16948649755468326,
+        "sampling.temperature": 0.6596058689700439,
+        "sampling.top_p": 0.6924359094013772,
+        "sampling.top_k": 0,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "fixed",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "mcts"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0031-f69198a1f0ad",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 3,
+        "samples_per_task": 32,
+        "max_new_tokens": 192,
+        "generation_batch_size": 8,
+        "lora_steps": 96,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 0.00032545991795147785,
+        "search.progress_weight": 2.823042934217871,
+        "search.widening": 0.4137732750602445,
+        "search.macro_discount": 0.10051073696829703,
+        "sampling.temperature": 1.1716952448174613,
+        "sampling.top_p": 0.9477500055355357,
+        "sampling.top_k": 0,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "epsilon_greedy",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "enumerative"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0032-13207732df6a",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 4,
+        "samples_per_task": 64,
+        "max_new_tokens": 192,
+        "generation_batch_size": 16,
+        "lora_steps": 48,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 0.0006795629490330456,
+        "search.progress_weight": 2.893190094363567,
+        "search.widening": 0.5426326487902203,
+        "search.macro_discount": 0.3951448425200909,
+        "sampling.temperature": 0.9038382164285286,
+        "sampling.top_p": 0.8610708869086605,
+        "sampling.top_k": 50,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "contextual_bandit",
+        "controller.reward": "pass_at_1",
+        "program_search": "enumerative"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0033-006698a00588",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 4,
+        "samples_per_task": 16,
+        "max_new_tokens": 48,
+        "generation_batch_size": 32,
+        "lora_steps": 48,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 0.0006890916943294978,
+        "search.progress_weight": 0.860515300698368,
+        "search.widening": 0.6861307942802055,
+        "search.macro_discount": 0.7268880056207102,
+        "sampling.temperature": 0.43047894810082055,
+        "sampling.top_p": 0.8851901983895416,
+        "sampling.top_k": 10,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "epsilon_greedy",
+        "controller.reward": "pass_at_1",
+        "program_search": "beam"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0034-1df6a019fd46",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 5,
+        "samples_per_task": 128,
+        "max_new_tokens": 48,
+        "generation_batch_size": 8,
+        "lora_steps": 192,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 0.00030409610837848784,
+        "search.progress_weight": 0.7881219886941385,
+        "search.widening": 0.6958222236852304,
+        "search.macro_discount": 0.3801219571358394,
+        "sampling.temperature": 0.46211605833430763,
+        "sampling.top_p": 0.9966249968590026,
+        "sampling.top_k": 20,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "epsilon_greedy",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "mcts"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0035-7aa39713c2f4",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 5,
+        "samples_per_task": 32,
+        "max_new_tokens": 48,
+        "generation_batch_size": 32,
+        "lora_steps": 96,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 0.0007810667563753432,
+        "search.progress_weight": 3.5365545266407676,
+        "search.widening": 0.6835036094343806,
+        "search.macro_discount": 0.4607909515691733,
+        "sampling.temperature": 0.2722628434961841,
+        "sampling.top_p": 0.8937952212106989,
+        "sampling.top_k": 10,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "thompson",
+        "controller.reward": "pass_at_1",
+        "program_search": "mcts"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0036-e9463a6f8860",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 3,
+        "samples_per_task": 64,
+        "max_new_tokens": 96,
+        "generation_batch_size": 8,
+        "lora_steps": 16,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 0.000530639085749554,
+        "search.progress_weight": 2.699885353089118,
+        "search.widening": 0.36109380872052577,
+        "search.macro_discount": 0.19080136229634906,
+        "sampling.temperature": 0.9761285311507462,
+        "sampling.top_p": 0.7789894172932956,
+        "sampling.top_k": 20,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "contextual_bandit",
+        "controller.reward": "pass_at_1",
+        "program_search": "beam"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0037-ecb4aa3c47eb",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 3,
+        "samples_per_task": 32,
+        "max_new_tokens": 192,
+        "generation_batch_size": 16,
+        "lora_steps": 192,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 6.666981574737706e-05,
+        "search.progress_weight": 2.095525488687661,
+        "search.widening": 0.5790789958668258,
+        "search.macro_discount": 0.29890080347289905,
+        "sampling.temperature": 0.4657399461923584,
+        "sampling.top_p": 0.7297698854711729,
+        "sampling.top_k": 10,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "epsilon_greedy",
+        "controller.reward": "pass_at_64",
+        "program_search": "mcts"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0038-233da4442728",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 3,
+        "samples_per_task": 128,
+        "max_new_tokens": 96,
+        "generation_batch_size": 32,
+        "lora_steps": 96,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 0.0002568488154378238,
+        "search.progress_weight": 0.35213447536259945,
+        "search.widening": 0.33027634863455013,
+        "search.macro_discount": 0.4419370159761651,
+        "sampling.temperature": 0.7388517461075139,
+        "sampling.top_p": 0.8213345916207722,
+        "sampling.top_k": 20,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "epsilon_greedy",
+        "controller.reward": "pass_at_64",
+        "program_search": "best_first"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0039-c0078bed7b61",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 5,
+        "samples_per_task": 64,
+        "max_new_tokens": 48,
+        "generation_batch_size": 8,
+        "lora_steps": 96,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 0.0002896207422479737,
+        "search.progress_weight": 0.1564203466099856,
+        "search.widening": 0.7135971435029447,
+        "search.macro_discount": 0.6711971240014707,
+        "sampling.temperature": 0.6154847866547115,
+        "sampling.top_p": 0.9808658862031981,
+        "sampling.top_k": 0,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "epsilon_greedy",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "novelty_search"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0040-898beaeb6f56",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 4,
+        "samples_per_task": 32,
+        "max_new_tokens": 192,
+        "generation_batch_size": 64,
+        "lora_steps": 96,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 0.00012176151523323016,
+        "search.progress_weight": 0.16126375403862075,
+        "search.widening": 0.8986591529681628,
+        "search.macro_discount": 0.6563538288795906,
+        "sampling.temperature": 0.37443932994469087,
+        "sampling.top_p": 0.8705230867371915,
+        "sampling.top_k": 10,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "epsilon_greedy",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "best_first"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0041-bbfffc4292fd",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 3,
+        "samples_per_task": 32,
+        "max_new_tokens": 192,
+        "generation_batch_size": 8,
+        "lora_steps": 192,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 0.0007566828595047809,
+        "search.progress_weight": 3.366211844436843,
+        "search.widening": 0.6150250456094196,
+        "search.macro_discount": 0.0965622455335404,
+        "sampling.temperature": 0.6009693469218402,
+        "sampling.top_p": 0.9064916198418302,
+        "sampling.top_k": 0,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "ucb1",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "beam"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0042-00a8b2026056",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 5,
+        "samples_per_task": 16,
+        "max_new_tokens": 48,
+        "generation_batch_size": 16,
+        "lora_steps": 96,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 0.00037688509934084537,
+        "search.progress_weight": 3.85101301552034,
+        "search.widening": 0.5476020519536376,
+        "search.macro_discount": 0.6039762155613393,
+        "sampling.temperature": 0.5280027133114471,
+        "sampling.top_p": 0.9211798795845987,
+        "sampling.top_k": 50,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "fixed",
+        "controller.reward": "pass_at_64",
+        "program_search": "novelty_search"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0043-44fa6267bb4d",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 5,
+        "samples_per_task": 16,
+        "max_new_tokens": 96,
+        "generation_batch_size": 16,
+        "lora_steps": 16,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 0.0003812290185178091,
+        "search.progress_weight": 2.486748576116873,
+        "search.widening": 0.5729702450408597,
+        "search.macro_discount": 0.1368567967217877,
+        "sampling.temperature": 0.8040014304718595,
+        "sampling.top_p": 0.6035949026199234,
+        "sampling.top_k": 0,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "contextual_bandit",
+        "controller.reward": "pass_at_1",
+        "program_search": "mcts"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0044-5fae198b7c17",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 4,
+        "samples_per_task": 16,
+        "max_new_tokens": 192,
+        "generation_batch_size": 16,
+        "lora_steps": 48,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 0.00015236624812212308,
+        "search.progress_weight": 1.5270052154136595,
+        "search.widening": 0.8781577870857714,
+        "search.macro_discount": 0.080404995871357,
+        "sampling.temperature": 0.692420232167904,
+        "sampling.top_p": 0.6378117322472038,
+        "sampling.top_k": 10,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "thompson",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "novelty_search"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0045-dca97c5a4352",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 3,
+        "samples_per_task": 128,
+        "max_new_tokens": 96,
+        "generation_batch_size": 16,
+        "lora_steps": 96,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 0.0006002369279952787,
+        "search.progress_weight": 3.5758313262576276,
+        "search.widening": 0.7271328065803375,
+        "search.macro_discount": 0.3526634278744027,
+        "sampling.temperature": 0.3578932575744879,
+        "sampling.top_p": 0.7156927835312148,
+        "sampling.top_k": 10,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "thompson",
+        "controller.reward": "pass_at_64",
+        "program_search": "enumerative"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0046-6e8d2728b96b",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 4,
+        "samples_per_task": 32,
+        "max_new_tokens": 96,
+        "generation_batch_size": 16,
+        "lora_steps": 192,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 0.0004015882738698268,
+        "search.progress_weight": 3.6682563044113654,
+        "search.widening": 0.8206035385044244,
+        "search.macro_discount": 0.7164341499655267,
+        "sampling.temperature": 0.43511154825514625,
+        "sampling.top_p": 0.7006915478011719,
+        "sampling.top_k": 0,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "fixed",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "best_first"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0047-9d97e356adf9",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 4,
+        "samples_per_task": 128,
+        "max_new_tokens": 48,
+        "generation_batch_size": 8,
+        "lora_steps": 48,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 0.0001375830961391354,
+        "search.progress_weight": 2.2774457081092705,
+        "search.widening": 0.47116981107156236,
+        "search.macro_discount": 0.7895139246300883,
+        "sampling.temperature": 0.9259744984830971,
+        "sampling.top_p": 0.7369017254304351,
+        "sampling.top_k": 20,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "fixed",
+        "controller.reward": "pass_at_64",
+        "program_search": "best_first"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0048-4eba41f523a3",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 4,
+        "samples_per_task": 128,
+        "max_new_tokens": 48,
+        "generation_batch_size": 8,
+        "lora_steps": 48,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 0.00010795668634957825,
+        "search.progress_weight": 1.1483799194210018,
+        "search.widening": 0.8677562422585845,
+        "search.macro_discount": 0.052936193563104174,
+        "sampling.temperature": 1.1142779419349564,
+        "sampling.top_p": 0.6344391667813336,
+        "sampling.top_k": 50,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "contextual_bandit",
+        "controller.reward": "pass_at_1",
+        "program_search": "best_first"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0049-4ed827e412ef",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 4,
+        "samples_per_task": 32,
+        "max_new_tokens": 48,
+        "generation_batch_size": 64,
+        "lora_steps": 48,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 0.0006976071066198677,
+        "search.progress_weight": 0.4346929870383507,
+        "search.widening": 0.2527640067182554,
+        "search.macro_discount": 0.5685676208892848,
+        "sampling.temperature": 0.2945509177835288,
+        "sampling.top_p": 0.7682602154742056,
+        "sampling.top_k": 50,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "fixed",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "best_first"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0050-42dd0a5d112d",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 3,
+        "samples_per_task": 128,
+        "max_new_tokens": 48,
+        "generation_batch_size": 32,
+        "lora_steps": 192,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 0.0003143024873764721,
+        "search.progress_weight": 1.9627034341756673,
+        "search.widening": 0.9922420183164479,
+        "search.macro_discount": 0.044377875986964556,
+        "sampling.temperature": 0.21145297811229846,
+        "sampling.top_p": 0.8892235805991421,
+        "sampling.top_k": 50,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "ucb1",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "enumerative"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0051-43081c13a690",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 5,
+        "samples_per_task": 64,
+        "max_new_tokens": 192,
+        "generation_batch_size": 16,
+        "lora_steps": 48,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 0.00044663718927300005,
+        "search.progress_weight": 1.8861279588578999,
+        "search.widening": 0.9541257279462718,
+        "search.macro_discount": 0.20638301117908547,
+        "sampling.temperature": 0.7728405773235563,
+        "sampling.top_p": 0.6657175905848429,
+        "sampling.top_k": 20,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "thompson",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "mcts"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0052-68c3335a37cb",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 3,
+        "samples_per_task": 32,
+        "max_new_tokens": 96,
+        "generation_batch_size": 64,
+        "lora_steps": 96,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 0.0004287914685299333,
+        "search.progress_weight": 2.177707192328418,
+        "search.widening": 0.5115581636634986,
+        "search.macro_discount": 0.27229369343558774,
+        "sampling.temperature": 0.9346999171614021,
+        "sampling.top_p": 0.6964188356168475,
+        "sampling.top_k": 0,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "ucb1",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "novelty_search"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0053-6ef82185936f",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 4,
+        "samples_per_task": 16,
+        "max_new_tokens": 96,
+        "generation_batch_size": 64,
+        "lora_steps": 16,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 0.0004678348235668216,
+        "search.progress_weight": 3.004039474451227,
+        "search.widening": 0.394312243128125,
+        "search.macro_discount": 0.5177125191695648,
+        "sampling.temperature": 1.0493995826771991,
+        "sampling.top_p": 0.7922851365231119,
+        "sampling.top_k": 0,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "ucb1",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "beam"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0054-e852bed2aff4",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 5,
+        "samples_per_task": 32,
+        "max_new_tokens": 96,
+        "generation_batch_size": 32,
+        "lora_steps": 96,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 0.00023868891747843866,
+        "search.progress_weight": 1.3366491294992338,
+        "search.widening": 0.7765012693236287,
+        "search.macro_discount": 0.24379464438435608,
+        "sampling.temperature": 1.1008496313469829,
+        "sampling.top_p": 0.7232067192949588,
+        "sampling.top_k": 10,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "ucb1",
+        "controller.reward": "pass_at_1",
+        "program_search": "mcts"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0055-c3857c0dafa2",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 5,
+        "samples_per_task": 32,
+        "max_new_tokens": 192,
+        "generation_batch_size": 64,
+        "lora_steps": 16,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 8.4382483229776e-05,
+        "search.progress_weight": 1.7997430833009467,
+        "search.widening": 0.9110933061981433,
+        "search.macro_discount": 0.5356815207579539,
+        "sampling.temperature": 0.7244099646987376,
+        "sampling.top_p": 0.9529308519032563,
+        "sampling.top_k": 50,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "contextual_bandit",
+        "controller.reward": "pass_at_64",
+        "program_search": "enumerative"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0056-04f5a8086138",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 3,
+        "samples_per_task": 32,
+        "max_new_tokens": 96,
+        "generation_batch_size": 16,
+        "lora_steps": 16,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 0.0002148507205582312,
+        "search.progress_weight": 1.2209920810298822,
+        "search.widening": 0.27239612313448924,
+        "search.macro_discount": 0.2196463315973666,
+        "sampling.temperature": 0.4921237074998116,
+        "sampling.top_p": 0.6623029500618464,
+        "sampling.top_k": 10,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "thompson",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "novelty_search"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0057-36e0dc8aac16",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 3,
+        "samples_per_task": 64,
+        "max_new_tokens": 192,
+        "generation_batch_size": 64,
+        "lora_steps": 192,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 0.0005833969379749968,
+        "search.progress_weight": 2.746925238270036,
+        "search.widening": 0.8836013660069376,
+        "search.macro_discount": 0.007908763037100164,
+        "sampling.temperature": 0.5467997241670117,
+        "sampling.top_p": 0.9843719808561993,
+        "sampling.top_k": 50,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "thompson",
+        "controller.reward": "pass_at_1",
+        "program_search": "enumerative"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0058-2948c0e3f78c",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 3,
+        "samples_per_task": 16,
+        "max_new_tokens": 96,
+        "generation_batch_size": 16,
+        "lora_steps": 96,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 0.00020170083597328463,
+        "search.progress_weight": 0.6812631014076054,
+        "search.widening": 0.7371579864239672,
+        "search.macro_discount": 0.47025692420469006,
+        "sampling.temperature": 0.7587911070422366,
+        "sampling.top_p": 0.8637181286545115,
+        "sampling.top_k": 20,
+        "training.replay_mode": "prioritized",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "contextual_bandit",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "beam"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0059-1d2ba66eb942",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 3,
+        "samples_per_task": 128,
+        "max_new_tokens": 48,
+        "generation_batch_size": 32,
+        "lora_steps": 96,
+        "lora_batch_size": 8,
+        "anchor_per_batch": 6,
+        "lora_learning_rate": 0.0005902129605376186,
+        "search.progress_weight": 1.6543133524072557,
+        "search.widening": 0.6679695811315973,
+        "search.macro_discount": 0.36623191012219614,
+        "sampling.temperature": 1.1678222109295733,
+        "sampling.top_p": 0.7471997696969126,
+        "sampling.top_k": 10,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "uniform",
+        "controller.algorithm": "ucb1",
+        "controller.reward": "novelty_adjusted",
+        "program_search": "mcts"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0060-8fcfd964a45e",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 5,
+        "samples_per_task": 32,
+        "max_new_tokens": 192,
+        "generation_batch_size": 32,
+        "lora_steps": 16,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 0.0006501089769315908,
+        "search.progress_weight": 0.5077355299543823,
+        "search.widening": 0.6532355505498852,
+        "search.macro_discount": 0.2769417946152672,
+        "sampling.temperature": 0.23337852926294456,
+        "sampling.top_p": 0.653077688466819,
+        "sampling.top_k": 10,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "epsilon_greedy",
+        "controller.reward": "pass_at_64",
+        "program_search": "novelty_search"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0061-9382b4b67021",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 128,
+        "max_atoms": 3,
+        "samples_per_task": 64,
+        "max_new_tokens": 48,
+        "generation_batch_size": 64,
+        "lora_steps": 48,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 0.00027064592456445713,
+        "search.progress_weight": 0.9538750090697291,
+        "search.widening": 0.6074611363151531,
+        "search.macro_discount": 0.6998246429359373,
+        "sampling.temperature": 1.071190022614744,
+        "sampling.top_p": 0.6497578463322885,
+        "sampling.top_k": 10,
+        "training.replay_mode": "fresh",
+        "training.curriculum": "self_paced",
+        "controller.algorithm": "contextual_bandit",
+        "controller.reward": "pass_at_1",
+        "program_search": "beam"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0062-f7a64309ebd2",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 256,
+        "max_atoms": 4,
+        "samples_per_task": 64,
+        "max_new_tokens": 96,
+        "generation_batch_size": 32,
+        "lora_steps": 192,
+        "lora_batch_size": 4,
+        "anchor_per_batch": 4,
+        "lora_learning_rate": 0.0005036783609178212,
+        "search.progress_weight": 1.1068413218144055,
+        "search.widening": 0.5580152746789028,
+        "search.macro_discount": 0.553543541947911,
+        "sampling.temperature": 0.8463740649022096,
+        "sampling.top_p": 0.6181126679010815,
+        "sampling.top_k": 20,
+        "training.replay_mode": "cumulative",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "epsilon_greedy",
+        "controller.reward": "pass_at_1",
+        "program_search": "novelty_search"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0063-13ee7a6971cc",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 64,
+        "max_atoms": 4,
+        "samples_per_task": 128,
+        "max_new_tokens": 192,
+        "generation_batch_size": 32,
+        "lora_steps": 192,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 2,
+        "lora_learning_rate": 0.0003616846089984655,
+        "search.progress_weight": 0.2903812794339633,
+        "search.widening": 0.49990181982316007,
+        "search.macro_discount": 0.7123153274730273,
+        "sampling.temperature": 0.39508076810920423,
+        "sampling.top_p": 0.9041810778084564,
+        "sampling.top_k": 20,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "hard_to_easy",
+        "controller.algorithm": "ucb1",
+        "controller.reward": "pareto_coverage_cost",
+        "program_search": "beam"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    },
+    {
+      "id": "sweep-0064-c9b10f1ff767",
+      "status": "planned",
+      "overrides": {
+        "search_budget": 512,
+        "max_atoms": 5,
+        "samples_per_task": 64,
+        "max_new_tokens": 192,
+        "generation_batch_size": 16,
+        "lora_steps": 48,
+        "lora_batch_size": 16,
+        "anchor_per_batch": 1,
+        "lora_learning_rate": 9.749848378485341e-05,
+        "search.progress_weight": 2.410714730111205,
+        "search.widening": 0.3380285764968899,
+        "search.macro_discount": 0.3093699434982178,
+        "sampling.temperature": 0.7906201072698866,
+        "sampling.top_p": 0.6841517787071771,
+        "sampling.top_k": 50,
+        "training.replay_mode": "novelty",
+        "training.curriculum": "easy_to_hard",
+        "controller.algorithm": "contextual_bandit",
+        "controller.reward": "pass_at_1",
+        "program_search": "best_first"
+      },
+      "frameworks": [
+        "ml",
+        "rl",
+        "ai",
+        "cs"
+      ],
+      "hypothesis": "Changing this factor may trade off verified coverage, retention, diversity, novelty and compute; the result is exploratory until replicated.",
+      "primary_metrics": [
+        "pass_at_1",
+        "pass_at_64",
+        "coverage",
+        "distinct_programs",
+        "generated_tokens",
+        "training_steps",
+        "wall_seconds"
+      ]
+    }
+  ],
+  "guardrails": [
+    "Exploratory variants cannot overwrite sealed historical runs.",
+    "Every completed variant requires an independent audit before entering the observed findings ledger.",
+    "Primary comparisons use a matched vector budget; scalar cost is descriptive only.",
+    "No final-task result may select a checkpoint or tune a variant.",
+    "Negative and null results are retained."
+  ]
+}

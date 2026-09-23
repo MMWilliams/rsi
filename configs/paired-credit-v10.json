@@ -1,0 +1,15 @@
+{
+  "protocol": "EXPERIMENT-v10-paired-credit-probe.md",
+  "bank_seed": 9162611,
+  "source_seeds": [347, 359, 373, 389, 401, 419],
+  "rounds": 2,
+  "development_per_round": 8,
+  "admission_per_round": 8,
+  "measurement_tasks": 16,
+  "visible_examples": 3,
+  "hidden_examples": 13,
+  "max_atoms": 4,
+  "search_budget": 128,
+  "pool_mode": "partial_empty",
+  "macro_source": "runs/library-inheritance-20260916-v7/common_macros.json"
+}

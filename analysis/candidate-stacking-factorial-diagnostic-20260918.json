@@ -1,0 +1,104 @@
+{
+  "scope": "post-audit factorial diagnostic; no new promotion gate",
+  "tasks": 192,
+  "effects": {
+    "ranker_at_100": {
+      "gain": 4,
+      "positive_tasks": 5,
+      "negative_tasks": 1,
+      "positive_banks": 4,
+      "negative_banks": 1,
+      "bank_interval": [
+        -1,
+        10
+      ],
+      "by_domain": {
+        "familiar": 1,
+        "shifted": 3
+      }
+    },
+    "ranker_at_200": {
+      "gain": 5,
+      "positive_tasks": 5,
+      "negative_tasks": 0,
+      "positive_banks": 4,
+      "negative_banks": 0,
+      "bank_interval": [
+        1,
+        10
+      ],
+      "by_domain": {
+        "familiar": 2,
+        "shifted": 3
+      }
+    },
+    "width_with_dual": {
+      "gain": 4,
+      "positive_tasks": 5,
+      "negative_tasks": 1,
+      "positive_banks": 4,
+      "negative_banks": 1,
+      "bank_interval": [
+        -1,
+        10
+      ],
+      "by_domain": {
+        "familiar": 2,
+        "shifted": 2
+      }
+    },
+    "width_with_stack": {
+      "gain": 5,
+      "positive_tasks": 5,
+      "negative_tasks": 0,
+      "positive_banks": 4,
+      "negative_banks": 0,
+      "bank_interval": [
+        1,
+        10
+      ],
+      "by_domain": {
+        "familiar": 3,
+        "shifted": 2
+      }
+    },
+    "stack_vs_fixed_selective_width": {
+      "gain": 2,
+      "positive_tasks": 5,
+      "negative_tasks": 3,
+      "positive_banks": 4,
+      "negative_banks": 3,
+      "bank_interval": [
+        -4,
+        8
+      ],
+      "by_domain": {
+        "familiar": 1,
+        "shifted": 1
+      }
+    }
+  },
+  "retrospective_oracle": {
+    "dual100+later100": 69,
+    "dual100+later100+dual200+later200": 73
+  },
+  "factorial_interaction": 1,
+  "reachability": {
+    "top100_reachable": 81,
+    "top200_reachable": 89,
+    "full_reachable": 94
+  },
+  "selected": {
+    "dual100": 64,
+    "later100": 68,
+    "dual200": 68,
+    "later200": 73
+  },
+  "candidate_scores": {
+    "dual100": 38400,
+    "later100": 57600,
+    "dual200": 76112,
+    "later200": 114168,
+    "selective_dual200": 57248
+  }
+}

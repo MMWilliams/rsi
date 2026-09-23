@@ -1,0 +1,874 @@
+{
+  "scope": "all test panels previously opened; development screen only",
+  "first": {
+    "train_panels": [
+      "meta_admission",
+      "meta_a"
+    ],
+    "train_candidates": 11282,
+    "positive_candidate_labels": 3580,
+    "results": {
+      "logistic_c0.1": {
+        "meta_b": {
+          "tasks": 288,
+          "baseline": 138,
+          "reranked": 126,
+          "top20_reachable": 221,
+          "changed_choices": 240,
+          "by_bank": [
+            {
+              "seed": 902432,
+              "baseline": 24,
+              "reranked": 23,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902433,
+              "baseline": 28,
+              "reranked": 30,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902434,
+              "baseline": 23,
+              "reranked": 21,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902435,
+              "baseline": 21,
+              "reranked": 17,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902436,
+              "baseline": 21,
+              "reranked": 18,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902437,
+              "baseline": 21,
+              "reranked": 17,
+              "top20_reachable": 35
+            }
+          ]
+        }
+      },
+      "logistic_c1": {
+        "meta_b": {
+          "tasks": 288,
+          "baseline": 138,
+          "reranked": 129,
+          "top20_reachable": 221,
+          "changed_choices": 237,
+          "by_bank": [
+            {
+              "seed": 902432,
+              "baseline": 24,
+              "reranked": 23,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902433,
+              "baseline": 28,
+              "reranked": 30,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902434,
+              "baseline": 23,
+              "reranked": 21,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902435,
+              "baseline": 21,
+              "reranked": 17,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902436,
+              "baseline": 21,
+              "reranked": 19,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902437,
+              "baseline": 21,
+              "reranked": 19,
+              "top20_reachable": 35
+            }
+          ]
+        }
+      },
+      "hgb_leaf7": {
+        "meta_b": {
+          "tasks": 288,
+          "baseline": 138,
+          "reranked": 142,
+          "top20_reachable": 221,
+          "changed_choices": 96,
+          "by_bank": [
+            {
+              "seed": 902432,
+              "baseline": 24,
+              "reranked": 25,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902433,
+              "baseline": 28,
+              "reranked": 29,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902434,
+              "baseline": 23,
+              "reranked": 23,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902435,
+              "baseline": 21,
+              "reranked": 22,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902436,
+              "baseline": 21,
+              "reranked": 20,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902437,
+              "baseline": 21,
+              "reranked": 23,
+              "top20_reachable": 35
+            }
+          ]
+        }
+      },
+      "hgb_leaf15": {
+        "meta_b": {
+          "tasks": 288,
+          "baseline": 138,
+          "reranked": 164,
+          "top20_reachable": 221,
+          "changed_choices": 129,
+          "by_bank": [
+            {
+              "seed": 902432,
+              "baseline": 24,
+              "reranked": 29,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902433,
+              "baseline": 28,
+              "reranked": 33,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902434,
+              "baseline": 23,
+              "reranked": 26,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902435,
+              "baseline": 21,
+              "reranked": 23,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902436,
+              "baseline": 21,
+              "reranked": 24,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902437,
+              "baseline": 21,
+              "reranked": 29,
+              "top20_reachable": 35
+            }
+          ]
+        }
+      }
+    }
+  },
+  "second": {
+    "train_panels": [
+      "meta_admission",
+      "meta_a",
+      "meta_b"
+    ],
+    "train_candidates": 16948,
+    "positive_candidate_labels": 5169,
+    "results": {
+      "logistic_c0.1": {
+        "focused": {
+          "tasks": 576,
+          "baseline": 307,
+          "reranked": 267,
+          "top20_reachable": 453,
+          "changed_choices": 477,
+          "by_bank": [
+            {
+              "seed": 902486,
+              "baseline": 24,
+              "reranked": 28,
+              "top20_reachable": 39
+            },
+            {
+              "seed": 902487,
+              "baseline": 25,
+              "reranked": 20,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902488,
+              "baseline": 26,
+              "reranked": 19,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902489,
+              "baseline": 23,
+              "reranked": 19,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902490,
+              "baseline": 24,
+              "reranked": 18,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902491,
+              "baseline": 21,
+              "reranked": 22,
+              "top20_reachable": 37
+            },
+            {
+              "seed": 902492,
+              "baseline": 26,
+              "reranked": 22,
+              "top20_reachable": 37
+            },
+            {
+              "seed": 902493,
+              "baseline": 35,
+              "reranked": 27,
+              "top20_reachable": 42
+            },
+            {
+              "seed": 902494,
+              "baseline": 23,
+              "reranked": 20,
+              "top20_reachable": 37
+            },
+            {
+              "seed": 902495,
+              "baseline": 28,
+              "reranked": 25,
+              "top20_reachable": 39
+            },
+            {
+              "seed": 902496,
+              "baseline": 22,
+              "reranked": 23,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902497,
+              "baseline": 30,
+              "reranked": 24,
+              "top20_reachable": 36
+            }
+          ]
+        },
+        "pairwise": {
+          "tasks": 576,
+          "baseline": 296,
+          "reranked": 274,
+          "top20_reachable": 437,
+          "changed_choices": 464,
+          "by_bank": [
+            {
+              "seed": 902498,
+              "baseline": 26,
+              "reranked": 25,
+              "top20_reachable": 39
+            },
+            {
+              "seed": 902499,
+              "baseline": 23,
+              "reranked": 22,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902500,
+              "baseline": 26,
+              "reranked": 18,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902501,
+              "baseline": 22,
+              "reranked": 24,
+              "top20_reachable": 32
+            },
+            {
+              "seed": 902502,
+              "baseline": 22,
+              "reranked": 22,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902503,
+              "baseline": 31,
+              "reranked": 22,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902504,
+              "baseline": 23,
+              "reranked": 27,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902505,
+              "baseline": 27,
+              "reranked": 24,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902506,
+              "baseline": 22,
+              "reranked": 19,
+              "top20_reachable": 32
+            },
+            {
+              "seed": 902507,
+              "baseline": 27,
+              "reranked": 23,
+              "top20_reachable": 41
+            },
+            {
+              "seed": 902508,
+              "baseline": 24,
+              "reranked": 26,
+              "top20_reachable": 42
+            },
+            {
+              "seed": 902509,
+              "baseline": 23,
+              "reranked": 22,
+              "top20_reachable": 39
+            }
+          ]
+        }
+      },
+      "logistic_c1": {
+        "focused": {
+          "tasks": 576,
+          "baseline": 307,
+          "reranked": 268,
+          "top20_reachable": 453,
+          "changed_choices": 483,
+          "by_bank": [
+            {
+              "seed": 902486,
+              "baseline": 24,
+              "reranked": 28,
+              "top20_reachable": 39
+            },
+            {
+              "seed": 902487,
+              "baseline": 25,
+              "reranked": 20,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902488,
+              "baseline": 26,
+              "reranked": 20,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902489,
+              "baseline": 23,
+              "reranked": 19,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902490,
+              "baseline": 24,
+              "reranked": 18,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902491,
+              "baseline": 21,
+              "reranked": 22,
+              "top20_reachable": 37
+            },
+            {
+              "seed": 902492,
+              "baseline": 26,
+              "reranked": 23,
+              "top20_reachable": 37
+            },
+            {
+              "seed": 902493,
+              "baseline": 35,
+              "reranked": 27,
+              "top20_reachable": 42
+            },
+            {
+              "seed": 902494,
+              "baseline": 23,
+              "reranked": 19,
+              "top20_reachable": 37
+            },
+            {
+              "seed": 902495,
+              "baseline": 28,
+              "reranked": 25,
+              "top20_reachable": 39
+            },
+            {
+              "seed": 902496,
+              "baseline": 22,
+              "reranked": 23,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902497,
+              "baseline": 30,
+              "reranked": 24,
+              "top20_reachable": 36
+            }
+          ]
+        },
+        "pairwise": {
+          "tasks": 576,
+          "baseline": 296,
+          "reranked": 280,
+          "top20_reachable": 437,
+          "changed_choices": 464,
+          "by_bank": [
+            {
+              "seed": 902498,
+              "baseline": 26,
+              "reranked": 25,
+              "top20_reachable": 39
+            },
+            {
+              "seed": 902499,
+              "baseline": 23,
+              "reranked": 22,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902500,
+              "baseline": 26,
+              "reranked": 19,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902501,
+              "baseline": 22,
+              "reranked": 24,
+              "top20_reachable": 32
+            },
+            {
+              "seed": 902502,
+              "baseline": 22,
+              "reranked": 22,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902503,
+              "baseline": 31,
+              "reranked": 24,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902504,
+              "baseline": 23,
+              "reranked": 27,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902505,
+              "baseline": 27,
+              "reranked": 26,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902506,
+              "baseline": 22,
+              "reranked": 18,
+              "top20_reachable": 32
+            },
+            {
+              "seed": 902507,
+              "baseline": 27,
+              "reranked": 23,
+              "top20_reachable": 41
+            },
+            {
+              "seed": 902508,
+              "baseline": 24,
+              "reranked": 27,
+              "top20_reachable": 42
+            },
+            {
+              "seed": 902509,
+              "baseline": 23,
+              "reranked": 23,
+              "top20_reachable": 39
+            }
+          ]
+        }
+      },
+      "hgb_leaf7": {
+        "focused": {
+          "tasks": 576,
+          "baseline": 307,
+          "reranked": 326,
+          "top20_reachable": 453,
+          "changed_choices": 250,
+          "by_bank": [
+            {
+              "seed": 902486,
+              "baseline": 24,
+              "reranked": 27,
+              "top20_reachable": 39
+            },
+            {
+              "seed": 902487,
+              "baseline": 25,
+              "reranked": 30,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902488,
+              "baseline": 26,
+              "reranked": 29,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902489,
+              "baseline": 23,
+              "reranked": 26,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902490,
+              "baseline": 24,
+              "reranked": 28,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902491,
+              "baseline": 21,
+              "reranked": 24,
+              "top20_reachable": 37
+            },
+            {
+              "seed": 902492,
+              "baseline": 26,
+              "reranked": 25,
+              "top20_reachable": 37
+            },
+            {
+              "seed": 902493,
+              "baseline": 35,
+              "reranked": 30,
+              "top20_reachable": 42
+            },
+            {
+              "seed": 902494,
+              "baseline": 23,
+              "reranked": 24,
+              "top20_reachable": 37
+            },
+            {
+              "seed": 902495,
+              "baseline": 28,
+              "reranked": 30,
+              "top20_reachable": 39
+            },
+            {
+              "seed": 902496,
+              "baseline": 22,
+              "reranked": 24,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902497,
+              "baseline": 30,
+              "reranked": 29,
+              "top20_reachable": 36
+            }
+          ]
+        },
+        "pairwise": {
+          "tasks": 576,
+          "baseline": 296,
+          "reranked": 319,
+          "top20_reachable": 437,
+          "changed_choices": 250,
+          "by_bank": [
+            {
+              "seed": 902498,
+              "baseline": 26,
+              "reranked": 28,
+              "top20_reachable": 39
+            },
+            {
+              "seed": 902499,
+              "baseline": 23,
+              "reranked": 24,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902500,
+              "baseline": 26,
+              "reranked": 25,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902501,
+              "baseline": 22,
+              "reranked": 25,
+              "top20_reachable": 32
+            },
+            {
+              "seed": 902502,
+              "baseline": 22,
+              "reranked": 24,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902503,
+              "baseline": 31,
+              "reranked": 28,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902504,
+              "baseline": 23,
+              "reranked": 27,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902505,
+              "baseline": 27,
+              "reranked": 30,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902506,
+              "baseline": 22,
+              "reranked": 26,
+              "top20_reachable": 32
+            },
+            {
+              "seed": 902507,
+              "baseline": 27,
+              "reranked": 29,
+              "top20_reachable": 41
+            },
+            {
+              "seed": 902508,
+              "baseline": 24,
+              "reranked": 28,
+              "top20_reachable": 42
+            },
+            {
+              "seed": 902509,
+              "baseline": 23,
+              "reranked": 25,
+              "top20_reachable": 39
+            }
+          ]
+        }
+      },
+      "hgb_leaf15": {
+        "focused": {
+          "tasks": 576,
+          "baseline": 307,
+          "reranked": 347,
+          "top20_reachable": 453,
+          "changed_choices": 298,
+          "by_bank": [
+            {
+              "seed": 902486,
+              "baseline": 24,
+              "reranked": 29,
+              "top20_reachable": 39
+            },
+            {
+              "seed": 902487,
+              "baseline": 25,
+              "reranked": 30,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902488,
+              "baseline": 26,
+              "reranked": 30,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902489,
+              "baseline": 23,
+              "reranked": 24,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902490,
+              "baseline": 24,
+              "reranked": 29,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902491,
+              "baseline": 21,
+              "reranked": 25,
+              "top20_reachable": 37
+            },
+            {
+              "seed": 902492,
+              "baseline": 26,
+              "reranked": 29,
+              "top20_reachable": 37
+            },
+            {
+              "seed": 902493,
+              "baseline": 35,
+              "reranked": 32,
+              "top20_reachable": 42
+            },
+            {
+              "seed": 902494,
+              "baseline": 23,
+              "reranked": 27,
+              "top20_reachable": 37
+            },
+            {
+              "seed": 902495,
+              "baseline": 28,
+              "reranked": 34,
+              "top20_reachable": 39
+            },
+            {
+              "seed": 902496,
+              "baseline": 22,
+              "reranked": 28,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902497,
+              "baseline": 30,
+              "reranked": 30,
+              "top20_reachable": 36
+            }
+          ]
+        },
+        "pairwise": {
+          "tasks": 576,
+          "baseline": 296,
+          "reranked": 343,
+          "top20_reachable": 437,
+          "changed_choices": 284,
+          "by_bank": [
+            {
+              "seed": 902498,
+              "baseline": 26,
+              "reranked": 31,
+              "top20_reachable": 39
+            },
+            {
+              "seed": 902499,
+              "baseline": 23,
+              "reranked": 27,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902500,
+              "baseline": 26,
+              "reranked": 27,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902501,
+              "baseline": 22,
+              "reranked": 26,
+              "top20_reachable": 32
+            },
+            {
+              "seed": 902502,
+              "baseline": 22,
+              "reranked": 27,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902503,
+              "baseline": 31,
+              "reranked": 30,
+              "top20_reachable": 36
+            },
+            {
+              "seed": 902504,
+              "baseline": 23,
+              "reranked": 28,
+              "top20_reachable": 34
+            },
+            {
+              "seed": 902505,
+              "baseline": 27,
+              "reranked": 33,
+              "top20_reachable": 38
+            },
+            {
+              "seed": 902506,
+              "baseline": 22,
+              "reranked": 27,
+              "top20_reachable": 32
+            },
+            {
+              "seed": 902507,
+              "baseline": 27,
+              "reranked": 30,
+              "top20_reachable": 41
+            },
+            {
+              "seed": 902508,
+              "baseline": 24,
+              "reranked": 31,
+              "top20_reachable": 42
+            },
+            {
+              "seed": 902509,
+              "baseline": 23,
+              "reranked": 26,
+              "top20_reachable": 39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "feature_contract": "175 public structural features; old ranker score gap, rank, pool size, public mechanism block",
+  "limits": [
+    "Only old top-20 candidates are rescored; reachability outside top-20 cannot improve.",
+    "Source and evaluation labels come from an exact research oracle and incur candidate work.",
+    "The models were screened after the target panels had already been opened."
+  ]
+}

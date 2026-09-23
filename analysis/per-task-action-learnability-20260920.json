@@ -1,0 +1,45 @@
+{
+  "scope": "opened development; learnability screen for the seven-action per-task space",
+  "question": "can a selector fitted on one audited panel beat the own-region default on the other",
+  "directions": {
+    "transfer_b_to_transfer_c": {
+      "learned": 396,
+      "own_region_default": 405,
+      "oracle": 456,
+      "default_regret": 51,
+      "learned_minus_default": {
+        "gain": -9,
+        "positive_banks": 4,
+        "losing_banks": 7,
+        "interval": [
+          -19,
+          1
+        ]
+      },
+      "fraction_of_regret_captured": -0.17647058823529413
+    },
+    "transfer_c_to_transfer_b": {
+      "learned": 381,
+      "own_region_default": 399,
+      "oracle": 437,
+      "default_regret": 38,
+      "learned_minus_default": {
+        "gain": -18,
+        "positive_banks": 0,
+        "losing_banks": 8,
+        "interval": [
+          -27,
+          -9
+        ]
+      },
+      "fraction_of_regret_captured": -0.47368421052631576
+    }
+  },
+  "learnable": false,
+  "limits": [
+    "Opened panels; development evidence only.",
+    "Public features are pool and score summaries plus a region indicator and the mean of the candidate feature block; a richer set might do better.",
+    "Each direction trains on 576 tasks, which is small for a seven-way per-task decision.",
+    "Oracle uses final labels and is not a deployable policy."
+  ]
+}

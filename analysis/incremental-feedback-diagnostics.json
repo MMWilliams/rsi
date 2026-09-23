@@ -1,0 +1,188 @@
+[
+  {
+    "run": "incremental-feedback-20260917",
+    "rounds": [
+      {
+        "round": 0,
+        "evaluator_correct": 21,
+        "brier": 0.02843925435550606,
+        "It_E0": 22,
+        "I0_Et": 22,
+        "It_Et": 22
+      },
+      {
+        "round": 1,
+        "evaluator_correct": 21,
+        "brier": 0.028274392756848142,
+        "It_E0": 21,
+        "I0_Et": 22,
+        "It_Et": 21
+      },
+      {
+        "round": 2,
+        "evaluator_correct": 21,
+        "brier": 0.03279079941060746,
+        "It_E0": 22,
+        "I0_Et": 22,
+        "It_Et": 22
+      },
+      {
+        "round": 3,
+        "evaluator_correct": 21,
+        "brier": 0.03529794509759727,
+        "It_E0": 22,
+        "I0_Et": 22,
+        "It_Et": 22
+      },
+      {
+        "round": 4,
+        "evaluator_correct": 21,
+        "brier": 0.03816029835774104,
+        "It_E0": 21,
+        "I0_Et": 22,
+        "It_Et": 21
+      }
+    ],
+    "menu_scores_posthoc": {
+      "base": {
+        "203301": 10,
+        "203302": 12
+      },
+      "prefer_v67": {
+        "203301": 10,
+        "203302": 12
+      },
+      "prefer_v73": {
+        "203301": 10,
+        "203302": 12
+      },
+      "shorter": {
+        "203301": 10,
+        "203302": 12
+      },
+      "longer": {
+        "203301": 10,
+        "203302": 11
+      },
+      "more_div": {
+        "203301": 10,
+        "203302": 12
+      },
+      "less_div": {
+        "203301": 10,
+        "203302": 12
+      },
+      "more_mul": {
+        "203301": 10,
+        "203302": 12
+      },
+      "more_xor": {
+        "203301": 10,
+        "203302": 12
+      },
+      "more_not": {
+        "203301": 10,
+        "203302": 11
+      },
+      "no_length_penalty": {
+        "203301": 10,
+        "203302": 12
+      }
+    },
+    "tasks_with_conflicting_feature_labels": 1,
+    "hidden_fields_removed_decision_replay": "passed"
+  },
+  {
+    "run": "incremental-feedback-ast-20260917",
+    "rounds": [
+      {
+        "round": 0,
+        "evaluator_correct": 5,
+        "brier": 0.4341078740841831,
+        "It_E0": 11,
+        "I0_Et": 11,
+        "It_Et": 11
+      },
+      {
+        "round": 1,
+        "evaluator_correct": 5,
+        "brier": 0.4385417691054954,
+        "It_E0": 7,
+        "I0_Et": 11,
+        "It_Et": 7
+      },
+      {
+        "round": 2,
+        "evaluator_correct": 5,
+        "brier": 0.3959497352877979,
+        "It_E0": 11,
+        "I0_Et": 11,
+        "It_Et": 11
+      },
+      {
+        "round": 3,
+        "evaluator_correct": 5,
+        "brier": 0.38156559258592315,
+        "It_E0": 11,
+        "I0_Et": 11,
+        "It_Et": 11
+      },
+      {
+        "round": 4,
+        "evaluator_correct": 5,
+        "brier": 0.369581324193784,
+        "It_E0": 7,
+        "I0_Et": 11,
+        "It_Et": 10
+      }
+    ],
+    "menu_scores_posthoc": {
+      "base": {
+        "203303": 8,
+        "203304": 3
+      },
+      "prefer_v67": {
+        "203303": 8,
+        "203304": 3
+      },
+      "prefer_v73": {
+        "203303": 8,
+        "203304": 3
+      },
+      "shorter": {
+        "203303": 8,
+        "203304": 3
+      },
+      "longer": {
+        "203303": 4,
+        "203304": 7
+      },
+      "more_div": {
+        "203303": 8,
+        "203304": 8
+      },
+      "less_div": {
+        "203303": 8,
+        "203304": 3
+      },
+      "more_mul": {
+        "203303": 8,
+        "203304": 8
+      },
+      "more_xor": {
+        "203303": 8,
+        "203304": 3
+      },
+      "more_not": {
+        "203303": 5,
+        "203304": 2
+      },
+      "no_length_penalty": {
+        "203303": 8,
+        "203304": 8
+      }
+    },
+    "tasks_with_conflicting_feature_labels": 14,
+    "hidden_fields_removed_decision_replay": "passed"
+  }
+]

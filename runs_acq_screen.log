@@ -1,0 +1,46 @@
+pool banks 24 transfer banks 12
+loo bank  0 marginal=+5.0
+loo bank  1 marginal=+9.0
+loo bank  2 marginal=+2.0
+loo bank  3 marginal=+14.0
+loo bank  4 marginal=-4.0
+loo bank  5 marginal=+15.0
+loo bank  6 marginal=+11.0
+loo bank  7 marginal=+4.0
+loo bank  8 marginal=+5.0
+loo bank  9 marginal=+6.0
+loo bank 10 marginal=+10.0
+loo bank 11 marginal=+6.0
+loo bank 12 marginal=+8.0
+loo bank 13 marginal=+6.0
+loo bank 14 marginal=+2.0
+loo bank 15 marginal=+3.0
+loo bank 16 marginal=+3.0
+loo bank 17 marginal=+10.0
+loo bank 18 marginal=+4.0
+loo bank 19 marginal=+10.0
+loo bank 20 marginal=+8.0
+loo bank 21 marginal=+3.0
+loo bank 22 marginal=+0.0
+loo bank 23 marginal=-1.0
+budget K=4
+   first                          321.0
+   most_diverse_LABELLED          321.0
+   widest_spread                  313.0
+   most_reachable_LABELLED        311.0
+   random                         308.6
+   largest_pool                   308.0
+   value_topk_UNAVAILABLE         300.0
+   lowest_margin                  298.0
+   best free = first  regret = -21.0 [-38, -4]  P2c=False
+budget K=8
+   widest_spread                  327.0
+   random                         323.1
+   value_topk_UNAVAILABLE         323.0
+   first                          320.0
+   largest_pool                   320.0
+   lowest_margin                  320.0
+   most_reachable_LABELLED        320.0
+   most_diverse_LABELLED          320.0
+   best free = widest_spread  regret = -4.0 [-19, 10]  P2c=False
+verdict: {'4': False, '8': False}

@@ -1,0 +1,265 @@
+{
+  "summary": {
+    "scope": "development only; leave-one-bank-out prior",
+    "admission_tasks_per_bank": 16,
+    "final_tasks_per_bank": 16,
+    "fixed_listwise": 68,
+    "fixed_blend": 55,
+    "policies": {
+      "0": 61,
+      "1": 61,
+      "2": 61,
+      "4": 61
+    }
+  },
+  "episodes": [
+    {
+      "seed": 902228,
+      "fixed_listwise": 15,
+      "fixed_blend": 10,
+      "policies": {
+        "0": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "blend",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 11
+        },
+        "1": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "blend",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 11
+        },
+        "2": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "blend",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 11
+        },
+        "4": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "blend",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 11
+        }
+      }
+    },
+    {
+      "seed": 902229,
+      "fixed_listwise": 10,
+      "fixed_blend": 8,
+      "policies": {
+        "0": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "listwise_120",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 10
+        },
+        "1": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "listwise_120",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 10
+        },
+        "2": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "listwise_120",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 10
+        },
+        "4": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "listwise_120",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 10
+        }
+      }
+    },
+    {
+      "seed": 902230,
+      "fixed_listwise": 11,
+      "fixed_blend": 10,
+      "policies": {
+        "0": {
+          "choice": {
+            "stack_transition": "listwise_120",
+            "mutation_transition": "listwise_120",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 11
+        },
+        "1": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "blend",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 10
+        },
+        "2": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "blend",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 10
+        },
+        "4": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "blend",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 10
+        }
+      }
+    },
+    {
+      "seed": 902231,
+      "fixed_listwise": 10,
+      "fixed_blend": 9,
+      "policies": {
+        "0": {
+          "choice": {
+            "stack_transition": "listwise_120",
+            "mutation_transition": "blend",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 9
+        },
+        "1": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "blend",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 12
+        },
+        "2": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "blend",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 12
+        },
+        "4": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "blend",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 12
+        }
+      }
+    },
+    {
+      "seed": 902232,
+      "fixed_listwise": 8,
+      "fixed_blend": 9,
+      "policies": {
+        "0": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "listwise_120",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 8
+        },
+        "1": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "listwise_120",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 8
+        },
+        "2": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "listwise_120",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 8
+        },
+        "4": {
+          "choice": {
+            "stack_transition": "listwise_120",
+            "mutation_transition": "listwise_120",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 8
+        }
+      }
+    },
+    {
+      "seed": 902233,
+      "fixed_listwise": 14,
+      "fixed_blend": 9,
+      "policies": {
+        "0": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "listwise_120",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 12
+        },
+        "1": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "blend",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 10
+        },
+        "2": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "blend",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 10
+        },
+        "4": {
+          "choice": {
+            "stack_transition": "blend",
+            "mutation_transition": "blend",
+            "self_edit_transition": "listwise_120"
+          },
+          "final_correct": 10
+        }
+      }
+    }
+  ],
+  "frozen_prior": {
+    "stack_transition": {
+      "blend": 44,
+      "listwise_120": 40
+    },
+    "mutation_transition": {
+      "blend": 41,
+      "listwise_120": 41
+    },
+    "self_edit_transition": {
+      "blend": 32,
+      "listwise_120": 49
+    }
+  }
+}

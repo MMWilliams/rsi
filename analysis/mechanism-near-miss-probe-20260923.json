@@ -1,0 +1,192 @@
+{
+  "scope": "signal in near-miss outcomes of the first window",
+  "seed": 622101,
+  "catalog": {
+    "rows": 166596,
+    "digest": "1d3c71aff89ba2b6fd72da3ea20591d74afc6aa26ef367c59bed6e57ee5424b8"
+  },
+  "tasks_per_world": 20,
+  "groups": {
+    "seen": {
+      "128": {
+        "window_rows": 128,
+        "share_of_atoms_in_world": {
+          "consistent": 0.7872340425531915,
+          "covers_only": 0.08637142158062149,
+          "avoids_only": 0.0752318432843597,
+          "neither": 0.06987573203828025,
+          "window": 0.07194010416666667
+        },
+        "atom_occurrences": {
+          "consistent": 94,
+          "covers_only": 8174,
+          "avoids_only": 9597,
+          "neither": 105015,
+          "window": 122880
+        },
+        "top14_precision_near_miss": {
+          "5": 0.06026785714285714,
+          "20": 0.05133928571428571
+        },
+        "top14_precision_window_frequency": 0.12276785714285712
+      },
+      "256": {
+        "window_rows": 256,
+        "share_of_atoms_in_world": {
+          "consistent": 0.7933884297520661,
+          "covers_only": 0.06550271656187046,
+          "avoids_only": 0.06648815467005537,
+          "neither": 0.06266648650735436,
+          "window": 0.06355794270833333
+        },
+        "atom_occurrences": {
+          "consistent": 121,
+          "covers_only": 16381,
+          "avoids_only": 22034,
+          "neither": 207224,
+          "window": 245760
+        },
+        "top14_precision_near_miss": {
+          "5": 0.07142857142857142,
+          "20": 0.051339285714285705
+        },
+        "top14_precision_window_frequency": 0.11160714285714285
+      },
+      "512": {
+        "window_rows": 512,
+        "share_of_atoms_in_world": {
+          "consistent": 0.711340206185567,
+          "covers_only": 0.06249783114134018,
+          "avoids_only": 0.06924049221160639,
+          "neither": 0.06480198256381547,
+          "window": 0.06537224264705882
+        },
+        "atom_occurrences": {
+          "consistent": 194,
+          "covers_only": 28817,
+          "avoids_only": 53798,
+          "neither": 439431,
+          "window": 522240
+        },
+        "top14_precision_near_miss": {
+          "5": 0.08705357142857142,
+          "20": 0.08035714285714285
+        },
+        "top14_precision_window_frequency": 0.12276785714285712
+      },
+      "1024": {
+        "window_rows": 1024,
+        "share_of_atoms_in_world": {
+          "consistent": 0.6810344827586207,
+          "covers_only": 0.0624756461878166,
+          "avoids_only": 0.06496207588125087,
+          "neither": 0.06935514886003562,
+          "window": 0.06868287167891464
+        },
+        "atom_occurrences": {
+          "consistent": 232,
+          "covers_only": 53893,
+          "avoids_only": 121163,
+          "neither": 956872,
+          "window": 1132160
+        },
+        "top14_precision_near_miss": {
+          "5": 0.08482142857142858,
+          "20": 0.09821428571428571
+        },
+        "top14_precision_window_frequency": 0.10267857142857142
+      }
+    },
+    "new_family": {
+      "128": {
+        "window_rows": 128,
+        "share_of_atoms_in_world": {
+          "consistent": 0.725,
+          "covers_only": 0.07137619164018577,
+          "avoids_only": 0.07225672877846791,
+          "neither": 0.0584995903123154,
+          "window": 0.060872395833333336
+        },
+        "atom_occurrences": {
+          "consistent": 40,
+          "covers_only": 4091,
+          "avoids_only": 4830,
+          "neither": 52479,
+          "window": 61440
+        },
+        "top14_precision_near_miss": {
+          "5": 0.08035714285714285,
+          "20": 0.08035714285714285
+        },
+        "top14_precision_window_frequency": 0.08482142857142858
+      },
+      "256": {
+        "window_rows": 256,
+        "share_of_atoms_in_world": {
+          "consistent": 0.6578947368421053,
+          "covers_only": 0.07433174661296228,
+          "avoids_only": 0.07260786281127429,
+          "neither": 0.053912775109465114,
+          "window": 0.05712890625
+        },
+        "atom_occurrences": {
+          "consistent": 38,
+          "covers_only": 8193,
+          "avoids_only": 10963,
+          "neither": 103686,
+          "window": 122880
+        },
+        "top14_precision_near_miss": {
+          "5": 0.08035714285714285,
+          "20": 0.0982142857142857
+        },
+        "top14_precision_window_frequency": 0.08035714285714285
+      },
+      "512": {
+        "window_rows": 512,
+        "share_of_atoms_in_world": {
+          "consistent": 0.7674418604651163,
+          "covers_only": 0.07011534428521496,
+          "avoids_only": 0.05114572412760222,
+          "neither": 0.054793151083321216,
+          "window": 0.055376838235294115
+        },
+        "atom_occurrences": {
+          "consistent": 43,
+          "covers_only": 14305,
+          "avoids_only": 26708,
+          "neither": 220064,
+          "window": 261120
+        },
+        "top14_precision_near_miss": {
+          "5": 0.06249999999999999,
+          "20": 0.05357142857142857
+        },
+        "top14_precision_window_frequency": 0.07142857142857142
+      },
+      "1024": {
+        "window_rows": 1024,
+        "share_of_atoms_in_world": {
+          "consistent": 0.7592592592592593,
+          "covers_only": 0.06797594580193347,
+          "avoids_only": 0.0581726986624705,
+          "neither": 0.06254699797804254,
+          "window": 0.06239400791407575
+        },
+        "atom_occurrences": {
+          "consistent": 54,
+          "covers_only": 26274,
+          "avoids_only": 61008,
+          "neither": 478744,
+          "window": 566080
+        },
+        "top14_precision_near_miss": {
+          "5": 0.08928571428571427,
+          "20": 0.08482142857142856
+        },
+        "top14_precision_window_frequency": 0.08928571428571427
+      }
+    }
+  },
+  "wall_seconds": 7.243482899997616
+}

@@ -1,0 +1,18 @@
+{
+  "protocol": "EXPERIMENT-v12-credit-transfer.md",
+  "source_evidence": "runs/paired-credit-20260916-v10/results.json",
+  "source_evidence_audit": "runs/paired-credit-20260916-v10/audit.json",
+  "bank_seed": 9162614,
+  "bank_counts": {"development": 6, "admission": 6, "final": 8},
+  "seeds": [347],
+  "conditions": ["immediate_only", "observational_descendant", "paired_credit", "scrambled_paired", "empty", "random"],
+  "generations": 2,
+  "proposals_per_generation": 2,
+  "search_budget": 8,
+  "max_atoms": 4,
+  "visible_examples": 3,
+  "hidden_examples": 13,
+  "transfer_group_tasks": 6,
+  "macro_source": "runs/library-inheritance-20260916-v7/common_macros.json",
+  "log_selection": true
+}

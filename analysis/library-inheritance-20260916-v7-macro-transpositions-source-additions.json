@@ -1,0 +1,378 @@
+{
+  "scope": "post hoc source candidate instrumentation; no changed search output, hidden example or final task used",
+  "source_requests_checked": 704,
+  "tasks_with_cheaper_discarded_route": 4,
+  "examples": [
+    {
+      "label": "source/library/193/g6/p1",
+      "request_sha256": "6149d9e0888532ddbab957d86225c3690b349b87a07452ed337e5ddc1669d664",
+      "task": {
+        "id": "63da3e36f41f8b96701b",
+        "visible": [
+          [
+            "Chen John Novak",
+            " /"
+          ],
+          [
+            "Chen Adebayo",
+            " /"
+          ],
+          [
+            "John Smith",
+            " /"
+          ]
+        ]
+      },
+      "config": {
+        "absolute_cost": 1.0,
+        "case_cost": 1.0,
+        "constant_cost": 1.0,
+        "length_cost": 0.15,
+        "macro_discount": 0.25,
+        "match_cost": 1.0,
+        "progress_weight": 1.0,
+        "widening": 0.5
+      },
+      "budget": 128,
+      "max_atoms": 4,
+      "macros": [
+        "Concat(' ', '/')",
+        "Concat(', ')",
+        "Concat(', ', ' ', '.', ' ')",
+        "Concat('-')",
+        "Concat('-', Sub(C4,M(UPPER,2,end)))",
+        "Concat('/', '/', ': ')",
+        "Concat('/', Sub(C-6,C-1))",
+        "Concat(': ')",
+        "Concat(Sub(C-7,M(UPPER,1,end)))",
+        "Concat(Sub(C0,C4))",
+        "Concat(Sub(C0,C5))",
+        "Concat(Sub(M(WORD,1,end),M(WORD,2,start)))",
+        "Concat(Sub(M(WORD,1,end),M(WORD,2,start)), ': ')",
+        "Concat(cap(Sub(C0,M(UPPER,1,end))), ', ', '.')"
+      ],
+      "recorded_result": {
+        "task_id": "63da3e36f41f8b96701b",
+        "program": "Concat(Sub(M(WORD,1,end),M(WORD,2,start)), '/')",
+        "visible_outputs": [
+          " /",
+          " /",
+          " /"
+        ],
+        "source": "search",
+        "visible_fit": true,
+        "trace_sha256": "cbb1c218ddb6edce1a8eb229060a9b0c81897ff913178e5165b1ebc07483e1be",
+        "cost": {
+          "expansions": 85,
+          "generated_nodes": 74,
+          "primitive_executions": 4481,
+          "model_checks": 0,
+          "candidate_count": 37
+        },
+        "replay_sha256": "551e2bf97b015f729d67757ee4eaf6ee08989b6e5d51e2a3ce6d8eacb72ddd7a"
+      },
+      "discarded": [
+        {
+          "atoms": [
+            "' '",
+            "'/'"
+          ],
+          "first_cost": 2.55,
+          "discarded_cost": 1.9124999999999999,
+          "macro_edge": true
+        }
+      ]
+    },
+    {
+      "label": "source/library/211/g2/p0",
+      "request_sha256": "457a646fc00666af59af640dc0d1ce39cd72e5da55b8a616ce7669ebea4d3bf3",
+      "task": {
+        "id": "37836369119a3b6ce715",
+        "visible": [
+          [
+            "Lucas John Smith",
+            ": , "
+          ],
+          [
+            "Ana Mary Adebayo",
+            ": , "
+          ],
+          [
+            "Chen Garcia",
+            ": , "
+          ]
+        ]
+      },
+      "config": {
+        "absolute_cost": 1.0,
+        "case_cost": 1.0,
+        "constant_cost": 1.0,
+        "length_cost": 0.15,
+        "macro_discount": 0.25,
+        "match_cost": 1.0,
+        "progress_weight": 1.0,
+        "widening": 0.5
+      },
+      "budget": 128,
+      "max_atoms": 4,
+      "macros": [
+        "Concat(' ', ', ')",
+        "Concat(', ')",
+        "Concat(', ', ' ', '.', ' ')",
+        "Concat('-')",
+        "Concat('-', Sub(C4,M(UPPER,2,end)))",
+        "Concat('/', '/', ': ')",
+        "Concat('/', Sub(C-6,C-1))",
+        "Concat(': ')",
+        "Concat(Sub(C-7,M(UPPER,1,end)))",
+        "Concat(Sub(C0,C4))",
+        "Concat(Sub(C0,C5))",
+        "Concat(Sub(M(WORD,1,end),M(WORD,2,start)))",
+        "Concat(Sub(M(WORD,1,end),M(WORD,2,start)), ': ')",
+        "Concat(cap(Sub(C0,M(UPPER,1,end))), ', ', '.')"
+      ],
+      "recorded_result": {
+        "task_id": "37836369119a3b6ce715",
+        "program": "Concat(': ', ', ')",
+        "visible_outputs": [
+          ": , ",
+          ": , ",
+          ": , "
+        ],
+        "source": "search",
+        "visible_fit": true,
+        "trace_sha256": "11b874d24d9eaf8ea8252f900c76a55d5450fb2620d51f71484b640cbe997c16",
+        "cost": {
+          "expansions": 128,
+          "generated_nodes": 246,
+          "primitive_executions": 4473,
+          "model_checks": 0,
+          "candidate_count": 76
+        },
+        "replay_sha256": "654080f9b3f97d2f5149f74cb87a21e8bba54510c7aa21539fbca3eb7b538e9a"
+      },
+      "discarded": [
+        {
+          "atoms": [
+            "':'",
+            "' '",
+            "', '"
+          ],
+          "first_cost": 3.5999999999999996,
+          "discarded_cost": 3.2812499999999996,
+          "macro_edge": true
+        }
+      ]
+    },
+    {
+      "label": "source/library/239/g2/p0",
+      "request_sha256": "edd828b3548cbb6aeedfb1f20f93e6554e00918b320841050a7ca9fd6cb6da9f",
+      "task": {
+        "id": "dc3a254d81a5e665cf1d",
+        "visible": [
+          [
+            "john.lee@example.com",
+            "ohn.lee@example.co/"
+          ],
+          [
+            "Lucas Mary Novak",
+            "ucas Mary Nova/"
+          ],
+          [
+            "FFC-4526",
+            "FC-452/"
+          ]
+        ]
+      },
+      "config": {
+        "absolute_cost": 1.0,
+        "case_cost": 1.0,
+        "constant_cost": 1.0,
+        "length_cost": 0.15,
+        "macro_discount": 0.25,
+        "match_cost": 1.0,
+        "progress_weight": 1.0,
+        "widening": 0.5
+      },
+      "budget": 128,
+      "max_atoms": 4,
+      "macros": [
+        "Concat(', ')",
+        "Concat(', ', ' ', '.', ' ')",
+        "Concat('-')",
+        "Concat('-', Sub(C4,M(UPPER,2,end)))",
+        "Concat('/', '/', ': ')",
+        "Concat('/', Sub(C-6,C-1))",
+        "Concat(': ')",
+        "Concat(Sub(C-7,M(UPPER,1,end)))",
+        "Concat(Sub(C0,C4))",
+        "Concat(Sub(C0,C5))",
+        "Concat(Sub(C1,C-1), '/')",
+        "Concat(Sub(M(WORD,1,end),M(WORD,2,start)))",
+        "Concat(Sub(M(WORD,1,end),M(WORD,2,start)), ': ')",
+        "Concat(cap(Sub(C0,M(UPPER,1,end))), ', ', '.')"
+      ],
+      "recorded_result": {
+        "task_id": "dc3a254d81a5e665cf1d",
+        "program": "Concat(Sub(C1,C-1), '/')",
+        "visible_outputs": [
+          "ohn.lee@example.co/",
+          "ucas Mary Nova/",
+          "FC-452/"
+        ],
+        "source": "search",
+        "visible_fit": true,
+        "trace_sha256": "38afcd3f3221fd13cb5d79a51c2956dec3704488b7245ff722c2588a98f510d8",
+        "cost": {
+          "expansions": 128,
+          "generated_nodes": 300,
+          "primitive_executions": 5207,
+          "model_checks": 0,
+          "candidate_count": 1
+        },
+        "replay_sha256": "2281197d64f7fb3323d6c2f28271f69f1c81f1b87bc0670e13d03da0785d2be6"
+      },
+      "discarded": [
+        {
+          "atoms": [
+            "Sub(C1,C-1)",
+            "'/'"
+          ],
+          "first_cost": 2.425,
+          "discarded_cost": 1.8187499999999999,
+          "macro_edge": true
+        }
+      ]
+    },
+    {
+      "label": "source/library/251/g4/p0",
+      "request_sha256": "6f5c7ba3fb29f04fc4f96cef79f9773877b1740379780ce19cb52cdaabf0b41c",
+      "task": {
+        "id": "c368ccd14cd37f81d80b",
+        "visible": [
+          [
+            "Priya Lee",
+            ", , "
+          ],
+          [
+            "Zoe Chen Souza",
+            ", , "
+          ],
+          [
+            "Chen Ito",
+            ", , "
+          ]
+        ]
+      },
+      "config": {
+        "absolute_cost": 1.0,
+        "case_cost": 1.0,
+        "constant_cost": 1.0,
+        "length_cost": 0.15,
+        "macro_discount": 0.25,
+        "match_cost": 1.0,
+        "progress_weight": 1.0,
+        "widening": 0.5
+      },
+      "budget": 128,
+      "max_atoms": 4,
+      "macros": [
+        "Concat(' ', ', ')",
+        "Concat(', ')",
+        "Concat(', ', ' ', '.', ' ')",
+        "Concat('-')",
+        "Concat('-', Sub(C4,M(UPPER,2,end)))",
+        "Concat('/', '/', ': ')",
+        "Concat('/', Sub(C-6,C-1))",
+        "Concat(': ')",
+        "Concat(Sub(C-7,M(UPPER,1,end)))",
+        "Concat(Sub(C0,C4))",
+        "Concat(Sub(C0,C5))",
+        "Concat(Sub(M(WORD,1,end),M(WORD,2,start)))",
+        "Concat(Sub(M(WORD,1,end),M(WORD,2,start)), ': ')",
+        "Concat(cap(Sub(C0,M(UPPER,1,end))), ', ', '.')"
+      ],
+      "recorded_result": {
+        "task_id": "c368ccd14cd37f81d80b",
+        "program": "Concat(', ', ', ')",
+        "visible_outputs": [
+          ", , ",
+          ", , ",
+          ", , "
+        ],
+        "source": "search",
+        "visible_fit": true,
+        "trace_sha256": "43355d65a3b676aa18b73871c7c84108d0e0c33ef090eb8a09de745a33eb8681",
+        "cost": {
+          "expansions": 128,
+          "generated_nodes": 246,
+          "primitive_executions": 4482,
+          "model_checks": 0,
+          "candidate_count": 76
+        },
+        "replay_sha256": "f8c8075d2c73e489bcaa082c151b78bdd8ccfa56b25ecff90f3cea7f580911b6"
+      },
+      "discarded": [
+        {
+          "atoms": [
+            "','",
+            "' '",
+            "', '"
+          ],
+          "first_cost": 3.5999999999999996,
+          "discarded_cost": 3.2812499999999996,
+          "macro_edge": true
+        }
+      ]
+    }
+  ],
+  "source_addition_labels": [
+    "source/library/181/g3/p0",
+    "source/library/181/g5/p0",
+    "source/library/181/g5/p1",
+    "source/library/181/g6/p0",
+    "source/library/193/g3/p0",
+    "source/library/193/g3/p1",
+    "source/library/193/g4/p0",
+    "source/library/193/g4/p1",
+    "source/library/193/g5/p0",
+    "source/library/193/g5/p1",
+    "source/library/193/g6/p0",
+    "source/library/193/g6/p1",
+    "source/library/211/g2/p0",
+    "source/library/211/g3/p0",
+    "source/library/211/g3/p1",
+    "source/library/211/g4/p0",
+    "source/library/211/g5/p0",
+    "source/library/211/g5/p1",
+    "source/library/211/g6/p0",
+    "source/library/211/g6/p1",
+    "source/library/223/g1/p0",
+    "source/library/223/g1/p1",
+    "source/library/223/g2/p0",
+    "source/library/223/g2/p1",
+    "source/library/223/g3/p0",
+    "source/library/223/g3/p1",
+    "source/library/223/g4/p0",
+    "source/library/223/g4/p1",
+    "source/library/223/g5/p0",
+    "source/library/223/g5/p1",
+    "source/library/223/g6/p0",
+    "source/library/223/g6/p1",
+    "source/library/239/g2/p0",
+    "source/library/239/g3/p0",
+    "source/library/239/g4/p0",
+    "source/library/239/g4/p1",
+    "source/library/239/g5/p0",
+    "source/library/239/g5/p1",
+    "source/library/239/g6/p0",
+    "source/library/251/g4/p0",
+    "source/library/251/g5/p0",
+    "source/library/251/g5/p1",
+    "source/library/251/g6/p0",
+    "source/library/251/g6/p1"
+  ],
+  "search_file_sha256": "c5d7a3df5dc4e1479528ed8f34f08c7a4b7e9c9696290edf35217d8a3f5360fb",
+  "instrumented_function_sha256": "3f0be1aad85a7fc4eedd96876188dc00b236a839f20dcd296535ac17b4fd0c73",
+  "analysis_sha256": "ea6ee5f0a5065ed905390bd5f081f118aaa89e47c28750ae6216f5c530530f97"
+}

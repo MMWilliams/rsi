@@ -1,0 +1,141 @@
+{
+  "scope": "opened development; four-precondition screen of the complexity-partition environment",
+  "bins": [
+    [
+      "shallow",
+      0,
+      3
+    ],
+    [
+      "mid",
+      3,
+      15
+    ],
+    [
+      "deep",
+      15,
+      100
+    ]
+  ],
+  "threshold": 20,
+  "source_panels": [
+    "candidate-reranker-transfer-20260918",
+    "candidate-reranker-replication-20260918"
+  ],
+  "panels": {
+    "candidate-query-cost-transfer-20260918": {
+      "tasks": 576,
+      "bin_counts": {
+        "shallow": 369,
+        "unreachable": 86,
+        "mid": 77,
+        "deep": 44
+      },
+      "own_bin_oracle_routing": 392,
+      "pooled": 326,
+      "most_confident": 339,
+      "best_constant": 327,
+      "best_constant_action": "e0",
+      "oracle": 462,
+      "best_default": "most_confident",
+      "best_default_total": 339,
+      "default_regret": 123,
+      "p2c_passed": true,
+      "own_bin_minus_default": {
+        "gain": 53,
+        "positive_banks": 12,
+        "losing_banks": 0,
+        "interval": [
+          37,
+          70
+        ]
+      }
+    },
+    "combined-ranker-query-transfer-20260918": {
+      "tasks": 576,
+      "bin_counts": {
+        "shallow": 358,
+        "mid": 85,
+        "unreachable": 89,
+        "deep": 44
+      },
+      "own_bin_oracle_routing": 401,
+      "pooled": 333,
+      "most_confident": 346,
+      "best_constant": 344,
+      "best_constant_action": "e0",
+      "oracle": 447,
+      "best_default": "most_confident",
+      "best_default_total": 346,
+      "default_regret": 101,
+      "p2c_passed": true,
+      "own_bin_minus_default": {
+        "gain": 55,
+        "positive_banks": 12,
+        "losing_banks": 0,
+        "interval": [
+          42,
+          69
+        ]
+      }
+    },
+    "candidate-conditioned-query-transfer-20260918": {
+      "tasks": 576,
+      "bin_counts": {
+        "shallow": 368,
+        "unreachable": 93,
+        "mid": 71,
+        "deep": 44
+      },
+      "own_bin_oracle_routing": 400,
+      "pooled": 341,
+      "most_confident": 350,
+      "best_constant": 349,
+      "best_constant_action": "e0",
+      "oracle": 439,
+      "best_default": "most_confident",
+      "best_default_total": 350,
+      "default_regret": 89,
+      "p2c_passed": true,
+      "own_bin_minus_default": {
+        "gain": 50,
+        "positive_banks": 12,
+        "losing_banks": 0,
+        "interval": [
+          37,
+          64
+        ]
+      }
+    }
+  },
+  "learnability": {
+    "train_panels": [
+      "candidate-query-cost-transfer-20260918",
+      "combined-ranker-query-transfer-20260918"
+    ],
+    "test_panel": "candidate-conditioned-query-transfer-20260918",
+    "learned": 369,
+    "default_used": "most_confident",
+    "default": 350,
+    "learned_minus_default": {
+      "gain": 19,
+      "positive_banks": 8,
+      "losing_banks": 2,
+      "interval": [
+        5,
+        33
+      ]
+    },
+    "p2d_passed": true
+  },
+  "verdict": {
+    "p2c_all_panels": true,
+    "p2d": true
+  },
+  "limits": [
+    "Opened panels; development evidence only.",
+    "The complexity bin is defined by the old ranker order, so it is latent but not independent of that ranker.",
+    "Own-bin routing uses hidden labels and is an upper reference, not a deployable policy.",
+    "Oracle uses final labels and is not deployable."
+  ]
+}

@@ -1,0 +1,884 @@
+[
+  {
+    "task_id": "06365729278186383846",
+    "program": "Concat('-', ': ')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "0c267f9eef700116d9f8",
+    "program": "Concat(Sub(M(WORD,2,start),M(WORD,2,end)))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "15ecb15725c262c40c1f",
+    "program": "Concat(' ', Sub(C1,C6))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "1acce46d9935d8800348",
+    "program": "Concat(Sub(C0,C5))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "28ba909ccd72f38570db",
+    "program": "Concat(Sub(C0,C3))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "2eb7d17c9b6d5020fd8b",
+    "program": "Concat(Sub(C1,M(WORD,1,end)), '/')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "3158d98ef0de21da35e9",
+    "program": "Concat('/', '/')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "3f4a010cd11ae74e3eed",
+    "program": "Concat('-', Sub(C4,M(UPPER,2,end)))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "3fa0951589fa623f7898",
+    "program": "Concat(', ', ' ', '.', ' ')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "48376bdfb30998b1e768",
+    "program": "Concat('/', Sub(C3,M(WORD,2,start)))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "4b6e7deeb6995456bdfc",
+    "program": "Concat('.', Sub(C2,M(DIGITS,2,start)))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "4f69ccca84aee67806f2",
+    "program": "Concat(' ')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "5c6cca3cd81d7a45c9b4",
+    "program": "Concat(': ', '-')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "5d5a6f228a5e474566b5",
+    "program": "Concat(Sub(M(WORD,1,end),M(WORD,2,start)))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "5ea5da95dc714257167d",
+    "program": "Concat(Sub(C8,C-1))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "64ffd9067f385386c624",
+    "program": "Concat('/', Sub(C-6,C-1))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "65497e91122b6e88982a",
+    "program": "Concat(Sub(M(WORD,1,end),M(WORD,2,start)), ': ')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "6d879842b1680afc335e",
+    "program": "Concat(lower(Sub(C0,M(WORD,1,end))))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "764359ab640de27d171a",
+    "program": "Concat(Sub(C2,C-5), Sub(C0,M(DIGITS,1,end)))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "769018756e5faf52a99f",
+    "program": "Concat('/', Sub(C1,M(WORD,2,start)))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "82f6c4bbb59647b1159e",
+    "program": "Concat(', ')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "86e5c7c294d93180b281",
+    "program": "Concat('-')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "8dd3a083962d965f3529",
+    "program": "Concat(upper(Sub(C1,M(WORD,1,end))), cap(Sub(M(UPPER,2,start),C-2)))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "974c39a82e5724c63f6f",
+    "program": "Concat(Sub(C0,C3), '-', Sub(C5,C7))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "979cb07e01446190fa11",
+    "program": "Concat('.', '.', '/')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "97cd64e26218e4a61fa5",
+    "program": "Concat(Sub(M(WORD,1,end),M(UPPER,2,end)), ': ')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "99992fb28d90b84407ab",
+    "program": "Concat(Sub(C0,C4))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "9bf4a2caef0baea1d2d8",
+    "program": "Concat('/')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "a22744668188a5f25984",
+    "program": "Concat('-', Sub(C4,C7))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "a81ccf012ec073600096",
+    "program": "Concat(': ')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "b76be42c2f3f4f9a84b1",
+    "program": "Concat(Sub(M(LOWER,2,start),C8), '.')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "b86ad70788fb459331ba",
+    "program": "Concat('.', '/')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "ba47fc84a17e4889b47e",
+    "program": "Concat(Sub(C0,C-2), '.')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "bc02f884a7960cb08b82",
+    "program": "Concat(Sub(C-7,M(UPPER,1,end)))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "beebdbdc63b19bf6034d",
+    "program": "Concat(', ', '.')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "c04401fde7f0b7177986",
+    "program": "Concat(cap(Sub(C4,M(WORD,2,end))))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "c39a17fcd01dfdc201a7",
+    "program": "Concat(cap(Sub(C0,M(UPPER,1,end))), ', ', '.')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "cc8f75ac4534d0959c10",
+    "program": "Concat(', ')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "d06eac99fcc045eb26e1",
+    "program": "Concat('-')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "d6bd289ed0bfbc2b3297",
+    "program": "Concat(Sub(C2,M(DIGITS,1,end)))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "d9ed0aaf66a42bb9d2a4",
+    "program": "Concat(Sub(C7,C-7))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "e3c0b17c070e8d15984b",
+    "program": "Concat(cap(Sub(C0,C-7)), Sub(M(WORD,1,end),M(WORD,2,start)))",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "e4fb4987da1df5ced51b",
+    "program": "Concat('/', '/', ': ')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "e70fc0e02b3090b30af7",
+    "program": "Concat('/', ': ', ': ')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "f5293b1a0ec5a5d67081",
+    "program": "Concat(', ')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "f70f656c7b06da15ca26",
+    "program": "Concat(cap(Sub(C-8,C-2)), '/')",
+    "oracle_correct": true,
+    "stratum": "anchor"
+  },
+  {
+    "task_id": "2f7e3f4225b762430589",
+    "program": "Concat('/')",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "2fcb49139e6ce47346c1",
+    "program": "Concat('.', Sub(C2,C3), '.', cap(Sub(M(UPPER,1,end),C5)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ', ')",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ',', ' ')",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ',', Sub(M(LOWER,1,end),M(UPPER,2,start)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ',', Sub(M(LOWER,1,end),M(WORD,2,start)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ',', Sub(M(WORD,1,end),M(UPPER,2,start)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ',', Sub(M(WORD,1,end),M(WORD,2,start)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ',', cap(Sub(M(LOWER,1,end),M(UPPER,2,start))))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ',', cap(Sub(M(LOWER,1,end),M(WORD,2,start))))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ', ')",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', ' ')",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', Sub(M(LOWER,1,end),M(UPPER,2,start)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', Sub(M(LOWER,1,end),M(WORD,2,start)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', Sub(M(WORD,1,end),M(UPPER,2,start)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', Sub(M(WORD,1,end),M(WORD,2,start)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', cap(Sub(M(LOWER,1,end),M(UPPER,2,start))))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', cap(Sub(M(LOWER,1,end),M(WORD,2,start))))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "31a74a23ab84f2b36e64",
+    "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', cap(Sub(M(WORD,1,end),M(UPPER,2,start))))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "5804a9340dd924575203",
+    "program": "Concat(Sub(M(LOWER,1,end),M(LOWER,2,end)), ', ')",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "5804a9340dd924575203",
+    "program": "Concat(Sub(M(LOWER,1,end),M(WORD,2,end)), ', ')",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "5804a9340dd924575203",
+    "program": "Concat(Sub(M(WORD,1,end),M(LOWER,2,end)), ', ')",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "5804a9340dd924575203",
+    "program": "Concat(Sub(M(WORD,1,end),M(WORD,2,end)), ', ')",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "67b74fdcc02e9640f0e9",
+    "program": "Concat('.', ', ')",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "67b74fdcc02e9640f0e9",
+    "program": "Concat('.', ',', ' ')",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "67b74fdcc02e9640f0e9",
+    "program": "Concat('.', ',', Sub(M(LOWER,1,end),M(UPPER,2,start)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "67b74fdcc02e9640f0e9",
+    "program": "Concat('.', ',', Sub(M(LOWER,1,end),M(WORD,2,start)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "67b74fdcc02e9640f0e9",
+    "program": "Concat('.', ',', Sub(M(WORD,1,end),M(UPPER,2,start)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "67b74fdcc02e9640f0e9",
+    "program": "Concat('.', ',', Sub(M(WORD,1,end),M(WORD,2,start)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "67b74fdcc02e9640f0e9",
+    "program": "Concat('.', ',', cap(Sub(M(LOWER,1,end),M(UPPER,2,start))))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "67b74fdcc02e9640f0e9",
+    "program": "Concat('.', ',', cap(Sub(M(LOWER,1,end),M(WORD,2,start))))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "67b74fdcc02e9640f0e9",
+    "program": "Concat('.', ',', cap(Sub(M(WORD,1,end),M(UPPER,2,start))))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "67b74fdcc02e9640f0e9",
+    "program": "Concat('.', ',', cap(Sub(M(WORD,1,end),M(WORD,2,start))))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "67b74fdcc02e9640f0e9",
+    "program": "Concat('.', ',', lower(Sub(M(LOWER,1,end),M(UPPER,2,start))))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "67b74fdcc02e9640f0e9",
+    "program": "Concat('.', ',', lower(Sub(M(LOWER,1,end),M(WORD,2,start))))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(C0,C2), Sub(C2,C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(C0,C3), Sub(C3,C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(C0,C4), Sub(C4,C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(C0,C5), Sub(C5,C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(C0,C6), Sub(C6,C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(C0,C7), Sub(C7,C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(C0,C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(C0,M(LOWER,2,start)), Sub(M(LOWER,2,start),C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(C0,M(LOWER,2,start)), Sub(M(UPPER,2,end),C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(C0,M(UPPER,2,end)), Sub(M(LOWER,2,start),C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(C0,M(UPPER,2,end)), Sub(M(UPPER,2,end),C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(C0,M(UPPER,2,start)), Sub(M(UPPER,2,start),C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(C0,M(WORD,1,end)), Sub(M(LOWER,1,end),C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(C0,M(WORD,2,start)), Sub(M(UPPER,2,start),C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(M(UPPER,1,start),C6), Sub(C6,C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(M(UPPER,1,start),C7), Sub(C7,C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(M(UPPER,1,start),C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(M(UPPER,1,start),M(LOWER,1,start)), Sub(C1,C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(M(UPPER,1,start),M(LOWER,2,start)), Sub(M(LOWER,2,start),C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(M(UPPER,1,start),M(UPPER,1,end)), Sub(C1,C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "698934af64e4d72e6fbf",
+    "program": "Concat(Sub(M(UPPER,1,start),M(UPPER,2,end)), Sub(M(LOWER,2,start),C8))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(Sub(C-7,M(DIGITS,2,start)), Sub(C-7,C-6))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(Sub(C-7,M(DIGITS,2,start)), Sub(C-7,C4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(Sub(C-7,M(DIGITS,2,start)), Sub(C3,C-6))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(Sub(C-7,M(DIGITS,2,start)), Sub(C3,C4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(Sub(C-7,M(DIGITS,2,start)), cap(Sub(C-7,C-6)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(Sub(C-7,M(DIGITS,2,start)), cap(Sub(C-7,C4)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(Sub(C-7,M(DIGITS,2,start)), cap(Sub(C3,C-6)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(Sub(C3,M(DIGITS,2,start)), Sub(C-7,C-6))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(Sub(C3,M(DIGITS,2,start)), Sub(C-7,C4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(Sub(C3,M(DIGITS,2,start)), Sub(C3,C-6))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(Sub(C3,M(DIGITS,2,start)), Sub(C3,C4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(Sub(C3,M(DIGITS,2,start)), cap(Sub(C-7,C-6)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(Sub(C3,M(DIGITS,2,start)), cap(Sub(C-7,C4)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(cap(Sub(C-7,M(DIGITS,2,start))), Sub(C-7,C-6))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(cap(Sub(C-7,M(DIGITS,2,start))), Sub(C-7,C4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(cap(Sub(C-7,M(DIGITS,2,start))), Sub(C3,C-6))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(cap(Sub(C-7,M(DIGITS,2,start))), Sub(C3,C4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(cap(Sub(C3,M(DIGITS,2,start))), Sub(C-7,C-6))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(cap(Sub(C3,M(DIGITS,2,start))), Sub(C-7,C4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(cap(Sub(C3,M(DIGITS,2,start))), Sub(C3,C-6))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(cap(Sub(C3,M(DIGITS,2,start))), Sub(C3,C4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(lower(Sub(C-7,M(DIGITS,2,start))), Sub(C-7,C-6))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(lower(Sub(C-7,M(DIGITS,2,start))), Sub(C-7,C4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(lower(Sub(C-7,M(DIGITS,2,start))), Sub(C3,C-6))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(lower(Sub(C-7,M(DIGITS,2,start))), Sub(C3,C4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(lower(Sub(C3,M(DIGITS,2,start))), Sub(C-7,C-6))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(lower(Sub(C3,M(DIGITS,2,start))), Sub(C-7,C4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(lower(Sub(C3,M(DIGITS,2,start))), Sub(C3,C-6))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(lower(Sub(C3,M(DIGITS,2,start))), Sub(C3,C4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(upper(Sub(C-7,M(DIGITS,2,start))), Sub(C-7,C-6))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(upper(Sub(C-7,M(DIGITS,2,start))), Sub(C-7,C4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(upper(Sub(C-7,M(DIGITS,2,start))), Sub(C3,C-6))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "854b3e324d8df4e815c9",
+    "program": "Concat(upper(Sub(C-7,M(DIGITS,2,start))), Sub(C3,C4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "97ca4e9f2ce189fce460",
+    "program": "Concat('-')",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "9a33a6814cb141ce859a",
+    "program": "Concat(' ', Sub(M(WORD,1,end),C-2), Sub(C6,C-5))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "aa1c00f55e6e4b1babb7",
+    "program": "Concat(Sub(C-7,C-6), Sub(C-6,C7))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "aa1c00f55e6e4b1babb7",
+    "program": "Concat(Sub(C-7,C6), Sub(C6,C7))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "aa1c00f55e6e4b1babb7",
+    "program": "Concat(Sub(C-7,C6), lower(Sub(C6,C7)))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "aa1c00f55e6e4b1babb7",
+    "program": "Concat(Sub(C-7,C7))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "cffaf47eb40d78dfe82d",
+    "program": "Concat(': ', Sub(M(LOWER,2,end),C-2))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "cffaf47eb40d78dfe82d",
+    "program": "Concat(': ', Sub(M(WORD,2,end),C-2))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "cffaf47eb40d78dfe82d",
+    "program": "Concat(':', ' ', Sub(M(LOWER,2,end),C-2))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "e9ee758f5c2b8a7903da",
+    "program": "Concat(Sub(M(LOWER,1,end),C-5), Sub(C6,C-4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "e9ee758f5c2b8a7903da",
+    "program": "Concat(Sub(M(WORD,1,end),C-5), Sub(C6,C-4))",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  },
+  {
+    "task_id": "f894a7b01a7519254d0c",
+    "program": "Concat(', ', ', ', Sub(C0,C5), '-')",
+    "oracle_correct": true,
+    "stratum": "harvest"
+  }
+]

@@ -1,0 +1,980 @@
+{
+  "scope": "development only; 96 source tasks already inspected",
+  "tasks": 96,
+  "banks": 12,
+  "candidate_labels_source": 48296,
+  "lambdas": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "cross_validation": {
+    "0.1": {
+      "correct": {
+        "learned": 36,
+        "one_each": 36,
+        "random": 35,
+        "entropy": 31,
+        "disagreement": 26
+      },
+      "by_bank": [
+        {
+          "seed": 902318,
+          "learned": 5,
+          "one_each": 5,
+          "random": 4,
+          "entropy": 3,
+          "disagreement": 2,
+          "actions": [
+            0,
+            0,
+            1,
+            2,
+            1,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "seed": 902319,
+          "learned": 3,
+          "one_each": 2,
+          "random": 2,
+          "entropy": 3,
+          "disagreement": 2,
+          "actions": [
+            1,
+            2,
+            0,
+            2,
+            0,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "seed": 902320,
+          "learned": 4,
+          "one_each": 4,
+          "random": 4,
+          "entropy": 3,
+          "disagreement": 3,
+          "actions": [
+            0,
+            2,
+            1,
+            1,
+            1,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "seed": 902321,
+          "learned": 4,
+          "one_each": 4,
+          "random": 4,
+          "entropy": 4,
+          "disagreement": 4,
+          "actions": [
+            1,
+            1,
+            2,
+            0,
+            2,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902322,
+          "learned": 3,
+          "one_each": 3,
+          "random": 3,
+          "entropy": 2,
+          "disagreement": 2,
+          "actions": [
+            2,
+            2,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902323,
+          "learned": 1,
+          "one_each": 1,
+          "random": 2,
+          "entropy": 1,
+          "disagreement": 1,
+          "actions": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902324,
+          "learned": 2,
+          "one_each": 3,
+          "random": 2,
+          "entropy": 1,
+          "disagreement": 1,
+          "actions": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902325,
+          "learned": 4,
+          "one_each": 4,
+          "random": 5,
+          "entropy": 4,
+          "disagreement": 4,
+          "actions": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902326,
+          "learned": 4,
+          "one_each": 3,
+          "random": 3,
+          "entropy": 2,
+          "disagreement": 3,
+          "actions": [
+            0,
+            1,
+            1,
+            0,
+            2,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902327,
+          "learned": 4,
+          "one_each": 5,
+          "random": 4,
+          "entropy": 5,
+          "disagreement": 3,
+          "actions": [
+            1,
+            0,
+            1,
+            1,
+            2,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "seed": 902328,
+          "learned": 1,
+          "one_each": 1,
+          "random": 0,
+          "entropy": 1,
+          "disagreement": 0,
+          "actions": [
+            0,
+            1,
+            1,
+            0,
+            2,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "seed": 902329,
+          "learned": 1,
+          "one_each": 1,
+          "random": 2,
+          "entropy": 2,
+          "disagreement": 1,
+          "actions": [
+            1,
+            2,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    "1.0": {
+      "correct": {
+        "learned": 35,
+        "one_each": 36,
+        "random": 35,
+        "entropy": 31,
+        "disagreement": 26
+      },
+      "by_bank": [
+        {
+          "seed": 902318,
+          "learned": 5,
+          "one_each": 5,
+          "random": 4,
+          "entropy": 3,
+          "disagreement": 2,
+          "actions": [
+            0,
+            0,
+            1,
+            2,
+            1,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "seed": 902319,
+          "learned": 3,
+          "one_each": 2,
+          "random": 2,
+          "entropy": 3,
+          "disagreement": 2,
+          "actions": [
+            1,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "seed": 902320,
+          "learned": 4,
+          "one_each": 4,
+          "random": 4,
+          "entropy": 3,
+          "disagreement": 3,
+          "actions": [
+            0,
+            2,
+            1,
+            1,
+            1,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "seed": 902321,
+          "learned": 4,
+          "one_each": 4,
+          "random": 4,
+          "entropy": 4,
+          "disagreement": 4,
+          "actions": [
+            1,
+            1,
+            2,
+            0,
+            2,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902322,
+          "learned": 3,
+          "one_each": 3,
+          "random": 3,
+          "entropy": 2,
+          "disagreement": 2,
+          "actions": [
+            1,
+            2,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902323,
+          "learned": 1,
+          "one_each": 1,
+          "random": 2,
+          "entropy": 1,
+          "disagreement": 1,
+          "actions": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902324,
+          "learned": 2,
+          "one_each": 3,
+          "random": 2,
+          "entropy": 1,
+          "disagreement": 1,
+          "actions": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902325,
+          "learned": 4,
+          "one_each": 4,
+          "random": 5,
+          "entropy": 4,
+          "disagreement": 4,
+          "actions": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902326,
+          "learned": 3,
+          "one_each": 3,
+          "random": 3,
+          "entropy": 2,
+          "disagreement": 3,
+          "actions": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902327,
+          "learned": 4,
+          "one_each": 5,
+          "random": 4,
+          "entropy": 5,
+          "disagreement": 3,
+          "actions": [
+            1,
+            0,
+            1,
+            1,
+            2,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "seed": 902328,
+          "learned": 1,
+          "one_each": 1,
+          "random": 0,
+          "entropy": 1,
+          "disagreement": 0,
+          "actions": [
+            0,
+            1,
+            1,
+            0,
+            2,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "seed": 902329,
+          "learned": 1,
+          "one_each": 1,
+          "random": 2,
+          "entropy": 2,
+          "disagreement": 1,
+          "actions": [
+            1,
+            2,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    "10.0": {
+      "correct": {
+        "learned": 37,
+        "one_each": 36,
+        "random": 35,
+        "entropy": 31,
+        "disagreement": 26
+      },
+      "by_bank": [
+        {
+          "seed": 902318,
+          "learned": 5,
+          "one_each": 5,
+          "random": 4,
+          "entropy": 3,
+          "disagreement": 2,
+          "actions": [
+            0,
+            0,
+            1,
+            2,
+            1,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "seed": 902319,
+          "learned": 3,
+          "one_each": 2,
+          "random": 2,
+          "entropy": 3,
+          "disagreement": 2,
+          "actions": [
+            1,
+            2,
+            0,
+            1,
+            0,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902320,
+          "learned": 4,
+          "one_each": 4,
+          "random": 4,
+          "entropy": 3,
+          "disagreement": 3,
+          "actions": [
+            0,
+            2,
+            1,
+            1,
+            1,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "seed": 902321,
+          "learned": 4,
+          "one_each": 4,
+          "random": 4,
+          "entropy": 4,
+          "disagreement": 4,
+          "actions": [
+            1,
+            1,
+            2,
+            1,
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902322,
+          "learned": 3,
+          "one_each": 3,
+          "random": 3,
+          "entropy": 2,
+          "disagreement": 2,
+          "actions": [
+            1,
+            2,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902323,
+          "learned": 2,
+          "one_each": 1,
+          "random": 2,
+          "entropy": 1,
+          "disagreement": 1,
+          "actions": [
+            1,
+            0,
+            1,
+            1,
+            2,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "seed": 902324,
+          "learned": 2,
+          "one_each": 3,
+          "random": 2,
+          "entropy": 1,
+          "disagreement": 1,
+          "actions": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902325,
+          "learned": 4,
+          "one_each": 4,
+          "random": 5,
+          "entropy": 4,
+          "disagreement": 4,
+          "actions": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902326,
+          "learned": 4,
+          "one_each": 3,
+          "random": 3,
+          "entropy": 2,
+          "disagreement": 3,
+          "actions": [
+            0,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902327,
+          "learned": 4,
+          "one_each": 5,
+          "random": 4,
+          "entropy": 5,
+          "disagreement": 3,
+          "actions": [
+            1,
+            0,
+            1,
+            1,
+            2,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "seed": 902328,
+          "learned": 1,
+          "one_each": 1,
+          "random": 0,
+          "entropy": 1,
+          "disagreement": 0,
+          "actions": [
+            0,
+            1,
+            1,
+            0,
+            2,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "seed": 902329,
+          "learned": 1,
+          "one_each": 1,
+          "random": 2,
+          "entropy": 2,
+          "disagreement": 1,
+          "actions": [
+            1,
+            2,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    "100.0": {
+      "correct": {
+        "learned": 37,
+        "one_each": 36,
+        "random": 35,
+        "entropy": 31,
+        "disagreement": 26
+      },
+      "by_bank": [
+        {
+          "seed": 902318,
+          "learned": 5,
+          "one_each": 5,
+          "random": 4,
+          "entropy": 3,
+          "disagreement": 2,
+          "actions": [
+            0,
+            0,
+            1,
+            2,
+            2,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "seed": 902319,
+          "learned": 3,
+          "one_each": 2,
+          "random": 2,
+          "entropy": 3,
+          "disagreement": 2,
+          "actions": [
+            1,
+            2,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902320,
+          "learned": 4,
+          "one_each": 4,
+          "random": 4,
+          "entropy": 3,
+          "disagreement": 3,
+          "actions": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902321,
+          "learned": 4,
+          "one_each": 4,
+          "random": 4,
+          "entropy": 4,
+          "disagreement": 4,
+          "actions": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902322,
+          "learned": 3,
+          "one_each": 3,
+          "random": 3,
+          "entropy": 2,
+          "disagreement": 2,
+          "actions": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902323,
+          "learned": 1,
+          "one_each": 1,
+          "random": 2,
+          "entropy": 1,
+          "disagreement": 1,
+          "actions": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "seed": 902324,
+          "learned": 3,
+          "one_each": 3,
+          "random": 2,
+          "entropy": 1,
+          "disagreement": 1,
+          "actions": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902325,
+          "learned": 4,
+          "one_each": 4,
+          "random": 5,
+          "entropy": 4,
+          "disagreement": 4,
+          "actions": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 902326,
+          "learned": 3,
+          "one_each": 3,
+          "random": 3,
+          "entropy": 2,
+          "disagreement": 3,
+          "actions": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "seed": 902327,
+          "learned": 5,
+          "one_each": 5,
+          "random": 4,
+          "entropy": 5,
+          "disagreement": 3,
+          "actions": [
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "seed": 902328,
+          "learned": 1,
+          "one_each": 1,
+          "random": 0,
+          "entropy": 1,
+          "disagreement": 0,
+          "actions": [
+            0,
+            1,
+            1,
+            0,
+            2,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "seed": 902329,
+          "learned": 1,
+          "one_each": 1,
+          "random": 2,
+          "entropy": 2,
+          "disagreement": 1,
+          "actions": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    }
+  },
+  "chosen_lambda": 100.0,
+  "feature_count": 12,
+  "model": {
+    "mean": [
+      0.8384722222222218,
+      0.2371198227132577,
+      2.541414111565795,
+      1.440038597069602,
+      1.440038597069602,
+      1.0733382045617808,
+      0.2875000000000001,
+      0.5739583333333333,
+      0.7208333333333335,
+      0.5607638888888888,
+      0.5090897817460317
+    ],
+    "scale": [
+      0.16902081607137068,
+      0.29996508176428704,
+      0.7308488655345817,
+      0.3765918106127047,
+      0.3765918106127047,
+      0.34738683539757403,
+      0.07905694150420951,
+      0.17062678061748948,
+      0.19904284854160306,
+      0.14607082183750442,
+      0.14593591259339758
+    ],
+    "w1": [
+      0.24999999999999992,
+      0.01490850635863867,
+      -0.032147709558946524,
+      -0.02988754192017865,
+      0.013834011850950735,
+      0.013834011850950734,
+      0.009778070096194882,
+      -0.015276038002823922,
+      0.026406046364608596,
+      0.0009179880834346302,
+      0.0427597403265555,
+      -0.008036966050882877
+    ],
+    "w2": [
+      0.10416666666666663,
+      0.012194474551811158,
+      -0.0028199458668195353,
+      -0.007920564619177393,
+      0.0030069822103060747,
+      0.003006982210306074,
+      0.0046669445797593205,
+      -0.018342149167837773,
+      0.016736521517156912,
+      0.0192509177365042,
+      0.016276123202898937,
+      0.010386429024315615
+    ]
+  }
+}

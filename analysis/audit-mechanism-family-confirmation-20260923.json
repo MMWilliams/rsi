@@ -1,0 +1,83 @@
+{
+  "scope": "independent audit of mechanism-family-confirmation-20260923",
+  "catalog_digest": "1d3c71aff89ba2b6fd72da3ea20591d74afc6aa26ef367c59bed6e57ee5424b8",
+  "replications": {
+    "A": {
+      "picks": 190856,
+      "interpreter_sample": 3000,
+      "interpreter_accepts_graded_misses": 20,
+      "lifetimes_replayed": 24,
+      "gates_recomputed": {
+        "improve": {
+          "seen_triple": {
+            "128": true,
+            "256": true,
+            "512": true,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          },
+          "new_triple": {
+            "128": true,
+            "256": true,
+            "512": true,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          }
+        },
+        "safe": {
+          "new_family": {
+            "128": true,
+            "256": true,
+            "512": true,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          }
+        },
+        "passed": true
+      }
+    },
+    "B": {
+      "picks": 190997,
+      "interpreter_sample": 3000,
+      "interpreter_accepts_graded_misses": 18,
+      "lifetimes_replayed": 24,
+      "gates_recomputed": {
+        "improve": {
+          "seen_triple": {
+            "128": true,
+            "256": true,
+            "512": true,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          },
+          "new_triple": {
+            "128": true,
+            "256": true,
+            "512": true,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          }
+        },
+        "safe": {
+          "new_family": {
+            "128": true,
+            "256": true,
+            "512": true,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          }
+        },
+        "passed": true
+      }
+    }
+  },
+  "failures": [],
+  "passed": true,
+  "wall_seconds": 1660.4389448000002
+}

@@ -1,0 +1,164 @@
+{
+  "scope": "history-size curve from audited rows; no new gate",
+  "question": "how much of the replication-one +80 comes from the single-observation baseline",
+  "sizes": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    10,
+    12
+  ],
+  "runs": {
+    "replication_one": {
+      "best_constant_action": "familiar",
+      "best_constant_total": 104,
+      "hindsight_total": 144,
+      "sizes": {
+        "1": {
+          "windows": 12,
+          "mean_total": 75.0,
+          "min_total": 46,
+          "max_total": 104,
+          "mean_minus_best_constant": -29.0,
+          "fraction_of_hindsight": 0.5208333333333334,
+          "full_minus_this_first_window": {
+            "gain": 80,
+            "positive_banks": 6,
+            "losing_banks": 1,
+            "interval": [
+              17,
+              146
+            ]
+          }
+        },
+        "2": {
+          "windows": 11,
+          "mean_total": 107.18181818181819,
+          "min_total": 46,
+          "max_total": 133,
+          "mean_minus_best_constant": 3.181818181818187,
+          "fraction_of_hindsight": 0.7443181818181819,
+          "full_minus_this_first_window": {
+            "gain": 80,
+            "positive_banks": 6,
+            "losing_banks": 1,
+            "interval": [
+              17,
+              146
+            ]
+          }
+        },
+        "3": {
+          "windows": 10,
+          "mean_total": 112.5,
+          "min_total": 44,
+          "max_total": 135,
+          "mean_minus_best_constant": 8.5,
+          "fraction_of_hindsight": 0.78125,
+          "full_minus_this_first_window": {
+            "gain": -9,
+            "positive_banks": 1,
+            "losing_banks": 2,
+            "interval": [
+              -36,
+              18
+            ]
+          }
+        },
+        "4": {
+          "windows": 9,
+          "mean_total": 108.22222222222223,
+          "min_total": 44,
+          "max_total": 135,
+          "mean_minus_best_constant": 4.2222222222222285,
+          "fraction_of_hindsight": 0.7515432098765432,
+          "full_minus_this_first_window": {
+            "gain": -9,
+            "positive_banks": 1,
+            "losing_banks": 2,
+            "interval": [
+              -36,
+              18
+            ]
+          }
+        },
+        "6": {
+          "windows": 7,
+          "mean_total": 98.85714285714286,
+          "min_total": 44,
+          "max_total": 144,
+          "mean_minus_best_constant": -5.142857142857139,
+          "fraction_of_hindsight": 0.6865079365079365,
+          "full_minus_this_first_window": {
+            "gain": -18,
+            "positive_banks": 0,
+            "losing_banks": 2,
+            "interval": [
+              -45,
+              0
+            ]
+          }
+        },
+        "8": {
+          "windows": 5,
+          "mean_total": 107.0,
+          "min_total": 100,
+          "max_total": 120,
+          "mean_minus_best_constant": 3.0,
+          "fraction_of_hindsight": 0.7430555555555556,
+          "full_minus_this_first_window": {
+            "gain": 6,
+            "positive_banks": 1,
+            "losing_banks": 1,
+            "interval": [
+              -27,
+              45
+            ]
+          }
+        },
+        "10": {
+          "windows": 3,
+          "mean_total": 108.66666666666667,
+          "min_total": 100,
+          "max_total": 115,
+          "mean_minus_best_constant": 4.666666666666671,
+          "fraction_of_hindsight": 0.7546296296296297,
+          "full_minus_this_first_window": {
+            "gain": 15,
+            "positive_banks": 1,
+            "losing_banks": 0,
+            "interval": [
+              0,
+              45
+            ]
+          }
+        },
+        "12": {
+          "windows": 1,
+          "mean_total": 126.0,
+          "min_total": 126,
+          "max_total": 126,
+          "mean_minus_best_constant": 22.0,
+          "fraction_of_hindsight": 0.875,
+          "full_minus_this_first_window": {
+            "gain": 0,
+            "positive_banks": 0,
+            "losing_banks": 0,
+            "interval": [
+              0,
+              0
+            ]
+          }
+        }
+      }
+    }
+  },
+  "limits": [
+    "Windows are contiguous slices of the development panel, so they are not independent samples.",
+    "The paired interval uses the first window of each size, a single draw, while the mean averages every window.",
+    "Best constant is chosen with final labels and is not deployable."
+  ]
+}

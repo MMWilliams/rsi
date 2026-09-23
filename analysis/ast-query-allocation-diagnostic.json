@@ -1,0 +1,122 @@
+{
+  "scope": "post hoc inspected final labels; upper bound is not a policy",
+  "tasks": 96,
+  "hindsight_best": 40,
+  "actions": {
+    "learned": {
+      "1": 68,
+      "2": 14,
+      "0": 14
+    },
+    "scrambled": {
+      "2": 14,
+      "1": 68,
+      "0": 14
+    },
+    "one_each": {
+      "1": 96
+    },
+    "random": {
+      "0": 48,
+      "2": 48
+    },
+    "entropy": {
+      "0": 48,
+      "2": 48
+    },
+    "disagreement": {
+      "0": 48,
+      "2": 48
+    }
+  },
+  "queries_on_unreachable_tasks": {
+    "learned": 35,
+    "scrambled": 42,
+    "one_each": 41,
+    "random": 40,
+    "entropy": 46,
+    "disagreement": 50
+  },
+  "marginal_1_positive": 18,
+  "marginal_1_negative": 1,
+  "marginal_2_positive": 9,
+  "marginal_2_negative": 0,
+  "value_correlation": {
+    "first": 0.18417641735998258,
+    "second": 0.10535910936232391
+  },
+  "by_bank": [
+    {
+      "seed": 902330,
+      "hindsight_best": 2,
+      "learned": 2,
+      "one_each": 2
+    },
+    {
+      "seed": 902331,
+      "hindsight_best": 3,
+      "learned": 3,
+      "one_each": 3
+    },
+    {
+      "seed": 902332,
+      "hindsight_best": 1,
+      "learned": 1,
+      "one_each": 1
+    },
+    {
+      "seed": 902333,
+      "hindsight_best": 4,
+      "learned": 3,
+      "one_each": 4
+    },
+    {
+      "seed": 902334,
+      "hindsight_best": 2,
+      "learned": 2,
+      "one_each": 1
+    },
+    {
+      "seed": 902335,
+      "hindsight_best": 5,
+      "learned": 2,
+      "one_each": 2
+    },
+    {
+      "seed": 902336,
+      "hindsight_best": 5,
+      "learned": 2,
+      "one_each": 2
+    },
+    {
+      "seed": 902337,
+      "hindsight_best": 4,
+      "learned": 4,
+      "one_each": 4
+    },
+    {
+      "seed": 902338,
+      "hindsight_best": 2,
+      "learned": 2,
+      "one_each": 2
+    },
+    {
+      "seed": 902339,
+      "hindsight_best": 2,
+      "learned": 2,
+      "one_each": 2
+    },
+    {
+      "seed": 902340,
+      "hindsight_best": 4,
+      "learned": 3,
+      "one_each": 3
+    },
+    {
+      "seed": 902341,
+      "hindsight_best": 6,
+      "learned": 5,
+      "one_each": 5
+    }
+  ]
+}

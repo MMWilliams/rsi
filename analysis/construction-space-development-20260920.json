@@ -1,0 +1,767 @@
+{
+  "scope": "opened development only; no frozen policy",
+  "question": "how much does the choice of construction change realized reranker quality at one matched verified-label budget",
+  "label_budget": 40000,
+  "source_panels": [
+    "candidate-reranker-transfer-20260918",
+    "candidate-reranker-replication-20260918"
+  ],
+  "target_panels": [
+    "candidate-query-cost-transfer-20260918",
+    "combined-ranker-query-transfer-20260918",
+    "candidate-conditioned-query-transfer-20260918"
+  ],
+  "constructions": {
+    "uniform@25": {
+      "composition": "uniform",
+      "width": 25,
+      "charge": {
+        "labels_spent": 28487,
+        "tasks_labelled": 1152,
+        "tasks_screened": 1152,
+        "selection_labels": 0
+      },
+      "panels": {
+        "candidate-query-cost-transfer-20260918": {
+          "correct": 354,
+          "e0": 327,
+          "gain": 27,
+          "banks": 12,
+          "positive_banks": 8,
+          "losing_banks": 1,
+          "interval": [
+            11,
+            43
+          ]
+        },
+        "combined-ranker-query-transfer-20260918": {
+          "correct": 362,
+          "e0": 344,
+          "gain": 18,
+          "banks": 12,
+          "positive_banks": 7,
+          "losing_banks": 3,
+          "interval": [
+            4,
+            34
+          ]
+        },
+        "candidate-conditioned-query-transfer-20260918": {
+          "correct": 357,
+          "e0": 349,
+          "gain": 8,
+          "banks": 12,
+          "positive_banks": 6,
+          "losing_banks": 4,
+          "interval": [
+            -2,
+            18
+          ]
+        }
+      }
+    },
+    "uniform@50": {
+      "composition": "uniform",
+      "width": 50,
+      "charge": {
+        "labels_spent": 39996,
+        "tasks_labelled": 819,
+        "tasks_screened": 820,
+        "selection_labels": 0
+      },
+      "panels": {
+        "candidate-query-cost-transfer-20260918": {
+          "correct": 322,
+          "e0": 327,
+          "gain": -5,
+          "banks": 12,
+          "positive_banks": 4,
+          "losing_banks": 5,
+          "interval": [
+            -22,
+            12
+          ]
+        },
+        "combined-ranker-query-transfer-20260918": {
+          "correct": 337,
+          "e0": 344,
+          "gain": -7,
+          "banks": 12,
+          "positive_banks": 2,
+          "losing_banks": 6,
+          "interval": [
+            -23,
+            8
+          ]
+        },
+        "candidate-conditioned-query-transfer-20260918": {
+          "correct": 335,
+          "e0": 349,
+          "gain": -14,
+          "banks": 12,
+          "positive_banks": 3,
+          "losing_banks": 7,
+          "interval": [
+            -31,
+            3
+          ]
+        }
+      }
+    },
+    "uniform@100": {
+      "composition": "uniform",
+      "width": 100,
+      "charge": {
+        "labels_spent": 39966,
+        "tasks_labelled": 424,
+        "tasks_screened": 425,
+        "selection_labels": 0
+      },
+      "panels": {
+        "candidate-query-cost-transfer-20260918": {
+          "correct": 312,
+          "e0": 327,
+          "gain": -15,
+          "banks": 12,
+          "positive_banks": 3,
+          "losing_banks": 9,
+          "interval": [
+            -31,
+            2
+          ]
+        },
+        "combined-ranker-query-transfer-20260918": {
+          "correct": 332,
+          "e0": 344,
+          "gain": -12,
+          "banks": 12,
+          "positive_banks": 2,
+          "losing_banks": 7,
+          "interval": [
+            -26,
+            5
+          ]
+        },
+        "candidate-conditioned-query-transfer-20260918": {
+          "correct": 328,
+          "e0": 349,
+          "gain": -21,
+          "banks": 12,
+          "positive_banks": 3,
+          "losing_banks": 9,
+          "interval": [
+            -41,
+            -3
+          ]
+        }
+      }
+    },
+    "top_regions@25": {
+      "composition": "top_regions",
+      "width": 25,
+      "charge": {
+        "labels_spent": 28487,
+        "tasks_labelled": 1152,
+        "tasks_screened": 1152,
+        "selection_labels": 0
+      },
+      "panels": {
+        "candidate-query-cost-transfer-20260918": {
+          "correct": 356,
+          "e0": 327,
+          "gain": 29,
+          "banks": 12,
+          "positive_banks": 9,
+          "losing_banks": 1,
+          "interval": [
+            14,
+            45
+          ]
+        },
+        "combined-ranker-query-transfer-20260918": {
+          "correct": 368,
+          "e0": 344,
+          "gain": 24,
+          "banks": 12,
+          "positive_banks": 8,
+          "losing_banks": 2,
+          "interval": [
+            9,
+            39
+          ]
+        },
+        "candidate-conditioned-query-transfer-20260918": {
+          "correct": 359,
+          "e0": 349,
+          "gain": 10,
+          "banks": 12,
+          "positive_banks": 7,
+          "losing_banks": 2,
+          "interval": [
+            0,
+            21
+          ]
+        }
+      }
+    },
+    "top_regions@50": {
+      "composition": "top_regions",
+      "width": 50,
+      "charge": {
+        "labels_spent": 39974,
+        "tasks_labelled": 811,
+        "tasks_screened": 812,
+        "selection_labels": 0
+      },
+      "panels": {
+        "candidate-query-cost-transfer-20260918": {
+          "correct": 341,
+          "e0": 327,
+          "gain": 14,
+          "banks": 12,
+          "positive_banks": 8,
+          "losing_banks": 2,
+          "interval": [
+            1,
+            26
+          ]
+        },
+        "combined-ranker-query-transfer-20260918": {
+          "correct": 350,
+          "e0": 344,
+          "gain": 6,
+          "banks": 12,
+          "positive_banks": 3,
+          "losing_banks": 4,
+          "interval": [
+            -7,
+            22
+          ]
+        },
+        "candidate-conditioned-query-transfer-20260918": {
+          "correct": 344,
+          "e0": 349,
+          "gain": -5,
+          "banks": 12,
+          "positive_banks": 5,
+          "losing_banks": 3,
+          "interval": [
+            -24,
+            12
+          ]
+        }
+      }
+    },
+    "top_regions@100": {
+      "composition": "top_regions",
+      "width": 100,
+      "charge": {
+        "labels_spent": 39952,
+        "tasks_labelled": 400,
+        "tasks_screened": 401,
+        "selection_labels": 0
+      },
+      "panels": {
+        "candidate-query-cost-transfer-20260918": {
+          "correct": 300,
+          "e0": 327,
+          "gain": -27,
+          "banks": 12,
+          "positive_banks": 3,
+          "losing_banks": 8,
+          "interval": [
+            -49,
+            -4
+          ]
+        },
+        "combined-ranker-query-transfer-20260918": {
+          "correct": 295,
+          "e0": 344,
+          "gain": -49,
+          "banks": 12,
+          "positive_banks": 0,
+          "losing_banks": 12,
+          "interval": [
+            -65,
+            -34
+          ]
+        },
+        "candidate-conditioned-query-transfer-20260918": {
+          "correct": 296,
+          "e0": 349,
+          "gain": -53,
+          "banks": 12,
+          "positive_banks": 1,
+          "losing_banks": 10,
+          "interval": [
+            -81,
+            -24
+          ]
+        }
+      }
+    },
+    "low_margin@25": {
+      "composition": "low_margin",
+      "width": 25,
+      "charge": {
+        "labels_spent": 28487,
+        "tasks_labelled": 1152,
+        "tasks_screened": 1152,
+        "selection_labels": 0
+      },
+      "panels": {
+        "candidate-query-cost-transfer-20260918": {
+          "correct": 361,
+          "e0": 327,
+          "gain": 34,
+          "banks": 12,
+          "positive_banks": 10,
+          "losing_banks": 1,
+          "interval": [
+            19,
+            50
+          ]
+        },
+        "combined-ranker-query-transfer-20260918": {
+          "correct": 359,
+          "e0": 344,
+          "gain": 15,
+          "banks": 12,
+          "positive_banks": 7,
+          "losing_banks": 3,
+          "interval": [
+            3,
+            27
+          ]
+        },
+        "candidate-conditioned-query-transfer-20260918": {
+          "correct": 360,
+          "e0": 349,
+          "gain": 11,
+          "banks": 12,
+          "positive_banks": 8,
+          "losing_banks": 2,
+          "interval": [
+            -1,
+            23
+          ]
+        }
+      }
+    },
+    "low_margin@50": {
+      "composition": "low_margin",
+      "width": 50,
+      "charge": {
+        "labels_spent": 39986,
+        "tasks_labelled": 808,
+        "tasks_screened": 809,
+        "selection_labels": 0
+      },
+      "panels": {
+        "candidate-query-cost-transfer-20260918": {
+          "correct": 320,
+          "e0": 327,
+          "gain": -7,
+          "banks": 12,
+          "positive_banks": 6,
+          "losing_banks": 4,
+          "interval": [
+            -26,
+            11
+          ]
+        },
+        "combined-ranker-query-transfer-20260918": {
+          "correct": 322,
+          "e0": 344,
+          "gain": -22,
+          "banks": 12,
+          "positive_banks": 1,
+          "losing_banks": 11,
+          "interval": [
+            -34,
+            -12
+          ]
+        },
+        "candidate-conditioned-query-transfer-20260918": {
+          "correct": 319,
+          "e0": 349,
+          "gain": -30,
+          "banks": 12,
+          "positive_banks": 1,
+          "losing_banks": 9,
+          "interval": [
+            -47,
+            -13
+          ]
+        }
+      }
+    },
+    "low_margin@100": {
+      "composition": "low_margin",
+      "width": 100,
+      "charge": {
+        "labels_spent": 39930,
+        "tasks_labelled": 406,
+        "tasks_screened": 407,
+        "selection_labels": 0
+      },
+      "panels": {
+        "candidate-query-cost-transfer-20260918": {
+          "correct": 283,
+          "e0": 327,
+          "gain": -44,
+          "banks": 12,
+          "positive_banks": 2,
+          "losing_banks": 10,
+          "interval": [
+            -67,
+            -21
+          ]
+        },
+        "combined-ranker-query-transfer-20260918": {
+          "correct": 297,
+          "e0": 344,
+          "gain": -47,
+          "banks": 12,
+          "positive_banks": 1,
+          "losing_banks": 10,
+          "interval": [
+            -66,
+            -26
+          ]
+        },
+        "candidate-conditioned-query-transfer-20260918": {
+          "correct": 295,
+          "e0": 349,
+          "gain": -54,
+          "banks": 12,
+          "positive_banks": 0,
+          "losing_banks": 11,
+          "interval": [
+            -76,
+            -34
+          ]
+        }
+      }
+    },
+    "e0_wrong@25": {
+      "composition": "e0_wrong",
+      "width": 25,
+      "charge": {
+        "labels_spent": 28487,
+        "tasks_labelled": 1152,
+        "tasks_screened": 1152,
+        "selection_labels": 1152
+      },
+      "panels": {
+        "candidate-query-cost-transfer-20260918": {
+          "correct": 364,
+          "e0": 327,
+          "gain": 37,
+          "banks": 12,
+          "positive_banks": 10,
+          "losing_banks": 0,
+          "interval": [
+            23,
+            51
+          ]
+        },
+        "combined-ranker-query-transfer-20260918": {
+          "correct": 361,
+          "e0": 344,
+          "gain": 17,
+          "banks": 12,
+          "positive_banks": 7,
+          "losing_banks": 2,
+          "interval": [
+            4,
+            31
+          ]
+        },
+        "candidate-conditioned-query-transfer-20260918": {
+          "correct": 359,
+          "e0": 349,
+          "gain": 10,
+          "banks": 12,
+          "positive_banks": 7,
+          "losing_banks": 2,
+          "interval": [
+            0,
+            20
+          ]
+        }
+      }
+    },
+    "e0_wrong@50": {
+      "composition": "e0_wrong",
+      "width": 50,
+      "charge": {
+        "labels_spent": 39958,
+        "tasks_labelled": 810,
+        "tasks_screened": 811,
+        "selection_labels": 811
+      },
+      "panels": {
+        "candidate-query-cost-transfer-20260918": {
+          "correct": 333,
+          "e0": 327,
+          "gain": 6,
+          "banks": 12,
+          "positive_banks": 7,
+          "losing_banks": 4,
+          "interval": [
+            -10,
+            20
+          ]
+        },
+        "combined-ranker-query-transfer-20260918": {
+          "correct": 327,
+          "e0": 344,
+          "gain": -17,
+          "banks": 12,
+          "positive_banks": 2,
+          "losing_banks": 9,
+          "interval": [
+            -31,
+            -4
+          ]
+        },
+        "candidate-conditioned-query-transfer-20260918": {
+          "correct": 336,
+          "e0": 349,
+          "gain": -13,
+          "banks": 12,
+          "positive_banks": 3,
+          "losing_banks": 8,
+          "interval": [
+            -29,
+            4
+          ]
+        }
+      }
+    },
+    "e0_wrong@100": {
+      "composition": "e0_wrong",
+      "width": 100,
+      "charge": {
+        "labels_spent": 40000,
+        "tasks_labelled": 406,
+        "tasks_screened": 407,
+        "selection_labels": 407
+      },
+      "panels": {
+        "candidate-query-cost-transfer-20260918": {
+          "correct": 274,
+          "e0": 327,
+          "gain": -53,
+          "banks": 12,
+          "positive_banks": 1,
+          "losing_banks": 11,
+          "interval": [
+            -75,
+            -31
+          ]
+        },
+        "combined-ranker-query-transfer-20260918": {
+          "correct": 263,
+          "e0": 344,
+          "gain": -81,
+          "banks": 12,
+          "positive_banks": 1,
+          "losing_banks": 11,
+          "interval": [
+            -113,
+            -47
+          ]
+        },
+        "candidate-conditioned-query-transfer-20260918": {
+          "correct": 266,
+          "e0": 349,
+          "gain": -83,
+          "banks": 12,
+          "positive_banks": 0,
+          "losing_banks": 12,
+          "interval": [
+            -110,
+            -60
+          ]
+        }
+      }
+    },
+    "reachable_e0_wrong@25": {
+      "composition": "reachable_e0_wrong",
+      "width": 25,
+      "charge": {
+        "labels_spent": 28487,
+        "tasks_labelled": 1152,
+        "tasks_screened": 1152,
+        "selection_labels": 28487
+      },
+      "panels": {
+        "candidate-query-cost-transfer-20260918": {
+          "correct": 356,
+          "e0": 327,
+          "gain": 29,
+          "banks": 12,
+          "positive_banks": 11,
+          "losing_banks": 1,
+          "interval": [
+            17,
+            42
+          ]
+        },
+        "combined-ranker-query-transfer-20260918": {
+          "correct": 357,
+          "e0": 344,
+          "gain": 13,
+          "banks": 12,
+          "positive_banks": 6,
+          "losing_banks": 2,
+          "interval": [
+            1,
+            26
+          ]
+        },
+        "candidate-conditioned-query-transfer-20260918": {
+          "correct": 357,
+          "e0": 349,
+          "gain": 8,
+          "banks": 12,
+          "positive_banks": 8,
+          "losing_banks": 3,
+          "interval": [
+            -3,
+            18
+          ]
+        }
+      }
+    },
+    "reachable_e0_wrong@50": {
+      "composition": "reachable_e0_wrong",
+      "width": 50,
+      "charge": {
+        "labels_spent": 39954,
+        "tasks_labelled": 813,
+        "tasks_screened": 814,
+        "selection_labels": 40004
+      },
+      "panels": {
+        "candidate-query-cost-transfer-20260918": {
+          "correct": 344,
+          "e0": 327,
+          "gain": 17,
+          "banks": 12,
+          "positive_banks": 8,
+          "losing_banks": 2,
+          "interval": [
+            1,
+            32
+          ]
+        },
+        "combined-ranker-query-transfer-20260918": {
+          "correct": 344,
+          "e0": 344,
+          "gain": 0,
+          "banks": 12,
+          "positive_banks": 5,
+          "losing_banks": 4,
+          "interval": [
+            -18,
+            17
+          ]
+        },
+        "candidate-conditioned-query-transfer-20260918": {
+          "correct": 345,
+          "e0": 349,
+          "gain": -4,
+          "banks": 12,
+          "positive_banks": 4,
+          "losing_banks": 5,
+          "interval": [
+            -22,
+            13
+          ]
+        }
+      }
+    },
+    "reachable_e0_wrong@100": {
+      "composition": "reachable_e0_wrong",
+      "width": 100,
+      "charge": {
+        "labels_spent": 39950,
+        "tasks_labelled": 412,
+        "tasks_screened": 413,
+        "selection_labels": 40050
+      },
+      "panels": {
+        "candidate-query-cost-transfer-20260918": {
+          "correct": 313,
+          "e0": 327,
+          "gain": -14,
+          "banks": 12,
+          "positive_banks": 4,
+          "losing_banks": 7,
+          "interval": [
+            -37,
+            9
+          ]
+        },
+        "combined-ranker-query-transfer-20260918": {
+          "correct": 298,
+          "e0": 344,
+          "gain": -46,
+          "banks": 12,
+          "positive_banks": 1,
+          "losing_banks": 11,
+          "interval": [
+            -67,
+            -24
+          ]
+        },
+        "candidate-conditioned-query-transfer-20260918": {
+          "correct": 290,
+          "e0": 349,
+          "gain": -59,
+          "banks": 12,
+          "positive_banks": 2,
+          "losing_banks": 10,
+          "interval": [
+            -89,
+            -32
+          ]
+        }
+      }
+    }
+  },
+  "total_gain_over_e0": {
+    "uniform@25": 53,
+    "uniform@50": -26,
+    "uniform@100": -48,
+    "top_regions@25": 63,
+    "top_regions@50": 15,
+    "top_regions@100": -129,
+    "low_margin@25": 60,
+    "low_margin@50": -59,
+    "low_margin@100": -145,
+    "e0_wrong@25": 64,
+    "e0_wrong@50": -24,
+    "e0_wrong@100": -217,
+    "reachable_e0_wrong@25": 50,
+    "reachable_e0_wrong@50": 13,
+    "reachable_e0_wrong@100": -119
+  },
+  "cost_matched_best": {
+    "construction": "e0_wrong@25",
+    "gain": 64
+  },
+  "cost_matched_worst": {
+    "construction": "e0_wrong@100",
+    "gain": -217
+  },
+  "cost_matched_spread": 281,
+  "limits": [
+    "Opened panels; all gains are development evidence.",
+    "Widths are nested prefixes of one cached top-100 order, so this varies labelling depth, not candidate coverage.",
+    "reachable_e0_wrong needs full head labels to select its tasks and is reported as a cost-unmatched reference, not a competing option."
+  ]
+}

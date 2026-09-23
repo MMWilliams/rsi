@@ -1,0 +1,1746 @@
+{
+  "991": {
+    "no_edit": {
+      "seed": 991,
+      "label": "s991_no_edit",
+      "initial_config": {
+        "absolute_cost": 1.0,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "terminal_config": {
+        "absolute_cost": 0.65,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "schedule": [
+        [
+          "constant_cost_up",
+          "absolute_cost_down"
+        ],
+        [
+          "case_cost_up",
+          "progress_weight_up"
+        ]
+      ],
+      "decisions": [
+        {
+          "round": 1,
+          "parent_config": {
+            "absolute_cost": 1.0,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "constant_cost_up",
+            "absolute_cost_down"
+          ],
+          "parent_ref": "s991_no_edit/g1/parent",
+          "candidate_refs": [
+            "s991_no_edit/g1/constant_cost_up",
+            "s991_no_edit/g1/absolute_cost_down"
+          ],
+          "chosen_operator": "absolute_cost_down",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_no_edit/g1/guard_parent",
+          "guard_candidate_ref": "s991_no_edit/g1/guard_candidate",
+          "development_gain_count": 1,
+          "admission_gain_count": 0,
+          "accepted": true,
+          "reason": "positive_development_and_admission_nonregression",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        },
+        {
+          "round": 2,
+          "parent_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "case_cost_up",
+            "progress_weight_up"
+          ],
+          "parent_ref": "s991_no_edit/g2/parent",
+          "candidate_refs": [
+            "s991_no_edit/g2/case_cost_up",
+            "s991_no_edit/g2/progress_weight_up"
+          ],
+          "chosen_operator": "progress_weight_up",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_no_edit/g2/guard_parent",
+          "guard_candidate_ref": "s991_no_edit/g2/guard_candidate",
+          "development_gain_count": 0,
+          "admission_gain_count": 0,
+          "accepted": false,
+          "reason": "no_positive_development_gain",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        }
+      ]
+    },
+    "absolute_cost_down": {
+      "seed": 991,
+      "label": "s991_absolute_cost_down",
+      "initial_config": {
+        "absolute_cost": 0.65,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "terminal_config": {
+        "absolute_cost": 0.65,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "schedule": [
+        [
+          "constant_cost_up",
+          "absolute_cost_down"
+        ],
+        [
+          "case_cost_up",
+          "progress_weight_up"
+        ]
+      ],
+      "decisions": [
+        {
+          "round": 1,
+          "parent_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "constant_cost_up",
+            "absolute_cost_down"
+          ],
+          "parent_ref": "s991_absolute_cost_down/g1/parent",
+          "candidate_refs": [
+            "s991_absolute_cost_down/g1/constant_cost_up",
+            "s991_absolute_cost_down/g1/absolute_cost_down"
+          ],
+          "chosen_operator": "constant_cost_up",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.4,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_absolute_cost_down/g1/guard_parent",
+          "guard_candidate_ref": "s991_absolute_cost_down/g1/guard_candidate",
+          "development_gain_count": 0,
+          "admission_gain_count": 0,
+          "accepted": false,
+          "reason": "no_positive_development_gain",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        },
+        {
+          "round": 2,
+          "parent_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "case_cost_up",
+            "progress_weight_up"
+          ],
+          "parent_ref": "s991_absolute_cost_down/g2/parent",
+          "candidate_refs": [
+            "s991_absolute_cost_down/g2/case_cost_up",
+            "s991_absolute_cost_down/g2/progress_weight_up"
+          ],
+          "chosen_operator": "progress_weight_up",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_absolute_cost_down/g2/guard_parent",
+          "guard_candidate_ref": "s991_absolute_cost_down/g2/guard_candidate",
+          "development_gain_count": 0,
+          "admission_gain_count": 0,
+          "accepted": false,
+          "reason": "no_positive_development_gain",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        }
+      ]
+    },
+    "absolute_cost_up": {
+      "seed": 991,
+      "label": "s991_absolute_cost_up",
+      "initial_config": {
+        "absolute_cost": 1.4,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "terminal_config": {
+        "absolute_cost": 1.4,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "schedule": [
+        [
+          "constant_cost_up",
+          "absolute_cost_down"
+        ],
+        [
+          "case_cost_up",
+          "progress_weight_up"
+        ]
+      ],
+      "decisions": [
+        {
+          "round": 1,
+          "parent_config": {
+            "absolute_cost": 1.4,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "constant_cost_up",
+            "absolute_cost_down"
+          ],
+          "parent_ref": "s991_absolute_cost_up/g1/parent",
+          "candidate_refs": [
+            "s991_absolute_cost_up/g1/constant_cost_up",
+            "s991_absolute_cost_up/g1/absolute_cost_down"
+          ],
+          "chosen_operator": "constant_cost_up",
+          "candidate_config": {
+            "absolute_cost": 1.4,
+            "match_cost": 1.0,
+            "constant_cost": 1.4,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_absolute_cost_up/g1/guard_parent",
+          "guard_candidate_ref": "s991_absolute_cost_up/g1/guard_candidate",
+          "development_gain_count": 0,
+          "admission_gain_count": 0,
+          "accepted": false,
+          "reason": "no_positive_development_gain",
+          "selected_config": {
+            "absolute_cost": 1.4,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        },
+        {
+          "round": 2,
+          "parent_config": {
+            "absolute_cost": 1.4,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "case_cost_up",
+            "progress_weight_up"
+          ],
+          "parent_ref": "s991_absolute_cost_up/g2/parent",
+          "candidate_refs": [
+            "s991_absolute_cost_up/g2/case_cost_up",
+            "s991_absolute_cost_up/g2/progress_weight_up"
+          ],
+          "chosen_operator": "progress_weight_up",
+          "candidate_config": {
+            "absolute_cost": 1.4,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_absolute_cost_up/g2/guard_parent",
+          "guard_candidate_ref": "s991_absolute_cost_up/g2/guard_candidate",
+          "development_gain_count": 0,
+          "admission_gain_count": 0,
+          "accepted": false,
+          "reason": "no_positive_development_gain",
+          "selected_config": {
+            "absolute_cost": 1.4,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        }
+      ]
+    },
+    "match_cost_down": {
+      "seed": 991,
+      "label": "s991_match_cost_down",
+      "initial_config": {
+        "absolute_cost": 1.0,
+        "match_cost": 0.65,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "terminal_config": {
+        "absolute_cost": 0.65,
+        "match_cost": 0.65,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "schedule": [
+        [
+          "constant_cost_up",
+          "absolute_cost_down"
+        ],
+        [
+          "case_cost_up",
+          "progress_weight_up"
+        ]
+      ],
+      "decisions": [
+        {
+          "round": 1,
+          "parent_config": {
+            "absolute_cost": 1.0,
+            "match_cost": 0.65,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "constant_cost_up",
+            "absolute_cost_down"
+          ],
+          "parent_ref": "s991_match_cost_down/g1/parent",
+          "candidate_refs": [
+            "s991_match_cost_down/g1/constant_cost_up",
+            "s991_match_cost_down/g1/absolute_cost_down"
+          ],
+          "chosen_operator": "absolute_cost_down",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 0.65,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_match_cost_down/g1/guard_parent",
+          "guard_candidate_ref": "s991_match_cost_down/g1/guard_candidate",
+          "development_gain_count": 1,
+          "admission_gain_count": 0,
+          "accepted": true,
+          "reason": "positive_development_and_admission_nonregression",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 0.65,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        },
+        {
+          "round": 2,
+          "parent_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 0.65,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "case_cost_up",
+            "progress_weight_up"
+          ],
+          "parent_ref": "s991_match_cost_down/g2/parent",
+          "candidate_refs": [
+            "s991_match_cost_down/g2/case_cost_up",
+            "s991_match_cost_down/g2/progress_weight_up"
+          ],
+          "chosen_operator": "progress_weight_up",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 0.65,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_match_cost_down/g2/guard_parent",
+          "guard_candidate_ref": "s991_match_cost_down/g2/guard_candidate",
+          "development_gain_count": 0,
+          "admission_gain_count": 0,
+          "accepted": false,
+          "reason": "no_positive_development_gain",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 0.65,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        }
+      ]
+    },
+    "match_cost_up": {
+      "seed": 991,
+      "label": "s991_match_cost_up",
+      "initial_config": {
+        "absolute_cost": 1.0,
+        "match_cost": 1.4,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "terminal_config": {
+        "absolute_cost": 0.65,
+        "match_cost": 1.4,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "schedule": [
+        [
+          "constant_cost_up",
+          "absolute_cost_down"
+        ],
+        [
+          "case_cost_up",
+          "progress_weight_up"
+        ]
+      ],
+      "decisions": [
+        {
+          "round": 1,
+          "parent_config": {
+            "absolute_cost": 1.0,
+            "match_cost": 1.4,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "constant_cost_up",
+            "absolute_cost_down"
+          ],
+          "parent_ref": "s991_match_cost_up/g1/parent",
+          "candidate_refs": [
+            "s991_match_cost_up/g1/constant_cost_up",
+            "s991_match_cost_up/g1/absolute_cost_down"
+          ],
+          "chosen_operator": "absolute_cost_down",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.4,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_match_cost_up/g1/guard_parent",
+          "guard_candidate_ref": "s991_match_cost_up/g1/guard_candidate",
+          "development_gain_count": 1,
+          "admission_gain_count": 0,
+          "accepted": true,
+          "reason": "positive_development_and_admission_nonregression",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.4,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        },
+        {
+          "round": 2,
+          "parent_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.4,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "case_cost_up",
+            "progress_weight_up"
+          ],
+          "parent_ref": "s991_match_cost_up/g2/parent",
+          "candidate_refs": [
+            "s991_match_cost_up/g2/case_cost_up",
+            "s991_match_cost_up/g2/progress_weight_up"
+          ],
+          "chosen_operator": "progress_weight_up",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.4,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_match_cost_up/g2/guard_parent",
+          "guard_candidate_ref": "s991_match_cost_up/g2/guard_candidate",
+          "development_gain_count": 0,
+          "admission_gain_count": 0,
+          "accepted": false,
+          "reason": "no_positive_development_gain",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.4,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        }
+      ]
+    },
+    "constant_cost_down": {
+      "seed": 991,
+      "label": "s991_constant_cost_down",
+      "initial_config": {
+        "absolute_cost": 1.0,
+        "match_cost": 1.0,
+        "constant_cost": 0.65,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "terminal_config": {
+        "absolute_cost": 0.65,
+        "match_cost": 1.0,
+        "constant_cost": 0.65,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "schedule": [
+        [
+          "constant_cost_up",
+          "absolute_cost_down"
+        ],
+        [
+          "case_cost_up",
+          "progress_weight_up"
+        ]
+      ],
+      "decisions": [
+        {
+          "round": 1,
+          "parent_config": {
+            "absolute_cost": 1.0,
+            "match_cost": 1.0,
+            "constant_cost": 0.65,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "constant_cost_up",
+            "absolute_cost_down"
+          ],
+          "parent_ref": "s991_constant_cost_down/g1/parent",
+          "candidate_refs": [
+            "s991_constant_cost_down/g1/constant_cost_up",
+            "s991_constant_cost_down/g1/absolute_cost_down"
+          ],
+          "chosen_operator": "absolute_cost_down",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 0.65,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_constant_cost_down/g1/guard_parent",
+          "guard_candidate_ref": "s991_constant_cost_down/g1/guard_candidate",
+          "development_gain_count": 1,
+          "admission_gain_count": 0,
+          "accepted": true,
+          "reason": "positive_development_and_admission_nonregression",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 0.65,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        },
+        {
+          "round": 2,
+          "parent_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 0.65,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "case_cost_up",
+            "progress_weight_up"
+          ],
+          "parent_ref": "s991_constant_cost_down/g2/parent",
+          "candidate_refs": [
+            "s991_constant_cost_down/g2/case_cost_up",
+            "s991_constant_cost_down/g2/progress_weight_up"
+          ],
+          "chosen_operator": "progress_weight_up",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 0.65,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_constant_cost_down/g2/guard_parent",
+          "guard_candidate_ref": "s991_constant_cost_down/g2/guard_candidate",
+          "development_gain_count": 0,
+          "admission_gain_count": 0,
+          "accepted": false,
+          "reason": "no_positive_development_gain",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 0.65,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        }
+      ]
+    },
+    "constant_cost_up": {
+      "seed": 991,
+      "label": "s991_constant_cost_up",
+      "initial_config": {
+        "absolute_cost": 1.0,
+        "match_cost": 1.0,
+        "constant_cost": 1.4,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "terminal_config": {
+        "absolute_cost": 0.65,
+        "match_cost": 1.0,
+        "constant_cost": 1.4,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "schedule": [
+        [
+          "constant_cost_up",
+          "absolute_cost_down"
+        ],
+        [
+          "case_cost_up",
+          "progress_weight_up"
+        ]
+      ],
+      "decisions": [
+        {
+          "round": 1,
+          "parent_config": {
+            "absolute_cost": 1.0,
+            "match_cost": 1.0,
+            "constant_cost": 1.4,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "constant_cost_up",
+            "absolute_cost_down"
+          ],
+          "parent_ref": "s991_constant_cost_up/g1/parent",
+          "candidate_refs": [
+            "s991_constant_cost_up/g1/constant_cost_up",
+            "s991_constant_cost_up/g1/absolute_cost_down"
+          ],
+          "chosen_operator": "absolute_cost_down",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.4,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_constant_cost_up/g1/guard_parent",
+          "guard_candidate_ref": "s991_constant_cost_up/g1/guard_candidate",
+          "development_gain_count": 1,
+          "admission_gain_count": 0,
+          "accepted": true,
+          "reason": "positive_development_and_admission_nonregression",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.4,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        },
+        {
+          "round": 2,
+          "parent_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.4,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "case_cost_up",
+            "progress_weight_up"
+          ],
+          "parent_ref": "s991_constant_cost_up/g2/parent",
+          "candidate_refs": [
+            "s991_constant_cost_up/g2/case_cost_up",
+            "s991_constant_cost_up/g2/progress_weight_up"
+          ],
+          "chosen_operator": "progress_weight_up",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.4,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_constant_cost_up/g2/guard_parent",
+          "guard_candidate_ref": "s991_constant_cost_up/g2/guard_candidate",
+          "development_gain_count": 0,
+          "admission_gain_count": 0,
+          "accepted": false,
+          "reason": "no_positive_development_gain",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.4,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        }
+      ]
+    },
+    "case_cost_down": {
+      "seed": 991,
+      "label": "s991_case_cost_down",
+      "initial_config": {
+        "absolute_cost": 1.0,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 0.65,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "terminal_config": {
+        "absolute_cost": 0.65,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 0.65,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "schedule": [
+        [
+          "constant_cost_up",
+          "absolute_cost_down"
+        ],
+        [
+          "case_cost_up",
+          "progress_weight_up"
+        ]
+      ],
+      "decisions": [
+        {
+          "round": 1,
+          "parent_config": {
+            "absolute_cost": 1.0,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 0.65,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "constant_cost_up",
+            "absolute_cost_down"
+          ],
+          "parent_ref": "s991_case_cost_down/g1/parent",
+          "candidate_refs": [
+            "s991_case_cost_down/g1/constant_cost_up",
+            "s991_case_cost_down/g1/absolute_cost_down"
+          ],
+          "chosen_operator": "absolute_cost_down",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 0.65,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_case_cost_down/g1/guard_parent",
+          "guard_candidate_ref": "s991_case_cost_down/g1/guard_candidate",
+          "development_gain_count": 1,
+          "admission_gain_count": 0,
+          "accepted": true,
+          "reason": "positive_development_and_admission_nonregression",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 0.65,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        },
+        {
+          "round": 2,
+          "parent_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 0.65,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "case_cost_up",
+            "progress_weight_up"
+          ],
+          "parent_ref": "s991_case_cost_down/g2/parent",
+          "candidate_refs": [
+            "s991_case_cost_down/g2/case_cost_up",
+            "s991_case_cost_down/g2/progress_weight_up"
+          ],
+          "chosen_operator": "progress_weight_up",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 0.65,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_case_cost_down/g2/guard_parent",
+          "guard_candidate_ref": "s991_case_cost_down/g2/guard_candidate",
+          "development_gain_count": 0,
+          "admission_gain_count": 0,
+          "accepted": false,
+          "reason": "no_positive_development_gain",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 0.65,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        }
+      ]
+    },
+    "case_cost_up": {
+      "seed": 991,
+      "label": "s991_case_cost_up",
+      "initial_config": {
+        "absolute_cost": 1.0,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.4,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "terminal_config": {
+        "absolute_cost": 0.65,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.4,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "schedule": [
+        [
+          "constant_cost_up",
+          "absolute_cost_down"
+        ],
+        [
+          "case_cost_up",
+          "progress_weight_up"
+        ]
+      ],
+      "decisions": [
+        {
+          "round": 1,
+          "parent_config": {
+            "absolute_cost": 1.0,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.4,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "constant_cost_up",
+            "absolute_cost_down"
+          ],
+          "parent_ref": "s991_case_cost_up/g1/parent",
+          "candidate_refs": [
+            "s991_case_cost_up/g1/constant_cost_up",
+            "s991_case_cost_up/g1/absolute_cost_down"
+          ],
+          "chosen_operator": "absolute_cost_down",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.4,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_case_cost_up/g1/guard_parent",
+          "guard_candidate_ref": "s991_case_cost_up/g1/guard_candidate",
+          "development_gain_count": 1,
+          "admission_gain_count": 0,
+          "accepted": true,
+          "reason": "positive_development_and_admission_nonregression",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.4,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        },
+        {
+          "round": 2,
+          "parent_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.4,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "case_cost_up",
+            "progress_weight_up"
+          ],
+          "parent_ref": "s991_case_cost_up/g2/parent",
+          "candidate_refs": [
+            "s991_case_cost_up/g2/case_cost_up",
+            "s991_case_cost_up/g2/progress_weight_up"
+          ],
+          "chosen_operator": "progress_weight_up",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.4,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_case_cost_up/g2/guard_parent",
+          "guard_candidate_ref": "s991_case_cost_up/g2/guard_candidate",
+          "development_gain_count": 0,
+          "admission_gain_count": 0,
+          "accepted": false,
+          "reason": "no_positive_development_gain",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.4,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        }
+      ]
+    },
+    "progress_weight_down": {
+      "seed": 991,
+      "label": "s991_progress_weight_down",
+      "initial_config": {
+        "absolute_cost": 1.0,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 0.65,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "terminal_config": {
+        "absolute_cost": 0.65,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 0.65,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "schedule": [
+        [
+          "constant_cost_up",
+          "absolute_cost_down"
+        ],
+        [
+          "case_cost_up",
+          "progress_weight_up"
+        ]
+      ],
+      "decisions": [
+        {
+          "round": 1,
+          "parent_config": {
+            "absolute_cost": 1.0,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 0.65,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "constant_cost_up",
+            "absolute_cost_down"
+          ],
+          "parent_ref": "s991_progress_weight_down/g1/parent",
+          "candidate_refs": [
+            "s991_progress_weight_down/g1/constant_cost_up",
+            "s991_progress_weight_down/g1/absolute_cost_down"
+          ],
+          "chosen_operator": "absolute_cost_down",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 0.65,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_progress_weight_down/g1/guard_parent",
+          "guard_candidate_ref": "s991_progress_weight_down/g1/guard_candidate",
+          "development_gain_count": 1,
+          "admission_gain_count": 0,
+          "accepted": true,
+          "reason": "positive_development_and_admission_nonregression",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 0.65,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        },
+        {
+          "round": 2,
+          "parent_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 0.65,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "case_cost_up",
+            "progress_weight_up"
+          ],
+          "parent_ref": "s991_progress_weight_down/g2/parent",
+          "candidate_refs": [
+            "s991_progress_weight_down/g2/case_cost_up",
+            "s991_progress_weight_down/g2/progress_weight_up"
+          ],
+          "chosen_operator": "progress_weight_up",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 0.91,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_progress_weight_down/g2/guard_parent",
+          "guard_candidate_ref": "s991_progress_weight_down/g2/guard_candidate",
+          "development_gain_count": 0,
+          "admission_gain_count": 0,
+          "accepted": false,
+          "reason": "no_positive_development_gain",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 0.65,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        }
+      ]
+    },
+    "progress_weight_up": {
+      "seed": 991,
+      "label": "s991_progress_weight_up",
+      "initial_config": {
+        "absolute_cost": 1.0,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.4,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "terminal_config": {
+        "absolute_cost": 0.65,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.4,
+        "widening": 0.5,
+        "macro_discount": 0.25
+      },
+      "schedule": [
+        [
+          "constant_cost_up",
+          "absolute_cost_down"
+        ],
+        [
+          "case_cost_up",
+          "progress_weight_up"
+        ]
+      ],
+      "decisions": [
+        {
+          "round": 1,
+          "parent_config": {
+            "absolute_cost": 1.0,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "constant_cost_up",
+            "absolute_cost_down"
+          ],
+          "parent_ref": "s991_progress_weight_up/g1/parent",
+          "candidate_refs": [
+            "s991_progress_weight_up/g1/constant_cost_up",
+            "s991_progress_weight_up/g1/absolute_cost_down"
+          ],
+          "chosen_operator": "absolute_cost_down",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_progress_weight_up/g1/guard_parent",
+          "guard_candidate_ref": "s991_progress_weight_up/g1/guard_candidate",
+          "development_gain_count": 1,
+          "admission_gain_count": 0,
+          "accepted": true,
+          "reason": "positive_development_and_admission_nonregression",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        },
+        {
+          "round": 2,
+          "parent_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "case_cost_up",
+            "progress_weight_up"
+          ],
+          "parent_ref": "s991_progress_weight_up/g2/parent",
+          "candidate_refs": [
+            "s991_progress_weight_up/g2/case_cost_up",
+            "s991_progress_weight_up/g2/progress_weight_up"
+          ],
+          "chosen_operator": "progress_weight_up",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.96,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_progress_weight_up/g2/guard_parent",
+          "guard_candidate_ref": "s991_progress_weight_up/g2/guard_candidate",
+          "development_gain_count": 0,
+          "admission_gain_count": 0,
+          "accepted": false,
+          "reason": "no_positive_development_gain",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.5,
+            "macro_discount": 0.25
+          }
+        }
+      ]
+    },
+    "widening_down": {
+      "seed": 991,
+      "label": "s991_widening_down",
+      "initial_config": {
+        "absolute_cost": 1.0,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.325,
+        "macro_discount": 0.25
+      },
+      "terminal_config": {
+        "absolute_cost": 0.65,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.325,
+        "macro_discount": 0.25
+      },
+      "schedule": [
+        [
+          "constant_cost_up",
+          "absolute_cost_down"
+        ],
+        [
+          "case_cost_up",
+          "progress_weight_up"
+        ]
+      ],
+      "decisions": [
+        {
+          "round": 1,
+          "parent_config": {
+            "absolute_cost": 1.0,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.325,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "constant_cost_up",
+            "absolute_cost_down"
+          ],
+          "parent_ref": "s991_widening_down/g1/parent",
+          "candidate_refs": [
+            "s991_widening_down/g1/constant_cost_up",
+            "s991_widening_down/g1/absolute_cost_down"
+          ],
+          "chosen_operator": "absolute_cost_down",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.325,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_widening_down/g1/guard_parent",
+          "guard_candidate_ref": "s991_widening_down/g1/guard_candidate",
+          "development_gain_count": 1,
+          "admission_gain_count": 0,
+          "accepted": true,
+          "reason": "positive_development_and_admission_nonregression",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.325,
+            "macro_discount": 0.25
+          }
+        },
+        {
+          "round": 2,
+          "parent_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.325,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "case_cost_up",
+            "progress_weight_up"
+          ],
+          "parent_ref": "s991_widening_down/g2/parent",
+          "candidate_refs": [
+            "s991_widening_down/g2/case_cost_up",
+            "s991_widening_down/g2/progress_weight_up"
+          ],
+          "chosen_operator": "progress_weight_up",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.325,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_widening_down/g2/guard_parent",
+          "guard_candidate_ref": "s991_widening_down/g2/guard_candidate",
+          "development_gain_count": 0,
+          "admission_gain_count": 0,
+          "accepted": false,
+          "reason": "no_positive_development_gain",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.325,
+            "macro_discount": 0.25
+          }
+        }
+      ]
+    },
+    "widening_up": {
+      "seed": 991,
+      "label": "s991_widening_up",
+      "initial_config": {
+        "absolute_cost": 1.0,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.7,
+        "macro_discount": 0.25
+      },
+      "terminal_config": {
+        "absolute_cost": 0.65,
+        "match_cost": 1.0,
+        "constant_cost": 1.0,
+        "case_cost": 1.0,
+        "length_cost": 0.15,
+        "progress_weight": 1.0,
+        "widening": 0.7,
+        "macro_discount": 0.25
+      },
+      "schedule": [
+        [
+          "constant_cost_up",
+          "absolute_cost_down"
+        ],
+        [
+          "case_cost_up",
+          "progress_weight_up"
+        ]
+      ],
+      "decisions": [
+        {
+          "round": 1,
+          "parent_config": {
+            "absolute_cost": 1.0,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.7,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "constant_cost_up",
+            "absolute_cost_down"
+          ],
+          "parent_ref": "s991_widening_up/g1/parent",
+          "candidate_refs": [
+            "s991_widening_up/g1/constant_cost_up",
+            "s991_widening_up/g1/absolute_cost_down"
+          ],
+          "chosen_operator": "absolute_cost_down",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.7,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_widening_up/g1/guard_parent",
+          "guard_candidate_ref": "s991_widening_up/g1/guard_candidate",
+          "development_gain_count": 1,
+          "admission_gain_count": 0,
+          "accepted": true,
+          "reason": "positive_development_and_admission_nonregression",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.7,
+            "macro_discount": 0.25
+          }
+        },
+        {
+          "round": 2,
+          "parent_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.7,
+            "macro_discount": 0.25
+          },
+          "operator_names": [
+            "case_cost_up",
+            "progress_weight_up"
+          ],
+          "parent_ref": "s991_widening_up/g2/parent",
+          "candidate_refs": [
+            "s991_widening_up/g2/case_cost_up",
+            "s991_widening_up/g2/progress_weight_up"
+          ],
+          "chosen_operator": "progress_weight_up",
+          "candidate_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.4,
+            "widening": 0.7,
+            "macro_discount": 0.25
+          },
+          "guard_parent_ref": "s991_widening_up/g2/guard_parent",
+          "guard_candidate_ref": "s991_widening_up/g2/guard_candidate",
+          "development_gain_count": 0,
+          "admission_gain_count": 0,
+          "accepted": false,
+          "reason": "no_positive_development_gain",
+          "selected_config": {
+            "absolute_cost": 0.65,
+            "match_cost": 1.0,
+            "constant_cost": 1.0,
+            "case_cost": 1.0,
+            "length_cost": 0.15,
+            "progress_weight": 1.0,
+            "widening": 0.7,
+            "macro_discount": 0.25
+          }
+        }
+      ]
+    }
+  }
+}

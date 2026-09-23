@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "run": "runs/cegis-v20-20260917",
+  "method": "same frozen final bank regraded with exact visible-only CEGIS, with and without multi-character constants synthesized from the visible target intersection",
+  "metrics": {
+    "tasks": 24,
+    "progressive_baseline_correct": 15,
+    "partial_empty_correct": 16,
+    "cegis_without_synthesized_constants_correct": 16,
+    "cegis_with_synthesized_constants_correct": 17,
+    "additional_correct_tasks_from_constants": 1
+  },
+  "gained_task": {
+    "task_id": "1c08bf1db6b1dd60b0b6",
+    "without_constants": "Concat(Sub(M(LOWER,2,start),C-4), Sub(M(LOWER,1,end),M(UPPER,2,start)), '-')",
+    "with_constants": "Concat(Sub(M(LOWER,2,start),C-4), ' -')",
+    "inferred_constant": " -"
+  },
+  "audit": "runs/cegis-v20-20260917/audit.json"
+}

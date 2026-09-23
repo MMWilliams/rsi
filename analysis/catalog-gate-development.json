@@ -1,0 +1,677 @@
+{
+  "summary": {
+    "scope": "development only; C and D labels previously inspected",
+    "episodes": 12,
+    "final_tasks": 192,
+    "fixed": {
+      "E192_classification": 94,
+      "expert": 108,
+      "blend": 108,
+      "pairwise_random": 94,
+      "combined_pairwise_random": 99,
+      "learned_router": 102
+    },
+    "oracle_best_per_episode": 115,
+    "gates": {
+      "1": {
+        "correct": 105,
+        "selection_counts": {
+          "E192_classification": 2,
+          "expert": 2,
+          "blend": 5,
+          "pairwise_random": 1,
+          "combined_pairwise_random": 1,
+          "learned_router": 1
+        }
+      },
+      "2": {
+        "correct": 104,
+        "selection_counts": {
+          "E192_classification": 6,
+          "expert": 1,
+          "blend": 4,
+          "pairwise_random": 1,
+          "combined_pairwise_random": 0,
+          "learned_router": 0
+        }
+      },
+      "3": {
+        "correct": 99,
+        "selection_counts": {
+          "E192_classification": 9,
+          "expert": 0,
+          "blend": 3,
+          "pairwise_random": 0,
+          "combined_pairwise_random": 0,
+          "learned_router": 0
+        }
+      }
+    }
+  },
+  "episodes": [
+    {
+      "seed": 902216,
+      "admission_tasks": 16,
+      "final_tasks": 16,
+      "fixed_final": {
+        "E192_classification": 7,
+        "expert": 9,
+        "blend": 9,
+        "pairwise_random": 7,
+        "combined_pairwise_random": 6,
+        "learned_router": 8
+      },
+      "oracle_best_final": 9,
+      "gates": {
+        "1": {
+          "selected": "blend",
+          "admission_counts": {
+            "E192_classification": 9,
+            "expert": 9,
+            "blend": 11,
+            "pairwise_random": 8,
+            "combined_pairwise_random": 8,
+            "learned_router": 8
+          },
+          "final_correct": 9
+        },
+        "2": {
+          "selected": "blend",
+          "admission_counts": {
+            "E192_classification": 9,
+            "expert": 9,
+            "blend": 11,
+            "pairwise_random": 8,
+            "combined_pairwise_random": 8,
+            "learned_router": 8
+          },
+          "final_correct": 9
+        },
+        "3": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 9,
+            "expert": 9,
+            "blend": 11,
+            "pairwise_random": 8,
+            "combined_pairwise_random": 8,
+            "learned_router": 8
+          },
+          "final_correct": 7
+        }
+      }
+    },
+    {
+      "seed": 902217,
+      "admission_tasks": 16,
+      "final_tasks": 16,
+      "fixed_final": {
+        "E192_classification": 7,
+        "expert": 10,
+        "blend": 9,
+        "pairwise_random": 7,
+        "combined_pairwise_random": 10,
+        "learned_router": 10
+      },
+      "oracle_best_final": 10,
+      "gates": {
+        "1": {
+          "selected": "expert",
+          "admission_counts": {
+            "E192_classification": 8,
+            "expert": 10,
+            "blend": 10,
+            "pairwise_random": 10,
+            "combined_pairwise_random": 10,
+            "learned_router": 10
+          },
+          "final_correct": 10
+        },
+        "2": {
+          "selected": "expert",
+          "admission_counts": {
+            "E192_classification": 8,
+            "expert": 10,
+            "blend": 10,
+            "pairwise_random": 10,
+            "combined_pairwise_random": 10,
+            "learned_router": 10
+          },
+          "final_correct": 10
+        },
+        "3": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 8,
+            "expert": 10,
+            "blend": 10,
+            "pairwise_random": 10,
+            "combined_pairwise_random": 10,
+            "learned_router": 10
+          },
+          "final_correct": 7
+        }
+      }
+    },
+    {
+      "seed": 902218,
+      "admission_tasks": 16,
+      "final_tasks": 16,
+      "fixed_final": {
+        "E192_classification": 6,
+        "expert": 6,
+        "blend": 7,
+        "pairwise_random": 6,
+        "combined_pairwise_random": 7,
+        "learned_router": 6
+      },
+      "oracle_best_final": 7,
+      "gates": {
+        "1": {
+          "selected": "blend",
+          "admission_counts": {
+            "E192_classification": 7,
+            "expert": 10,
+            "blend": 11,
+            "pairwise_random": 9,
+            "combined_pairwise_random": 9,
+            "learned_router": 9
+          },
+          "final_correct": 7
+        },
+        "2": {
+          "selected": "blend",
+          "admission_counts": {
+            "E192_classification": 7,
+            "expert": 10,
+            "blend": 11,
+            "pairwise_random": 9,
+            "combined_pairwise_random": 9,
+            "learned_router": 9
+          },
+          "final_correct": 7
+        },
+        "3": {
+          "selected": "blend",
+          "admission_counts": {
+            "E192_classification": 7,
+            "expert": 10,
+            "blend": 11,
+            "pairwise_random": 9,
+            "combined_pairwise_random": 9,
+            "learned_router": 9
+          },
+          "final_correct": 7
+        }
+      }
+    },
+    {
+      "seed": 902219,
+      "admission_tasks": 16,
+      "final_tasks": 16,
+      "fixed_final": {
+        "E192_classification": 9,
+        "expert": 10,
+        "blend": 10,
+        "pairwise_random": 9,
+        "combined_pairwise_random": 9,
+        "learned_router": 9
+      },
+      "oracle_best_final": 10,
+      "gates": {
+        "1": {
+          "selected": "learned_router",
+          "admission_counts": {
+            "E192_classification": 12,
+            "expert": 9,
+            "blend": 12,
+            "pairwise_random": 11,
+            "combined_pairwise_random": 12,
+            "learned_router": 13
+          },
+          "final_correct": 9
+        },
+        "2": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 12,
+            "expert": 9,
+            "blend": 12,
+            "pairwise_random": 11,
+            "combined_pairwise_random": 12,
+            "learned_router": 13
+          },
+          "final_correct": 9
+        },
+        "3": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 12,
+            "expert": 9,
+            "blend": 12,
+            "pairwise_random": 11,
+            "combined_pairwise_random": 12,
+            "learned_router": 13
+          },
+          "final_correct": 9
+        }
+      }
+    },
+    {
+      "seed": 902220,
+      "admission_tasks": 16,
+      "final_tasks": 16,
+      "fixed_final": {
+        "E192_classification": 9,
+        "expert": 8,
+        "blend": 10,
+        "pairwise_random": 7,
+        "combined_pairwise_random": 10,
+        "learned_router": 8
+      },
+      "oracle_best_final": 10,
+      "gates": {
+        "1": {
+          "selected": "blend",
+          "admission_counts": {
+            "E192_classification": 6,
+            "expert": 9,
+            "blend": 10,
+            "pairwise_random": 5,
+            "combined_pairwise_random": 6,
+            "learned_router": 5
+          },
+          "final_correct": 10
+        },
+        "2": {
+          "selected": "blend",
+          "admission_counts": {
+            "E192_classification": 6,
+            "expert": 9,
+            "blend": 10,
+            "pairwise_random": 5,
+            "combined_pairwise_random": 6,
+            "learned_router": 5
+          },
+          "final_correct": 10
+        },
+        "3": {
+          "selected": "blend",
+          "admission_counts": {
+            "E192_classification": 6,
+            "expert": 9,
+            "blend": 10,
+            "pairwise_random": 5,
+            "combined_pairwise_random": 6,
+            "learned_router": 5
+          },
+          "final_correct": 10
+        }
+      }
+    },
+    {
+      "seed": 902221,
+      "admission_tasks": 16,
+      "final_tasks": 16,
+      "fixed_final": {
+        "E192_classification": 7,
+        "expert": 9,
+        "blend": 9,
+        "pairwise_random": 8,
+        "combined_pairwise_random": 6,
+        "learned_router": 8
+      },
+      "oracle_best_final": 9,
+      "gates": {
+        "1": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 8,
+            "expert": 7,
+            "blend": 7,
+            "pairwise_random": 8,
+            "combined_pairwise_random": 8,
+            "learned_router": 8
+          },
+          "final_correct": 7
+        },
+        "2": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 8,
+            "expert": 7,
+            "blend": 7,
+            "pairwise_random": 8,
+            "combined_pairwise_random": 8,
+            "learned_router": 8
+          },
+          "final_correct": 7
+        },
+        "3": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 8,
+            "expert": 7,
+            "blend": 7,
+            "pairwise_random": 8,
+            "combined_pairwise_random": 8,
+            "learned_router": 8
+          },
+          "final_correct": 7
+        }
+      }
+    },
+    {
+      "seed": 902222,
+      "admission_tasks": 16,
+      "final_tasks": 16,
+      "fixed_final": {
+        "E192_classification": 7,
+        "expert": 11,
+        "blend": 10,
+        "pairwise_random": 7,
+        "combined_pairwise_random": 8,
+        "learned_router": 6
+      },
+      "oracle_best_final": 11,
+      "gates": {
+        "1": {
+          "selected": "combined_pairwise_random",
+          "admission_counts": {
+            "E192_classification": 9,
+            "expert": 9,
+            "blend": 9,
+            "pairwise_random": 8,
+            "combined_pairwise_random": 10,
+            "learned_router": 9
+          },
+          "final_correct": 8
+        },
+        "2": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 9,
+            "expert": 9,
+            "blend": 9,
+            "pairwise_random": 8,
+            "combined_pairwise_random": 10,
+            "learned_router": 9
+          },
+          "final_correct": 7
+        },
+        "3": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 9,
+            "expert": 9,
+            "blend": 9,
+            "pairwise_random": 8,
+            "combined_pairwise_random": 10,
+            "learned_router": 9
+          },
+          "final_correct": 7
+        }
+      }
+    },
+    {
+      "seed": 902223,
+      "admission_tasks": 16,
+      "final_tasks": 16,
+      "fixed_final": {
+        "E192_classification": 8,
+        "expert": 12,
+        "blend": 11,
+        "pairwise_random": 8,
+        "combined_pairwise_random": 10,
+        "learned_router": 12
+      },
+      "oracle_best_final": 12,
+      "gates": {
+        "1": {
+          "selected": "blend",
+          "admission_counts": {
+            "E192_classification": 6,
+            "expert": 8,
+            "blend": 9,
+            "pairwise_random": 7,
+            "combined_pairwise_random": 8,
+            "learned_router": 7
+          },
+          "final_correct": 11
+        },
+        "2": {
+          "selected": "blend",
+          "admission_counts": {
+            "E192_classification": 6,
+            "expert": 8,
+            "blend": 9,
+            "pairwise_random": 7,
+            "combined_pairwise_random": 8,
+            "learned_router": 7
+          },
+          "final_correct": 11
+        },
+        "3": {
+          "selected": "blend",
+          "admission_counts": {
+            "E192_classification": 6,
+            "expert": 8,
+            "blend": 9,
+            "pairwise_random": 7,
+            "combined_pairwise_random": 8,
+            "learned_router": 7
+          },
+          "final_correct": 11
+        }
+      }
+    },
+    {
+      "seed": 902224,
+      "admission_tasks": 16,
+      "final_tasks": 16,
+      "fixed_final": {
+        "E192_classification": 9,
+        "expert": 10,
+        "blend": 9,
+        "pairwise_random": 9,
+        "combined_pairwise_random": 9,
+        "learned_router": 9
+      },
+      "oracle_best_final": 10,
+      "gates": {
+        "1": {
+          "selected": "blend",
+          "admission_counts": {
+            "E192_classification": 8,
+            "expert": 8,
+            "blend": 9,
+            "pairwise_random": 9,
+            "combined_pairwise_random": 9,
+            "learned_router": 8
+          },
+          "final_correct": 9
+        },
+        "2": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 8,
+            "expert": 8,
+            "blend": 9,
+            "pairwise_random": 9,
+            "combined_pairwise_random": 9,
+            "learned_router": 8
+          },
+          "final_correct": 9
+        },
+        "3": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 8,
+            "expert": 8,
+            "blend": 9,
+            "pairwise_random": 9,
+            "combined_pairwise_random": 9,
+            "learned_router": 8
+          },
+          "final_correct": 9
+        }
+      }
+    },
+    {
+      "seed": 902225,
+      "admission_tasks": 16,
+      "final_tasks": 16,
+      "fixed_final": {
+        "E192_classification": 7,
+        "expert": 7,
+        "blend": 8,
+        "pairwise_random": 7,
+        "combined_pairwise_random": 6,
+        "learned_router": 7
+      },
+      "oracle_best_final": 8,
+      "gates": {
+        "1": {
+          "selected": "expert",
+          "admission_counts": {
+            "E192_classification": 11,
+            "expert": 12,
+            "blend": 11,
+            "pairwise_random": 10,
+            "combined_pairwise_random": 12,
+            "learned_router": 11
+          },
+          "final_correct": 7
+        },
+        "2": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 11,
+            "expert": 12,
+            "blend": 11,
+            "pairwise_random": 10,
+            "combined_pairwise_random": 12,
+            "learned_router": 11
+          },
+          "final_correct": 7
+        },
+        "3": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 11,
+            "expert": 12,
+            "blend": 11,
+            "pairwise_random": 10,
+            "combined_pairwise_random": 12,
+            "learned_router": 11
+          },
+          "final_correct": 7
+        }
+      }
+    },
+    {
+      "seed": 902226,
+      "admission_tasks": 16,
+      "final_tasks": 16,
+      "fixed_final": {
+        "E192_classification": 9,
+        "expert": 8,
+        "blend": 9,
+        "pairwise_random": 9,
+        "combined_pairwise_random": 9,
+        "learned_router": 9
+      },
+      "oracle_best_final": 9,
+      "gates": {
+        "1": {
+          "selected": "pairwise_random",
+          "admission_counts": {
+            "E192_classification": 8,
+            "expert": 9,
+            "blend": 9,
+            "pairwise_random": 10,
+            "combined_pairwise_random": 9,
+            "learned_router": 10
+          },
+          "final_correct": 9
+        },
+        "2": {
+          "selected": "pairwise_random",
+          "admission_counts": {
+            "E192_classification": 8,
+            "expert": 9,
+            "blend": 9,
+            "pairwise_random": 10,
+            "combined_pairwise_random": 9,
+            "learned_router": 10
+          },
+          "final_correct": 9
+        },
+        "3": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 8,
+            "expert": 9,
+            "blend": 9,
+            "pairwise_random": 10,
+            "combined_pairwise_random": 9,
+            "learned_router": 10
+          },
+          "final_correct": 9
+        }
+      }
+    },
+    {
+      "seed": 902227,
+      "admission_tasks": 16,
+      "final_tasks": 16,
+      "fixed_final": {
+        "E192_classification": 9,
+        "expert": 8,
+        "blend": 7,
+        "pairwise_random": 10,
+        "combined_pairwise_random": 9,
+        "learned_router": 10
+      },
+      "oracle_best_final": 10,
+      "gates": {
+        "1": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 10,
+            "expert": 8,
+            "blend": 9,
+            "pairwise_random": 7,
+            "combined_pairwise_random": 8,
+            "learned_router": 9
+          },
+          "final_correct": 9
+        },
+        "2": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 10,
+            "expert": 8,
+            "blend": 9,
+            "pairwise_random": 7,
+            "combined_pairwise_random": 8,
+            "learned_router": 9
+          },
+          "final_correct": 9
+        },
+        "3": {
+          "selected": "E192_classification",
+          "admission_counts": {
+            "E192_classification": 10,
+            "expert": 8,
+            "blend": 9,
+            "pairwise_random": 7,
+            "combined_pairwise_random": 8,
+            "learned_router": 9
+          },
+          "final_correct": 9
+        }
+      }
+    }
+  ]
+}

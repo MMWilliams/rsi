@@ -1,0 +1,16 @@
+beta_dev           fixed_regret= +47 contextual-constant= +35 best_constant= +92 (shifted)
+beta_transfer      fixed_regret= +67 contextual-constant= +64 best_constant= +92 (familiar)
+balanced_control   fixed_regret=  +7 contextual-constant=  -1 best_constant= +92 (familiar)
+{
+  "verdict": {
+    "beta_dev": true,
+    "beta_transfer": true,
+    "balanced_control": false
+  },
+  "p2b_satisfied": true,
+  "fixed_regret": {
+    "beta_dev": 47,
+    "beta_transfer": 67,
+    "balanced_control": 7
+  }
+}

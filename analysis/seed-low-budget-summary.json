@@ -1,0 +1,3708 @@
+{
+  "scope": "six whole independent episodes; ten policy arms; 16 improvement labels per round",
+  "episodes": [
+    {
+      "offset": 9000,
+      "audit": {
+        "status": "passed",
+        "offset": 9000,
+        "candidate_calls_replayed": 268,
+        "arms": 10,
+        "checkpoints_per_arm": 5,
+        "equal_improvement_labels_per_arm": 64,
+        "same_base_first_edit_tactics": [
+          "uniform",
+          "uncertainty",
+          "disagreement",
+          "novelty",
+          "combined"
+        ],
+        "scope": "same host interpreter; no independent semantic oracle"
+      },
+      "initial_controls": {
+        "base": 30,
+        "deployed": 38,
+        "lexical": 30,
+        "structural": 37,
+        "behavior": 40,
+        "ensemble": 38,
+        "guarded": 32
+      },
+      "reachable_by_panel": {
+        "final_mixed": 22,
+        "final_ast": 12,
+        "final_changed": 6
+      },
+      "curves": {
+        "I0": [
+          38,
+          38,
+          39,
+          39,
+          39
+        ],
+        "I0_full_scrambled": [
+          38,
+          38,
+          38,
+          38,
+          38
+        ],
+        "B0": [
+          38,
+          38,
+          38,
+          40,
+          40
+        ],
+        "I4": [
+          38,
+          38,
+          38,
+          40,
+          40
+        ],
+        "static_sequence": [
+          38,
+          38,
+          39,
+          39,
+          39
+        ],
+        "fixed_uniform": [
+          38,
+          38,
+          38,
+          38,
+          38
+        ],
+        "fixed_uncertainty": [
+          38,
+          38,
+          38,
+          40,
+          40
+        ],
+        "fixed_disagreement": [
+          38,
+          38,
+          39,
+          39,
+          39
+        ],
+        "fixed_novelty": [
+          38,
+          38,
+          38,
+          38,
+          38
+        ],
+        "fixed_combined": [
+          38,
+          38,
+          38,
+          38,
+          38
+        ]
+      },
+      "updates": {
+        "I0": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 1
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "I0_full_scrambled": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          }
+        ],
+        "B0": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 2
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "I4": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 2
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          }
+        ],
+        "static_sequence": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 1
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "fixed_uniform": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          }
+        ],
+        "fixed_uncertainty": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 2
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          }
+        ],
+        "fixed_disagreement": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 1
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          }
+        ],
+        "fixed_novelty": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "novelty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          }
+        ],
+        "fixed_combined": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "combined",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ]
+      },
+      "first_edit_factual": {
+        "uniform": {
+          "gain": -0.05555555555555555,
+          "harm": 0.05555555555555555,
+          "utility": -0.06944444444444445,
+          "correct_delta": -2,
+          "harmed_tasks": 2
+        },
+        "uncertainty": {
+          "gain": 0.0,
+          "harm": 0.027777777777777776,
+          "utility": -0.006944444444444444,
+          "correct_delta": 0,
+          "harmed_tasks": 1
+        },
+        "disagreement": {
+          "gain": -0.027777777777777776,
+          "harm": 0.027777777777777776,
+          "utility": -0.034722222222222224,
+          "correct_delta": -1,
+          "harmed_tasks": 1
+        },
+        "novelty": {
+          "gain": 0.027777777777777776,
+          "harm": 0.0,
+          "utility": 0.027777777777777776,
+          "correct_delta": 1,
+          "harmed_tasks": 0
+        },
+        "combined": {
+          "gain": 0.027777777777777776,
+          "harm": 0.0,
+          "utility": 0.027777777777777776,
+          "correct_delta": 1,
+          "harmed_tasks": 0
+        }
+      },
+      "first_edit_judgments": {
+        "I0": {
+          "selected": "disagreement",
+          "predicted": {
+            "uniform": 0.0,
+            "uncertainty": 0.007885851957996485,
+            "disagreement": 0.014996452631900206,
+            "novelty": 0.007716574594644523,
+            "combined": 0.0033593170265950306
+          },
+          "realized_utility": -0.034722222222222224,
+          "best_tested_utility": 0.027777777777777776,
+          "regret": 0.0625,
+          "mae": 0.03569461592706476,
+          "selected_is_best": false
+        },
+        "I0_full_scrambled": {
+          "selected": "uniform",
+          "predicted": {
+            "uniform": 0.027948581040346053,
+            "uncertainty": 0.0,
+            "disagreement": 0.0025731005428495336,
+            "novelty": 0.002998707109367919,
+            "combined": 0.01424532987717211
+          },
+          "realized_utility": -0.06944444444444445,
+          "best_tested_utility": 0.027777777777777776,
+          "regret": 0.09722222222222222,
+          "mae": 0.03598886225266445,
+          "selected_is_best": false
+        },
+        "B0": {
+          "selected": "uncertainty",
+          "predicted": {
+            "uniform": 0.013746219051919197,
+            "uncertainty": 0.025133775199687774,
+            "disagreement": 0.009026995555107983,
+            "novelty": 0.015000226088379713,
+            "combined": 0.018709541263130115
+          },
+          "realized_utility": -0.006944444444444444,
+          "best_tested_utility": 0.027777777777777776,
+          "regret": 0.034722222222222224,
+          "mae": 0.03617277782437436,
+          "selected_is_best": false
+        },
+        "I4": {
+          "selected": "uncertainty",
+          "predicted": {
+            "uniform": 0.0,
+            "uncertainty": 0.019390654625077965,
+            "disagreement": 0.014578053818165512,
+            "novelty": 0.007716574594644523,
+            "combined": 0.0027155222037809567
+          },
+          "realized_utility": -0.006944444444444444,
+          "best_tested_utility": 0.027777777777777776,
+          "regret": 0.034722222222222224,
+          "mae": 0.03804065566229693,
+          "selected_is_best": false
+        }
+      },
+      "costs": {
+        "I0": {
+          "wall_seconds": 2.069692599994596,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 32,
+          "common_admission_candidate_labels": 406,
+          "admission_assessments": 5
+        },
+        "I0_full_scrambled": {
+          "wall_seconds": 0.4553751000203192,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 32,
+          "common_admission_candidate_labels": 406,
+          "admission_assessments": 5
+        },
+        "static_sequence": {
+          "wall_seconds": 0.38787539998884313,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 32,
+          "common_admission_candidate_labels": 406,
+          "admission_assessments": 5
+        },
+        "B0": {
+          "wall_seconds": 0.38894090001122095,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 32,
+          "common_admission_candidate_labels": 406,
+          "admission_assessments": 5
+        },
+        "I4": {
+          "wall_seconds": 0.3397003000136465,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 32,
+          "common_admission_candidate_labels": 406,
+          "admission_assessments": 5
+        },
+        "fixed_uniform": {
+          "wall_seconds": 0.2689253000135068,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 32,
+          "common_admission_candidate_labels": 406,
+          "admission_assessments": 5
+        },
+        "fixed_uncertainty": {
+          "wall_seconds": 0.31957839999813586,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 32,
+          "common_admission_candidate_labels": 406,
+          "admission_assessments": 5
+        },
+        "fixed_disagreement": {
+          "wall_seconds": 0.5131570000085048,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 32,
+          "common_admission_candidate_labels": 406,
+          "admission_assessments": 5
+        },
+        "fixed_novelty": {
+          "wall_seconds": 0.4275979000085499,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 32,
+          "common_admission_candidate_labels": 406,
+          "admission_assessments": 5
+        },
+        "fixed_combined": {
+          "wall_seconds": 0.3731751999875996,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 32,
+          "common_admission_candidate_labels": 406,
+          "admission_assessments": 5
+        }
+      },
+      "candidate_generation": {
+        "parallel_wall_seconds": 253.4742385999998,
+        "workers": 4,
+        "summed_worker_wall_seconds_by_source": {
+          "v67": 995.8119837999984,
+          "v73": 10.754752300097607
+        }
+      }
+    },
+    {
+      "offset": 10000,
+      "audit": {
+        "status": "passed",
+        "offset": 10000,
+        "candidate_calls_replayed": 268,
+        "arms": 10,
+        "checkpoints_per_arm": 5,
+        "equal_improvement_labels_per_arm": 64,
+        "same_base_first_edit_tactics": [
+          "uniform",
+          "uncertainty",
+          "disagreement",
+          "novelty",
+          "combined"
+        ],
+        "scope": "same host interpreter; no independent semantic oracle"
+      },
+      "initial_controls": {
+        "base": 34,
+        "deployed": 39,
+        "lexical": 36,
+        "structural": 37,
+        "behavior": 40,
+        "ensemble": 39,
+        "guarded": 35
+      },
+      "reachable_by_panel": {
+        "final_mixed": 23,
+        "final_ast": 12,
+        "final_changed": 6
+      },
+      "curves": {
+        "I0": [
+          39,
+          41,
+          41,
+          41,
+          41
+        ],
+        "I0_full_scrambled": [
+          39,
+          39,
+          39,
+          39,
+          39
+        ],
+        "B0": [
+          39,
+          39,
+          39,
+          39,
+          39
+        ],
+        "I4": [
+          39,
+          39,
+          39,
+          39,
+          41
+        ],
+        "static_sequence": [
+          39,
+          41,
+          41,
+          41,
+          41
+        ],
+        "fixed_uniform": [
+          39,
+          39,
+          39,
+          39,
+          39
+        ],
+        "fixed_uncertainty": [
+          39,
+          39,
+          39,
+          39,
+          41
+        ],
+        "fixed_disagreement": [
+          39,
+          41,
+          41,
+          41,
+          41
+        ],
+        "fixed_novelty": [
+          39,
+          39,
+          39,
+          39,
+          39
+        ],
+        "fixed_combined": [
+          39,
+          39,
+          39,
+          39,
+          39
+        ]
+      },
+      "updates": {
+        "I0": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 2
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "I0_full_scrambled": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          }
+        ],
+        "B0": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "I4": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 2
+          }
+        ],
+        "static_sequence": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 2
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "fixed_uniform": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          }
+        ],
+        "fixed_uncertainty": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 2
+          }
+        ],
+        "fixed_disagreement": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 2
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 0
+          }
+        ],
+        "fixed_novelty": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "novelty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          }
+        ],
+        "fixed_combined": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "combined",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ]
+      },
+      "first_edit_factual": {
+        "uniform": {
+          "gain": 0.0,
+          "harm": 0.0,
+          "utility": 0.0,
+          "correct_delta": 0,
+          "harmed_tasks": 0
+        },
+        "uncertainty": {
+          "gain": 0.0,
+          "harm": 0.0,
+          "utility": 0.0,
+          "correct_delta": 0,
+          "harmed_tasks": 0
+        },
+        "disagreement": {
+          "gain": 0.0,
+          "harm": 0.0,
+          "utility": 0.0,
+          "correct_delta": 0,
+          "harmed_tasks": 0
+        },
+        "novelty": {
+          "gain": 0.0,
+          "harm": 0.0,
+          "utility": 0.0,
+          "correct_delta": 0,
+          "harmed_tasks": 0
+        },
+        "combined": {
+          "gain": 0.0,
+          "harm": 0.0,
+          "utility": 0.0,
+          "correct_delta": 0,
+          "harmed_tasks": 0
+        }
+      },
+      "first_edit_judgments": {
+        "I0": {
+          "selected": "disagreement",
+          "predicted": {
+            "uniform": 0.0,
+            "uncertainty": 0.009398400762439772,
+            "disagreement": 0.01689460837700885,
+            "novelty": 0.00906608216900363,
+            "combined": 0.004028723249207233
+          },
+          "realized_utility": 0.0,
+          "best_tested_utility": 0.0,
+          "regret": 0.0,
+          "mae": 0.007877562911531896,
+          "selected_is_best": true
+        },
+        "I0_full_scrambled": {
+          "selected": "uniform",
+          "predicted": {
+            "uniform": 0.03160969620905512,
+            "uncertainty": 0.0,
+            "disagreement": 0.0033127055009014306,
+            "novelty": 0.0037838189195019425,
+            "combined": 0.01607674428862699
+          },
+          "realized_utility": 0.0,
+          "best_tested_utility": 0.0,
+          "regret": 0.0,
+          "mae": 0.010956592983617097,
+          "selected_is_best": true
+        },
+        "B0": {
+          "selected": "uncertainty",
+          "predicted": {
+            "uniform": 0.014076744636195048,
+            "uncertainty": 0.024745369986064386,
+            "disagreement": 0.011422717406273566,
+            "novelty": 0.014205697256866871,
+            "combined": 0.01678089679692593
+          },
+          "realized_utility": 0.0,
+          "best_tested_utility": 0.0,
+          "regret": 0.0,
+          "mae": 0.01624628521646516,
+          "selected_is_best": true
+        },
+        "I4": {
+          "selected": "uncertainty",
+          "predicted": {
+            "uniform": 0.0,
+            "uncertainty": 0.018773238229590702,
+            "disagreement": 0.016696075778786987,
+            "novelty": 0.00906608216900363,
+            "combined": 0.003275058908140917
+          },
+          "realized_utility": 0.0,
+          "best_tested_utility": 0.0,
+          "regret": 0.0,
+          "mae": 0.009562091017104448,
+          "selected_is_best": true
+        }
+      },
+      "costs": {
+        "I0": {
+          "wall_seconds": 2.004693299997598,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "I0_full_scrambled": {
+          "wall_seconds": 0.5418470000149682,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "static_sequence": {
+          "wall_seconds": 0.3881307000119705,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "B0": {
+          "wall_seconds": 0.4000354000017978,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "I4": {
+          "wall_seconds": 0.40833000000566244,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "fixed_uniform": {
+          "wall_seconds": 0.34501069999532774,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "fixed_uncertainty": {
+          "wall_seconds": 0.41702510000322945,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "fixed_disagreement": {
+          "wall_seconds": 0.42543919998570345,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "fixed_novelty": {
+          "wall_seconds": 0.677334800013341,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "fixed_combined": {
+          "wall_seconds": 0.3185016000061296,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 24,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        }
+      },
+      "candidate_generation": {
+        "parallel_wall_seconds": 255.14226809999673,
+        "workers": 4,
+        "summed_worker_wall_seconds_by_source": {
+          "v67": 1001.4217805999797,
+          "v73": 10.447505100048147
+        }
+      }
+    },
+    {
+      "offset": 11000,
+      "audit": {
+        "status": "passed",
+        "offset": 11000,
+        "candidate_calls_replayed": 268,
+        "arms": 10,
+        "checkpoints_per_arm": 5,
+        "equal_improvement_labels_per_arm": 64,
+        "same_base_first_edit_tactics": [
+          "uniform",
+          "uncertainty",
+          "disagreement",
+          "novelty",
+          "combined"
+        ],
+        "scope": "same host interpreter; no independent semantic oracle"
+      },
+      "initial_controls": {
+        "base": 38,
+        "deployed": 39,
+        "lexical": 37,
+        "structural": 39,
+        "behavior": 41,
+        "ensemble": 39,
+        "guarded": 38
+      },
+      "reachable_by_panel": {
+        "final_mixed": 23,
+        "final_ast": 12,
+        "final_changed": 6
+      },
+      "curves": {
+        "I0": [
+          39,
+          39,
+          39,
+          39,
+          39
+        ],
+        "I0_full_scrambled": [
+          39,
+          39,
+          39,
+          39,
+          39
+        ],
+        "B0": [
+          39,
+          41,
+          41,
+          41,
+          41
+        ],
+        "I4": [
+          39,
+          41,
+          41,
+          41,
+          41
+        ],
+        "static_sequence": [
+          39,
+          39,
+          39,
+          39,
+          39
+        ],
+        "fixed_uniform": [
+          39,
+          39,
+          39,
+          39,
+          39
+        ],
+        "fixed_uncertainty": [
+          39,
+          41,
+          41,
+          41,
+          41
+        ],
+        "fixed_disagreement": [
+          39,
+          39,
+          39,
+          39,
+          39
+        ],
+        "fixed_novelty": [
+          39,
+          39,
+          39,
+          39,
+          39
+        ],
+        "fixed_combined": [
+          39,
+          39,
+          39,
+          39,
+          39
+        ]
+      },
+      "updates": {
+        "I0": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "I0_full_scrambled": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          }
+        ],
+        "B0": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 2
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "I4": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 2
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          }
+        ],
+        "static_sequence": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "fixed_uniform": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          }
+        ],
+        "fixed_uncertainty": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 2
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          }
+        ],
+        "fixed_disagreement": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          }
+        ],
+        "fixed_novelty": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          }
+        ],
+        "fixed_combined": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ]
+      },
+      "first_edit_factual": {
+        "uniform": {
+          "gain": 0.0,
+          "harm": 0.0,
+          "utility": 0.0,
+          "correct_delta": 0,
+          "harmed_tasks": 0
+        },
+        "uncertainty": {
+          "gain": 0.027777777777777776,
+          "harm": 0.0,
+          "utility": 0.027777777777777776,
+          "correct_delta": 1,
+          "harmed_tasks": 0
+        },
+        "disagreement": {
+          "gain": -0.027777777777777776,
+          "harm": 0.05555555555555555,
+          "utility": -0.041666666666666664,
+          "correct_delta": -1,
+          "harmed_tasks": 2
+        },
+        "novelty": {
+          "gain": -0.027777777777777776,
+          "harm": 0.05555555555555555,
+          "utility": -0.041666666666666664,
+          "correct_delta": -1,
+          "harmed_tasks": 2
+        },
+        "combined": {
+          "gain": -0.027777777777777776,
+          "harm": 0.05555555555555555,
+          "utility": -0.041666666666666664,
+          "correct_delta": -1,
+          "harmed_tasks": 2
+        }
+      },
+      "first_edit_judgments": {
+        "I0": {
+          "selected": "disagreement",
+          "predicted": {
+            "uniform": 0.0,
+            "uncertainty": 0.007358675386546704,
+            "disagreement": 0.01435273036516303,
+            "novelty": 0.007216779109517122,
+            "combined": 0.003105479825971842
+          },
+          "realized_utility": -0.041666666666666664,
+          "best_tested_utility": 0.027777777777777776,
+          "regret": 0.06944444444444445,
+          "mae": 0.03401881833837661,
+          "selected_is_best": false
+        },
+        "I0_full_scrambled": {
+          "selected": "uniform",
+          "predicted": {
+            "uniform": 0.02683558166522246,
+            "uncertainty": 0.0,
+            "disagreement": 0.002393280963901637,
+            "novelty": 0.0028347840372979697,
+            "combined": 0.013727247579888292
+          },
+          "realized_utility": 0.0,
+          "best_tested_utility": 0.027777777777777776,
+          "regret": 0.027777777777777776,
+          "mae": 0.039713734404817624,
+          "selected_is_best": false
+        },
+        "B0": {
+          "selected": "uncertainty",
+          "predicted": {
+            "uniform": 0.013238562487085024,
+            "uncertainty": 0.024991918486461685,
+            "disagreement": 0.008366240855050618,
+            "novelty": 0.015091405903024262,
+            "combined": 0.019017668604016567
+          },
+          "realized_utility": 0.027777777777777776,
+          "best_tested_utility": 0.027777777777777776,
+          "regret": 0.0,
+          "mae": 0.03669994742809851,
+          "selected_is_best": true
+        },
+        "I4": {
+          "selected": "uncertainty",
+          "predicted": {
+            "uniform": 0.0,
+            "uncertainty": 0.019096196055780314,
+            "disagreement": 0.013876347404714452,
+            "novelty": 0.007216779109517122,
+            "combined": 0.0025325550266297966
+          },
+          "realized_utility": 0.027777777777777776,
+          "best_tested_utility": 0.027777777777777776,
+          "regret": 0.0,
+          "mae": 0.03146145265257177,
+          "selected_is_best": true
+        }
+      },
+      "costs": {
+        "I0": {
+          "wall_seconds": 2.2099563000083435,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 28,
+          "common_admission_candidate_labels": 404,
+          "admission_assessments": 5
+        },
+        "I0_full_scrambled": {
+          "wall_seconds": 0.43403330000001006,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 28,
+          "common_admission_candidate_labels": 404,
+          "admission_assessments": 5
+        },
+        "static_sequence": {
+          "wall_seconds": 0.2425766999949701,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 28,
+          "common_admission_candidate_labels": 404,
+          "admission_assessments": 5
+        },
+        "B0": {
+          "wall_seconds": 0.5168686000106391,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 28,
+          "common_admission_candidate_labels": 404,
+          "admission_assessments": 5
+        },
+        "I4": {
+          "wall_seconds": 0.4118070999975316,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 28,
+          "common_admission_candidate_labels": 404,
+          "admission_assessments": 5
+        },
+        "fixed_uniform": {
+          "wall_seconds": 0.28126059999340214,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 28,
+          "common_admission_candidate_labels": 404,
+          "admission_assessments": 5
+        },
+        "fixed_uncertainty": {
+          "wall_seconds": 0.38153409998631105,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 28,
+          "common_admission_candidate_labels": 404,
+          "admission_assessments": 5
+        },
+        "fixed_disagreement": {
+          "wall_seconds": 0.3665632999909576,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 28,
+          "common_admission_candidate_labels": 404,
+          "admission_assessments": 5
+        },
+        "fixed_novelty": {
+          "wall_seconds": 0.325032699998701,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 28,
+          "common_admission_candidate_labels": 404,
+          "admission_assessments": 5
+        },
+        "fixed_combined": {
+          "wall_seconds": 0.28656690000207163,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 28,
+          "common_admission_candidate_labels": 404,
+          "admission_assessments": 5
+        }
+      },
+      "candidate_generation": {
+        "parallel_wall_seconds": 253.73538550001103,
+        "workers": 4,
+        "summed_worker_wall_seconds_by_source": {
+          "v67": 997.8194432001037,
+          "v73": 11.145767399983015
+        }
+      }
+    },
+    {
+      "offset": 12000,
+      "audit": {
+        "status": "passed",
+        "offset": 12000,
+        "candidate_calls_replayed": 268,
+        "arms": 10,
+        "checkpoints_per_arm": 5,
+        "equal_improvement_labels_per_arm": 64,
+        "same_base_first_edit_tactics": [
+          "uniform",
+          "uncertainty",
+          "disagreement",
+          "novelty",
+          "combined"
+        ],
+        "scope": "same host interpreter; no independent semantic oracle"
+      },
+      "initial_controls": {
+        "base": 34,
+        "deployed": 40,
+        "lexical": 34,
+        "structural": 35,
+        "behavior": 41,
+        "ensemble": 40,
+        "guarded": 38
+      },
+      "reachable_by_panel": {
+        "final_mixed": 24,
+        "final_ast": 12,
+        "final_changed": 6
+      },
+      "curves": {
+        "I0": [
+          40,
+          41,
+          41,
+          39,
+          39
+        ],
+        "I0_full_scrambled": [
+          40,
+          40,
+          41,
+          41,
+          41
+        ],
+        "B0": [
+          40,
+          39,
+          41,
+          41,
+          41
+        ],
+        "I4": [
+          40,
+          39,
+          41,
+          41,
+          41
+        ],
+        "static_sequence": [
+          40,
+          41,
+          41,
+          39,
+          39
+        ],
+        "fixed_uniform": [
+          40,
+          40,
+          41,
+          41,
+          41
+        ],
+        "fixed_uncertainty": [
+          40,
+          39,
+          41,
+          41,
+          41
+        ],
+        "fixed_disagreement": [
+          40,
+          41,
+          41,
+          41,
+          41
+        ],
+        "fixed_novelty": [
+          40,
+          42,
+          42,
+          41,
+          42
+        ],
+        "fixed_combined": [
+          40,
+          42,
+          42,
+          41,
+          42
+        ]
+      },
+      "updates": {
+        "I0": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 1
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": -2
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "I0_full_scrambled": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 1
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          }
+        ],
+        "B0": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": -1
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 2
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "I4": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": -1
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 2
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          }
+        ],
+        "static_sequence": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 1
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": -2
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "fixed_uniform": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 1
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          }
+        ],
+        "fixed_uncertainty": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": -1
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 2
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          }
+        ],
+        "fixed_disagreement": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 1
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 0
+          }
+        ],
+        "fixed_novelty": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "novelty",
+            "final_delta": 2
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "novelty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "novelty",
+            "final_delta": -1
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "novelty",
+            "final_delta": 1
+          }
+        ],
+        "fixed_combined": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "combined",
+            "final_delta": 2
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "combined",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "combined",
+            "final_delta": -1
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "combined",
+            "final_delta": 1
+          }
+        ]
+      },
+      "first_edit_factual": {
+        "uniform": {
+          "gain": 0.0,
+          "harm": 0.0,
+          "utility": 0.0,
+          "correct_delta": 0,
+          "harmed_tasks": 0
+        },
+        "uncertainty": {
+          "gain": 0.0,
+          "harm": 0.0,
+          "utility": 0.0,
+          "correct_delta": 0,
+          "harmed_tasks": 0
+        },
+        "disagreement": {
+          "gain": 0.0,
+          "harm": 0.0,
+          "utility": 0.0,
+          "correct_delta": 0,
+          "harmed_tasks": 0
+        },
+        "novelty": {
+          "gain": 0.0,
+          "harm": 0.0,
+          "utility": 0.0,
+          "correct_delta": 0,
+          "harmed_tasks": 0
+        },
+        "combined": {
+          "gain": 0.0,
+          "harm": 0.0,
+          "utility": 0.0,
+          "correct_delta": 0,
+          "harmed_tasks": 0
+        }
+      },
+      "first_edit_judgments": {
+        "I0": {
+          "selected": "disagreement",
+          "predicted": {
+            "uniform": 0.0,
+            "uncertainty": 0.004284269451191556,
+            "disagreement": 0.009391923143429955,
+            "novelty": 0.0033307377669937912,
+            "combined": 0.0013584931725232397
+          },
+          "realized_utility": 0.0,
+          "best_tested_utility": 0.0,
+          "regret": 0.0,
+          "mae": 0.0036730847068277084,
+          "selected_is_best": true
+        },
+        "I0_full_scrambled": {
+          "selected": "uniform",
+          "predicted": {
+            "uniform": 0.017662637945701935,
+            "uncertainty": 0.0,
+            "disagreement": 0.0009571317919162469,
+            "novelty": 0.001192408629977482,
+            "combined": 0.009149469837466076
+          },
+          "realized_utility": 0.0,
+          "best_tested_utility": 0.0,
+          "regret": 0.0,
+          "mae": 0.005792329641012348,
+          "selected_is_best": true
+        },
+        "B0": {
+          "selected": "uncertainty",
+          "predicted": {
+            "uniform": 0.011344407378063843,
+            "uncertainty": 0.021911695727960014,
+            "disagreement": 0.0057872560286265,
+            "novelty": 0.012976772091426548,
+            "combined": 0.01748992359005792
+          },
+          "realized_utility": 0.0,
+          "best_tested_utility": 0.0,
+          "regret": 0.0,
+          "mae": 0.013902010963226965,
+          "selected_is_best": true
+        },
+        "I4": {
+          "selected": "uncertainty",
+          "predicted": {
+            "uniform": 0.0,
+            "uncertainty": 0.015659887630143036,
+            "disagreement": 0.01071029944964473,
+            "novelty": 0.0033307377669937912,
+            "combined": 0.001205515009134568
+          },
+          "realized_utility": 0.0,
+          "best_tested_utility": 0.0,
+          "regret": 0.0,
+          "mae": 0.006181287971183225,
+          "selected_is_best": true
+        }
+      },
+      "costs": {
+        "I0": {
+          "wall_seconds": 1.7891461999970488,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 30,
+          "common_admission_candidate_labels": 368,
+          "admission_assessments": 5
+        },
+        "I0_full_scrambled": {
+          "wall_seconds": 0.6041040999989491,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 30,
+          "common_admission_candidate_labels": 368,
+          "admission_assessments": 5
+        },
+        "static_sequence": {
+          "wall_seconds": 0.4050219999917317,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 30,
+          "common_admission_candidate_labels": 368,
+          "admission_assessments": 5
+        },
+        "B0": {
+          "wall_seconds": 0.7046524000179488,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 30,
+          "common_admission_candidate_labels": 368,
+          "admission_assessments": 5
+        },
+        "I4": {
+          "wall_seconds": 0.4260416000033729,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 30,
+          "common_admission_candidate_labels": 368,
+          "admission_assessments": 5
+        },
+        "fixed_uniform": {
+          "wall_seconds": 0.3907715000095777,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 30,
+          "common_admission_candidate_labels": 368,
+          "admission_assessments": 5
+        },
+        "fixed_uncertainty": {
+          "wall_seconds": 0.3960796000028495,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 30,
+          "common_admission_candidate_labels": 368,
+          "admission_assessments": 5
+        },
+        "fixed_disagreement": {
+          "wall_seconds": 0.42388430002029054,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 30,
+          "common_admission_candidate_labels": 368,
+          "admission_assessments": 5
+        },
+        "fixed_novelty": {
+          "wall_seconds": 0.5715544999984559,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 30,
+          "common_admission_candidate_labels": 368,
+          "admission_assessments": 5
+        },
+        "fixed_combined": {
+          "wall_seconds": 0.5594139999884646,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 30,
+          "common_admission_candidate_labels": 368,
+          "admission_assessments": 5
+        }
+      },
+      "candidate_generation": {
+        "parallel_wall_seconds": 256.4875825000054,
+        "workers": 4,
+        "summed_worker_wall_seconds_by_source": {
+          "v67": 1011.0111202001863,
+          "v73": 9.189891000132775
+        }
+      }
+    },
+    {
+      "offset": 13000,
+      "audit": {
+        "status": "passed",
+        "offset": 13000,
+        "candidate_calls_replayed": 268,
+        "arms": 10,
+        "checkpoints_per_arm": 5,
+        "equal_improvement_labels_per_arm": 64,
+        "same_base_first_edit_tactics": [
+          "uniform",
+          "uncertainty",
+          "disagreement",
+          "novelty",
+          "combined"
+        ],
+        "scope": "same host interpreter; no independent semantic oracle"
+      },
+      "initial_controls": {
+        "base": 36,
+        "deployed": 40,
+        "lexical": 38,
+        "structural": 38,
+        "behavior": 41,
+        "ensemble": 40,
+        "guarded": 37
+      },
+      "reachable_by_panel": {
+        "final_mixed": 23,
+        "final_ast": 12,
+        "final_changed": 6
+      },
+      "curves": {
+        "I0": [
+          40,
+          41,
+          41,
+          41,
+          41
+        ],
+        "I0_full_scrambled": [
+          40,
+          40,
+          41,
+          41,
+          41
+        ],
+        "B0": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "I4": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "static_sequence": [
+          40,
+          41,
+          41,
+          41,
+          41
+        ],
+        "fixed_uniform": [
+          40,
+          40,
+          41,
+          41,
+          41
+        ],
+        "fixed_uncertainty": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "fixed_disagreement": [
+          40,
+          41,
+          41,
+          41,
+          41
+        ],
+        "fixed_novelty": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "fixed_combined": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ]
+      },
+      "updates": {
+        "I0": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 1
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "I0_full_scrambled": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 1
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          }
+        ],
+        "B0": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          }
+        ],
+        "I4": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          }
+        ],
+        "static_sequence": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 1
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "fixed_uniform": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 1
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          }
+        ],
+        "fixed_uncertainty": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          }
+        ],
+        "fixed_disagreement": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 1
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "disagreement",
+            "final_delta": 0
+          }
+        ],
+        "fixed_novelty": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          }
+        ],
+        "fixed_combined": [
+          {
+            "round": 1,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ]
+      },
+      "first_edit_factual": {
+        "uniform": {
+          "gain": -0.05555555555555555,
+          "harm": 0.05555555555555555,
+          "utility": -0.06944444444444445,
+          "correct_delta": -2,
+          "harmed_tasks": 2
+        },
+        "uncertainty": {
+          "gain": -0.027777777777777776,
+          "harm": 0.027777777777777776,
+          "utility": -0.034722222222222224,
+          "correct_delta": -1,
+          "harmed_tasks": 1
+        },
+        "disagreement": {
+          "gain": 0.0,
+          "harm": 0.0,
+          "utility": 0.0,
+          "correct_delta": 0,
+          "harmed_tasks": 0
+        },
+        "novelty": {
+          "gain": 0.0,
+          "harm": 0.0,
+          "utility": 0.0,
+          "correct_delta": 0,
+          "harmed_tasks": 0
+        },
+        "combined": {
+          "gain": 0.0,
+          "harm": 0.0,
+          "utility": 0.0,
+          "correct_delta": 0,
+          "harmed_tasks": 0
+        }
+      },
+      "first_edit_judgments": {
+        "I0": {
+          "selected": "disagreement",
+          "predicted": {
+            "uniform": 0.0,
+            "uncertainty": 0.009298422369808695,
+            "disagreement": 0.016784339070385172,
+            "novelty": 0.008947924272465347,
+            "combined": 0.003977859156669033
+          },
+          "realized_utility": 0.0,
+          "best_tested_utility": 0.0,
+          "regret": 0.0,
+          "mae": 0.028635042307198984,
+          "selected_is_best": true
+        },
+        "I0_full_scrambled": {
+          "selected": "uniform",
+          "predicted": {
+            "uniform": 0.03130994202885452,
+            "uncertainty": 0.0,
+            "disagreement": 0.0032245801982578844,
+            "novelty": 0.003664804637217186,
+            "combined": 0.015919825036567005
+          },
+          "realized_utility": -0.06944444444444445,
+          "best_tested_utility": 0.0,
+          "regret": 0.06944444444444445,
+          "mae": 0.031657163713512654,
+          "selected_is_best": false
+        },
+        "B0": {
+          "selected": "uncertainty",
+          "predicted": {
+            "uniform": 0.014357612819231785,
+            "uncertainty": 0.024657907086881002,
+            "disagreement": 0.0115924693834013,
+            "novelty": 0.013959013761711325,
+            "combined": 0.01650179809293049
+          },
+          "realized_utility": -0.034722222222222224,
+          "best_tested_utility": 0.0,
+          "regret": 0.034722222222222224,
+          "mae": 0.03704709356216451,
+          "selected_is_best": false
+        },
+        "I4": {
+          "selected": "uncertainty",
+          "predicted": {
+            "uniform": 0.0,
+            "uncertainty": 0.01867255587940082,
+            "disagreement": 0.016851891897944653,
+            "novelty": 0.008947924272465347,
+            "combined": 0.0032452627877909467
+          },
+          "realized_utility": -0.034722222222222224,
+          "best_tested_utility": 0.0,
+          "regret": 0.034722222222222224,
+          "mae": 0.030376860300853688,
+          "selected_is_best": false
+        }
+      },
+      "costs": {
+        "I0": {
+          "wall_seconds": 1.8743386999994982,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 330,
+          "admission_assessments": 5
+        },
+        "I0_full_scrambled": {
+          "wall_seconds": 0.4987644999928307,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 330,
+          "admission_assessments": 5
+        },
+        "static_sequence": {
+          "wall_seconds": 0.2372658000094816,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 330,
+          "admission_assessments": 5
+        },
+        "B0": {
+          "wall_seconds": 0.32176580000668764,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 330,
+          "admission_assessments": 5
+        },
+        "I4": {
+          "wall_seconds": 0.21281209998414852,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 330,
+          "admission_assessments": 5
+        },
+        "fixed_uniform": {
+          "wall_seconds": 0.295399999973597,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 330,
+          "admission_assessments": 5
+        },
+        "fixed_uncertainty": {
+          "wall_seconds": 0.20211869999184273,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 330,
+          "admission_assessments": 5
+        },
+        "fixed_disagreement": {
+          "wall_seconds": 0.5241974999953527,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 330,
+          "admission_assessments": 5
+        },
+        "fixed_novelty": {
+          "wall_seconds": 0.27222720001009293,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 330,
+          "admission_assessments": 5
+        },
+        "fixed_combined": {
+          "wall_seconds": 0.2284390999993775,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 330,
+          "admission_assessments": 5
+        }
+      },
+      "candidate_generation": {
+        "parallel_wall_seconds": 249.2865698999958,
+        "workers": 4,
+        "summed_worker_wall_seconds_by_source": {
+          "v67": 972.0926558997016,
+          "v73": 10.092695799918147
+        }
+      }
+    },
+    {
+      "offset": 14000,
+      "audit": {
+        "status": "passed",
+        "offset": 14000,
+        "candidate_calls_replayed": 268,
+        "arms": 10,
+        "checkpoints_per_arm": 5,
+        "equal_improvement_labels_per_arm": 64,
+        "same_base_first_edit_tactics": [
+          "uniform",
+          "uncertainty",
+          "disagreement",
+          "novelty",
+          "combined"
+        ],
+        "scope": "same host interpreter; no independent semantic oracle"
+      },
+      "initial_controls": {
+        "base": 35,
+        "deployed": 41,
+        "lexical": 34,
+        "structural": 40,
+        "behavior": 40,
+        "ensemble": 41,
+        "guarded": 37
+      },
+      "reachable_by_panel": {
+        "final_mixed": 24,
+        "final_ast": 12,
+        "final_changed": 6
+      },
+      "curves": {
+        "I0": [
+          41,
+          42,
+          42,
+          42,
+          42
+        ],
+        "I0_full_scrambled": [
+          41,
+          42,
+          42,
+          42,
+          42
+        ],
+        "B0": [
+          41,
+          41,
+          41,
+          41,
+          41
+        ],
+        "I4": [
+          41,
+          41,
+          41,
+          41,
+          41
+        ],
+        "static_sequence": [
+          41,
+          42,
+          42,
+          42,
+          42
+        ],
+        "fixed_uniform": [
+          41,
+          42,
+          42,
+          42,
+          42
+        ],
+        "fixed_uncertainty": [
+          41,
+          41,
+          41,
+          41,
+          41
+        ],
+        "fixed_disagreement": [
+          41,
+          42,
+          42,
+          42,
+          42
+        ],
+        "fixed_novelty": [
+          41,
+          42,
+          42,
+          42,
+          42
+        ],
+        "fixed_combined": [
+          41,
+          42,
+          42,
+          42,
+          42
+        ]
+      },
+      "updates": {
+        "I0": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 1
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "I0_full_scrambled": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 1
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          }
+        ],
+        "B0": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          }
+        ],
+        "I4": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          }
+        ],
+        "static_sequence": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 1
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ],
+        "fixed_uniform": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 1
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "uniform",
+            "final_delta": 0
+          }
+        ],
+        "fixed_uncertainty": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "uncertainty",
+            "final_delta": 0
+          }
+        ],
+        "fixed_disagreement": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 1
+          },
+          {
+            "round": 2,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": true,
+            "tactic": "disagreement",
+            "final_delta": 0
+          }
+        ],
+        "fixed_novelty": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "novelty",
+            "final_delta": 1
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "novelty",
+            "final_delta": 0
+          }
+        ],
+        "fixed_combined": [
+          {
+            "round": 1,
+            "accepted": true,
+            "tactic": "combined",
+            "final_delta": 1
+          },
+          {
+            "round": 2,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          },
+          {
+            "round": 3,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          },
+          {
+            "round": 4,
+            "accepted": false,
+            "tactic": "combined",
+            "final_delta": 0
+          }
+        ]
+      },
+      "first_edit_factual": {
+        "uniform": {
+          "gain": 0.05555555555555555,
+          "harm": 0.0,
+          "utility": 0.05555555555555555,
+          "correct_delta": 2,
+          "harmed_tasks": 0
+        },
+        "uncertainty": {
+          "gain": 0.027777777777777776,
+          "harm": 0.0,
+          "utility": 0.027777777777777776,
+          "correct_delta": 1,
+          "harmed_tasks": 0
+        },
+        "disagreement": {
+          "gain": 0.027777777777777776,
+          "harm": 0.0,
+          "utility": 0.027777777777777776,
+          "correct_delta": 1,
+          "harmed_tasks": 0
+        },
+        "novelty": {
+          "gain": 0.05555555555555555,
+          "harm": 0.0,
+          "utility": 0.05555555555555555,
+          "correct_delta": 2,
+          "harmed_tasks": 0
+        },
+        "combined": {
+          "gain": 0.05555555555555555,
+          "harm": 0.0,
+          "utility": 0.05555555555555555,
+          "correct_delta": 2,
+          "harmed_tasks": 0
+        }
+      },
+      "first_edit_judgments": {
+        "I0": {
+          "selected": "disagreement",
+          "predicted": {
+            "uniform": 0.0,
+            "uncertainty": 0.007600269229167504,
+            "disagreement": 0.014896237880736702,
+            "novelty": 0.0057547352400489854,
+            "combined": 0.0024599294720937604
+          },
+          "realized_utility": 0.027777777777777776,
+          "best_tested_utility": 0.05555555555555555,
+          "regret": 0.027777777777777776,
+          "mae": 0.03830221008003505,
+          "selected_is_best": false
+        },
+        "I0_full_scrambled": {
+          "selected": "uniform",
+          "predicted": {
+            "uniform": 0.0269318451385683,
+            "uncertainty": 0.0,
+            "disagreement": 0.0018874863328523434,
+            "novelty": 0.0022203159358594915,
+            "combined": 0.01428910980925102
+          },
+          "realized_utility": 0.05555555555555555,
+          "best_tested_utility": 0.05555555555555555,
+          "regret": 0.0,
+          "mae": 0.03537869300113821,
+          "selected_is_best": true
+        },
+        "B0": {
+          "selected": "uncertainty",
+          "predicted": {
+            "uniform": 0.013668824353318091,
+            "uncertainty": 0.023777464811577314,
+            "disagreement": 0.010397790096131457,
+            "novelty": 0.012813263705621305,
+            "combined": 0.016212312180471488
+          },
+          "realized_utility": 0.027777777777777776,
+          "best_tested_utility": 0.05555555555555555,
+          "regret": 0.027777777777777776,
+          "mae": 0.02907051341502051,
+          "selected_is_best": false
+        },
+        "I4": {
+          "selected": "uncertainty",
+          "predicted": {
+            "uniform": 0.0,
+            "uncertainty": 0.01769451359049668,
+            "disagreement": 0.01545460007634463,
+            "novelty": 0.0057547352400489854,
+            "combined": 0.0021181455890880016
+          },
+          "realized_utility": 0.027777777777777776,
+          "best_tested_utility": 0.05555555555555555,
+          "regret": 0.027777777777777776,
+          "mae": 0.03624004554524878,
+          "selected_is_best": false
+        }
+      },
+      "costs": {
+        "I0": {
+          "wall_seconds": 2.1932356999896,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "I0_full_scrambled": {
+          "wall_seconds": 0.5018388999742456,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "static_sequence": {
+          "wall_seconds": 0.3884679999900982,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "B0": {
+          "wall_seconds": 0.389581299998099,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "I4": {
+          "wall_seconds": 0.3306397999986075,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "fixed_uniform": {
+          "wall_seconds": 0.4185261999955401,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "fixed_uncertainty": {
+          "wall_seconds": 0.33731360000092536,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "fixed_disagreement": {
+          "wall_seconds": 0.6414893999753986,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "fixed_novelty": {
+          "wall_seconds": 0.41089759999886155,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        },
+        "fixed_combined": {
+          "wall_seconds": 0.30984349999926053,
+          "model_fits": 5,
+          "improvement_oracle_labels": 64,
+          "bootstrap_oracle_labels": 22,
+          "common_admission_candidate_labels": 410,
+          "admission_assessments": 5
+        }
+      },
+      "candidate_generation": {
+        "parallel_wall_seconds": 254.3411105000123,
+        "workers": 4,
+        "summed_worker_wall_seconds_by_source": {
+          "v67": 998.6112370002957,
+          "v73": 11.747236599971075
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "I0": {
+      "final": [
+        39,
+        41,
+        39,
+        39,
+        41,
+        42
+      ],
+      "initial": [
+        38,
+        39,
+        39,
+        40,
+        40,
+        41
+      ],
+      "net": [
+        1,
+        2,
+        0,
+        -1,
+        1,
+        1
+      ],
+      "useful_updates": 5,
+      "net_harmful_updates": 1,
+      "accepted_updates": 14
+    },
+    "I0_full_scrambled": {
+      "final": [
+        38,
+        39,
+        39,
+        41,
+        41,
+        42
+      ],
+      "initial": [
+        38,
+        39,
+        39,
+        40,
+        40,
+        41
+      ],
+      "net": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "useful_updates": 3,
+      "net_harmful_updates": 0,
+      "accepted_updates": 13
+    },
+    "B0": {
+      "final": [
+        40,
+        39,
+        41,
+        41,
+        40,
+        41
+      ],
+      "initial": [
+        38,
+        39,
+        39,
+        40,
+        40,
+        41
+      ],
+      "net": [
+        2,
+        0,
+        2,
+        1,
+        0,
+        0
+      ],
+      "useful_updates": 3,
+      "net_harmful_updates": 1,
+      "accepted_updates": 15
+    },
+    "I4": {
+      "final": [
+        40,
+        41,
+        41,
+        41,
+        40,
+        41
+      ],
+      "initial": [
+        38,
+        39,
+        39,
+        40,
+        40,
+        41
+      ],
+      "net": [
+        2,
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "useful_updates": 4,
+      "net_harmful_updates": 1,
+      "accepted_updates": 16
+    },
+    "static_sequence": {
+      "final": [
+        39,
+        41,
+        39,
+        39,
+        41,
+        42
+      ],
+      "initial": [
+        38,
+        39,
+        39,
+        40,
+        40,
+        41
+      ],
+      "net": [
+        1,
+        2,
+        0,
+        -1,
+        1,
+        1
+      ],
+      "useful_updates": 5,
+      "net_harmful_updates": 1,
+      "accepted_updates": 14
+    },
+    "fixed_uniform": {
+      "final": [
+        38,
+        39,
+        39,
+        41,
+        41,
+        42
+      ],
+      "initial": [
+        38,
+        39,
+        39,
+        40,
+        40,
+        41
+      ],
+      "net": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "useful_updates": 3,
+      "net_harmful_updates": 0,
+      "accepted_updates": 13
+    },
+    "fixed_uncertainty": {
+      "final": [
+        40,
+        41,
+        41,
+        41,
+        40,
+        41
+      ],
+      "initial": [
+        38,
+        39,
+        39,
+        40,
+        40,
+        41
+      ],
+      "net": [
+        2,
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "useful_updates": 4,
+      "net_harmful_updates": 1,
+      "accepted_updates": 16
+    },
+    "fixed_disagreement": {
+      "final": [
+        39,
+        41,
+        39,
+        41,
+        41,
+        42
+      ],
+      "initial": [
+        38,
+        39,
+        39,
+        40,
+        40,
+        41
+      ],
+      "net": [
+        1,
+        2,
+        0,
+        1,
+        1,
+        1
+      ],
+      "useful_updates": 5,
+      "net_harmful_updates": 0,
+      "accepted_updates": 14
+    },
+    "fixed_novelty": {
+      "final": [
+        38,
+        39,
+        39,
+        42,
+        40,
+        42
+      ],
+      "initial": [
+        38,
+        39,
+        39,
+        40,
+        40,
+        41
+      ],
+      "net": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        1
+      ],
+      "useful_updates": 3,
+      "net_harmful_updates": 1,
+      "accepted_updates": 7
+    },
+    "fixed_combined": {
+      "final": [
+        38,
+        39,
+        39,
+        42,
+        40,
+        42
+      ],
+      "initial": [
+        38,
+        39,
+        39,
+        40,
+        40,
+        41
+      ],
+      "net": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        1
+      ],
+      "useful_updates": 3,
+      "net_harmful_updates": 1,
+      "accepted_updates": 7
+    }
+  },
+  "screen": {
+    "I0_vs_static_sequence": {
+      "paired_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "wins": 0,
+      "mean_gain": 0,
+      "passed": false
+    },
+    "I0_vs_I0_full_scrambled": {
+      "paired_differences": [
+        1,
+        2,
+        0,
+        -2,
+        0,
+        0
+      ],
+      "wins": 2,
+      "mean_gain": 0.16666666666666666,
+      "passed": false
+    },
+    "B0_vs_I0": {
+      "paired_differences": [
+        1,
+        -2,
+        2,
+        2,
+        -1,
+        -1
+      ],
+      "wins": 3,
+      "mean_gain": 0.16666666666666666,
+      "passed": false
+    }
+  },
+  "first_edit_evaluation": {
+    "I0": {
+      "mean_mae": 0.024700222378505835,
+      "mean_regret": 0.02662037037037037,
+      "best_edit_selected": 3
+    },
+    "I0_full_scrambled": {
+      "mean_mae": 0.02658122933279373,
+      "mean_regret": 0.032407407407407406,
+      "best_edit_selected": 3
+    },
+    "B0": {
+      "mean_mae": 0.028189771401558338,
+      "mean_regret": 0.016203703703703703,
+      "best_edit_selected": 3
+    },
+    "I4": {
+      "mean_mae": 0.025310398858209807,
+      "mean_regret": 0.016203703703703703,
+      "best_edit_selected": 3
+    }
+  },
+  "frozen_state_lengths": {
+    "I0": 60,
+    "I0_full_scrambled": 60,
+    "static_sequence": 0,
+    "B0": 75,
+    "I4": 72,
+    "fixed_uniform": 0,
+    "fixed_uncertainty": 0,
+    "fixed_disagreement": 0,
+    "fixed_novelty": 0,
+    "fixed_combined": 0
+  }
+}

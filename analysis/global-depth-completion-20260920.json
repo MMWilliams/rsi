@@ -1,0 +1,340 @@
+{
+  "scope": "opened development only; completes the global grid",
+  "target_panels": [
+    "candidate-query-cost-transfer-20260918",
+    "combined-ranker-query-transfer-20260918",
+    "candidate-conditioned-query-transfer-20260918"
+  ],
+  "global_uniform": {
+    "train25_test25": {
+      "candidate-query-cost-transfer-20260918": {
+        "correct": 354,
+        "e0": 327,
+        "gain": 27,
+        "positive_banks": 8,
+        "losing_banks": 1,
+        "interval": [
+          11,
+          43
+        ]
+      },
+      "combined-ranker-query-transfer-20260918": {
+        "correct": 362,
+        "e0": 344,
+        "gain": 18,
+        "positive_banks": 7,
+        "losing_banks": 3,
+        "interval": [
+          4,
+          34
+        ]
+      },
+      "candidate-conditioned-query-transfer-20260918": {
+        "correct": 357,
+        "e0": 349,
+        "gain": 8,
+        "positive_banks": 6,
+        "losing_banks": 4,
+        "interval": [
+          -2,
+          18
+        ]
+      }
+    },
+    "train25_test50": {
+      "candidate-query-cost-transfer-20260918": {
+        "correct": 350,
+        "e0": 327,
+        "gain": 23,
+        "positive_banks": 10,
+        "losing_banks": 2,
+        "interval": [
+          10,
+          36
+        ]
+      },
+      "combined-ranker-query-transfer-20260918": {
+        "correct": 355,
+        "e0": 344,
+        "gain": 11,
+        "positive_banks": 4,
+        "losing_banks": 4,
+        "interval": [
+          -7,
+          30
+        ]
+      },
+      "candidate-conditioned-query-transfer-20260918": {
+        "correct": 360,
+        "e0": 349,
+        "gain": 11,
+        "positive_banks": 6,
+        "losing_banks": 4,
+        "interval": [
+          -4,
+          27
+        ]
+      }
+    },
+    "train25_test100": {
+      "candidate-query-cost-transfer-20260918": {
+        "correct": 345,
+        "e0": 327,
+        "gain": 18,
+        "positive_banks": 8,
+        "losing_banks": 2,
+        "interval": [
+          4,
+          32
+        ]
+      },
+      "combined-ranker-query-transfer-20260918": {
+        "correct": 357,
+        "e0": 344,
+        "gain": 13,
+        "positive_banks": 5,
+        "losing_banks": 3,
+        "interval": [
+          -3,
+          31
+        ]
+      },
+      "candidate-conditioned-query-transfer-20260918": {
+        "correct": 363,
+        "e0": 349,
+        "gain": 14,
+        "positive_banks": 6,
+        "losing_banks": 4,
+        "interval": [
+          -7,
+          35
+        ]
+      }
+    },
+    "train50_test25": {
+      "candidate-query-cost-transfer-20260918": {
+        "correct": 321,
+        "e0": 327,
+        "gain": -6,
+        "positive_banks": 6,
+        "losing_banks": 6,
+        "interval": [
+          -22,
+          10
+        ]
+      },
+      "combined-ranker-query-transfer-20260918": {
+        "correct": 339,
+        "e0": 344,
+        "gain": -5,
+        "positive_banks": 3,
+        "losing_banks": 6,
+        "interval": [
+          -19,
+          8
+        ]
+      },
+      "candidate-conditioned-query-transfer-20260918": {
+        "correct": 338,
+        "e0": 349,
+        "gain": -11,
+        "positive_banks": 2,
+        "losing_banks": 6,
+        "interval": [
+          -23,
+          2
+        ]
+      }
+    },
+    "train50_test50": {
+      "candidate-query-cost-transfer-20260918": {
+        "correct": 322,
+        "e0": 327,
+        "gain": -5,
+        "positive_banks": 4,
+        "losing_banks": 5,
+        "interval": [
+          -22,
+          12
+        ]
+      },
+      "combined-ranker-query-transfer-20260918": {
+        "correct": 337,
+        "e0": 344,
+        "gain": -7,
+        "positive_banks": 2,
+        "losing_banks": 6,
+        "interval": [
+          -23,
+          8
+        ]
+      },
+      "candidate-conditioned-query-transfer-20260918": {
+        "correct": 335,
+        "e0": 349,
+        "gain": -14,
+        "positive_banks": 3,
+        "losing_banks": 7,
+        "interval": [
+          -31,
+          3
+        ]
+      }
+    },
+    "train50_test100": {
+      "candidate-query-cost-transfer-20260918": {
+        "correct": 324,
+        "e0": 327,
+        "gain": -3,
+        "positive_banks": 5,
+        "losing_banks": 6,
+        "interval": [
+          -19,
+          13
+        ]
+      },
+      "combined-ranker-query-transfer-20260918": {
+        "correct": 341,
+        "e0": 344,
+        "gain": -3,
+        "positive_banks": 4,
+        "losing_banks": 6,
+        "interval": [
+          -17,
+          10
+        ]
+      },
+      "candidate-conditioned-query-transfer-20260918": {
+        "correct": 341,
+        "e0": 349,
+        "gain": -8,
+        "positive_banks": 4,
+        "losing_banks": 8,
+        "interval": [
+          -25,
+          10
+        ]
+      }
+    },
+    "train100_test25": {
+      "candidate-query-cost-transfer-20260918": {
+        "correct": 312,
+        "e0": 327,
+        "gain": -15,
+        "positive_banks": 4,
+        "losing_banks": 7,
+        "interval": [
+          -31,
+          1
+        ]
+      },
+      "combined-ranker-query-transfer-20260918": {
+        "correct": 331,
+        "e0": 344,
+        "gain": -13,
+        "positive_banks": 2,
+        "losing_banks": 8,
+        "interval": [
+          -23,
+          -2
+        ]
+      },
+      "candidate-conditioned-query-transfer-20260918": {
+        "correct": 322,
+        "e0": 349,
+        "gain": -27,
+        "positive_banks": 0,
+        "losing_banks": 10,
+        "interval": [
+          -41,
+          -15
+        ]
+      }
+    },
+    "train100_test50": {
+      "candidate-query-cost-transfer-20260918": {
+        "correct": 311,
+        "e0": 327,
+        "gain": -16,
+        "positive_banks": 3,
+        "losing_banks": 9,
+        "interval": [
+          -31,
+          0
+        ]
+      },
+      "combined-ranker-query-transfer-20260918": {
+        "correct": 333,
+        "e0": 344,
+        "gain": -11,
+        "positive_banks": 3,
+        "losing_banks": 7,
+        "interval": [
+          -24,
+          4
+        ]
+      },
+      "candidate-conditioned-query-transfer-20260918": {
+        "correct": 327,
+        "e0": 349,
+        "gain": -22,
+        "positive_banks": 3,
+        "losing_banks": 9,
+        "interval": [
+          -39,
+          -5
+        ]
+      }
+    },
+    "train100_test100": {
+      "candidate-query-cost-transfer-20260918": {
+        "correct": 312,
+        "e0": 327,
+        "gain": -15,
+        "positive_banks": 3,
+        "losing_banks": 9,
+        "interval": [
+          -31,
+          2
+        ]
+      },
+      "combined-ranker-query-transfer-20260918": {
+        "correct": 332,
+        "e0": 344,
+        "gain": -12,
+        "positive_banks": 2,
+        "losing_banks": 7,
+        "interval": [
+          -26,
+          5
+        ]
+      },
+      "candidate-conditioned-query-transfer-20260918": {
+        "correct": 328,
+        "e0": 349,
+        "gain": -21,
+        "positive_banks": 3,
+        "losing_banks": 9,
+        "interval": [
+          -41,
+          -3
+        ]
+      }
+    }
+  },
+  "global_totals": {
+    "train25_test25": 53,
+    "train25_test50": 45,
+    "train25_test100": 45,
+    "train50_test25": -22,
+    "train50_test50": -26,
+    "train50_test100": -14,
+    "train100_test25": -55,
+    "train100_test50": -49,
+    "train100_test100": -48
+  },
+  "limits": [
+    "Opened panels; development evidence.",
+    "Models come from the matched 40,000-label screen, so train depth also changes how many source tasks were labelled."
+  ]
+}

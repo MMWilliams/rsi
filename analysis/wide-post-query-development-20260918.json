@@ -1,0 +1,878 @@
+{
+  "scope": "opened development only; all target labels previously opened",
+  "source_tasks": 1152,
+  "source_survivor_labels": 19789,
+  "source_positive_labels": 14041,
+  "source_panels": [
+    {
+      "panel": "candidate-reranker-transfer-20260918",
+      "candidate_labels": 10034
+    },
+    {
+      "panel": "candidate-reranker-replication-20260918",
+      "candidate_labels": 9755
+    }
+  ],
+  "model_sha256": {
+    "plain": "b909840785ddbb2e35fb9deba1d181c2941ce6733dc93d2fd2920346064214c0",
+    "sensor": "8f7b42cc072c873210809837bbf8a45b105bea0a2177b320578585f6383584e9"
+  },
+  "targets": {
+    "shifted-ast-seed-transfer-20260918": {
+      "tasks": 96,
+      "choices_checked": 384,
+      "zero_e0": 15,
+      "totals": {
+        "one_each": {
+          "e0": 23,
+          "plain": 28,
+          "sensor": 25
+        },
+        "budgeted": {
+          "e0": 21,
+          "plain": 24,
+          "sensor": 22
+        }
+      },
+      "comparisons": {
+        "plain": {
+          "one_each": {
+            "gain": 5,
+            "positive_banks": 5,
+            "losing_banks": 2,
+            "interval": [
+              -1,
+              12
+            ]
+          },
+          "budgeted": {
+            "gain": 3,
+            "positive_banks": 5,
+            "losing_banks": 2,
+            "interval": [
+              -2,
+              8
+            ]
+          }
+        },
+        "sensor": {
+          "one_each": {
+            "gain": 2,
+            "positive_banks": 3,
+            "losing_banks": 1,
+            "interval": [
+              -2,
+              6
+            ]
+          },
+          "budgeted": {
+            "gain": 1,
+            "positive_banks": 2,
+            "losing_banks": 1,
+            "interval": [
+              -2,
+              4
+            ]
+          }
+        }
+      },
+      "banks": [
+        {
+          "seed": 903000,
+          "zero": 1,
+          "one_each": {
+            "e0": 2,
+            "plain": 3,
+            "sensor": 2
+          },
+          "budgeted": {
+            "e0": 2,
+            "plain": 3,
+            "sensor": 2
+          }
+        },
+        {
+          "seed": 903001,
+          "zero": 2,
+          "one_each": {
+            "e0": 3,
+            "plain": 2,
+            "sensor": 2
+          },
+          "budgeted": {
+            "e0": 3,
+            "plain": 2,
+            "sensor": 2
+          }
+        },
+        {
+          "seed": 903002,
+          "zero": 0,
+          "one_each": {
+            "e0": 0,
+            "plain": 0,
+            "sensor": 0
+          },
+          "budgeted": {
+            "e0": 0,
+            "plain": 0,
+            "sensor": 0
+          }
+        },
+        {
+          "seed": 903003,
+          "zero": 1,
+          "one_each": {
+            "e0": 1,
+            "plain": 1,
+            "sensor": 1
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 1,
+            "sensor": 1
+          }
+        },
+        {
+          "seed": 903004,
+          "zero": 1,
+          "one_each": {
+            "e0": 3,
+            "plain": 2,
+            "sensor": 3
+          },
+          "budgeted": {
+            "e0": 3,
+            "plain": 2,
+            "sensor": 3
+          }
+        },
+        {
+          "seed": 903005,
+          "zero": 1,
+          "one_each": {
+            "e0": 2,
+            "plain": 2,
+            "sensor": 2
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 1,
+            "sensor": 1
+          }
+        },
+        {
+          "seed": 903006,
+          "zero": 1,
+          "one_each": {
+            "e0": 1,
+            "plain": 2,
+            "sensor": 2
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 2,
+            "sensor": 2
+          }
+        },
+        {
+          "seed": 903007,
+          "zero": 1,
+          "one_each": {
+            "e0": 1,
+            "plain": 3,
+            "sensor": 2
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 2,
+            "sensor": 2
+          }
+        },
+        {
+          "seed": 903008,
+          "zero": 1,
+          "one_each": {
+            "e0": 2,
+            "plain": 4,
+            "sensor": 2
+          },
+          "budgeted": {
+            "e0": 2,
+            "plain": 3,
+            "sensor": 2
+          }
+        },
+        {
+          "seed": 903009,
+          "zero": 1,
+          "one_each": {
+            "e0": 1,
+            "plain": 2,
+            "sensor": 1
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 2,
+            "sensor": 1
+          }
+        },
+        {
+          "seed": 903010,
+          "zero": 3,
+          "one_each": {
+            "e0": 3,
+            "plain": 3,
+            "sensor": 4
+          },
+          "budgeted": {
+            "e0": 3,
+            "plain": 3,
+            "sensor": 3
+          }
+        },
+        {
+          "seed": 903011,
+          "zero": 2,
+          "one_each": {
+            "e0": 4,
+            "plain": 4,
+            "sensor": 4
+          },
+          "budgeted": {
+            "e0": 3,
+            "plain": 3,
+            "sensor": 3
+          }
+        }
+      ]
+    },
+    "post-query-feedback-transfer-20260918": {
+      "tasks": 192,
+      "choices_checked": 768,
+      "zero_e0": 16,
+      "totals": {
+        "one_each": {
+          "e0": 47,
+          "plain": 46,
+          "sensor": 47
+        },
+        "budgeted": {
+          "e0": 33,
+          "plain": 33,
+          "sensor": 35
+        }
+      },
+      "comparisons": {
+        "plain": {
+          "one_each": {
+            "gain": -1,
+            "positive_banks": 5,
+            "losing_banks": 4,
+            "interval": [
+              -9,
+              6
+            ]
+          },
+          "budgeted": {
+            "gain": 0,
+            "positive_banks": 3,
+            "losing_banks": 2,
+            "interval": [
+              -6,
+              5
+            ]
+          }
+        },
+        "sensor": {
+          "one_each": {
+            "gain": 0,
+            "positive_banks": 3,
+            "losing_banks": 3,
+            "interval": [
+              -7,
+              7
+            ]
+          },
+          "budgeted": {
+            "gain": 2,
+            "positive_banks": 4,
+            "losing_banks": 3,
+            "interval": [
+              -4,
+              8
+            ]
+          }
+        }
+      },
+      "banks": [
+        {
+          "seed": 903100,
+          "zero": 1,
+          "one_each": {
+            "e0": 3,
+            "plain": 1,
+            "sensor": 2
+          },
+          "budgeted": {
+            "e0": 3,
+            "plain": 1,
+            "sensor": 2
+          }
+        },
+        {
+          "seed": 903101,
+          "zero": 0,
+          "one_each": {
+            "e0": 0,
+            "plain": 0,
+            "sensor": 0
+          },
+          "budgeted": {
+            "e0": 0,
+            "plain": 0,
+            "sensor": 0
+          }
+        },
+        {
+          "seed": 903102,
+          "zero": 0,
+          "one_each": {
+            "e0": 2,
+            "plain": 2,
+            "sensor": 2
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 1,
+            "sensor": 1
+          }
+        },
+        {
+          "seed": 903103,
+          "zero": 1,
+          "one_each": {
+            "e0": 2,
+            "plain": 2,
+            "sensor": 1
+          },
+          "budgeted": {
+            "e0": 2,
+            "plain": 2,
+            "sensor": 1
+          }
+        },
+        {
+          "seed": 903104,
+          "zero": 0,
+          "one_each": {
+            "e0": 0,
+            "plain": 0,
+            "sensor": 0
+          },
+          "budgeted": {
+            "e0": 0,
+            "plain": 0,
+            "sensor": 0
+          }
+        },
+        {
+          "seed": 903105,
+          "zero": 0,
+          "one_each": {
+            "e0": 2,
+            "plain": 2,
+            "sensor": 2
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 1,
+            "sensor": 1
+          }
+        },
+        {
+          "seed": 903106,
+          "zero": 1,
+          "one_each": {
+            "e0": 2,
+            "plain": 0,
+            "sensor": 2
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 1,
+            "sensor": 2
+          }
+        },
+        {
+          "seed": 903107,
+          "zero": 2,
+          "one_each": {
+            "e0": 2,
+            "plain": 2,
+            "sensor": 3
+          },
+          "budgeted": {
+            "e0": 2,
+            "plain": 2,
+            "sensor": 3
+          }
+        },
+        {
+          "seed": 903108,
+          "zero": 1,
+          "one_each": {
+            "e0": 5,
+            "plain": 4,
+            "sensor": 5
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 1,
+            "sensor": 1
+          }
+        },
+        {
+          "seed": 903109,
+          "zero": 3,
+          "one_each": {
+            "e0": 3,
+            "plain": 3,
+            "sensor": 3
+          },
+          "budgeted": {
+            "e0": 3,
+            "plain": 3,
+            "sensor": 3
+          }
+        },
+        {
+          "seed": 903110,
+          "zero": 1,
+          "one_each": {
+            "e0": 1,
+            "plain": 1,
+            "sensor": 1
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 1,
+            "sensor": 1
+          }
+        },
+        {
+          "seed": 903111,
+          "zero": 0,
+          "one_each": {
+            "e0": 0,
+            "plain": 1,
+            "sensor": 1
+          },
+          "budgeted": {
+            "e0": 0,
+            "plain": 1,
+            "sensor": 1
+          }
+        },
+        {
+          "seed": 903112,
+          "zero": 0,
+          "one_each": {
+            "e0": 1,
+            "plain": 2,
+            "sensor": 1
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 1,
+            "sensor": 1
+          }
+        },
+        {
+          "seed": 903113,
+          "zero": 0,
+          "one_each": {
+            "e0": 2,
+            "plain": 2,
+            "sensor": 2
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 1,
+            "sensor": 1
+          }
+        },
+        {
+          "seed": 903114,
+          "zero": 0,
+          "one_each": {
+            "e0": 1,
+            "plain": 2,
+            "sensor": 1
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 1,
+            "sensor": 1
+          }
+        },
+        {
+          "seed": 903115,
+          "zero": 1,
+          "one_each": {
+            "e0": 1,
+            "plain": 1,
+            "sensor": 1
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 1,
+            "sensor": 1
+          }
+        },
+        {
+          "seed": 903116,
+          "zero": 1,
+          "one_each": {
+            "e0": 1,
+            "plain": 2,
+            "sensor": 1
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 2,
+            "sensor": 1
+          }
+        },
+        {
+          "seed": 903117,
+          "zero": 0,
+          "one_each": {
+            "e0": 2,
+            "plain": 2,
+            "sensor": 2
+          },
+          "budgeted": {
+            "e0": 2,
+            "plain": 2,
+            "sensor": 2
+          }
+        },
+        {
+          "seed": 903118,
+          "zero": 1,
+          "one_each": {
+            "e0": 3,
+            "plain": 3,
+            "sensor": 3
+          },
+          "budgeted": {
+            "e0": 3,
+            "plain": 3,
+            "sensor": 3
+          }
+        },
+        {
+          "seed": 903119,
+          "zero": 0,
+          "one_each": {
+            "e0": 4,
+            "plain": 4,
+            "sensor": 2
+          },
+          "budgeted": {
+            "e0": 2,
+            "plain": 2,
+            "sensor": 1
+          }
+        },
+        {
+          "seed": 903120,
+          "zero": 1,
+          "one_each": {
+            "e0": 5,
+            "plain": 5,
+            "sensor": 5
+          },
+          "budgeted": {
+            "e0": 3,
+            "plain": 3,
+            "sensor": 3
+          }
+        },
+        {
+          "seed": 903121,
+          "zero": 0,
+          "one_each": {
+            "e0": 1,
+            "plain": 1,
+            "sensor": 1
+          },
+          "budgeted": {
+            "e0": 0,
+            "plain": 0,
+            "sensor": 0
+          }
+        },
+        {
+          "seed": 903122,
+          "zero": 1,
+          "one_each": {
+            "e0": 2,
+            "plain": 3,
+            "sensor": 4
+          },
+          "budgeted": {
+            "e0": 1,
+            "plain": 2,
+            "sensor": 3
+          }
+        },
+        {
+          "seed": 903123,
+          "zero": 1,
+          "one_each": {
+            "e0": 2,
+            "plain": 1,
+            "sensor": 2
+          },
+          "budgeted": {
+            "e0": 2,
+            "plain": 1,
+            "sensor": 2
+          }
+        }
+      ]
+    },
+    "combined-ranker-query-transfer-20260918": {
+      "tasks": 576,
+      "choices_checked": 2304,
+      "zero_e0": 344,
+      "totals": {
+        "one_each": {
+          "e0": 438,
+          "plain": 446,
+          "sensor": 453
+        },
+        "budgeted": {
+          "e0": 380,
+          "plain": 378,
+          "sensor": 381
+        }
+      },
+      "comparisons": {
+        "plain": {
+          "one_each": {
+            "gain": 8,
+            "positive_banks": 7,
+            "losing_banks": 2,
+            "interval": [
+              1,
+              15
+            ]
+          },
+          "budgeted": {
+            "gain": -2,
+            "positive_banks": 1,
+            "losing_banks": 3,
+            "interval": [
+              -6,
+              2
+            ]
+          }
+        },
+        "sensor": {
+          "one_each": {
+            "gain": 15,
+            "positive_banks": 11,
+            "losing_banks": 0,
+            "interval": [
+              11,
+              19
+            ]
+          },
+          "budgeted": {
+            "gain": 1,
+            "positive_banks": 2,
+            "losing_banks": 1,
+            "interval": [
+              -2,
+              4
+            ]
+          }
+        }
+      },
+      "banks": [
+        {
+          "seed": 902558,
+          "zero": 30,
+          "one_each": {
+            "e0": 34,
+            "plain": 35,
+            "sensor": 35
+          },
+          "budgeted": {
+            "e0": 31,
+            "plain": 31,
+            "sensor": 31
+          }
+        },
+        {
+          "seed": 902559,
+          "zero": 27,
+          "one_each": {
+            "e0": 39,
+            "plain": 41,
+            "sensor": 40
+          },
+          "budgeted": {
+            "e0": 32,
+            "plain": 31,
+            "sensor": 31
+          }
+        },
+        {
+          "seed": 902560,
+          "zero": 31,
+          "one_each": {
+            "e0": 37,
+            "plain": 38,
+            "sensor": 37
+          },
+          "budgeted": {
+            "e0": 34,
+            "plain": 33,
+            "sensor": 34
+          }
+        },
+        {
+          "seed": 902561,
+          "zero": 31,
+          "one_each": {
+            "e0": 37,
+            "plain": 39,
+            "sensor": 39
+          },
+          "budgeted": {
+            "e0": 32,
+            "plain": 33,
+            "sensor": 32
+          }
+        },
+        {
+          "seed": 902562,
+          "zero": 23,
+          "one_each": {
+            "e0": 33,
+            "plain": 34,
+            "sensor": 34
+          },
+          "budgeted": {
+            "e0": 26,
+            "plain": 26,
+            "sensor": 27
+          }
+        },
+        {
+          "seed": 902563,
+          "zero": 28,
+          "one_each": {
+            "e0": 36,
+            "plain": 35,
+            "sensor": 37
+          },
+          "budgeted": {
+            "e0": 33,
+            "plain": 33,
+            "sensor": 34
+          }
+        },
+        {
+          "seed": 902564,
+          "zero": 31,
+          "one_each": {
+            "e0": 38,
+            "plain": 39,
+            "sensor": 39
+          },
+          "budgeted": {
+            "e0": 34,
+            "plain": 34,
+            "sensor": 34
+          }
+        },
+        {
+          "seed": 902565,
+          "zero": 26,
+          "one_each": {
+            "e0": 36,
+            "plain": 38,
+            "sensor": 37
+          },
+          "budgeted": {
+            "e0": 27,
+            "plain": 27,
+            "sensor": 27
+          }
+        },
+        {
+          "seed": 902566,
+          "zero": 26,
+          "one_each": {
+            "e0": 34,
+            "plain": 34,
+            "sensor": 36
+          },
+          "budgeted": {
+            "e0": 29,
+            "plain": 29,
+            "sensor": 29
+          }
+        },
+        {
+          "seed": 902567,
+          "zero": 30,
+          "one_each": {
+            "e0": 37,
+            "plain": 37,
+            "sensor": 39
+          },
+          "budgeted": {
+            "e0": 33,
+            "plain": 33,
+            "sensor": 33
+          }
+        },
+        {
+          "seed": 902568,
+          "zero": 32,
+          "one_each": {
+            "e0": 39,
+            "plain": 38,
+            "sensor": 41
+          },
+          "budgeted": {
+            "e0": 37,
+            "plain": 36,
+            "sensor": 37
+          }
+        },
+        {
+          "seed": 902569,
+          "zero": 29,
+          "one_each": {
+            "e0": 38,
+            "plain": 38,
+            "sensor": 39
+          },
+          "budgeted": {
+            "e0": 32,
+            "plain": 32,
+            "sensor": 32
+          }
+        }
+      ]
+    }
+  },
+  "wall_seconds": 87.59535210003378
+}

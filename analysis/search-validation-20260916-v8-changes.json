@@ -1,0 +1,3812 @@
+{
+  "source_run": "runs\\search-validation-20260916-v8",
+  "analysis_code_sha256": "5c87852a1044fc212588c763c1b50ff23e78c438e93659da3d3f2b1e7ce6912e",
+  "source_sha256": {
+    "results.json": "9c4d50157c75b60ed2fd11e974962b91f652373a3b0a688102fa5427c51f3965",
+    "audit.json": "a526cc26d1de994133306c332e88b8b8ecf7937937508fc15cd683a72a1c3c84",
+    "graded.json": "66c5ad1142aef20cf8cb14ffead243702ed914f08223186cfd9ae0f569fc4a6f",
+    "protected_banks.json": "bb55b8168de79aa0aa56f876069b67da83365e4e4ff16d2cf34e0de994da7978"
+  },
+  "pool_primitive_charges": 948672,
+  "changed_first_choices": 79,
+  "mechanism_counts": {
+    "correct_old_program_absent_at_128_but_present_at_512": 13,
+    "correct_old_program_absent_from_recorded_corrected_frontiers": 4,
+    "new_selected_program_outside_old_filtered_pool": 62
+  },
+  "records": [
+    {
+      "task_id": "c2c3add8e5c18dccaabe",
+      "seed_group": "seed_269",
+      "change": "win",
+      "visible": [
+        [
+          "GHD-5890",
+          ", "
+        ],
+        [
+          "GCB-5665",
+          ", "
+        ],
+        [
+          "24/02/2027",
+          "/02/2, "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(M(DIGITS,1,end),C7), ', ')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4394,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.006514899985631928
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 747,
+        "primitive_executions": 6770,
+        "model_checks": 0,
+        "candidate_count": 7,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.016037699999287724
+      }
+    },
+    {
+      "task_id": "1954d0039344e5228876",
+      "seed_group": "seed_269",
+      "change": "loss",
+      "visible": [
+        [
+          "Zoe Adebayo",
+          ":  : Zoe Ade"
+        ],
+        [
+          "Omar Novak",
+          ": r : Omar N"
+        ],
+        [
+          "Lucas Mary Souza",
+          ": as : Lucas Mary S"
+        ]
+      ],
+      "old_program": "Concat(': ', Sub(C3,M(WORD,2,start)), ': ', Sub(C0,C-4))",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": true,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "correct_old_program_absent_at_128_but_present_at_512",
+      "old_cost": {
+        "expansions": 128,
+        "generated_nodes": 362,
+        "primitive_executions": 5156,
+        "model_checks": 0,
+        "candidate_count": 6,
+        "cpu_seconds": 0.03125,
+        "wall_seconds": 0.03224410000257194
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 969,
+        "primitive_executions": 8890,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.046875,
+        "wall_seconds": 0.04729149999911897
+      }
+    },
+    {
+      "task_id": "c7feec324df172f2c2d6",
+      "seed_group": "seed_269",
+      "change": "win",
+      "visible": [
+        [
+          "Chen John Khan",
+          "//JOHn"
+        ],
+        [
+          "Chen Adebayo",
+          "//A"
+        ],
+        [
+          "Lucas Zoe Novak",
+          "//ZOEe "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat('/', '/', upper(Sub(M(WORD,2,start),C-6)), Sub(C8,C-5))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": false,
+      "mixture_coverage64": false,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 22,
+        "generated_nodes": 16,
+        "primitive_executions": 4533,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.009634299989556894
+      },
+      "new_cost": {
+        "expansions": 116,
+        "generated_nodes": 652,
+        "primitive_executions": 8142,
+        "model_checks": 0,
+        "candidate_count": 4,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.02073779999045655
+      }
+    },
+    {
+      "task_id": "0d9dce770c5a2e98b03b",
+      "seed_group": "seed_269",
+      "change": "loss",
+      "visible": [
+        [
+          "Zoe Smith",
+          "Zoe: -"
+        ],
+        [
+          "DDF-9258",
+          "DDF: -"
+        ],
+        [
+          "Mary Souza",
+          "Mary: -"
+        ]
+      ],
+      "old_program": "Concat(Sub(C0,M(WORD,1,end)), ': ', '-')",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": true,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": false,
+      "mixture_coverage64": false,
+      "mechanism_evidence": "correct_old_program_absent_at_128_but_present_at_512",
+      "old_cost": {
+        "expansions": 128,
+        "generated_nodes": 176,
+        "primitive_executions": 4657,
+        "model_checks": 0,
+        "candidate_count": 3,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.01050899998517707
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 610,
+        "primitive_executions": 7514,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.019023300003027543
+      }
+    },
+    {
+      "task_id": "fce0f24ddaf423d78c35",
+      "seed_group": "seed_269",
+      "change": "win",
+      "visible": [
+        [
+          "HGD-7151",
+          "/."
+        ],
+        [
+          "Mary Lucas Adebayo",
+          "lucas /."
+        ],
+        [
+          "John Souza",
+          "/."
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(lower(Sub(C5,C-7)), '/', '.')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4389,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.004987399996025488
+      },
+      "new_cost": {
+        "expansions": 5,
+        "generated_nodes": 4,
+        "primitive_executions": 6357,
+        "model_checks": 0,
+        "candidate_count": 1,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.0073219999903813004
+      }
+    },
+    {
+      "task_id": "7fc619fd605f2c4a75e4",
+      "seed_group": "seed_269",
+      "change": "win",
+      "visible": [
+        [
+          "Chen Garcia",
+          "Chen Gar"
+        ],
+        [
+          "Priya Omar Khan",
+          " OmPriya Om"
+        ],
+        [
+          "Zoe Adebayo",
+          " Zoe Adeb"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(M(WORD,1,end),C-7), Sub(C0,C8))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 5208,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.012263000011444092
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 980,
+        "primitive_executions": 8860,
+        "model_checks": 0,
+        "candidate_count": 2,
+        "cpu_seconds": 0.0625,
+        "wall_seconds": 0.061605800001416355
+      }
+    },
+    {
+      "task_id": "cc1b4fb036ea632f66b5",
+      "seed_group": "seed_269",
+      "change": "win",
+      "visible": [
+        [
+          "Zoe Adebayo",
+          "eb: "
+        ],
+        [
+          "ana.adebayo@example.com",
+          "ebayo@example.: "
+        ],
+        [
+          "Zoe Novak",
+          ": "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C6,C-3), ': ')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4543,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.006841599999461323
+      },
+      "new_cost": {
+        "expansions": 42,
+        "generated_nodes": 34,
+        "primitive_executions": 7668,
+        "model_checks": 0,
+        "candidate_count": 4,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.013931000023148954
+      }
+    },
+    {
+      "task_id": "109001dd98723bb49460",
+      "seed_group": "seed_269",
+      "change": "win",
+      "visible": [
+        [
+          "john.ito@example.com",
+          "-"
+        ],
+        [
+          "lucas.novak@example.com",
+          "-."
+        ],
+        [
+          "chen.lee@example.com",
+          "-"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat('-', Sub(C5,M(WORD,2,start)))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 2,
+        "generated_nodes": 1,
+        "primitive_executions": 4389,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.005706900003133342
+      },
+      "new_cost": {
+        "expansions": 13,
+        "generated_nodes": 9,
+        "primitive_executions": 7069,
+        "model_checks": 0,
+        "candidate_count": 8,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.008438999997451901
+      }
+    },
+    {
+      "task_id": "8ba5f8d9830a1ab4bc83",
+      "seed_group": "seed_269",
+      "change": "win",
+      "visible": [
+        [
+          "BHA-8274",
+          "4: "
+        ],
+        [
+          "13/12/2025",
+          ": "
+        ],
+        [
+          "2011-07-19",
+          ": "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C-1,C8), ': ')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4410,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.012611099984496832
+      },
+      "new_cost": {
+        "expansions": 54,
+        "generated_nodes": 48,
+        "primitive_executions": 6262,
+        "model_checks": 0,
+        "candidate_count": 24,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.015412500011734664
+      }
+    },
+    {
+      "task_id": "9e689e09d7e50aa90859",
+      "seed_group": "seed_269",
+      "change": "win",
+      "visible": [
+        [
+          "2000-08-19",
+          ", "
+        ],
+        [
+          "20/10/2029",
+          ", "
+        ],
+        [
+          "HFE-4995",
+          "-, "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C-5,C4), ', ')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4394,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.010100999992573634
+      },
+      "new_cost": {
+        "expansions": 54,
+        "generated_nodes": 48,
+        "primitive_executions": 6306,
+        "model_checks": 0,
+        "candidate_count": 24,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.012752499984344468
+      }
+    },
+    {
+      "task_id": "af787397af3472b2f461",
+      "seed_group": "seed_269",
+      "change": "loss",
+      "visible": [
+        [
+          "Mary Mary Ito",
+          "ma r"
+        ],
+        [
+          "Ana Adebayo",
+          "ade a"
+        ],
+        [
+          "Lucas Garcia",
+          "g c"
+        ]
+      ],
+      "old_program": "Concat(lower(Sub(M(WORD,2,start),C7)), Sub(M(WORD,1,end),M(WORD,2,start)), Sub(C2,C3))",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": true,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "correct_old_program_absent_at_128_but_present_at_512",
+      "old_cost": {
+        "expansions": 119,
+        "generated_nodes": 108,
+        "primitive_executions": 4575,
+        "model_checks": 0,
+        "candidate_count": 68,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.012613300001248717
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 959,
+        "primitive_executions": 8237,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.03125,
+        "wall_seconds": 0.033888200006913394
+      }
+    },
+    {
+      "task_id": "0f3e64853d2bb5597410",
+      "seed_group": "seed_269",
+      "change": "win",
+      "visible": [
+        [
+          "14/05/2014",
+          ", "
+        ],
+        [
+          "2028-05-06",
+          ", 8-"
+        ],
+        [
+          "2002-07-26",
+          ", 2-"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(', ', Sub(C3,M(DIGITS,2,start)))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 5,
+        "generated_nodes": 3,
+        "primitive_executions": 4394,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.008738100004848093
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 163,
+        "primitive_executions": 6330,
+        "model_checks": 0,
+        "candidate_count": 93,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.010670799994841218
+      }
+    },
+    {
+      "task_id": "bc32122a402242584a36",
+      "seed_group": "seed_281",
+      "change": "win",
+      "visible": [
+        [
+          "DGC-8511",
+          ": "
+        ],
+        [
+          "Omar Omar Novak",
+          ": mar Om"
+        ],
+        [
+          "GDG-9638",
+          ": "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(': ', Sub(C1,C-8))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 5,
+        "generated_nodes": 3,
+        "primitive_executions": 4394,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.008736199990380555
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 293,
+        "primitive_executions": 6392,
+        "model_checks": 0,
+        "candidate_count": 35,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.01518649997888133
+      }
+    },
+    {
+      "task_id": "5f9cc1ae6bb2516f161d",
+      "seed_group": "seed_281",
+      "change": "win",
+      "visible": [
+        [
+          "2011-11-05",
+          ", , "
+        ],
+        [
+          "04/01/2025",
+          ", , "
+        ],
+        [
+          "GFF-3279",
+          "-, , "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C-5,C4), ', ', ', ')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4394,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.007053699984680861
+      },
+      "new_cost": {
+        "expansions": 102,
+        "generated_nodes": 108,
+        "primitive_executions": 6306,
+        "model_checks": 0,
+        "candidate_count": 36,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.01005859998986125
+      }
+    },
+    {
+      "task_id": "59432a58452e363ddc97",
+      "seed_group": "seed_281",
+      "change": "win",
+      "visible": [
+        [
+          "Mary Garcia",
+          "-ry"
+        ],
+        [
+          "Ana Lucas Garcia",
+          "uca-a"
+        ],
+        [
+          "Mary Chen Smith",
+          "h-ry"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(M(UPPER,2,end),C-8), '-', Sub(C2,M(WORD,1,end)))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4433,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.007564300001831725
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 306,
+        "primitive_executions": 7941,
+        "model_checks": 0,
+        "candidate_count": 52,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.017492600018158555
+      }
+    },
+    {
+      "task_id": "9c82a8850d2426e69f8f",
+      "seed_group": "seed_281",
+      "change": "win",
+      "visible": [
+        [
+          "mary.adebayo@example.com",
+          "ary.ade"
+        ],
+        [
+          "Ana Priya Smith",
+          "na Priy"
+        ],
+        [
+          "Omar Ito",
+          "rmar Ito I"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C-5,C4), Sub(C1,C8), Sub(C-4,C6))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": false,
+      "mixture_coverage64": false,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4637,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.0103281999763567
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 958,
+        "primitive_executions": 7303,
+        "model_checks": 0,
+        "candidate_count": 6,
+        "cpu_seconds": 0.046875,
+        "wall_seconds": 0.03908809999120422
+      }
+    },
+    {
+      "task_id": "6ce089ad5e8be1236a85",
+      "seed_group": "seed_281",
+      "change": "win",
+      "visible": [
+        [
+          "Chen Chen Novak",
+          ", en No"
+        ],
+        [
+          "DHG-7596",
+          ", 6"
+        ],
+        [
+          "FGB-6796",
+          ", 6"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(', ', Sub(C7,C8), Sub(C8,C-3))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 9,
+        "generated_nodes": 7,
+        "primitive_executions": 4554,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.009138199995504692
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 439,
+        "primitive_executions": 7175,
+        "model_checks": 0,
+        "candidate_count": 10,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.017108500003814697
+      }
+    },
+    {
+      "task_id": "53d75b2f0597ec99c76b",
+      "seed_group": "seed_281",
+      "change": "win",
+      "visible": [
+        [
+          "DCD-2711",
+          "."
+        ],
+        [
+          "Ana Lucas Novak",
+          ".s "
+        ],
+        [
+          "13/01/2014",
+          "."
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat('.', Sub(C8,C-5))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 2,
+        "generated_nodes": 1,
+        "primitive_executions": 4387,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.005020799988415092
+      },
+      "new_cost": {
+        "expansions": 7,
+        "generated_nodes": 5,
+        "primitive_executions": 6359,
+        "model_checks": 0,
+        "candidate_count": 2,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.006323999987216666
+      }
+    },
+    {
+      "task_id": "16bc3e23314d77939e53",
+      "seed_group": "seed_281",
+      "change": "win",
+      "visible": [
+        [
+          "Omar Smith",
+          ": "
+        ],
+        [
+          "Mary Lee",
+          ": "
+        ],
+        [
+          "ana.garcia@example.com",
+          "@example.c: "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(M(WORD,2,end),C-2), ': ')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4497,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.005770999996457249
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 164,
+        "primitive_executions": 8119,
+        "model_checks": 0,
+        "candidate_count": 8,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.016357799991965294
+      }
+    },
+    {
+      "task_id": "7ef007920958921f5d92",
+      "seed_group": "seed_281",
+      "change": "win",
+      "visible": [
+        [
+          "chen.adebayo@example.com",
+          " "
+        ],
+        [
+          "Lucas Khan",
+          "Khan "
+        ],
+        [
+          "mary.novak@example.com",
+          " "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C-4,M(WORD,2,end)), ' ')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4387,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.008038300002226606
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 564,
+        "primitive_executions": 6873,
+        "model_checks": 0,
+        "candidate_count": 14,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.016711900010704994
+      }
+    },
+    {
+      "task_id": "1911d0fec516d04bb893",
+      "seed_group": "seed_281",
+      "change": "loss",
+      "visible": [
+        [
+          "Omar Garcia",
+          "omar g: : "
+        ],
+        [
+          "Chen Ana Ito",
+          "chen a: : "
+        ],
+        [
+          "GFB-5416",
+          "gfb-54: : "
+        ]
+      ],
+      "old_program": "Concat(lower(Sub(C0,C6)), ': ', ': ')",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": true,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": false,
+      "mixture_coverage64": false,
+      "mechanism_evidence": "correct_old_program_absent_at_128_but_present_at_512",
+      "old_cost": {
+        "expansions": 128,
+        "generated_nodes": 289,
+        "primitive_executions": 5015,
+        "model_checks": 0,
+        "candidate_count": 3,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.012262100004591048
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 872,
+        "primitive_executions": 8715,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.02465509998728521
+      }
+    },
+    {
+      "task_id": "f535c674e3e744d09aef",
+      "seed_group": "seed_281",
+      "change": "win",
+      "visible": [
+        [
+          "John Ito",
+          "/."
+        ],
+        [
+          "Zoe Zoe Novak",
+          "/.E nov"
+        ],
+        [
+          "Priya Ito",
+          "/.I"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat('/', '.', cap(Sub(C6,C-2)))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 3,
+        "generated_nodes": 2,
+        "primitive_executions": 4389,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.006930699979420751
+      },
+      "new_cost": {
+        "expansions": 46,
+        "generated_nodes": 195,
+        "primitive_executions": 7857,
+        "model_checks": 0,
+        "candidate_count": 1,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.015793300000950694
+      }
+    },
+    {
+      "task_id": "7198e7b656914aaa1157",
+      "seed_group": "seed_281",
+      "change": "loss",
+      "visible": [
+        [
+          "DAC-4747",
+          "DAC, C-47474"
+        ],
+        [
+          "16/06/2007",
+          "/, /06/16/06/2"
+        ],
+        [
+          "25/01/2004",
+          "/, /01/25/01/2"
+        ]
+      ],
+      "old_program": "Concat(Sub(C-8,C3), ', ', Sub(C2,C6), Sub(M(DIGITS,1,start),C7))",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": false,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "correct_old_program_absent_from_recorded_corrected_frontiers",
+      "old_cost": {
+        "expansions": 122,
+        "generated_nodes": 515,
+        "primitive_executions": 5147,
+        "model_checks": 0,
+        "candidate_count": 24,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.029312600003322586
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 550,
+        "primitive_executions": 7231,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.046875,
+        "wall_seconds": 0.04498050000984222
+      }
+    },
+    {
+      "task_id": "4908017288575d02c0e6",
+      "seed_group": "seed_281",
+      "change": "win",
+      "visible": [
+        [
+          "2003-08-13",
+          "-3-"
+        ],
+        [
+          "10/04/2020",
+          "-"
+        ],
+        [
+          "2011-11-12",
+          "-1-"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat('-', Sub(C3,M(DIGITS,2,start)))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 2,
+        "generated_nodes": 1,
+        "primitive_executions": 4497,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.005346599995391443
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 451,
+        "primitive_executions": 6433,
+        "model_checks": 0,
+        "candidate_count": 16,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.009641800017561764
+      }
+    },
+    {
+      "task_id": "0773a44500b4ece51f3b",
+      "seed_group": "seed_281",
+      "change": "win",
+      "visible": [
+        [
+          "EDE-2470",
+          "EDE-24"
+        ],
+        [
+          "Mary Ana Souza",
+          "aryMary Ana Sou"
+        ],
+        [
+          "BCF-6711",
+          "BCF-67"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(M(UPPER,1,end),M(WORD,1,end)), Sub(C0,C-2))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4962,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.0064984000055119395
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 896,
+        "primitive_executions": 7097,
+        "model_checks": 0,
+        "candidate_count": 1,
+        "cpu_seconds": 0.046875,
+        "wall_seconds": 0.0494071000139229
+      }
+    },
+    {
+      "task_id": "4d33e62e5059b9e84766",
+      "seed_group": "seed_293",
+      "change": "win",
+      "visible": [
+        [
+          "DHB-9615",
+          ", , B-"
+        ],
+        [
+          "12/11/2017",
+          ", , "
+        ],
+        [
+          "FDA-3721",
+          ", , A-"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(', ', ', ', Sub(C-6,C4))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 11,
+        "generated_nodes": 9,
+        "primitive_executions": 4486,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.007528099988121539
+      },
+      "new_cost": {
+        "expansions": 86,
+        "generated_nodes": 81,
+        "primitive_executions": 6350,
+        "model_checks": 0,
+        "candidate_count": 63,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.010271100007230416
+      }
+    },
+    {
+      "task_id": "87799e6488145dda936e",
+      "seed_group": "seed_293",
+      "change": "win",
+      "visible": [
+        [
+          "Mary Khan",
+          " "
+        ],
+        [
+          "Ana Lee",
+          "a L"
+        ],
+        [
+          "priya.garcia@example.com",
+          "a"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C-5,C4), Sub(C4,C5))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4483,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.0056477000180166215
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 767,
+        "primitive_executions": 7936,
+        "model_checks": 0,
+        "candidate_count": 10,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.01497910000034608
+      }
+    },
+    {
+      "task_id": "eb275f360c2fecd21c98",
+      "seed_group": "seed_293",
+      "change": "win",
+      "visible": [
+        [
+          "Ana Khan",
+          "na Kh Khan"
+        ],
+        [
+          "Lucas Mary Lee",
+          "ucas "
+        ],
+        [
+          "Omar Ana Khan",
+          "mar A"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C1,C6), Sub(C-5,C8))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 128,
+        "generated_nodes": 285,
+        "primitive_executions": 4980,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.014401599997654557
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 988,
+        "primitive_executions": 8588,
+        "model_checks": 0,
+        "candidate_count": 2,
+        "cpu_seconds": 0.046875,
+        "wall_seconds": 0.041361299983691424
+      }
+    },
+    {
+      "task_id": "62b8a3d7c5a52735a334",
+      "seed_group": "seed_293",
+      "change": "win",
+      "visible": [
+        [
+          "zoe.novak@example.com",
+          " .c: "
+        ],
+        [
+          "Lucas Adebayo",
+          " ba: s"
+        ],
+        [
+          "mary.novak@example.com",
+          " .c: "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(' ', Sub(C-4,C-2), ': ', Sub(C4,M(WORD,1,end)))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 16,
+        "generated_nodes": 23,
+        "primitive_executions": 4458,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.0060468000010587275
+      },
+      "new_cost": {
+        "expansions": 60,
+        "generated_nodes": 83,
+        "primitive_executions": 7018,
+        "model_checks": 0,
+        "candidate_count": 8,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.009357199975056574
+      }
+    },
+    {
+      "task_id": "9ed99717e4d23827b9ad",
+      "seed_group": "seed_293",
+      "change": "win",
+      "visible": [
+        [
+          "Lucas Garcia",
+          " lucas"
+        ],
+        [
+          "Lucas Khan",
+          " lucas"
+        ],
+        [
+          "John Ito",
+          "john"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C5,M(WORD,2,start)), lower(Sub(C0,M(WORD,1,end))))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4753,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.013430599996354431
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 676,
+        "primitive_executions": 8415,
+        "model_checks": 0,
+        "candidate_count": 28,
+        "cpu_seconds": 0.03125,
+        "wall_seconds": 0.027870899997651577
+      }
+    },
+    {
+      "task_id": "7bece0a7e8773ee866de",
+      "seed_group": "seed_293",
+      "change": "win",
+      "visible": [
+        [
+          "Mary Smith",
+          ": "
+        ],
+        [
+          "omar.souza@example.com",
+          "@exampl: "
+        ],
+        [
+          "priya.ito@example.com",
+          "@exampl: "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(M(WORD,2,end),C-5), ': ')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4462,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.00959200001670979
+      },
+      "new_cost": {
+        "expansions": 105,
+        "generated_nodes": 90,
+        "primitive_executions": 7483,
+        "model_checks": 0,
+        "candidate_count": 12,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.01516420001280494
+      }
+    },
+    {
+      "task_id": "d142e4731301dec4746a",
+      "seed_group": "seed_293",
+      "change": "win",
+      "visible": [
+        [
+          "23/12/2001",
+          "1: : "
+        ],
+        [
+          "2003-01-26",
+          ": : "
+        ],
+        [
+          "2016-07-22",
+          ": : "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(M(DIGITS,2,start),C4), ': ', ': ')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4418,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.007408800011035055
+      },
+      "new_cost": {
+        "expansions": 68,
+        "generated_nodes": 72,
+        "primitive_executions": 6338,
+        "model_checks": 0,
+        "candidate_count": 24,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.009203199995681643
+      }
+    },
+    {
+      "task_id": "11eec4ab14f7f5ef10f7",
+      "seed_group": "seed_293",
+      "change": "win",
+      "visible": [
+        [
+          "Mary Priya Novak",
+          "Miya -"
+        ],
+        [
+          "Chen Ito",
+          "C-"
+        ],
+        [
+          "HFE-2182",
+          "H-"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C0,C1), Sub(C7,C-5), '-')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": false,
+      "mixture_coverage64": false,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 14,
+        "generated_nodes": 9,
+        "primitive_executions": 4550,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.008345000009285286
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 572,
+        "primitive_executions": 7899,
+        "model_checks": 0,
+        "candidate_count": 3,
+        "cpu_seconds": 0.03125,
+        "wall_seconds": 0.0189570999937132
+      }
+    },
+    {
+      "task_id": "fab83572220bc1e6eb2e",
+      "seed_group": "seed_293",
+      "change": "loss",
+      "visible": [
+        [
+          "Omar Souza",
+          "ouza-  "
+        ],
+        [
+          "zoe.smith@example.com",
+          "ith- ."
+        ],
+        [
+          "Chen Lucas Khan",
+          "ucas-  "
+        ]
+      ],
+      "old_program": "Concat(Sub(C6,M(WORD,2,end)), '-', ' ', Sub(M(WORD,1,end),M(WORD,2,start)))",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": true,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "correct_old_program_absent_at_128_but_present_at_512",
+      "old_cost": {
+        "expansions": 111,
+        "generated_nodes": 132,
+        "primitive_executions": 4594,
+        "model_checks": 0,
+        "candidate_count": 32,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.010556900000665337
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 559,
+        "primitive_executions": 7613,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.024774299992714077
+      }
+    },
+    {
+      "task_id": "674a0e6b5f25926dda84",
+      "seed_group": "seed_293",
+      "change": "win",
+      "visible": [
+        [
+          "Lucas Ito",
+          " uca"
+        ],
+        [
+          "Priya Souza",
+          " y"
+        ],
+        [
+          "Lucas Adebayo",
+          " "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(M(WORD,1,end),M(WORD,2,start)), Sub(C-8,C4))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 47,
+        "generated_nodes": 37,
+        "primitive_executions": 4569,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0625,
+        "wall_seconds": 0.05443079999531619
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 446,
+        "primitive_executions": 8227,
+        "model_checks": 0,
+        "candidate_count": 31,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.020544500002870336
+      }
+    },
+    {
+      "task_id": "2d6662673c91835a7309",
+      "seed_group": "seed_293",
+      "change": "win",
+      "visible": [
+        [
+          "Ana Priya Ito",
+          "rNa pr: "
+        ],
+        [
+          "Lucas Smith",
+          "Ucas : "
+        ],
+        [
+          "mary.smith@example.com",
+          "sMary.s: "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(M(LOWER,2,start),C6), cap(Sub(M(LOWER,1,start),C6)), ': ')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4693,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.006992199982050806
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 630,
+        "primitive_executions": 8294,
+        "model_checks": 0,
+        "candidate_count": 2,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.021787199977552518
+      }
+    },
+    {
+      "task_id": "d107204f012765d0ef42",
+      "seed_group": "seed_293",
+      "change": "win",
+      "visible": [
+        [
+          "Ana Lucas Smith",
+          " L"
+        ],
+        [
+          "Mary Khan",
+          "y Kha"
+        ],
+        [
+          "Mary John Khan",
+          "y J"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C3,M(UPPER,2,end)), Sub(C-3,C8))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 85,
+        "generated_nodes": 71,
+        "primitive_executions": 4540,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.014510599983623251
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 886,
+        "primitive_executions": 8004,
+        "model_checks": 0,
+        "candidate_count": 2,
+        "cpu_seconds": 0.03125,
+        "wall_seconds": 0.0331609999993816
+      }
+    },
+    {
+      "task_id": "0da59dd6a3714d238d3e",
+      "seed_group": "seed_293",
+      "change": "win",
+      "visible": [
+        [
+          "omar.smith@example.com",
+          "ITH@EXAMPL: "
+        ],
+        [
+          "Zoe Souza",
+          ": "
+        ],
+        [
+          "Mary Ito",
+          ": "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(upper(Sub(C7,C-5)), ': ')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4437,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.00921859999652952
+      },
+      "new_cost": {
+        "expansions": 46,
+        "generated_nodes": 151,
+        "primitive_executions": 6905,
+        "model_checks": 0,
+        "candidate_count": 2,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.01285890000872314
+      }
+    },
+    {
+      "task_id": "3c647d815a22a454f7f0",
+      "seed_group": "seed_293",
+      "change": "win",
+      "visible": [
+        [
+          "Ana Lucas Khan",
+          " .ca"
+        ],
+        [
+          "priya.souza@example.com",
+          " ."
+        ],
+        [
+          "John Priya Garcia",
+          " ."
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(' ', '.', Sub(C-8,C8))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 3,
+        "generated_nodes": 2,
+        "primitive_executions": 4488,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.006923599983565509
+      },
+      "new_cost": {
+        "expansions": 28,
+        "generated_nodes": 22,
+        "primitive_executions": 7601,
+        "model_checks": 0,
+        "candidate_count": 6,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.011847600020701066
+      }
+    },
+    {
+      "task_id": "699ec255d4c9dcbb4899",
+      "seed_group": "seed_307",
+      "change": "win",
+      "visible": [
+        [
+          "ana.souza@example.com",
+          ": ouza@exa-"
+        ],
+        [
+          "chen.lee@example.com",
+          ": lee@exa-"
+        ],
+        [
+          "2027-07-07",
+          ": -"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(': ', Sub(C5,C-8), '-')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 5,
+        "generated_nodes": 3,
+        "primitive_executions": 4501,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.013026900007389486
+      },
+      "new_cost": {
+        "expansions": 70,
+        "generated_nodes": 91,
+        "primitive_executions": 7169,
+        "model_checks": 0,
+        "candidate_count": 4,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.013630200002808124
+      }
+    },
+    {
+      "task_id": "20aa0b39f3d256193038",
+      "seed_group": "seed_307",
+      "change": "loss",
+      "visible": [
+        [
+          "Chen Omar Adebayo",
+          " Omar n Omar"
+        ],
+        [
+          "Ana Chen Smith",
+          "Chen  Chen"
+        ],
+        [
+          "Chen Khan",
+          " Khan n Khan"
+        ]
+      ],
+      "old_program": "Concat(Sub(C4,M(WORD,2,end)), Sub(M(WORD,1,end),M(WORD,2,start)), Sub(C3,M(WORD,2,end)))",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": false,
+      "mixture_selected_correct": false,
+      "mixture_coverage64": false,
+      "mechanism_evidence": "correct_old_program_absent_from_recorded_corrected_frontiers",
+      "old_cost": {
+        "expansions": 128,
+        "generated_nodes": 800,
+        "primitive_executions": 4774,
+        "model_checks": 0,
+        "candidate_count": 4,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.02562160001252778
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 1023,
+        "primitive_executions": 8420,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.046875,
+        "wall_seconds": 0.05285499998717569
+      }
+    },
+    {
+      "task_id": "1a19a4c816e84e119974",
+      "seed_group": "seed_307",
+      "change": "win",
+      "visible": [
+        [
+          "CFC-6187",
+          "-"
+        ],
+        [
+          "omar.souza@example.com",
+          "uza@examp-"
+        ],
+        [
+          "Zoe Novak",
+          "-"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C7,C-6), '-')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4440,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.005967200006125495
+      },
+      "new_cost": {
+        "expansions": 73,
+        "generated_nodes": 60,
+        "primitive_executions": 6256,
+        "model_checks": 0,
+        "candidate_count": 2,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.008267699973657727
+      }
+    },
+    {
+      "task_id": "6f7f018109741ab434c6",
+      "seed_group": "seed_307",
+      "change": "win",
+      "visible": [
+        [
+          "zoe.lee@example.com",
+          "zoe.lee@"
+        ],
+        [
+          "Zoe Adebayo",
+          "AYOoe adeb"
+        ],
+        [
+          "Priya Omar Khan",
+          "ARriya om"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(upper(Sub(C8,M(WORD,2,end))), lower(Sub(M(LOWER,1,start),C8)))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4837,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.0073364999843761325
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 743,
+        "primitive_executions": 7440,
+        "model_checks": 0,
+        "candidate_count": 2,
+        "cpu_seconds": 0.03125,
+        "wall_seconds": 0.03296149999368936
+      }
+    },
+    {
+      "task_id": "5abb277a8acee41f1e81",
+      "seed_group": "seed_307",
+      "change": "loss",
+      "visible": [
+        [
+          "2013-10-15",
+          ", /13--"
+        ],
+        [
+          "05/11/2018",
+          ", //-"
+        ],
+        [
+          "17/02/2011",
+          ", //-"
+        ]
+      ],
+      "old_program": "Concat(', ', '/', Sub(C2,M(DIGITS,2,start)), '-')",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": true,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "correct_old_program_absent_at_128_but_present_at_512",
+      "old_cost": {
+        "expansions": 67,
+        "generated_nodes": 93,
+        "primitive_executions": 4648,
+        "model_checks": 0,
+        "candidate_count": 8,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.007515900011640042
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 496,
+        "primitive_executions": 6608,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.015131300024222583
+      }
+    },
+    {
+      "task_id": "ef611e7757b650e967bf",
+      "seed_group": "seed_307",
+      "change": "win",
+      "visible": [
+        [
+          "EEA-4981",
+          "-4: "
+        ],
+        [
+          "2027-01-10",
+          "7-: -0"
+        ],
+        [
+          "04/05/2018",
+          "05: /05/"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C3,C5), ': ', Sub(M(DIGITS,1,end),C-4))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": false,
+      "mixture_coverage64": false,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 73,
+        "generated_nodes": 84,
+        "primitive_executions": 4518,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.006444400001782924
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 606,
+        "primitive_executions": 6438,
+        "model_checks": 0,
+        "candidate_count": 1,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.016523800004506484
+      }
+    },
+    {
+      "task_id": "a36fc210c51ac3df9e9d",
+      "seed_group": "seed_307",
+      "change": "loss",
+      "visible": [
+        [
+          "Mary Souza",
+          "ARY -aryary Souz"
+        ],
+        [
+          "John Garcia",
+          "OHN -ohnohn Garci"
+        ],
+        [
+          "ana.lee@example.com",
+          "ANA.-ana.na.lee@example.co"
+        ]
+      ],
+      "old_program": "Concat(upper(Sub(M(LOWER,1,start),M(WORD,2,start))), '-', Sub(M(LOWER,1,start),C4), Sub(C1,C-1))",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": true,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "correct_old_program_absent_at_128_but_present_at_512",
+      "old_cost": {
+        "expansions": 124,
+        "generated_nodes": 374,
+        "primitive_executions": 5455,
+        "model_checks": 0,
+        "candidate_count": 2,
+        "cpu_seconds": 0.03125,
+        "wall_seconds": 0.02527149999514222
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 680,
+        "primitive_executions": 9197,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0625,
+        "wall_seconds": 0.057147799991071224
+      }
+    },
+    {
+      "task_id": "dadb505047d42990fc33",
+      "seed_group": "seed_307",
+      "change": "win",
+      "visible": [
+        [
+          "John Ana Ito",
+          ":  It"
+        ],
+        [
+          "Chen Souza",
+          ": "
+        ],
+        [
+          "John Priya Smith",
+          ":  Smit"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(': ', Sub(M(WORD,2,end),C-1))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 50,
+        "generated_nodes": 39,
+        "primitive_executions": 4531,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.006967499997699633
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 400,
+        "primitive_executions": 8173,
+        "model_checks": 0,
+        "candidate_count": 22,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.014787399995839223
+      }
+    },
+    {
+      "task_id": "6eefd4a3f348a7288f49",
+      "seed_group": "seed_307",
+      "change": "loss",
+      "visible": [
+        [
+          "Chen Lucas Adebayo",
+          "Chen: /"
+        ],
+        [
+          "lucas.souza@example.com",
+          "lucas: /"
+        ],
+        [
+          "mary.adebayo@example.com",
+          "mary: /"
+        ]
+      ],
+      "old_program": "Concat(Sub(C0,M(WORD,1,end)), ': ', '/')",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": true,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": false,
+      "mixture_coverage64": false,
+      "mechanism_evidence": "correct_old_program_absent_at_128_but_present_at_512",
+      "old_cost": {
+        "expansions": 128,
+        "generated_nodes": 256,
+        "primitive_executions": 4600,
+        "model_checks": 0,
+        "candidate_count": 4,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.011532899981830269
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 427,
+        "primitive_executions": 7749,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.015261599997757003
+      }
+    },
+    {
+      "task_id": "4e43f8c4aa813876dcea",
+      "seed_group": "seed_307",
+      "change": "loss",
+      "visible": [
+        [
+          "Priya Omar Lee",
+          "riya.-"
+        ],
+        [
+          "John Mary Lee",
+          "ohn.-"
+        ],
+        [
+          "Lucas Mary Lee",
+          "ucas.-"
+        ]
+      ],
+      "old_program": "Concat(Sub(C1,M(WORD,1,end)), '.', '-')",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": true,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": false,
+      "mixture_coverage64": false,
+      "mechanism_evidence": "correct_old_program_absent_at_128_but_present_at_512",
+      "old_cost": {
+        "expansions": 128,
+        "generated_nodes": 222,
+        "primitive_executions": 4505,
+        "model_checks": 0,
+        "candidate_count": 6,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.010203099984209985
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 278,
+        "primitive_executions": 8157,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.015056600008392707
+      }
+    },
+    {
+      "task_id": "857c9d0fc575a7cae319",
+      "seed_group": "seed_317",
+      "change": "win",
+      "visible": [
+        [
+          "Chen Souza",
+          "."
+        ],
+        [
+          "omar.souza@example.com",
+          "o.Souza@example"
+        ],
+        [
+          "Omar Ito",
+          "."
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(M(LOWER,1,start),C1), '.', cap(Sub(M(LOWER,2,start),C-4)))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4388,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.005237700010184199
+      },
+      "new_cost": {
+        "expansions": 55,
+        "generated_nodes": 82,
+        "primitive_executions": 7454,
+        "model_checks": 0,
+        "candidate_count": 10,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.010069999989354983
+      }
+    },
+    {
+      "task_id": "982ef59a5938e565df3b",
+      "seed_group": "seed_317",
+      "change": "loss",
+      "visible": [
+        [
+          "10/03/2008",
+          "/. "
+        ],
+        [
+          "16/05/2025",
+          "/. "
+        ],
+        [
+          "2000-11-01",
+          "00-. "
+        ]
+      ],
+      "old_program": "Concat(Sub(C2,M(DIGITS,2,start)), '.', ' ')",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": false,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "correct_old_program_absent_from_recorded_corrected_frontiers",
+      "old_cost": {
+        "expansions": 49,
+        "generated_nodes": 40,
+        "primitive_executions": 4511,
+        "model_checks": 0,
+        "candidate_count": 8,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.007246399996802211
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 772,
+        "primitive_executions": 6471,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.01793040000484325
+      }
+    },
+    {
+      "task_id": "9c79cede7f69f7b7c195",
+      "seed_group": "seed_317",
+      "change": "win",
+      "visible": [
+        [
+          "Omar Novak",
+          " "
+        ],
+        [
+          "zoe.smith@example.com",
+          ".sm"
+        ],
+        [
+          "mary.novak@example.com",
+          ".n"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(M(WORD,1,end),M(WORD,2,start)), Sub(M(LOWER,2,start),C6))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 20,
+        "generated_nodes": 14,
+        "primitive_executions": 4468,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.006029599986504763
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 426,
+        "primitive_executions": 7467,
+        "model_checks": 0,
+        "candidate_count": 10,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.011625199986156076
+      }
+    },
+    {
+      "task_id": "2fb72d5210a8892094f4",
+      "seed_group": "seed_317",
+      "change": "win",
+      "visible": [
+        [
+          "zoe.souza@example.com",
+          "-: .s"
+        ],
+        [
+          "mary.khan@example.com",
+          "-: ."
+        ],
+        [
+          "priya.souza@example.com",
+          "-: "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat('-', ': ', Sub(M(WORD,1,end),C5))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 6,
+        "generated_nodes": 4,
+        "primitive_executions": 4485,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.005556400021305308
+      },
+      "new_cost": {
+        "expansions": 32,
+        "generated_nodes": 64,
+        "primitive_executions": 7169,
+        "model_checks": 0,
+        "candidate_count": 12,
+        "cpu_seconds": 0.0625,
+        "wall_seconds": 0.06480760002159514
+      }
+    },
+    {
+      "task_id": "1f7564aff654a3a92760",
+      "seed_group": "seed_317",
+      "change": "win",
+      "visible": [
+        [
+          "John Priya Khan",
+          "/"
+        ],
+        [
+          "Zoe Khan",
+          "/oe "
+        ],
+        [
+          "2018-04-20",
+          "/8"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat('/', Sub(C-7,C4))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 2,
+        "generated_nodes": 1,
+        "primitive_executions": 4387,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.00528340000892058
+      },
+      "new_cost": {
+        "expansions": 29,
+        "generated_nodes": 39,
+        "primitive_executions": 7767,
+        "model_checks": 0,
+        "candidate_count": 2,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.008699099998921156
+      }
+    },
+    {
+      "task_id": "7cfe972d44601e7061c0",
+      "seed_group": "seed_317",
+      "change": "win",
+      "visible": [
+        [
+          "2000-08-08",
+          "."
+        ],
+        [
+          "Priya Ito",
+          "."
+        ],
+        [
+          "ana.khan@example.com",
+          ".@example.c"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat('.', Sub(C8,C-2))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 2,
+        "generated_nodes": 1,
+        "primitive_executions": 4388,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.0054268000239972025
+      },
+      "new_cost": {
+        "expansions": 29,
+        "generated_nodes": 22,
+        "primitive_executions": 5980,
+        "model_checks": 0,
+        "candidate_count": 3,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.007840300007956102
+      }
+    },
+    {
+      "task_id": "6eaa0fb72c401d6089a3",
+      "seed_group": "seed_317",
+      "change": "loss",
+      "visible": [
+        [
+          "ana.khan@example.com",
+          ", ana.kh.khan"
+        ],
+        [
+          "Omar Novak",
+          ", Omar N Nov"
+        ],
+        [
+          "Lucas Lucas Smith",
+          ", Lucas  Lu"
+        ]
+      ],
+      "old_program": "Concat(', ', Sub(C0,C6), Sub(M(WORD,1,end),C8))",
+      "new_program": "Concat(', ', Sub(M(WORD,1,start),C6), Sub(M(LOWER,1,end),C8))",
+      "new_program_representable_in_old_pool": true,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": true,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "correct_old_program_absent_at_128_but_present_at_512",
+      "old_cost": {
+        "expansions": 128,
+        "generated_nodes": 520,
+        "primitive_executions": 4774,
+        "model_checks": 0,
+        "candidate_count": 4,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.015725000004749745
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 959,
+        "primitive_executions": 7336,
+        "model_checks": 0,
+        "candidate_count": 1,
+        "cpu_seconds": 0.03125,
+        "wall_seconds": 0.027096000005258247
+      }
+    },
+    {
+      "task_id": "7e88a9922da2b47b4a86",
+      "seed_group": "seed_317",
+      "change": "win",
+      "visible": [
+        [
+          "omar.souza@example.com",
+          "/SO"
+        ],
+        [
+          "Mary Zoe Khan",
+          "M/O"
+        ],
+        [
+          "lucas.smith@example.com",
+          "/S"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C0,M(LOWER,1,start)), '/', upper(Sub(M(LOWER,2,start),C7)))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4413,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.009420499991392717
+      },
+      "new_cost": {
+        "expansions": 104,
+        "generated_nodes": 330,
+        "primitive_executions": 7037,
+        "model_checks": 0,
+        "candidate_count": 30,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.009255100012524053
+      }
+    },
+    {
+      "task_id": "f337e672ca7376bc7538",
+      "seed_group": "seed_317",
+      "change": "win",
+      "visible": [
+        [
+          "Zoe Souza",
+          ",  S"
+        ],
+        [
+          "Priya John Adebayo",
+          "a , ya J"
+        ],
+        [
+          "Lucas Lucas Khan",
+          "s , as L"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C4,M(WORD,2,start)), ', ', Sub(C3,M(UPPER,2,end)))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4588,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.009914200025377795
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 606,
+        "primitive_executions": 8057,
+        "model_checks": 0,
+        "candidate_count": 6,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.02090230002067983
+      }
+    },
+    {
+      "task_id": "4ba0f3473d7466d40873",
+      "seed_group": "seed_317",
+      "change": "loss",
+      "visible": [
+        [
+          "Lucas Novak",
+          "lucas noluc"
+        ],
+        [
+          "Zoe Smith",
+          "zoe smitzoe"
+        ],
+        [
+          "Lucas Mary Souza",
+          "lucas maluc"
+        ]
+      ],
+      "old_program": "Concat(lower(Sub(C0,C8)), lower(Sub(C0,C3)))",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": true,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": false,
+      "mixture_coverage64": false,
+      "mechanism_evidence": "correct_old_program_absent_at_128_but_present_at_512",
+      "old_cost": {
+        "expansions": 128,
+        "generated_nodes": 776,
+        "primitive_executions": 5192,
+        "model_checks": 0,
+        "candidate_count": 8,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.023996299976715818
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 986,
+        "primitive_executions": 8902,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.03125,
+        "wall_seconds": 0.04252329998416826
+      }
+    },
+    {
+      "task_id": "5124f55043f7ae8bf595",
+      "seed_group": "seed_317",
+      "change": "win",
+      "visible": [
+        [
+          "Ana John Khan",
+          "-."
+        ],
+        [
+          "Zoe Souza",
+          " -."
+        ],
+        [
+          "Ana Garcia",
+          "-."
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C-6,C4), '-', '.')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4391,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.006087799993110821
+      },
+      "new_cost": {
+        "expansions": 42,
+        "generated_nodes": 36,
+        "primitive_executions": 7885,
+        "model_checks": 0,
+        "candidate_count": 12,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.01144840000779368
+      }
+    },
+    {
+      "task_id": "788c6e6a77553a1065a5",
+      "seed_group": "seed_317",
+      "change": "win",
+      "visible": [
+        [
+          "08/11/2028",
+          "-, 08"
+        ],
+        [
+          "2018-12-24",
+          "-, 20"
+        ],
+        [
+          "DFF-1846",
+          "-, "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat('-', ', ', Sub(C0,C-8))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 6,
+        "generated_nodes": 4,
+        "primitive_executions": 4506,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.006489599996712059
+      },
+      "new_cost": {
+        "expansions": 71,
+        "generated_nodes": 64,
+        "primitive_executions": 6434,
+        "model_checks": 0,
+        "candidate_count": 40,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.008611600002041087
+      }
+    },
+    {
+      "task_id": "9f243bcbe81f5a3bd6f2",
+      "seed_group": "seed_317",
+      "change": "win",
+      "visible": [
+        [
+          "Omar Zoe Souza",
+          " "
+        ],
+        [
+          "Omar Ana Ito",
+          " A "
+        ],
+        [
+          "Zoe Garcia",
+          "e Ga "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C-8,C6), Sub(M(WORD,1,end),M(WORD,2,start)))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4477,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.006636700010858476
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 956,
+        "primitive_executions": 8136,
+        "model_checks": 0,
+        "candidate_count": 5,
+        "cpu_seconds": 0.03125,
+        "wall_seconds": 0.02773409997462295
+      }
+    },
+    {
+      "task_id": "868690770172d7505b76",
+      "seed_group": "seed_317",
+      "change": "win",
+      "visible": [
+        [
+          "02/03/2013",
+          ", /"
+        ],
+        [
+          "DBA-1155",
+          ", "
+        ],
+        [
+          "2024-08-16",
+          ", 2"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(', ', Sub(C2,C-7))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 5,
+        "generated_nodes": 3,
+        "primitive_executions": 4455,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.008359400002518669
+      },
+      "new_cost": {
+        "expansions": 34,
+        "generated_nodes": 27,
+        "primitive_executions": 6103,
+        "model_checks": 0,
+        "candidate_count": 8,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.010737499978858978
+      }
+    },
+    {
+      "task_id": "3fd7849dbb564a17b6f0",
+      "seed_group": "seed_317",
+      "change": "win",
+      "visible": [
+        [
+          "John Ito",
+          " J"
+        ],
+        [
+          "Lucas Chen Adebayo",
+          " "
+        ],
+        [
+          "Mary Ito",
+          " M"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(M(WORD,1,end),M(WORD,2,start)), Sub(C-8,C1))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 24,
+        "generated_nodes": 17,
+        "primitive_executions": 4520,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.007474199985153973
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 770,
+        "primitive_executions": 7903,
+        "model_checks": 0,
+        "candidate_count": 26,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.014263999997638166
+      }
+    },
+    {
+      "task_id": "33fe1b4943c083f21103",
+      "seed_group": "seed_317",
+      "change": "win",
+      "visible": [
+        [
+          "23/08/2010",
+          "008."
+        ],
+        [
+          "11/07/2005",
+          "007."
+        ],
+        [
+          "2029-04-21",
+          "."
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(M(DIGITS,2,start),C4), Sub(M(DIGITS,2,start),C5), '.')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": false,
+      "mixture_coverage64": false,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4587,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.007840300007956102
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 198,
+        "primitive_executions": 6547,
+        "model_checks": 0,
+        "candidate_count": 4,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.011988899990683421
+      }
+    },
+    {
+      "task_id": "ee977f1787f8bbcfc395",
+      "seed_group": "seed_317",
+      "change": "win",
+      "visible": [
+        [
+          "2007-02-23",
+          " 7007-"
+        ],
+        [
+          "2001-02-06",
+          " 1001-"
+        ],
+        [
+          "11/07/2027",
+          " 1/"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(' ', Sub(C3,M(DIGITS,1,end)), Sub(C1,M(DIGITS,2,start)))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 2,
+        "generated_nodes": 1,
+        "primitive_executions": 4863,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.005999400018481538
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 810,
+        "primitive_executions": 6823,
+        "model_checks": 0,
+        "candidate_count": 25,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.015293600008590147
+      }
+    },
+    {
+      "task_id": "904d70b49c3f33675329",
+      "seed_group": "seed_317",
+      "change": "loss",
+      "visible": [
+        [
+          "Priya Smith",
+          "ya SmriP"
+        ],
+        [
+          "Priya Khan",
+          "iya KhrP"
+        ],
+        [
+          "Mary Omar Ito",
+          "Omaary M"
+        ]
+      ],
+      "old_program": "Concat(Sub(C-8,C8), Sub(C1,C-8), Sub(C0,C1))",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": false,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "correct_old_program_absent_from_recorded_corrected_frontiers",
+      "old_cost": {
+        "expansions": 128,
+        "generated_nodes": 490,
+        "primitive_executions": 4995,
+        "model_checks": 0,
+        "candidate_count": 27,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.016354299994418398
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 935,
+        "primitive_executions": 8721,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.046875,
+        "wall_seconds": 0.04225549998227507
+      }
+    },
+    {
+      "task_id": "9f4a57267383ec0f42c3",
+      "seed_group": "seed_331",
+      "change": "win",
+      "visible": [
+        [
+          "Omar Novak",
+          "ovak N"
+        ],
+        [
+          "Ana Lee",
+          "ee"
+        ],
+        [
+          "Chen Garcia",
+          "arcia Ga"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(M(UPPER,2,end),M(WORD,2,end)), Sub(C4,C-4))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 46,
+        "generated_nodes": 38,
+        "primitive_executions": 4673,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.008149900007992983
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 832,
+        "primitive_executions": 8073,
+        "model_checks": 0,
+        "candidate_count": 12,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.02018079999834299
+      }
+    },
+    {
+      "task_id": "2c78d08cd591ee98fd01",
+      "seed_group": "seed_331",
+      "change": "win",
+      "visible": [
+        [
+          "Lucas Lucas Ito",
+          ".- s"
+        ],
+        [
+          "Mary Khan",
+          ".-K"
+        ],
+        [
+          "Omar Souza",
+          ".-S"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat('.', '-', Sub(C5,C6), Sub(C4,M(WORD,1,end)))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 7,
+        "generated_nodes": 5,
+        "primitive_executions": 4459,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.00571899997885339
+      },
+      "new_cost": {
+        "expansions": 115,
+        "generated_nodes": 592,
+        "primitive_executions": 7892,
+        "model_checks": 0,
+        "candidate_count": 12,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.012115499994251877
+      }
+    },
+    {
+      "task_id": "fe4a80d315824b7fd50b",
+      "seed_group": "seed_331",
+      "change": "loss",
+      "visible": [
+        [
+          "Chen Omar Novak",
+          "Omar NoO "
+        ],
+        [
+          "Ana Souza",
+          "oS "
+        ],
+        [
+          "Mary John Lee",
+          "John J "
+        ]
+      ],
+      "old_program": "Concat(Sub(C5,C-3), Sub(M(WORD,2,start),M(UPPER,2,end)), Sub(M(WORD,1,end),M(WORD,2,start)))",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": true,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "correct_old_program_absent_at_128_but_present_at_512",
+      "old_cost": {
+        "expansions": 128,
+        "generated_nodes": 165,
+        "primitive_executions": 4704,
+        "model_checks": 0,
+        "candidate_count": 96,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.007272400020156056
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 987,
+        "primitive_executions": 8236,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.024280999990878627
+      }
+    },
+    {
+      "task_id": "47539e44d38b79b4a531",
+      "seed_group": "seed_331",
+      "change": "win",
+      "visible": [
+        [
+          "22/03/2015",
+          ", "
+        ],
+        [
+          "2027-09-12",
+          ", "
+        ],
+        [
+          "FEA-3233",
+          "A-, "
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C-6,C4), ', ')",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4394,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.006620600004680455
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 152,
+        "primitive_executions": 6306,
+        "model_checks": 0,
+        "candidate_count": 54,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.008035500010009855
+      }
+    },
+    {
+      "task_id": "7df8328040f106e2df84",
+      "seed_group": "seed_331",
+      "change": "win",
+      "visible": [
+        [
+          "ana.garcia@example.com",
+          " "
+        ],
+        [
+          "Chen Garcia",
+          " n Ga"
+        ],
+        [
+          "Ana Ana Novak",
+          " na"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(' ', Sub(C-8,C7))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 2,
+        "generated_nodes": 1,
+        "primitive_executions": 4387,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.0063372000004164875
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 968,
+        "primitive_executions": 6939,
+        "model_checks": 0,
+        "candidate_count": 1,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.015089499996975064
+      }
+    },
+    {
+      "task_id": "3a8db24de72203840e4b",
+      "seed_group": "seed_331",
+      "change": "win",
+      "visible": [
+        [
+          "ACC-5334",
+          " AC"
+        ],
+        [
+          "John Ito",
+          " OJo"
+        ],
+        [
+          "Ana Lucas Novak",
+          " NAn"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(' ', cap(Sub(M(UPPER,1,end),C2)), Sub(C0,C2))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 2,
+        "generated_nodes": 1,
+        "primitive_executions": 4507,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.005401000002166256
+      },
+      "new_cost": {
+        "expansions": 103,
+        "generated_nodes": 337,
+        "primitive_executions": 6677,
+        "model_checks": 0,
+        "candidate_count": 28,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.009114499989664182
+      }
+    },
+    {
+      "task_id": "949db2cf4293604fe4fc",
+      "seed_group": "seed_331",
+      "change": "loss",
+      "visible": [
+        [
+          "GCD-2317",
+          "-231 -2"
+        ],
+        [
+          "zoe.novak@example.com",
+          ".NOVAK@EXAMPLE.CO .novak@example."
+        ],
+        [
+          "Mary Chen Ito",
+          " CHEN IT y Chen "
+        ]
+      ],
+      "old_program": "Concat(upper(Sub(M(WORD,1,end),C-1)), ' ', Sub(C3,C-3))",
+      "new_program": "",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": true,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": true,
+      "corrected_coverage64_at128": false,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "correct_old_program_absent_at_128_but_present_at_512",
+      "old_cost": {
+        "expansions": 84,
+        "generated_nodes": 141,
+        "primitive_executions": 4758,
+        "model_checks": 0,
+        "candidate_count": 13,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.00986160000320524
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 659,
+        "primitive_executions": 6722,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.109375,
+        "wall_seconds": 0.10762100000283681
+      }
+    },
+    {
+      "task_id": "ca214cf8a52244ebbe43",
+      "seed_group": "seed_331",
+      "change": "win",
+      "visible": [
+        [
+          "Mary Ito",
+          "to It"
+        ],
+        [
+          "John Garcia",
+          "ia"
+        ],
+        [
+          "Mary Adebayo",
+          "yo"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C-2,M(WORD,2,end)), Sub(C-4,C7))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 19,
+        "generated_nodes": 14,
+        "primitive_executions": 4623,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.005691200000001118
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 788,
+        "primitive_executions": 8239,
+        "model_checks": 0,
+        "candidate_count": 4,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.013333299983059987
+      }
+    },
+    {
+      "task_id": "901017b8448510bd218f",
+      "seed_group": "seed_331",
+      "change": "win",
+      "visible": [
+        [
+          "Priya Zoe Adebayo",
+          "ya zoe"
+        ],
+        [
+          "John Khan",
+          "hn Khan"
+        ],
+        [
+          "John Lee",
+          "ohn Lee"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(Sub(C-7,M(WORD,2,end)), lower(Sub(C3,C-8)))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 1,
+        "generated_nodes": 0,
+        "primitive_executions": 4659,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.00759609998203814
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 832,
+        "primitive_executions": 8145,
+        "model_checks": 0,
+        "candidate_count": 4,
+        "cpu_seconds": 0.03125,
+        "wall_seconds": 0.029717400000663474
+      }
+    },
+    {
+      "task_id": "f708795aba192d794894",
+      "seed_group": "seed_331",
+      "change": "win",
+      "visible": [
+        [
+          "BAH-4728",
+          ", "
+        ],
+        [
+          "John Mary Souza",
+          ", ary So"
+        ],
+        [
+          "Mary Mary Souza",
+          ", ary So"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat(', ', Sub(C6,C-3))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 5,
+        "generated_nodes": 3,
+        "primitive_executions": 4394,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.006048299983376637
+      },
+      "new_cost": {
+        "expansions": 69,
+        "generated_nodes": 103,
+        "primitive_executions": 6384,
+        "model_checks": 0,
+        "candidate_count": 14,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.00848669998231344
+      }
+    },
+    {
+      "task_id": "37e2b43f6433807b52a7",
+      "seed_group": "seed_331",
+      "change": "win",
+      "visible": [
+        [
+          "Zoe Chen Novak",
+          ". CHEN "
+        ],
+        [
+          "Mary Khan",
+          "."
+        ],
+        [
+          "zoe.khan@example.com",
+          "..KHAN@EXAMPL"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat('.', upper(Sub(M(WORD,1,end),C-5)))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 2,
+        "generated_nodes": 1,
+        "primitive_executions": 4621,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.006365100009134039
+      },
+      "new_cost": {
+        "expansions": 128,
+        "generated_nodes": 180,
+        "primitive_executions": 8087,
+        "model_checks": 0,
+        "candidate_count": 18,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.013875799981178716
+      }
+    },
+    {
+      "task_id": "7a0ad4e3ef75d4167a27",
+      "seed_group": "seed_331",
+      "change": "win",
+      "visible": [
+        [
+          "Ana Omar Smith",
+          "-ma"
+        ],
+        [
+          "Ana Khan",
+          "-"
+        ],
+        [
+          "zoe.khan@example.com",
+          "-khan@exam"
+        ]
+      ],
+      "old_program": "",
+      "new_program": "Concat('-', Sub(M(LOWER,2,start),C-7))",
+      "new_program_representable_in_old_pool": false,
+      "old_program_representable_in_new_pool": false,
+      "old_program_in_new_frontier128": false,
+      "old_program_in_new_frontier512": false,
+      "corrected_coverage64_at128": true,
+      "corrected_coverage64_at512": true,
+      "mixture_selected_correct": true,
+      "mixture_coverage64": true,
+      "mechanism_evidence": "new_selected_program_outside_old_filtered_pool",
+      "old_cost": {
+        "expansions": 2,
+        "generated_nodes": 1,
+        "primitive_executions": 4439,
+        "model_checks": 0,
+        "candidate_count": 0,
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.006034300022292882
+      },
+      "new_cost": {
+        "expansions": 19,
+        "generated_nodes": 15,
+        "primitive_executions": 7835,
+        "model_checks": 0,
+        "candidate_count": 6,
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.008967700006905943
+      }
+    }
+  ],
+  "limits": "Post-outcome descriptive analysis of exact program syntax and saved capped frontiers. Does not prove why a program generalizes, all-input correctness or completeness of search. No new hidden grading or policy selection."
+}

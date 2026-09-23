@@ -1,0 +1,2151 @@
+{
+  "scope": "opened development only; no fresh claim",
+  "source_tasks_a": 96,
+  "source_tasks_ab": 288,
+  "source_candidate_labels_a": 9566,
+  "source_candidate_labels_ab": 28472,
+  "source_positive_labels_ab": 506,
+  "model_sha256": {
+    "a_top100": "9acd2600aeb445aa0cf6c194f992f319064d7984f840b2bfd883cda85fcd9784",
+    "ab_top100": "790ec0a53af078baeeb6972966193add1974fe9601267b86647e8c5f2f887bba",
+    "ab_scrambled": "2e22f3076b4e6338edec92cf0bed4ba41b6a8eb539067955c9e137fff10e825a"
+  },
+  "targets": {
+    "shifted-feedback-value-transfer-20260918": {
+      "tasks": 192,
+      "candidate_choices_checked": 1920,
+      "model_predictions": 66596,
+      "totals": {
+        "e0": {
+          "zero": 26,
+          "one_each": 55,
+          "budgeted": 46
+        },
+        "a_top100": {
+          "zero": 73,
+          "one_each": 86,
+          "budgeted": 83
+        },
+        "ab_top100": {
+          "zero": 84,
+          "one_each": 86,
+          "budgeted": 86
+        },
+        "ab_scrambled": {
+          "zero": 58,
+          "one_each": 76,
+          "budgeted": 73
+        },
+        "familiar_top50": {
+          "zero": 22,
+          "one_each": 63,
+          "budgeted": 48
+        }
+      },
+      "comparisons": {
+        "a_top100": {
+          "zero": {
+            "gain": 47,
+            "positive_banks": 21,
+            "losing_banks": 0,
+            "interval": [
+              35,
+              59
+            ]
+          },
+          "one_each": {
+            "gain": 31,
+            "positive_banks": 19,
+            "losing_banks": 0,
+            "interval": [
+              21,
+              42
+            ]
+          },
+          "budgeted": {
+            "gain": 37,
+            "positive_banks": 19,
+            "losing_banks": 0,
+            "interval": [
+              26,
+              48
+            ]
+          }
+        },
+        "ab_top100": {
+          "zero": {
+            "gain": 58,
+            "positive_banks": 22,
+            "losing_banks": 0,
+            "interval": [
+              45,
+              72
+            ]
+          },
+          "one_each": {
+            "gain": 31,
+            "positive_banks": 17,
+            "losing_banks": 0,
+            "interval": [
+              20,
+              43
+            ]
+          },
+          "budgeted": {
+            "gain": 40,
+            "positive_banks": 20,
+            "losing_banks": 0,
+            "interval": [
+              28,
+              53
+            ]
+          }
+        },
+        "ab_scrambled": {
+          "zero": {
+            "gain": 32,
+            "positive_banks": 17,
+            "losing_banks": 1,
+            "interval": [
+              20,
+              44
+            ]
+          },
+          "one_each": {
+            "gain": 21,
+            "positive_banks": 12,
+            "losing_banks": 1,
+            "interval": [
+              10,
+              34
+            ]
+          },
+          "budgeted": {
+            "gain": 27,
+            "positive_banks": 15,
+            "losing_banks": 0,
+            "interval": [
+              16,
+              39
+            ]
+          }
+        },
+        "familiar_top50": {
+          "zero": {
+            "gain": -4,
+            "positive_banks": 2,
+            "losing_banks": 6,
+            "interval": [
+              -9,
+              1
+            ]
+          },
+          "one_each": {
+            "gain": 8,
+            "positive_banks": 6,
+            "losing_banks": 0,
+            "interval": [
+              3,
+              14
+            ]
+          },
+          "budgeted": {
+            "gain": 2,
+            "positive_banks": 5,
+            "losing_banks": 3,
+            "interval": [
+              -3,
+              7
+            ]
+          }
+        }
+      },
+      "banks": [
+        {
+          "seed": 903200,
+          "e0": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "ab_top100": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "ab_scrambled": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903201,
+          "e0": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_scrambled": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903202,
+          "e0": {
+            "zero": 0,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 4,
+            "one_each": 6,
+            "budgeted": 5
+          },
+          "ab_top100": {
+            "zero": 6,
+            "one_each": 6,
+            "budgeted": 6
+          },
+          "ab_scrambled": {
+            "zero": 2,
+            "one_each": 6,
+            "budgeted": 5
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903203,
+          "e0": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "a_top100": {
+            "zero": 4,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_top100": {
+            "zero": 4,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_scrambled": {
+            "zero": 4,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 3
+          }
+        },
+        {
+          "seed": 903204,
+          "e0": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "ab_top100": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "ab_scrambled": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903205,
+          "e0": {
+            "zero": 2,
+            "one_each": 4,
+            "budgeted": 3
+          },
+          "a_top100": {
+            "zero": 4,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_scrambled": {
+            "zero": 2,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 4,
+            "budgeted": 3
+          }
+        },
+        {
+          "seed": 903206,
+          "e0": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "a_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_scrambled": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "familiar_top50": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903207,
+          "e0": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_scrambled": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903208,
+          "e0": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 2
+          },
+          "ab_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_scrambled": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903209,
+          "e0": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_top100": {
+            "zero": 5,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_scrambled": {
+            "zero": 3,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "familiar_top50": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903210,
+          "e0": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 3,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_scrambled": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "familiar_top50": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903211,
+          "e0": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "a_top100": {
+            "zero": 3,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_top100": {
+            "zero": 5,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_scrambled": {
+            "zero": 4,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 5,
+            "budgeted": 4
+          }
+        },
+        {
+          "seed": 903212,
+          "e0": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "a_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_scrambled": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 3
+          }
+        },
+        {
+          "seed": 903213,
+          "e0": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "ab_top100": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "ab_scrambled": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903214,
+          "e0": {
+            "zero": 3,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "a_top100": {
+            "zero": 3,
+            "one_each": 5,
+            "budgeted": 4
+          },
+          "ab_top100": {
+            "zero": 5,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_scrambled": {
+            "zero": 2,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "familiar_top50": {
+            "zero": 3,
+            "one_each": 4,
+            "budgeted": 4
+          }
+        },
+        {
+          "seed": 903215,
+          "e0": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 3,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_top100": {
+            "zero": 3,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_scrambled": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903216,
+          "e0": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "ab_top100": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "ab_scrambled": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903217,
+          "e0": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_scrambled": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903218,
+          "e0": {
+            "zero": 0,
+            "one_each": 3,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 5,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_top100": {
+            "zero": 5,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_scrambled": {
+            "zero": 4,
+            "one_each": 5,
+            "budgeted": 4
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 4,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903219,
+          "e0": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "a_top100": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "ab_top100": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "ab_scrambled": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 1,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903220,
+          "e0": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 5,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_top100": {
+            "zero": 5,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_scrambled": {
+            "zero": 4,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 4,
+            "budgeted": 3
+          }
+        },
+        {
+          "seed": 903221,
+          "e0": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_scrambled": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903222,
+          "e0": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_scrambled": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 2
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903223,
+          "e0": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "a_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_scrambled": {
+            "zero": 3,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 2
+          }
+        }
+      ]
+    },
+    "shifted-survivor-evaluator-transfer-20260918": {
+      "tasks": 192,
+      "candidate_choices_checked": 1920,
+      "model_predictions": 66324,
+      "totals": {
+        "e0": {
+          "zero": 25,
+          "one_each": 56,
+          "budgeted": 44
+        },
+        "a_top100": {
+          "zero": 71,
+          "one_each": 81,
+          "budgeted": 78
+        },
+        "ab_top100": {
+          "zero": 81,
+          "one_each": 87,
+          "budgeted": 86
+        },
+        "ab_scrambled": {
+          "zero": 58,
+          "one_each": 75,
+          "budgeted": 71
+        },
+        "familiar_top50": {
+          "zero": 22,
+          "one_each": 53,
+          "budgeted": 39
+        }
+      },
+      "comparisons": {
+        "a_top100": {
+          "zero": {
+            "gain": 46,
+            "positive_banks": 22,
+            "losing_banks": 0,
+            "interval": [
+              35,
+              57
+            ]
+          },
+          "one_each": {
+            "gain": 25,
+            "positive_banks": 17,
+            "losing_banks": 0,
+            "interval": [
+              17,
+              33
+            ]
+          },
+          "budgeted": {
+            "gain": 34,
+            "positive_banks": 21,
+            "losing_banks": 0,
+            "interval": [
+              26,
+              42
+            ]
+          }
+        },
+        "ab_top100": {
+          "zero": {
+            "gain": 56,
+            "positive_banks": 22,
+            "losing_banks": 0,
+            "interval": [
+              45,
+              67
+            ]
+          },
+          "one_each": {
+            "gain": 31,
+            "positive_banks": 19,
+            "losing_banks": 0,
+            "interval": [
+              22,
+              40
+            ]
+          },
+          "budgeted": {
+            "gain": 42,
+            "positive_banks": 21,
+            "losing_banks": 0,
+            "interval": [
+              33,
+              51
+            ]
+          }
+        },
+        "ab_scrambled": {
+          "zero": {
+            "gain": 33,
+            "positive_banks": 20,
+            "losing_banks": 0,
+            "interval": [
+              24,
+              42
+            ]
+          },
+          "one_each": {
+            "gain": 19,
+            "positive_banks": 16,
+            "losing_banks": 1,
+            "interval": [
+              12,
+              26
+            ]
+          },
+          "budgeted": {
+            "gain": 27,
+            "positive_banks": 18,
+            "losing_banks": 0,
+            "interval": [
+              19,
+              35
+            ]
+          }
+        },
+        "familiar_top50": {
+          "zero": {
+            "gain": -3,
+            "positive_banks": 3,
+            "losing_banks": 5,
+            "interval": [
+              -10,
+              3
+            ]
+          },
+          "one_each": {
+            "gain": -3,
+            "positive_banks": 2,
+            "losing_banks": 5,
+            "interval": [
+              -8,
+              2
+            ]
+          },
+          "budgeted": {
+            "gain": -5,
+            "positive_banks": 2,
+            "losing_banks": 5,
+            "interval": [
+              -12,
+              1
+            ]
+          }
+        }
+      },
+      "banks": [
+        {
+          "seed": 903300,
+          "e0": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "a_top100": {
+            "zero": 3,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_top100": {
+            "zero": 3,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_scrambled": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903301,
+          "e0": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "a_top100": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "ab_top100": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "ab_scrambled": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          }
+        },
+        {
+          "seed": 903302,
+          "e0": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_scrambled": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 2
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903303,
+          "e0": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "ab_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_scrambled": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903304,
+          "e0": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_scrambled": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "familiar_top50": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 3
+          }
+        },
+        {
+          "seed": 903305,
+          "e0": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_scrambled": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903306,
+          "e0": {
+            "zero": 3,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "a_top100": {
+            "zero": 4,
+            "one_each": 6,
+            "budgeted": 5
+          },
+          "ab_top100": {
+            "zero": 7,
+            "one_each": 7,
+            "budgeted": 7
+          },
+          "ab_scrambled": {
+            "zero": 6,
+            "one_each": 6,
+            "budgeted": 6
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903307,
+          "e0": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "a_top100": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "ab_top100": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "ab_scrambled": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          }
+        },
+        {
+          "seed": 903308,
+          "e0": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_top100": {
+            "zero": 5,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_scrambled": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903309,
+          "e0": {
+            "zero": 2,
+            "one_each": 4,
+            "budgeted": 3
+          },
+          "a_top100": {
+            "zero": 5,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_top100": {
+            "zero": 5,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_scrambled": {
+            "zero": 4,
+            "one_each": 5,
+            "budgeted": 4
+          },
+          "familiar_top50": {
+            "zero": 3,
+            "one_each": 4,
+            "budgeted": 3
+          }
+        },
+        {
+          "seed": 903310,
+          "e0": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_scrambled": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903311,
+          "e0": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 3,
+            "one_each": 4,
+            "budgeted": 3
+          },
+          "ab_top100": {
+            "zero": 3,
+            "one_each": 4,
+            "budgeted": 3
+          },
+          "ab_scrambled": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 2
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903312,
+          "e0": {
+            "zero": 0,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_scrambled": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 2
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 1,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903313,
+          "e0": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_scrambled": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "familiar_top50": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903314,
+          "e0": {
+            "zero": 2,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "a_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_scrambled": {
+            "zero": 3,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 4,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903315,
+          "e0": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "ab_top100": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "ab_scrambled": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 1,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903316,
+          "e0": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "a_top100": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "ab_top100": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "ab_scrambled": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          }
+        },
+        {
+          "seed": 903317,
+          "e0": {
+            "zero": 3,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "a_top100": {
+            "zero": 5,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_top100": {
+            "zero": 5,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_scrambled": {
+            "zero": 5,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "familiar_top50": {
+            "zero": 3,
+            "one_each": 4,
+            "budgeted": 4
+          }
+        },
+        {
+          "seed": 903318,
+          "e0": {
+            "zero": 1,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "a_top100": {
+            "zero": 4,
+            "one_each": 6,
+            "budgeted": 6
+          },
+          "ab_top100": {
+            "zero": 4,
+            "one_each": 6,
+            "budgeted": 6
+          },
+          "ab_scrambled": {
+            "zero": 2,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 4,
+            "budgeted": 4
+          }
+        },
+        {
+          "seed": 903319,
+          "e0": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "ab_top100": {
+            "zero": 3,
+            "one_each": 3,
+            "budgeted": 3
+          },
+          "ab_scrambled": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903320,
+          "e0": {
+            "zero": 0,
+            "one_each": 1,
+            "budgeted": 0
+          },
+          "a_top100": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "ab_top100": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "ab_scrambled": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 903321,
+          "e0": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 5,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_top100": {
+            "zero": 5,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_scrambled": {
+            "zero": 2,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903322,
+          "e0": {
+            "zero": 1,
+            "one_each": 4,
+            "budgeted": 3
+          },
+          "a_top100": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "ab_top100": {
+            "zero": 5,
+            "one_each": 6,
+            "budgeted": 6
+          },
+          "ab_scrambled": {
+            "zero": 4,
+            "one_each": 4,
+            "budgeted": 4
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 4,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 903323,
+          "e0": {
+            "zero": 0,
+            "one_each": 4,
+            "budgeted": 3
+          },
+          "a_top100": {
+            "zero": 5,
+            "one_each": 6,
+            "budgeted": 5
+          },
+          "ab_top100": {
+            "zero": 4,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "ab_scrambled": {
+            "zero": 3,
+            "one_each": 5,
+            "budgeted": 5
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 3,
+            "budgeted": 2
+          }
+        }
+      ]
+    },
+    "combined-ranker-query-transfer-20260918": {
+      "tasks": 96,
+      "candidate_choices_checked": 960,
+      "model_predictions": 33510,
+      "totals": {
+        "e0": {
+          "zero": 13,
+          "one_each": 36,
+          "budgeted": 13
+        },
+        "a_top100": {
+          "zero": 4,
+          "one_each": 18,
+          "budgeted": 4
+        },
+        "ab_top100": {
+          "zero": 2,
+          "one_each": 16,
+          "budgeted": 2
+        },
+        "ab_scrambled": {
+          "zero": 2,
+          "one_each": 12,
+          "budgeted": 2
+        },
+        "familiar_top50": {
+          "zero": 13,
+          "one_each": 36,
+          "budgeted": 13
+        }
+      },
+      "comparisons": {
+        "a_top100": {
+          "zero": {
+            "gain": -9,
+            "positive_banks": 2,
+            "losing_banks": 8,
+            "interval": [
+              -16,
+              -2
+            ]
+          },
+          "one_each": {
+            "gain": -18,
+            "positive_banks": 0,
+            "losing_banks": 9,
+            "interval": [
+              -26,
+              -10
+            ]
+          },
+          "budgeted": {
+            "gain": -9,
+            "positive_banks": 2,
+            "losing_banks": 8,
+            "interval": [
+              -16,
+              -2
+            ]
+          }
+        },
+        "ab_top100": {
+          "zero": {
+            "gain": -11,
+            "positive_banks": 1,
+            "losing_banks": 7,
+            "interval": [
+              -18,
+              -4
+            ]
+          },
+          "one_each": {
+            "gain": -20,
+            "positive_banks": 0,
+            "losing_banks": 10,
+            "interval": [
+              -28,
+              -12
+            ]
+          },
+          "budgeted": {
+            "gain": -11,
+            "positive_banks": 1,
+            "losing_banks": 7,
+            "interval": [
+              -18,
+              -4
+            ]
+          }
+        },
+        "ab_scrambled": {
+          "zero": {
+            "gain": -11,
+            "positive_banks": 1,
+            "losing_banks": 8,
+            "interval": [
+              -17,
+              -4
+            ]
+          },
+          "one_each": {
+            "gain": -24,
+            "positive_banks": 1,
+            "losing_banks": 10,
+            "interval": [
+              -33,
+              -14
+            ]
+          },
+          "budgeted": {
+            "gain": -11,
+            "positive_banks": 1,
+            "losing_banks": 8,
+            "interval": [
+              -17,
+              -4
+            ]
+          }
+        },
+        "familiar_top50": {
+          "zero": {
+            "gain": 0,
+            "positive_banks": 4,
+            "losing_banks": 4,
+            "interval": [
+              -7,
+              7
+            ]
+          },
+          "one_each": {
+            "gain": 0,
+            "positive_banks": 2,
+            "losing_banks": 2,
+            "interval": [
+              -4,
+              4
+            ]
+          },
+          "budgeted": {
+            "gain": 0,
+            "positive_banks": 4,
+            "losing_banks": 4,
+            "interval": [
+              -7,
+              7
+            ]
+          }
+        }
+      },
+      "banks": [
+        {
+          "seed": 902558,
+          "e0": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 0
+          },
+          "a_top100": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 1
+          },
+          "ab_top100": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 0
+          },
+          "ab_scrambled": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 1
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 0
+          }
+        },
+        {
+          "seed": 902559,
+          "e0": {
+            "zero": 0,
+            "one_each": 3,
+            "budgeted": 0
+          },
+          "a_top100": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 0
+          },
+          "ab_top100": {
+            "zero": 0,
+            "one_each": 1,
+            "budgeted": 0
+          },
+          "ab_scrambled": {
+            "zero": 0,
+            "one_each": 1,
+            "budgeted": 0
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 4,
+            "budgeted": 0
+          }
+        },
+        {
+          "seed": 902560,
+          "e0": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "ab_top100": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "ab_scrambled": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 0
+          }
+        },
+        {
+          "seed": 902561,
+          "e0": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 0
+          },
+          "a_top100": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "ab_top100": {
+            "zero": 1,
+            "one_each": 1,
+            "budgeted": 1
+          },
+          "ab_scrambled": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 2,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 902562,
+          "e0": {
+            "zero": 1,
+            "one_each": 4,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "ab_top100": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "ab_scrambled": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "familiar_top50": {
+            "zero": 2,
+            "one_each": 4,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 902563,
+          "e0": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 1
+          },
+          "ab_top100": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 0
+          },
+          "ab_scrambled": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 902564,
+          "e0": {
+            "zero": 2,
+            "one_each": 4,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 0
+          },
+          "ab_top100": {
+            "zero": 0,
+            "one_each": 1,
+            "budgeted": 0
+          },
+          "ab_scrambled": {
+            "zero": 0,
+            "one_each": 1,
+            "budgeted": 0
+          },
+          "familiar_top50": {
+            "zero": 1,
+            "one_each": 5,
+            "budgeted": 1
+          }
+        },
+        {
+          "seed": 902565,
+          "e0": {
+            "zero": 1,
+            "one_each": 4,
+            "budgeted": 1
+          },
+          "a_top100": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 0
+          },
+          "ab_top100": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 0
+          },
+          "ab_scrambled": {
+            "zero": 0,
+            "one_each": 1,
+            "budgeted": 0
+          },
+          "familiar_top50": {
+            "zero": 2,
+            "one_each": 4,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 902566,
+          "e0": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 0
+          },
+          "a_top100": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "ab_top100": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "ab_scrambled": {
+            "zero": 0,
+            "one_each": 0,
+            "budgeted": 0
+          },
+          "familiar_top50": {
+            "zero": 2,
+            "one_each": 2,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 902567,
+          "e0": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 0
+          },
+          "ab_top100": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 0
+          },
+          "ab_scrambled": {
+            "zero": 1,
+            "one_each": 4,
+            "budgeted": 1
+          },
+          "familiar_top50": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 0
+          }
+        },
+        {
+          "seed": 902568,
+          "e0": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 1,
+            "one_each": 3,
+            "budgeted": 1
+          },
+          "ab_top100": {
+            "zero": 0,
+            "one_each": 3,
+            "budgeted": 0
+          },
+          "ab_scrambled": {
+            "zero": 0,
+            "one_each": 2,
+            "budgeted": 0
+          },
+          "familiar_top50": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 2
+          }
+        },
+        {
+          "seed": 902569,
+          "e0": {
+            "zero": 2,
+            "one_each": 4,
+            "budgeted": 2
+          },
+          "a_top100": {
+            "zero": 0,
+            "one_each": 1,
+            "budgeted": 0
+          },
+          "ab_top100": {
+            "zero": 0,
+            "one_each": 1,
+            "budgeted": 0
+          },
+          "ab_scrambled": {
+            "zero": 0,
+            "one_each": 1,
+            "budgeted": 0
+          },
+          "familiar_top50": {
+            "zero": 2,
+            "one_each": 3,
+            "budgeted": 2
+          }
+        }
+      ]
+    }
+  }
+}

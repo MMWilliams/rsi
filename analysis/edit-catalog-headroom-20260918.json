@@ -1,0 +1,218 @@
+{
+  "scope": "hindsight analysis of already opened fresh-run outcomes",
+  "runs": {
+    "focused-feedback-transfer-20260918": {
+      "run": "focused-feedback-transfer-20260918",
+      "banks": 12,
+      "tasks": 576,
+      "policies": [
+        "e0",
+        "ordinary_e6",
+        "focused_e6",
+        "scrambled_e6",
+        "transform_mutation",
+        "random"
+      ],
+      "totals": {
+        "e0": 345,
+        "ordinary_e6": 343,
+        "focused_e6": 340,
+        "scrambled_e6": 340,
+        "transform_mutation": 334,
+        "random": 322
+      },
+      "best_fixed_policy": "e0",
+      "best_fixed_correct": 345,
+      "unavailable_best_whole_bank_correct": 350,
+      "whole_bank_selector_headroom": 5,
+      "unavailable_best_eight_individual_calls": 395,
+      "individual_call_placement_headroom": 50,
+      "by_bank": [
+        {
+          "seed": 902486,
+          "best_fixed": 27,
+          "best_catalog": 28,
+          "hindsight_eight": 32
+        },
+        {
+          "seed": 902487,
+          "best_fixed": 27,
+          "best_catalog": 28,
+          "hindsight_eight": 33
+        },
+        {
+          "seed": 902488,
+          "best_fixed": 29,
+          "best_catalog": 30,
+          "hindsight_eight": 34
+        },
+        {
+          "seed": 902489,
+          "best_fixed": 27,
+          "best_catalog": 27,
+          "hindsight_eight": 31
+        },
+        {
+          "seed": 902490,
+          "best_fixed": 27,
+          "best_catalog": 27,
+          "hindsight_eight": 32
+        },
+        {
+          "seed": 902491,
+          "best_fixed": 25,
+          "best_catalog": 25,
+          "hindsight_eight": 29
+        },
+        {
+          "seed": 902492,
+          "best_fixed": 28,
+          "best_catalog": 30,
+          "hindsight_eight": 33
+        },
+        {
+          "seed": 902493,
+          "best_fixed": 36,
+          "best_catalog": 36,
+          "hindsight_eight": 39
+        },
+        {
+          "seed": 902494,
+          "best_fixed": 28,
+          "best_catalog": 28,
+          "hindsight_eight": 31
+        },
+        {
+          "seed": 902495,
+          "best_fixed": 32,
+          "best_catalog": 32,
+          "hindsight_eight": 36
+        },
+        {
+          "seed": 902496,
+          "best_fixed": 28,
+          "best_catalog": 28,
+          "hindsight_eight": 30
+        },
+        {
+          "seed": 902497,
+          "best_fixed": 31,
+          "best_catalog": 31,
+          "hindsight_eight": 35
+        }
+      ]
+    },
+    "pairwise-query-transfer-20260918": {
+      "run": "pairwise-query-transfer-20260918",
+      "banks": 12,
+      "tasks": 576,
+      "policies": [
+        "e0",
+        "p0",
+        "p6",
+        "p18",
+        "scrambled_p18",
+        "ridge18_10",
+        "ridge18_100",
+        "transform_mutation",
+        "random"
+      ],
+      "totals": {
+        "e0": 338,
+        "p0": 335,
+        "p6": 331,
+        "p18": 339,
+        "scrambled_p18": 331,
+        "ridge18_10": 340,
+        "ridge18_100": 343,
+        "transform_mutation": 332,
+        "random": 324
+      },
+      "best_fixed_policy": "ridge18_100",
+      "best_fixed_correct": 343,
+      "unavailable_best_whole_bank_correct": 351,
+      "whole_bank_selector_headroom": 8,
+      "unavailable_best_eight_individual_calls": 391,
+      "individual_call_placement_headroom": 48,
+      "by_bank": [
+        {
+          "seed": 902498,
+          "best_fixed": 32,
+          "best_catalog": 33,
+          "hindsight_eight": 34
+        },
+        {
+          "seed": 902499,
+          "best_fixed": 28,
+          "best_catalog": 28,
+          "hindsight_eight": 31
+        },
+        {
+          "seed": 902500,
+          "best_fixed": 29,
+          "best_catalog": 31,
+          "hindsight_eight": 34
+        },
+        {
+          "seed": 902501,
+          "best_fixed": 26,
+          "best_catalog": 26,
+          "hindsight_eight": 30
+        },
+        {
+          "seed": 902502,
+          "best_fixed": 25,
+          "best_catalog": 26,
+          "hindsight_eight": 30
+        },
+        {
+          "seed": 902503,
+          "best_fixed": 33,
+          "best_catalog": 34,
+          "hindsight_eight": 38
+        },
+        {
+          "seed": 902504,
+          "best_fixed": 25,
+          "best_catalog": 26,
+          "hindsight_eight": 31
+        },
+        {
+          "seed": 902505,
+          "best_fixed": 33,
+          "best_catalog": 33,
+          "hindsight_eight": 35
+        },
+        {
+          "seed": 902506,
+          "best_fixed": 26,
+          "best_catalog": 26,
+          "hindsight_eight": 30
+        },
+        {
+          "seed": 902507,
+          "best_fixed": 28,
+          "best_catalog": 29,
+          "hindsight_eight": 35
+        },
+        {
+          "seed": 902508,
+          "best_fixed": 29,
+          "best_catalog": 30,
+          "hindsight_eight": 32
+        },
+        {
+          "seed": 902509,
+          "best_fixed": 29,
+          "best_catalog": 29,
+          "hindsight_eight": 31
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Best whole-bank policy uses unavailable final labels.",
+    "Individual-call hindsight also uses unavailable labels and is a different action class.",
+    "Catalog headroom depends on the tested policy set and does not bound new edits."
+  ]
+}

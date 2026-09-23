@@ -1,0 +1,600 @@
+{
+  "scope": "opened development only; weighting rule needs fresh transfer",
+  "source_tasks": 2304,
+  "opened_validation_tasks": 576,
+  "weights": {
+    "first2_only": [
+      0.0,
+      0.0
+    ],
+    "all_equal": [
+      1.0,
+      1.0
+    ],
+    "downweight_third_half": [
+      0.5,
+      1.0
+    ],
+    "downweight_third_quarter": [
+      0.25,
+      1.0
+    ],
+    "skip_third": [
+      0.0,
+      1.0
+    ],
+    "downweight_fourth_half": [
+      1.0,
+      0.5
+    ],
+    "both_half": [
+      0.5,
+      0.5
+    ]
+  },
+  "cv_totals": {
+    "first2_only": 1486,
+    "all_equal": 1488,
+    "downweight_third_half": 1489,
+    "downweight_third_quarter": 1486,
+    "skip_third": 1486,
+    "downweight_fourth_half": 1484,
+    "both_half": 1488
+  },
+  "cv_comparisons": {
+    "first2_only": {
+      "gain_vs_equal": -2,
+      "interval": [
+        -12,
+        7
+      ]
+    },
+    "downweight_third_half": {
+      "gain_vs_equal": 1,
+      "interval": [
+        -3,
+        5
+      ]
+    },
+    "downweight_third_quarter": {
+      "gain_vs_equal": -2,
+      "interval": [
+        -9,
+        5
+      ]
+    },
+    "skip_third": {
+      "gain_vs_equal": -2,
+      "interval": [
+        -10,
+        6
+      ]
+    },
+    "downweight_fourth_half": {
+      "gain_vs_equal": -4,
+      "interval": [
+        -10,
+        2
+      ]
+    },
+    "both_half": {
+      "gain_vs_equal": 0,
+      "interval": [
+        -6,
+        6
+      ]
+    }
+  },
+  "opened_fifth": {
+    "first2_only": {
+      "correct": 378,
+      "mse": 0.12596884814717024
+    },
+    "all_equal": {
+      "correct": 380,
+      "mse": 0.12372286215497891
+    },
+    "downweight_third_half": {
+      "correct": 378,
+      "mse": 0.12390955382828728
+    },
+    "downweight_third_quarter": {
+      "correct": 376,
+      "mse": 0.12408998345842795
+    },
+    "skip_third": {
+      "correct": 377,
+      "mse": 0.12436373443995853
+    },
+    "downweight_fourth_half": {
+      "correct": 379,
+      "mse": 0.12419261948849449
+    },
+    "both_half": {
+      "correct": 379,
+      "mse": 0.12436946496907383
+    }
+  },
+  "cv_by_bank": [
+    {
+      "seed": 902510,
+      "first2_only": 33,
+      "all_equal": 33,
+      "downweight_third_half": 33,
+      "downweight_third_quarter": 33,
+      "skip_third": 33,
+      "downweight_fourth_half": 33,
+      "both_half": 33
+    },
+    {
+      "seed": 902511,
+      "first2_only": 25,
+      "all_equal": 25,
+      "downweight_third_half": 25,
+      "downweight_third_quarter": 25,
+      "skip_third": 25,
+      "downweight_fourth_half": 24,
+      "both_half": 25
+    },
+    {
+      "seed": 902512,
+      "first2_only": 31,
+      "all_equal": 31,
+      "downweight_third_half": 31,
+      "downweight_third_quarter": 31,
+      "skip_third": 31,
+      "downweight_fourth_half": 31,
+      "both_half": 31
+    },
+    {
+      "seed": 902513,
+      "first2_only": 26,
+      "all_equal": 26,
+      "downweight_third_half": 26,
+      "downweight_third_quarter": 26,
+      "skip_third": 26,
+      "downweight_fourth_half": 26,
+      "both_half": 26
+    },
+    {
+      "seed": 902514,
+      "first2_only": 32,
+      "all_equal": 32,
+      "downweight_third_half": 32,
+      "downweight_third_quarter": 32,
+      "skip_third": 32,
+      "downweight_fourth_half": 32,
+      "both_half": 32
+    },
+    {
+      "seed": 902515,
+      "first2_only": 27,
+      "all_equal": 29,
+      "downweight_third_half": 29,
+      "downweight_third_quarter": 28,
+      "skip_third": 28,
+      "downweight_fourth_half": 29,
+      "both_half": 29
+    },
+    {
+      "seed": 902516,
+      "first2_only": 31,
+      "all_equal": 31,
+      "downweight_third_half": 31,
+      "downweight_third_quarter": 31,
+      "skip_third": 31,
+      "downweight_fourth_half": 31,
+      "both_half": 31
+    },
+    {
+      "seed": 902517,
+      "first2_only": 30,
+      "all_equal": 29,
+      "downweight_third_half": 29,
+      "downweight_third_quarter": 29,
+      "skip_third": 29,
+      "downweight_fourth_half": 30,
+      "both_half": 29
+    },
+    {
+      "seed": 902518,
+      "first2_only": 31,
+      "all_equal": 32,
+      "downweight_third_half": 32,
+      "downweight_third_quarter": 32,
+      "skip_third": 32,
+      "downweight_fourth_half": 32,
+      "both_half": 32
+    },
+    {
+      "seed": 902519,
+      "first2_only": 32,
+      "all_equal": 32,
+      "downweight_third_half": 32,
+      "downweight_third_quarter": 32,
+      "skip_third": 32,
+      "downweight_fourth_half": 32,
+      "both_half": 32
+    },
+    {
+      "seed": 902520,
+      "first2_only": 29,
+      "all_equal": 29,
+      "downweight_third_half": 29,
+      "downweight_third_quarter": 29,
+      "skip_third": 29,
+      "downweight_fourth_half": 29,
+      "both_half": 29
+    },
+    {
+      "seed": 902521,
+      "first2_only": 36,
+      "all_equal": 36,
+      "downweight_third_half": 36,
+      "downweight_third_quarter": 36,
+      "skip_third": 36,
+      "downweight_fourth_half": 37,
+      "both_half": 36
+    },
+    {
+      "seed": 902522,
+      "first2_only": 29,
+      "all_equal": 29,
+      "downweight_third_half": 29,
+      "downweight_third_quarter": 29,
+      "skip_third": 29,
+      "downweight_fourth_half": 29,
+      "both_half": 29
+    },
+    {
+      "seed": 902523,
+      "first2_only": 27,
+      "all_equal": 27,
+      "downweight_third_half": 27,
+      "downweight_third_quarter": 27,
+      "skip_third": 26,
+      "downweight_fourth_half": 27,
+      "both_half": 27
+    },
+    {
+      "seed": 902524,
+      "first2_only": 30,
+      "all_equal": 30,
+      "downweight_third_half": 30,
+      "downweight_third_quarter": 30,
+      "skip_third": 30,
+      "downweight_fourth_half": 30,
+      "both_half": 30
+    },
+    {
+      "seed": 902525,
+      "first2_only": 28,
+      "all_equal": 29,
+      "downweight_third_half": 30,
+      "downweight_third_quarter": 30,
+      "skip_third": 30,
+      "downweight_fourth_half": 28,
+      "both_half": 28
+    },
+    {
+      "seed": 902526,
+      "first2_only": 31,
+      "all_equal": 31,
+      "downweight_third_half": 31,
+      "downweight_third_quarter": 31,
+      "skip_third": 31,
+      "downweight_fourth_half": 31,
+      "both_half": 31
+    },
+    {
+      "seed": 902527,
+      "first2_only": 34,
+      "all_equal": 34,
+      "downweight_third_half": 33,
+      "downweight_third_quarter": 33,
+      "skip_third": 33,
+      "downweight_fourth_half": 33,
+      "both_half": 34
+    },
+    {
+      "seed": 902528,
+      "first2_only": 28,
+      "all_equal": 28,
+      "downweight_third_half": 28,
+      "downweight_third_quarter": 28,
+      "skip_third": 28,
+      "downweight_fourth_half": 28,
+      "both_half": 28
+    },
+    {
+      "seed": 902529,
+      "first2_only": 27,
+      "all_equal": 28,
+      "downweight_third_half": 28,
+      "downweight_third_quarter": 28,
+      "skip_third": 28,
+      "downweight_fourth_half": 27,
+      "both_half": 27
+    },
+    {
+      "seed": 902530,
+      "first2_only": 35,
+      "all_equal": 35,
+      "downweight_third_half": 35,
+      "downweight_third_quarter": 35,
+      "skip_third": 35,
+      "downweight_fourth_half": 35,
+      "both_half": 35
+    },
+    {
+      "seed": 902531,
+      "first2_only": 26,
+      "all_equal": 27,
+      "downweight_third_half": 27,
+      "downweight_third_quarter": 28,
+      "skip_third": 28,
+      "downweight_fourth_half": 26,
+      "both_half": 26
+    },
+    {
+      "seed": 902532,
+      "first2_only": 33,
+      "all_equal": 35,
+      "downweight_third_half": 35,
+      "downweight_third_quarter": 34,
+      "skip_third": 34,
+      "downweight_fourth_half": 35,
+      "both_half": 34
+    },
+    {
+      "seed": 902533,
+      "first2_only": 32,
+      "all_equal": 32,
+      "downweight_third_half": 32,
+      "downweight_third_quarter": 31,
+      "skip_third": 31,
+      "downweight_fourth_half": 32,
+      "both_half": 32
+    },
+    {
+      "seed": 902534,
+      "first2_only": 31,
+      "all_equal": 30,
+      "downweight_third_half": 31,
+      "downweight_third_quarter": 31,
+      "skip_third": 31,
+      "downweight_fourth_half": 30,
+      "both_half": 31
+    },
+    {
+      "seed": 902535,
+      "first2_only": 29,
+      "all_equal": 28,
+      "downweight_third_half": 28,
+      "downweight_third_quarter": 29,
+      "skip_third": 29,
+      "downweight_fourth_half": 28,
+      "both_half": 29
+    },
+    {
+      "seed": 902536,
+      "first2_only": 32,
+      "all_equal": 32,
+      "downweight_third_half": 32,
+      "downweight_third_quarter": 32,
+      "skip_third": 32,
+      "downweight_fourth_half": 32,
+      "both_half": 32
+    },
+    {
+      "seed": 902537,
+      "first2_only": 35,
+      "all_equal": 35,
+      "downweight_third_half": 35,
+      "downweight_third_quarter": 35,
+      "skip_third": 35,
+      "downweight_fourth_half": 35,
+      "both_half": 35
+    },
+    {
+      "seed": 902538,
+      "first2_only": 31,
+      "all_equal": 31,
+      "downweight_third_half": 31,
+      "downweight_third_quarter": 30,
+      "skip_third": 30,
+      "downweight_fourth_half": 31,
+      "both_half": 31
+    },
+    {
+      "seed": 902539,
+      "first2_only": 31,
+      "all_equal": 31,
+      "downweight_third_half": 31,
+      "downweight_third_quarter": 31,
+      "skip_third": 31,
+      "downweight_fourth_half": 31,
+      "both_half": 31
+    },
+    {
+      "seed": 902540,
+      "first2_only": 33,
+      "all_equal": 33,
+      "downweight_third_half": 33,
+      "downweight_third_quarter": 32,
+      "skip_third": 32,
+      "downweight_fourth_half": 32,
+      "both_half": 33
+    },
+    {
+      "seed": 902541,
+      "first2_only": 31,
+      "all_equal": 31,
+      "downweight_third_half": 31,
+      "downweight_third_quarter": 31,
+      "skip_third": 31,
+      "downweight_fourth_half": 31,
+      "both_half": 31
+    },
+    {
+      "seed": 902542,
+      "first2_only": 36,
+      "all_equal": 36,
+      "downweight_third_half": 36,
+      "downweight_third_quarter": 36,
+      "skip_third": 36,
+      "downweight_fourth_half": 36,
+      "both_half": 36
+    },
+    {
+      "seed": 902543,
+      "first2_only": 33,
+      "all_equal": 32,
+      "downweight_third_half": 32,
+      "downweight_third_quarter": 32,
+      "skip_third": 33,
+      "downweight_fourth_half": 32,
+      "both_half": 33
+    },
+    {
+      "seed": 902544,
+      "first2_only": 36,
+      "all_equal": 36,
+      "downweight_third_half": 36,
+      "downweight_third_quarter": 36,
+      "skip_third": 36,
+      "downweight_fourth_half": 36,
+      "both_half": 36
+    },
+    {
+      "seed": 902545,
+      "first2_only": 31,
+      "all_equal": 31,
+      "downweight_third_half": 31,
+      "downweight_third_quarter": 31,
+      "skip_third": 31,
+      "downweight_fourth_half": 31,
+      "both_half": 31
+    },
+    {
+      "seed": 902546,
+      "first2_only": 34,
+      "all_equal": 34,
+      "downweight_third_half": 34,
+      "downweight_third_quarter": 34,
+      "skip_third": 34,
+      "downweight_fourth_half": 34,
+      "both_half": 34
+    },
+    {
+      "seed": 902547,
+      "first2_only": 32,
+      "all_equal": 31,
+      "downweight_third_half": 31,
+      "downweight_third_quarter": 31,
+      "skip_third": 31,
+      "downweight_fourth_half": 31,
+      "both_half": 31
+    },
+    {
+      "seed": 902548,
+      "first2_only": 30,
+      "all_equal": 29,
+      "downweight_third_half": 29,
+      "downweight_third_quarter": 30,
+      "skip_third": 30,
+      "downweight_fourth_half": 29,
+      "both_half": 29
+    },
+    {
+      "seed": 902549,
+      "first2_only": 30,
+      "all_equal": 29,
+      "downweight_third_half": 29,
+      "downweight_third_quarter": 29,
+      "skip_third": 29,
+      "downweight_fourth_half": 29,
+      "both_half": 29
+    },
+    {
+      "seed": 902550,
+      "first2_only": 30,
+      "all_equal": 30,
+      "downweight_third_half": 30,
+      "downweight_third_quarter": 30,
+      "skip_third": 30,
+      "downweight_fourth_half": 29,
+      "both_half": 30
+    },
+    {
+      "seed": 902551,
+      "first2_only": 32,
+      "all_equal": 32,
+      "downweight_third_half": 32,
+      "downweight_third_quarter": 32,
+      "skip_third": 32,
+      "downweight_fourth_half": 32,
+      "both_half": 32
+    },
+    {
+      "seed": 902552,
+      "first2_only": 29,
+      "all_equal": 28,
+      "downweight_third_half": 29,
+      "downweight_third_quarter": 29,
+      "skip_third": 29,
+      "downweight_fourth_half": 28,
+      "both_half": 28
+    },
+    {
+      "seed": 902553,
+      "first2_only": 34,
+      "all_equal": 34,
+      "downweight_third_half": 34,
+      "downweight_third_quarter": 34,
+      "skip_third": 33,
+      "downweight_fourth_half": 34,
+      "both_half": 34
+    },
+    {
+      "seed": 902554,
+      "first2_only": 29,
+      "all_equal": 30,
+      "downweight_third_half": 30,
+      "downweight_third_quarter": 29,
+      "skip_third": 29,
+      "downweight_fourth_half": 30,
+      "both_half": 30
+    },
+    {
+      "seed": 902555,
+      "first2_only": 27,
+      "all_equal": 26,
+      "downweight_third_half": 26,
+      "downweight_third_quarter": 26,
+      "skip_third": 27,
+      "downweight_fourth_half": 27,
+      "both_half": 27
+    },
+    {
+      "seed": 902556,
+      "first2_only": 32,
+      "all_equal": 33,
+      "downweight_third_half": 32,
+      "downweight_third_quarter": 32,
+      "skip_third": 32,
+      "downweight_fourth_half": 33,
+      "both_half": 33
+    },
+    {
+      "seed": 902557,
+      "first2_only": 35,
+      "all_equal": 36,
+      "downweight_third_half": 36,
+      "downweight_third_quarter": 36,
+      "skip_third": 36,
+      "downweight_fourth_half": 36,
+      "both_half": 36
+    }
+  ]
+}

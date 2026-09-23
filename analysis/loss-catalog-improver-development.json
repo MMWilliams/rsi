@@ -1,0 +1,5818 @@
+{
+  "summary": {
+    "scope": "development only; source whole-task cross-validation",
+    "device": "cuda",
+    "source_tasks": 192,
+    "source_candidate_labels": 31500,
+    "folds": 2,
+    "training_fits": 10,
+    "epochs_per_fit": 120,
+    "validation_correct": {
+      "0.25": 125,
+      "0.5": 125,
+      "1.0": 124,
+      "2.0": 116,
+      "4.0": 108
+    },
+    "selected_temperature": 0.25,
+    "wall_seconds": 425.372329899983
+  },
+  "by_fold": [
+    {
+      "fold": 0,
+      "training_tasks": 105,
+      "validation_tasks": 87,
+      "correct": {
+        "0.25": 59,
+        "0.5": 60,
+        "1.0": 62,
+        "2.0": 62,
+        "4.0": 59
+      }
+    },
+    {
+      "fold": 1,
+      "training_tasks": 87,
+      "validation_tasks": 105,
+      "correct": {
+        "0.25": 66,
+        "0.5": 65,
+        "1.0": 62,
+        "2.0": 54,
+        "4.0": 49
+      }
+    }
+  ],
+  "validation": {
+    "0.25": [
+      {
+        "id": "d43f8409444fc94f7b6a59d4",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "b491d02fa42250ca2784b955",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "b00711d6967b73cd422717d1",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "0d7dd227322e2390226760ce",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "b5f1eb4cd98c8e95832b5230",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c403da9eef9c7ce99e230b76",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "d6ef684809435983072df9da",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "5ba08ae01b11d85d6556acae",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "b96d23e9f927da75ed2c14c0",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "a0ec9a7964dc29386c205ccb",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "31a45b52b1ab5319f0122d55",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "d35d073aca58c26b59f9c297",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "225ef72cdb617202c51fa80f",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "0f15cc977c806e04359e53c8",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e074dceef5e97306f3117a6e",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "2e74457682ef3b8ff6679a5c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "33c4147140b70d5570a9b31f",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "651bdf6d6eeaad344f8ee480",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "94ad3cd775deefab3a5e76b4",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "818ae8b6e35e20b6005c00d3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "ebbf65f4b2e6c9d89fcace45",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "2fe99ada2c565066bcadcde0",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "4aff927f56b67899a21c97db",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "91e756cdf153e1007fa7bfaf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "49ef4e0a69b85c6974095a11",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "8188ccba10a814becf9f1cd1",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "6b8f53ca4ec56a48595295ab",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "e49f1eefd00f0de651cbc1a0",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "0b1c740ba9df5e21a2325dad",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8cc5cbe25aa6e5e7b41df7c7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "2affa91fc53ffce7b5f4e5bf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "342c161a25909a2651ef97aa",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "aec4de07fe42db264fe92246",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "591d2a23332e2689cb126c4d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "bb432a5c51b302a31d56b1bc",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "42355faed8976e302321d2f9",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "6f2969b5540a5478c7d88e17",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "c4eb321b972bc7a0229b7803",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "949045595ced8f739e695f65",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "808bef0d5731137bc52c343a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "9722a0853a2b39f8627f7d7f",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "cecf3a2bdab6eb6ba3578165",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "73de953002e3e151c92a0f4f",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "dfb09ba304b39d013c0879a0",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "e0b51450a96168f939ed9064",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "e09feb245c1e583a9a0c514f",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "bed22b6ada409f007e13f476",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "a34206e5e81183b810fb55a2",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "bd2e4e4e94ec374450d2fb7a",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "32c641a6fab88bdd62551270",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "37f3daf3eb77eef1b038e14d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "ef0d8ff4aa5f8e55a441f8cc",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "f072a3851ba49a4d91fe6457",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "6371dd29589fab840ddeddfd",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "4dc1e57901f17b1e5559988b",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "1adc95218c2ed3507075a40b",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "2a59ef648d62e7214f24efb7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "52d71eb77a2901a0cf108231",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "796b3594d095a95ec0974a40",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "234720acb6bacf8da053dc52",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "cd6228562cca38623c307358",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "a53a542b15a2515967cb6299",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "124abfb1d4db6add91fdbd3d",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "72f8ffee886911c5baeafbbd",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "7dfe57d19f3c8d8a85fa49cf",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "fb45178c1746508d304c912c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "36178ffd26c73c7c0f666715",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "91767494838ed699d6157857",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "5bef8b3e1e24a18457a464ba",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "8d0f48018a4009171c7c4e50",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "d07c867dd6717aef4ec1d8c0",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "437533dfd85475073e9b27c6",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "43ea4ba17f44b93c54d2d04c",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "84e47dc2bf8ae4f1a2d747da",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "8e43dd667e437850a18057dd",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "7e11da0d857485aa2bf83dba",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "0cb635ca64a7b66cd7190e79",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "efd6993bd2bbb82b074d0ab4",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "3bfafb943297a9e24ee240b6",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "0d468f2b6592b562cb0efee8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "38dccf6197fd782854470b0a",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "6337cd1502bcb293602fa3b7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e1159ebd61ffa3e3815a0af8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "9051f4a675f625133b99970d",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "40e4be1420b606e635186a2c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "f16e43c4634f0dfc7d84f0d4",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "83d3cc4112b849f4fd6d9bf7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "4efbe4f429bfb6f1f222fac3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "3e11c6bdc49589828d1cfd0a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "b0ab9964bbddebf69d9e7ab8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8de9bd29b5487a7fd081b7f1",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "0ca1d67b649106fe34e747dc",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "064d4dc9cdaeb8f224a7aade",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "c12501ffd3c8f6ee0bd613b1",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "19846444da3cb135cd8aff88",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "b32bce1b1e0d97a0f58a9f6e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "1f70041193345ad935528d1d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "45f7c81de22db48b4cdf025d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "023cf0af04d63d118af036c8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "f001dd4426e40746676c7db5",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "1d076ab4f0798022b9a31513",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "80a83719d4529749dd234c90",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "9df88f2f66b08fe00ab46a45",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "72b281ce6b5bf36751a2daaf",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "5c6c6bef701ea2ce5364aa04",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "c738013f93af528592b1db08",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e7ea6d7ad87cf9f1124cbcbc",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c9d558ca8053842fb7a23caa",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "0c862ff5f217fd1ca68f2c92",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "b017a90e1b312ec358326a50",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "2679a54f516da8ab73f4e691",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "1f4cc3641c0371d49e1b6b13",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "afb44ce36e3d43709a3c80d6",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "82af7d862a29f61fb3a26f7d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c53e9f67d1fbcd7a130be6dc",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "a9b8455be934f97426c43755",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "3c2253e5174c85a315a79161",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "eea910dba470924ebe8977c9",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "672f4a0ca615d818d828d19c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "a6108239f5a04caf36aa5a40",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "08a5f07d968aa4a9d55997b0",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "b7c682819aaa50c39120abb9",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "71a5d718535c13eb630d2753",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "955dbf05736b39a9f6081343",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "27b2e76810813ef64ea30c4e",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "7e92945886cd91c9e593ae4a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "e2e995cd94c3f5d4a4fee8d8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "8621488774587c4708c85e06",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "cab124fa450ab5bc9b78ef75",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "35a9d88d30ee22d0282c1ed3",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8f706f2fb4c0e9d4ac5fdf4f",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "1df9ad02fcaa045a195cc5ac",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "5f73d33d783e71e5b5577e36",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c23f10f0729c762b74f2a4a3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "1b8b53fd5df190a94f0df443",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "fc66bfd43de29eb9eb71a4fb",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "e14d75880308eda42b226645",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "70a7b9a175f85ea465811db5",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "c933d193c5e3855f6502d2e8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "ca7affbff6b4504f1605640a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "f6d0c27e193e9faa88ca0883",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "caedf02eeb9f1a8b73573cb5",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "df1a54c5b31c24dc1ffeffbb",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "77cea93903607ed082073265",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c8bf2dd35bc48d9b1ae1e803",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "ab9f5de8c0c89582b093763e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "b9a1a260320bb992b1393884",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "6342c8c54ae508da64ab9c22",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "46fbabbd7b87ae03da9af1af",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c33ab6d969ea6a64e118ff4e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "6ab57f1af7890f3a6976922a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "1c473edbcb8d73a17b264a5e",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "d19b0002c4e42566d5c8bd80",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "4748233f1f73f607797b1172",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "2ddd3b1e0f90fec4524460da",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "19fdfd030bf75a47ba0498e6",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "fc88ceef86b1a835353886f3",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "1486ffcf7d6c66e105d32c74",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "ab8696961bb879974966a754",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "cf3705248d7515a4dafcf174",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "21913e11def52f6c04f5a022",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e587a9cb571e8a456b8d72ce",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "8315dbe2e7cdbff5f08be72e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "75bae88491bc9f8ad6b4f58e",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "8b7f0dc3b59ba242049b2825",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "ceac8bc4aeef184ca9a6cac1",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "914e18c1f5575113288dd2cf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "702390425c5cab3210b97499",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "d85457dbe03faad3ba6ac782",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "aaf057f0f42fe6d29ed13e7b",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "cfb1c474ee9f6255fcdd65a3",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "0a1d9746f02dd8f54a19cb0d",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "1029eed69b1322a44087928f",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "4593a14e1fd9a9263864b2cf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8e01663553cb724b84ed6974",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "33e4c1b128e7c2b721016944",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "2b33210bfeb04987111a51e8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "759be9168a8d9a48bb7e8429",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "a6b7c901d2804fc504cc565b",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "f77b925c61fd1eb9bc1be751",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "90418e5c66886686b7cb0bfa",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "a9b18de1c5e79de7dc24d7a0",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "bb152d211e0331a0a8dbaec4",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "a155892ea839e9f89e9e046a",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "8ce81851c0830be73934fa73",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "9c987dd8a825b067a3509da3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "f8052c2bb6084a2c4f331fbb",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "62b02daa8a908cb60397c456",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "13ed1d1df44813051bcebe5f",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8cd04a6b12597b6d23785b83",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "a4493479acc862b44f77a8b9",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "74342eb75eae9520360c0c63",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      }
+    ],
+    "0.5": [
+      {
+        "id": "d43f8409444fc94f7b6a59d4",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "b491d02fa42250ca2784b955",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "b00711d6967b73cd422717d1",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "0d7dd227322e2390226760ce",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "b5f1eb4cd98c8e95832b5230",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c403da9eef9c7ce99e230b76",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "d6ef684809435983072df9da",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "5ba08ae01b11d85d6556acae",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "b96d23e9f927da75ed2c14c0",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "a0ec9a7964dc29386c205ccb",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "31a45b52b1ab5319f0122d55",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "d35d073aca58c26b59f9c297",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "225ef72cdb617202c51fa80f",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "0f15cc977c806e04359e53c8",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e074dceef5e97306f3117a6e",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "2e74457682ef3b8ff6679a5c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "33c4147140b70d5570a9b31f",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "651bdf6d6eeaad344f8ee480",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "94ad3cd775deefab3a5e76b4",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "818ae8b6e35e20b6005c00d3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "ebbf65f4b2e6c9d89fcace45",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "2fe99ada2c565066bcadcde0",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "4aff927f56b67899a21c97db",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "91e756cdf153e1007fa7bfaf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "49ef4e0a69b85c6974095a11",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "8188ccba10a814becf9f1cd1",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "6b8f53ca4ec56a48595295ab",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "e49f1eefd00f0de651cbc1a0",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "0b1c740ba9df5e21a2325dad",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8cc5cbe25aa6e5e7b41df7c7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "2affa91fc53ffce7b5f4e5bf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "342c161a25909a2651ef97aa",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "aec4de07fe42db264fe92246",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "591d2a23332e2689cb126c4d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "bb432a5c51b302a31d56b1bc",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "42355faed8976e302321d2f9",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "6f2969b5540a5478c7d88e17",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "c4eb321b972bc7a0229b7803",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "949045595ced8f739e695f65",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "808bef0d5731137bc52c343a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "9722a0853a2b39f8627f7d7f",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "cecf3a2bdab6eb6ba3578165",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "73de953002e3e151c92a0f4f",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "dfb09ba304b39d013c0879a0",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "e0b51450a96168f939ed9064",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "e09feb245c1e583a9a0c514f",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "bed22b6ada409f007e13f476",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "a34206e5e81183b810fb55a2",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "bd2e4e4e94ec374450d2fb7a",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "32c641a6fab88bdd62551270",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "37f3daf3eb77eef1b038e14d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "ef0d8ff4aa5f8e55a441f8cc",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "f072a3851ba49a4d91fe6457",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "6371dd29589fab840ddeddfd",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "4dc1e57901f17b1e5559988b",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "1adc95218c2ed3507075a40b",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "2a59ef648d62e7214f24efb7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "52d71eb77a2901a0cf108231",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "796b3594d095a95ec0974a40",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "234720acb6bacf8da053dc52",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "cd6228562cca38623c307358",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "a53a542b15a2515967cb6299",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "124abfb1d4db6add91fdbd3d",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "72f8ffee886911c5baeafbbd",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "7dfe57d19f3c8d8a85fa49cf",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "fb45178c1746508d304c912c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "36178ffd26c73c7c0f666715",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "91767494838ed699d6157857",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "5bef8b3e1e24a18457a464ba",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "8d0f48018a4009171c7c4e50",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "d07c867dd6717aef4ec1d8c0",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "437533dfd85475073e9b27c6",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "43ea4ba17f44b93c54d2d04c",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "84e47dc2bf8ae4f1a2d747da",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "8e43dd667e437850a18057dd",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "7e11da0d857485aa2bf83dba",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "0cb635ca64a7b66cd7190e79",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "efd6993bd2bbb82b074d0ab4",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "3bfafb943297a9e24ee240b6",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "0d468f2b6592b562cb0efee8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "38dccf6197fd782854470b0a",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "6337cd1502bcb293602fa3b7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e1159ebd61ffa3e3815a0af8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "9051f4a675f625133b99970d",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "40e4be1420b606e635186a2c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "f16e43c4634f0dfc7d84f0d4",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "83d3cc4112b849f4fd6d9bf7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "4efbe4f429bfb6f1f222fac3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "3e11c6bdc49589828d1cfd0a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "b0ab9964bbddebf69d9e7ab8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8de9bd29b5487a7fd081b7f1",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "0ca1d67b649106fe34e747dc",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "064d4dc9cdaeb8f224a7aade",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "c12501ffd3c8f6ee0bd613b1",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "19846444da3cb135cd8aff88",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "b32bce1b1e0d97a0f58a9f6e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "1f70041193345ad935528d1d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "45f7c81de22db48b4cdf025d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "023cf0af04d63d118af036c8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "f001dd4426e40746676c7db5",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "1d076ab4f0798022b9a31513",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "80a83719d4529749dd234c90",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "9df88f2f66b08fe00ab46a45",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "72b281ce6b5bf36751a2daaf",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "5c6c6bef701ea2ce5364aa04",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "c738013f93af528592b1db08",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e7ea6d7ad87cf9f1124cbcbc",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c9d558ca8053842fb7a23caa",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "0c862ff5f217fd1ca68f2c92",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "b017a90e1b312ec358326a50",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "2679a54f516da8ab73f4e691",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "1f4cc3641c0371d49e1b6b13",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "afb44ce36e3d43709a3c80d6",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "82af7d862a29f61fb3a26f7d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "c53e9f67d1fbcd7a130be6dc",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "a9b8455be934f97426c43755",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "3c2253e5174c85a315a79161",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "eea910dba470924ebe8977c9",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "672f4a0ca615d818d828d19c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "a6108239f5a04caf36aa5a40",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "08a5f07d968aa4a9d55997b0",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "b7c682819aaa50c39120abb9",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "71a5d718535c13eb630d2753",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "955dbf05736b39a9f6081343",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "27b2e76810813ef64ea30c4e",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "7e92945886cd91c9e593ae4a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "e2e995cd94c3f5d4a4fee8d8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "8621488774587c4708c85e06",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "cab124fa450ab5bc9b78ef75",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "35a9d88d30ee22d0282c1ed3",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8f706f2fb4c0e9d4ac5fdf4f",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "1df9ad02fcaa045a195cc5ac",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "5f73d33d783e71e5b5577e36",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c23f10f0729c762b74f2a4a3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "1b8b53fd5df190a94f0df443",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "fc66bfd43de29eb9eb71a4fb",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "e14d75880308eda42b226645",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "70a7b9a175f85ea465811db5",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "c933d193c5e3855f6502d2e8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "ca7affbff6b4504f1605640a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "f6d0c27e193e9faa88ca0883",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "caedf02eeb9f1a8b73573cb5",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "df1a54c5b31c24dc1ffeffbb",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "77cea93903607ed082073265",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c8bf2dd35bc48d9b1ae1e803",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "ab9f5de8c0c89582b093763e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "b9a1a260320bb992b1393884",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "6342c8c54ae508da64ab9c22",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "46fbabbd7b87ae03da9af1af",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c33ab6d969ea6a64e118ff4e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "6ab57f1af7890f3a6976922a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "1c473edbcb8d73a17b264a5e",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "d19b0002c4e42566d5c8bd80",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "4748233f1f73f607797b1172",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "2ddd3b1e0f90fec4524460da",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "19fdfd030bf75a47ba0498e6",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "fc88ceef86b1a835353886f3",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "1486ffcf7d6c66e105d32c74",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "ab8696961bb879974966a754",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "cf3705248d7515a4dafcf174",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "21913e11def52f6c04f5a022",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e587a9cb571e8a456b8d72ce",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "8315dbe2e7cdbff5f08be72e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "75bae88491bc9f8ad6b4f58e",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "8b7f0dc3b59ba242049b2825",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "ceac8bc4aeef184ca9a6cac1",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "914e18c1f5575113288dd2cf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "702390425c5cab3210b97499",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "d85457dbe03faad3ba6ac782",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "aaf057f0f42fe6d29ed13e7b",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "cfb1c474ee9f6255fcdd65a3",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "0a1d9746f02dd8f54a19cb0d",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "1029eed69b1322a44087928f",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "4593a14e1fd9a9263864b2cf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8e01663553cb724b84ed6974",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "33e4c1b128e7c2b721016944",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "2b33210bfeb04987111a51e8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "759be9168a8d9a48bb7e8429",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "a6b7c901d2804fc504cc565b",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "f77b925c61fd1eb9bc1be751",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "90418e5c66886686b7cb0bfa",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "a9b18de1c5e79de7dc24d7a0",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "bb152d211e0331a0a8dbaec4",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "a155892ea839e9f89e9e046a",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "8ce81851c0830be73934fa73",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "9c987dd8a825b067a3509da3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "f8052c2bb6084a2c4f331fbb",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "62b02daa8a908cb60397c456",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "13ed1d1df44813051bcebe5f",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8cd04a6b12597b6d23785b83",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "a4493479acc862b44f77a8b9",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "74342eb75eae9520360c0c63",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      }
+    ],
+    "1.0": [
+      {
+        "id": "d43f8409444fc94f7b6a59d4",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "b491d02fa42250ca2784b955",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "b00711d6967b73cd422717d1",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "0d7dd227322e2390226760ce",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "b5f1eb4cd98c8e95832b5230",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c403da9eef9c7ce99e230b76",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "d6ef684809435983072df9da",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "5ba08ae01b11d85d6556acae",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "b96d23e9f927da75ed2c14c0",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "a0ec9a7964dc29386c205ccb",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "31a45b52b1ab5319f0122d55",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "d35d073aca58c26b59f9c297",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "225ef72cdb617202c51fa80f",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "0f15cc977c806e04359e53c8",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e074dceef5e97306f3117a6e",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "2e74457682ef3b8ff6679a5c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "33c4147140b70d5570a9b31f",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "651bdf6d6eeaad344f8ee480",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "94ad3cd775deefab3a5e76b4",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "818ae8b6e35e20b6005c00d3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "ebbf65f4b2e6c9d89fcace45",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "2fe99ada2c565066bcadcde0",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "4aff927f56b67899a21c97db",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "91e756cdf153e1007fa7bfaf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "49ef4e0a69b85c6974095a11",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "8188ccba10a814becf9f1cd1",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "6b8f53ca4ec56a48595295ab",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "e49f1eefd00f0de651cbc1a0",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "0b1c740ba9df5e21a2325dad",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8cc5cbe25aa6e5e7b41df7c7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "2affa91fc53ffce7b5f4e5bf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "342c161a25909a2651ef97aa",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "aec4de07fe42db264fe92246",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "591d2a23332e2689cb126c4d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "bb432a5c51b302a31d56b1bc",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "42355faed8976e302321d2f9",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "6f2969b5540a5478c7d88e17",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "c4eb321b972bc7a0229b7803",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "949045595ced8f739e695f65",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "808bef0d5731137bc52c343a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "9722a0853a2b39f8627f7d7f",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "cecf3a2bdab6eb6ba3578165",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "73de953002e3e151c92a0f4f",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "dfb09ba304b39d013c0879a0",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "e0b51450a96168f939ed9064",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "e09feb245c1e583a9a0c514f",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "bed22b6ada409f007e13f476",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "a34206e5e81183b810fb55a2",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "bd2e4e4e94ec374450d2fb7a",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "32c641a6fab88bdd62551270",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "37f3daf3eb77eef1b038e14d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "ef0d8ff4aa5f8e55a441f8cc",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "f072a3851ba49a4d91fe6457",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "6371dd29589fab840ddeddfd",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "4dc1e57901f17b1e5559988b",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "1adc95218c2ed3507075a40b",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "2a59ef648d62e7214f24efb7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "52d71eb77a2901a0cf108231",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "796b3594d095a95ec0974a40",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "234720acb6bacf8da053dc52",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "cd6228562cca38623c307358",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "a53a542b15a2515967cb6299",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "124abfb1d4db6add91fdbd3d",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "72f8ffee886911c5baeafbbd",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "7dfe57d19f3c8d8a85fa49cf",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "fb45178c1746508d304c912c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "36178ffd26c73c7c0f666715",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "91767494838ed699d6157857",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "5bef8b3e1e24a18457a464ba",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "8d0f48018a4009171c7c4e50",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "d07c867dd6717aef4ec1d8c0",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "437533dfd85475073e9b27c6",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "43ea4ba17f44b93c54d2d04c",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "84e47dc2bf8ae4f1a2d747da",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "8e43dd667e437850a18057dd",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "7e11da0d857485aa2bf83dba",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "0cb635ca64a7b66cd7190e79",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "efd6993bd2bbb82b074d0ab4",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "3bfafb943297a9e24ee240b6",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "0d468f2b6592b562cb0efee8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "38dccf6197fd782854470b0a",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "6337cd1502bcb293602fa3b7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e1159ebd61ffa3e3815a0af8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "9051f4a675f625133b99970d",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "40e4be1420b606e635186a2c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "f16e43c4634f0dfc7d84f0d4",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "83d3cc4112b849f4fd6d9bf7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "4efbe4f429bfb6f1f222fac3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "3e11c6bdc49589828d1cfd0a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "b0ab9964bbddebf69d9e7ab8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8de9bd29b5487a7fd081b7f1",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "0ca1d67b649106fe34e747dc",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "064d4dc9cdaeb8f224a7aade",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "c12501ffd3c8f6ee0bd613b1",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "19846444da3cb135cd8aff88",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "b32bce1b1e0d97a0f58a9f6e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "1f70041193345ad935528d1d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "45f7c81de22db48b4cdf025d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "023cf0af04d63d118af036c8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "f001dd4426e40746676c7db5",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "1d076ab4f0798022b9a31513",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "80a83719d4529749dd234c90",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "9df88f2f66b08fe00ab46a45",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "72b281ce6b5bf36751a2daaf",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "5c6c6bef701ea2ce5364aa04",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "c738013f93af528592b1db08",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e7ea6d7ad87cf9f1124cbcbc",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c9d558ca8053842fb7a23caa",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "0c862ff5f217fd1ca68f2c92",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "b017a90e1b312ec358326a50",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "2679a54f516da8ab73f4e691",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "1f4cc3641c0371d49e1b6b13",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "afb44ce36e3d43709a3c80d6",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "82af7d862a29f61fb3a26f7d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "c53e9f67d1fbcd7a130be6dc",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "a9b8455be934f97426c43755",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "3c2253e5174c85a315a79161",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "eea910dba470924ebe8977c9",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "672f4a0ca615d818d828d19c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "a6108239f5a04caf36aa5a40",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "08a5f07d968aa4a9d55997b0",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "b7c682819aaa50c39120abb9",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "71a5d718535c13eb630d2753",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "955dbf05736b39a9f6081343",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "27b2e76810813ef64ea30c4e",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "7e92945886cd91c9e593ae4a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "e2e995cd94c3f5d4a4fee8d8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "8621488774587c4708c85e06",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "cab124fa450ab5bc9b78ef75",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "35a9d88d30ee22d0282c1ed3",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8f706f2fb4c0e9d4ac5fdf4f",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "1df9ad02fcaa045a195cc5ac",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "5f73d33d783e71e5b5577e36",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c23f10f0729c762b74f2a4a3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "1b8b53fd5df190a94f0df443",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "fc66bfd43de29eb9eb71a4fb",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "e14d75880308eda42b226645",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "70a7b9a175f85ea465811db5",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "c933d193c5e3855f6502d2e8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "ca7affbff6b4504f1605640a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "f6d0c27e193e9faa88ca0883",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "caedf02eeb9f1a8b73573cb5",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "df1a54c5b31c24dc1ffeffbb",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "77cea93903607ed082073265",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c8bf2dd35bc48d9b1ae1e803",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "ab9f5de8c0c89582b093763e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "b9a1a260320bb992b1393884",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "6342c8c54ae508da64ab9c22",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "46fbabbd7b87ae03da9af1af",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c33ab6d969ea6a64e118ff4e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "6ab57f1af7890f3a6976922a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "1c473edbcb8d73a17b264a5e",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "d19b0002c4e42566d5c8bd80",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "4748233f1f73f607797b1172",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "2ddd3b1e0f90fec4524460da",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "19fdfd030bf75a47ba0498e6",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "fc88ceef86b1a835353886f3",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "1486ffcf7d6c66e105d32c74",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "ab8696961bb879974966a754",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "cf3705248d7515a4dafcf174",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "21913e11def52f6c04f5a022",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "e587a9cb571e8a456b8d72ce",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "8315dbe2e7cdbff5f08be72e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "75bae88491bc9f8ad6b4f58e",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "8b7f0dc3b59ba242049b2825",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "ceac8bc4aeef184ca9a6cac1",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "914e18c1f5575113288dd2cf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "702390425c5cab3210b97499",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "d85457dbe03faad3ba6ac782",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "aaf057f0f42fe6d29ed13e7b",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "cfb1c474ee9f6255fcdd65a3",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "0a1d9746f02dd8f54a19cb0d",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "1029eed69b1322a44087928f",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "4593a14e1fd9a9263864b2cf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8e01663553cb724b84ed6974",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "33e4c1b128e7c2b721016944",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "2b33210bfeb04987111a51e8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "759be9168a8d9a48bb7e8429",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "a6b7c901d2804fc504cc565b",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "f77b925c61fd1eb9bc1be751",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "90418e5c66886686b7cb0bfa",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "a9b18de1c5e79de7dc24d7a0",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "bb152d211e0331a0a8dbaec4",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "a155892ea839e9f89e9e046a",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "8ce81851c0830be73934fa73",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "9c987dd8a825b067a3509da3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "f8052c2bb6084a2c4f331fbb",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "62b02daa8a908cb60397c456",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "13ed1d1df44813051bcebe5f",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8cd04a6b12597b6d23785b83",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "a4493479acc862b44f77a8b9",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "74342eb75eae9520360c0c63",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      }
+    ],
+    "2.0": [
+      {
+        "id": "d43f8409444fc94f7b6a59d4",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "b491d02fa42250ca2784b955",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "b00711d6967b73cd422717d1",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "0d7dd227322e2390226760ce",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "b5f1eb4cd98c8e95832b5230",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c403da9eef9c7ce99e230b76",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "d6ef684809435983072df9da",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "5ba08ae01b11d85d6556acae",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "b96d23e9f927da75ed2c14c0",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "a0ec9a7964dc29386c205ccb",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "31a45b52b1ab5319f0122d55",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "d35d073aca58c26b59f9c297",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "225ef72cdb617202c51fa80f",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "0f15cc977c806e04359e53c8",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e074dceef5e97306f3117a6e",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "2e74457682ef3b8ff6679a5c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "33c4147140b70d5570a9b31f",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "651bdf6d6eeaad344f8ee480",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "94ad3cd775deefab3a5e76b4",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "818ae8b6e35e20b6005c00d3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "ebbf65f4b2e6c9d89fcace45",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "2fe99ada2c565066bcadcde0",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "4aff927f56b67899a21c97db",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "91e756cdf153e1007fa7bfaf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "49ef4e0a69b85c6974095a11",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "8188ccba10a814becf9f1cd1",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "6b8f53ca4ec56a48595295ab",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e49f1eefd00f0de651cbc1a0",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "0b1c740ba9df5e21a2325dad",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8cc5cbe25aa6e5e7b41df7c7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "2affa91fc53ffce7b5f4e5bf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "342c161a25909a2651ef97aa",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "aec4de07fe42db264fe92246",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "591d2a23332e2689cb126c4d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "bb432a5c51b302a31d56b1bc",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "42355faed8976e302321d2f9",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "6f2969b5540a5478c7d88e17",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "c4eb321b972bc7a0229b7803",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "949045595ced8f739e695f65",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "808bef0d5731137bc52c343a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "9722a0853a2b39f8627f7d7f",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "cecf3a2bdab6eb6ba3578165",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "73de953002e3e151c92a0f4f",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "dfb09ba304b39d013c0879a0",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "e0b51450a96168f939ed9064",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "e09feb245c1e583a9a0c514f",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "bed22b6ada409f007e13f476",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "a34206e5e81183b810fb55a2",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "bd2e4e4e94ec374450d2fb7a",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "32c641a6fab88bdd62551270",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "37f3daf3eb77eef1b038e14d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "ef0d8ff4aa5f8e55a441f8cc",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "f072a3851ba49a4d91fe6457",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "6371dd29589fab840ddeddfd",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "4dc1e57901f17b1e5559988b",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "1adc95218c2ed3507075a40b",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "2a59ef648d62e7214f24efb7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "52d71eb77a2901a0cf108231",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "796b3594d095a95ec0974a40",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "234720acb6bacf8da053dc52",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "cd6228562cca38623c307358",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "a53a542b15a2515967cb6299",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "124abfb1d4db6add91fdbd3d",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "72f8ffee886911c5baeafbbd",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "7dfe57d19f3c8d8a85fa49cf",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "fb45178c1746508d304c912c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "36178ffd26c73c7c0f666715",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "91767494838ed699d6157857",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "5bef8b3e1e24a18457a464ba",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "8d0f48018a4009171c7c4e50",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "d07c867dd6717aef4ec1d8c0",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "437533dfd85475073e9b27c6",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "43ea4ba17f44b93c54d2d04c",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "84e47dc2bf8ae4f1a2d747da",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "8e43dd667e437850a18057dd",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "7e11da0d857485aa2bf83dba",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "0cb635ca64a7b66cd7190e79",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "efd6993bd2bbb82b074d0ab4",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "3bfafb943297a9e24ee240b6",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "0d468f2b6592b562cb0efee8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "38dccf6197fd782854470b0a",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "6337cd1502bcb293602fa3b7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e1159ebd61ffa3e3815a0af8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "9051f4a675f625133b99970d",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "40e4be1420b606e635186a2c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "f16e43c4634f0dfc7d84f0d4",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "83d3cc4112b849f4fd6d9bf7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "4efbe4f429bfb6f1f222fac3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "3e11c6bdc49589828d1cfd0a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "b0ab9964bbddebf69d9e7ab8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8de9bd29b5487a7fd081b7f1",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "0ca1d67b649106fe34e747dc",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "064d4dc9cdaeb8f224a7aade",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "c12501ffd3c8f6ee0bd613b1",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "19846444da3cb135cd8aff88",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "b32bce1b1e0d97a0f58a9f6e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "1f70041193345ad935528d1d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "45f7c81de22db48b4cdf025d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "023cf0af04d63d118af036c8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "f001dd4426e40746676c7db5",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "1d076ab4f0798022b9a31513",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "80a83719d4529749dd234c90",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "9df88f2f66b08fe00ab46a45",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "72b281ce6b5bf36751a2daaf",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "5c6c6bef701ea2ce5364aa04",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "c738013f93af528592b1db08",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e7ea6d7ad87cf9f1124cbcbc",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c9d558ca8053842fb7a23caa",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "0c862ff5f217fd1ca68f2c92",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "b017a90e1b312ec358326a50",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "2679a54f516da8ab73f4e691",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "1f4cc3641c0371d49e1b6b13",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "afb44ce36e3d43709a3c80d6",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "82af7d862a29f61fb3a26f7d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "c53e9f67d1fbcd7a130be6dc",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "a9b8455be934f97426c43755",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "3c2253e5174c85a315a79161",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "eea910dba470924ebe8977c9",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "672f4a0ca615d818d828d19c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "a6108239f5a04caf36aa5a40",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "08a5f07d968aa4a9d55997b0",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "b7c682819aaa50c39120abb9",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "71a5d718535c13eb630d2753",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "955dbf05736b39a9f6081343",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "27b2e76810813ef64ea30c4e",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "7e92945886cd91c9e593ae4a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "e2e995cd94c3f5d4a4fee8d8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "8621488774587c4708c85e06",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "cab124fa450ab5bc9b78ef75",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "35a9d88d30ee22d0282c1ed3",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8f706f2fb4c0e9d4ac5fdf4f",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "1df9ad02fcaa045a195cc5ac",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "5f73d33d783e71e5b5577e36",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c23f10f0729c762b74f2a4a3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "1b8b53fd5df190a94f0df443",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "fc66bfd43de29eb9eb71a4fb",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "e14d75880308eda42b226645",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "70a7b9a175f85ea465811db5",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "c933d193c5e3855f6502d2e8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "ca7affbff6b4504f1605640a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "f6d0c27e193e9faa88ca0883",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "caedf02eeb9f1a8b73573cb5",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "df1a54c5b31c24dc1ffeffbb",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "77cea93903607ed082073265",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c8bf2dd35bc48d9b1ae1e803",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "ab9f5de8c0c89582b093763e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "b9a1a260320bb992b1393884",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "6342c8c54ae508da64ab9c22",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "46fbabbd7b87ae03da9af1af",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c33ab6d969ea6a64e118ff4e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "6ab57f1af7890f3a6976922a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "1c473edbcb8d73a17b264a5e",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "d19b0002c4e42566d5c8bd80",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "4748233f1f73f607797b1172",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "2ddd3b1e0f90fec4524460da",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "19fdfd030bf75a47ba0498e6",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "fc88ceef86b1a835353886f3",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "1486ffcf7d6c66e105d32c74",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "ab8696961bb879974966a754",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "cf3705248d7515a4dafcf174",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "21913e11def52f6c04f5a022",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "e587a9cb571e8a456b8d72ce",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "8315dbe2e7cdbff5f08be72e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "75bae88491bc9f8ad6b4f58e",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "8b7f0dc3b59ba242049b2825",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "ceac8bc4aeef184ca9a6cac1",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "914e18c1f5575113288dd2cf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "702390425c5cab3210b97499",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "d85457dbe03faad3ba6ac782",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "aaf057f0f42fe6d29ed13e7b",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "cfb1c474ee9f6255fcdd65a3",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "0a1d9746f02dd8f54a19cb0d",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "1029eed69b1322a44087928f",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "4593a14e1fd9a9263864b2cf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8e01663553cb724b84ed6974",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "33e4c1b128e7c2b721016944",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "2b33210bfeb04987111a51e8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "759be9168a8d9a48bb7e8429",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "a6b7c901d2804fc504cc565b",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "f77b925c61fd1eb9bc1be751",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "90418e5c66886686b7cb0bfa",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "a9b18de1c5e79de7dc24d7a0",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "bb152d211e0331a0a8dbaec4",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "a155892ea839e9f89e9e046a",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "8ce81851c0830be73934fa73",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "9c987dd8a825b067a3509da3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "f8052c2bb6084a2c4f331fbb",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "62b02daa8a908cb60397c456",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "13ed1d1df44813051bcebe5f",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8cd04a6b12597b6d23785b83",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "a4493479acc862b44f77a8b9",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "74342eb75eae9520360c0c63",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      }
+    ],
+    "4.0": [
+      {
+        "id": "d43f8409444fc94f7b6a59d4",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "b491d02fa42250ca2784b955",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "b00711d6967b73cd422717d1",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "0d7dd227322e2390226760ce",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "b5f1eb4cd98c8e95832b5230",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c403da9eef9c7ce99e230b76",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "d6ef684809435983072df9da",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "5ba08ae01b11d85d6556acae",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "b96d23e9f927da75ed2c14c0",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "a0ec9a7964dc29386c205ccb",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "31a45b52b1ab5319f0122d55",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "d35d073aca58c26b59f9c297",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "225ef72cdb617202c51fa80f",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "0f15cc977c806e04359e53c8",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e074dceef5e97306f3117a6e",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "2e74457682ef3b8ff6679a5c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "33c4147140b70d5570a9b31f",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "651bdf6d6eeaad344f8ee480",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "94ad3cd775deefab3a5e76b4",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "818ae8b6e35e20b6005c00d3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "ebbf65f4b2e6c9d89fcace45",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "2fe99ada2c565066bcadcde0",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "4aff927f56b67899a21c97db",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "91e756cdf153e1007fa7bfaf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "49ef4e0a69b85c6974095a11",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "8188ccba10a814becf9f1cd1",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "6b8f53ca4ec56a48595295ab",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e49f1eefd00f0de651cbc1a0",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "0b1c740ba9df5e21a2325dad",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8cc5cbe25aa6e5e7b41df7c7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "2affa91fc53ffce7b5f4e5bf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "342c161a25909a2651ef97aa",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "aec4de07fe42db264fe92246",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "591d2a23332e2689cb126c4d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "bb432a5c51b302a31d56b1bc",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "42355faed8976e302321d2f9",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "6f2969b5540a5478c7d88e17",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "c4eb321b972bc7a0229b7803",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "949045595ced8f739e695f65",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "808bef0d5731137bc52c343a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "9722a0853a2b39f8627f7d7f",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "cecf3a2bdab6eb6ba3578165",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "73de953002e3e151c92a0f4f",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "dfb09ba304b39d013c0879a0",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "e0b51450a96168f939ed9064",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "e09feb245c1e583a9a0c514f",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "bed22b6ada409f007e13f476",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "a34206e5e81183b810fb55a2",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "bd2e4e4e94ec374450d2fb7a",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "32c641a6fab88bdd62551270",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "37f3daf3eb77eef1b038e14d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "ef0d8ff4aa5f8e55a441f8cc",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "f072a3851ba49a4d91fe6457",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "6371dd29589fab840ddeddfd",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "4dc1e57901f17b1e5559988b",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "1adc95218c2ed3507075a40b",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "2a59ef648d62e7214f24efb7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "52d71eb77a2901a0cf108231",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "796b3594d095a95ec0974a40",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "234720acb6bacf8da053dc52",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "cd6228562cca38623c307358",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "a53a542b15a2515967cb6299",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "124abfb1d4db6add91fdbd3d",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "72f8ffee886911c5baeafbbd",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "7dfe57d19f3c8d8a85fa49cf",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "fb45178c1746508d304c912c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "36178ffd26c73c7c0f666715",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "91767494838ed699d6157857",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "5bef8b3e1e24a18457a464ba",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "8d0f48018a4009171c7c4e50",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "d07c867dd6717aef4ec1d8c0",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "437533dfd85475073e9b27c6",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "43ea4ba17f44b93c54d2d04c",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "84e47dc2bf8ae4f1a2d747da",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "8e43dd667e437850a18057dd",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "7e11da0d857485aa2bf83dba",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "0cb635ca64a7b66cd7190e79",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "efd6993bd2bbb82b074d0ab4",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "3bfafb943297a9e24ee240b6",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "0d468f2b6592b562cb0efee8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "38dccf6197fd782854470b0a",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "6337cd1502bcb293602fa3b7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e1159ebd61ffa3e3815a0af8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "9051f4a675f625133b99970d",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "40e4be1420b606e635186a2c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "f16e43c4634f0dfc7d84f0d4",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "83d3cc4112b849f4fd6d9bf7",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "4efbe4f429bfb6f1f222fac3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "3e11c6bdc49589828d1cfd0a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "b0ab9964bbddebf69d9e7ab8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8de9bd29b5487a7fd081b7f1",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "0ca1d67b649106fe34e747dc",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "064d4dc9cdaeb8f224a7aade",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "c12501ffd3c8f6ee0bd613b1",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "19846444da3cb135cd8aff88",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "b32bce1b1e0d97a0f58a9f6e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "1f70041193345ad935528d1d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "45f7c81de22db48b4cdf025d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "023cf0af04d63d118af036c8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "f001dd4426e40746676c7db5",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "1d076ab4f0798022b9a31513",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "80a83719d4529749dd234c90",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "9df88f2f66b08fe00ab46a45",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "72b281ce6b5bf36751a2daaf",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "5c6c6bef701ea2ce5364aa04",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "c738013f93af528592b1db08",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "e7ea6d7ad87cf9f1124cbcbc",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c9d558ca8053842fb7a23caa",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "0c862ff5f217fd1ca68f2c92",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "b017a90e1b312ec358326a50",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "2679a54f516da8ab73f4e691",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "1f4cc3641c0371d49e1b6b13",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "afb44ce36e3d43709a3c80d6",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "82af7d862a29f61fb3a26f7d",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "c53e9f67d1fbcd7a130be6dc",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "a9b8455be934f97426c43755",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "3c2253e5174c85a315a79161",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "eea910dba470924ebe8977c9",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "672f4a0ca615d818d828d19c",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "a6108239f5a04caf36aa5a40",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "08a5f07d968aa4a9d55997b0",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "b7c682819aaa50c39120abb9",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "71a5d718535c13eb630d2753",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "955dbf05736b39a9f6081343",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "27b2e76810813ef64ea30c4e",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "7e92945886cd91c9e593ae4a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "e2e995cd94c3f5d4a4fee8d8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "8621488774587c4708c85e06",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "cab124fa450ab5bc9b78ef75",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "35a9d88d30ee22d0282c1ed3",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8f706f2fb4c0e9d4ac5fdf4f",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "1df9ad02fcaa045a195cc5ac",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "5f73d33d783e71e5b5577e36",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c23f10f0729c762b74f2a4a3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "1b8b53fd5df190a94f0df443",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "fc66bfd43de29eb9eb71a4fb",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "e14d75880308eda42b226645",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "70a7b9a175f85ea465811db5",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "c933d193c5e3855f6502d2e8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "ca7affbff6b4504f1605640a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "f6d0c27e193e9faa88ca0883",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "caedf02eeb9f1a8b73573cb5",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "df1a54c5b31c24dc1ffeffbb",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "77cea93903607ed082073265",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c8bf2dd35bc48d9b1ae1e803",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "ab9f5de8c0c89582b093763e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "b9a1a260320bb992b1393884",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "6342c8c54ae508da64ab9c22",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "46fbabbd7b87ae03da9af1af",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "c33ab6d969ea6a64e118ff4e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "6ab57f1af7890f3a6976922a",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "1c473edbcb8d73a17b264a5e",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "d19b0002c4e42566d5c8bd80",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "4748233f1f73f607797b1172",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "2ddd3b1e0f90fec4524460da",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "19fdfd030bf75a47ba0498e6",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "fc88ceef86b1a835353886f3",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "1486ffcf7d6c66e105d32c74",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "ab8696961bb879974966a754",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "cf3705248d7515a4dafcf174",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "21913e11def52f6c04f5a022",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "e587a9cb571e8a456b8d72ce",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "8315dbe2e7cdbff5f08be72e",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "75bae88491bc9f8ad6b4f58e",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "8b7f0dc3b59ba242049b2825",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "ceac8bc4aeef184ca9a6cac1",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "914e18c1f5575113288dd2cf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "702390425c5cab3210b97499",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "d85457dbe03faad3ba6ac782",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "aaf057f0f42fe6d29ed13e7b",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "cfb1c474ee9f6255fcdd65a3",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "0a1d9746f02dd8f54a19cb0d",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "1029eed69b1322a44087928f",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "4593a14e1fd9a9263864b2cf",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "8e01663553cb724b84ed6974",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "33e4c1b128e7c2b721016944",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "2b33210bfeb04987111a51e8",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "759be9168a8d9a48bb7e8429",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "a6b7c901d2804fc504cc565b",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "f77b925c61fd1eb9bc1be751",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "90418e5c66886686b7cb0bfa",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "a9b18de1c5e79de7dc24d7a0",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "bb152d211e0331a0a8dbaec4",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      },
+      {
+        "id": "a155892ea839e9f89e9e046a",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "8ce81851c0830be73934fa73",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": true
+      },
+      {
+        "id": "9c987dd8a825b067a3509da3",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": false
+      },
+      {
+        "id": "f8052c2bb6084a2c4f331fbb",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "62b02daa8a908cb60397c456",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "13ed1d1df44813051bcebe5f",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": false
+      },
+      {
+        "id": "8cd04a6b12597b6d23785b83",
+        "seed": null,
+        "family": "stack_transition",
+        "correct": false
+      },
+      {
+        "id": "a4493479acc862b44f77a8b9",
+        "seed": null,
+        "family": "mutation_transition",
+        "correct": true
+      },
+      {
+        "id": "74342eb75eae9520360c0c63",
+        "seed": null,
+        "family": "self_edit_transition",
+        "correct": true
+      }
+    ]
+  }
+}

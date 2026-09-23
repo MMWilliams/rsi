@@ -1,0 +1,3278 @@
+{
+  "scope": "inspected development only",
+  "tasks": 384,
+  "banks": 48,
+  "calls_per_bank": 8,
+  "correct": {
+    "conditional": 139,
+    "prior": 134,
+    "static_ridge": 135,
+    "one_each": 126
+  },
+  "by_bank": [
+    {
+      "seed": 902318,
+      "stream": "mixed",
+      "conditional": 5,
+      "prior": 5,
+      "static_ridge": 5,
+      "one_each": 5,
+      "conditional_actions": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        2,
+        2
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "7dc1858c57aeb7b8276fcb95",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "107f91831d7799acca5aa728",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "98410b0a96cd6c3da7b149e9",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "c335919aac0403f26c19fb4d",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "107f91831d7799acca5aa728",
+          "query_index": 4,
+          "action_number": 2
+        },
+        {
+          "step": 6,
+          "task_id": "c38a983351137cf8d449af14",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "c335919aac0403f26c19fb4d",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "7dc1858c57aeb7b8276fcb95",
+          "query_index": 3,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902319,
+      "stream": "mixed",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 2,
+      "conditional_actions": [
+        1,
+        2,
+        0,
+        1,
+        0,
+        2,
+        0,
+        2
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "6527aaffb208e34770160305",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "a9a83574a9410b5c04ce3904",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "8a2678b523687e21ce877458",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "06e755d521dc889bd0b5973f",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "a9a83574a9410b5c04ce3904",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 6,
+          "task_id": "dc5700639d82a60784c36b01",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "06e755d521dc889bd0b5973f",
+          "query_index": 5,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "6527aaffb208e34770160305",
+          "query_index": 4,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902320,
+      "stream": "mixed",
+      "conditional": 4,
+      "prior": 4,
+      "static_ridge": 4,
+      "one_each": 4,
+      "conditional_actions": [
+        0,
+        2,
+        1,
+        1,
+        1,
+        0,
+        1,
+        2
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "ca4ac55f7fb53c8ef647150b",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "b940b6de4dd90d4d37a32233",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "024ce3780a662939d0be4f8c",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "23513038690be54f887858e7",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "465ee691d1001b7d3a177498",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "b940b6de4dd90d4d37a32233",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "ca4ac55f7fb53c8ef647150b",
+          "query_index": 4,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "18641f192ed8c82141a52baf",
+          "query_index": 7,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902321,
+      "stream": "mixed",
+      "conditional": 5,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 4,
+      "conditional_actions": [
+        2,
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "dfdf306df11b0478154237bd",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "a9c0b27e79086afc2185c86b",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "c4a9920829026cbe15dc177c",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "c0f929f5758317c5df0e9278",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "200389ce8082097ea3395827",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "a38441af9728d774d0b6e4a3",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "a9c0b27e79086afc2185c86b",
+          "query_index": 3,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "dfdf306df11b0478154237bd",
+          "query_index": 3,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902322,
+      "stream": "mixed",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 3,
+      "conditional_actions": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        2,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "3c042419e709f229ff580fd8",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "416a321147ee02f622680b90",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "a0c86f86428a001e83d97be6",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "6a4ae3d6236d92e5ac5e8af0",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "b103afdd2bc563bf7fe273b7",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "8adf2fb636ed8ef30df42d18",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "41e287f7916b6a83afc21b03",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "8adf2fb636ed8ef30df42d18",
+          "query_index": 4,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902323,
+      "stream": "mixed",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 1,
+      "conditional_actions": [
+        2,
+        1,
+        2,
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "3cafb1ac636aea9f9233047d",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "fe3c37513f3e4f9dacdc45f3",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "fe3c37513f3e4f9dacdc45f3",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 4,
+          "task_id": "3cafb1ac636aea9f9233047d",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 5,
+          "task_id": "0aafa6b538113001038e16c7",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "d6736c80a36f2bbe14d24c35",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "d6736c80a36f2bbe14d24c35",
+          "query_index": 2,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "8d243233b1cc55cd3b5e350c",
+          "query_index": 1,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902324,
+      "stream": "ast_only",
+      "conditional": 2,
+      "prior": 2,
+      "static_ridge": 2,
+      "one_each": 3,
+      "conditional_actions": [
+        2,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "34d3b424b45b8dd14940b1c3",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "465c4c5f223b0c446dacbe9a",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "019349410ce701b5bcc838a2",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "11fef148eb3b43512277afeb",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "984713ca5a6c5afb716d43ca",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "9f1abbce5b082b6114aa475f",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "fc6b17be63092e08159aa87b",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "019349410ce701b5bcc838a2",
+          "query_index": 4,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902325,
+      "stream": "ast_only",
+      "conditional": 4,
+      "prior": 4,
+      "static_ridge": 4,
+      "one_each": 4,
+      "conditional_actions": [
+        1,
+        0,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "2c2a18a953e730ed0b3e38ed",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "1ae0f8835990e68038b05413",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "df89aa6a824d4c0c788d102e",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "b366e141029f7a3c15286dec",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "f9e0868d61df4855a745bb85",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "965a4b1f80ae7d5c51890bc6",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "1ae0f8835990e68038b05413",
+          "query_index": 3,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "54325687aba992f8bc0b4d81",
+          "query_index": 1,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902326,
+      "stream": "ast_only",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 3,
+      "conditional_actions": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "9ad374d309a7369cefedbb15",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "7ccafa489a7b340523f5ffe9",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "55843045d1db603b7ba86d1c",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "ed26332954179e688fcc3baf",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "0bfc0336e50768733317aaa9",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "9ad374d309a7369cefedbb15",
+          "query_index": 3,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "933d99ad8c4d88f3df3256b6",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "933d99ad8c4d88f3df3256b6",
+          "query_index": 4,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902327,
+      "stream": "ast_only",
+      "conditional": 4,
+      "prior": 5,
+      "static_ridge": 5,
+      "one_each": 5,
+      "conditional_actions": [
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "9360fa0471226162a78dab45",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "a67a0842310f0a873f0d28e4",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "0cc27753e23f54e310428402",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "9360fa0471226162a78dab45",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 5,
+          "task_id": "2594433b8c4cd82ba627f4ab",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "0192d4536a755749cb9cde2b",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "a67a0842310f0a873f0d28e4",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "0192d4536a755749cb9cde2b",
+          "query_index": 3,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902328,
+      "stream": "ast_only",
+      "conditional": 1,
+      "prior": 1,
+      "static_ridge": 1,
+      "one_each": 1,
+      "conditional_actions": [
+        0,
+        1,
+        1,
+        2,
+        1,
+        0,
+        1,
+        2
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "f15176fd9115c237b234005c",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "1ee229034c83e79171c3b1d2",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "7e8ee3d0a225cc043b0bbc6d",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "e4ee27720d9e2e427290ae7a",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "31451aba802d35dcc5b9c5d3",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "e4ee27720d9e2e427290ae7a",
+          "query_index": 6,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "2755be676d9794a5b2e89e88",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "2755be676d9794a5b2e89e88",
+          "query_index": 1,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902329,
+      "stream": "ast_only",
+      "conditional": 1,
+      "prior": 1,
+      "static_ridge": 1,
+      "one_each": 1,
+      "conditional_actions": [
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "7c2a2612582d3a518abfc49f",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "15a4bef230053faac436b4de",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "6421356ea4eaba6164db21c3",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "97a700295a4b820348748fbe",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "7c2a2612582d3a518abfc49f",
+          "query_index": 4,
+          "action_number": 2
+        },
+        {
+          "step": 6,
+          "task_id": "15a4bef230053faac436b4de",
+          "query_index": 6,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "ea36a910231f4bf27e7a8ff0",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "6c73625575518777172bb812",
+          "query_index": 3,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902330,
+      "stream": "mixed",
+      "conditional": 2,
+      "prior": 2,
+      "static_ridge": 2,
+      "one_each": 2,
+      "conditional_actions": [
+        1,
+        0,
+        1,
+        2,
+        0,
+        2,
+        0,
+        2
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "43fc1e3e4f4a3a63d21c54be",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "ad1479d99997d4256ef6d183",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "6e0746b17e7628f119021121",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "6e0746b17e7628f119021121",
+          "query_index": 6,
+          "action_number": 2
+        },
+        {
+          "step": 5,
+          "task_id": "90c4c82b596d38184cd9be46",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "43fc1e3e4f4a3a63d21c54be",
+          "query_index": 7,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "4c1ad3106f05fe95e1a48ba3",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "ad1479d99997d4256ef6d183",
+          "query_index": 3,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902331,
+      "stream": "mixed",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 3,
+      "conditional_actions": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        0,
+        0
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "f2385b19fbed59765a4fc116",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "45e1c8335a4e74a50313efb4",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "e60b582cc22fb8d9e7b53fca",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "f2385b19fbed59765a4fc116",
+          "query_index": 2,
+          "action_number": 2
+        },
+        {
+          "step": 5,
+          "task_id": "fc0fdc89afae6ccfa019b28b",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "fc0fdc89afae6ccfa019b28b",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "f259dec518586613fd23cb94",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "1fd2c871f6616884854c3def",
+          "query_index": 4,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902332,
+      "stream": "mixed",
+      "conditional": 1,
+      "prior": 1,
+      "static_ridge": 1,
+      "one_each": 1,
+      "conditional_actions": [
+        0,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "c6bad24e64f6e0466f054b45",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "0efcb4ed116662f209c43b62",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "0efcb4ed116662f209c43b62",
+          "query_index": 2,
+          "action_number": 2
+        },
+        {
+          "step": 4,
+          "task_id": "472c7cc00944de74db2caa0e",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "c6bad24e64f6e0466f054b45",
+          "query_index": 7,
+          "action_number": 2
+        },
+        {
+          "step": 6,
+          "task_id": "472c7cc00944de74db2caa0e",
+          "query_index": 2,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "60e10cb09fd04d9cd06fbee3",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "d675120480dcf0d6186c667d",
+          "query_index": 3,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902333,
+      "stream": "mixed",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 4,
+      "conditional_actions": [
+        2,
+        1,
+        0,
+        2,
+        1,
+        0,
+        1,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "18710b9774a62c4bd57c05e1",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "59fd0c34f142ff070907da4a",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "a74a0b4db424dc3094b6304c",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "9f8571566b8af780ecdbdce8",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "5748a2ca76bd31953e13217f",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "5748a2ca76bd31953e13217f",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "580812d9668457f907295aee",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "580812d9668457f907295aee",
+          "query_index": 1,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902334,
+      "stream": "mixed",
+      "conditional": 2,
+      "prior": 2,
+      "static_ridge": 2,
+      "one_each": 1,
+      "conditional_actions": [
+        0,
+        1,
+        1,
+        2,
+        1,
+        0,
+        2,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "efcbeaaf12d7998af6c0a845",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "595a4e070ca154ef7fcb60ad",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "f6aee64d26cf76eed5fb6aed",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "24fb694f9ee790ab1433f7e6",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "273de568f19d2b4de4beca6e",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "273de568f19d2b4de4beca6e",
+          "query_index": 2,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "efcbeaaf12d7998af6c0a845",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "a4de4ae1081eb4a58201ab06",
+          "query_index": 1,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902335,
+      "stream": "mixed",
+      "conditional": 3,
+      "prior": 2,
+      "static_ridge": 2,
+      "one_each": 2,
+      "conditional_actions": [
+        0,
+        0,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "f12332d592b4aea3f4699ac3",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "a31ef0c2c1b2995168130459",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "6c29c34fbd7d391af67b133c",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "1042a4f7785091f6519d2f49",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "1042a4f7785091f6519d2f49",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 6,
+          "task_id": "a31ef0c2c1b2995168130459",
+          "query_index": 2,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "c387d09e46d133ccb64fcbf1",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "c387d09e46d133ccb64fcbf1",
+          "query_index": 3,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902336,
+      "stream": "ast_only",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 2,
+      "conditional_actions": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        0,
+        1,
+        0
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "1e856bdfed97c55a452fe02c",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "70f4690722caaa54a8a96366",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "95a7116cd6261c7ad6c11165",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "27a5d17d8f638a118a449b33",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "8f70c6a82af136edfe80e4ec",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "3cff9207869f80a6bea2d4a4",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "95a7116cd6261c7ad6c11165",
+          "query_index": 2,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "3cff9207869f80a6bea2d4a4",
+          "query_index": 1,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902337,
+      "stream": "ast_only",
+      "conditional": 4,
+      "prior": 4,
+      "static_ridge": 4,
+      "one_each": 4,
+      "conditional_actions": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "77775a0a0fdd9c65bc34c129",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "e53868ccd5d7bebe10d79dc9",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "4629ad77a822fb8df67e3d72",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "27e7bbf49e7708256a3fdf2e",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "f78ed20c732131d991899fc2",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "468abcf46e920efcb03e778f",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "f78ed20c732131d991899fc2",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "e53868ccd5d7bebe10d79dc9",
+          "query_index": 7,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902338,
+      "stream": "ast_only",
+      "conditional": 2,
+      "prior": 2,
+      "static_ridge": 2,
+      "one_each": 2,
+      "conditional_actions": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "0001e33f6511d67d4e612f43",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "811b97ac5a1bfae82fa98d5e",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "fea0f38082fbb6797ae237df",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "fea0f38082fbb6797ae237df",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 5,
+          "task_id": "0001e33f6511d67d4e612f43",
+          "query_index": 7,
+          "action_number": 2
+        },
+        {
+          "step": 6,
+          "task_id": "a72b19de27d05c9e297a350a",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "0816583222dc035e00d48374",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "cc7f02097713f9f323be057e",
+          "query_index": 6,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902339,
+      "stream": "ast_only",
+      "conditional": 2,
+      "prior": 2,
+      "static_ridge": 2,
+      "one_each": 2,
+      "conditional_actions": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        0,
+        2,
+        0
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "d308b28870ade8ae0ee8f281",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "9efc7bd780e9cfdd2fa569b9",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "fe7fb57bd6acb5b6305cc25e",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "e61650ca4037a448b2c8a564",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "9ab6edbd21b41459cf834fd3",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "d308b28870ade8ae0ee8f281",
+          "query_index": 7,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "fd687a3d0298bc3b5e1e9c25",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "fd687a3d0298bc3b5e1e9c25",
+          "query_index": 3,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902340,
+      "stream": "ast_only",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 3,
+      "conditional_actions": [
+        0,
+        2,
+        0,
+        2,
+        1,
+        0,
+        1,
+        2
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "ae13c7d4447f5928bc7a4576",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "b11cded73b40657c96a786da",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "485b9828d07a71fa132d632a",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "7b905678649f331c123eb40c",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "485b9828d07a71fa132d632a",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 6,
+          "task_id": "ae13c7d4447f5928bc7a4576",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "e15358b3d196e572d683e4b4",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "7b905678649f331c123eb40c",
+          "query_index": 0,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902341,
+      "stream": "ast_only",
+      "conditional": 6,
+      "prior": 5,
+      "static_ridge": 5,
+      "one_each": 5,
+      "conditional_actions": [
+        2,
+        1,
+        2,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "3fa1076b241cb73a2a5a9430",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "3fa1076b241cb73a2a5a9430",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 3,
+          "task_id": "d818a3dd2e9b3f7c0e5be73f",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "8b9d9a332f4b654b396b3d50",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "d818a3dd2e9b3f7c0e5be73f",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 6,
+          "task_id": "0f98449e9377131b0afbf544",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "60de206f6aaee5a2c1c8ce43",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "317457989387e64533772a5c",
+          "query_index": 1,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902342,
+      "stream": "mixed",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 3,
+      "conditional_actions": [
+        1,
+        2,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "50e1dfee1413e7c78c44da78",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "249b6d19c5c5fd0ab34e9903",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "e632a5d367a4555a3d289e08",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "e632a5d367a4555a3d289e08",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 5,
+          "task_id": "1a95dc6fef02c6973ea55e75",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "249b6d19c5c5fd0ab34e9903",
+          "query_index": 7,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "0fa4ae32b008ae0d53a621d1",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "50e1dfee1413e7c78c44da78",
+          "query_index": 6,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902343,
+      "stream": "mixed",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 3,
+      "conditional_actions": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "b02e35f578f71e587cef3d07",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "b02e35f578f71e587cef3d07",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 3,
+          "task_id": "428e270975ff8280d860e258",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "d2f2acf08e73ffdd5fb717d1",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "75db16cf6df6af3af1a30a31",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "9ac185373b9831e4ddeaa572",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "f23104b4a1d6aab658b63553",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "d2f2acf08e73ffdd5fb717d1",
+          "query_index": 5,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902344,
+      "stream": "mixed",
+      "conditional": 2,
+      "prior": 2,
+      "static_ridge": 2,
+      "one_each": 2,
+      "conditional_actions": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "a8530e8768146440c25af435",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "a8530e8768146440c25af435",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 3,
+          "task_id": "3383f7dd7a33490a27f305d6",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "ea1f9a2bf2efe598862f7895",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "3383f7dd7a33490a27f305d6",
+          "query_index": 7,
+          "action_number": 2
+        },
+        {
+          "step": 6,
+          "task_id": "44045c1434159e2f942c6357",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "dce018ec4f9a4463529fb586",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "764fb3ed4421a6ea5bf16d85",
+          "query_index": 2,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902345,
+      "stream": "mixed",
+      "conditional": 5,
+      "prior": 5,
+      "static_ridge": 5,
+      "one_each": 3,
+      "conditional_actions": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        2
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "af1950f365114062c245eba9",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "05ce9163ca95937c90fcc15a",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "524b366559c8f4bac524f9a8",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "e2c3b6cf12ddb00bdcbb0a57",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "237780ef59d1e89fd3c95db2",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "e2c3b6cf12ddb00bdcbb0a57",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "05ce9163ca95937c90fcc15a",
+          "query_index": 2,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "e557eb0a20a7138e872f933d",
+          "query_index": 6,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902346,
+      "stream": "mixed",
+      "conditional": 4,
+      "prior": 4,
+      "static_ridge": 4,
+      "one_each": 4,
+      "conditional_actions": [
+        0,
+        2,
+        2,
+        1,
+        0,
+        2,
+        1,
+        0
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "de3ff334cbe505fbf901c691",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "1b9911c71408204906b4982b",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "fd92d88f5db277b4af9d3146",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "bd9f545911a1f8fbc0057c34",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "02b2fca460048734a6040851",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "de3ff334cbe505fbf901c691",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "1b9911c71408204906b4982b",
+          "query_index": 4,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "02b2fca460048734a6040851",
+          "query_index": 2,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902347,
+      "stream": "mixed",
+      "conditional": 2,
+      "prior": 2,
+      "static_ridge": 2,
+      "one_each": 1,
+      "conditional_actions": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "cc36d1895e8518a81463a91f",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "62e22303dab096a26a344704",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "b1ef0a573617ee952aa26416",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "75e9d6dd763c6a6dc1852780",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "75e9d6dd763c6a6dc1852780",
+          "query_index": 3,
+          "action_number": 2
+        },
+        {
+          "step": 6,
+          "task_id": "3bebb937df93c8327ab7e7f4",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "cc36d1895e8518a81463a91f",
+          "query_index": 6,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "7a0e7b978be6cf67a254c2d6",
+          "query_index": 3,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902348,
+      "stream": "mixed",
+      "conditional": 1,
+      "prior": 1,
+      "static_ridge": 1,
+      "one_each": 0,
+      "conditional_actions": [
+        1,
+        2,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "b6157352eb4d60c5205baea5",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "850612f8b1f0a3b6623a50ba",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "4157fa86e3d592e526a776c0",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "c5c727b01447855a1ef628fc",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "4157fa86e3d592e526a776c0",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 6,
+          "task_id": "00a91494c961b2e4c5c6a8c5",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "3feac2fefb262ae3d7980365",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "c5c727b01447855a1ef628fc",
+          "query_index": 4,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902349,
+      "stream": "mixed",
+      "conditional": 5,
+      "prior": 5,
+      "static_ridge": 5,
+      "one_each": 5,
+      "conditional_actions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        2,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "475eb68c88f5318fe6c76d95",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "4b9e0b1da46ad99e48944751",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "53ee41bff9969f878885aef6",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "129bf5b695cc64566d922710",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "475eb68c88f5318fe6c76d95",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 6,
+          "task_id": "9de23af88a64720469e9bd65",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "4664be6e8a71f000c1375bc7",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "da57b71520dec4aaf25700b1",
+          "query_index": 6,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902350,
+      "stream": "mixed",
+      "conditional": 1,
+      "prior": 1,
+      "static_ridge": 1,
+      "one_each": 1,
+      "conditional_actions": [
+        2,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "76c00c942ed06ec5c6996ce5",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "e209ff51b30b373b83057718",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "e209ff51b30b373b83057718",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 4,
+          "task_id": "4d10b761c10a1f544e66e885",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "8a62aa661995f9e257df51b0",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "8a62aa661995f9e257df51b0",
+          "query_index": 2,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "76c00c942ed06ec5c6996ce5",
+          "query_index": 6,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "4d10b761c10a1f544e66e885",
+          "query_index": 7,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902351,
+      "stream": "ast_only",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 2,
+      "conditional_actions": [
+        0,
+        1,
+        2,
+        1,
+        0,
+        1,
+        1,
+        2
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "fd17940ffeaa01b73ac6533c",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "252ea668fad83633edfc926c",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "de6ff72a9c7a4d8026ea25fd",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "d09b830db79daead780b2c96",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "d09b830db79daead780b2c96",
+          "query_index": 6,
+          "action_number": 2
+        },
+        {
+          "step": 6,
+          "task_id": "0ea7f56be4646af6bce94975",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "fd17940ffeaa01b73ac6533c",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "ef43bf054759f04d8f524370",
+          "query_index": 3,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902352,
+      "stream": "ast_only",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 4,
+      "one_each": 4,
+      "conditional_actions": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        2
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "616b66364432b65997496469",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "33f88580aad32e95da550c30",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "3b7446a8d8c2ceb8a31f97e9",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "a2fcad6ce6786d7d42d0f7e7",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "f589f057ee5cc87d0caa37f8",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "616b66364432b65997496469",
+          "query_index": 4,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "9402de9c5e172fead2f38457",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "3b7446a8d8c2ceb8a31f97e9",
+          "query_index": 3,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902353,
+      "stream": "ast_only",
+      "conditional": 5,
+      "prior": 5,
+      "static_ridge": 5,
+      "one_each": 5,
+      "conditional_actions": [
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "a780aa53b68b1a91d7c182ce",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "caa41329ce9931c990c3775d",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "fd3af71c6faed62a6da6b233",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "13e074761d87d1fdc2e1a3d7",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "2e5690c0809cc125619394bf",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "479854d2b2dbe48aa1c47d9a",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "2e5690c0809cc125619394bf",
+          "query_index": 7,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "a780aa53b68b1a91d7c182ce",
+          "query_index": 0,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902354,
+      "stream": "mixed",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 2,
+      "conditional_actions": [
+        1,
+        1,
+        0,
+        2,
+        2,
+        1,
+        0,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "843c26aed861197b273ded61",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "43b7b76e7a97e69df3a41b8e",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "500475082ce2a66f6b19f2a3",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "e4dada58b805e23a5f413535",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "834fdccfd2c39012933d0d0c",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "843c26aed861197b273ded61",
+          "query_index": 4,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "43b7b76e7a97e69df3a41b8e",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "c02074bf3367801a0ff7319e",
+          "query_index": 0,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902355,
+      "stream": "mixed",
+      "conditional": 2,
+      "prior": 2,
+      "static_ridge": 2,
+      "one_each": 2,
+      "conditional_actions": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        2,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "e28f724c8aedb62be2adad7c",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "e28f724c8aedb62be2adad7c",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 3,
+          "task_id": "3b3722a6e7f5f35add43775f",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "f3867ff43cc17845a2d9d708",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "564b7199049ab8bfa0d42bbb",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "b16f4c78c3ab9c2e622e5150",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "851459924028513c56b2cf29",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "3d65b01c16d85890b6b4c5fe",
+          "query_index": 0,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902356,
+      "stream": "mixed",
+      "conditional": 2,
+      "prior": 1,
+      "static_ridge": 1,
+      "one_each": 0,
+      "conditional_actions": [
+        1,
+        0,
+        2,
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "f21f02938ea685ed853118f5",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "71c40ca86056ce73d3aed662",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "750c2496bcf13cbce4c20155",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "0fae49a54f51a23d51482775",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "664d158b42e54d8e96982ab7",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "258d39362653c732aa1fa829",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "f21f02938ea685ed853118f5",
+          "query_index": 3,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "750c2496bcf13cbce4c20155",
+          "query_index": 3,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902357,
+      "stream": "mixed",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 3,
+      "conditional_actions": [
+        1,
+        0,
+        2,
+        0,
+        1,
+        2,
+        2,
+        0
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "36e31f71b48d17a9ac7348e7",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "3adf18d9e01e467e0983a044",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "083f8a14cecf903cdd7ad9db",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "083f8a14cecf903cdd7ad9db",
+          "query_index": 6,
+          "action_number": 2
+        },
+        {
+          "step": 5,
+          "task_id": "45f3a90b2fa1abbb3caab167",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "3be64f94926403718f5894ca",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "3be64f94926403718f5894ca",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "36e31f71b48d17a9ac7348e7",
+          "query_index": 7,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902358,
+      "stream": "mixed",
+      "conditional": 1,
+      "prior": 1,
+      "static_ridge": 1,
+      "one_each": 1,
+      "conditional_actions": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        2,
+        2,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "b43a6cba2ff8ceef2a44aa65",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "a39a01b07789eac395cb1bf2",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "5befb07ca42b1622065f16c4",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "1419ee31e07332a4f6d270ef",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "83f1ab1dea810bd12b9b8776",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "b43a6cba2ff8ceef2a44aa65",
+          "query_index": 7,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "a39a01b07789eac395cb1bf2",
+          "query_index": 3,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "0f3e432b1ebda21d0bc14abb",
+          "query_index": 3,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902359,
+      "stream": "mixed",
+      "conditional": 3,
+      "prior": 2,
+      "static_ridge": 2,
+      "one_each": 2,
+      "conditional_actions": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "0baa399f4611f5fb3ba454bc",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "8018c7330d105f8874f5589a",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "b75d1bf2097e32382e4553ca",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "8018c7330d105f8874f5589a",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 5,
+          "task_id": "0baa399f4611f5fb3ba454bc",
+          "query_index": 5,
+          "action_number": 2
+        },
+        {
+          "step": 6,
+          "task_id": "e7eb94b9f7cfb51a83ce3a29",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "b75d1bf2097e32382e4553ca",
+          "query_index": 4,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "e7eb94b9f7cfb51a83ce3a29",
+          "query_index": 6,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902360,
+      "stream": "ast_only",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 2,
+      "conditional_actions": [
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "ed749861f4d7a8a2ed76cc0b",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "9688b395e39ffe96a2f3085e",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "2203739b1649332d13f6b439",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "9e4cec6ab00be0333d71ef9c",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "67ce182e66bd048507911206",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "9e4cec6ab00be0333d71ef9c",
+          "query_index": 2,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "5f07a04bf8401fc6e84378fe",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "ed749861f4d7a8a2ed76cc0b",
+          "query_index": 3,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902361,
+      "stream": "ast_only",
+      "conditional": 4,
+      "prior": 4,
+      "static_ridge": 4,
+      "one_each": 4,
+      "conditional_actions": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "4252230c2d78aab638a9b640",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "7dbca1187d19bdad25594291",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "e507d1dd154ee34db4131dbe",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "23fa07479e6893d61711d82c",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "4252230c2d78aab638a9b640",
+          "query_index": 1,
+          "action_number": 2
+        },
+        {
+          "step": 6,
+          "task_id": "3e462421bf64123580d3fb6f",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "23fa07479e6893d61711d82c",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "00a554cef8b401b0b4db4444",
+          "query_index": 2,
+          "action_number": 1
+        }
+      ]
+    },
+    {
+      "seed": 902362,
+      "stream": "ast_only",
+      "conditional": 3,
+      "prior": 3,
+      "static_ridge": 3,
+      "one_each": 3,
+      "conditional_actions": [
+        0,
+        0,
+        2,
+        1,
+        2,
+        2,
+        0,
+        1
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "d161188247083b5e7f0162f3",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "3ec1ec7fccc44d9636a45899",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "d161188247083b5e7f0162f3",
+          "query_index": 2,
+          "action_number": 2
+        },
+        {
+          "step": 4,
+          "task_id": "3ec1ec7fccc44d9636a45899",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 5,
+          "task_id": "e111f8a18debc084aaaa43cc",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "0966debf73e1e7c404c60540",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "023f8ecee7dc35269082888f",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 8,
+          "task_id": "e111f8a18debc084aaaa43cc",
+          "query_index": 6,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902363,
+      "stream": "ast_only",
+      "conditional": 2,
+      "prior": 2,
+      "static_ridge": 2,
+      "one_each": 1,
+      "conditional_actions": [
+        1,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        0
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "cb5d98fc7c7cf7592dd47eef",
+          "query_index": 6,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "88b658c57faf72b68f4734aa",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "2318b0fb49c8089012ed85b7",
+          "query_index": 1,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "4d99b0cf7a5e92e1ce5e975a",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "b4744f584f3f00453dfc1b0f",
+          "query_index": 4,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "f329b144af9da9995d431e92",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 7,
+          "task_id": "cb5d98fc7c7cf7592dd47eef",
+          "query_index": 3,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "88b658c57faf72b68f4734aa",
+          "query_index": 7,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902364,
+      "stream": "ast_only",
+      "conditional": 2,
+      "prior": 2,
+      "static_ridge": 2,
+      "one_each": 2,
+      "conditional_actions": [
+        1,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "7477c35b421b14474decb084",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "25871a8f2eb4a09cd7be38aa",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "4378ce853ae5262465967942",
+          "query_index": 3,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "dae519e62416d359733c2ac8",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 5,
+          "task_id": "a2d9fa6860dcd6ebf81ae440",
+          "query_index": 2,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "4378ce853ae5262465967942",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "7477c35b421b14474decb084",
+          "query_index": 0,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "dae519e62416d359733c2ac8",
+          "query_index": 7,
+          "action_number": 2
+        }
+      ]
+    },
+    {
+      "seed": 902365,
+      "stream": "ast_only",
+      "conditional": 2,
+      "prior": 2,
+      "static_ridge": 2,
+      "one_each": 4,
+      "conditional_actions": [
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        2
+      ],
+      "conditional_trace": [
+        {
+          "step": 1,
+          "task_id": "7debe1653ba2db2872ceb01c",
+          "query_index": 5,
+          "action_number": 1
+        },
+        {
+          "step": 2,
+          "task_id": "5500443e1c798263f4cf954e",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 3,
+          "task_id": "22d6d4df9aa785ce888a16b0",
+          "query_index": 0,
+          "action_number": 1
+        },
+        {
+          "step": 4,
+          "task_id": "22d6d4df9aa785ce888a16b0",
+          "query_index": 2,
+          "action_number": 2
+        },
+        {
+          "step": 5,
+          "task_id": "f2235960117fff45da893ceb",
+          "query_index": 7,
+          "action_number": 1
+        },
+        {
+          "step": 6,
+          "task_id": "7debe1653ba2db2872ceb01c",
+          "query_index": 4,
+          "action_number": 2
+        },
+        {
+          "step": 7,
+          "task_id": "5500443e1c798263f4cf954e",
+          "query_index": 4,
+          "action_number": 2
+        },
+        {
+          "step": 8,
+          "task_id": "21f92598103b1c957d3293fa",
+          "query_index": 7,
+          "action_number": 1
+        }
+      ]
+    }
+  ]
+}

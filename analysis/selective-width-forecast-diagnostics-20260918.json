@@ -1,0 +1,51 @@
+{
+  "scope": "post-audit diagnostic on frozen models and target; not a new promotion gate",
+  "manifest_sha256": "c90bd59498e5abfb8cdbe09552127d526d6a4d2b4b81a5e85625df826f0b5c92",
+  "audit_sha256": "0fa212d814ee46d511d79ed0f3f99df1fff1d646603432ddbae56088b5812e3e",
+  "tasks": 192,
+  "positive_effects": 3,
+  "negative_effects": 0,
+  "actual_mean_effect": 0.015625,
+  "models": {
+    "early": {
+      "brier_100": 0.07465433738438025,
+      "brier_200": 0.08525347383209171,
+      "effect_mse": 0.017898344917784543,
+      "effect_mae": 0.05037291586999452,
+      "effect_bias": 0.01179275581450071,
+      "positive_edit_average_precision": 0.03295214270824027,
+      "mean_predicted_effect": 0.02741775581450071,
+      "positive_edits_in_top_96": 3
+    },
+    "later": {
+      "brier_100": 0.07120151304875129,
+      "brier_200": 0.0848367557962847,
+      "effect_mse": 0.01731812467053791,
+      "effect_mae": 0.04942211094219306,
+      "effect_bias": 0.010282678094515782,
+      "positive_edit_average_precision": 0.04469557549267694,
+      "mean_predicted_effect": 0.025907678094515784,
+      "positive_edits_in_top_96": 3
+    },
+    "scrambled": {
+      "brier_100": 0.07120151304875129,
+      "brier_200": 0.10742360866399292,
+      "effect_mse": 0.03115759557528071,
+      "effect_mae": 0.13187766057322356,
+      "effect_bias": 0.021333413226210757,
+      "positive_edit_average_precision": 0.020955117578436794,
+      "mean_predicted_effect": 0.03695841322621076,
+      "positive_edits_in_top_96": 2
+    },
+    "duplicate": {
+      "brier_100": 0.07405514224524995,
+      "brier_200": 0.07970020296161247,
+      "effect_mse": 0.017547453871963287,
+      "effect_mae": 0.046957050863208276,
+      "effect_bias": 0.008844991176573601,
+      "positive_edit_average_precision": 0.023383253654024307,
+      "mean_predicted_effect": 0.024469991176573603,
+      "positive_edits_in_top_96": 2
+    }
+  }
+}

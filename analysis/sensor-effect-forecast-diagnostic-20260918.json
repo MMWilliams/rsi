@@ -1,0 +1,61 @@
+{
+  "scope": "post-audit diagnostic, not predeclared promotion gate",
+  "tasks": 192,
+  "positive_effects": 12,
+  "models": {
+    "early_logistic": {
+      "brier": 0.16964202965259387,
+      "average_precision": 0.06666470972909483,
+      "roc_auc": 0.4824074074074074,
+      "mean_predicted_positive_probability": 0.2835731848631101,
+      "actual_positive_rate": 0.0625,
+      "positive_effects_selected_at_96_calls": 6,
+      "decision_regret_to_oracle_four": 6
+    },
+    "early_hgb": {
+      "brier": 0.0600982722932819,
+      "average_precision": 0.08227272727272728,
+      "roc_auc": 0.5393518518518519,
+      "mean_predicted_positive_probability": 0.028805327048416183,
+      "actual_positive_rate": 0.0625,
+      "positive_effects_selected_at_96_calls": 6,
+      "decision_regret_to_oracle_four": 6
+    },
+    "later_logistic": {
+      "brier": 0.16366302209990827,
+      "average_precision": 0.07753288963251913,
+      "roc_auc": 0.5587962962962962,
+      "mean_predicted_positive_probability": 0.29563016690575433,
+      "actual_positive_rate": 0.0625,
+      "positive_effects_selected_at_96_calls": 8,
+      "decision_regret_to_oracle_four": 4
+    },
+    "later_hgb": {
+      "brier": 0.05889244731605441,
+      "average_precision": 0.10095664715306679,
+      "roc_auc": 0.6083333333333334,
+      "mean_predicted_positive_probability": 0.04979976506726829,
+      "actual_positive_rate": 0.0625,
+      "positive_effects_selected_at_96_calls": 8,
+      "decision_regret_to_oracle_four": 4
+    },
+    "scrambled_hgb": {
+      "brier": 0.058263020312031365,
+      "average_precision": 0.11457840280347217,
+      "roc_auc": 0.6293981481481481,
+      "mean_predicted_positive_probability": 0.04656796400377722,
+      "actual_positive_rate": 0.0625,
+      "positive_effects_selected_at_96_calls": 7,
+      "decision_regret_to_oracle_four": 5
+    },
+    "duplicate_hgb": {
+      "brier": 0.060094819333605165,
+      "average_precision": 0.10333867054649376,
+      "roc_auc": 0.5479166666666666,
+      "mean_predicted_positive_probability": 0.028659587966659225,
+      "actual_positive_rate": 0.0625,
+      "positive_effects_selected_at_96_calls": 6,
+      "decision_regret_to_oracle_four": 6
+    }
+  }
+}

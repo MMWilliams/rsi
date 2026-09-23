@@ -1,0 +1,697 @@
+{
+  "harvest_round1": {
+    "baseline_selected": [
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "cffaf47eb40d78dfe82d",
+        "program": "Concat(': ', Sub(M(WORD,2,end),C-2))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "67b74fdcc02e9640f0e9",
+        "program": "Concat('.', ', ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "97ca4e9f2ce189fce460",
+        "program": "Concat('-')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "e9ee758f5c2b8a7903da",
+        "program": "Concat(Sub(M(WORD,1,end),C-5), Sub(C6,C-4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "2f7e3f4225b762430589",
+        "program": "Concat('/')",
+        "oracle_correct": true
+      }
+    ],
+    "corrected_selected": [
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "cffaf47eb40d78dfe82d",
+        "program": "Concat(': ', Sub(M(WORD,2,end),C-2))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "67b74fdcc02e9640f0e9",
+        "program": "Concat('.', ', ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "97ca4e9f2ce189fce460",
+        "program": "Concat('-')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "e9ee758f5c2b8a7903da",
+        "program": "Concat(Sub(M(WORD,1,end),C-5), Sub(C6,C-4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "2f7e3f4225b762430589",
+        "program": "Concat('/')",
+        "oracle_correct": true
+      }
+    ],
+    "corrected_first_verified": [
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "cffaf47eb40d78dfe82d",
+        "program": "Concat(': ', Sub(M(WORD,2,end),C-2))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "67b74fdcc02e9640f0e9",
+        "program": "Concat('.', ', ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "97ca4e9f2ce189fce460",
+        "program": "Concat('-')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "e9ee758f5c2b8a7903da",
+        "program": "Concat(Sub(M(WORD,1,end),C-5), Sub(C6,C-4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "2f7e3f4225b762430589",
+        "program": "Concat('/')",
+        "oracle_correct": true
+      }
+    ],
+    "corrected_frontier": [
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(M(UPPER,1,start),C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,C4), Sub(C4,C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,C5), Sub(C5,C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,C2), Sub(C2,C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,C3), Sub(C3,C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,C6), Sub(C6,C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,C7), Sub(C7,C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(M(UPPER,1,start),C6), Sub(C6,C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(M(UPPER,1,start),C7), Sub(C7,C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,M(WORD,1,end)), Sub(M(LOWER,1,end),C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,M(UPPER,2,end)), Sub(M(UPPER,2,end),C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,M(LOWER,2,start)), Sub(M(UPPER,2,end),C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,M(UPPER,2,end)), Sub(M(LOWER,2,start),C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(M(UPPER,1,start),M(UPPER,1,end)), Sub(C1,C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,M(WORD,2,start)), Sub(M(UPPER,2,start),C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,M(LOWER,2,start)), Sub(M(LOWER,2,start),C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(C0,M(UPPER,2,start)), Sub(M(UPPER,2,start),C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(M(UPPER,1,start),M(LOWER,1,start)), Sub(C1,C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(M(UPPER,1,start),M(UPPER,2,end)), Sub(M(LOWER,2,start),C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "698934af64e4d72e6fbf",
+        "program": "Concat(Sub(M(UPPER,1,start),M(LOWER,2,start)), Sub(M(LOWER,2,start),C8))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "cffaf47eb40d78dfe82d",
+        "program": "Concat(': ', Sub(M(WORD,2,end),C-2))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "cffaf47eb40d78dfe82d",
+        "program": "Concat(': ', Sub(M(LOWER,2,end),C-2))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "cffaf47eb40d78dfe82d",
+        "program": "Concat(':', ' ', Sub(M(LOWER,2,end),C-2))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "67b74fdcc02e9640f0e9",
+        "program": "Concat('.', ', ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "67b74fdcc02e9640f0e9",
+        "program": "Concat('.', ',', Sub(M(WORD,1,end),M(WORD,2,start)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "67b74fdcc02e9640f0e9",
+        "program": "Concat('.', ',', Sub(M(LOWER,1,end),M(WORD,2,start)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "67b74fdcc02e9640f0e9",
+        "program": "Concat('.', ',', Sub(M(WORD,1,end),M(UPPER,2,start)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "67b74fdcc02e9640f0e9",
+        "program": "Concat('.', ',', Sub(M(LOWER,1,end),M(UPPER,2,start)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "67b74fdcc02e9640f0e9",
+        "program": "Concat('.', ',', ' ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "67b74fdcc02e9640f0e9",
+        "program": "Concat('.', ',', cap(Sub(M(WORD,1,end),M(WORD,2,start))))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "67b74fdcc02e9640f0e9",
+        "program": "Concat('.', ',', cap(Sub(M(LOWER,1,end),M(WORD,2,start))))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "67b74fdcc02e9640f0e9",
+        "program": "Concat('.', ',', cap(Sub(M(WORD,1,end),M(UPPER,2,start))))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "67b74fdcc02e9640f0e9",
+        "program": "Concat('.', ',', cap(Sub(M(LOWER,1,end),M(UPPER,2,start))))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "67b74fdcc02e9640f0e9",
+        "program": "Concat('.', ',', lower(Sub(M(LOWER,1,end),M(WORD,2,start))))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "67b74fdcc02e9640f0e9",
+        "program": "Concat('.', ',', lower(Sub(M(LOWER,1,end),M(UPPER,2,start))))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "97ca4e9f2ce189fce460",
+        "program": "Concat('-')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "e9ee758f5c2b8a7903da",
+        "program": "Concat(Sub(M(WORD,1,end),C-5), Sub(C6,C-4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "e9ee758f5c2b8a7903da",
+        "program": "Concat(Sub(M(LOWER,1,end),C-5), Sub(C6,C-4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "2f7e3f4225b762430589",
+        "program": "Concat('/')",
+        "oracle_correct": true
+      }
+    ]
+  },
+  "harvest_round2": {
+    "baseline_selected": [
+      {
+        "task_id": "5804a9340dd924575203",
+        "program": "Concat(Sub(M(WORD,1,end),M(WORD,2,end)), ', ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "f894a7b01a7519254d0c",
+        "program": "Concat(', ', ', ', Sub(C0,C5), '-')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "aa1c00f55e6e4b1babb7",
+        "program": "Concat(Sub(C-7,C7))",
+        "oracle_correct": true
+      }
+    ],
+    "corrected_selected": [
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ', ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "5804a9340dd924575203",
+        "program": "Concat(Sub(M(WORD,1,end),M(WORD,2,end)), ', ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "f894a7b01a7519254d0c",
+        "program": "Concat(', ', ', ', Sub(C0,C5), '-')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "aa1c00f55e6e4b1babb7",
+        "program": "Concat(Sub(C-7,C7))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(Sub(C3,M(DIGITS,2,start)), Sub(C3,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "9a33a6814cb141ce859a",
+        "program": "Concat(' ', Sub(M(WORD,1,end),C-2), Sub(C6,C-5))",
+        "oracle_correct": true
+      }
+    ],
+    "corrected_first_verified": [
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ', ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "5804a9340dd924575203",
+        "program": "Concat(Sub(M(WORD,1,end),M(WORD,2,end)), ', ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "f894a7b01a7519254d0c",
+        "program": "Concat(', ', ', ', Sub(C0,C5), '-')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "aa1c00f55e6e4b1babb7",
+        "program": "Concat(Sub(C-7,C7))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(Sub(C3,M(DIGITS,2,start)), Sub(C3,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "2fcb49139e6ce47346c1",
+        "program": "Concat('.', Sub(C2,C3), '.', cap(Sub(M(UPPER,1,end),C5)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "9a33a6814cb141ce859a",
+        "program": "Concat(' ', Sub(M(WORD,1,end),C-2), Sub(C6,C-5))",
+        "oracle_correct": true
+      }
+    ],
+    "corrected_frontier": [
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ', ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ', ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', Sub(M(WORD,1,end),M(WORD,2,start)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ',', Sub(M(WORD,1,end),M(WORD,2,start)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', Sub(M(LOWER,1,end),M(WORD,2,start)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', Sub(M(WORD,1,end),M(UPPER,2,start)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ',', Sub(M(LOWER,1,end),M(WORD,2,start)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ',', Sub(M(WORD,1,end),M(UPPER,2,start)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', Sub(M(LOWER,1,end),M(UPPER,2,start)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ',', Sub(M(LOWER,1,end),M(UPPER,2,start)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', ' ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ',', ' ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', cap(Sub(M(LOWER,1,end),M(WORD,2,start))))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', cap(Sub(M(WORD,1,end),M(UPPER,2,start))))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ',', cap(Sub(M(LOWER,1,end),M(WORD,2,start))))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(WORD,2,start),C6)), ',', cap(Sub(M(LOWER,1,end),M(UPPER,2,start))))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "31a74a23ab84f2b36e64",
+        "program": "Concat(lower(Sub(M(UPPER,2,start),C6)), ',', cap(Sub(M(LOWER,1,end),M(UPPER,2,start))))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "5804a9340dd924575203",
+        "program": "Concat(Sub(M(WORD,1,end),M(WORD,2,end)), ', ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "5804a9340dd924575203",
+        "program": "Concat(Sub(M(LOWER,1,end),M(WORD,2,end)), ', ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "5804a9340dd924575203",
+        "program": "Concat(Sub(M(WORD,1,end),M(LOWER,2,end)), ', ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "5804a9340dd924575203",
+        "program": "Concat(Sub(M(LOWER,1,end),M(LOWER,2,end)), ', ')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "f894a7b01a7519254d0c",
+        "program": "Concat(', ', ', ', Sub(C0,C5), '-')",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "aa1c00f55e6e4b1babb7",
+        "program": "Concat(Sub(C-7,C7))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "aa1c00f55e6e4b1babb7",
+        "program": "Concat(Sub(C-7,C6), Sub(C6,C7))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "aa1c00f55e6e4b1babb7",
+        "program": "Concat(Sub(C-7,C-6), Sub(C-6,C7))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "aa1c00f55e6e4b1babb7",
+        "program": "Concat(Sub(C-7,C6), lower(Sub(C6,C7)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(Sub(C3,M(DIGITS,2,start)), Sub(C3,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(Sub(C-7,M(DIGITS,2,start)), Sub(C3,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(Sub(C3,M(DIGITS,2,start)), Sub(C-7,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(Sub(C3,M(DIGITS,2,start)), Sub(C3,C-6))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(Sub(C-7,M(DIGITS,2,start)), Sub(C-7,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(Sub(C-7,M(DIGITS,2,start)), Sub(C3,C-6))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(Sub(C3,M(DIGITS,2,start)), Sub(C-7,C-6))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(Sub(C-7,M(DIGITS,2,start)), Sub(C-7,C-6))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(cap(Sub(C3,M(DIGITS,2,start))), Sub(C3,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(Sub(C3,M(DIGITS,2,start)), cap(Sub(C-7,C4)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(cap(Sub(C-7,M(DIGITS,2,start))), Sub(C3,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(cap(Sub(C3,M(DIGITS,2,start))), Sub(C-7,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(cap(Sub(C3,M(DIGITS,2,start))), Sub(C3,C-6))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(Sub(C-7,M(DIGITS,2,start)), cap(Sub(C-7,C4)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(Sub(C-7,M(DIGITS,2,start)), cap(Sub(C3,C-6)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(Sub(C3,M(DIGITS,2,start)), cap(Sub(C-7,C-6)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(cap(Sub(C-7,M(DIGITS,2,start))), Sub(C-7,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(cap(Sub(C-7,M(DIGITS,2,start))), Sub(C3,C-6))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(cap(Sub(C3,M(DIGITS,2,start))), Sub(C-7,C-6))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(lower(Sub(C3,M(DIGITS,2,start))), Sub(C3,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(Sub(C-7,M(DIGITS,2,start)), cap(Sub(C-7,C-6)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(cap(Sub(C-7,M(DIGITS,2,start))), Sub(C-7,C-6))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(lower(Sub(C-7,M(DIGITS,2,start))), Sub(C3,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(lower(Sub(C3,M(DIGITS,2,start))), Sub(C-7,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(lower(Sub(C3,M(DIGITS,2,start))), Sub(C3,C-6))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(upper(Sub(C-7,M(DIGITS,2,start))), Sub(C3,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(lower(Sub(C-7,M(DIGITS,2,start))), Sub(C-7,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(lower(Sub(C-7,M(DIGITS,2,start))), Sub(C3,C-6))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(lower(Sub(C3,M(DIGITS,2,start))), Sub(C-7,C-6))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(upper(Sub(C-7,M(DIGITS,2,start))), Sub(C-7,C4))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(upper(Sub(C-7,M(DIGITS,2,start))), Sub(C3,C-6))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(lower(Sub(C-7,M(DIGITS,2,start))), Sub(C-7,C-6))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "854b3e324d8df4e815c9",
+        "program": "Concat(upper(Sub(C-7,M(DIGITS,2,start))), Sub(C-7,C-6))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "2fcb49139e6ce47346c1",
+        "program": "Concat('.', Sub(C2,C3), '.', cap(Sub(M(UPPER,1,end),C5)))",
+        "oracle_correct": true
+      },
+      {
+        "task_id": "9a33a6814cb141ce859a",
+        "program": "Concat(' ', Sub(M(WORD,1,end),C-2), Sub(C6,C-5))",
+        "oracle_correct": true
+      }
+    ]
+  }
+}

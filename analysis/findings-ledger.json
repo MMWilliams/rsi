@@ -1,0 +1,895 @@
+{
+  "schema_version": 1,
+  "findings": [
+    {
+      "id": "search-correction-coverage-gain-cost-regression",
+      "status": "observed",
+      "scope": "confirmatory",
+      "claim": "Corrected search improved first-choice accuracy from 57.64% to 65.45% and coverage@64 from 64.93% to 76.04%, but increased cost and produced regressions.",
+      "source": ["search-validation-results-2026-09-16.md"],
+      "metrics": {"first_choice_before": 0.5764, "first_choice_after": 0.6545, "coverage64_before": 0.6493, "coverage64_after": 0.7604, "first_choice_regressions": 17},
+      "implication": "Search-policy repair is a real component-level gain, not evidence of recursive self-improvement.",
+      "confidence": "audited prospective validation"
+    },
+    {
+      "id": "retention-diversity-without-coverage",
+      "status": "observed",
+      "scope": "confirmatory",
+      "claim": "Replay increased distinct parseable programs per task from 5.08 to 19.71, while final task coverage fell from 3/24 to 2/24.",
+      "source": ["retention-results-2026-09-16.md"],
+      "metrics": {"distinct_programs_before": 5.08, "distinct_programs_after": 19.71, "final_coverage_fresh": 3, "final_coverage_replay": 2},
+      "implication": "Behavioral diversity is not a sufficient proxy for useful retained capability.",
+      "confidence": "audited diagnostic"
+    },
+    {
+      "id": "inheritance-replication-null",
+      "status": "null",
+      "scope": "confirmatory",
+      "claim": "Inherited operator effects did not replicate: the replication was -0.1953 percentage points versus the empty control and -0.3255 versus random.",
+      "source": ["inheritance-replication-results-2026-09-16.md"],
+      "metrics": {"versus_empty_pp": -0.1953, "versus_random_pp": -0.3255, "sources_meeting_criterion": 1, "sources_total": 6},
+      "implication": "A learned effect table was not a stable transferable improver under this protocol.",
+      "confidence": "audited replication"
+    },
+    {
+      "id": "library-fragments-null",
+      "status": "null",
+      "scope": "confirmatory",
+      "claim": "Inherited fragment libraries did not improve solver correctness; tested conditions tied the ancestor at 104/192.",
+      "source": ["library-results-2026-09-16.md"],
+      "metrics": {"ancestor_correct": 104, "total_tasks": 192, "conditions_tied": 3},
+      "implication": "Verified fragments alone did not create a useful learned library in the bounded solver.",
+      "confidence": "audited diagnostic"
+    },
+    {
+      "id": "context-ranking-fails",
+      "status": "failed",
+      "scope": "confirmatory",
+      "claim": "Contextual regression reduced prediction error but beat unconditional means in ranking utility for only 1 of 9 sources.",
+      "source": ["context-diagnostic-results-2026-09-16.md"],
+      "metrics": {"sources": 9, "ranking_wins": 1},
+      "implication": "Better numeric prediction did not translate into reliable edit selection.",
+      "confidence": "audited nested diagnostic"
+    },
+    {
+      "id": "v11-frontier-no-rsi",
+      "status": "observed",
+      "scope": "engineering",
+      "claim": "Audited V11 produced approximately 20.83% selected round-two pass@64, while the corrected frontier reached 20.31%; the engineering screen failed.",
+      "source": ["analysis/frontier-distillation-v11-report.md", "EXPERIMENT-v11-frontier-contract-repair.md"],
+      "metrics": {"selected_round2_pass64": 0.2083, "frontier_round2_pass64": 0.2031, "audit_status": "passed", "screen": "failed"},
+      "implication": "The full learned frontier did not outperform its narrower control, so RSI remains unproved.",
+      "confidence": "310-artifact independent archive audit"
+    },
+    {
+      "id": "map-elites-early-coverage-tradeoff",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "On one fresh 24-task bank, a visible-only MAP-Elites portfolio raised coverage@4 from 19 to 21 but reduced selected correctness from 18 to 17 and did not improve coverage@64 beyond the cost frontier.",
+      "source": ["runs/meta-search-v13-20260917/results.json", "runs/meta-search-v13-20260917/graded.json"],
+      "metrics": {"tasks": 24, "cost_selected_correct": 18, "map_elites_selected_correct": 17, "cost_coverage4": 19, "map_elites_coverage4": 21, "cost_coverage64": 21, "map_elites_coverage64": 21},
+      "implication": "Visible syntax diversity can improve early frontier coverage while harming top-rank selection; it should be treated as a multi-objective control, not a free capability gain.",
+      "confidence": "sealed exploratory run; independent semantic audit not yet implemented"
+    },
+    {
+      "id": "evolved-policy-single-split-positive",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A bounded evolutionary search-policy optimizer improved final selected correctness from 12/24 to 14/24 on its first held-out bank while leaving coverage@64 at 15/24.",
+      "source": ["runs/policy-evolution-v13-20260917/results.json", "analysis/policy-evolution-v13-results.md"],
+      "metrics": {"development_base_selected_correct": 13, "development_champion_selected_correct": 13, "final_base_selected_correct": 12, "final_champion_selected_correct": 14, "final_base_coverage64": 15, "final_champion_coverage64": 15},
+      "implication": "Evolution of the improver's search policy can improve top-rank selection on a fresh split, but the effect requires replication.",
+      "confidence": "sealed exploratory split; not independently audited"
+    },
+    {
+      "id": "evolved-policy-frozen-replication-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "The frozen evolved policy did not outperform the base policy across three new replication banks: both achieved 39/72 selected correct and 42/72 coverage@64.",
+      "source": ["runs/policy-replication-v13-20260917c/results.json", "runs/policy-replication-v13-20260917c/audit.json", "analysis/policy-evolution-v13-results.md"],
+      "metrics": {"banks": 3, "tasks": 72, "base_selected_correct": 39, "champion_selected_correct": 39, "base_coverage64": 42, "champion_coverage64": 42, "audit_status": "passed"},
+      "implication": "The initial +2/24 gain was not robust; future policy evolution needs more development banks, stronger regularization and larger replication.",
+      "confidence": "independently regraded sealed replication archive"
+    },
+    {
+      "id": "contextual-policy-selector-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "A visible-feature nearest-neighbor controller selected 14/24 correct on a final bank, matching the fixed base and underperforming the fixed evolved policy at 16/24.",
+      "source": ["runs/contextual-policy-v13-20260917b/results.json", "analysis/contextual-policy-v13-results.md"],
+      "metrics": {"fixed_base_selected_correct": 14, "fixed_evolved_selected_correct": 16, "contextual_selected_correct": 14, "fixed_base_coverage64": 16, "fixed_evolved_coverage64": 18, "contextual_coverage64": 16},
+      "implication": "Task-conditioned policy selection needs more development data or richer features before it can replace a fixed evolved policy.",
+      "confidence": "sealed exploratory run; no independent archive auditor yet"
+    },
+    {
+      "id": "verified-neural-distillation-micro-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "On an audited fresh 16-task bank, verified LoRA self-training improved pass@1 from 0/16 after symbolic bootstrap to 2/16 after round 1 and pass@16 from 2/16 to 3/16; round 2 retained pass@16 but regressed pass@1 to 1/16.",
+      "source": ["runs/neural-micro-v13-20260917c/results.json", "runs/neural-micro-v13-20260917c/audit.json", "analysis/neural-micro-v13-results.md"],
+      "metrics": {"tasks": 16, "bootstrap_pass1": 0.0, "round1_pass1": 0.125, "round2_pass1": 0.0625, "bootstrap_pass16": 0.125, "round1_pass16": 0.1875, "round2_pass16": 0.1875, "audit_status": "passed"},
+      "implication": "Verified distillation can produce a local learned capability gain, but repeated updates are unstable and the result remains bounded and small-scale.",
+      "confidence": "independently regraded sealed neural archive"
+    },
+    {
+      "id": "multi-policy-voting-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "A rank-discounted ensemble of five evolved search policies achieved 19/24 selected correct, matching the best fixed policies and adding no final advantage.",
+      "source": ["runs/policy-ensemble-v13-20260917/results.json"],
+      "metrics": {"tasks": 24, "ensemble_selected_correct": 19, "best_fixed_selected_correct": 19, "best_fixed_coverage64": 20},
+      "implication": "Candidate consensus did not improve over the best fixed policy on this fresh bank.",
+      "confidence": "sealed exploratory run; independent semantic audit not yet implemented"
+    },
+    {
+      "id": "replay-gate-self-training-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "A held-out replay-and-gate controller rejected both proposed neural self-training updates; the rolled-back bootstrap adapter still reached 3/16 final tasks at pass@16 versus 0/16 unadapted.",
+      "source": ["runs/neural-gated-v14-20260917/results.json", "runs/neural-gated-v14-20260917/audit.json", "analysis/neural-gated-v14-results.md"],
+      "metrics": {"tasks": 16, "unadapted_pass16": 0.0, "bootstrap_pass16": 0.1875, "accepted_updates": 0, "rejected_updates": 2, "validation_tasks": 8, "audit_status": "passed"},
+      "implication": "Verified bootstrap retention is reproducible in this trial, but validation-gated self-training did not add capability; local gains remain small and non-recursive.",
+      "confidence": "independently regraded sealed neural archive"
+    },
+    {
+      "id": "open-ended-operator-invention-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "An adapted-model operator lab generated 3 valid bounded search-policy proposals and 9 quality-diversity compositions, but none passed development/admission gates; the best final result tied baseline at 11/16.",
+      "source": ["runs/open-ended-v15d-20260917/results.json", "runs/open-ended-v15d-20260917/audit.json", "analysis/open-ended-v15-results.md"],
+      "metrics": {"train_anchors": 17, "valid_model_proposals": 3, "hypotheses": 12, "accepted": 0, "baseline_final_correct": 11, "best_final_correct": 11, "final_tasks": 16, "audit_status": "passed"},
+      "implication": "Schema repair made model hypotheses usable, but bounded policy edits did not generalize; open-ended proposal syntax is not evidence of an improving improver.",
+      "confidence": "independently replayed and regraded sealed archive"
+    },
+    {
+      "id": "neural-symbolic-hybrid-search-ceiling",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Across two audited fresh-bank replications, symbolic verification of neural DSL proposals raised raw neural pass@16 to the deterministic symbolic baseline (10/16 and 7/16), but verified hybrid retraining did not improve hybrid coverage; one seed improved raw pass@16 from 3/16 to 4/16 only.",
+      "source": ["runs/hybrid-v16-20260917/results.json", "runs/hybrid-v16-20260917/audit.json", "runs/hybrid-v16b-20260917/results.json", "runs/hybrid-v16b-20260917/audit.json", "analysis/hybrid-v16-results.md"],
+      "metrics": {"replications": 2, "baseline_final_correct": [10, 7], "hybrid_final_correct": [10, 7], "raw_pre_pass16": [0.125, 0.1875], "raw_post_pass16": [0.125, 0.25], "audit_status": "passed"},
+      "implication": "Neural proposals can be amplified by symbolic verification, but useful generalization is capped by the fixed symbolic kernel; improving the improver requires changing the search substrate itself.",
+      "confidence": "two independently regraded sealed archives"
+    },
+    {
+      "id": "kernel-controller-no-regret-null",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A visible-feature controller over baseline, partial-empty, and reopening search kernels matched the best fixed kernel on two fresh banks (16/24 and 18/24), but did not exceed it; the partial-empty +1 gain replicated as a null.",
+      "source": ["runs/kernel-controller-v17-20260917/results.json", "runs/kernel-controller-v17-20260917/audit.json", "runs/kernel-controller-v17b-20260917/results.json", "runs/kernel-controller-v17b-20260917/audit.json", "analysis/kernel-controller-v17-results.md"],
+      "metrics": {"replications": 2, "controller_final_correct": [16, 18], "best_fixed_final_correct": [16, 18], "baseline_final_correct": [15, 18], "partial_final_correct": [16, 16], "reopen_final_correct": [15, 18], "audit_status": "passed"},
+      "implication": "Algorithm-substrate selection can avoid a fixed-kernel regression, but a small contextual controller is not itself an improving improver.",
+      "confidence": "two independently replayed and regraded archives"
+    },
+    {
+      "id": "neural-fragment-reliability-without-coverage",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Visible-only contiguous fragments extracted from neural DSL proposals raised fragment-hybrid pass@16 from 4/16 raw proposals to 9/16 before update and retained 9/16 after verified fragment retraining, matching the symbolic baseline rather than expanding coverage.",
+      "source": ["runs/fragment-hybrid-v18-20260917/results.json", "runs/fragment-hybrid-v18-20260917/audit.json", "analysis/fragment-hybrid-v18-results.md"],
+      "metrics": {"tasks": 16, "symbolic_baseline_correct": 9, "raw_pre_pass16": 0.25, "fragment_pre_pass16": 0.5625, "raw_post_pass16": 0.1875, "fragment_post_pass16": 0.5625, "verified_fragment_rows": 13, "audit_status": "passed"},
+      "implication": "Neural partial structure can improve proposal reliability within a fixed symbolic ceiling, but it is not yet a capability-expanding or recursively improving substrate.",
+      "confidence": "independently replayed and regraded sealed archive"
+    },
+    {
+      "id": "cegis-substrate-coverage-gain",
+      "status": "observed",
+      "scope": "confirmatory",
+      "claim": "Visible-only CEGIS shortest-path synthesis replicated a coverage gain over progressive search on two fresh 24-task banks: 20/24 versus 19/24 and 19/24 versus 15/24. Neural-seeded ranking added one further task on the first bank but tied exact CEGIS on the second.",
+      "source": ["runs/cegis-v19-20260917/results.json", "runs/cegis-v19-20260917/audit.json", "runs/cegis-v19b-20260917/results.json", "runs/cegis-v19b-20260917/audit.json", "analysis/cegis-v19-results.md"],
+      "metrics": {"replications": 2, "tasks": 48, "baseline_correct": 34, "partial_empty_correct": 36, "cegis_correct": 39, "neural_ranked_pre_correct": 40, "neural_ranked_post_correct": 40, "audit_status": "passed"},
+      "implication": "Changing the search substrate can recover visibly reachable programs missed by progressive widening; neural proposal atoms may expand the vocabulary, but verified distillation did not yet produce a replicating learned gain.",
+      "confidence": "two independently replayed and regraded sealed fresh-bank archives"
+    },
+    {
+      "id": "visible-constant-synthesis-incremental-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "On a fresh 24-task bank, visible-intersection synthesis of multi-character constants raised exact CEGIS from 16/24 to 17/24; the same constant-augmented neural-seeded CEGIS result was 17/24 before and after distillation.",
+      "source": ["runs/cegis-v20-20260917/results.json", "runs/cegis-v20-20260917/audit.json", "analysis/cegis-v20-counterfactual.json", "analysis/cegis-v20-results.md"],
+      "metrics": {"tasks": 24, "baseline_correct": 15, "partial_empty_correct": 16, "cegis_without_constants": 16, "cegis_with_constants": 17, "additional_constant_task": 1, "audit_status": "passed"},
+      "implication": "Visible target algebra can expand the search vocabulary in a controlled way, but the gain is small and the learned update still did not compound it.",
+      "confidence": "sealed run audit plus same-bank visible-only counterfactual"
+    },
+    {
+      "id": "active-cegis-feedback-diagnostic",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Active CEGIS with up to four hidden-example oracle queries improved V19-B from 19/24 to 20/24 and V20 from 17/24 to 18/24, while V19-A remained 21/24.",
+      "source": ["analysis/active-cegis-diagnostic.md", "rsi/active_cegis.py", "rsi/version_space.py"],
+      "metrics": {"v19a_q4": 21, "v19b_q4": 20, "v20_q4": 18, "query_budget": 4},
+      "implication": "External feedback resolves some visible-equivalent ambiguity but does not establish passive recursive self-improvement; missing hypotheses remain the binding limit.",
+      "confidence": "local diagnostic over frozen banks; not independently archived"
+    },
+    {
+      "id": "admission-gated-cegis-architecture-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A bounded two-stage architecture-evolution gate selected CEGIS with visible constant synthesis: baseline 13/24 versus champion 17/24 on a fresh final bank; the champion scored 22/24 development and 20/24 admission versus baseline 19/24 and 18/24.",
+      "source": ["runs/architecture-evolution-v21-20260917/results.json", "runs/architecture-evolution-v21-20260917/audit.json", "analysis/architecture-evolution-v21-results.md"],
+      "metrics": {"development_tasks": 24, "admission_tasks": 24, "final_tasks": 24, "baseline_development_correct": 19, "champion_development_correct": 22, "baseline_admission_correct": 18, "champion_admission_correct": 20, "baseline_final_correct": 13, "champion_final_correct": 17, "final_delta_tasks": 4, "final_delta_pp": 16.6667, "architecture_generations": 2, "evaluations": 11, "audit_status": "passed", "replayed_rows": 528},
+      "implication": "Admission-gated search-substrate evolution can produce a fresh-bank gain, but the catalog is hand-authored and the result is not evidence of autonomous recursive self-improvement; CEGIS without constants tied on the admission split.",
+      "confidence": "independently replayed sealed exploratory archive"
+    },
+    {
+      "id": "automl-cegis-substrate-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A declarative 180-architecture AutoML search with Pareto successive halving and an admission gate selected CEGIS with visible constants and reached 19/24 on a fresh final bank versus 12/24 for baseline.",
+      "source": ["runs/automl-architecture-v22-20260917/results.json", "runs/automl-architecture-v22-20260917/audit.json", "analysis/automl-architecture-v22-results.md"],
+      "metrics": {"candidate_architectures": 180, "screen_tasks": 8, "development_tasks": 24, "admission_tasks": 24, "final_tasks": 24, "baseline_development_correct": 13, "champion_development_correct": 21, "baseline_admission_correct": 10, "champion_admission_correct": 14, "baseline_final_correct": 12, "champion_final_correct": 19, "final_delta_tasks": 7, "final_delta_pp": 29.1667, "evaluations": 205, "replayed_rows": 2040, "audit_status": "passed"},
+      "implication": "Automated selection over a broader search-substrate space can produce a large bounded capability gain, but the hypothesis space and factor ranges remain researcher-authored; this is not open-ended recursive self-improvement.",
+      "confidence": "independently replayed sealed exploratory archive"
+    },
+    {
+      "id": "active-counterexample-cegis-breakthrough",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Classic counterexample-guided synthesis replicated an interactive gain on two fresh banks: passive CEGIS scored 15/24 and 18/24, while the selected query arms scored 24/24 and 24/24; V23-A reached 23/24 with one query and both replications reached 24/24 with at most two queries.",
+      "source": ["runs/active-cegis-v23-20260917/results.json", "runs/active-cegis-v23-20260917/audit.json", "runs/active-cegis-v23b-20260917/results.json", "runs/active-cegis-v23b-20260917/audit.json", "analysis/active-cegis-v23-results.md"],
+      "metrics": {"replications": 2, "final_tasks": 48, "passive_final_correct": [15, 18], "q1_final_correct": [23, 24], "q2_final_correct": [24, 24], "selected_query_budgets": [2, 1], "mean_selected_queries": [0.4167, 0.25], "evaluated_rows": 504, "audit_status": "passed"},
+      "implication": "External counterexamples can unlock missing synthesis transitions and produce near-perfect interactive performance, but continued oracle access and a fixed grammar are required; this is not passive recursive self-improvement.",
+      "confidence": "independently replayed sealed interactive archive"
+    },
+    {
+      "id": "interactive-feedback-prior-transfer-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "A pairwise structural prior trained from two-query interactive CEGIS development feedback tied the passive baseline on admission (20/24) and fresh final performance (23/24), despite 22/24 development tasks producing oracle-resolved training programs.",
+      "source": ["runs/meta-prior-v24-20260917/results.json", "runs/meta-prior-v24-20260917/audit.json", "analysis/meta-prior-v24-results.md"],
+      "metrics": {"development_tasks": 24, "training_tasks": 22, "prior_updates": 36, "admission_baseline_correct": 20, "admission_prior_correct": 20, "final_baseline_correct": 23, "final_prior_correct": 23, "evaluation_rows": 96, "audit_status": "passed"},
+      "implication": "Interactive counterexamples do not automatically become passive transferable capability through a small ranker; the next self-improvement mechanism must alter the hypothesis space or generate reusable abstractions.",
+      "confidence": "independently replayed sealed null archive"
+    },
+    {
+      "id": "generator-derived-bayesian-prior-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A generator-derived Bayesian program prior replicated a modest passive gain on two independent fresh banks: cost-ranked search scored 16/24 and 17/24, while the Bayesian arm scored 17/24 and 18/24, with no admission regression.",
+      "source": ["runs/bayesian-prior-v25b-20260917/results.json", "runs/bayesian-prior-v25b-20260917/audit.json", "runs/bayesian-prior-v25c-20260917/results.json", "runs/bayesian-prior-v25c-20260917/audit.json", "analysis/bayesian-prior-v25-results.md"],
+      "metrics": {"replications": 2, "final_tasks": 48, "cost_final_correct": [16, 17], "bayesian_final_correct": [17, 18], "cost_development_correct": [18, 18], "bayesian_development_correct": [16, 17], "cost_admission_correct": [20, 18], "bayesian_admission_correct": [20, 19], "total_delta_tasks": 2, "total_delta_pp": 4.1667, "evaluation_rows_replayed": 288, "audit_status": "passed"},
+      "implication": "Matching the task-generation distribution can improve passive ambiguity resolution, but the prior is hand-specified and fixed; this is a bounded inductive-bias result, not recursive self-improvement.",
+      "confidence": "two independently replayed sealed fresh-bank archives"
+    },
+    {
+      "id": "exact-library-learning-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "A DreamCoder-style exact fragment library mined from 24 labeled development programs tied the fixed Bayesian prior on admission (16/24) and fresh final performance (18/24), despite learning one repeated multi-atom fragment.",
+      "source": ["runs/library-learning-v26-20260917/results.json", "runs/library-learning-v26-20260917/audit.json", "analysis/library-learning-v26-results.md"],
+      "metrics": {"development_tasks": 24, "library_macros": 1, "admission_control": 16, "admission_learned": 16, "final_control": 18, "final_learned": 18, "evaluation_rows_replayed": 288, "audit_status": "passed"},
+      "implication": "Exact fragment reuse is too sparse across disjoint program templates; useful library learning needs abstraction rather than memorization.",
+      "confidence": "independently replayed sealed archive"
+    },
+    {
+      "id": "antiunified-library-nonreplicating-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Anti-unified fragment-shape induction produced one +1 final-task gain in V27-A (23/24 versus 22/24), but tied control in V27-B (12/24 versus 12/24) and in a larger 96-task-training run V27-C (22/24 versus 22/24).",
+      "source": ["runs/antiunification-v27-20260917/results.json", "runs/antiunification-v27-20260917/audit.json", "runs/antiunification-v27b-20260917/results.json", "runs/antiunification-v27b-20260917/audit.json", "runs/antiunification-v27c-20260917/results.json", "runs/antiunification-v27c-20260917/audit.json", "analysis/antiunification-v27-results.md"],
+      "metrics": {"replications": 2, "larger_training_run_tasks": 96, "equal_replication_control_final": [22, 12], "equal_replication_learned_final": [23, 12], "larger_training_control_final": 22, "larger_training_learned_final": 22, "combined_equal_control": 34, "combined_equal_learned": 35, "evaluation_rows_replayed": 576, "audit_status": "passed"},
+      "implication": "Abstraction over concrete program parameters is more promising than exact memorization, but current anti-unification does not yet establish a replicating passive gain.",
+      "confidence": "three independently replayed sealed archives"
+    },
+    {
+      "id": "active-epsilon-retention-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "Two-query active CEGIS on 24 development tasks yielded zero reusable epsilon transitions; the retained passive arm tied the Bayesian control at 18/24 on the fresh final bank.",
+      "source": ["runs/epsilon-retention-v28-20260917/results.json", "runs/epsilon-retention-v28-20260917/audit.json", "analysis/epsilon-retention-v28-results.md", "rsi/epsilon_library.py", "rsi/version_space.py"],
+      "metrics": {"active_training_tasks": 24, "active_queries": 2, "epsilon_macros": 0, "development_control": 21, "development_learned": 21, "admission_control": 17, "admission_learned": 17, "final_control": 18, "final_learned": 18, "active_training_rows_replayed": 24, "passive_evaluation_rows_replayed": 144, "audit_status": "passed"},
+      "implication": "Interactive counterexamples do not automatically become transferable grammar extensions; the feedback-to-abstraction step remains the RSI bottleneck.",
+      "confidence": "independently replayed sealed archive"
+    },
+    {
+      "id": "hierarchical-shape-prior-unstable-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A hierarchical prior combining generator likelihood with learned anti-unified shapes gained one raw final task on each of two fresh banks (18/24 vs 17/24 and 16/24 vs 15/24), but the second learned arm regressed admission and was rejected by the gate.",
+      "source": ["runs/shape-prior-v29-20260917/results.json", "runs/shape-prior-v29-20260917/audit.json", "runs/shape-prior-v29b-20260917/results.json", "runs/shape-prior-v29b-20260917/audit.json", "analysis/shape-prior-v29-results.md", "rsi/shape_prior.py"],
+      "metrics": {"replications": 2, "raw_control_final": [17, 15], "raw_learned_final": [18, 16], "raw_control_total": 32, "raw_learned_total": 34, "gated_control_final": [17, 15], "gated_selected_final": [18, 15], "admission_control": [21, 20], "admission_learned": [21, 19], "shape_beta": 3.0, "evaluation_rows_replayed": 288, "audit_status": "passed"},
+      "implication": "Learned structural likelihood can improve passive ambiguity resolution, but the current abstraction prior is not yet stable enough to pass an admission gate across fresh banks.",
+      "confidence": "two independently replayed sealed archives with one gate rejection"
+    },
+    {
+      "id": "hierarchical-shape-beta-sweep-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "A pre-registered beta sweep over the hierarchical shape prior selected beta 1.0 by development tie-break, but every learned arm tied control at 18/24 on the fresh final bank.",
+      "source": ["runs/shape-beta-sweep-v30-20260917/results.json", "runs/shape-beta-sweep-v30-20260917/audit.json", "analysis/shape-beta-sweep-v30-results.md", "rsi/shape_prior.py"],
+      "metrics": {"beta_grid": [0.0, 1.0, 2.0, 3.0], "control_development": 18, "learned_development": [19, 20, 20, 20], "control_admission": 17, "learned_admission": [17, 17, 17, 17], "control_final": 18, "learned_final": [18, 18, 18, 18], "selected_beta": 1.0, "evaluation_rows_replayed": 360, "sealed_artifacts_checked": 22, "audit_status": "passed"},
+      "implication": "Gate-controlled hyperparameter selection can avoid admission regressions, but it did not turn a learned structural prior into a fresh-bank capability gain; the remaining bottleneck is transferable hypothesis-space expansion.",
+      "confidence": "independently replayed sealed five-arm archive"
+    },
+    {
+      "id": "tabular-rl-query-controller-negative",
+      "status": "failed",
+      "scope": "exploratory",
+      "claim": "A tabular Q-learning controller using query count and coarse candidate-count state reached 22/24 on a fresh bank, below fixed two-query CEGIS at 24/24, while using 0.50 versus 0.21 mean queries per task.",
+      "source": ["runs/rl-query-v31c-20260917/results.json", "runs/rl-query-v31c-20260917/audit.json", "analysis/rl-query-v31-results.md", "rsi/rl_query_policy.py"],
+      "metrics": {"development_q0": 19, "development_q2": 24, "development_rl": 22, "admission_q0": 17, "admission_q2": 24, "admission_rl": 20, "final_q0": 20, "final_q2": 24, "final_rl": 22, "rl_mean_queries_final": 0.5, "q2_mean_queries_final": 0.2083, "episodes": 24, "evaluation_rows_replayed": 216, "audit_status": "passed"},
+      "implication": "Naive RL over shallow visible search-state features did not learn a transferable query-allocation policy; future controllers need richer uncertainty signals, better credit assignment, or a changed synthesis substrate.",
+      "confidence": "independently replayed sealed archive with fixed-controller comparison"
+    },
+    {
+      "id": "structural-confidence-query-unstable",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A structural Bayesian confidence gate reached 23/24 versus q=2 at 24/24 on one fresh bank, but replicated at only 18/24 versus q=2 at 22/24 on a second bank; the gate used fewer queries on both.",
+      "source": ["runs/confidence-query-v32-20260917/results.json", "runs/confidence-query-v32-20260917/audit.json", "runs/confidence-query-v32b-20260917/results.json", "runs/confidence-query-v32b-20260917/audit.json", "analysis/confidence-query-v32-results.md", "rsi/confidence_query.py"],
+      "metrics": {"replications": 2, "threshold": 0.9, "final_q2": [24, 22], "final_confidence": [23, 18], "mean_queries_q2": [0.12, 0.33], "mean_queries_confidence": [0.29, 0.17], "evaluation_rows_replayed": 720, "audit_status": "passed"},
+      "implication": "Confidence-based query allocation is a useful efficiency diagnostic but not a stable generalization mechanism; the unresolved RSI bottleneck is reusable abstraction across task distributions.",
+      "confidence": "two independently replayed sealed archives with preregistered thresholds"
+    },
+    {
+      "id": "relational-antiunification-prior-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "A relational anti-unification prior preserving relative character-position offsets tied the generator control at 15/24 on a fresh bank, with development and admission also tied at 19/24 and 21/24.",
+      "source": ["runs/relational-prior-v33b-20260917/results.json", "runs/relational-prior-v33b-20260917/audit.json", "analysis/relational-prior-v33-results.md", "rsi/relational_library.py", "rsi/relational_prior.py"],
+      "metrics": {"development_control": 19, "development_relational": 19, "admission_control": 21, "admission_relational": 21, "final_control": 15, "final_relational": 15, "templates": 2, "evaluation_rows_replayed": 144, "sealed_artifacts_checked": 22, "audit_status": "passed"},
+      "implication": "Preserving local relational structure is insufficient for transferable passive improvement; the next intervention should evolve the ranking mechanism itself or expand the hypothesis language.",
+      "confidence": "independently replayed sealed archive"
+    },
+    {
+      "id": "evolutionary-ranking-program-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "An evolutionary ranker synthesized from structural and generator features tied its generator control on development (22/24), admission (15/24), and fresh final performance (16/24).",
+      "source": ["runs/genetic-ranker-v34-20260917/results.json", "runs/genetic-ranker-v34-20260917/audit.json", "analysis/genetic-ranker-v34-results.md", "rsi/genetic_ranker.py"],
+      "metrics": {"development_control": 22, "development_evolved": 22, "admission_control": 15, "admission_evolved": 15, "final_control": 16, "final_evolved": 16, "population_size": 32, "generations": 24, "evaluation_rows_replayed": 144, "sealed_artifacts_checked": 21, "audit_status": "passed"},
+      "implication": "Selector-level self-modification without hypothesis-space expansion did not transfer; a credible RSI test must let the system invent or validate new search transitions, not only reweight existing candidates.",
+      "confidence": "independently replayed sealed archive"
+    },
+    {
+      "id": "verified-macro-compression-substrate-signal",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Treating verified visible-compatible multi-atom macros as one search transition improved pooled fresh performance from 50/72 to 52/72 across three fresh banks, with gains in two banks and a tie in one.",
+      "source": ["runs/compressed-macro-v35-20260917/results.json", "runs/compressed-macro-v35-20260917/audit.json", "runs/compressed-macro-v35b-20260917/results.json", "runs/compressed-macro-v35b-20260917/audit.json", "runs/compressed-macro-v35c-20260917/results.json", "runs/compressed-macro-v35c-20260917/audit.json", "analysis/compressed-macro-v35-results.md", "rsi/compressed_space.py"],
+      "metrics": {"replications": 3, "final_control": [16, 15, 19], "final_learned": [16, 16, 20], "pooled_control_final": 50, "pooled_learned_final": 52, "admission_control": [12, 16, 16], "admission_learned": [14, 16, 16], "pooled_control_admission": 44, "pooled_learned_admission": 46, "evaluation_rows_replayed": 432, "sealed_artifacts_checked": 66, "audit_status": "passed"},
+      "implication": "Verified abstraction that compresses reusable program fragments can expand effective search capacity under a width constraint; replication is encouraging but the DSL, macro grammar and width gate remain researcher-authored.",
+      "confidence": "three independently replayed sealed fresh-bank archives"
+    },
+    {
+      "id": "active-trajectory-macro-induction-signal",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Macros mined from 48 oracle-verified self-generated CEGIS trajectories produced 26/48 fresh tasks versus 25/48 control, improving one bank and tying one; pooled admission was 35/48 versus 33/48.",
+      "source": ["runs/active-macro-v37-20260917/results.json", "runs/active-macro-v37-20260917/audit.json", "runs/active-macro-v37b-20260917/results.json", "runs/active-macro-v37b-20260917/audit.json", "analysis/active-macro-v37-results.md", "rsi/compressed_space.py"],
+      "metrics": {"replications": 2, "verified_training_programs": 48, "final_control": [12, 13], "final_learned": [13, 13], "pooled_control_final": 25, "pooled_learned_final": 26, "admission_control": [15, 18], "admission_learned": [16, 19], "pooled_control_admission": 33, "pooled_learned_admission": 35, "passive_evaluation_rows_replayed": 288, "audit_status": "passed"},
+      "implication": "A verified interactive loop can generate reusable search transitions that yield a small pooled passive gain, but oracle dependence and a fixed macro schema prevent a claim of open-ended recursive self-improvement.",
+      "confidence": "two independently replayed sealed archives with verified training provenance"
+    },
+    {
+      "id": "active-macro-depth-expansion-signal",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Active-trajectory macro compression with a deeper four-atom horizon reached 18/24 versus 17/24 control on a fresh bank; pooled with two V37 archives, learned compression reached 44/72 versus 42/72 control.",
+      "source": ["runs/active-macro-v38-20260917/results.json", "runs/active-macro-v38-20260917/audit.json", "analysis/active-macro-v38-results.md", "rsi/compressed_space.py"],
+      "metrics": {"macro_horizon": 4, "v38_final_control": 17, "v38_final_learned": 18, "v38_admission_control": 17, "v38_admission_learned": 17, "pooled_replications": 3, "pooled_control_final": 42, "pooled_learned_final": 44, "pooled_control_admission": 50, "pooled_learned_admission": 52, "passive_evaluation_rows_replayed": 432, "verified_training_programs": 72, "audit_status": "passed"},
+      "implication": "Deeper self-generated macro compression strengthens the case for verified substrate expansion, but its modest effect and oracle-dependent training remain insufficient for an open-ended RSI claim.",
+      "confidence": "three independently replayed sealed archives including a preregistered depth extension"
+    },
+    {
+      "id": "bpe-macro-grammar-transfer-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "An MDL/BPE grammar learner mined five merges from 24 oracle-verified self-generated trajectories, improving development 13→15 and admission 14→15 but tying control at 16/24 on the fresh bank.",
+      "source": ["runs/bpe-macro-v39-20260917/results.json", "runs/bpe-macro-v39-20260917/audit.json", "analysis/bpe-macro-v39-results.md", "rsi/bpe_library.py"],
+      "metrics": {"development_control": 13, "development_bpe": 15, "admission_control": 14, "admission_bpe": 15, "final_control": 16, "final_bpe": 16, "merges": 5, "verified_training_programs": 24, "evaluation_rows_replayed": 144, "sealed_artifacts_checked": 25, "audit_status": "passed"},
+      "implication": "Automatic grammar compression improves in-sample search but does not by itself create stable semantic transfer; future progress needs task-conditioned abstractions or genuinely new operators.",
+      "confidence": "independently replayed sealed archive"
+    },
+    {
+      "id": "episodic-retrieval-combined-signal",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A combined episodic-retrieval and active macro-compression arm reached 52/72 fresh tasks versus 46/72 control across three banks, but a component ablation did not isolate retrieval as the cause.",
+      "source": ["runs/retrieval-macro-v40-20260917/results.json", "runs/retrieval-macro-v40-20260917/audit.json", "runs/retrieval-macro-v40b-20260917/results.json", "runs/retrieval-macro-v40b-20260917/audit.json", "runs/retrieval-macro-v40c-20260917/results.json", "runs/retrieval-macro-v40c-20260917/audit.json", "analysis/retrieval-macro-v40-results.md"],
+      "metrics": {"replications": 3, "pooled_control_final": 46, "pooled_combined_final": 52, "pooled_control_admission": 43, "pooled_combined_admission": 47, "evaluation_rows_replayed": 432, "audit_status": "passed", "attribution": "shape-macro-dominant in V41"},
+      "implication": "The combined system has a promising pooled signal, but claims must be attributed to verified macro compression until retrieval is shown to add independent gains.",
+      "confidence": "three independently replayed archives with follow-up ablation"
+    },
+    {
+      "id": "retrieval-ablation-shape-dominant",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "In a four-arm ablation, shape-only and combined arms reached 17/24 fresh tasks, while retrieval-only tied baseline at 16/24.",
+      "source": ["runs/retrieval-ablation-v41-20260917/results.json", "runs/retrieval-ablation-v41-20260917/audit.json", "analysis/retrieval-ablation-v41-results.md", "rsi/retrieval_memory.py"],
+      "metrics": {"baseline_final": 16, "shape_final": 17, "retrieval_final": 16, "combined_final": 17, "baseline_admission": 12, "shape_admission": 13, "retrieval_admission": 12, "combined_admission": 13, "evaluation_rows_replayed": 288, "audit_status": "passed"},
+      "implication": "Current episodic task retrieval does not independently improve capability; verified shape-macro compression remains the active mechanism.",
+      "confidence": "independently replayed four-arm attribution archive"
+    },
+    {
+      "id": "recursive-macro-first-generation-signal-second-generation-null",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Across two independently audited fresh banks, verified Gen-1 macro induction improved final performance from 30/48 baseline to 32/48, while Gen-2 tied Gen-1 at 32/48.",
+      "source": ["runs/recursive-macro-v42-20260917/results.json", "runs/recursive-macro-v42-20260917/audit.json", "runs/recursive-macro-v42-20260918-seed87/results.json", "runs/recursive-macro-v42-20260918-seed87/audit.json", "analysis/recursive-macro-v42-results.md", "run_recursive_macro_v42.py", "audit_recursive_macro_v42.py"],
+      "metrics": {"replications": 2, "baseline_final": [16, 14], "generation1_final": [17, 15], "generation2_final": [17, 15], "pooled_baseline_final": 30, "pooled_generation1_final": 32, "pooled_generation2_final": 32, "pooled_baseline_admission": 32, "pooled_generation1_admission": 34, "pooled_generation2_admission": 34, "generation0_programs": [23, 24], "generation1_verified_programs": [12, 16], "evaluation_rows_replayed": 432, "sealed_artifacts_checked": 52, "audit_status": "passed"},
+      "implication": "Verified active experience can yield a small transferable substrate gain, but the absence of a Gen-2 increment means recursive compounding, open-endedness, and RSI remain unshown.",
+      "confidence": "two independently replayed sealed archives with preregistered two-generation comparison"
+    },
+    {
+      "id": "bounded-operator-invention-width-confound-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "Visible-only invented run-boundary operators produced no independent fresh-task gain: width-2 invention tied width-2 baseline on two banks, and width-3 invention tied the width-3 baseline at 18/24 and 12/24.",
+      "source": ["runs/operator-invention-v43-20260917/results.json", "runs/operator-invention-v43-20260917/audit.json", "runs/operator-invention-v43-20260918-seed89/results.json", "runs/operator-invention-v43-20260918-seed89/audit.json", "analysis/operator-invention-v43-results.md", "rsi/invented_space.py"],
+      "metrics": {"replications": 2, "width2_baseline_final": [12, 11], "width2_invented_final": [12, 11], "width3_baseline_final": [18, 12], "width3_invented_final": [18, 12], "evaluation_rows_replayed": 1224, "sealed_artifacts_checked": 38, "audit_status": "passed"},
+      "implication": "Hypothesis-language expansion without new task semantics did not create independent transferable capability; width and search resources must be controlled before claiming invention.",
+      "confidence": "two audited archives plus paired width-3 replay on the first frozen bank"
+    },
+    {
+      "id": "adaptive-empty-fallback-compute-efficiency",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A visible-only controller that escalates from width 2 to width 3 only on empty search preserved fixed-width-3 performance at 35/48 across two banks while reducing mean width from 3.00 to 2.19.",
+      "source": ["runs/adaptive-width-v44-20260917/results.json", "runs/adaptive-width-v44-20260917/audit.json", "runs/adaptive-width-v44-20260918-seed91/results.json", "runs/adaptive-width-v44-20260918-seed91/audit.json", "analysis/adaptive-width-v44-results.md", "run_adaptive_width_v44.py"],
+      "metrics": {"replications": 2, "fixed_width3_final": [16, 19], "fallback_final": [16, 19], "fixed_width3_mean_width": [3.0, 3.0], "fallback_mean_width": [2.04, 2.33], "pooled_final": 35, "evaluation_rows_replayed": 1296, "sealed_artifacts_checked": 38, "audit_status": "passed"},
+      "implication": "The system can learn a useful uncertainty-triggered compute policy, but this is efficiency adaptation rather than capability self-improvement.",
+      "confidence": "two independently replayed policy sweeps with fixed-width controls"
+    },
+    {
+      "id": "hard-case-curriculum-selection-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "Hard-case curriculum selection tied size-matched uniform verified-trajectory selection at 28/48 pooled fresh tasks across two banks, although both improved over the 24/48 baseline.",
+      "source": ["runs/adversarial-curriculum-v45-20260917/results.json", "runs/adversarial-curriculum-v45-20260917/audit.json", "runs/adversarial-curriculum-v45-20260918-seed93/results.json", "runs/adversarial-curriculum-v45-20260918-seed93/audit.json", "analysis/adversarial-curriculum-v45-results.md", "run_adversarial_curriculum_v45.py"],
+      "metrics": {"replications": 2, "pooled_baseline_final": 24, "pooled_uniform17_final": 28, "pooled_uniform24_final": 28, "pooled_hard_empty_final": 28, "pooled_hard_low_final": 28, "evaluation_rows_replayed": 864, "sealed_artifacts_checked": 52, "audit_status": "passed"},
+      "implication": "Verified macro learning remains the transferable component; visible failure-driven selection did not yet improve the learned substrate beyond ordinary verified-data selection.",
+      "confidence": "two independently replayed curriculum archives with size-matched controls"
+    },
+    {
+      "id": "depth-shifted-macro-transfer-small-signal",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "On six-atom reference banks, verified macro curricula improved fresh performance from 13/24 to 14/24, while ordinary recursion improved 12/24 to 13/24 but Gen-2 tied Gen-1.",
+      "source": ["runs/depth-shift-curriculum-v46-20260918/results.json", "runs/depth-shift-curriculum-v46-20260918/audit.json", "runs/recursive-macro-depth-v47-20260918/results.json", "runs/recursive-macro-depth-v47-20260918/audit.json", "analysis/depth-shift-v46-v47-results.md"],
+      "metrics": {"reference_max_atoms": 6, "v46_baseline_final": 13, "v46_learned_final": 14, "v47_baseline_final": 12, "v47_generation1_final": 13, "v47_generation2_final": 13, "evaluation_rows_replayed": 648, "audit_status": "passed"},
+      "implication": "Increasing environmental depth creates pressure where verified abstraction transfers, but a single recursive generation still does not compound reliably.",
+      "confidence": "two audited depth-shift archives"
+    },
+    {
+      "id": "quality-diversity-recursion-unstable",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Retaining verified structurally diverse Gen-1 programs enabled Gen-2 to reach 16/24 versus Gen-1 15/24 on one bank, but replicated at 12/24 versus Gen-1 13/24 and 11/24 versus 12/24; pooled Gen-2 was 39/72 versus 40/72 for Gen-1.",
+      "source": ["runs/diverse-recursive-v48-20260918/results.json", "runs/diverse-recursive-v48-20260918/audit.json", "runs/diverse-recursive-v48-20260919-seed97/results.json", "runs/diverse-recursive-v48-20260919-seed97/audit.json", "runs/diverse-recursive-v48-pop8-20260918/results.json", "runs/diverse-recursive-v48-pop8-20260918/audit.json", "analysis/diverse-recursive-v48-results.md", "run_diverse_recursive_v48.py"],
+      "metrics": {"replications": 3, "population_sizes": [4, 4, 8], "pooled_baseline_final": 37, "pooled_generation1_final": 40, "pooled_generation2_final": 39, "population_programs": [44, 45, 50], "evaluation_rows_replayed": 648, "sealed_artifacts_checked": 81, "audit_status": "passed"},
+      "implication": "Quality-diversity retention is a plausible route to recursive abstraction discovery, but current gating, population size, and fixed grammar do not yield stable RSI.",
+      "confidence": "three independently replayed sealed archives"
+    },
+    {
+      "id": "recursive-library-consensus-ensemble-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "A four-expert structural consensus ensemble tied the Gen-2 union at 11/24 fresh tasks and remained below baseline 12/24 on a six-atom bank.",
+      "source": ["runs/ensemble-recursive-v49-20260918/results.json", "runs/ensemble-recursive-v49-20260918/audit.json", "analysis/ensemble-recursive-v49-results.md", "run_ensemble_recursive_v49.py"],
+      "metrics": {"ensemble_size": 4, "baseline_final": 12, "generation1_final": 11, "generation2_final": 11, "ensemble_final": 11, "evaluation_rows_replayed": 288, "sealed_artifacts_checked": 29, "audit_status": "passed"},
+      "implication": "Simple structural consensus over recursive libraries is not sufficient; future recursion needs semantic equivalence checks, stronger validation, or a changed task/operator domain.",
+      "confidence": "independently replayed sealed archive"
+    },
+    {
+      "id": "shifted-semantic-operator-transfer-signal",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "In a variable-length delimiter domain, visible-only inferred Before/After operators improved fresh performance from 30/48 fixed-DSL baseline to 46/48 across two seeds.",
+      "source": ["runs/semantic-domain-v50-20260918/results.json", "runs/semantic-domain-v50-20260918/audit.json", "runs/semantic-domain-v50-20260919-seed01/results.json", "runs/semantic-domain-v50-20260919-seed01/audit.json", "analysis/semantic-domain-v50-results.md", "rsi/semantic_invention.py", "rsi/extended_banks.py"],
+      "metrics": {"replications": 2, "baseline_final": [14, 16], "invention_final": [23, 23], "pooled_baseline_final": 30, "pooled_invention_final": 46, "training_verified": [43, 47], "inferred_operators": ["before", "after"], "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 38, "audit_status": "passed"},
+      "implication": "Hypothesis-language expansion can transfer beyond the original DSL, but autonomous invention of the metalanguage and cross-domain open-endedness remain untested.",
+      "confidence": "two independently replayed shifted-domain archives with fixed-DSL controls"
+    },
+    {
+      "id": "generic-boundary-span-schema-transfer",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A generic inferred Slice(boundary,boundary) algebra, without named Before/After templates, improved fresh performance from 25/48 fixed-DSL baseline to 48/48 across two shifted-domain banks.",
+      "source": ["runs/generic-span-v51-20260918/results.json", "runs/generic-span-v51-20260918/audit.json", "runs/generic-span-v51-20260919-seed03/results.json", "runs/generic-span-v51-20260919-seed03/audit.json", "analysis/generic-span-v51-results.md", "rsi/semantic_invention.py", "run_generic_span_v51.py"],
+      "metrics": {"replications": 2, "baseline_final": [11, 14], "generic_span_final": [24, 24], "pooled_baseline_final": 25, "pooled_generic_span_final": 48, "training_verified": [45, 46], "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 40, "audit_status": "passed"},
+      "implication": "A compositional boundary algebra can support strong transfer beyond the original DSL, but the algebra and observation primitives are still researcher-defined rather than autonomously invented.",
+      "confidence": "two independently replayed shifted-domain archives with fixed-DSL controls"
+    },
+    {
+      "id": "cross-domain-generic-span-transfer",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A generic Slice(boundary,boundary) schema trained on delimiter tasks transferred to a delimiter-free letter/digit transition domain, improving final performance from 41/48 fixed-DSL baseline to 48/48 across two seeds.",
+      "source": ["runs/cross-domain-v52d-20260918/results.json", "runs/cross-domain-v52d-20260918/audit.json", "runs/cross-domain-v52e-20260919-seed05/results.json", "runs/cross-domain-v52e-20260919-seed05/audit.json", "analysis/cross-domain-v52-results.md", "rsi/evolving_domain.py", "rsi/semantic_invention.py"],
+      "metrics": {"replications": 2, "training_domain": "delimiter", "evaluation_domain": "letter_digit_transition", "baseline_final": [19, 22], "generic_span_final": [24, 24], "pooled_baseline_final": 41, "pooled_generic_span_final": 48, "training_verified": [48, 48], "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 44, "audit_status": "passed"},
+      "implication": "A compositional boundary schema can transfer across mechanisms, but autonomous invention of the boundary observation rule remains the next RSI requirement.",
+      "confidence": "two independently replayed cross-domain archives"
+    },
+    {
+      "id": "run-predicate-boundary-transfer-small-signal",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Replacing the explicit transition primitive with generic run-predicate Slice endpoints reached 24/24 development, admission, and final tasks on one seed and 24/24 development, admission, and final tasks for the invention arm on the second; pooled final was 48/48 versus 47/48 baseline.",
+      "source": ["runs/runpredicate-v53-20260918/results.json", "runs/runpredicate-v53-20260918/audit.json", "runs/runpredicate-v53-20260919-seed07/results.json", "runs/runpredicate-v53-20260919-seed07/audit.json", "analysis/runpredicate-v53-results.md", "rsi/semantic_invention.py", "run_runpredicate_v53.py"],
+      "metrics": {"replications": 2, "baseline_development": [21, 20], "run_predicate_development": [24, 24], "baseline_admission": [20, 23], "run_predicate_admission": [24, 24], "baseline_final": [24, 23], "run_predicate_final": [24, 24], "pooled_baseline_final": 47, "pooled_run_predicate_final": 48, "training_verified": [48, 48], "predicates": ["alnum"], "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 40, "audit_status": "passed"},
+      "implication": "Generic run endpoints reduce dependence on a named transition operator and reproduce a strong admission/development transfer, but researcher-bounded predicate vocabularies and synthetic domains still prevent an open-ended RSI claim.",
+      "confidence": "two independently replayed cross-domain archives"
+    },
+    {
+      "id": "induced-structural-predicate-transfer",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A frozen vocabulary of unnamed character-category families induced from delimiter training transferred a generic Slice(run(predicate),run(predicate)) schema to a letter/digit-transition domain. The fixed induced-cost arm reached 48/48 final tasks across two seeds versus 41/48 baseline, with 48/48 development and admission on both seeds.",
+      "source": ["runs/induced-signature-v54c-20260918/results.json", "runs/induced-signature-v54c-20260918/audit.json", "runs/induced-signature-v54d-20260919-seed09/results.json", "runs/induced-signature-v54d-20260919-seed09/audit.json", "analysis/induced-signature-v54-results.md", "rsi/semantic_invention.py", "run_induced_signature_v54.py"],
+      "metrics": {"replications": 2, "baseline_development": [22, 21], "induced_development": [24, 24], "baseline_admission": [23, 22], "induced_admission": [24, 24], "baseline_final": [20, 21], "induced_final": [24, 24], "pooled_baseline_final": 41, "pooled_induced_final": 48, "induced_final_programs": [24, 24], "induced_category_families": [3, 3], "training_verified": [48, 48], "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 40, "audit_status": "passed"},
+      "implication": "A generic semantic schema can be paired with a frozen, unnamed structural vocabulary and transfer across mechanisms, but the Unicode-category representation remains a researcher-supplied inductive bias rather than an autonomously discovered observation language.",
+      "confidence": "two independently replayed attribution-controlled archives"
+    },
+    {
+      "id": "raw-ordinal-predicate-transfer",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A raw ordinal-range vocabulary induced from output-alignment cut glyphs transferred the generic span schema without Unicode categories or named character classes. Across two seeds, the fixed ord_c10 arm reached 47/48 final tasks versus 43/48 baseline.",
+      "source": ["runs/ordrange-v55-20260918/results.json", "runs/ordrange-v55-20260918/audit.json", "runs/ordrange-v55-20260919-seed11/results.json", "runs/ordrange-v55-20260919-seed11/audit.json", "analysis/ordrange-v55-results.md", "rsi/semantic_invention.py", "run_ordrange_v55.py"],
+      "metrics": {"replications": 2, "baseline_development": [18, 23], "induced_development": [24, 20], "baseline_admission": [21, 18], "induced_admission": [24, 21], "baseline_final": [23, 20], "induced_final": [24, 23], "pooled_baseline_final": 43, "pooled_induced_final": 47, "induced_predicate_count": [5, 5], "training_verified": [48, 48], "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 42, "audit_status": "passed"},
+      "implication": "Cross-domain semantic transfer survives removal of Unicode taxonomy, suggesting that some capability resides in the compositional span schema and learned boundary alignment; raw ordinal intervals remain a fixed inductive bias and do not establish open-ended RSI.",
+      "confidence": "two independently replayed attribution-controlled archives"
+    },
+    {
+      "id": "disjoint-alphabet-representation-selection",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "On a disjoint evaluation alphabet of Greek letters and Arabic-Indic digits, a representation-selection controller rejected baseline and raw ordinal predicates at 0/24 and selected a structurally induced family representation at 24/24 on development, admission, and final across two seeds.",
+      "source": ["runs/representation-selection-v56-20260918/results.json", "runs/representation-selection-v56-20260918/audit.json", "runs/representation-selection-v56-20260919-seed13/results.json", "runs/representation-selection-v56-20260919-seed13/audit.json", "analysis/representation-selection-v56-results.md", "rsi/evolving_domain.py", "rsi/semantic_invention.py", "run_representation_selection_v56.py"],
+      "metrics": {"replications": 2, "evaluation_alphabet": "Greek letters plus Arabic-Indic digits", "baseline_final": [0, 0], "raw_ordinal_final": [0, 0], "structural_family_final": [24, 24], "selected_representation": ["structural_family", "structural_family"], "structural_predicate_count": [3, 3], "training_verified": [48, 48], "evaluation_rows_replayed": 432, "sealed_artifacts_checked": 42, "audit_status": "passed"},
+      "implication": "A meta-level representation selector can recover cross-alphabet transfer when a raw-codepoint language fails, but the feature languages and synthetic task family remain researcher-authored; this is adaptive representation selection, not yet open-ended RSI.",
+      "confidence": "two independently replayed disjoint-alphabet archives with admission-gated selection"
+    },
+    {
+      "id": "generated-feature-language-selection",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A generated predicate-language grammar synthesized ordinal intervals, exact category predicates, and category-prefix predicates; an admission-gated complexity controller selected the category-prefix language on two disjoint-alphabet seeds, reaching 24/24 development, admission, and final while baseline and ordinal language reached 0/24.",
+      "source": ["runs/feature-language-v57-20260918/results.json", "runs/feature-language-v57-20260918/audit.json", "runs/feature-language-v57-20260919-seed15/results.json", "runs/feature-language-v57-20260919-seed15/audit.json", "analysis/feature-language-v57-results.md", "rsi/predicate_synthesis.py", "run_feature_language_v57.py"],
+      "metrics": {"replications": 2, "baseline_final": [0, 0], "ordinal_final": [0, 0], "category_exact_final": [24, 24], "category_prefix_final": [24, 24], "selected_language": ["category_prefix", "category_prefix"], "selected_development": [24, 24], "selected_admission": [24, 24], "training_verified": {"ordinal_interval": [48, 48], "category_exact": [48, 48], "category_prefix": [48, 48]}, "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 46, "audit_status": "passed"},
+      "implication": "A meta-level grammar can generate and select a transferable observation language on a disjoint alphabet, but the grammar's primitive operations remain researcher-bounded and do not yet constitute open-ended recursive self-improvement.",
+      "confidence": "two independently replayed disjoint-alphabet archives with admission-gated complexity selection"
+    },
+    {
+      "id": "reflective-primitive-discovery-transfer",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Runtime reflection discovered nine nonconstant Boolean character predicates without a hand-written semantic vocabulary; the resulting representation reached 24/24 development, admission, and final on two disjoint-alphabet seeds, while baseline and raw ordinal representations reached 0/24.",
+      "source": ["runs/reflective-v58-20260918/results.json", "runs/reflective-v58-20260918/audit.json", "runs/reflective-v58-20260919-seed17/results.json", "runs/reflective-v58-20260919-seed17/audit.json", "analysis/reflective-v58-results.md", "rsi/reflective_predicates.py", "run_reflective_v58.py"],
+      "metrics": {"replications": 2, "baseline_final": [0, 0], "raw_ordinal_final": [0, 0], "reflective_final": [24, 24], "reflective_development": [24, 24], "reflective_admission": [24, 24], "selected_representation": ["reflective_methods", "reflective_methods"], "discovered_predicate_count": [9, 9], "training_verified": [48, 48], "evaluation_rows_replayed": 432, "sealed_artifacts_checked": 48, "audit_status": "passed"},
+      "implication": "A system can search its runtime for useful observation primitives and transfer a compositional schema beyond the training alphabet, but runtime reflection is still an external capability and not self-authored recursive improvement.",
+      "confidence": "two independently replayed disjoint-alphabet archives with admission-gated selection"
+    },
+    {
+      "id": "online-predicate-invention-signal",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "On a vowel/consonant transition domain where baseline and reflective predicates scored 0/24, visible-example synthesis of a new char_set predicate reached 24/24 development, admission, and final across two seeds and was selected twice by admission gating.",
+      "source": ["runs/online-invention-v59-20260918/results.json", "runs/online-invention-v59-20260918/audit.json", "runs/online-invention-v59-20260919-seed19/results.json", "runs/online-invention-v59-20260919-seed19/audit.json", "analysis/online-invention-v59-results.md", "rsi/online_invention.py", "run_online_invention_v59.py"],
+      "metrics": {"replications": 2, "baseline_final": [0, 0], "reflective_final": [0, 0], "self_authored_final": [24, 24], "self_authored_development": [24, 24], "self_authored_admission": [24, 24], "selected_representation": ["self_authored", "self_authored"], "evaluation_rows_replayed": 432, "sealed_artifacts_checked": 44, "audit_status": "passed"},
+      "implication": "The system can extend its executable hypothesis language from visible examples when existing primitives fail, but direct target alignment and synthetic character sets make this bounded operator invention rather than open-ended recursive self-improvement.",
+      "confidence": "two independently replayed online-invention archives with admission-gated selection"
+    },
+    {
+      "id": "extrapolative-modular-operator-invention",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "On a parity-transition domain with hidden symbols absent from visible examples, baseline, reflective predicates, and memorized char_set predicates scored 0/24, while a synthesized modular ordinal predicate reached 24/24 development, admission, and final across two seeds.",
+      "source": ["runs/extrapolative-v60-20260918/results.json", "runs/extrapolative-v60-20260918/audit.json", "runs/extrapolative-v60-20260919-seed21/results.json", "runs/extrapolative-v60-20260919-seed21/audit.json", "analysis/extrapolative-v60-results.md", "rsi/online_invention.py", "run_extrapolative_v60.py"],
+      "metrics": {"replications": 2, "baseline_final": [0, 0], "reflective_final": [0, 0], "char_set_final": [0, 0], "ord_mod_final": [24, 24], "ord_mod_development": [24, 24], "ord_mod_admission": [24, 24], "selected_representation": ["ord_mod", "ord_mod"], "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 44, "audit_status": "passed"},
+      "implication": "The system can invent a compact executable rule that extrapolates beyond observed symbols, a stronger form of capability creation than memorization; the hypothesis grammar and supervision remain bounded, so RSI is not established.",
+      "confidence": "two independently replayed hidden-symbol archives with admission-gated selection"
+    },
+    {
+      "id": "unbounded-divisor-modulus-invention",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Removing V60's fixed modulus cap, divisor-derived arithmetic synthesis discovered modulus 11 from ordinal differences and reached 24/24 development, admission, and final across two hidden-symbol seeds; baseline, reflective, and char_set arms scored 0/24.",
+      "source": ["runs/unbounded-arithmetic-v61b-20260918/results.json", "runs/unbounded-arithmetic-v61b-20260918/audit.json", "runs/unbounded-arithmetic-v61-20260919-seed23/results.json", "runs/unbounded-arithmetic-v61-20260919-seed23/audit.json", "analysis/unbounded-arithmetic-v61-results.md", "rsi/online_invention.py", "run_unbounded_arithmetic_v61.py"],
+      "metrics": {"replications": 2, "baseline_final": [0, 0], "reflective_final": [0, 0], "char_set_final": [0, 0], "divisor_mod_final": [24, 24], "divisor_mod_development": [24, 24], "divisor_mod_admission": [24, 24], "discovered_modulus": [11, 11], "selected_representation": ["divisor_mod", "divisor_mod"], "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 44, "audit_status": "passed"},
+      "implication": "Data-derived divisor search can remove a hand-set arithmetic bound and create a generalizing operator, but the ordinal representation and alignment supervision remain fixed; this is not yet open-ended recursive self-improvement.",
+      "confidence": "two independently replayed hidden-symbol archives with admission-gated selection"
+    },
+    {
+      "id": "bitwise-arithmetic-family-discovery",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "On a hidden-symbol bit-transition domain, baseline, reflective, char_set, and divisor-modulus arms scored 0/24 while synthesized bitwise predicates reached 24/24 development, admission, and final across two seeds and were selected twice.",
+      "source": ["runs/bitwise-v62-20260918/results.json", "runs/bitwise-v62-20260918/audit.json", "runs/bitwise-v62-20260919-seed25/results.json", "runs/bitwise-v62-20260919-seed25/audit.json", "analysis/bitwise-v62-results.md", "rsi/online_invention.py", "run_bitwise_v62.py"],
+      "metrics": {"replications": 2, "baseline_final": [0, 0], "reflective_final": [0, 0], "char_set_final": [0, 0], "divisor_mod_final": [0, 0], "bitwise_final": [24, 24], "bitwise_development": [24, 24], "bitwise_admission": [24, 24], "selected_representation": ["bitwise", "bitwise"], "evaluation_rows_replayed": 720, "sealed_artifacts_checked": 44, "audit_status": "passed"},
+      "implication": "A previously unavailable bitwise operator family can be synthesized and generalize to hidden symbols, but the family menu remains researcher-authored; this is not yet open-ended recursive self-improvement.",
+      "confidence": "two independently replayed hidden-symbol arithmetic-family archives"
+    },
+    {
+      "id": "universal-ordinal-grammar-mixed-mechanisms",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "On a mixed hidden-symbol bank whose tasks used either a modulus-11 rule or a bit-3 rule, one shared universal ordinal grammar reached 24/24 development, admission, and final across two seeds, while baseline, reflective predicates, and memorized char_set controls scored 0/24.",
+      "source": ["runs/universal-v63-20260918/results.json", "runs/universal-v63-20260918/audit.json", "runs/universal-v63-20260919-seed27/results.json", "runs/universal-v63-20260919-seed27/audit.json", "analysis/universal-v63-results.md", "rsi/online_invention.py", "run_universal_v63.py"],
+      "metrics": {"replications": 2, "baseline_final": [0, 0], "reflective_final": [0, 0], "char_set_final": [0, 0], "universal_ordinal_final": [24, 24], "universal_ordinal_development": [24, 24], "universal_ordinal_admission": [24, 24], "selected_representation": ["universal_ord", "universal_ord"], "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 44, "audit_status": "passed"},
+      "implication": "A single shared expression substrate can infer which of multiple hidden arithmetic mechanisms explains visible examples and transfer the corresponding predicate, but the ordinal constructors, span schema, and task generator remain researcher-authored; this is bounded mechanism inference, not open-ended recursive self-improvement.",
+      "confidence": "two independently replayed mixed-mechanism hidden-symbol archives"
+    },
+    {
+      "id": "compositional-expression-substrate-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "On a mixed hidden-symbol bank containing modular, bit, threshold, and compound-OR mechanisms, one generic typed expression grammar reached 24/24 development, admission, and final across two seeds and was selected twice; the previous universal ordinal grammar reached 17/24 and 20/24 final.",
+      "source": ["runs/expression-v64-20260924/results.json", "runs/expression-v64-20260924/audit.json", "runs/expression-v64-20260925/results.json", "runs/expression-v64-20260925/audit.json", "analysis/compositional-expression-v64-results.md", "rsi/expression_synthesis.py", "run_expression_v64.py"],
+      "metrics": {"replications": 2, "baseline_final": [0, 0], "reflective_final": [0, 0], "char_set_final": [3, 7], "universal_ordinal_final": [17, 20], "expression_final": [24, 24], "expression_development": [24, 24], "expression_admission": [24, 24], "selected_representation": ["expression", "expression"], "evaluation_rows_replayed": 720, "sealed_artifacts_checked": 46, "audit_status": "passed"},
+      "implication": "A typed program-synthesis substrate can compose primitive arithmetic predicates into a new executable compound operator and transfer it to hidden symbols, but the primitive vocabulary, cost bounds, supervision, and task generator remain researcher-authored; this is not open-ended recursive self-improvement.",
+      "confidence": "two independently replayed mixed-mechanism compositional-synthesis archives"
+    },
+    {
+      "id": "failure-driven-primitive-invention-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "On hidden quotient-periodic, Gray-code, and multi-bit-field transform tasks, a failure-driven typed primitive inventor reached 20/24 development, admission, and final across two seeds, while the V64 expression grammar reached 6/24 and 5/24 final and the previous ordinal grammar reached 0/24.",
+      "source": ["runs/primitive-v65-20260927/results.json", "runs/primitive-v65-20260927/audit.json", "runs/primitive-v65-20260928/results.json", "runs/primitive-v65-20260928/audit.json", "analysis/primitive-invention-v65-results.md", "rsi/primitive_synthesis.py", "run_primitive_v65.py"],
+      "metrics": {"replications": 2, "baseline_final": [0, 0], "reflective_final": [0, 0], "char_set_final": [0, 0], "universal_ordinal_final": [0, 0], "expression_final": [6, 5], "primitive_invention_final": [20, 20], "primitive_invention_development": [20, 20], "primitive_invention_admission": [20, 20], "selected_representation": ["primitive_invention", "primitive_invention"], "evaluation_rows_replayed": 864, "sealed_artifacts_checked": 48, "audit_status": "passed"},
+      "implication": "Failure-driven transform proposals can expand the executable hypothesis language beyond a prior ordinal grammar and transfer to hidden mechanisms, but the transform catalog, failure categories, coherence prior, supervision, and task generator remain researcher-authored; this is bounded primitive expansion, not open-ended recursive self-improvement.",
+      "confidence": "two independently replayed hidden-transform primitive-invention archives"
+    },
+    {
+      "id": "self-describing-ast-proposer-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "On a hidden affine-fold bank outside the V65 transform catalog, a signature-indexed typed AST proposer reached 19/24 and 22/24 final across two seeds and was selected twice, while baseline, universal ordinal, and V65 primitive-catalog controls scored 0/24.",
+      "source": ["runs/ast-v66-20260929/results.json", "runs/ast-v66-20260929/audit.json", "runs/ast-v66-20260930/results.json", "runs/ast-v66-20260930/audit.json", "analysis/ast-proposer-v66-results.md", "rsi/ast_synthesis.py", "run_ast_v66.py"],
+      "metrics": {"replications": 2, "baseline_final": [0, 0], "universal_ordinal_final": [0, 0], "primitive_invention_final": [0, 0], "ast_proposer_final": [19, 22], "ast_proposer_development": [22, 20], "ast_proposer_admission": [19, 20], "selected_representation": ["ast_proposer", "ast_proposer"], "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 50, "audit_status": "passed"},
+      "implication": "A generic typed AST search can synthesize an affine arithmetic substrate outside a fixed transform catalog and transfer it to hidden symbols, but its operations, constant bounds, retention policy, priors, supervision, and generator remain researcher-authored; this is bounded substrate synthesis, not open-ended recursive self-improvement.",
+      "confidence": "two independently replayed hidden-affine AST-proposer archives"
+    },
+    {
+      "id": "meta-evolved-ast-policy-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "An evolutionary scoring genome for the AST proposer passed held-out admission and improved fresh final performance from 15/24 to 18/24 and from 17/24 to 22/24 across two seeds, being selected twice against the frozen V66 scorer.",
+      "source": ["runs/meta-ast-v67-20261001/results.json", "runs/meta-ast-v67-20261001/audit.json", "runs/meta-ast-v67-20261002/results.json", "runs/meta-ast-v67-20261002/audit.json", "analysis/meta-ast-v67-results.md", "rsi/meta_ast.py", "run_meta_ast_v67.py"],
+      "metrics": {"replications": 2, "frozen_final": [15, 17], "evolved_final": [18, 22], "frozen_development": [19, 19], "evolved_development": [23, 21], "frozen_admission": [15, 16], "evolved_admission": [20, 18], "selected_policy": ["evolved", "evolved"], "evaluation_rows_replayed": 432, "sealed_artifacts_checked": 38, "audit_status": "passed"},
+      "implication": "The improver can evolve and retain its own candidate-ranking policy under development/admission gates and transfer the change to fresh tasks, but the genome, features, mutation operators, AST substrate, oracle protocol, and domain remain researcher-authored; this is bounded policy-level recursive improvement, not open-ended RSI.",
+      "confidence": "two independently replayed held-out meta-evolution archives"
+    },
+    {
+      "id": "meta-grammar-architecture-null",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Evolving the AST proposer's enabled operator set, expression-complexity cap, and structural ranking mode produced no development, admission, or final gain over the frozen V67 scorer across two seeds; the frozen architecture was retained twice.",
+      "source": ["runs/meta-grammar-v68-20261003/results.json", "runs/meta-grammar-v68-20261003/audit.json", "runs/meta-grammar-v68-20261004/results.json", "runs/meta-grammar-v68-20261004/audit.json", "analysis/meta-grammar-v68-results.md", "rsi/meta_grammar.py", "run_meta_grammar_v68.py"],
+      "metrics": {"replications": 2, "frozen_development": [12, 21], "evolved_development": [12, 21], "frozen_admission": [17, 19], "evolved_admission": [17, 19], "frozen_final": [18, 16], "evolved_final": [18, 16], "selected_architecture": ["frozen", "frozen"], "evaluation_rows_replayed": 288, "sealed_artifacts_checked": 36, "audit_status": "passed"},
+      "implication": "A larger architecture mutation surface did not improve transfer on this hidden affine-transition family, indicating that V67's policy gain does not automatically extend to operator-mask and complexity evolution; the superset grammar, mutation operators, and domain remain researcher-authored, so this is a bounded null result rather than a general impossibility theorem.",
+      "confidence": "two independently replayed held-out architecture-evolution archives"
+    },
+    {
+      "id": "failure-driven-constructor-invention-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "On a held-out synthetic family containing bit-count parity, 8-bit rotation residues, and gcd buckets, a failure-driven typed constructor layer improved fresh final performance over the legacy ordinal grammar from 5/24 to 15/24 and from 9/24 to 19/24 across two seeds; an evolved constructor genome selected only popcount on both seeds and passed admission twice.",
+      "source": ["runs/failure-invention-v69-20261005/results.json", "runs/failure-invention-v69-20261005/audit.json", "runs/failure-invention-v69-20261006/results.json", "runs/failure-invention-v69-20261006/audit.json", "analysis/failure-invention-v69-results.md", "rsi/failure_invention.py", "rsi/meta_constructor.py", "run_failure_invention_v69.py"],
+      "metrics": {"replications": 2, "legacy_final": [5, 9], "broad_invention_final": [15, 19], "evolved_constructor_final": [15, 19], "legacy_development": [8, 7], "broad_invention_development": [12, 14], "evolved_constructor_development": [12, 14], "legacy_admission": [4, 11], "broad_invention_admission": [14, 16], "evolved_constructor_admission": [14, 16], "selected_architecture": ["evolved_constructor", "evolved_constructor"], "evolved_constructors": [["popcount"], ["popcount"]], "evaluation_rows_replayed": 432, "sealed_artifacts_checked": 38, "audit_status": "passed"},
+      "implication": "A visible failure can trigger a new typed constructor layer that transfers a useful representation to hidden tasks, and meta-evolution can compress the proposal basis to a reusable constructor family; however, the constructor basis, mutation operators, task generator, visible alignment, and oracle protocol remain researcher-authored, so this is bounded recursive improvement rather than open-ended RSI.",
+      "confidence": "two independently replayed failure-driven held-out constructor-invention archives"
+    },
+    {
+      "id": "lower-level-stack-discovery-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "After removing named popcount, rotation, and gcd constructors, a lower-level typed stack-program proposer reached 24/24 development, admission, and final on two held-out stack-mechanism seeds, versus legacy ordinal final scores of 13/24 and 9/24; meta-selection retained only the generic fold family on both seeds.",
+      "source": ["runs/stack-discovery-v70-20261007/results.json", "runs/stack-discovery-v70-20261007/audit.json", "runs/stack-discovery-v70-20261008/results.json", "runs/stack-discovery-v70-20261008/audit.json", "analysis/stack-discovery-v70-results.md", "rsi/stack_program.py", "rsi/meta_stack.py", "run_stack_discovery_v70.py"],
+      "metrics": {"replications": 2, "legacy_final": [13, 9], "broad_stack_final": [24, 24], "evolved_stack_final": [24, 24], "legacy_development": [6, 7], "broad_stack_development": [24, 24], "evolved_stack_development": [24, 24], "legacy_admission": [5, 10], "broad_stack_admission": [24, 24], "evolved_stack_admission": [24, 24], "selected_architecture": ["evolved_stack", "evolved_stack"], "evolved_families": [["fold"], ["fold"]], "evaluation_rows_replayed": 432, "sealed_artifacts_checked": 38, "audit_status": "passed"},
+      "implication": "A useful representation can be reconstructed as a generic typed stack program and compressed to a reusable fold family after named constructors are removed, which is stronger compositional substrate evidence than V69; the generic fold instruction, stack vocabulary, mutation policy, task generator, visible alignment, and oracle gate remain researcher-authored, so this is bounded RSI rather than open-ended self-improvement.",
+      "confidence": "two independently replayed lower-level held-out stack-discovery archives"
+    },
+    {
+      "id": "raw-instruction-stack-discovery-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "After removing the generic fold_bits instruction, raw typed stack synthesis improved fresh final performance over the legacy ordinal grammar from 0/24 to 19/24 and 21/24 across two seeds; evolved raw selection matched the broad raw arm and passed admission twice.",
+      "source": ["runs/raw-stack-v71-20261009/results.json", "runs/raw-stack-v71-20261009/audit.json", "runs/raw-stack-v71-20261010/results.json", "runs/raw-stack-v71-20261010/audit.json", "analysis/raw-stack-v71-results.md", "rsi/raw_stack_program.py", "rsi/meta_raw_stack.py", "run_raw_stack_v71.py"],
+      "metrics": {"replications": 2, "legacy_final": [0, 0], "broad_raw_final": [19, 21], "evolved_raw_final": [19, 21], "legacy_development": [0, 0], "broad_raw_development": [21, 20], "evolved_raw_development": [21, 20], "legacy_admission": [0, 0], "broad_raw_admission": [19, 18], "evolved_raw_admission": [19, 18], "selected_architecture": ["evolved_raw", "evolved_raw"], "evolved_families": [["bit_reduce", "bitmix"], ["bit_reduce", "bitmix"]], "evaluation_rows_replayed": 432, "sealed_artifacts_checked": 40, "audit_status": "passed"},
+      "implication": "The useful reduction remains partially discoverable when a generic fold instruction is removed and only primitive stack operations remain, strengthening compositional substrate evidence; the raw instruction vocabulary, template enumeration, mutation policy, task generator, visible alignment, and oracle gate remain researcher-authored, so this is partial bounded RSI rather than open-ended self-improvement.",
+      "confidence": "two independently replayed raw-instruction held-out stack archives"
+    },
+    {
+      "id": "counterexample-guided-stack-mutation-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "After removing predeclared bit-reduce and bitmix templates, counterexample-guided grow/delete/splice mutation over typed instruction fragments improved fresh final performance over the legacy ordinal grammar from 0/24 to 19/24 and 21/24 across two seeds; evolved mutation policy selected an eight-term budget and passed admission twice.",
+      "source": ["runs/mutation-stack-v72-20261011/results.json", "runs/mutation-stack-v72-20261011/audit.json", "runs/mutation-stack-v72-20261012/results.json", "runs/mutation-stack-v72-20261012/audit.json", "analysis/mutation-stack-v72-results.md", "rsi/mutation_synthesis.py", "rsi/meta_mutation.py", "run_mutation_stack_v72.py"],
+      "metrics": {"replications": 2, "legacy_final": [0, 0], "broad_mutation_final": [19, 21], "evolved_mutation_final": [19, 21], "legacy_development": [0, 0], "broad_mutation_development": [23, 20], "evolved_mutation_development": [23, 20], "legacy_admission": [0, 0], "broad_mutation_admission": [18, 18], "evolved_mutation_admission": [18, 18], "selected_architecture": ["evolved_mutation", "evolved_mutation"], "evolved_max_terms": [8, 8], "evaluation_rows_replayed": 432, "sealed_artifacts_checked": 40, "audit_status": "passed"},
+      "implication": "Counterexample-guided mutation can assemble transferring representations from typed primitive fragments without predeclared reduction-family templates, strengthening bounded compositional RSI evidence; the instruction vocabulary, fragment grammar, mutations, visible alignment, synthetic tasks, and oracle gate remain researcher-authored, so open-ended RSI is not established.",
+      "confidence": "two independently replayed counterexample-guided mutation archives"
+    },
+    {
+      "id": "self-editing-grammar-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "After exposing a safe sandbox with dormant operations, an evolved executable grammar improved fresh final performance over legacy from 12/24 to 18/24 and from 5/24 to 13/24 across two regenerated seeds, converging to the same compact operation set and passing admission twice.",
+      "source": ["runs/self-editing-grammar-v73-20261015/results.json", "runs/self-editing-grammar-v73-20261015/audit.json", "runs/self-editing-grammar-v73-20261016/results.json", "runs/self-editing-grammar-v73-20261016/audit.json", "analysis/self-editing-grammar-v73-results.md", "rsi/self_editing_grammar.py", "rsi/meta_self_edit.py", "run_self_editing_grammar_v73.py"],
+      "metrics": {"replications": 2, "legacy_final": [12, 5], "broad_grammar_final": [18, 13], "evolved_grammar_final": [18, 13], "legacy_development": [3, 8], "broad_grammar_development": [10, 15], "evolved_grammar_development": [10, 15], "legacy_admission": [7, 8], "broad_grammar_admission": [17, 16], "evolved_grammar_admission": [17, 16], "selected_architecture": ["evolved_grammar", "evolved_grammar"], "evolved_ops": [["and", "mod", "not", "shr", "xor"], ["and", "mod", "not", "shr", "xor"]], "evaluation_rows_replayed": 432, "sealed_artifacts_checked": 40, "audit_status": "passed", "contract_repair_required": true},
+      "implication": "The improver can evolve and retain a compact executable instruction grammar that transfers to held-out mechanisms, strengthening grammar-level recursive-improvement evidence; the sandbox semantics, mutation operators, task generator, visible alignment, and oracle gate remain researcher-authored, so open-ended RSI is not established.",
+      "confidence": "two independently replayed contract-repaired self-editing grammar archives"
+    },
+    {
+      "id": "visible-only-macro-retention-transfer",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A macro library mined from development visible examples only retained 3 normalized executable bodies and transferred to admission and final: mined macros matched direct grammar at 24/24 final while legacy scored 8/24; the mined arm was selected. This supports reusable abstraction and compression, not an accuracy gain over direct synthesis.",
+      "source": ["runs/macro-invention-v74-20261019/results.json", "runs/macro-invention-v74-20261019/audit.json", "analysis/macro-invention-v74-results.md", "rsi/macro_library.py", "rsi/meta_macro.py", "rsi/semantic_invention.py", "rsi/stack_program.py", "run_macro_invention_v74.py"],
+      "metrics": {"replications": 1, "legacy_development": 15, "direct_grammar_development": 24, "mined_macro_development": 24, "legacy_admission": 11, "direct_grammar_admission": 24, "mined_macro_admission": 24, "legacy_final": 8, "direct_grammar_final": 24, "mined_macro_final": 24, "macro_count": 3, "macro_candidates": 144, "evaluation_rows_replayed": 216, "sealed_artifacts_checked": 22, "selected_architecture": "mined_macro", "audit_status": "passed"},
+      "implication": "An executable representation can be mined from visible-only successful programs, normalized, retained, and replayed on later tasks without hidden-example access. Because direct grammar achieved the same accuracy and the family remained shared, the result is bounded abstraction-retention evidence rather than open-ended RSI or demonstrated performance improvement.",
+      "confidence": "one independently replayed held-out macro-retention archive"
+    },
+    {
+      "id": "cross-family-macro-transfer",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A macro library mined from development visible examples in the macro-transition family transferred to a separate novel-operator family across two seeds: mined macros matched direct grammar at 13/24 and 19/24 final while legacy scored 7/24 and 11/24; the mined arm passed admission and was selected twice.",
+      "source": ["runs/cross-family-macro-v75-20261021/results.json", "runs/cross-family-macro-v75-20261021/audit.json", "runs/cross-family-macro-v75-20261022/results.json", "runs/cross-family-macro-v75-20261022/audit.json", "analysis/cross-family-macro-v75-results.md", "run_cross_family_macro_v75.py", "audit_cross_family_macro_v75.py"],
+      "metrics": {"replications": 2, "legacy_final": [7, 11], "direct_grammar_final": [13, 19], "mined_macro_final": [13, 19], "legacy_admission": [5, 11], "direct_grammar_admission": [12, 17], "mined_macro_admission": [12, 17], "mined_macro_count": [3, 3], "evaluation_rows_replayed": 432, "sealed_artifacts_checked": 40, "selected_architecture": ["mined_macro", "mined_macro"], "audit_status": "passed"},
+      "implication": "Retained executable abstractions can remain useful across a deliberately different mechanism family, strengthening representation-persistence evidence beyond within-family replay. Since direct grammar matched the mined arm and the boundary still shares low-level code-point structure, this is bounded cross-family transfer rather than demonstrated open-ended RSI.",
+      "confidence": "two independently replayed cross-family macro-retention archives"
+    },
+    {
+      "id": "composed-macro-mutation-null",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Composing retained macros with six arithmetic/bitwise combinators and bounded moduli produced 188 and 162 candidates across two cross-family banks but matched, rather than exceeded, direct grammar and replayed macros at 16/24 and 11/24 final; the composed arm was never selected.",
+      "source": ["runs/composed-macro-v76-20260923/results.json", "runs/composed-macro-v76-20260923/audit.json", "runs/composed-macro-v76-20260924/results.json", "runs/composed-macro-v76-20260924/audit.json", "analysis/composed-macro-v76-results.md", "rsi/macro_composition.py", "run_composed_macro_v76.py", "audit_composed_macro_v76.py"],
+      "metrics": {"replications": 2, "legacy_final": [8, 6], "direct_grammar_final": [16, 11], "mined_macro_final": [16, 11], "composed_mutation_final": [16, 11], "composed_candidate_totals": [188, 162], "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 44, "selected_architecture": ["mined_macro", "mined_macro"], "audit_status": "passed"},
+      "implication": "Representation retention and compositional novelty are distinct: combining learned outputs did not expand the behavior set. The next required capability is typed internal body mutation or safe instruction invention, not more output-level combinators.",
+      "confidence": "two independently replayed compositional macro-mutation archives"
+    },
+    {
+      "id": "typed-body-editor-recovery",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A typed low-level body editor exposing bit-reduction and bitmix fragments matched direct grammar and retained macros on held-out final tasks across two seeds (20/24 and 19/24), while legacy scored 7/24 and 8/24; it passed admission twice but was never selected.",
+      "source": ["runs/typed-body-editor-v77-20260925/results.json", "runs/typed-body-editor-v77-20260925/audit.json", "runs/typed-body-editor-v77-20260926/results.json", "runs/typed-body-editor-v77-20260926/audit.json", "analysis/typed-body-editor-v77-results.md", "rsi/typed_body_editor.py", "rsi/raw_stack_program.py", "run_typed_body_editor_v77.py", "audit_typed_body_editor_v77.py"],
+      "metrics": {"replications": 2, "legacy_final": [7, 8], "direct_grammar_final": [20, 19], "mined_macro_final": [20, 19], "body_editor_final": [20, 19], "legacy_admission": [8, 9], "direct_grammar_admission": [16, 15], "body_editor_admission": [16, 15], "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 46, "selected_architecture": ["mined_macro", "mined_macro"], "audit_status": "passed"},
+      "implication": "Low-level typed body proposals can recover the transferring representation and expose missing operators such as shift/or, but they did not yet expand held-out performance. True self-improvement still requires parent-body mutation, retention of successful edits, and transfer to a mechanism absent from the seed grammar.",
+      "confidence": "two independently replayed typed-body invention archives"
+    },
+    {
+      "id": "internal-body-mutation-damage",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Direct bounded edits to retained macro bodies matched the legacy grammar at 2/24 and 8/24 final across two seeds, while protected direct/replayed macros scored 9/24 and 16/24; internal mutation failed admission in both replications and was never selected.",
+      "source": ["runs/internal-body-mutation-v78-20260927/results.json", "runs/internal-body-mutation-v78-20260927/audit.json", "runs/internal-body-mutation-v78-20260928/results.json", "runs/internal-body-mutation-v78-20260928/audit.json", "analysis/internal-body-mutation-v78-results.md", "rsi/internal_body_mutation.py", "run_internal_body_mutation_v78.py", "audit_internal_body_mutation_v78.py"],
+      "metrics": {"replications": 2, "legacy_final": [2, 8], "direct_grammar_final": [9, 16], "mined_macro_final": [9, 16], "internal_mutation_final": [2, 8], "legacy_admission": [9, 8], "direct_grammar_admission": [18, 19], "internal_mutation_admission": [9, 8], "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 44, "selected_architecture": ["mined_macro", "mined_macro"], "audit_status": "passed"},
+      "implication": "Naive mutability damages a useful learned representation. RSI requires lineage-level counterexample credit, immutable parent protection, admission-gated replacement, and rollback—not merely a larger mutation neighborhood.",
+      "confidence": "two independently replayed internal-body mutation archives"
+    },
+    {
+      "id": "immutable-lineage-retention-recovery",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Immutable-parent lineage retention grew a 3-body macro library to 15 bodies on both seeds and matched protected replay at 13/24 and 16/24 final, while unprotected internal mutation collapsed to 6/24 and 7/24; lineage passed admission twice and preserved parent behavior.",
+      "source": ["runs/lineage-macro-v79-20260929/results.json", "runs/lineage-macro-v79-20260929/audit.json", "runs/lineage-macro-v79-20260930/results.json", "runs/lineage-macro-v79-20260930/audit.json", "analysis/lineage-macro-v79-results.md", "rsi/lineage_library.py", "rsi/internal_body_mutation.py", "run_lineage_macro_v79.py", "audit_lineage_macro_v79.py"],
+      "metrics": {"replications": 2, "base_macro_count": [3, 3], "lineage_macro_count": [15, 15], "legacy_final": [6, 7], "direct_grammar_final": [13, 16], "mined_macro_final": [13, 16], "lineage_library_final": [13, 16], "internal_mutation_final": [6, 7], "lineage_admission": [14, 15], "evaluation_rows_replayed": 720, "sealed_artifacts_checked": 50, "selected_architecture": ["mined_macro", "mined_macro"], "audit_status": "passed"},
+      "implication": "Immutable parents and bounded descendant accumulation prevent the catastrophic damage observed under naive mutation. The next missing ingredient is counterexample-based lineage credit and admission-gated replacement, which could turn stability into actual improvement.",
+      "confidence": "two independently replayed immutable-lineage retention archives"
+    },
+    {
+      "id": "cross-task-lineage-credit-stability",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Requiring mutated bodies to earn support from at least two independent development tasks produced a 12-body lineage from 3 parents on both seeds, matched replay at 19/24 and 14/24 final, and passed admission twice; unprotected mutation scored 12/24 and 7/24.",
+      "source": ["runs/credit-lineage-v80-20261001/results.json", "runs/credit-lineage-v80-20261001/audit.json", "runs/credit-lineage-v80-20261002/results.json", "runs/credit-lineage-v80-20261002/audit.json", "analysis/credit-lineage-v80-results.md", "rsi/credit_lineage.py", "run_credit_lineage_v80.py", "audit_credit_lineage_v80.py"],
+      "metrics": {"replications": 2, "base_macro_count": [3, 3], "credit_lineage_count": [12, 12], "legacy_final": [12, 7], "direct_grammar_final": [19, 14], "mined_macro_final": [19, 14], "credit_lineage_final": [19, 14], "internal_mutation_final": [12, 7], "credit_lineage_admission": [20, 12], "evaluation_rows_replayed": 720, "sealed_artifacts_checked": 50, "selected_architecture": ["mined_macro", "mined_macro"], "audit_status": "passed"},
+      "implication": "Cross-task support credit and immutable parents prevent unsupported edits from damaging the shared representation, but proposal quality remains the bottleneck: stability has not yet become measurable improvement.",
+      "confidence": "two independently replayed cross-task credit-lineage archives"
+    },
+    {
+      "id": "reserved-graft-lineage-null",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Reserving one-third of the mutation budget for stack-balanced raw-bit grafts grew a 3-body macro library to 15 bodies but scored 11/24 final versus direct grammar 12/24; one right-shift/or graft was retained and the reserved-graft lineage was not selected.",
+      "source": ["runs/reserved-graft-lineage-v81-20261003/results.json", "runs/reserved-graft-lineage-v81-20261003/audit.json", "analysis/reserved-graft-lineage-v81-results.md", "rsi/internal_body_mutation.py", "rsi/credit_lineage.py", "run_reserved_graft_lineage_v81.py", "audit_reserved_graft_lineage_v81.py"],
+      "metrics": {"replications": 1, "base_macro_count": 3, "credit_lineage_count": 15, "legacy_final": 7, "direct_grammar_final": 12, "mined_macro_final": 11, "credit_lineage_final": 11, "internal_mutation_final": 7, "credit_lineage_admission": 13, "evaluation_rows_replayed": 360, "sealed_artifacts_checked": 26, "selected_architecture": "mined_macro", "audit_status": "passed"},
+      "implication": "Capacity allocation alone does not produce useful operator invention. The next intervention must supply a balanced typed branch capable of expressing the missing transform while retaining immutable parent protection.",
+      "confidence": "one independently replayed reserved-graft lineage archive"
+    },
+    {
+      "id": "balanced-rotate-operator-transfer",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A balanced masked left/right shift body was retained from an identity seed using visible novel-operator examples and transferred to the separate stack family with perfect selective precision on matching bit-splice tasks: 6/6 and 8/8, with no other stack mechanisms solved; direct grammar nevertheless reached 24/24 overall and was selected.",
+      "source": ["runs/rotate-lineage-v82-20261006/results.json", "runs/rotate-lineage-v82-20261006/audit.json", "runs/rotate-lineage-v82-20261007/results.json", "runs/rotate-lineage-v82-20261007/audit.json", "analysis/rotate-lineage-v82-results.md", "rsi/internal_body_mutation.py", "rsi/credit_lineage.py", "run_rotate_lineage_v82.py", "audit_rotate_lineage_v82.py"],
+      "metrics": {"replications": 2, "identity_seed": true, "credit_lineage_count": [5, 5], "bit_splice_tasks": [6, 8], "bit_splice_correct": [6, 8], "credit_lineage_final": [6, 8], "direct_grammar_final": [24, 24], "legacy_final": [6, 8], "evaluation_rows_replayed": 720, "sealed_artifacts_checked": 56, "selected_architecture": ["direct_grammar", "direct_grammar"], "audit_status": "passed"},
+      "implication": "The system can retain and transfer a newly represented operator with selective precision across a family boundary, but the operator mutation and low-level representation remain researcher-authored and the result does not improve overall accuracy.",
+      "confidence": "two independently replayed balanced-rotate lineage archives"
+    },
+    {
+      "id": "generic-typed-body-lineage-null",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "After removing named rotate and bitmix mutations, generic bottom-up typed-body evolution grew immutable lineages to 24 bodies and solved every held-out bit_splice task with zero non-bit_splice false positives in two fresh banks (10/10 and 7/7), while overall final remained at the legacy baseline (10/24 and 7/24) and direct grammar reached 24/24 in both.",
+      "source": ["runs/generic-body-evolution-v83-20261008/results.json", "runs/generic-body-evolution-v83-20261008/audit.json", "runs/generic-body-evolution-v83-mapelites-20261009/results.json", "runs/generic-body-evolution-v83-mapelites-20261009/audit.json", "analysis/generic-body-evolution-v83-results.md", "rsi/generic_body_evolution.py", "run_generic_body_evolution_v83.py", "audit_generic_body_evolution_v83.py"],
+      "metrics": {"replications": 2, "identity_seed": true, "base_macro_count": [1, 1], "generic_lineage_count": [24, 24], "bit_splice_tasks": [10, 7], "bit_splice_correct": [10, 7], "non_bit_splice_correct": [0, 0], "legacy_final": [10, 7], "direct_grammar_final": [24, 24], "generic_body_evolution_final": [10, 7], "generic_lineage_final": [10, 7], "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 48, "selected_architecture": ["direct_grammar", "direct_grammar"], "audit_status": "passed"},
+      "implication": "Generic typed composition can produce a selective cross-family operator signal without a named rotate template, but overall improvement and representation identity remain unproven; the next intervention must scale structural depth and test unrelated operators under matched compute.",
+      "confidence": "two independently replayed generic typed-body archives"
+    },
+    {
+      "id": "hierarchical-generic-body-pilot",
+      "status": "observed",
+      "scope": "diagnostic",
+      "claim": "A factorized generic typed grammar reached 11-node balanced compositions in a fresh pilot without named operator templates, but its four-task development bank produced no child with two-task support and final performance remained 2/4 versus direct grammar 4/4.",
+      "source": ["runs/generic-body-evolution-v84-hierarchical-pilot-20261011/results.json", "runs/generic-body-evolution-v84-hierarchical-pilot-20261011/audit.json", "analysis/hierarchical-body-v84-pilot-results.md", "rsi/generic_body_evolution.py", "run_generic_body_evolution_v83.py", "audit_generic_body_evolution_v83.py"],
+      "metrics": {"replications": 1, "development_tasks": 4, "admission_tasks": 4, "final_tasks": 4, "max_nodes": 11, "generic_lineage_count": 1, "legacy_final": 2, "direct_grammar_final": 4, "generic_body_evolution_final": 2, "generic_lineage_final": 2, "evaluation_rows_replayed": 48, "sealed_artifacts_checked": 24, "audit_status": "passed"},
+      "implication": "Hierarchical factorization increases reachable structural depth, but small-bank support credit cannot establish retention or transfer; full-bank compute-matched evaluation is required.",
+      "confidence": "one independently replayed hierarchical pilot"
+    },
+    {
+      "id": "hierarchical-versus-flat-global-transfer",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "On the same fresh bank and generic 11-node/64-state budget, hierarchical global body composition retained 20 bodies versus 17 for flat search, but both solved 12/12 bit_splice tasks and zero other stack mechanisms, scoring 12/24 final versus direct grammar 24/24.",
+      "source": ["runs/generic-body-evolution-v84-hierarchical-global-20261013/results.json", "runs/generic-body-evolution-v84-hierarchical-global-20261013/audit.json", "runs/generic-body-evolution-v84-flat-global-20261013/results.json", "runs/generic-body-evolution-v84-flat-global-20261013/audit.json", "analysis/hierarchical-global-v84-results.md", "rsi/generic_body_evolution.py", "run_generic_body_evolution_v83.py", "audit_generic_body_evolution_v83.py"],
+      "metrics": {"replications": 1, "same_bank_seed": 2026101301, "hierarchical_lineage_count": 20, "flat_lineage_count": 17, "hierarchical_bit_splice_tasks": 12, "hierarchical_bit_splice_correct": 12, "flat_bit_splice_tasks": 12, "flat_bit_splice_correct": 12, "hierarchical_non_bit_splice_correct": 0, "flat_non_bit_splice_correct": 0, "hierarchical_final": 12, "flat_final": 12, "direct_grammar_final": 24, "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 50, "audit_status": "passed"},
+      "implication": "Deeper factorization increases retained structural capacity but does not improve the selective transfer or aggregate score; breaking the shared code-point convention is required to distinguish operator representation from correlated shortcuts.",
+      "confidence": "two independently replayed matched-control archives"
+    },
+    {
+      "id": "adversarial-codepoint-encoding-transfer-null",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "Changing held-out code-point encoding from identity in development to xor55 in admission/final eliminated the prior selective generic-lineage transfer: lineage solved 0/11 bit_splice tasks and scored 8/24 final, versus 12/12 bit_splice transfer in both matched-encoding V84 controls.",
+      "source": ["runs/generic-body-evolution-v85-encoding-xor55-20261017/results.json", "runs/generic-body-evolution-v85-encoding-xor55-20261017/audit.json", "analysis/adversarial-encoding-v85-results.md", "rsi/evolving_domain.py", "run_cross_family_macro_v75.py", "run_generic_body_evolution_v83.py", "audit_generic_body_evolution_v83.py"],
+      "metrics": {"bank_seed": 2026101701, "development_encoding": "identity", "heldout_encoding": "xor55", "legacy_final": 8, "direct_grammar_final": 13, "generic_body_evolution_final": 8, "generic_lineage_final": 8, "generic_lineage_bit_splice_tasks": 11, "generic_lineage_bit_splice_correct": 0, "v84_matched_bit_splice_correct": 12, "v84_matched_bit_splice_tasks": 12, "evaluation_rows_replayed": 288, "sealed_artifacts_checked": 25, "selected_architecture": "direct_grammar", "audit_status": "passed"},
+      "implication": "The earlier selective bit-splice result was representation-dependent and is consistent with a raw code-point-correlated shortcut rather than an encoding-invariant retained operator. Future RSI claims need adversarial representation shifts and an explicit mechanism for learning or retaining encodings.",
+      "confidence": "one independently replayed adversarial encoding archive"
+    },
+    {
+      "id": "bounded-representation-adaptation-recovery",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A bounded visible-only representation hypothesis layer recovered generic lineage transfer under xor55 held-out encoding: adaptive lineage solved 11/11 final bit_splice tasks and scored 19/24 versus plain lineage 0/11 and 8/24, but the current development-first selector did not select it.",
+      "source": ["runs/generic-body-evolution-v86-encoding-adaptive-20261017/results.json", "runs/generic-body-evolution-v86-encoding-adaptive-20261017/audit.json", "analysis/encoding-adaptation-v86-results.md", "rsi/stack_program.py", "rsi/generic_body_evolution.py", "rsi/meta_macro.py", "run_generic_body_evolution_v83.py", "audit_generic_body_evolution_v83.py"],
+      "metrics": {"bank_seed": 2026101701, "development_encoding": "identity", "heldout_encoding": "xor55", "adaptive_hypotheses": ["identity", "xor55", "affine5", "rotate3"], "adaptive_development": 8, "adaptive_admission": 19, "adaptive_final": 19, "adaptive_bit_splice_tasks": 11, "adaptive_bit_splice_correct": 11, "plain_lineage_final": 8, "plain_lineage_bit_splice_correct": 0, "direct_grammar_final": 13, "selected_architecture": "direct_grammar", "evaluation_rows_replayed": 288, "sealed_artifacts_checked": 25, "audit_status": "passed"},
+      "implication": "Representation adaptation and meta-selection are separate bottlenecks: an explicit bounded hypothesis set recovered held-out operator transfer, but the selector could not infer its value from development accuracy alone. This is bounded representation learning, not open-ended RSI.",
+      "confidence": "one independently replayed adaptive representation archive"
+    },
+    {
+      "id": "admission-first-adaptive-selection-mixed",
+      "status": "null",
+      "scope": "exploratory",
+      "claim": "Admission-first selection prospectively chose encoding-adaptive lineage at 17/24 admission on a fresh bank, but final accuracy was 13/24 versus direct grammar 15/24; across two seeds adaptive lineage recovered 20/20 encoded bit_splice tasks while aggregate final improvement was mixed.",
+      "source": ["runs/generic-body-evolution-v87-admission-selector-20261017/results.json", "runs/generic-body-evolution-v87-admission-selector-20261017/audit.json", "runs/generic-body-evolution-v86-encoding-adaptive-20261017/results.json", "analysis/admission-selector-v87-results.md", "run_generic_body_evolution_v83.py", "audit_generic_body_evolution_v83.py"],
+      "metrics": {"replications": 2, "heldout_encoding": "xor55", "adaptive_bit_splice_correct": [11, 9], "adaptive_bit_splice_tasks": [11, 9], "adaptive_final": [19, 13], "direct_grammar_final": [13, 15], "adaptive_admission": [19, 17], "direct_grammar_admission": [17, 12], "selected_architecture": ["direct_grammar", "encoding_adaptive_lineage"], "evaluation_rows_replayed": 576, "sealed_artifacts_checked": 50, "audit_status": "passed"},
+      "implication": "Admission validation can expose and select a held-out specialist, but it does not guarantee aggregate improvement. A robust improving improver needs risk-aware specialist composition or portfolio selection that preserves baseline coverage while retaining novel representations.",
+      "confidence": "two independently replayed encoded-transfer archives"
+    },
+    {
+      "id": "specialist-portfolio-encoding-shift-gain",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "A per-task specialist portfolio combining direct grammar with encoding-adaptive lineage was selected prospectively and reached 24/24 final on a fresh xor55-shifted bank, versus direct grammar 17/24 and adaptive lineage 15/24; it solved all 7/7 bit_splice tasks.",
+      "source": ["runs/generic-body-evolution-v88-specialist-portfolio-20261017/results.json", "runs/generic-body-evolution-v88-specialist-portfolio-20261017/audit.json", "analysis/specialist-portfolio-v88-results.md", "rsi/meta_macro.py", "run_generic_body_evolution_v83.py", "audit_generic_body_evolution_v83.py"],
+      "metrics": {"bank_seed": 2026101703, "development_encoding": "identity", "heldout_encoding": "xor55", "direct_grammar_final": 17, "encoding_adaptive_lineage_final": 15, "specialist_portfolio_development": 16, "specialist_portfolio_admission": 24, "specialist_portfolio_final": 24, "specialist_portfolio_bit_splice_tasks": 7, "specialist_portfolio_bit_splice_correct": 7, "selected_architecture": "specialist_portfolio", "evaluation_rows_replayed": 288, "sealed_artifacts_checked": 25, "audit_status": "passed"},
+      "implication": "Per-task specialist composition can preserve baseline coverage while adding a representation-shift capability, but the result is one seed with authored hypotheses and extra search cost; it is component-level progress, not open-ended RSI.",
+      "confidence": "one independently replayed prospective portfolio archive"
+    },
+    {
+      "id": "specialist-portfolio-affine-selective-transfer",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Under an affine5 held-out code-point encoding, the selected specialist portfolio improved final accuracy from 0/24 direct grammar to 10/24 and recovered 10/10 bit_splice tasks, but solved 0/14 fold tasks.",
+      "source": ["runs/generic-body-evolution-v89-specialist-portfolio-affine5-20261017/results.json", "runs/generic-body-evolution-v89-specialist-portfolio-affine5-20261017/audit.json", "analysis/specialist-portfolio-v89-affine5-results.md", "rsi/stack_program.py", "rsi/generic_body_evolution.py", "run_generic_body_evolution_v83.py"],
+      "metrics": {"bank_seed": 2026101704, "development_encoding": "identity", "heldout_encoding": "affine5", "direct_grammar_final": 0, "encoding_adaptive_lineage_final": 10, "specialist_portfolio_final": 10, "specialist_portfolio_bit_splice_tasks": 10, "specialist_portfolio_bit_splice_correct": 10, "specialist_portfolio_fold_tasks": 14, "specialist_portfolio_fold_correct": 0, "selected_architecture": "specialist_portfolio", "evaluation_rows_replayed": 288, "sealed_artifacts_checked": 25, "audit_status": "passed"},
+      "implication": "Representation adaptation survives a second encoding family for the retained bit-splice specialist, but remains operator-specific and does not establish a general encoding-invariant improver.",
+      "confidence": "one independently replayed affine-shift archive"
+    },
+    {
+      "id": "specialist-portfolio-rotation-robustness",
+      "status": "observed",
+      "scope": "exploratory",
+      "claim": "Under rotate3 held-out encoding, the selected specialist portfolio reached 24/24 final, matching direct grammar, and solved 7/7 bit_splice, 10/10 fold_parity, and 7/7 fold_mod3 tasks; across XOR, affine5, and rotate3 it recovered 28/28 available bit_splice tasks.",
+      "source": ["runs/generic-body-evolution-v90-specialist-portfolio-rotate3-20261017/results.json", "runs/generic-body-evolution-v90-specialist-portfolio-rotate3-20261017/audit.json", "analysis/specialist-portfolio-v90-rotate3-results.md", "rsi/stack_program.py", "rsi/generic_body_evolution.py", "rsi/meta_macro.py", "run_generic_body_evolution_v83.py"],
+      "metrics": {"bank_seed": 2026101705, "development_encoding": "identity", "heldout_encoding": "rotate3", "direct_grammar_final": 24, "encoding_adaptive_lineage_final": 14, "specialist_portfolio_final": 24, "specialist_portfolio_bit_splice_tasks": 7, "specialist_portfolio_bit_splice_correct": 7, "specialist_portfolio_fold_parity_tasks": 10, "specialist_portfolio_fold_parity_correct": 10, "specialist_portfolio_fold_mod3_tasks": 7, "specialist_portfolio_fold_mod3_correct": 7, "selected_architecture": "specialist_portfolio", "three_encoding_bit_splice_correct": 28, "three_encoding_bit_splice_tasks": 28, "evaluation_rows_replayed": 288, "sealed_artifacts_checked": 25, "audit_status": "passed"},
+      "implication": "The specialist portfolio retains selective bit-splice transfer across three representation shifts and can match a strong direct baseline, but robustness is not equivalent to aggregate improvement and the encoding hypothesis space remains authored.",
+      "confidence": "one independently replayed rotation-shift archive plus two prior encoding archives"
+    }
+  ]
+}

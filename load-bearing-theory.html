@@ -1,0 +1,662 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Load-Bearing Theory — local gap update v3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap">
+<style>
+:root {
+  --paper: #F3F4F7;
+  --surface: #FFFFFF;
+  --ink: #171A28;
+  --muted: #5A6074;
+  --rule: #D8DBE4;
+  --blue: #2B45B5;
+  --blue-wash: #E7EBF8;
+  --red: #BE2A3F;
+  --red-wash: #F8E7EA;
+  --serif: "STIX Two Text", "STIX Two", Cambria, Georgia, serif;
+  --sans: "Recursive", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #11131B; --surface: #191C27; --ink: #E4E6EE; --muted: #9CA2B6;
+    --rule: #2C303F; --blue: #93A6FF; --blue-wash: #1B2244; --red: #FF7488; --red-wash: #2B1720;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #11131B; --surface: #191C27; --ink: #E4E6EE; --muted: #9CA2B6;
+  --rule: #2C303F; --blue: #93A6FF; --blue-wash: #1B2244; --red: #FF7488; --red-wash: #2B1720;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  padding-inline: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+.page { max-width: 62rem; margin-inline: auto; padding-block: 3rem 5rem; }
+p { margin: 0 0 0.9rem; max-width: 74ch; }
+ul, ol { padding-left: 1.25rem; margin: 0 0 1rem; max-width: 74ch; }
+li { margin-bottom: 0.4rem; }
+li::marker { color: var(--muted); }
+strong { font-weight: 650; }
+a { color: var(--blue); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 2px; }
+code { font-family: var(--sans); font-variation-settings: "MONO" 1; font-size: 0.86em; }
+
+h1, h2, h3, .eyebrow, .meta, th, .pid, .src, .label, .apply b, td:first-child {
+  font-family: var(--sans);
+}
+h1, h2, h3 { font-variation-settings: "CASL" 0, "MONO" 0; text-wrap: balance; line-height: 1.12; letter-spacing: -0.015em; }
+h1 { font-size: clamp(2.1rem, 5vw, 3.2rem); font-weight: 900; letter-spacing: -0.03em; margin: 0.5rem 0 0.7rem; }
+h2 { font-size: 1.55rem; font-weight: 800; margin: 0 0 0.5rem; }
+h3 { font-size: 1.05rem; font-weight: 700; margin: 0 0 0.35rem; }
+.eyebrow { font-variation-settings: "MONO" 1; font-size: 0.74rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted); }
+
+header { padding-bottom: 1.6rem; border-bottom: 1px solid var(--rule); }
+.dek { font-size: 1.15rem; line-height: 1.45; max-width: 58ch; margin: 0 0 0.9rem; }
+.meta { font-variation-settings: "MONO" 1; font-size: 0.78rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem; }
+
+section.block { padding-top: 2.4rem; margin-top: 2rem; border-top: 1px solid var(--rule); }
+.intro { color: var(--muted); max-width: 74ch; }
+
+/* principle cards */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr)); gap: 1.1rem; margin: 1.4rem 0 0; }
+.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 5px; padding: 1rem 1.1rem 0.9rem; display: flex; flex-direction: column; }
+.card .pid { font-variation-settings: "MONO" 1; font-size: 0.72rem; letter-spacing: 0.05em; color: var(--red); font-weight: 600; margin-bottom: 0.3rem; }
+.card p { font-size: 0.98rem; line-height: 1.5; margin: 0 0 0.6rem; max-width: none; }
+.src { font-variation-settings: "MONO" 1; font-size: 0.72rem; color: var(--muted); margin: 0 0 0.55rem; }
+.card .apply { margin-top: auto; border-top: 1px solid var(--rule); padding-top: 0.55rem; }
+.card .apply b { font-variation-settings: "MONO" 1; font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blue); font-weight: 600; display: block; margin-bottom: 0.15rem; }
+.card .apply p { font-size: 0.93rem; margin: 0; }
+.card.match { border-left: 3px solid var(--blue); }
+.card.tension { border-left: 3px solid var(--red); }
+
+.table-wrap { overflow-x: auto; margin: 1.2rem 0 1.4rem; }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; line-height: 1.42; }
+th { font-variation-settings: "MONO" 1; font-weight: 500; font-size: 0.7rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); text-align: left; padding: 0 0.8rem 0.5rem 0; border-bottom: 1px solid var(--ink); white-space: nowrap; }
+td { padding: 0.55rem 0.8rem 0.55rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+td:first-child { font-weight: 650; font-size: 0.88rem; }
+
+.label { font-variation-settings: "MONO" 1; font-size: 0.75rem; color: var(--muted); }
+.note { background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--red); border-radius: 4px; padding: 0.9rem 1.1rem; margin: 1.2rem 0; }
+.note p:last-child { margin-bottom: 0; }
+
+@media (max-width: 640px) { body { font-size: 1rem; } h2 { font-size: 1.35rem; } .cards { grid-template-columns: 1fr; } }
+</style>
+
+<div class="page">
+<header>
+  <div class="eyebrow">Textbook foundations, September 2026</div>
+  <h1>Load-Bearing Theory</h1>
+  <p class="dek">What eight standard texts say about the parts of a self-improvement loop that the 2025 and 2026 papers only report empirically.</p>
+  <div class="meta"><span>8 books, 55 principles</span><span>Third of three: brief, papers, theory</span><span>Paraphrased, with sections cited</span></div>
+</header>
+<p class="label">Local gap update v3 · 16 September 2026. H1 and the question count are revised below. Other textbook applications and literature-gap claims retain their original review scope; they require claim-by-claim validation before being treated as established design rules. See <a href="DOCUMENT-STATUS.md">document status</a>.</p>
+
+<section class="block" id="why" style="border-top: 0; padding-top: 1.6rem; margin-top: 0;">
+  <h2>Why bother, when the papers are newer</h2>
+  <p>The papers report what happened once. The textbooks say which of those outcomes were predictable, which of your design choices are constrained by theory, and which are free. Three examples set the tone for everything below.</p>
+  <ul>
+    <li>Absolute Zero's learnability reward, which pays the proposer most for tasks the solver solves sometimes, is not a novel trick. It is the standard difficulty-filtering practice in verifiable-reward RL, and the reason is mechanical: in a group-relative method, a prompt solved 0% or 100% of the time produces no gradient at all, because every completion in the group looks the same.</li>
+    <li>The finding that picking the top scorer on a small evaluation set mostly selects noise is a theorem. Bandit theory shows that after running an allocation rule that maximizes reward, the empirical means of the arms are systematically biased downward, because the rule keeps sampling an arm precisely until its average falls. The score you select on is not an unbiased estimate of the thing you want.</li>
+    <li>The Darwin Gödel Machine deleting its own hallucination markers is a violation of the reward hypothesis as Sutton and Barto state it: the reward signal must be computed outside the agent's arbitrary control. A verifier the agent can edit is not a verifier.</li>
+  </ul>
+  <p class="label">Sources are the eight free textbooks downloaded to the local library. Everything below is paraphrase with the section noted; inferences beyond what a book claims are marked.</p>
+</section>
+
+<section class="block" id="reward">
+  <div class="eyebrow">Track 1</div>
+  <h2>The reward</h2>
+  <p class="intro">Where the number comes from, and what happens when it is even slightly wrong.</p>
+
+  <div class="cards">
+    <div class="card match">
+      <div class="pid">REWARD 01</div>
+      <h3>The reward must sit outside the agent</h3>
+      <div class="src">Sutton and Barto, 3.2</div>
+      <p>Goals are formalized as maximizing one scalar signal, and that signal is defined to be outside the agent's arbitrary control. The agent may know exactly how reward is computed and still be unable to change it.</p>
+      <div class="apply"><b>Apply</b><p>Scoring code, mutation harness, and held-out suites live outside every directory the loop can write. This is the theory behind the hidden-verifier discipline.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">REWARD 02</div>
+      <h3>Reward says what, not how</h3>
+      <div class="src">Sutton and Barto, 3.2 to 3.3</div>
+      <p>Prior knowledge about method belongs in the initial policy or value function, not in the reward. Their example: an agent paid for capturing pieces learns to capture pieces and lose games.</p>
+      <div class="apply"><b>Apply</b><p>Pay only for execution outcomes. No points for style, length, docstrings, or looking like a solution.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">REWARD 03</div>
+      <h3>Naive shaping moves the optimum</h3>
+      <div class="src">Sutton and Barto, 17.4</div>
+      <p>Supplemental rewards for way-station subgoals can make the agent behave differently from what was intended. The recommended alternative is to encode the guess in the value function's initialization rather than adding it to the reward, which is the same idea potential-based shaping formalizes: guidance that cancels over a trajectory cannot change the argmax.</p>
+      <div class="apply"><b>Apply</b><p>Partial credit for compiling or running belongs in an auxiliary loss or initialization, not summed into the reward.</p></div>
+    </div>
+
+    <div class="card match">
+      <div class="pid">REWARD 04</div>
+      <h3>Sparse reward is a policy problem, so the curriculum is the fix</h3>
+      <div class="src">Sutton and Barto, 17.4</div>
+      <p>Sparse reward hurts because the current policy rarely reaches rewarding states, not merely because the signal is thin. The endorsed remedy is to change the task as learning proceeds, so the agent is frequently rewarded at its present ability and each stage makes the next easier.</p>
+      <div class="apply"><b>Apply</b><p>The proposer is a shaping mechanism, not a novelty generator. Gate difficulty on recent solver pass rate.</p></div>
+    </div>
+
+    <div class="card match">
+      <div class="pid">REWARD 05</div>
+      <h3>Difficulty filtering is mechanical, not heuristic</h3>
+      <div class="src">RLHF Book, 7.3.3</div>
+      <p>A prompt solved 0% or 100% of the time yields no gradient under group-relative advantages, since all completions score alike. Standard practice samples a group per prompt offline and keeps prompts solved roughly 20% to 80% of the time, with per-batch filtering during training.</p>
+      <div class="apply"><b>Apply</b><p>This validates the learnability reward and the 0.2 target solve rate in the self-play SWE-RL paper, and it means a binary consistency check is enough.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">REWARD 06</div>
+      <h3>Reward design is an outer optimization</h3>
+      <div class="src">Sutton and Barto, 17.4</div>
+      <p>Reward signals are algorithm parameters that can be searched and scored by a separate, higher-level objective. Under limited compute or data, a reward that differs from the designer's true goal can outperform the true goal pursued directly.</p>
+      <div class="apply"><b>Apply</b><p>Hold a frozen benchmark as the outer objective and treat reward weights, thresholds, and the mutation operator set as tunables measured against it.</p></div>
+    </div>
+
+    <div class="card match">
+      <div class="pid">REWARD 07</div>
+      <h3>Verifiable rewards are robust where reward models are not</h3>
+      <div class="src">RLHF Book, 7.1</div>
+      <p>RLVR replaces a learned reward model with a verification function. For code that means executing tests, gated all-pass or scored by fraction passed. Most such setups run without a learned reward model because policies are markedly more robust to over-optimization in these domains.</p>
+      <div class="apply"><b>Apply</b><p>The sandbox leg is trustworthy. The tester's mutation score is a model-authored reward and inherits reward-model failure modes, so it gets the scrutiny, not the executor.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">REWARD 08</div>
+      <h3>Verifiable is not the same as labeled</h3>
+      <div class="src">RLHF Book, 7.1</div>
+      <p>The point of the "verifiable" framing is that a checking function can confirm correctness where many solutions exist and no reference answer is known in advance. Progress depends on the variety and depth of verifiable problems rather than on possessing solutions.</p>
+      <div class="apply"><b>Apply</b><p>Direct answer to the grounding question: external ground truth is needed mainly to anchor the verifier against drift, not per task.</p></div>
+    </div>
+
+    <div class="card tension">
+      <div class="pid">REWARD 09</div>
+      <h3>Over-optimization is measured in KL, not steps</h3>
+      <div class="src">RLHF Book, 14.1 to 14.2</div>
+      <p>Over-optimization differs from overfitting: the policy genuinely improves on the scoring function while true quality peaks and then falls. The canonical curve plots score against the square root of KL distance from the initial policy, with train and test scores tracking until a threshold and diverging after. Higher KL penalties delay divergence at a cost in steps.</p>
+      <div class="apply"><b>Apply</b><p>Make square-root KL to reference the x-axis of the main safety plot, not optimization steps. The reward-hacking paper's step-count curve is a proxy for this.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">REWARD 10</div>
+      <h3>KL to a reference, and when to drop it</h3>
+      <div class="src">RLHF Book, 3.1.4, 7.3.3, 15.1</div>
+      <p>KL against a frozen reference is the main explicit regularizer, usually in reverse form. Long reasoning-RL runs increasingly remove it entirely, because verifiable rewards resist over-optimization and the constraint blocks exploration.</p>
+      <div class="apply"><b>Apply</b><p>Keep a small KL while the model-authored tester reward is in the loop; consider dropping it in solver-only, sandbox-graded phases. Log it either way.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="update">
+  <div class="eyebrow">Track 2</div>
+  <h2>The update</h2>
+  <p class="intro">GRPO mechanics, and the specific ways a two-GPU actor-learner split corrupts them.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="pid">UPDATE 01</div>
+      <h3>Baselines cut variance without bias</h3>
+      <div class="src">Sutton and Barto, 13.3 to 13.4</div>
+      <p>Subtracting any baseline that does not depend on the action leaves the expected policy gradient unchanged, because action probabilities sum to one, but it can sharply reduce variance. The baseline should vary by state.</p>
+      <div class="apply"><b>Apply</b><p>GRPO's group mean is exactly this baseline, which is why every group must share one prompt, and why a group with identical rewards carries no signal and should be dropped.</p></div>
+    </div>
+
+    <div class="card tension">
+      <div class="pid">UPDATE 02</div>
+      <h3>Dividing by group standard deviation biases the update</h3>
+      <div class="src">RLHF Book, 6.2.8</div>
+      <p>GRPO normalizes advantages by the group's standard deviation, which inflates them on low-variance prompts, meaning prompts that are nearly all right or nearly all wrong. Removing the denominator recovers a leave-one-out baseline, at the cost of down-weighting nearly-all-incorrect prompts that may be the most informative.</p>
+      <div class="apply"><b>Apply</b><p>Use the mean-only advantage and let difficulty filtering handle variance, rather than having the denominator do it silently.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">UPDATE 03</div>
+      <h3>Group size substitutes for a value function</h3>
+      <div class="src">RLHF Book, 6.2.8</div>
+      <p>Because advantages are purely relative to peers drawn from the same prompt, group-relative methods are normally run with many more samples per prompt than actor-critic methods need.</p>
+      <div class="apply"><b>Apply</b><p>Buy group size, 8 to 16 or more, before anything else. The same rollouts also supply the pass-rate estimate the difficulty filter needs, so they are not a separate cost.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">UPDATE 04</div>
+      <h3>Loss aggregation hides a length bias</h3>
+      <div class="src">RLHF Book, 6.3.2</div>
+      <p>Per-sequence normalization gives every sequence equal weight, so tokens in short completions receive larger per-token gradients; per-token normalization lets long sequences dominate; fixed-length normalization divides by a global maximum. Gradient accumulation can flip which effect wins.</p>
+      <div class="apply"><b>Apply</b><p>Tests and solutions differ systematically in length, so choose an aggregation deliberately and log mean completion length per role, or you will "discover" that longer tests score better.</p></div>
+    </div>
+
+    <div class="card tension">
+      <div class="pid">UPDATE 05</div>
+      <h3>Clipping silently drops tokens</h3>
+      <div class="src">RLHF Book, 6.2.9 to 6.2.11</div>
+      <p>Token-level clipping zeroes the gradient for any token whose probability ratio leaves the trust band, so rare but important tokens can vanish from the update. Sequence-level ratios match the importance-sampling granularity to a sequence-level reward; other variants clip the weight while keeping a gradient for every token.</p>
+      <div class="apply"><b>Apply</b><p>Log the clipped fraction every step. This is also the mechanism the spurious-rewards paper blames for random-reward gains, which makes it an experiment, not just a setting.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">UPDATE 06</div>
+      <h3>One gradient step per batch removes the clipping apparatus</h3>
+      <div class="src">RLHF Book, 6.3.5.1</div>
+      <p>If you take exactly one gradient step per rollout batch, the current and sampling policies are identical, the ratio is one, and the objective collapses to a plain policy gradient with a KL term. No second branch, no clipping logic.</p>
+      <div class="apply"><b>Apply</b><p>Start here. Add clipping only when rollout reuse becomes necessary for throughput.</p></div>
+    </div>
+
+    <div class="card tension">
+      <div class="pid">UPDATE 07</div>
+      <h3>The sampler and the learner disagree even at identical weights</h3>
+      <div class="src">RLHF Book, 6.3.3 to 6.3.4</div>
+      <p>Exact on-policy execution is impractical, so the standard design accepts slightly stale data from an inference engine. Worse, the inference stack and the training stack use different kernels and precision, so the same weights produce different token distributions. Truncated importance sampling caps the learner-to-sampler ratio as a per-token weight. Frameworks that reuse sampler log-probabilities as the "old" ones are doing off-policy RL without saying so.</p>
+      <div class="apply"><b>Apply</b><p>Store sampler log-probabilities, recompute learner log-probabilities, and apply a one-sided truncated weight. This is the specific bug the vLLM-plus-trainer split invites.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">UPDATE 08</div>
+      <h3>Importance ratios are products, and their variance can be unbounded</h3>
+      <div class="src">Sutton and Barto, 5.5</div>
+      <p>An off-policy correction over a trajectory is a product of per-step ratios. Ordinary importance sampling is unbiased but can have infinite variance; weighted, self-normalized importance sampling is biased with variance bounded by its largest weight, and is strongly preferred in practice.</p>
+      <div class="apply"><b>Apply</b><p>Over hundreds of generated tokens the raw product explodes. Ratio clipping and group normalization are load-bearing, not cosmetic.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">UPDATE 09</div>
+      <h3>The deadly triad, and why this loop escapes it</h3>
+      <div class="src">Sutton and Barto, 11.3</div>
+      <p>Divergence risk appears when function approximation, bootstrapping, and off-policy training are all present. Dropping any one leg avoids it, and function approximation cannot be dropped.</p>
+      <div class="apply"><b>Apply</b><p>Whole-rollout returns mean no bootstrapping, which is why moderate staleness is survivable. Adding a learned value critic re-arms all three legs.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">UPDATE 10</div>
+      <h3>A constant step size is the right wrong choice</h3>
+      <div class="src">Sutton and Barto, 2.5; Szepesvári, 3.1.1</div>
+      <p>Almost-sure convergence requires step sizes whose sum diverges and whose squares converge. A constant step size fails the second condition, so estimates never fully settle and instead keep tracking recent data, which is exactly what you want when the problem is non-stationary. The price is residual fluctuation proportional to the step size.</p>
+      <div class="apply"><b>Apply</b><p>A constant small LoRA learning rate is correct here because the task distribution keeps moving. Evaluate periodic checkpoints rather than the latest step.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">UPDATE 11</div>
+      <h3>A small gradient does not mean a good policy</h3>
+      <div class="src">Agarwal et al., 10.1 and 10.4</div>
+      <p>In simple chain problems the gradient and many higher derivatives can be exponentially small at parameters that remain badly suboptimal, so generic stationarity guarantees say nothing about quality. Guarantees return when action probabilities are kept away from zero and the starting distribution covers the states that matter.</p>
+      <div class="apply"><b>Apply</b><p>A flat loss is not convergence. Entropy and KL floors are doing real work, not decoration.</p></div>
+    </div>
+
+    <div class="card tension">
+      <div class="pid">UPDATE 12</div>
+      <h3>Average trust regions do not guarantee improvement</h3>
+      <div class="src">Agarwal et al., 12.1 to 12.2</div>
+      <p>Monotonic improvement results require a per-state bound on how far the policy moves. The practical average-KL relaxation that PPO and GRPO inherit admits an explicit counterexample: a new policy can satisfy the average constraint and still be strictly worse, because it may deviate freely at states the old policy rarely visited.</p>
+      <div class="apply"><b>Apply</b><p>Treat the clip as variance control, not a guarantee. Keep a per-batch worst-case ratio check and revert on regression.</p></div>
+    </div>
+
+    <div class="card match">
+      <div class="pid">UPDATE 13</div>
+      <h3>RL forgets less than supervised fine-tuning, structurally</h3>
+      <div class="src">RLHF Book, 15.3</div>
+      <p>Supervised fine-tuning minimizes a mode-covering divergence that redistributes probability mass broadly; KL-regularized RL is equivalent to minimizing a mode-seeking divergence, so updates stay local to where the policy already places mass. Reported evidence includes forgetting correlating strongly with KL drift, with on-policy data rather than negative gradients accounting for the difference.</p>
+      <div class="apply"><b>Apply</b><p>This is the argument for RL over fine-tuning on self-generated tasks: three roles must stay alive in one set of weights, and supervised training on self-generated data collapses them.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">UPDATE 14</div>
+      <h3>Interleaved improvement oscillates</h3>
+      <div class="src">Sutton and Barto, 4.6; Szepesvári, 4.4</div>
+      <p>Evaluation and improvement can interleave at any granularity and stabilize only at the optimum, but with incomplete evaluation a step can produce a policy substantially worse than the previous one, and late-stage oscillation is common. Standard practice is to keep the sequence of policies and pick the best afterward.</p>
+      <div class="apply"><b>Apply</b><p>Three roles improving against each other is this process with a moving target. Checkpoint often and select on a frozen benchmark, never on the final step.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="selection">
+  <div class="eyebrow">Track 3</div>
+  <h2>The selection</h2>
+  <p class="intro">Choosing which variant to evaluate next, and which to declare best, is a bandit problem with known theory. Most of the field's methodological embarrassments live here.</p>
+
+  <div class="cards">
+    <div class="card match">
+      <div class="pid">SELECT 01</div>
+      <h3>Simple regret is not cumulative regret</h3>
+      <div class="src">Lattimore and Szepesvári, 33.1</div>
+      <p>Cumulative regret measures reward lost while learning; simple regret measures only how suboptimal the one variant you finally recommend is. A reward-maximizing rule converts into a recommender whose simple regret is its average regret, so it is never catastrophic, but it is wasteful: it spends nearly all evaluations on the candidate it already believes is best and barely separates the rest.</p>
+      <div class="apply"><b>Apply</b><p>A search that maximizes average benchmark score across evaluations is optimizing the wrong objective for "which variant do I keep."</p></div>
+    </div>
+
+    <div class="card tension">
+      <div class="pid">SELECT 02</div>
+      <h3>Regret-optimal allocation actively harms identification</h3>
+      <div class="src">Lattimore and Szepesvári, 33.4</div>
+      <p>For a policy with asymptotically optimal logarithmic cumulative regret, the probability of recommending a suboptimal arm decays only polynomially in the number of evaluations, no matter how the final recommendation is made. Uniform exploration gives exponential decay on a fixed instance.</p>
+      <div class="apply"><b>Apply</b><p>The Huxley-Gödel Machine allocates by Thompson sampling, which is a reward-maximizing rule. Its final pick inherits a polynomially decaying error rate, so the selection stage needs its own budget and its own rule.</p></div>
+    </div>
+
+    <div class="card match">
+      <div class="pid">SELECT 03</div>
+      <h3>The winner's curse is a theorem</h3>
+      <div class="src">Lattimore and Szepesvári, 33.4</div>
+      <p>After running an algorithm designed to minimize cumulative regret, the empirical means of the arms are systematically biased downward, because the algorithm keeps sampling an arm precisely until its average falls. The statistic you select on is not an unbiased estimate of the quantity you care about.</p>
+      <div class="apply"><b>Apply</b><p>Never declare a winner using the scores that drove allocation. Re-evaluate finalists on fresh runs. This is the mechanism behind the 0.49 probability that the sophisticated pipeline beats naive sampling.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">SELECT 04</div>
+      <h3>Resolution is expensive, confidence is cheap</h3>
+      <div class="src">Lattimore and Szepesvári, 7.1</div>
+      <p>A confidence radius shrinks with the square root of the number of pulls, so halving uncertainty costs four times the samples, while tightening the confidence level enters only logarithmically. Distinguishing a candidate that is better by a margin takes on the order of the log of the horizon divided by the squared margin.</p>
+      <div class="apply"><b>Apply</b><p>For a one- or two-point benchmark difference with per-run noise of similar size, you need hundreds of runs per variant. That, not GPU memory, is the binding constraint on any variant search here.</p></div>
+    </div>
+
+    <div class="card match">
+      <div class="pid">SELECT 05</div>
+      <h3>Identification has a hard sample-complexity floor</h3>
+      <div class="src">Lattimore and Szepesvári, 33.5</div>
+      <p>Any procedure correct with a given confidence must use at least an instance-dependent constant times the log of one over the error probability. For two Gaussian arms that constant is roughly twice the summed variances divided by the squared gap, with the other arms contributing similar terms.</p>
+      <div class="apply"><b>Apply</b><p>Compute this number from measured benchmark variance before launching a search. If the budget is below the floor, no algorithm recovers the answer, and the honest report is "indistinguishable."</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">SELECT 06</div>
+      <h3>More candidates make flat sweeps worse, and racing fixes it</h3>
+      <div class="src">Lattimore and Szepesvári, 33.1 and 33.10</div>
+      <p>Evaluating many candidates uniformly and taking the argmax gives an error that grows with the number of candidates at fixed budget. Sequential halving spends the same budget in rounds, discarding the worse half each round, and its error depends on how many candidates are genuinely close rather than on the total count.</p>
+      <div class="apply"><b>Apply</b><p>Run variant pools as a racing bracket, not one flat sweep. This is the cheap fix for the small-evaluation-set problem the critique paper identified.</p></div>
+    </div>
+
+    <div class="card tension">
+      <div class="pid">SELECT 07</div>
+      <h3>Thompson sampling can permanently starve a good branch</h3>
+      <div class="src">Lattimore and Szepesvári, 36.1 to 36.2</div>
+      <p>Thompson sampling earns well and is asymptotically optimal in the instance sense, but is not minimax optimal and shows higher variance than tuned optimistic rules. Its sharper hazard: an underconfident prior on an arm is not washed out by data, because no data is ever collected on it.</p>
+      <div class="apply"><b>Apply</b><p>Pooled-subtree Thompson sampling can permanently starve a genuinely good subtree whose first runs were unlucky. Add forced exploration or an optimistic prior floor.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">SELECT 08</div>
+      <h3>Optimism assumes actions do not inform each other</h3>
+      <div class="src">Lattimore and Szepesvári, 7.2</div>
+      <p>Upper-confidence methods are well founded when each action's feedback speaks only about that action. When actions share information, an optimistic rule can systematically avoid informative but low-reward actions even when taking them is optimal.</p>
+      <div class="apply"><b>Apply</b><p><em>Inference:</em> pooled clade statistics are exactly this shared-information case, so per-node bounds computed as if independent are miscalibrated, and the pooling structure has to enter the bound.</p></div>
+    </div>
+
+    <div class="card match">
+      <div class="pid">SELECT 09</div>
+      <h3>You cannot have stationary-optimal and change-robust at once</h3>
+      <div class="src">Lattimore and Szepesvári, 31.2 to 31.3</div>
+      <p>Any policy achieving sublinear regret on stationary problems suffers large regret on a problem with only two change points. Discounted or sliding-window variants forget old data, but no fixed discount or window is minimax optimal.</p>
+      <div class="apply"><b>Apply</b><p>As self-modification shifts the task distribution, statistics pooled over a whole run go stale. Use a sliding window and accept its length as a tuned parameter, not a derived one. This also explains why the evolution paper's deliberately non-stationary database beat a static one.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">SELECT 10</div>
+      <h3>Coverage is the price of off-policy data, and its absence is fatal</h3>
+      <div class="src">Agarwal et al., 4.1 to 4.6</div>
+      <p>Iterative fitted methods need a bounded ratio between the distribution the current policy induces and the one the data came from; the statistical error enters multiplied by the square root of that constant. Without coverage the obstruction is information-theoretic: two problems can produce identical data yet have different optimal policies, so no estimator, regularizer, or larger model can separate them.</p>
+      <div class="apply"><b>Apply</b><p>Monitor the stale-ratio distribution as a number. When a batch contains no samples in the region the current policy now visits, that batch carries no trustworthy signal there.</p></div>
+    </div>
+
+    <div class="card match">
+      <div class="pid">SELECT 11</div>
+      <h3>Self-generated distributions compound errors quadratically</h3>
+      <div class="src">Agarwal et al., 13.3</div>
+      <p>A policy fit on one distribution but evaluated under its own induced distribution pays a horizon factor that is quadratic rather than linear, and in the worst case this is not removable. Interactive correction against a reference restores the linear rate.</p>
+      <div class="apply"><b>Apply</b><p>When the loop trains on its own generated tasks, per-step error does not stay per-step. Budget periodic evaluation against a fixed external benchmark rather than the loop's own drifting distribution.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="agents">
+  <div class="eyebrow">Track 4</div>
+  <h2>The agents</h2>
+  <p class="intro">What happens when the thing you train against is also learning, and what a closed loop can and cannot generate on its own.</p>
+
+  <div class="cards">
+    <div class="card tension">
+      <div class="pid">AGENT 01</div>
+      <h3>Two different things are called self-play</h3>
+      <div class="src">MARL book, 5.5.1</div>
+      <p>One meaning is that every agent runs the same learning rule; the other is that a single policy literally occupies every seat. The second is faster, because all seats' experience trains one network, but it requires symmetric roles and egocentric observations.</p>
+      <div class="apply"><b>Apply</b><p>Proposer, solver, and tester are asymmetric roles, so this is the first kind. Board-game self-play results do not transfer to it by analogy.</p></div>
+    </div>
+
+    <div class="card match">
+      <div class="pid">AGENT 02</div>
+      <h3>Co-adaptation breaks the convergence conditions</h3>
+      <div class="src">MARL book, 5.4.1</div>
+      <p>When agents learn simultaneously, each one's environment stops being Markov, because transitions depend on the others' current parameters. Targets move, and the stochastic-approximation conditions behind standard convergence results no longer hold.</p>
+      <div class="apply"><b>Apply</b><p>Once the tester co-evolves, the solver's reward is non-stationary and any improvement curve is measured with a moving ruler. Freeze the evaluator within epochs, which is exactly what the Red Queen paper does.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">AGENT 03</div>
+      <h3>Best-response dynamics cycle</h3>
+      <div class="src">MARL book, 5.4.1 and 9.9.2</div>
+      <p>In intransitive strategy spaces, chasing the best response goes in circles rather than climbing. Population methods on rock-paper-scissors must enumerate essentially every pure strategy before the population's responses close.</p>
+      <div class="apply"><b>Apply</b><p>Expect the tester to find a trick, the solver to patch it, and the tester to revert to it later. Track a population of past roles, not just the latest checkpoint.</p></div>
+    </div>
+
+    <div class="card match">
+      <div class="pid">AGENT 04</div>
+      <h3>Keep an archive of past selves</h3>
+      <div class="src">MARL book, 9.8.2 and 9.9.3</div>
+      <p>Training against past copies plays the role a replay buffer plays in single-agent learning: it stops a policy overfitting to its own current quirks. Large-scale league training mixed self-play with play against past and specialized opponents, weighted toward the ones beating you, and kept dedicated exploiters whose only job was finding holes.</p>
+      <div class="apply"><b>Apply</b><p>Sample tasks and tests from an archive, not only from the current tester, and add one permanent adversarial tester rewarded solely for making the current solver fail.</p></div>
+    </div>
+
+    <div class="card tension">
+      <div class="pid">AGENT 05</div>
+      <h3>Self-play needs a seed distribution</h3>
+      <div class="src">MARL book, 9.9.3</div>
+      <p>The strongest documented self-play system seeded its policies by imitating a large corpus of human games first; without that seed, performance degraded substantially, because the strategy space was too large to explore from scratch.</p>
+      <div class="apply"><b>Apply</b><p>A zero-data framing is misleading. The pretrained model is the seed corpus, and the loop amplifies that distribution rather than creating one, which is what the scaling pattern in Absolute Zero shows.</p></div>
+    </div>
+
+    <div class="card match">
+      <div class="pid">AGENT 06</div>
+      <h3>An equilibrium can be stable and worthless</h3>
+      <div class="src">MARL book, 4.7 to 4.8; Shoham and Leyton-Brown, 3.3</div>
+      <p>A Nash equilibrium guarantees only mutual best response, not high return. The prisoner's dilemma settles on a jointly worse outcome, and equilibria can be multiple with different payoffs.</p>
+      <div class="apply"><b>Apply</b><p>Proposer and solver can settle into a comfortable regime of easy problems that is perfectly stable and useless. Measure absolute difficulty against an external set, never loop stability.</p></div>
+    </div>
+
+    <div class="card tension">
+      <div class="pid">AGENT 07</div>
+      <h3>Zero-sum is the tractable case, and your loop is not zero-sum by default</h3>
+      <div class="src">Shoham and Leyton-Brown, 4.1 to 4.2</div>
+      <p>Two-player zero-sum games solve in polynomial time and have a unique value. Outside zero-sum, equilibrium computation is hard, equilibria are not unique, and there is no single value to converge to, because interests are no longer opposed.</p>
+      <div class="apply"><b>Apply</b><p>A co-evolving generator and evaluator share an interest in agreeable scoring. Force the pair zero-sum through the reward structure, or anchor the evaluator to an executor it cannot influence.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">AGENT 08</div>
+      <h3>Converged averages can hide bad joint behavior</h3>
+      <div class="src">Shoham and Leyton-Brown, 7.2</div>
+      <p>Fictitious play converges in restricted classes only, and in some games the marginal frequencies converge to an equilibrium while realized payoffs stay at zero, because the players' actions are miscorrelated.</p>
+      <div class="apply"><b>Apply</b><p>Report realized held-out pass rate, not averaged component statistics that look like they have settled.</p></div>
+    </div>
+
+    <div class="card">
+      <div class="pid">AGENT 09</div>
+      <h3>There is no general trick for an honest evaluator</h3>
+      <div class="src">Shoham and Leyton-Brown, 10.2 and 11.4</div>
+      <p>Any dominant-strategy-truthful choice rule over three or more outcomes that can select anything is dictatorial, so escaping requires restricting preferences or weakening the solution concept. Elicitation works in practice when reporters hold positions they can lose on.</p>
+      <div class="apply"><b>Apply</b><p>Honesty comes from the executor being the non-strategic party. Tie the tester's reward to execution outcomes it cannot see in advance, rather than to its own reports.</p></div>
+    </div>
+
+    <div class="card match">
+      <div class="pid">AGENT 10</div>
+      <h3>A dogmatic prior stays optimal by its own lights forever</h3>
+      <div class="src">Hutter, Quarel and Catt, 8.2 to 8.3</div>
+      <p>A Bayes-optimal agent with a bad prior can keep following its current policy indefinitely and remain optimal relative to that prior, never learning from mistakes. Bayes-optimality also does not imply asymptotic optimality, since such agents do not explore enough.</p>
+      <div class="apply"><b>Apply</b><p>This is the formal shape of self-play collapse: a loop graded only by itself can be perfectly self-consistent while generating no information about the world.</p></div>
+    </div>
+
+    <div class="card match">
+      <div class="pid">AGENT 11</div>
+      <h3>Information gain is a separate objective from reward</h3>
+      <div class="src">Hutter, Quarel and Catt, 9.3 to 9.5, 15.10</div>
+      <p>Knowledge-seeking agents replace reward with the divergence between successive posteriors, and schemes that interleave information-gathering with exploitation buy asymptotic optimality that Bayes-optimality alone does not provide. In the analysis of an agent that can tamper with its own perception, the knowledge-seeking variant is the one that declines, because tampering makes its observations less informative.</p>
+      <div class="apply"><b>Apply</b><p>Give the proposer an explicit information-gain term against executor outcomes and log it. Reward maximizers have an incentive to tamper with the channel; information seekers do not.</p></div>
+    </div>
+
+    <div class="card match">
+      <div class="pid">AGENT 12</div>
+      <h3>Only forward-planning utilities decline to rewrite themselves</h3>
+      <div class="src">Hutter, Quarel and Catt, 15.8 to 15.12</div>
+      <p>Self-modifying agents need a nameable policy space to avoid self-reference paradoxes. Agents valuing future reward as experienced have an incentive to rewrite their utility function into something trivially satisfiable; agents that evaluate future plans using their <em>current</em> utility function do not. Embedded agents are further bounded by compute and memory per step.</p>
+      <div class="apply"><b>Apply</b><p>In a search over self-modifications, fix the interpreter and keep the scoring function outside the mutable code, or the cheapest win available to the search is rewriting its own grader.</p></div>
+    </div>
+  </div>
+  <p class="label">Note: this book does not treat Gödel machines, despite the shared subject matter; the self-modification results above are its own framework.</p>
+</section>
+
+<section class="block" id="mapping">
+  <div class="eyebrow">Synthesis</div>
+  <h2>Where theory meets the twenty papers</h2>
+  <p>Most of the 2025 and 2026 empirical findings are recoveries of older results. A few are genuinely new, and those are the ones worth building on.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Paper finding</th><th>Textbook principle</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td>Absolute Zero's learnability reward pays most for tasks solved sometimes</td><td>Group-relative advantages vanish at 0% and 100%; shaping means changing the task to match current ability</td><td>Predicted. Not a novel mechanism, and the 20% to 80% band is standard practice.</td></tr>
+        <tr><td>Self-play SWE-RL: a binary consistency check matches the Monte Carlo difficulty estimate</td><td>Same principle: you need a non-degenerate group, not a precise difficulty estimate</td><td>Predicted. Buy the cheap gate.</td></tr>
+        <tr><td>Simple Baselines: the sophisticated pipeline beats naive sampling with probability 0.49</td><td>Winner's curse under reward-maximizing allocation; selection error grows with candidate count at fixed budget</td><td>Theorem, not surprise. The fix is racing plus fresh re-evaluation.</td></tr>
+        <tr><td>Huxley-Gödel Machine wins mainly on CPU-hours, using Thompson sampling over clade statistics</td><td>Thompson sampling is strong for cumulative regret, not for identification, where error decays only polynomially</td><td>Partly misaligned. Excellent allocator, but the final pick needs its own budget and rule.</td></tr>
+        <tr><td>Its allocation is biased toward nodes with fewer than 50 evaluations</td><td>Confidence width shrinks with the square root of samples; optimism is miscalibrated when arms share information</td><td>Explained, and worse at small scale where per-run noise is larger.</td></tr>
+        <tr><td>ThetaEvolve: a deliberately non-stationary program database beats a static one</td><td>No fixed discount or window is optimal under change; constant step sizes track recent data by design</td><td>Endorsed. Non-stationarity is the feature.</td></tr>
+        <tr><td>ThetaEvolve: format-only reward is worse than no RL, while Spurious Rewards gets +13.8 from format alone</td><td>Reward specifies what, not how; uninformative rewards amplify whatever the base model already does</td><td>Consistent once restated: the sign of a format reward is a property of the base model.</td></tr>
+        <tr><td>Spurious Rewards attributes random-reward gains to clipping bias</td><td>Clipping drops tokens outside the trust band; importance ratios over long sequences have unbounded variance</td><td>Explained, and testable: a one-step-per-batch loop has no clipping to bias.</td></tr>
+        <tr><td>The Darwin Gödel Machine deletes its own hallucination markers</td><td>Reward must be computed outside the agent's control; only forward-planning utilities decline to rewrite themselves</td><td>Predicted by both frameworks, decades apart.</td></tr>
+        <tr><td>Verified retraining converges to the verifier's bias, not the truth</td><td>A dogmatic prior keeps an agent optimal by its own lights forever; an equilibrium can be stable and worthless</td><td>Converging accounts from three literatures.</td></tr>
+        <tr><td>Self-play evolves only when the pipeline ensures learnable information gain</td><td>Knowledge-seeking agents optimize posterior change, and are the variant that refuses to tamper with its own percepts</td><td>Same idea, rediscovered. The universal-AI version is twenty years older and sharper.</td></tr>
+        <tr><td>SEAL's sequential self-edits erase earlier capabilities</td><td>Forgetting tracks KL drift; interleaved improvement oscillates and needs checkpoint selection</td><td>Explained. Mitigations are known: stay on-policy, select checkpoints on a frozen set.</td></tr>
+        <tr><td>Red Queen freezes the evaluator within epochs and erases its scores on replacement</td><td>Co-adapting learners break the Markov property and the convergence conditions</td><td>Predicted. Freezing is the standard repair.</td></tr>
+        <tr><td>Hyperagents' meta-level machinery transfers across domains at 0.630 where the task agent transfers at 0.0</td><td>No textbook account</td><td>Genuinely new. Nothing in this shelf predicts it.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="block" id="decisions">
+  <div class="eyebrow">Consequences</div>
+  <h2>Fourteen decisions this settles</h2>
+  <p>Design choices that were open after the paper review, and are now closed by theory rather than taste.</p>
+  <ol>
+    <li><strong>Mean-only advantages, group size 8 to 16.</strong> Drop the standard-deviation denominator, which inflates advantages exactly on the low-variance prompts the difficulty filter should be removing anyway.</li>
+    <li><strong>One gradient step per rollout batch to start.</strong> The policy and the sampler coincide, the ratio is one, and the clipping machinery disappears. Add it back only when rollout reuse is needed.</li>
+    <li><strong>Correct the sampler-learner mismatch explicitly.</strong> Store sampler log-probabilities, recompute learner ones, apply a one-sided truncated weight, and log the stale-ratio distribution as a number you watch.</li>
+    <li><strong>Reward only execution outcomes.</strong> Partial credit for compiling or running goes in an auxiliary loss, never summed into the reward.</li>
+    <li><strong>Difficulty filtering from the training group itself.</strong> The same rollouts that compute advantages give the pass rate; keep the 20% to 80% band and skip a separate estimation pass.</li>
+    <li><strong>Square-root KL from the reference is the primary x-axis.</strong> Step count is a proxy for it. Keep a small KL while any model-authored reward is in the loop.</li>
+    <li><strong>Instrument seven quantities from day one:</strong> entropy, pass@k, clipped fraction, mean completion length per role, stale ratio, KL to reference, and an information-gain proxy on proposed tasks.</li>
+    <li><strong>Compute the identification floor before any variant search.</strong> Measure benchmark variance, divide by the squared gap you care about, and if the budget is smaller, report "indistinguishable" instead of a winner.</li>
+    <li><strong>Select by racing, not by sweeping.</strong> Sequential halving for the pool, then re-evaluate finalists on fresh runs that never fed the allocation.</li>
+    <li><strong>If using Thompson allocation, add forced exploration.</strong> An unlucky start otherwise starves a good branch permanently, and no amount of later data fixes it.</li>
+    <li><strong>Keep an archive, and one permanent adversary.</strong> Sample tasks and tests from past roles, and run one tester rewarded only for breaking the current solver, separate from the curriculum proposer.</li>
+    <li><strong>Anchor the tester to outcomes it cannot see in advance,</strong> and force the generator-evaluator pair toward zero-sum. Otherwise the pair has a shared interest in agreeable scoring and there is no unique value to converge to.</li>
+    <li><strong>Evaluate against a fixed external benchmark on a cadence,</strong> because error under a self-generated distribution compounds quadratically in the horizon rather than linearly.</li>
+    <li><strong>Run the matched random-selection control.</strong> Train the solver on mutation-score-selected tests against randomly selected tests at equal volume. If the selected arm does not win, the tester's reward carries no signal, and that is the cheapest possible test of the central hypothesis.</li>
+  </ol>
+</section>
+
+<section class="block" id="gaps">
+  <div class="eyebrow">Closing</div>
+  <h2>Gap register</h2>
+  <p>Eleven candidate research questions from the original September survey. This local v3 update corrects H1 using the <a href="gap-audit-2026-09-16.md">primary-source gap audit</a>; it does not certify a complete literature search. Absence of a located comparison is not proof of an empty field. For the adopted system-level experiment and measured outcomes, see the <a href="munchhausen-machine.html#evidence">technical brief's evidence section</a>. Other entries retain their earlier review scope; several identifiers were originally located only in listings.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Question</th><th>Status</th><th>Closest existing work</th><th>What remains</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Mutation score as an RL reward for test writing</td>
+          <td>Closed</td>
+          <td>MIST-RL (2603.01409) trains with GRPO on an incremental mutant-kill reward: +28.5% mutation score with 19.3% fewer tests. UTRL (2508.21107) and Code-A1 (2603.15611) train test writers adversarially.</td>
+          <td>Reward-design ablations, equivalent mutants, and reward hacking by killing cheap mutants. Use the published reward; do not claim it.</td>
+        </tr>
+        <tr>
+          <td>Fixed against co-trained verifier, measured on the full pass@k curve</td>
+          <td>Partly covered</td>
+          <td><a href="https://arxiv.org/html/2605.16299">ACE</a> compares optimized adversarial tests with random tests; solver selection also uses ground-truth outputs. CURE and ReVeal are related joint-training work. The <a href="https://arxiv.org/abs/2606.07856">free-verifier study</a> reports a self-training pass@8/pass@64 crossover, separately from its critic-selection experiment.</td>
+          <td>The targeted audit did not find the complete frozen-separate-tester comparison with matched solver updates, a matched-total-compute solver arm and independent-oracle raw pass@k. Treat this as a scoped remaining comparison, not a universal absence claim; fitted ceilings remain exploratory.</td>
+        </tr>
+        <tr>
+          <td>Three-way compute allocation: propose, solve, evaluate</td>
+          <td>Open</td>
+          <td>Inference-time solve-against-verify splits, rollout allocation across prompts, iteration-count budgeting (2501.18962), and the finding that evaluation dominates cost in evolutionary search.</td>
+          <td>Every pairwise slice is studied; the joint three-way split inside a training loop is not, and task-generation compute is treated as free everywhere.</td>
+        </tr>
+        <tr>
+          <td>Selection-endogenous pooling under heavy evaluation noise</td>
+          <td>Open</td>
+          <td>Hierarchical and correlated best-arm identification (2106.04763, 2402.05878, 2109.04941), Thompson sampling's weakness at pure exploration (2310.06069), backup bias in tree search, racing, and the classic model-selection winner's curse.</td>
+          <td>No analysis of a growing tree where a node's score pools descendants that the same allocator chose, in the regime where per-node noise exceeds the effect. No correct-selection bound for clade-style aggregation, and no noise-floor condition telling you when a lineage ranking is indistinguishable from resampling.</td>
+        </tr>
+        <tr>
+          <td>Stale rollouts combined with loop-induced task drift</td>
+          <td>Open</td>
+          <td>Async staleness bounds and corrections (2505.24298, 2512.06547, 2601.12784), prioritized level replay's staleness term, curriculum-collapse work.</td>
+          <td>Standard corrections fix the policy ratio only. Nobody treats the importance ratio over the joint task-and-trajectory measure, bounds staleness jointly in learner lag and proposer drift, or studies the feedback where stale scores mislead difficulty targeting.</td>
+        </tr>
+        <tr>
+          <td>Grounding exchange rate inside a closed loop</td>
+          <td>Partly covered</td>
+          <td>Mixing-ratio curves and collapse theory (2404.01413, 2410.16713, 2510.01631, 2511.13640) and an optimal synthetic share near 30%.</td>
+          <td>All of it defines "real" as human provenance and measures pretraining loss. Nobody plots task capability against the <em>verified</em> fraction in an RLVR loop at fixed compute, so the exchange rate itself is unmeasured.</td>
+        </tr>
+        <tr>
+          <td>Label-free estimate of a verifier's bias</td>
+          <td>Partly covered</td>
+          <td>Judge-disagreement alarms (2509.08593), cross-model disagreement as a correctness signal (2603.25450), latent-truth rater models, mutation probes of test suites (2605.22175). Calibration methods still need labels (2605.09702).</td>
+          <td>No validated estimator of a specific verifier's false-accept and false-reject rates on the distribution the loop actually samples, and no propagation of that estimate into a bound on drift.</td>
+        </tr>
+        <tr>
+          <td>Does the solver-verifier gap flip sign with scale</td>
+          <td>Partly covered</td>
+          <td>The gap is defined and measured (2412.02674, 2509.17995), known to vary by domain (2606.28050), and trails generation for code at 8B (2502.14948). Critique ability has its own emergence threshold.</td>
+          <td>No measurement of solver and verifier accuracy on the same instances with a matched metric along a size ladder across several domains, so the flip point per domain is unknown.</td>
+        </tr>
+        <tr>
+          <td>A generator built as the measuring instrument</td>
+          <td>Partly covered</td>
+          <td>Dynamic contamination-resistant benchmarks (2503.04149, 2503.10452), dated-problem benchmarks, and self-improvement benchmarks with contamination controls (2608.04003).</td>
+          <td>Dynamic benchmarks perturb published seeds, so the seed's solution is still contaminated, and self-improvement benchmarks use fixed hidden sets. An unbounded generator with a firewall between training and evaluation draws has no paper.</td>
+        </tr>
+        <tr>
+          <td>Meta-level against task-level transfer</td>
+          <td>Partly covered</td>
+          <td>Scaffold transfer across domains (2408.08435, 2505.22954), ability-transfer and harness benchmarks (2607.05202, 2608.09096), subtask skills transferring better than task skills (2608.20274).</td>
+          <td>Nobody ports meta-level infrastructure and task-level policy separately into an unrelated domain to measure the differential, and no mechanism theory explains why procedure is domain-invariant.</td>
+        </tr>
+        <tr>
+          <td>Self-improvement gain as a function of base model size</td>
+          <td>Partly covered</td>
+          <td>RL-compute scaling laws on curated data (2510.13786), per-round self-play fits (2604.20209), a gap-based predictor across four sizes (2605.30070). Absolute Zero's +5.7, +10.2, +13.2 remain three points from one recipe.</td>
+          <td>No sweep of base size with recipe, tasks, and loop compute held fixed, and no separation of two confounded explanations: larger learners extract more, against larger proposers writing better curricula.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Ranked by leverage for a two-GPU lab</h3>
+  <ol>
+    <li><strong>Fixed against co-trained verifier, on the pass@k curve.</strong> Partly covered. The proposed three-arm follow-up separates tester updates from extra solver compute, using separate adapters and independent-oracle raw samples. Affordability and sample size require a pilot budget; this is not the currently running frontier-distillation experiment.</li>
+    <li><strong>Three-way compute allocation.</strong> Open, cheap, and immediately useful to everyone building these loops. Small scale is an advantage: you can afford the grid that a frontier lab cannot.</li>
+    <li><strong>Selection-endogenous pooling.</strong> Open, mostly simulation plus one small real agent search, and it sits next to existing tree-search work rather than requiring new infrastructure.</li>
+    <li><strong>Verified fraction against capability.</strong> Partly covered but the useful version is missing, and the provenance-against-verification distinction is defensible in review.</li>
+    <li><strong>Joint staleness and task drift.</strong> Open, and unavoidable on this hardware, so the measurement comes out of work you would do anyway.</li>
+  </ol>
+  <p>Two to avoid: the meta-transfer differential needs several domains and strong backbones, and the size-ladder scaling law needs full loops at three or four sizes. Both are frontier-budget questions.</p>
+  <p class="label">Companion documents: the narrative field guide, and the close readings of the twenty papers.</p>
+</section>
+</div>

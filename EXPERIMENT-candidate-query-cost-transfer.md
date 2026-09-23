@@ -1,0 +1,17 @@
+# Frozen low-inference-cost query-value transfer
+
+Frozen 2026-09-18 before generating seeds 902546-902557. Opened development: dropping the E0/E1 and E0/7-leaf top-choice agreement features from the 26-feature candidate-conditioned query model gave 723 versus full 724 correct choices in 24-bank source leave-one-bank-out scoring and 389 versus full 387 on a subsequently opened 12-bank panel. The opened third panel cannot validate the chosen 24-feature rule. `candidate_query_cost_ablation.py` and its result are frozen by hash.
+
+## Same base, actions and costs
+
+Generate twelve new independent six-mechanism 48-task banks using the same source generator, full-width AST candidate branch, visible/hidden split, pinned E0 candidate reranker, frozen top-20-entropy probe and eight output calls per bank. Every policy uses the same E0 order, frozen candidate pools and predicted probe outputs. Models choose only the eight query locations. Save tasks, pools, orders, predictions, features, coefficients, forecasts and calls before opening new final labels.
+
+The **cheap initial** model uses the chosen 24 features, mechanism interactions and 1,152 verified source task effects from the first two opened panels. The **cheap later** uses the same rule and 576 additional verified effects from the opened third panel (1,728 total). Scrambled later rotates the last 576 gains within public mechanism; duplicate later repeats the first 576 source records instead of the new panel. A full 26-feature model on the same 1,728 rows is the cost control, as are a 12-feature old model on the same rows and the old frozen allocator. The 24-feature policy needs only the old and E0 candidate orders; the 26-feature policy additionally predicts E1 and 7-leaf scores for each top-20 candidate. Record the extra 2 x top-20 predictions, source labels, candidate generation, probe-output prediction, and logical output calls separately. Offline harness preparation computes all candidates/models for counterfactuals and is not a deployed wall-time comparison.
+
+## Frozen decisions
+
+Banks 902546-902551 are admission; 902552-902557 are protected transfer. Primary cost-aware evaluator endpoint: cheap later minus full matched-data across all twelve banks at 96 output calls. Call the cheap policy noninferior in correct choices only if its total is no more than two below full, the exact paired bank-bootstrap lower endpoint is at least -6, and query-gain MSE is within 0.005 of full. To call it a supported evaluator improvement over the previous system, it must also exceed the incumbent by >=8, win at least eight banks, lose at most two, have a positive lower interval endpoint, and lower MSE than incumbent. Report the full policy and all controls even if these gates fail.
+
+Admission accepts the cheap later child only if it matches or exceeds cheap initial, the incumbent and the matched-data old-feature control. A child-growth claim additionally requires cheap later minus cheap initial on protected transfer >=4 correct choices, at least four positive banks, a positive paired lower interval endpoint, and cheap later ahead of scrambled, duplicate and incumbent controls. Preserve the initial policy if this gate fails. No threshold is revised after final labels open.
+
+The result is limited to this synthetic generator and researcher-defined rule. A fixed evaluator improvement is distinct from an improver capable of repeatedly improving itself or inventing new edit types.

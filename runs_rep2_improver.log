@@ -1,0 +1,14 @@
+== beta_transfer  fixed_regret=+67 share_corr=0.91
+   totals: {"parent_initial": 92, "parent_later": 118, "parent_duplicate": 92, "parent_scrambled": 88, "parent_empty": 0, "always_e0": 0, "always_familiar": 92, "always_shifted": 82, "best_constant": 92, "per_bank_hindsight": 159}
+   g1_contextual_value: passed=False
+      gain=+26 3w/1l [-1, 62]
+   g2_improver_growth: passed=False
+      later_minus_initial: +26 3w/1l [-1, 62]
+      later_minus_duplicate: +26 3w/1l [-1, 62]
+== balanced_control  fixed_regret=+7 share_corr=0.32
+   totals: {"parent_initial": 92, "parent_later": 77, "parent_duplicate": 92, "parent_scrambled": 67, "parent_empty": 0, "always_e0": 0, "always_familiar": 92, "always_shifted": 57, "best_constant": 92, "per_bank_hindsight": 99}
+   g1_contextual_value: passed=False
+      gain=-15 0w/3l [-32, 0]
+   g2_improver_growth: passed=False
+      later_minus_initial: -15 0w/3l [-32, 0]
+      later_minus_duplicate: -15 0w/3l [-32, 0]

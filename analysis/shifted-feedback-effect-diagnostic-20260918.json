@@ -1,0 +1,303 @@
+{
+  "scope": "opened diagnostic; oracle action rows use final labels",
+  "tasks": 192,
+  "calls_each_budgeted_policy": 96,
+  "totals": {
+    "cheap_e0": 46,
+    "cheap_plain": 50,
+    "cheap_sensor": 48,
+    "shifted_e0": 44,
+    "route_locations_e0": 46,
+    "cheap_oracle_action": 53,
+    "route_oracle_action": 55,
+    "route_learned": 51
+  },
+  "route_shifted_action_counts": {
+    "e0": 15,
+    "plain": 75,
+    "sensor": 6
+  },
+  "forecast_error": {
+    "prior": {
+      "mse_e0_gain": 0.1286669449697828
+    },
+    "pooled12": {
+      "mse_e0_gain": 0.13253570910128218
+    },
+    "shifted100": {
+      "mse_e0_gain": 0.13311907507555484
+    },
+    "scrambled": {
+      "mse_e0_gain": 0.13441732847973767
+    },
+    "duplicate": {
+      "mse_e0_gain": 0.12774437138472586
+    }
+  },
+  "banks": [
+    {
+      "seed": 903200,
+      "cheap_e0": 2,
+      "cheap_plain": 2,
+      "cheap_sensor": 2,
+      "shifted_e0": 2,
+      "route_locations_e0": 2,
+      "cheap_oracle_action": 2,
+      "route_oracle_action": 2,
+      "route_learned": 2
+    },
+    {
+      "seed": 903201,
+      "cheap_e0": 2,
+      "cheap_plain": 2,
+      "cheap_sensor": 2,
+      "shifted_e0": 2,
+      "route_locations_e0": 1,
+      "cheap_oracle_action": 2,
+      "route_oracle_action": 2,
+      "route_learned": 2
+    },
+    {
+      "seed": 903202,
+      "cheap_e0": 1,
+      "cheap_plain": 2,
+      "cheap_sensor": 1,
+      "shifted_e0": 1,
+      "route_locations_e0": 0,
+      "cheap_oracle_action": 2,
+      "route_oracle_action": 1,
+      "route_learned": 1
+    },
+    {
+      "seed": 903203,
+      "cheap_e0": 3,
+      "cheap_plain": 3,
+      "cheap_sensor": 3,
+      "shifted_e0": 3,
+      "route_locations_e0": 2,
+      "cheap_oracle_action": 3,
+      "route_oracle_action": 2,
+      "route_learned": 2
+    },
+    {
+      "seed": 903204,
+      "cheap_e0": 2,
+      "cheap_plain": 2,
+      "cheap_sensor": 2,
+      "shifted_e0": 2,
+      "route_locations_e0": 2,
+      "cheap_oracle_action": 2,
+      "route_oracle_action": 2,
+      "route_learned": 2
+    },
+    {
+      "seed": 903205,
+      "cheap_e0": 3,
+      "cheap_plain": 3,
+      "cheap_sensor": 3,
+      "shifted_e0": 3,
+      "route_locations_e0": 4,
+      "cheap_oracle_action": 3,
+      "route_oracle_action": 4,
+      "route_learned": 4
+    },
+    {
+      "seed": 903206,
+      "cheap_e0": 3,
+      "cheap_plain": 3,
+      "cheap_sensor": 3,
+      "shifted_e0": 3,
+      "route_locations_e0": 3,
+      "cheap_oracle_action": 3,
+      "route_oracle_action": 3,
+      "route_learned": 3
+    },
+    {
+      "seed": 903207,
+      "cheap_e0": 2,
+      "cheap_plain": 2,
+      "cheap_sensor": 2,
+      "shifted_e0": 2,
+      "route_locations_e0": 2,
+      "cheap_oracle_action": 2,
+      "route_oracle_action": 2,
+      "route_learned": 2
+    },
+    {
+      "seed": 903208,
+      "cheap_e0": 1,
+      "cheap_plain": 1,
+      "cheap_sensor": 0,
+      "shifted_e0": 1,
+      "route_locations_e0": 1,
+      "cheap_oracle_action": 1,
+      "route_oracle_action": 1,
+      "route_learned": 1
+    },
+    {
+      "seed": 903209,
+      "cheap_e0": 2,
+      "cheap_plain": 3,
+      "cheap_sensor": 3,
+      "shifted_e0": 2,
+      "route_locations_e0": 2,
+      "cheap_oracle_action": 4,
+      "route_oracle_action": 4,
+      "route_learned": 3
+    },
+    {
+      "seed": 903210,
+      "cheap_e0": 2,
+      "cheap_plain": 2,
+      "cheap_sensor": 2,
+      "shifted_e0": 3,
+      "route_locations_e0": 3,
+      "cheap_oracle_action": 2,
+      "route_oracle_action": 3,
+      "route_learned": 3
+    },
+    {
+      "seed": 903211,
+      "cheap_e0": 3,
+      "cheap_plain": 4,
+      "cheap_sensor": 3,
+      "shifted_e0": 3,
+      "route_locations_e0": 3,
+      "cheap_oracle_action": 4,
+      "route_oracle_action": 5,
+      "route_learned": 5
+    },
+    {
+      "seed": 903212,
+      "cheap_e0": 3,
+      "cheap_plain": 3,
+      "cheap_sensor": 3,
+      "shifted_e0": 2,
+      "route_locations_e0": 3,
+      "cheap_oracle_action": 3,
+      "route_oracle_action": 3,
+      "route_learned": 3
+    },
+    {
+      "seed": 903213,
+      "cheap_e0": 1,
+      "cheap_plain": 1,
+      "cheap_sensor": 1,
+      "shifted_e0": 1,
+      "route_locations_e0": 1,
+      "cheap_oracle_action": 1,
+      "route_oracle_action": 1,
+      "route_learned": 1
+    },
+    {
+      "seed": 903214,
+      "cheap_e0": 4,
+      "cheap_plain": 5,
+      "cheap_sensor": 4,
+      "shifted_e0": 4,
+      "route_locations_e0": 4,
+      "cheap_oracle_action": 5,
+      "route_oracle_action": 5,
+      "route_learned": 4
+    },
+    {
+      "seed": 903215,
+      "cheap_e0": 1,
+      "cheap_plain": 1,
+      "cheap_sensor": 1,
+      "shifted_e0": 2,
+      "route_locations_e0": 2,
+      "cheap_oracle_action": 1,
+      "route_oracle_action": 2,
+      "route_learned": 2
+    },
+    {
+      "seed": 903216,
+      "cheap_e0": 1,
+      "cheap_plain": 1,
+      "cheap_sensor": 2,
+      "shifted_e0": 1,
+      "route_locations_e0": 1,
+      "cheap_oracle_action": 2,
+      "route_oracle_action": 2,
+      "route_learned": 1
+    },
+    {
+      "seed": 903217,
+      "cheap_e0": 1,
+      "cheap_plain": 1,
+      "cheap_sensor": 1,
+      "shifted_e0": 1,
+      "route_locations_e0": 1,
+      "cheap_oracle_action": 1,
+      "route_oracle_action": 1,
+      "route_learned": 1
+    },
+    {
+      "seed": 903218,
+      "cheap_e0": 1,
+      "cheap_plain": 1,
+      "cheap_sensor": 1,
+      "shifted_e0": 1,
+      "route_locations_e0": 1,
+      "cheap_oracle_action": 1,
+      "route_oracle_action": 1,
+      "route_learned": 1
+    },
+    {
+      "seed": 903219,
+      "cheap_e0": 0,
+      "cheap_plain": 0,
+      "cheap_sensor": 0,
+      "shifted_e0": 0,
+      "route_locations_e0": 0,
+      "cheap_oracle_action": 0,
+      "route_oracle_action": 0,
+      "route_learned": 0
+    },
+    {
+      "seed": 903220,
+      "cheap_e0": 2,
+      "cheap_plain": 2,
+      "cheap_sensor": 2,
+      "shifted_e0": 1,
+      "route_locations_e0": 2,
+      "cheap_oracle_action": 2,
+      "route_oracle_action": 2,
+      "route_learned": 2
+    },
+    {
+      "seed": 903221,
+      "cheap_e0": 2,
+      "cheap_plain": 2,
+      "cheap_sensor": 3,
+      "shifted_e0": 2,
+      "route_locations_e0": 2,
+      "cheap_oracle_action": 3,
+      "route_oracle_action": 3,
+      "route_learned": 2
+    },
+    {
+      "seed": 903222,
+      "cheap_e0": 1,
+      "cheap_plain": 1,
+      "cheap_sensor": 1,
+      "shifted_e0": 0,
+      "route_locations_e0": 1,
+      "cheap_oracle_action": 1,
+      "route_oracle_action": 1,
+      "route_learned": 1
+    },
+    {
+      "seed": 903223,
+      "cheap_e0": 3,
+      "cheap_plain": 3,
+      "cheap_sensor": 3,
+      "shifted_e0": 2,
+      "route_locations_e0": 3,
+      "cheap_oracle_action": 3,
+      "route_oracle_action": 3,
+      "route_learned": 3
+    }
+  ]
+}

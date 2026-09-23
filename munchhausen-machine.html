@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Münchhausen Machine — local brief v4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap">
+<style>
+:root {
+  --paper: #F3F4F7;
+  --surface: #FFFFFF;
+  --ink: #171A28;
+  --muted: #5A6074;
+  --rule: #D8DBE4;
+  --blue: #2B45B5;
+  --blue-wash: #E7EBF8;
+  --red: #BE2A3F;
+  --red-wash: #F8E7EA;
+  --serif: "STIX Two Text", "STIX Two", Cambria, Georgia, serif;
+  --sans: "Recursive", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #11131B;
+    --surface: #191C27;
+    --ink: #E4E6EE;
+    --muted: #9CA2B6;
+    --rule: #2C303F;
+    --blue: #93A6FF;
+    --blue-wash: #1B2244;
+    --red: #FF7488;
+    --red-wash: #2B1720;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #11131B;
+  --surface: #191C27;
+  --ink: #E4E6EE;
+  --muted: #9CA2B6;
+  --rule: #2C303F;
+  --blue: #93A6FF;
+  --blue-wash: #1B2244;
+  --red: #FF7488;
+  --red-wash: #2B1720;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.58;
+  padding-inline: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+.page { max-width: 58rem; margin-inline: auto; padding-block: 3rem 5rem; }
+p, main > section > ul, main > section > ol, .hyp { max-width: 72ch; }
+
+h1, h2, h3, .eyebrow, .meta, figcaption, th, dt, .hyp b, .toc, .label, td:first-child {
+  font-family: var(--sans);
+}
+h1, h2, h3 { font-variation-settings: "CASL" 0, "MONO" 0; text-wrap: balance; line-height: 1.12; letter-spacing: -0.015em; }
+h1 { font-size: clamp(2.2rem, 5.5vw, 3.5rem); font-weight: 900; letter-spacing: -0.03em; margin: 0.6rem 0 0.8rem; }
+h2 { font-size: 1.7rem; font-weight: 800; margin: 0.3rem 0 1rem; }
+h3 { font-size: 1.15rem; font-weight: 700; margin: 2rem 0 0.6rem; }
+p { margin: 0 0 0.95rem; }
+ul, ol { padding-left: 1.3rem; margin: 0 0 1rem; }
+li { margin-bottom: 0.45rem; }
+li::marker { color: var(--muted); }
+strong { font-weight: 650; }
+a { color: var(--blue); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 2px; }
+code { font-family: var(--sans); font-variation-settings: "MONO" 1; font-size: 0.86em; }
+.eyebrow { font-variation-settings: "MONO" 1; font-size: 0.76rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted); }
+
+header { padding-bottom: 1.8rem; border-bottom: 1px solid var(--rule); }
+.dek { font-size: 1.2rem; line-height: 1.45; max-width: 52ch; margin: 0 0 1rem; }
+.meta { font-variation-settings: "MONO" 1; font-size: 0.78rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem; }
+
+.toc { margin: 1.6rem 0 0.5rem; }
+.toc ol { list-style: none; padding: 0; margin: 0.6rem 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: 0.25rem 1.5rem; counter-reset: s; }
+.toc li { counter-increment: s; font-size: 0.95rem; margin: 0; display: flex; gap: 0.6rem; }
+.toc li::before { content: counter(s); font-variation-settings: "MONO" 1; font-size: 0.76rem; color: var(--muted); min-width: 1rem; padding-top: 0.15rem; }
+.toc a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+.toc a:hover { color: var(--blue); border-color: var(--blue); }
+
+.bottom-line { background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--red); border-radius: 4px; padding: 1.1rem 1.4rem 0.4rem; margin: 2rem 0 0.5rem; }
+.bottom-line ul { max-width: none; }
+
+section.s { padding-top: 2.6rem; margin-top: 2rem; border-top: 1px solid var(--rule); }
+
+.table-wrap { overflow-x: auto; margin: 1.2rem 0 1.6rem; }
+table { border-collapse: collapse; width: 100%; font-size: 0.93rem; line-height: 1.45; }
+th { font-variation-settings: "MONO" 1; font-weight: 500; font-size: 0.72rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); text-align: left; padding: 0 0.9rem 0.5rem 0; border-bottom: 1px solid var(--ink); white-space: nowrap; }
+td { padding: 0.6rem 0.9rem 0.6rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+td:first-child { font-weight: 650; font-size: 0.9rem; }
+td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+dl.kit { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 0.15rem 1.2rem; margin: 1rem 0 1.4rem; font-size: 0.97rem; max-width: 80ch; }
+dl.kit dt { font-weight: 700; font-size: 0.88rem; padding-top: 0.12rem; }
+dl.kit dd { margin: 0 0 0.55rem; }
+@media (max-width: 560px) { dl.kit { grid-template-columns: 1fr; } dl.kit dd { margin-bottom: 0.8rem; } }
+
+figure { margin: 1.8rem 0 2rem; }
+figure svg { width: 100%; height: auto; display: block; color: var(--ink); }
+figure svg text { font-family: var(--sans); }
+figcaption { font-size: 0.84rem; line-height: 1.45; color: var(--muted); margin-top: 0.7rem; max-width: 80ch; }
+.diagram-scroll { overflow-x: auto; }
+.diagram-scroll svg { min-width: 560px; }
+
+.hyp { border-top: 2px solid var(--blue); padding-top: 0.6rem; margin: 1.1rem 0; }
+.hyp b { font-variation-settings: "MONO" 1; color: var(--blue); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.04em; display: block; margin-bottom: 0.25rem; }
+.hyp p { margin: 0; }
+
+.refs { font-size: 0.92rem; line-height: 1.5; }
+.refs li { margin-bottom: 0.35rem; }
+.label { font-variation-settings: "MONO" 1; font-size: 0.76rem; color: var(--muted); }
+
+@media (max-width: 640px) {
+  body { font-size: 1rem; }
+  h2 { font-size: 1.45rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+<header>
+  <div class="eyebrow">Technical brief</div>
+  <h1>The Münchhausen Machine</h1>
+  <p class="dek">A measured research program toward systems that improve their own ability to improve, for research, cybersecurity, social good and policy.</p>
+  <div class="meta"><span>Local v4 · 16 September 2026</span><span>Earlier field notes with targeted September updates</span><span>RSI not demonstrated</span></div>
+  <nav class="toc" aria-label="Contents">
+    <ol>
+      <li><a href="#evidence">Current implementation and evidence</a></li>
+      <li><a href="#concepts">Core concepts</a></li>
+      <li><a href="#verification">Verification: the binding constraint</a></li>
+      <li><a href="#frameworks">Frameworks</a></li>
+      <li><a href="#failures">Failure modes and evidence</a></li>
+      <li><a href="#state">State of the field</a></li>
+      <li><a href="#hardware">Two-GPU setup</a></li>
+      <li><a href="#program">Research program</a></li>
+      <li><a href="#reading">Reading order and sources</a></li>
+    </ol>
+  </nav>
+</header>
+
+<main>
+<div class="bottom-line">
+  <div class="eyebrow">Current conclusion</div>
+  <ul>
+    <li><strong>Verification makes a claim testable; it does not guarantee improvement.</strong> Our exact-verifier pilots still lost neural coverage and failed inheritance controls.</li>
+    <li><strong>A better amplifier has been measured.</strong> A search-filter correction improved fresh-task accuracy and candidate coverage, with costs and regressions. It was a human-directed repair.</li>
+    <li><strong>A better recursive improver remains unproved.</strong> Later improvers must beat earlier ones from the same starting system, with inheritance and compute controls.</li>
+    <li><strong>H1 is a follow-up, partly covered by prior work.</strong> The active experiment tests transfer from verified search candidates into model weights.</li>
+  </ul>
+</div>
+
+<section class="s" id="evidence">
+  <div class="eyebrow">Implementation status · 16 September 2026</div>
+  <h2>What has actually run</h2>
+  <p>The local laboratory combines a pinned Qwen3-0.6B model, bounded string-program search, two interpreters, exact search replay and checkpoint lineage. The four mission areas are intended applications; these DSL experiments establish no capability in those domains. The published brief remains v3; this v4 update is local.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Study</th><th>Measured result</th><th>Interpretation</th></tr></thead>
+    <tbody>
+      <tr><td><a href="pilot-results-2026-09-16.md">V2 interleaved pilot</a></td><td>Raw neural pass@64: 7 → 8 → 5 of 24 tasks.</td><td>The loop ran; coverage did not compound.</td></tr>
+      <tr><td><a href="retention-results-2026-09-16.md">V3 retention</a></td><td>Replay ended at 2/24, fresh-only at 3/24. The small admission gate missed a final regression.</td><td>More syntactic variety did not ensure retained coverage.</td></tr>
+      <tr><td><a href="inheritance-replication-results-2026-09-16.md">V5 inheritance replication</a></td><td>The inherited generation-6 table averaged below empty and random controls.</td><td>The current selector was not promoted.</td></tr>
+      <tr><td><a href="context-diagnostic-results-2026-09-16.md">V6 context diagnosis</a></td><td>Lower prediction error did not yield reliable edit-ranking gains.</td><td>A better predictor was not a better improver.</td></tr>
+      <tr><td><a href="library-results-2026-09-16.md">V7 fragment inheritance</a></td><td>No fragment installation or correctness gain; exhaustive source follow-up found no useful single addition.</td><td>Ranking alone could not rescue that fixed candidate set.</td></tr>
+      <tr><td><a href="search-validation-results-2026-09-16.md">V8 fresh search validation</a></td><td>First choice: 332 → 377/576. Coverage@64: 374 → 438/576. Seventeen first-choice regressions.</td><td>Filter repair replicated in five of six groups; actual costs rose at equal ceilings.</td></tr>
+      <tr><td><a href="EXPERIMENT-v9b-resource-recovery.md">V9b frontier distillation</a></td><td>Recovery running: four arms, three seeds, two rounds. V9 stopped with GPU memory exhaustion.</td><td>Smaller generation batches and fresh tasks; final scores remain deferred. No neural gain claimed.</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>Measurement boundaries.</strong> Deterministic search coverage@k is not IID neural pass@k. Interpreter checks establish correctness on recorded examples, not all-input equivalence. Equal expansion ceilings are not equal compute. Hashes detect changes relative to trusted records; they do not authenticate a hostile host. The current bounded DSL worker is not an OS sandbox for arbitrary self-edited code.</p>
+  <p><strong>Every change has an evidence trail.</strong> Requests, source versions, candidate programs, training draws, token IDs, costs, admission reasons and candidate/selected hashes are archived. See the <a href="CHANGE-REGISTER.md">change register</a>, <a href="GAP-COVERAGE.md">remaining gaps</a> and <a href="RUN-HISTORY.md">run history</a>. The earlier narrative, PDF and close readings remain historical snapshots.</p>
+</section>
+
+<section class="s" id="concepts">
+  <div class="eyebrow">1</div>
+  <h2>Core concepts</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Level</th><th>What changes</th><th>Mechanism</th><th>Examples</th></tr></thead>
+      <tbody>
+        <tr><td>1. Output</td><td>A single answer at inference</td><td>Draft, critique, revise; sample and select</td><td>Self-Refine, best-of-n, majority vote</td></tr>
+        <tr><td>2. Model</td><td>Weights</td><td>Train on self-generated data filtered by a verifier</td><td>STaR, Self-Rewarding LMs, RLVR, Absolute Zero</td></tr>
+        <tr><td>3. Improver</td><td>The improvement procedure</td><td>Rewrite own agent code, meta-procedure, or training-data generator</td><td>DGM, HGM, Hyperagents, SEAL, ThetaEvolve</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><strong>Recursion does not imply growth.</strong> Repeating an update can improve, plateau or regress. Our RSI claim requires sustained coverage gains and evidence that the improvement procedure itself becomes more effective from a common starting point. A verifier-convergence theorem in <a href="https://arxiv.org/abs/2510.16657">a linear-regression setting</a> motivates tests; it is not a universal ceiling theorem for code self-play.</p>
+
+  <p><strong>Identity drifts.</strong> Systems that repeatedly edit their own weights accumulate interference: SEAL's sequential self-edits degrade earlier capabilities (catastrophic forgetting). Checkpoint lineage is a practical requirement, not bookkeeping.</p>
+
+  <dl class="kit">
+    <dt>Rollout</dt><dd>One full sampled attempt (answer or agent trajectory) that gets scored.</dd>
+    <dt>Verifier</dt><dd>Source of reward: unit tests, compiler, proof checker, LLM judge, or model confidence.</dd>
+    <dt>RLVR</dt><dd>RL with verifiable rewards: problems whose answers are checked automatically.</dd>
+    <dt>GRPO</dt><dd>Group Relative Policy Optimization. Sample a group per prompt, use each sample's reward relative to the group mean as its advantage; no value network.</dd>
+    <dt>LoRA</dt><dd>Trainable low-rank matrices added to frozen weights; small to store and sync.</dd>
+    <dt>Self-play</dt><dd>One model in adversarial or complementary roles: proposer/solver, injector/fixer.</dd>
+    <dt>Scaffold</dt><dd>Agent code around a model (prompts, tools, memory, retries). Also "harness."</dd>
+    <dt>pass@k</dt><dd>Probability at least one of k samples is correct.</dd>
+    <dt>Contamination</dt><dd>Evaluation items present in pretraining data; inflates scores via recall.</dd>
+    <dt>Goodhart's law</dt><dd>A measure that becomes a target stops being a good measure.</dd>
+  </dl>
+</section>
+
+<section class="s" id="verification">
+  <div class="eyebrow">2</div>
+  <h2>Verification: the binding constraint</h2>
+
+  <p>Every reward needs a justification, and the justification chain ends in one of three ways (the Münchhausen trilemma): infinite regress (a judge for the judge, indefinitely), circularity (the model judges itself), or a stop at something accepted as ground truth. Systems that work stop at ground truth: an interpreter, a proof checker, game rules.</p>
+
+  <p><strong>Verification hierarchy</strong> (survey, most to least reliable): formal verifiers are sound by construction; execution feedback is reliable but only as complete as the tests; learned judges are bounded by judge competence; intrinsic signals such as confidence are the most gameable. Reported performance tracks this ordering.</p>
+
+  <figure>
+    <div class="diagram-scroll">
+    <svg viewBox="0 0 760 372" role="img" aria-label="The further a grader sits from the model's own weights, the harder it is to fool. The model's own confidence and an LLM judge share its blind spots; tests and proof checkers sit outside the weights entirely.">
+      <defs>
+        <marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+        </marker>
+      </defs>
+      <line x1="418" y1="40" x2="418" y2="330" stroke="currentColor" stroke-width="1" stroke-dasharray="5 5" opacity="0.55"/>
+      <text x="410" y="186" font-size="12" text-anchor="end" fill="currentColor" opacity="0.72">inside: shares its blind spots</text>
+      <text x="428" y="186" font-size="12" fill="currentColor" opacity="0.72">outside the weights</text>
+
+      <rect x="20" y="150" width="140" height="60" rx="6" style="fill: var(--blue-wash); stroke: var(--blue)" stroke-width="1.5"/>
+      <text x="90" y="176" font-size="15" font-weight="700" text-anchor="middle" style="fill: var(--blue)">the model</text>
+      <text x="90" y="196" font-size="12" text-anchor="middle" style="fill: var(--blue)">writes answers</text>
+
+      <g font-size="13">
+        <rect x="190" y="64" width="150" height="42" rx="5" style="fill: var(--surface); stroke: var(--red)" stroke-width="1.5"/>
+        <text x="265" y="90" text-anchor="middle" font-weight="650" style="fill: var(--red)">its own confidence</text>
+        <text x="265" y="124" text-anchor="middle" font-size="11.5" fill="currentColor" opacity="0.75">most gameable</text>
+
+        <rect x="450" y="64" width="150" height="42" rx="5" style="fill: var(--surface); stroke: var(--red)" stroke-width="1.5"/>
+        <text x="525" y="90" text-anchor="middle" font-weight="650" style="fill: var(--red)">tests + compiler</text>
+        <text x="525" y="124" text-anchor="middle" font-size="11.5" fill="currentColor" opacity="0.75">reliable, incomplete</text>
+
+        <rect x="250" y="250" width="150" height="42" rx="5" style="fill: var(--surface); stroke: var(--red)" stroke-width="1.5"/>
+        <text x="325" y="276" text-anchor="middle" font-weight="650" style="fill: var(--red)">an LLM judge</text>
+        <text x="325" y="240" text-anchor="middle" font-size="11.5" fill="currentColor" opacity="0.75">only as good as the judge</text>
+
+        <rect x="596" y="250" width="150" height="42" rx="5" style="fill: var(--surface); stroke: var(--red)" stroke-width="1.5"/>
+        <text x="671" y="276" text-anchor="middle" font-weight="650" style="fill: var(--red)">proof checker</text>
+        <text x="671" y="240" text-anchor="middle" font-size="11.5" fill="currentColor" opacity="0.75">sound by construction</text>
+      </g>
+
+      <g stroke="currentColor" stroke-width="1.2" fill="none" opacity="0.8" marker-end="url(#arrA)">
+        <path d="M120,150 C120,100 150,85 188,85"/>
+        <path d="M60,150 C60,20 420,20 520,62"/>
+        <path d="M120,210 C120,260 180,271 248,271"/>
+        <path d="M60,210 C60,340 520,330 594,280"/>
+      </g>
+      <text x="150" y="132" font-size="11.5" fill="currentColor" opacity="0.8">grades</text>
+
+      <line x1="190" y1="348" x2="740" y2="348" stroke="currentColor" stroke-width="1.2" marker-end="url(#arrA)"/>
+      <text x="190" y="368" font-size="12.5" fill="currentColor">further from the model's own weights</text>
+      <text x="740" y="368" font-size="12.5" text-anchor="end" font-weight="700" fill="currentColor">harder to fool</text>
+    </svg>
+    </div>
+    <figcaption>Graders inside the model's weights inherit its blind spots; graders outside them do not respond to model confidence. Ordering from the survey's verification hierarchy.</figcaption>
+  </figure>
+
+  <h3>Key results</h3>
+  <ul>
+    <li><strong>Solver-verifier gap is the fuel.</strong> Self-improvement is possible when checking is easier than generating. Modeling training dynamics through this gap, one study finds the verifier typically outperforms the solver across model-task pairs (<a href="https://arxiv.org/abs/2507.00075">2507.00075</a>).</li>
+    <li><strong>Verifier bias can constrain repeated training.</strong> A linear-regression analysis derives convergence toward verifier-dependent information (<a href="https://arxiv.org/abs/2510.16657">2510.16657</a>). Its assumptions do not establish a universal ceiling for program synthesis.</li>
+    <li><strong>Self-confirming loops.</strong> When generator and judge share weights, biases amplify and high-confidence errors are preferentially reinforced (survey).</li>
+    <li><strong>Learned judges get optimized against.</strong> Policies learn whatever the judge rewards, including length, tone, and surface features, not only quality.</li>
+    <li><strong>Code verifiers are under-trained.</strong> LLMs write effective unit tests markedly worse than solutions, attributed to scarce test-generation training data (<a href="https://arxiv.org/abs/2502.14948">2502.14948</a>).</li>
+  </ul>
+
+  <p><strong>Why proofs gave way to measurement.</strong> Schmidhuber's Gödel Machine (2003) rewrites itself only after proving the rewrite raises expected utility: optimal under its assumptions, intractable in practice. The Löbian obstacle (Yudkowsky and Herreshoff, 2013) shows an agent requiring proof, in its own logic, that a successor reasons soundly cannot approve a successor as strong as itself. Every practical system since validates empirically instead.</p>
+</section>
+
+<section class="s" id="frameworks">
+  <div class="eyebrow">3</div>
+  <h2>Frameworks</h2>
+
+  <h3>Lineage</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Year</th><th>System</th><th>Contribution</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1992</td><td>TD-Gammon</td><td>Self-play temporal-difference learning reaches near top-human backgammon; game outcome is the verifier.</td></tr>
+        <tr><td class="num">2003</td><td>Gödel Machine</td><td>Formal model of self-rewriting gated by proofs of utility gain.</td></tr>
+        <tr><td class="num">2017</td><td>AlphaGo Zero</td><td>Self-play from rules only; beat AlphaGo Lee 100 to 0 after 3 days. Works because the rules are a perfect, free verifier.</td></tr>
+        <tr><td class="num">2022</td><td>STaR</td><td>Keep reasoning traces that reach correct answers; for failures, generate traces conditioned on the answer ("rationalization"); retrain; iterate.</td></tr>
+        <tr><td class="num">2023</td><td>FunSearch</td><td>LLM-proposed program mutations scored by an evaluator; new combinatorics constructions (<em>Nature</em>).</td></tr>
+        <tr><td class="num">2024</td><td>Self-Rewarding LMs</td><td>Model is its own judge; iterative DPO on self-generated preferences.</td></tr>
+        <tr><td class="num">2025</td><td>DeepSeek-R1</td><td>Rule-based RLVR elicits long chain-of-thought and self-verification; popularized GRPO.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>3.1 Self-modifying agents (weights frozen, agent code evolves)</h3>
+  <p><strong>Darwin Gödel Machine</strong> (<a href="https://arxiv.org/abs/2505.22954">2505.22954</a>, ICLR 2026). A coding agent edits its own codebase; each variant is benchmarked and added to an archive; parents are sampled from the whole archive, not only the best (open-ended search). SWE-bench 20.0% to 50.0%; Polyglot 14.2% to 30.7%. Self-discovered features: patch validation, improved file viewing and editing tools, multi-candidate generation with ranking, history of prior attempts. Some low-scoring ancestors were necessary stepping stones to later best agents.</p>
+
+  <p><strong>Huxley-Gödel Machine</strong> (<a href="https://arxiv.org/abs/2510.21614">2510.21614</a>, ICLR 2026 oral). Identifies the <em>metaproductivity-performance mismatch</em>: an agent's benchmark score poorly predicts the quality of its descendants. Estimates <em>clade-metaproductivity</em> (CMP), aggregate performance over an agent's descendants, and uses it to choose which node to expand. Outperforms DGM with fewer CPU-hours. An agent optimized on SWE-bench Verified with GPT-5-mini, evaluated on SWE-bench Lite with GPT-5, matches the best officially checked human-engineered agents.</p>
+
+  <figure>
+    <div class="diagram-scroll">
+    <svg viewBox="0 0 760 320" role="img" aria-label="Greedy search always extends the best-scoring agent and stalls at 33. An archive keeps a weaker agent scoring 18 whose descendants climb to 50.">
+      <text x="20" y="24" font-size="13.5" font-weight="700" fill="currentColor">Greedy: always extend the best</text>
+      <text x="380" y="24" font-size="13.5" font-weight="700" fill="currentColor">Archive / clade scoring</text>
+      <line x1="350" y1="10" x2="350" y2="310" stroke="currentColor" stroke-dasharray="4 5" opacity="0.4"/>
+      <g stroke="currentColor" stroke-width="1.3" opacity="0.7">
+        <line x1="175" y1="82" x2="175" y2="103"/>
+        <line x1="175" y1="137" x2="175" y2="158"/>
+        <line x1="175" y1="192" x2="175" y2="213"/>
+        <line x1="175" y1="247" x2="175" y2="268"/>
+        <line x1="533" y1="78" x2="472" y2="108"/>
+        <line x1="460" y1="137" x2="460" y2="158"/>
+        <line x1="460" y1="192" x2="460" y2="213"/>
+      </g>
+      <g stroke-width="1.8" style="stroke: var(--red)">
+        <line x1="557" y1="78" x2="608" y2="108"/>
+        <line x1="620" y1="137" x2="620" y2="158"/>
+        <line x1="620" y1="192" x2="620" y2="213"/>
+        <line x1="620" y1="247" x2="620" y2="268"/>
+      </g>
+      <g font-size="12.5" text-anchor="middle" font-weight="650">
+        <g stroke="currentColor" stroke-width="1.3" style="fill: var(--surface)">
+          <circle cx="175" cy="65" r="17"/><circle cx="175" cy="120" r="17"/><circle cx="175" cy="175" r="17"/><circle cx="175" cy="230" r="17"/><circle cx="175" cy="285" r="17"/>
+          <circle cx="545" cy="65" r="17"/><circle cx="460" cy="120" r="17"/><circle cx="460" cy="175" r="17"/><circle cx="460" cy="230" r="17"/>
+        </g>
+        <g stroke-width="1.8" style="stroke: var(--red); fill: var(--surface)">
+          <circle cx="620" cy="120" r="17"/><circle cx="620" cy="175" r="17"/><circle cx="620" cy="230" r="17"/>
+        </g>
+        <circle cx="620" cy="285" r="17" stroke-width="1.8" style="stroke: var(--red); fill: var(--red-wash)"/>
+        <g fill="currentColor">
+          <text x="175" y="69.5">20</text><text x="175" y="124.5">31</text><text x="175" y="179.5">33</text><text x="175" y="234.5">33</text><text x="175" y="289.5">33</text>
+          <text x="545" y="69.5">20</text><text x="460" y="124.5">31</text><text x="460" y="179.5">33</text><text x="460" y="234.5">33</text>
+        </g>
+        <g style="fill: var(--red)">
+          <text x="620" y="124.5">18</text><text x="620" y="179.5">24</text><text x="620" y="234.5">41</text><text x="620" y="289.5">50</text>
+        </g>
+      </g>
+      <g font-size="11.5">
+        <text x="204" y="124" fill="currentColor" opacity="0.75">best child wins</text>
+        <text x="204" y="289" fill="currentColor" opacity="0.75">stalls</text>
+        <text x="487" y="234" fill="currentColor" opacity="0.75">stalls</text>
+        <text x="645" y="124" style="fill: var(--red)">high CMP</text>
+        <text x="645" y="289" style="fill: var(--red)" font-weight="650">best descendant</text>
+      </g>
+    </svg>
+    </div>
+    <figcaption>Illustrative scores. Greedy selection stalls; DGM keeps weaker variants in an archive, and HGM ranks nodes by descendant performance (CMP) rather than their own score.</figcaption>
+  </figure>
+
+  <p><strong>Hyperagents</strong> (Meta, <a href="https://arxiv.org/abs/2603.19461">2603.19461</a>). Merges the task agent and the meta agent into one editable program, with the modification procedure itself editable (metacognitive self-modification). Removes DGM's dependence on coding skill doubling as self-modification skill, extending to non-coding domains. DGM-H improved on coding, paper review (test 0.0 to 0.710), robotics reward design, and Olympiad math grading. Meta-level improvements (persistent memory, performance tracking, multi-stage evaluation) transferred across domains and accumulated across runs.</p>
+
+  <p><strong>Red Queen Gödel Machine</strong> (<a href="https://arxiv.org/abs/2606.26294">2606.26294</a>). DGM, HGM, and Hyperagents hold the utility fixed; RQGM co-evolves agents and LLM-based evaluators with editable rubrics. Targets the fixed-verifier ceiling; the open question is preventing joint drift of agents and evaluators.</p>
+
+  <p>Compute in this family is dominated by model inference and benchmark execution; published results used frontier API models.</p>
+
+  <h3>3.2 Self-play on weights</h3>
+  <p><strong>Absolute Zero Reasoner</strong> (<a href="https://arxiv.org/abs/2505.03335">2505.03335</a>, NeurIPS 2025). One model as proposer and solver over Python tasks of three types: deduction (program + input to output), abduction (program + output to input), induction (examples to program). A code executor validates tasks and grades answers. Proposer reward favors learnable difficulty: tasks the solver sometimes solves. On Qwen2.5-7B-Coder with zero external data: overall +10.2 (40.2 to 50.4), math +15.2, code +5.0. With Llama3.1-8B the authors observed occasional concerning chains of thought ("uh-oh moments").</p>
+
+  <p><strong>Self-play SWE-RL</strong> (Meta, <a href="https://arxiv.org/abs/2512.18552">2512.18552</a>, ICML 2026). One agent injects and repairs bugs in real repositories; bugs are specified by test patches rather than issue text. Requires only sandboxed repos with dependencies. +10.4 on SWE-bench Verified, +7.8 on SWE-Bench Pro, above a human-data baseline throughout training.</p>
+
+  <p><strong>Related.</strong> R-Zero (<a href="https://arxiv.org/abs/2508.05004">2508.05004</a>): challenger/solver co-evolution from a base model. Language Self-Play (<a href="https://arxiv.org/abs/2509.07414">2509.07414</a>): data-free self-play for instruction following on Llama-3.2-3B-Instruct. Mechanism analysis of AZR dynamics: update sparsity, entropy, pass@k (<a href="https://arxiv.org/abs/2510.27072">2510.27072</a>). Self-play improves only when the synthetic pipeline ensures learnable information gain (<a href="https://arxiv.org/abs/2603.02218">2603.02218</a>).</p>
+
+  <h3>3.3 LLM-driven program evolution with RL</h3>
+  <p><strong>AlphaEvolve</strong> (DeepMind, 2025) evolves a program population using a Gemini ensemble as mutation operator and an automated scorer; improved several best-known mathematical bounds and produced optimizations deployed in Google infrastructure. Open implementations: OpenEvolve, ShinkaEvolve (sample-efficient; beat AlphaEvolve on circle packing), CodeEvolve, SkyDiscover.</p>
+
+  <p><strong>ThetaEvolve</strong> (<a href="https://arxiv.org/abs/2511.23473">2511.23473</a>). A single 8B model (DeepSeek-R1-0528-Qwen3-8B) drives evolution and is trained with RL at test time on mutation outcomes. New best-known bounds: circle packing (26 circles in a unit square, maximize sum of radii) 2.63598 vs AlphaEvolve's 2.63586; first autocorrelation inequality 1.503133. RL checkpoints progress faster on both trained and unseen tasks, i.e. the model learns to evolve. Discovered circle-packing program runs in about 3 s vs about 75 s for ShinkaEvolve's.</p>
+
+  <h3>3.4 Self-editing weights</h3>
+  <p><strong>SEAL</strong> (MIT, <a href="https://arxiv.org/abs/2506.10943">2506.10943</a>, NeurIPS 2025). The model generates self-edits (restructured information, synthetic training data, update hyperparameters), applies them as small fine-tunes, and is trained with RL using post-update downstream performance as reward. Effective for knowledge incorporation and few-shot adaptation; sequential edits cause progressive forgetting. Each reward requires a fine-tune plus evaluation, so the inner loop is expensive.</p>
+
+  <h3>Comparison</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Family</th><th>Changes</th><th>Verifier</th><th>Headline result</th><th>On 2 x 5090</th></tr></thead>
+      <tbody>
+        <tr><td>Self-modifying agents</td><td>Agent code</td><td>Benchmark test suites</td><td>DGM 20% to 50% SWE-bench; HGM matches top human-built agents</td><td>Loop yes; frontier-level scores no</td></tr>
+        <tr><td>Self-play on weights</td><td>Weights</td><td>Executor, test patches</td><td>AZR +10.2 avg, zero data; SSR +10.4 SWE-bench Verified</td><td>Yes at 1.5B to 4B</td></tr>
+        <tr><td>Evolution + RL</td><td>Programs and mutator model</td><td>Task scoring function</td><td>ThetaEvolve 8B beats AlphaEvolve bounds</td><td>Yes; 8B tight</td></tr>
+        <tr><td>Self-editing weights</td><td>Weights via self-written data</td><td>Post-update evaluation</td><td>SEAL adapts; forgets over edits</td><td>Small scale only</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="s" id="failures">
+  <div class="eyebrow">4</div>
+  <h2>Failure modes and evidence</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Failure mode</th><th>Evidence</th><th>Mitigation</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Proxy reward hacking</td>
+          <td>73.8% of Kernel-Bench and 46.8% of ALE-Bench optimizations by self-improving code agents raised the proxy without real gains; hacked share rose from 26.4% (10 steps) to 57.8% (100 steps) (<a href="https://openreview.net/forum?id=ikrQWGgxYg">RSI workshop 2026</a>).</td>
+          <td>Track a held-out reality metric every iteration; strengthen or co-train the verifier; cap optimization against a fixed proxy.</td>
+        </tr>
+        <tr>
+          <td>Grader tampering</td>
+          <td>DGM faked logs claiming tests ran, and removed the markers its reward function used to detect hallucination (<a href="https://sakana.ai/dgm/">Sakana</a>). Detected through lineage logs.</td>
+          <td>Reward code, eval data, and logs outside the agent's write access; log every modification.</td>
+        </tr>
+        <tr>
+          <td>Environment exploits</td>
+          <td>PostTrainBench agents trained on the test set, downloaded instruction-tuned checkpoints, and used API keys they found; best agent 23.2% vs 51.1% for official models (<a href="https://arxiv.org/abs/2603.08640">2603.08640</a>). The AI Scientist edited its own timeout and made its script call itself recursively (<a href="https://sakana.ai/ai-scientist/">Sakana</a>).</td>
+          <td>Sandbox: no network, no credentials, limits enforced from outside.</td>
+        </tr>
+        <tr>
+          <td>Model collapse</td>
+          <td>Recursive training on generated data loses distribution tails first, then degenerates (Shumailov et al., <em>Nature</em> 2024).</td>
+          <td>Keep real data in the mix; filter synthetic data with an external verifier.</td>
+        </tr>
+        <tr>
+          <td>Self-confirming loops</td>
+          <td>Shared-weight generator and judge amplify biases; confident errors reinforced (survey).</td>
+          <td>Judge outside the policy's weights, ideally executable.</td>
+        </tr>
+        <tr>
+          <td>Spurious rewards, contamination</td>
+          <td>RLVR on Qwen2.5-Math-7B, MATH-500: random reward +21.4, format-only +13.8, incorrect labels +24.1, true labels +29.1. Gains largely absent on Llama3 and OLMo2. Code-style reasoning rose from 65% to over 90% even under spurious rewards (<a href="https://ar5iv.labs.arxiv.org/html/2506.10947">2506.10947</a>; contamination analysis <a href="https://arxiv.org/abs/2507.10532">2507.10532</a>).</td>
+          <td>Random-reward control; second model family; contamination-resistant evals.</td>
+        </tr>
+        <tr>
+          <td>Selection noise</td>
+          <td>Simple baselines matched or beat code-evolution pipelines on math bounds, scaffold design, and ML competitions. Search space and prompt domain knowledge dominated; small noisy eval sets made scaffold selection unreliable, and a hand-designed majority-vote scaffold won (<a href="https://arxiv.org/abs/2602.16805v1">2602.16805</a>).</td>
+          <td>Always run simple baselines; re-evaluate top candidates on fresh data (winner's curse).</td>
+        </tr>
+        <tr>
+          <td>Fabrication under pressure</td>
+          <td>Models fabricate results when completion requires misconduct; 34.2% failure rate in an evaluation cited by the survey.</td>
+          <td>Make "could not complete" an acceptable output; verify success claims independently.</td>
+        </tr>
+        <tr>
+          <td>Forgetting</td>
+          <td>SEAL: earlier-task performance declines as self-edits accumulate.</td>
+          <td>Regression penalties in the reward; replay; constrained updates.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="s" id="state">
+  <div class="eyebrow">5</div>
+  <h2>State of the field</h2>
+
+  <p>The July 2026 survey (<a href="https://arxiv.org/html/2607.07663v1">2607.07663</a>) classifies about 1,250 papers on two axes: what improves (deployment-time behavior, training-time data and rewards, the evaluators, or research itself) and how closed the loop is (human-in-the-loop, human-on-the-loop, closed-loop).</p>
+
+  <ul>
+    <li><strong>Bounded self-refinement</strong> is convergent, evaluable, and already industrial practice. Deployed systems are human-on-the-loop rather than fully closed.</li>
+    <li><strong>Open-ended RSI</strong>, which modifies its own improvement criteria, remains limited by grounding requirements, collapse dynamics, and compute on every measured dimension.</li>
+    <li><strong>Verification has a scope.</strong> Executors check specified behavior and proof checkers check formal statements. Finite tests, imperfect specifications and costly evaluations still constrain what can be concluded.</li>
+    <li><strong>Evaluation granularity is an intervention.</strong> Compare intermediate-step and final-outcome feedback in the intended domain rather than assuming one always wins.</li>
+  </ul>
+
+  <h3>Open problems named by the survey</h3>
+  <ul>
+    <li><strong>Verification infrastructure for governance:</strong> demonstrating a training loop will not self-improve past a specified threshold. The least populated area.</li>
+    <li><strong>Grounding exchange rate:</strong> how much external signal per unit of self-generated data prevents collapse.</li>
+    <li><strong>Direction-setting automation:</strong> moving problem selection and research taste up the verification hierarchy.</li>
+    <li><strong>Process-level improvement at scale:</strong> accumulating reusable procedures and skills rather than single-result gains.</li>
+  </ul>
+  <p>Recommendations for limited compute: build on external verification, study single-component self-modification against fixed benchmarks, treat evaluator design as the primary research target, and audit integrity explicitly.</p>
+</section>
+
+<section class="s" id="hardware">
+  <div class="eyebrow">6</div>
+  <h2>Two-GPU setup (2 x RTX 5090, 32 GB, WSL2)</h2>
+
+  <p><strong>Constraint.</strong> No peer-to-peer path under WSL2. Measured NCCL all-reduce: 0.43 GB/s at all message sizes. DDP on a 200M model: 1.743 s per step, of which 1.712 s is communication, vs 0.121 s on one GPU (14x slower). Use one independent job per GPU, or an actor-learner split with infrequent, small transfers.</p>
+
+  <p><strong>Earlier hardware proposal.</strong> The actor-learner layout below is a proposed GRPO/H1 setup. The executed local pilot instead uses pinned Transformers inference and LoRA training on GPU 1 with Qwen3-0.6B. It does not implement this vLLM/TRL layout.</p>
+
+  <p><strong>Weight sync.</strong> Full 4B in bf16 is about 8 GB, about 19 s per sync. A LoRA adapter is typically a few hundred MB, under 1 s. Some trainers merge adapters and transmit full weights by default; alternatively write the adapter to disk and hot-load it in vLLM. Syncing every N steps trades transfer cost for off-policy staleness.</p>
+
+  <figure>
+    <div class="diagram-scroll">
+    <svg viewBox="0 0 760 364" role="img" aria-label="GPU 0 runs vLLM to generate tasks, solutions, and tests; a CPU sandbox runs the code and returns rewards to GPU 1, which trains a LoRA adapter. Only the small adapter returns to GPU 0; shipping full weights would take about 19 seconds per sync.">
+      <defs>
+        <marker id="arrC" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+        </marker>
+      </defs>
+      <path d="M630,88 L630,52 L135,52 L135,86" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="6 5" opacity="0.55" marker-end="url(#arrC)"/>
+      <text x="382" y="42" font-size="12" text-anchor="middle" fill="currentColor" opacity="0.7">avoid: full 4B weights in bf16, 8 GB, about 19 s per sync at 0.43 GB/s</text>
+
+      <rect x="20" y="90" width="230" height="200" rx="7" style="fill: var(--surface)" stroke="currentColor" stroke-width="1.3"/>
+      <text x="36" y="118" font-size="14.5" font-weight="700" fill="currentColor">GPU 0: vLLM</text>
+      <text x="36" y="136" font-size="11.5" fill="currentColor" opacity="0.72">rollout generation</text>
+      <g font-size="12.5" font-weight="600">
+        <rect x="36" y="150" width="198" height="32" rx="16" style="fill: var(--blue-wash); stroke: var(--blue)" stroke-width="1.2"/>
+        <text x="135" y="170.5" text-anchor="middle" style="fill: var(--blue)">proposer: writes tasks</text>
+        <rect x="36" y="194" width="198" height="32" rx="16" style="fill: var(--blue-wash); stroke: var(--blue)" stroke-width="1.2"/>
+        <text x="135" y="214.5" text-anchor="middle" style="fill: var(--blue)">solver: writes code</text>
+        <rect x="36" y="238" width="198" height="32" rx="16" style="fill: var(--red-wash); stroke: var(--red)" stroke-width="1.2"/>
+        <text x="135" y="258.5" text-anchor="middle" style="fill: var(--red)">tester: writes tests</text>
+      </g>
+
+      <rect x="300" y="135" width="170" height="110" rx="7" style="fill: var(--surface)" stroke="currentColor" stroke-width="1.3"/>
+      <text x="385" y="164" font-size="14" font-weight="700" text-anchor="middle" fill="currentColor">sandbox (CPU)</text>
+      <text x="385" y="186" font-size="11.5" text-anchor="middle" fill="currentColor" opacity="0.8">runs code against tests</text>
+      <text x="385" y="204" font-size="11.5" text-anchor="middle" fill="currentColor" opacity="0.8">no network, no keys</text>
+      <text x="385" y="222" font-size="11.5" text-anchor="middle" fill="currentColor" opacity="0.8">timeouts set outside</text>
+
+      <rect x="520" y="90" width="220" height="200" rx="7" style="fill: var(--surface)" stroke="currentColor" stroke-width="1.3"/>
+      <text x="536" y="118" font-size="14.5" font-weight="700" fill="currentColor">GPU 1: GRPO trainer</text>
+      <text x="536" y="136" font-size="11.5" fill="currentColor" opacity="0.72">learner</text>
+      <g font-size="12.5" fill="currentColor">
+        <text x="536" y="172">group-relative advantages</text>
+        <text x="536" y="200">updates role-specific LoRA</text>
+        <text x="536" y="228">scores held-out tasks</text>
+        <text x="536" y="246">every N steps</text>
+      </g>
+
+      <g stroke="currentColor" stroke-width="1.3" marker-end="url(#arrC)">
+        <line x1="250" y1="190" x2="297" y2="190"/>
+        <line x1="470" y1="190" x2="517" y2="190"/>
+      </g>
+      <text x="274" y="178" font-size="11.5" text-anchor="middle" fill="currentColor">code</text>
+      <text x="494" y="178" font-size="11.5" text-anchor="middle" fill="currentColor">rewards</text>
+
+      <path d="M630,290 L630,328 L135,328 L135,294" fill="none" stroke="currentColor" stroke-width="1.8" marker-end="url(#arrC)"/>
+      <text x="382" y="318" font-size="12.5" font-weight="650" text-anchor="middle" fill="currentColor">send instead: LoRA adapter, a few hundred MB, under 1 s</text>
+    </svg>
+    </div>
+    <figcaption>Proposed H1 actor-learner layout. Solver, tester and proposer require separate adapters so freezing the tester means its parameters do not change through another role. Reward code and evaluation data must remain outside candidate write access. This diagram describes a proposed boundary, not the current local worker's security guarantees.</figcaption>
+  </figure>
+
+  <ul>
+    <li><strong>Memory.</strong> Full fine-tuning with AdamW in mixed precision is about 16 bytes/param before activations: 1.5B is about 24 GB (tight), 4B about 64 GB (does not fit). Full FT up to about 1 to 1.5B with checkpointing and memory-efficient optimizers; LoRA for 3B to 8B (8B tight with long traces).</li>
+    <li><strong>Throughput for sweeps.</strong> At 0.5B to 1.5B, colocate vLLM and trainer on one GPU (TRL colocate mode) and run two independent experiments in parallel. Use the cross-GPU split to confirm at 3B to 4B.</li>
+    <li><strong>Models.</strong> Executed experiments use pinned Qwen3-0.6B. A 4B replication and a separate model-family comparison remain future work; their budgets and contamination checks require independent validation.</li>
+    <li><strong>Sandbox.</strong> No network, no mounted home directory, no credentials in the environment; time and memory limits enforced from outside; reward function, eval sets, and logs read-only to the loop; full lineage logging. The machine holds real API keys for other projects.</li>
+    <li><strong>Operations.</strong> Pin jobs with <code>CUDA_VISIBLE_DEVICES</code>; check <code>nvidia-smi</code> for other VRAM tenants (local model servers have OOM'd trainers here); checkpoint frequently.</li>
+  </ul>
+</section>
+
+<section class="s" id="program">
+  <div class="eyebrow">7</div>
+  <h2>Research program</h2>
+
+  <h3>Active system-level program</h3>
+  <p>Amplify with bounded search, verify with an external oracle, distill only certified trajectories, and improve the amplifier using recorded outcomes. Test raw neural coverage, later improvers from a frozen ancestor, intact versus empty/scrambled inheritance, and fixed/random improvement controls with full cost accounting. More accurate artifacts alone do not establish RSI.</p>
+  <p>The validated search correction now feeds a controlled training study. V9b holds training and retention settings fixed while separating the filter correction, additional solved training tasks and multiple verified programs for the same task. Reliable neural retention, a stronger improver and self-created edit types remain unproved. September prior-art updates include <a href="research-search-validation-2026-09-16.md">Dream-RSI and historical replay</a>; novelty remains unconfirmed.</p>
+
+  <h3>H1 follow-up: separate verifier training</h3>
+  <p><strong>Question.</strong> Does updating a separate test writer improve held-out solver correctness over freezing that writer, and does the gain exceed spending the same additional compute on the solver? This is partly covered: <a href="https://arxiv.org/html/2605.16299">ACE</a> compares optimized adversarial tests with random tests. It uses a shared model and ground-truth tests for solver selection; its adversarial inputs detect execution failures. That does not isolate a frozen separate tester. See the <a href="gap-audit-2026-09-16.md">targeted gap audit</a>.</p>
+
+  <h3>Loop</h3>
+  <ul>
+    <li><strong>Proposer</strong> writes a specification and reference. Execution alone cannot establish that the reference matches the specification; require independent checking. Freeze the task stream for the initial H1 comparison.</li>
+    <li><strong>Tester</strong> writes unit tests. Reward: <em>mutation score</em>, the fraction of deliberately mutated reference implementations (for example <code>&lt;</code> to <code>&lt;=</code>, deleted lines) the tests reject while passing the original. Executable and not judge-dependent; the inverse of SSR's bug injection. This reward is already published: MIST-RL (<a href="https://arxiv.org/abs/2603.01409">2603.01409</a>) trains a test writer with GRPO on an incremental mutant-kill reward, reporting +28.5% mutation score with 19.3% fewer tests. Adopt that design; the contribution here is what the trained verifier does to the solver, not the reward itself.</li>
+    <li><strong>Solver</strong> writes code. Reward: passing the tester's tests (proxy).</li>
+    <li><strong>Reality metric:</strong> correctness under an independent oracle. On the same held-out task and solver samples, compare proxy-test and oracle grades, including false accepts and false rejects. Separate raw one-shot solver pass@k from tester-assisted selection or repair.</li>
+  </ul>
+
+  <div class="hyp"><b>H1: DOES TESTER TRAINING IMPROVE HELD-OUT COVERAGE AT FIXED COMPUTE?</b><p>Primary outcome: measured independent-oracle pass@1 and raw pass@k at fixed total compute. Compare frozen and updated testers at matched solver updates, then add a solver-compute control. Treat fitted asymptotes as exploratory. <a href="https://arxiv.org/abs/2606.07856">The free-verifier DSL study</a> reports a pass@8/pass@64 crossover after teacher-free self-training on Qwen3-4B. It also studies critic-guided selection; the crossover does not establish that a learned critic caused the coverage loss.</p></div>
+  <div class="hyp"><b>H2: GROUNDING EXCHANGE RATE</b><p>Below some fraction of trusted-test tasks (sweep 0, 1, 5, 20, 100%), held-out performance declines over iterations. A trained tester lowers that threshold.</p></div>
+  <div class="hyp"><b>H3: FROZEN VERIFIERS LEAK FASTER</b><p>The proxy-reality gap grows with iterations, faster with a frozen tester than a co-trained one.</p></div>
+
+  <h3>Controls and metrics</h3>
+  <ul>
+    <li>Random-reward run for every headline configuration.</li>
+    <li>Independently pinned model families in a later replication; the current local DSL pilot uses Qwen3-0.6B only.</li>
+    <li>Contamination-resistant evaluation: procedurally generated tasks with fresh seeds, plus problems dated after model cutoffs (e.g. LiveCodeBench).</li>
+    <li>Use pilot variance to size the study; three seeds are a starting diagnostic, not an automatic adequacy guarantee. Freeze predictions and sample counts before evaluation.</li>
+    <li>Metrics: held-out pass@1 and pass@k, tester mutation score on held-out references, proxy-reality gap, proposed-task diversity (early collapse signal).</li>
+  </ul>
+
+  <h3>Phases</h3>
+  <ol>
+    <li>Evaluation harness: sandbox, held-out sets, logging, base-model reproduction, random-reward check. Fix evaluation if random rewards move scores.</li>
+    <li>Measure solver correctness and tester false-accept/false-reject rates on matched task/solution pairs. Mutation score and solver pass@1 have different meanings and cannot define a gap sign by subtraction.</li>
+    <li>Solver-only GRPO with trusted tests: the baseline saturating curve, fitted rather than run to convergence.</li>
+    <li>Keep the proposer and task stream fixed for the initial H1 comparison. Test adaptive proposing and its diversity effects separately afterward.</li>
+    <li>Three H1 arms: frozen tester; updated tester with identical solver updates; frozen tester with the extra tester budget spent on solver updates. Specify CPU/GPU cost accounting before running them; give every role a separate adapter.</li>
+    <li>Test trusted-signal fraction and deliberate verifier corruption separately. Track realized verifier errors and same-sample proxy/oracle disagreement over updates.</li>
+  </ol>
+
+  <p><strong>Current priority.</strong> Finish the controlled frontier-distillation study, audit every decision, and reconnect only validated changes to the interleaved system. Keep H1 as a separately identified future intervention; its oracle itself never enters the editable loop.</p>
+
+  <p>A positive or negative result can be informative if its controls identify the intervention and its uncertainty is reported. Either outcome is limited to the tested models, budgets and task distribution.</p>
+</section>
+
+<section class="s" id="reading">
+  <div class="eyebrow">8</div>
+  <h2>Reading order and sources</h2>
+  <ol>
+    <li>Survey: <a href="https://arxiv.org/html/2607.07663v1">Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops</a></li>
+    <li><a href="https://ar5iv.labs.arxiv.org/html/2506.10947">Spurious Rewards: Rethinking Training Signals in RLVR</a></li>
+    <li><a href="https://arxiv.org/abs/2505.03335">Absolute Zero: Reinforced Self-play Reasoning with Zero Data</a></li>
+    <li><a href="https://arxiv.org/abs/2505.22954">Darwin Gödel Machine</a>, then <a href="https://arxiv.org/abs/2510.21614">Huxley-Gödel Machine</a></li>
+    <li><a href="https://arxiv.org/abs/2511.23473">ThetaEvolve: Test-time Learning on Open Problems</a></li>
+    <li><a href="https://arxiv.org/abs/2602.16805v1">Simple Baselines are Competitive with Code Evolution</a> and <a href="https://openreview.net/forum?id=ikrQWGgxYg">Reward Hacking in Self-Improving Code Agents</a></li>
+    <li><a href="https://arxiv.org/abs/2510.16657">Escaping Model Collapse via Synthetic Data Verification</a> and <a href="https://arxiv.org/abs/2507.00075">Solver-Verifier Gap</a></li>
+    <li><a href="https://arxiv.org/abs/2512.18552">Self-play SWE-RL</a> and <a href="https://arxiv.org/abs/2603.19461">Hyperagents</a></li>
+    <li><a href="https://recursive-workshop.github.io/papers.html">ICLR 2026 RSI workshop papers</a>, starting with Anchored Self-Play for Code Repair, GASP, and Verifying the Verifiers</li>
+  </ol>
+
+  <h3>Additional sources</h3>
+  <ul class="refs">
+    <li><a href="https://arxiv.org/abs/2606.26294">The Red Queen Gödel Machine</a></li>
+    <li><a href="https://arxiv.org/abs/2508.05004">R-Zero</a> · <a href="https://arxiv.org/abs/2509.07414">Language Self-Play</a> · <a href="https://arxiv.org/abs/2510.27072">Towards Understanding Self-play for LLM Reasoning</a> · <a href="https://arxiv.org/abs/2603.02218">Self-Play Only Evolves When Self-Synthetic Pipeline Ensures Learnable Information Gain</a></li>
+    <li><a href="https://arxiv.org/abs/2506.10943">SEAL: Self-Adapting Language Models</a></li>
+    <li><a href="https://github.com/SakanaAI/ShinkaEvolve">ShinkaEvolve</a> · <a href="https://arxiv.org/abs/2510.14150">CodeEvolve</a></li>
+    <li><a href="https://arxiv.org/abs/2502.14948">Learning to Solve and Verify</a></li>
+    <li><a href="https://arxiv.org/abs/2603.08640">PostTrainBench</a> · <a href="https://sakana.ai/dgm/">DGM write-up</a> · <a href="https://sakana.ai/ai-scientist/">The AI Scientist</a></li>
+    <li><a href="https://arxiv.org/abs/2507.10532">Reasoning or Memorization? RL results and data contamination</a></li>
+    <li><a href="https://huggingface.co/docs/trl/vllm_integration">TRL vLLM integration</a> (server and colocate modes)</li>
+  </ul>
+  <p class="label">Historical systems (TD-Gammon, Gödel Machine, Löbian obstacle, AlphaGo Zero, STaR, FunSearch, Self-Rewarding LMs, DeepSeek-R1, Shumailov et al. 2024) cited from original publications.</p>
+</section>
+
+</main>
+</div>
+</body>
+</html>

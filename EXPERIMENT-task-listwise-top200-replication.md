@@ -1,0 +1,11 @@
+# Frozen 48-bank replication of task-level top-200 ranking
+
+Date: 2026-09-18. Written after inspecting the first 24-bank transfer, before generating any replication target or reading its labels. The first transfer's three declared gates failed and will remain failed in its record. This study is an independent replication with unchanged model files and candidate/evaluator code.
+
+## Design
+
+Use 48 new eight-task mixed familiar/shifted AST banks, seeds 905500–905547 (384 tasks). Keep the same generator, old ranker, two specialists, top-200 candidate features, 120-epoch .25-temperature listwise checkpoints, candidate-BCE checkpoints, scrambled/duplicate controls and prior stack from `EXPERIMENT-task-listwise-top200-transfer.md`. No training, threshold or model-file changes. Freeze all public choices and exact per-arm candidate-score counts before hidden labels are read. Rebuild tasks, pools, predictions, choices and every candidate label in a replay audit.
+
+The primary test is the later listwise ranker versus later BCE, trained on the same 112,610 source candidate labels and scoring the same top-200 target pools. The *objective replication gate* requires at least +12 correct choices total, a positive 95% paired bank-bootstrap lower bound, and at least 12 positive banks. The *incremental checkpoint gate* requires later listwise to beat early, scrambled and duplicate by at least +8 each, with a positive lower bound and at least eight positive banks against early. The *integration gate* requires later listwise to beat fixed dual top-200 and the prior stacked top-200 by at least +16 each, positive lower bounds, at least 16 positive banks versus dual, and no subgroup loss larger than eight versus that subgroup's specialist. Each gate also requires the replay audit to pass. Report all 48 bank differences, score and wall-time costs, reachability and harmful changes regardless of gate outcome.
+
+Passing this replication would establish only a scoped retained evaluator improvement on this synthetic AST contract. The positive feedback loop still requires an improver that predicts and chooses evaluator/search edits, passes external admission, and produces a stronger child improver from the same base on a second untouched bank at matched acquisition and inference budgets.

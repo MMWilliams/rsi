@@ -1,0 +1,39 @@
+{
+  "scope": "post hoc corrected gate; diagnostic only, not a pass",
+  "why": "G2 as predeclared measured the single-bank baseline draw. Replication one drew 46 and passed, replication two drew 92 and failed, while single-bank parents span 46 to 104.",
+  "correction": "score the small-history parent as its expected value over every contiguous window of that size, paired by transfer bank",
+  "small_history": 1,
+  "large_history": 12,
+  "runs": {
+    "replication_one": {
+      "large_total": 126,
+      "expected_small_total": 75.0,
+      "corrected_gain": 51.0,
+      "corrected_positive_banks": 9,
+      "corrected_losing_banks": 2,
+      "corrected_interval": [
+        18,
+        85
+      ],
+      "best_constant_action": "familiar",
+      "best_constant_total": 104,
+      "large_minus_best_constant": {
+        "gain": 22,
+        "positive_banks": 3,
+        "losing_banks": 1,
+        "interval": [
+          -16,
+          62
+        ]
+      },
+      "hindsight_total": 144
+    }
+  },
+  "both_replications_positive_with_clean_intervals": null,
+  "limits": [
+    "Post hoc. A gate redesigned after seeing results cannot produce a pass; these numbers say what to predeclare on fresh banks.",
+    "Contiguous windows over one development panel are not independent samples, so the expected-small estimate has unmodelled dependence.",
+    "The large-history arm is still a single parent, so its own draw is not averaged over.",
+    "Best constant uses final labels and is not deployable."
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "scope": "precondition screen for acquisition policy as a recursive transmissible state, on audited frozen banks",
+  "pool_banks": 24,
+  "threshold": 20,
+  "loo_marginal_value": [
+    5.0,
+    9.0,
+    2.0,
+    14.0,
+    -4.0,
+    15.0,
+    11.0,
+    4.0,
+    5.0,
+    6.0,
+    10.0,
+    6.0,
+    8.0,
+    6.0,
+    2.0,
+    3.0,
+    3.0,
+    10.0,
+    4.0,
+    10.0,
+    8.0,
+    3.0,
+    0.0,
+    -1.0
+  ],
+  "by_budget": {
+    "4": {
+      "totals": {
+        "random": 308.625,
+        "first": 321.0,
+        "largest_pool": 308.0,
+        "lowest_margin": 298.0,
+        "widest_spread": 313.0,
+        "most_reachable_LABELLED": 311.0,
+        "most_diverse_LABELLED": 321.0,
+        "value_topk_UNAVAILABLE": 300.0
+      },
+      "best_free_rule": "first",
+      "default_regret": -21.0,
+      "regret_interval": [
+        -38,
+        -4
+      ],
+      "p2c_passed": false
+    },
+    "8": {
+      "totals": {
+        "random": 323.125,
+        "first": 320.0,
+        "largest_pool": 320.0,
+        "lowest_margin": 320.0,
+        "widest_spread": 327.0,
+        "most_reachable_LABELLED": 320.0,
+        "most_diverse_LABELLED": 320.0,
+        "value_topk_UNAVAILABLE": 323.0
+      },
+      "best_free_rule": "widest_spread",
+      "default_regret": -4.0,
+      "regret_interval": [
+        -19,
+        10
+      ],
+      "p2c_passed": false
+    }
+  },
+  "verdict": {
+    "4": false,
+    "8": false
+  },
+  "limits": [
+    "Leave-one-out marginal value uses transfer labels and is an upper reference, not a deployable policy, and top-K by marginal value is not the true best subset.",
+    "Heuristics marked LABELLED need history labels and are shown for diagnosis; they are excluded from the free-rule set.",
+    "Random is averaged over eight draws; the interval is bank-paired against the single best free rule.",
+    "One replication pool and one transfer panel."
+  ]
+}

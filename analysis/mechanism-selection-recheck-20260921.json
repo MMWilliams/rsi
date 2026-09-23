@@ -1,0 +1,48 @@
+{
+  "scope": "selection headroom on the catalog used by the confirmation",
+  "catalog": {
+    "rows": 166596,
+    "digest": "1d3c71aff89ba2b6fd72da3ea20591d74afc6aa26ef367c59bed6e57ee5424b8",
+    "drawable": 105126
+  },
+  "tasks": 4000,
+  "seed": 612101,
+  "ambiguity": {
+    "mean_consistent": 8.609,
+    "median_consistent": 2.0,
+    "unique_answer_fraction": 0.41875,
+    "some_candidate_correct": 1.0
+  },
+  "mechanism_holdout": {
+    "test_tasks": 2000,
+    "learned": 0.7855,
+    "free": {
+      "occam": 0.7565,
+      "slack": 0.787,
+      "density": 0.637,
+      "consensus": 0.7885,
+      "random": 0.6515
+    }
+  },
+  "family_holdout": {
+    "withheld": [
+      "popcount",
+      "xormod"
+    ],
+    "fit_tasks": 2127,
+    "test_tasks": 1873,
+    "learned": 0.8254137746930059,
+    "free": {
+      "occam": 0.7869727709556861,
+      "slack": 0.8296849973304858,
+      "density": 0.6898024559530166,
+      "consensus": 0.8248798718633209,
+      "random": 0.7148958889482114
+    }
+  },
+  "cost": {
+    "wall_seconds": 55.6879700999998,
+    "cpu_seconds": 95.96875,
+    "peak_rss_mb": 183.386112
+  }
+}

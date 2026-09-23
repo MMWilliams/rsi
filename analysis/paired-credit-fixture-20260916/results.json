@@ -1,0 +1,162 @@
+{
+  "status": "completed",
+  "pairs": [
+    {
+      "seed": 991,
+      "edit": "absolute_cost_down",
+      "measurement_n": 2,
+      "base_start_ref": "s991_no_edit/start",
+      "base_end_ref": "s991_no_edit/end",
+      "edited_start_ref": "s991_absolute_cost_down/start",
+      "edited_end_ref": "s991_absolute_cost_down/end",
+      "immediate": 0,
+      "total_descendant": 0,
+      "later_improvement": 0
+    },
+    {
+      "seed": 991,
+      "edit": "absolute_cost_up",
+      "measurement_n": 2,
+      "base_start_ref": "s991_no_edit/start",
+      "base_end_ref": "s991_no_edit/end",
+      "edited_start_ref": "s991_absolute_cost_up/start",
+      "edited_end_ref": "s991_absolute_cost_up/end",
+      "immediate": 1,
+      "total_descendant": 1,
+      "later_improvement": 0
+    },
+    {
+      "seed": 991,
+      "edit": "match_cost_down",
+      "measurement_n": 2,
+      "base_start_ref": "s991_no_edit/start",
+      "base_end_ref": "s991_no_edit/end",
+      "edited_start_ref": "s991_match_cost_down/start",
+      "edited_end_ref": "s991_match_cost_down/end",
+      "immediate": 1,
+      "total_descendant": 0,
+      "later_improvement": -1
+    },
+    {
+      "seed": 991,
+      "edit": "match_cost_up",
+      "measurement_n": 2,
+      "base_start_ref": "s991_no_edit/start",
+      "base_end_ref": "s991_no_edit/end",
+      "edited_start_ref": "s991_match_cost_up/start",
+      "edited_end_ref": "s991_match_cost_up/end",
+      "immediate": 0,
+      "total_descendant": 0,
+      "later_improvement": 0
+    },
+    {
+      "seed": 991,
+      "edit": "constant_cost_down",
+      "measurement_n": 2,
+      "base_start_ref": "s991_no_edit/start",
+      "base_end_ref": "s991_no_edit/end",
+      "edited_start_ref": "s991_constant_cost_down/start",
+      "edited_end_ref": "s991_constant_cost_down/end",
+      "immediate": 0,
+      "total_descendant": 0,
+      "later_improvement": 0
+    },
+    {
+      "seed": 991,
+      "edit": "constant_cost_up",
+      "measurement_n": 2,
+      "base_start_ref": "s991_no_edit/start",
+      "base_end_ref": "s991_no_edit/end",
+      "edited_start_ref": "s991_constant_cost_up/start",
+      "edited_end_ref": "s991_constant_cost_up/end",
+      "immediate": 0,
+      "total_descendant": 0,
+      "later_improvement": 0
+    },
+    {
+      "seed": 991,
+      "edit": "case_cost_down",
+      "measurement_n": 2,
+      "base_start_ref": "s991_no_edit/start",
+      "base_end_ref": "s991_no_edit/end",
+      "edited_start_ref": "s991_case_cost_down/start",
+      "edited_end_ref": "s991_case_cost_down/end",
+      "immediate": 0,
+      "total_descendant": 0,
+      "later_improvement": 0
+    },
+    {
+      "seed": 991,
+      "edit": "case_cost_up",
+      "measurement_n": 2,
+      "base_start_ref": "s991_no_edit/start",
+      "base_end_ref": "s991_no_edit/end",
+      "edited_start_ref": "s991_case_cost_up/start",
+      "edited_end_ref": "s991_case_cost_up/end",
+      "immediate": 0,
+      "total_descendant": 0,
+      "later_improvement": 0
+    },
+    {
+      "seed": 991,
+      "edit": "progress_weight_down",
+      "measurement_n": 2,
+      "base_start_ref": "s991_no_edit/start",
+      "base_end_ref": "s991_no_edit/end",
+      "edited_start_ref": "s991_progress_weight_down/start",
+      "edited_end_ref": "s991_progress_weight_down/end",
+      "immediate": 0,
+      "total_descendant": 0,
+      "later_improvement": 0
+    },
+    {
+      "seed": 991,
+      "edit": "progress_weight_up",
+      "measurement_n": 2,
+      "base_start_ref": "s991_no_edit/start",
+      "base_end_ref": "s991_no_edit/end",
+      "edited_start_ref": "s991_progress_weight_up/start",
+      "edited_end_ref": "s991_progress_weight_up/end",
+      "immediate": 0,
+      "total_descendant": 0,
+      "later_improvement": 0
+    },
+    {
+      "seed": 991,
+      "edit": "widening_down",
+      "measurement_n": 2,
+      "base_start_ref": "s991_no_edit/start",
+      "base_end_ref": "s991_no_edit/end",
+      "edited_start_ref": "s991_widening_down/start",
+      "edited_end_ref": "s991_widening_down/end",
+      "immediate": 0,
+      "total_descendant": 0,
+      "later_improvement": 0
+    },
+    {
+      "seed": 991,
+      "edit": "widening_up",
+      "measurement_n": 2,
+      "base_start_ref": "s991_no_edit/start",
+      "base_end_ref": "s991_no_edit/end",
+      "edited_start_ref": "s991_widening_up/start",
+      "edited_end_ref": "s991_widening_up/end",
+      "immediate": 0,
+      "total_descendant": 0,
+      "later_improvement": 0
+    }
+  ],
+  "cost": {
+    "physical_searches": 278,
+    "exact_replays": 278,
+    "logical_search_requests": 312,
+    "charged_expansions": 33894,
+    "charged_primitive_executions": 4270620,
+    "search_wall_seconds": 9.903365099919029,
+    "oracle_program_checks": 556,
+    "oracle_string_check_upper_bound": 8896
+  },
+  "elapsed_seconds": 12.392950599984033,
+  "headroom_observed": true,
+  "scope": "source-only paired branch probe; no inherited policy trained or tested; no RSI claim"
+}

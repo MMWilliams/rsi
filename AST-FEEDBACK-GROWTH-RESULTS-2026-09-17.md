@@ -1,0 +1,25 @@
+# Incremental AST evaluator feedback: fresh transfer and retention
+
+## Decision
+
+**A scoped evaluator-growth test passed; a global replacement failed retention.** Increasing the V67/V73 cap from 128 to 512 per source raised fresh AST candidate reachability from **12/48 to 26/48**. On exactly the same wide pools, fine-tuning the frozen temperature-0.25 evaluator on 23,686 verified candidate labels from 48 previously inspected AST tasks raised correct top selections from **0/48 to 6/48**. The paired evaluator gains by fresh bank were **+1,+1,0,+1,+1,+2**; the exact six-bank resampling 95% interval was **+3 to +9 selections per 48**. Five banks improved and one tied, meeting the declared scoped gate. The reconstruction audit passed.
+
+The AST update is **not** a safe global evaluator replacement. On an already inspected 192-task stack/mutation/self-edit transfer bank, the parent selected **143/192** correct programs and the AST-updated model selected **125/192**. The largest loss was self-edit, **52 to 37**. This is a development retention diagnostic, not a second fresh claim. Preserve the parent and make AST specialization an explicit, protected edit rather than overwriting it.
+
+## What changed and what was measured
+
+The development screen reused the 48 AST tasks whose outcomes had been inspected in the withheld-family study. Cap 128 reached **14/48**; cap 512 reached **28/48**. Adding V69 found **no additional reachable task** while increasing mean pool size from 493 to 823. All old rankers selected **0/48** correct programs on either pool. These results determined the V67/V73 cap edit and AST feedback edit before the new transfer seeds were scored.
+
+The evaluator update initialized the archived 175→32→1 temperature-0.25 listwise ranker, retained its feature normalization, and trained for 60 more epochs at learning rate 0.0003 and listwise temperature 0.25 on the widened development pools. Labels came from the host interpreter on the last 15 hidden examples. Development selection rose **0 to 8/48** among 28 reachable tasks. This source fit alone was not used as evidence of growth.
+
+The fresh test used six independent seeds, 902288–902293, eight AST tasks each, one visible example, no inference oracle queries, and the final 15 host-held examples for scoring. Tasks, candidate pools, model hash and all choices were written before final labels were opened. Controls were the old ranker on cap 128 and on the same cap-512 pools, plus fixed temperature-0.5, temperature-1.0 and E192 rankers on the wide pools. Every fixed ranker scored **0/48** on the wide pools; the updated model scored **6/48**. The wider generator's paired reachability gains were **+2,+4,+3,+3,+1,+1** by bank, with an exact bank-resampling interval of **+9 to +19 reachable tasks per 48**. The new evaluator captured 6 of 26 reachable solutions, leaving a large selection gap.
+
+The audit regenerated all 48 tasks and both pools, recomputed **624 frozen choices** and **30,876 candidate labels**, and matched all saved outcomes. It passed. Source acquisition required 23,686 additional verified candidate labels on top of the parent's earlier 31,500; the fresh preparation generated 7,066 old-pool and 23,810 wide-pool candidates. Measured fresh preparation wall time was 58.6 seconds, with 233.8 summed source-generation seconds across workers. These counts and times are part of the cost, and the old and new rankers were compared at equal *inference* pools and zero live queries, not equal training acquisition cost.
+
+## Interpretation and next edit
+
+Verified AST feedback made the evaluator better at choosing from a fixed AST pool on new instances of the same synthetic mechanism. Widening the search made correct programs available more often. Neither result shows a stronger improver: the cap change and fine-tune were researcher-authored, and no later parent created a better child improver. AST task instances share a small generated rule family; this test does not establish transfer to new AST rules, natural-language reasoning, cybersecurity work, policy judgment, or general intelligence.
+
+The immediate safe integration is a retained parent plus a separately versioned AST specialist selected by a public-context gate, with replay and external admission on new mixed-mechanism banks. The synthetic banks have distinct Unicode blocks by mechanism, so a block-based gate is a test convenience rather than a robust general router. After that, put generator cap, specialist training, and gate selection into the improver's edit catalog; measure whether inherited feedback helps it choose and preserve these edits, and whether a later parent yields a stronger child improver from the same base and budget.
+
+Protocol: `EXPERIMENT-ast-evaluator-feedback.md`. Development: `analysis/ast-generator-edit-development.json`. Model: `analysis/ast-feedback-model.json`. Fresh frozen data and audit: `runs/ast-feedback-transfer-20260917/`. Retention: `analysis/ast-feedback-retention-diagnostic.json`. Code: `ast_generator_edit_development.py`, `ast_evaluator_feedback.py`, `audit_ast_evaluator_feedback.py`, `ast_feedback_retention_diagnostic.py`.

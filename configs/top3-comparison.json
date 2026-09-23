@@ -1,0 +1,17 @@
+{
+  "protocol": "EXPERIMENT-top3-comparison.md",
+  "bank_seeds": [203001, 203002],
+  "meta_seeds": [303001, 303002],
+  "bank_counts": {"train": 48, "development": 24, "admission": 24, "final": 24},
+  "training_tasks": 48,
+  "development_tasks": 24,
+  "admission_tasks": 24,
+  "final_tasks": 24,
+  "visible_examples": 40,
+  "hidden_examples": 13,
+  "train_family": "delimiter",
+  "eval_family": "mutation_transition",
+  "population_size": 12,
+  "generations": 3,
+  "elite_count": 3
+}

@@ -1,0 +1,855 @@
+{
+  "run_id": "frontier-v9-verification-fixture-v2",
+  "source_sha256": {
+    "results.json": "77e7e1ed112b9b1133631141e4c8222a54e8befb2c60e70c3bb9b447a1544bef",
+    "audit.json": "5d86ec7be04776063a7296a966c0ae8a00a127dfcded863d05ddc1483b98ada5",
+    "config.json": "e7446d97f904c60bd40ef0e2df262077e2b21ba3eac9344c2b3c3387b5d3973b"
+  },
+  "analysis_code_sha256": "f6f2acf6ac677ebced7d64d116815668c0e05fd017a45bb4fe3a5cc2634c970e",
+  "means": {
+    "baseline_selected": {
+      "1": {
+        "1": 0.0,
+        "4": 0.0,
+        "8": 0.0,
+        "16": 0.0,
+        "32": 0.0,
+        "64": 0.0
+      },
+      "2": {
+        "1": 0.0,
+        "4": 0.0,
+        "8": 0.0,
+        "16": 0.0,
+        "32": 0.0,
+        "64": 0.0
+      }
+    },
+    "corrected_selected": {
+      "1": {
+        "1": 0.0,
+        "4": 0.0,
+        "8": 0.0,
+        "16": 0.0,
+        "32": 0.0,
+        "64": 0.0
+      },
+      "2": {
+        "1": 0.0,
+        "4": 0.0,
+        "8": 0.0,
+        "16": 0.0,
+        "32": 0.0,
+        "64": 0.0
+      }
+    },
+    "corrected_first_verified": {
+      "1": {
+        "1": 0.0,
+        "4": 0.0,
+        "8": 0.0,
+        "16": 0.0,
+        "32": 0.0,
+        "64": 0.0
+      },
+      "2": {
+        "1": 0.0,
+        "4": 0.0,
+        "8": 0.0,
+        "16": 0.0,
+        "32": 0.0,
+        "64": 0.0
+      }
+    },
+    "corrected_frontier": {
+      "1": {
+        "1": 0.0,
+        "4": 0.0,
+        "8": 0.0,
+        "16": 0.0,
+        "32": 0.0,
+        "64": 0.0
+      },
+      "2": {
+        "1": 0.0,
+        "4": 0.0,
+        "8": 0.0,
+        "16": 0.0,
+        "32": 0.0,
+        "64": 0.0
+      }
+    }
+  },
+  "contrasts": {
+    "corrected_selected minus baseline_selected": {
+      "interpretation": "filter effect in this training pipeline",
+      "per_seed_pass64_delta": {
+        "991": 0.0
+      },
+      "mean_pass64_delta": 0.0
+    },
+    "corrected_first_verified minus corrected_selected": {
+      "interpretation": "additional solved training tasks",
+      "per_seed_pass64_delta": {
+        "991": 0.0
+      },
+      "mean_pass64_delta": 0.0
+    },
+    "corrected_frontier minus corrected_first_verified": {
+      "interpretation": "multiple programs for the same training tasks",
+      "per_seed_pass64_delta": {
+        "991": 0.0
+      },
+      "mean_pass64_delta": 0.0
+    }
+  },
+  "changes": [
+    {
+      "change_id": "s991_baseline_selected_round1",
+      "arm": "baseline_selected",
+      "seed": 991,
+      "round": 1,
+      "parent_checkpoint": "s991_initial",
+      "selected_checkpoint": "s991_initial",
+      "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "candidate_sha256": "c6e0d3f40f6c709ca8900e0c39858d9809ee0c9fb3239018ab97722a8c8a7f28",
+      "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "pool_sha256": "20ef6000b55119aa61c36d23bbbb3513a1fb5c6dab7b1a33b03c99a0b46c3530",
+      "rows_by_stratum": {
+        "anchor": 46,
+        "harvest": 6
+      },
+      "tasks_by_stratum": {
+        "anchor": 46,
+        "harvest": 6
+      },
+      "optimizer_steps": 1,
+      "training_cost": {
+        "generated_tokens": 0,
+        "prompt_tokens": 0,
+        "generation_seconds": 0.0,
+        "training_steps": 1,
+        "training_seconds": 0.3558989000157453,
+        "supervised_tokens": 67,
+        "oracle_string_executions": 832
+      },
+      "admission": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization",
+        "gate_enforced": true,
+        "accepted": false,
+        "selection_reason": [
+          "no_measured_validation_gain"
+        ],
+        "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "candidate_sha256": "c6e0d3f40f6c709ca8900e0c39858d9809ee0c9fb3239018ab97722a8c8a7f28",
+        "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "rollback_verified": true
+      },
+      "final_effect": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization"
+      },
+      "observed_gate_disagreement": "no_observed_gate_disagreement",
+      "validation_sha256": "b2986f00af15bf78e12e8b98ea9fc9cdacd72b67fe9ebe7a8d2047a242b113d2",
+      "sampling_refs": {
+        "parent": {
+          "path": "samples/s991_baseline_selected_round1_parent.json",
+          "sha256": "fd2853a1be9976e9df2261eecc229866b85af185f1e664a2a065d3ee876ceac3",
+          "request_sha256": "b403a0ab471d3f6472cd24f1882e741759cec9600e79edab17e48e099c873c80"
+        },
+        "candidate": {
+          "path": "samples/s991_baseline_selected_round1_candidate_validation.json",
+          "sha256": "28ac797c316e03c7c98c6a3f9de387d04edccc2ea2ac102d93555d06fb938bbc",
+          "request_sha256": "1c64eb2f103ae53de9cb98508af16896a10195ecc897da5aecec649bf124e84b"
+        }
+      }
+    },
+    {
+      "change_id": "s991_baseline_selected_round2",
+      "arm": "baseline_selected",
+      "seed": 991,
+      "round": 2,
+      "parent_checkpoint": "s991_initial",
+      "selected_checkpoint": "s991_initial",
+      "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "candidate_sha256": "a097203769b984c9303a8d748900b3233083203a0f8281b33e2608a289ce9922",
+      "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "pool_sha256": "f88109816bae7d35c95fd05abc112811b0f6e4e82f128a0f26370adfa66cdc1f",
+      "rows_by_stratum": {
+        "anchor": 46,
+        "harvest": 9
+      },
+      "tasks_by_stratum": {
+        "anchor": 46,
+        "harvest": 9
+      },
+      "optimizer_steps": 1,
+      "training_cost": {
+        "generated_tokens": 0,
+        "prompt_tokens": 0,
+        "generation_seconds": 0.0,
+        "training_steps": 1,
+        "training_seconds": 0.13976279998314567,
+        "supervised_tokens": 79,
+        "oracle_string_executions": 880
+      },
+      "admission": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization",
+        "gate_enforced": true,
+        "accepted": false,
+        "selection_reason": [
+          "no_measured_validation_gain"
+        ],
+        "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "candidate_sha256": "a097203769b984c9303a8d748900b3233083203a0f8281b33e2608a289ce9922",
+        "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "rollback_verified": true
+      },
+      "final_effect": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization"
+      },
+      "observed_gate_disagreement": "no_observed_gate_disagreement",
+      "validation_sha256": "33fcb204e212d219c874f75ce2ec2383042204d4b3883c849da03f4a1ad399c8",
+      "sampling_refs": {
+        "parent": {
+          "path": "samples/s991_baseline_selected_round2_parent.json",
+          "sha256": "c41efd27787b292ee1d14eb87fbd4d7366576fae3ccfc4c0c563fea622da6f19",
+          "request_sha256": "9e8b1b5ecd1114a32274164c511adfa80e2b003038276142f0efea39ff403faf"
+        },
+        "candidate": {
+          "path": "samples/s991_baseline_selected_round2_candidate_validation.json",
+          "sha256": "bc5b579b4e73113eac496c7ef3131a9f6417e1547dcaa73c6f1c860b888b81d7",
+          "request_sha256": "c29c470bdde2fad336c0a46a031577e48bf0b0e90a753f179a023289a1c4bd38"
+        }
+      }
+    },
+    {
+      "change_id": "s991_corrected_selected_round1",
+      "arm": "corrected_selected",
+      "seed": 991,
+      "round": 1,
+      "parent_checkpoint": "s991_initial",
+      "selected_checkpoint": "s991_initial",
+      "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "candidate_sha256": "c6e0d3f40f6c709ca8900e0c39858d9809ee0c9fb3239018ab97722a8c8a7f28",
+      "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "pool_sha256": "20ef6000b55119aa61c36d23bbbb3513a1fb5c6dab7b1a33b03c99a0b46c3530",
+      "rows_by_stratum": {
+        "anchor": 46,
+        "harvest": 6
+      },
+      "tasks_by_stratum": {
+        "anchor": 46,
+        "harvest": 6
+      },
+      "optimizer_steps": 1,
+      "training_cost": {
+        "generated_tokens": 0,
+        "prompt_tokens": 0,
+        "generation_seconds": 0.0,
+        "training_steps": 1,
+        "training_seconds": 0.13922569999704137,
+        "supervised_tokens": 67,
+        "oracle_string_executions": 832
+      },
+      "admission": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization",
+        "gate_enforced": true,
+        "accepted": false,
+        "selection_reason": [
+          "no_measured_validation_gain"
+        ],
+        "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "candidate_sha256": "c6e0d3f40f6c709ca8900e0c39858d9809ee0c9fb3239018ab97722a8c8a7f28",
+        "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "rollback_verified": true
+      },
+      "final_effect": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization"
+      },
+      "observed_gate_disagreement": "no_observed_gate_disagreement",
+      "validation_sha256": "b2986f00af15bf78e12e8b98ea9fc9cdacd72b67fe9ebe7a8d2047a242b113d2",
+      "sampling_refs": {
+        "parent": {
+          "path": "samples/s991_baseline_selected_round1_parent.json",
+          "sha256": "fd2853a1be9976e9df2261eecc229866b85af185f1e664a2a065d3ee876ceac3",
+          "request_sha256": "b403a0ab471d3f6472cd24f1882e741759cec9600e79edab17e48e099c873c80"
+        },
+        "candidate": {
+          "path": "samples/s991_baseline_selected_round1_candidate_validation.json",
+          "sha256": "28ac797c316e03c7c98c6a3f9de387d04edccc2ea2ac102d93555d06fb938bbc",
+          "request_sha256": "1c64eb2f103ae53de9cb98508af16896a10195ecc897da5aecec649bf124e84b"
+        }
+      }
+    },
+    {
+      "change_id": "s991_corrected_selected_round2",
+      "arm": "corrected_selected",
+      "seed": 991,
+      "round": 2,
+      "parent_checkpoint": "s991_initial",
+      "selected_checkpoint": "s991_initial",
+      "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "candidate_sha256": "07319efe59ae080ad2f7c3aa346c2d2248c91d3c54afdf202009b93758f6b164",
+      "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "pool_sha256": "1f42637ee70f2160101a5a368d4c4da9d50facf21fb31de4852abf4d5419c0d4",
+      "rows_by_stratum": {
+        "anchor": 46,
+        "harvest": 12
+      },
+      "tasks_by_stratum": {
+        "anchor": 46,
+        "harvest": 12
+      },
+      "optimizer_steps": 1,
+      "training_cost": {
+        "generated_tokens": 0,
+        "prompt_tokens": 0,
+        "generation_seconds": 0.0,
+        "training_steps": 1,
+        "training_seconds": 0.19154139998136088,
+        "supervised_tokens": 81,
+        "oracle_string_executions": 928
+      },
+      "admission": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization",
+        "gate_enforced": true,
+        "accepted": false,
+        "selection_reason": [
+          "no_measured_validation_gain"
+        ],
+        "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "candidate_sha256": "07319efe59ae080ad2f7c3aa346c2d2248c91d3c54afdf202009b93758f6b164",
+        "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "rollback_verified": true
+      },
+      "final_effect": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization"
+      },
+      "observed_gate_disagreement": "no_observed_gate_disagreement",
+      "validation_sha256": "59995c7d314179b127ff9231b0130d5e39bc8185cceb05c50367e652f6744c38",
+      "sampling_refs": {
+        "parent": {
+          "path": "samples/s991_baseline_selected_round2_parent.json",
+          "sha256": "c41efd27787b292ee1d14eb87fbd4d7366576fae3ccfc4c0c563fea622da6f19",
+          "request_sha256": "9e8b1b5ecd1114a32274164c511adfa80e2b003038276142f0efea39ff403faf"
+        },
+        "candidate": {
+          "path": "samples/s991_corrected_selected_round2_candidate_validation.json",
+          "sha256": "44522df0d7446a6e55e51c459054f3755f75bf68e35083cff97ab4a9b312bf6c",
+          "request_sha256": "a3abb756764fa534ca763f17ec1ae3ffe6afa0b89908d92e287845c7393ae9d5"
+        }
+      }
+    },
+    {
+      "change_id": "s991_corrected_first_verified_round1",
+      "arm": "corrected_first_verified",
+      "seed": 991,
+      "round": 1,
+      "parent_checkpoint": "s991_initial",
+      "selected_checkpoint": "s991_initial",
+      "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "candidate_sha256": "c6e0d3f40f6c709ca8900e0c39858d9809ee0c9fb3239018ab97722a8c8a7f28",
+      "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "pool_sha256": "20ef6000b55119aa61c36d23bbbb3513a1fb5c6dab7b1a33b03c99a0b46c3530",
+      "rows_by_stratum": {
+        "anchor": 46,
+        "harvest": 6
+      },
+      "tasks_by_stratum": {
+        "anchor": 46,
+        "harvest": 6
+      },
+      "optimizer_steps": 1,
+      "training_cost": {
+        "generated_tokens": 0,
+        "prompt_tokens": 0,
+        "generation_seconds": 0.0,
+        "training_steps": 1,
+        "training_seconds": 0.14043430000310764,
+        "supervised_tokens": 67,
+        "oracle_string_executions": 832
+      },
+      "admission": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization",
+        "gate_enforced": true,
+        "accepted": false,
+        "selection_reason": [
+          "no_measured_validation_gain"
+        ],
+        "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "candidate_sha256": "c6e0d3f40f6c709ca8900e0c39858d9809ee0c9fb3239018ab97722a8c8a7f28",
+        "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "rollback_verified": true
+      },
+      "final_effect": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization"
+      },
+      "observed_gate_disagreement": "no_observed_gate_disagreement",
+      "validation_sha256": "b2986f00af15bf78e12e8b98ea9fc9cdacd72b67fe9ebe7a8d2047a242b113d2",
+      "sampling_refs": {
+        "parent": {
+          "path": "samples/s991_baseline_selected_round1_parent.json",
+          "sha256": "fd2853a1be9976e9df2261eecc229866b85af185f1e664a2a065d3ee876ceac3",
+          "request_sha256": "b403a0ab471d3f6472cd24f1882e741759cec9600e79edab17e48e099c873c80"
+        },
+        "candidate": {
+          "path": "samples/s991_baseline_selected_round1_candidate_validation.json",
+          "sha256": "28ac797c316e03c7c98c6a3f9de387d04edccc2ea2ac102d93555d06fb938bbc",
+          "request_sha256": "1c64eb2f103ae53de9cb98508af16896a10195ecc897da5aecec649bf124e84b"
+        }
+      }
+    },
+    {
+      "change_id": "s991_corrected_first_verified_round2",
+      "arm": "corrected_first_verified",
+      "seed": 991,
+      "round": 2,
+      "parent_checkpoint": "s991_initial",
+      "selected_checkpoint": "s991_initial",
+      "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "candidate_sha256": "a42775ce74acb7a069c19c38a41d4dd3a1a741ee3115fc2950de668c1f794c47",
+      "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "pool_sha256": "a07ca27f314da82e91567d4c6a111c1053f1ad134558936fa39609791f331d8f",
+      "rows_by_stratum": {
+        "anchor": 46,
+        "harvest": 13
+      },
+      "tasks_by_stratum": {
+        "anchor": 46,
+        "harvest": 13
+      },
+      "optimizer_steps": 1,
+      "training_cost": {
+        "generated_tokens": 0,
+        "prompt_tokens": 0,
+        "generation_seconds": 0.0,
+        "training_steps": 1,
+        "training_seconds": 0.14174000002094544,
+        "supervised_tokens": 93,
+        "oracle_string_executions": 944
+      },
+      "admission": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization",
+        "gate_enforced": true,
+        "accepted": false,
+        "selection_reason": [
+          "no_measured_validation_gain"
+        ],
+        "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "candidate_sha256": "a42775ce74acb7a069c19c38a41d4dd3a1a741ee3115fc2950de668c1f794c47",
+        "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "rollback_verified": true
+      },
+      "final_effect": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization"
+      },
+      "observed_gate_disagreement": "no_observed_gate_disagreement",
+      "validation_sha256": "e3a6765888d89361d2734958da1d0492f966b9a447d70a1b08d8a0073df15aab",
+      "sampling_refs": {
+        "parent": {
+          "path": "samples/s991_baseline_selected_round2_parent.json",
+          "sha256": "c41efd27787b292ee1d14eb87fbd4d7366576fae3ccfc4c0c563fea622da6f19",
+          "request_sha256": "9e8b1b5ecd1114a32274164c511adfa80e2b003038276142f0efea39ff403faf"
+        },
+        "candidate": {
+          "path": "samples/s991_corrected_first_verified_round2_candidate_validation.json",
+          "sha256": "dc49b33d080de0fb149fdb4a2e42ea64e8e7a75bb19962e2b745d7134b003dfe",
+          "request_sha256": "1b04f2c08c926da92c41087d0ae6f87d4aabce0493bee3ceb1f66692dc43f9fa"
+        }
+      }
+    },
+    {
+      "change_id": "s991_corrected_frontier_round1",
+      "arm": "corrected_frontier",
+      "seed": 991,
+      "round": 1,
+      "parent_checkpoint": "s991_initial",
+      "selected_checkpoint": "s991_initial",
+      "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "candidate_sha256": "739094e8b1dc8bca20ccd2e2c304edbeae43c1ae1bb7cbea0f93bd03af619d38",
+      "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "pool_sha256": "76cd5c95f246068bd0085474ed40b485ffe6d76c643ff9290602027f45a8d3d1",
+      "rows_by_stratum": {
+        "anchor": 46,
+        "harvest": 40
+      },
+      "tasks_by_stratum": {
+        "anchor": 46,
+        "harvest": 6
+      },
+      "optimizer_steps": 1,
+      "training_cost": {
+        "generated_tokens": 0,
+        "prompt_tokens": 0,
+        "generation_seconds": 0.0,
+        "training_steps": 1,
+        "training_seconds": 0.1436760999786202,
+        "supervised_tokens": 93,
+        "oracle_string_executions": 1376
+      },
+      "admission": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization",
+        "gate_enforced": true,
+        "accepted": false,
+        "selection_reason": [
+          "no_measured_validation_gain"
+        ],
+        "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "candidate_sha256": "739094e8b1dc8bca20ccd2e2c304edbeae43c1ae1bb7cbea0f93bd03af619d38",
+        "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "rollback_verified": true
+      },
+      "final_effect": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization"
+      },
+      "observed_gate_disagreement": "no_observed_gate_disagreement",
+      "validation_sha256": "7c719eb07898f247cbb1029032720aa60339b27b01c81e539c320a9858016dd0",
+      "sampling_refs": {
+        "parent": {
+          "path": "samples/s991_baseline_selected_round1_parent.json",
+          "sha256": "fd2853a1be9976e9df2261eecc229866b85af185f1e664a2a065d3ee876ceac3",
+          "request_sha256": "b403a0ab471d3f6472cd24f1882e741759cec9600e79edab17e48e099c873c80"
+        },
+        "candidate": {
+          "path": "samples/s991_corrected_frontier_round1_candidate_validation.json",
+          "sha256": "1ba4e3418354d262cd0c34c0666e76a9c94fe268b9c20edc27483de6058e1ad0",
+          "request_sha256": "08130cc2d38492efb9012b43bd6340a16d35ac3ebed4cf042ba52c02d6df01bd"
+        }
+      }
+    },
+    {
+      "change_id": "s991_corrected_frontier_round2",
+      "arm": "corrected_frontier",
+      "seed": 991,
+      "round": 2,
+      "parent_checkpoint": "s991_initial",
+      "selected_checkpoint": "s991_initial",
+      "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "candidate_sha256": "6f07685ed0f7b1e5585fac48de68636fa9e77596a767e508e1764b0d3217ee88",
+      "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+      "pool_sha256": "7c3634f23aad631e22ba5359b4489db6f67df225192a198a3e778c547f00c86d",
+      "rows_by_stratum": {
+        "anchor": 46,
+        "harvest": 101
+      },
+      "tasks_by_stratum": {
+        "anchor": 46,
+        "harvest": 13
+      },
+      "optimizer_steps": 1,
+      "training_cost": {
+        "generated_tokens": 0,
+        "prompt_tokens": 0,
+        "generation_seconds": 0.0,
+        "training_steps": 1,
+        "training_seconds": 0.16817329998593777,
+        "supervised_tokens": 100,
+        "oracle_string_executions": 2352
+      },
+      "admission": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization",
+        "gate_enforced": true,
+        "accepted": false,
+        "selection_reason": [
+          "no_measured_validation_gain"
+        ],
+        "parent_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "candidate_sha256": "6f07685ed0f7b1e5585fac48de68636fa9e77596a767e508e1764b0d3217ee88",
+        "selected_sha256": "93de61b10002a84d21e162be17ba358dffd00d7bc4c70e91aa52af2a0384e8d5",
+        "rollback_verified": true
+      },
+      "final_effect": {
+        "eligible": false,
+        "reasons": [
+          "no_measured_validation_gain"
+        ],
+        "gained_task_ids": [],
+        "lost_task_ids": [],
+        "pass_k": 64,
+        "pass_k_delta": 0.0,
+        "pass1_delta": 0.0,
+        "paired_task_bootstrap": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "paired task"
+        },
+        "interpretation": "Finite sampled validation gate, not proof of true coverage retention or generalization"
+      },
+      "observed_gate_disagreement": "no_observed_gate_disagreement",
+      "validation_sha256": "6d91c1e5846997b38582a338759fd6adfcbdb811dd06166ca077f6a9e4c06376",
+      "sampling_refs": {
+        "parent": {
+          "path": "samples/s991_baseline_selected_round2_parent.json",
+          "sha256": "c41efd27787b292ee1d14eb87fbd4d7366576fae3ccfc4c0c563fea622da6f19",
+          "request_sha256": "9e8b1b5ecd1114a32274164c511adfa80e2b003038276142f0efea39ff403faf"
+        },
+        "candidate": {
+          "path": "samples/s991_corrected_frontier_round2_candidate_validation.json",
+          "sha256": "54f21f3a3dcc801fef87a98eef85a8493f9478896da2d536c25e48e72e3a6edd",
+          "request_sha256": "b5a7da18a2b99504bd2bd79a3d8a4f7f4ddaecb2a41390b52bea6d2ea7f2ff4c"
+        }
+      }
+    }
+  ],
+  "observed_gate_disagreements": {
+    "no_observed_gate_disagreement": 8
+  }
+}

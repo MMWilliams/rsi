@@ -1,0 +1,13 @@
+# Seed integration v2: evaluate the policy that will actually execute
+
+Declared after the first confirmation exposed two gaps: evaluator gains were blocked by an extra deployment margin, and feedback arms bought unequal candidate-label counts.
+
+Keep the evaluator feature builders and fitting recipe fixed. Compare all five fixed acquisition tactics, the inherited controller, its scrambled control, and its online-updating variant. Cross each with two decision policies (argmax; margin 0.05 over the frozen-base candidate) and two update gates (strict accuracy/retention; non-regressing accuracy/retention with a Brier decrease of at least 0.001 allowed to break accuracy ties). Admission and deployment execute the identical decision policy. The driving evaluator is the source-selected structural/behavior ensemble; score individual components as diagnostics on the same pools.
+
+Every arm receives the identical bootstrap and exactly 48 new candidate oracle labels per round for four rounds (192 improvement labels). Tasks may be partially labeled at a budget boundary. Candidate order inside a selected task remains the original deterministic pool order; learners receive only purchased candidate labels. All arms generate/query the same public pool interface; report training, candidate generation, label counts and accepted edits. Cache keys must distinguish partial query views.
+
+New banks: bootstrap 207001 with six tasks; reservoir 207002 with 48 tasks; admission 207003 with 36 tasks; mixed final 207004 with 24 tasks; AST final 207005 with 12 tasks; changed-arithmetic final 207006 with 12 tasks. All have eight randomized public examples and sixteen oracle examples. Changed rules are (multiplier, addend, divisor, modulus, residue): (4,11,3,8,1), (8,5,7,6,2), (7,2,9,5,3), (2,7,5,9,5). No candidate-outcome filtering or resampling.
+
+Primary prospectively selected candidate: fixed novelty acquisition, argmax deployment, and Brier-tie retention gate. Compare it with the previous source-selected uncertainty tactic under strict retention and margin deployment, and uniform feedback under the identical new gate/policy. The prior source-trained controller remains a test arm; no superiority is assumed. Final outcomes cannot select or change the primary arm.
+
+Freeze all loop traces and final predictions before opening final labels. Primary outcomes are evaluator and executed-policy improvements from the same initial system, and gain relative to uniform under identical oracle-label allowance. Report panels separately, number of accepted useful updates, learning-curve utility, incorrect promotions, and frozen-component controls. Repeated useful updates and independent replication remain required before completing the seed-improver goal.

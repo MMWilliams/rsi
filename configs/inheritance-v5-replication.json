@@ -1,0 +1,18 @@
+{
+  "name": "inheritance-replication-v5",
+  "protocol": "EXPERIMENT-v5-inheritance-replication.md",
+  "bank_seed": 9162605,
+  "seeds": [101, 113, 127, 139, 151, 163],
+  "generations": 6,
+  "proposals_per_generation": 12,
+  "search_budget": 128,
+  "max_atoms": 4,
+  "visible_examples": 3,
+  "hidden_examples": 13,
+  "bank_counts": {"source_development": 576, "source_admission": 576, "transfer_development": 576, "transfer_admission": 576, "final": 256},
+  "transfer_proposals": 2,
+  "transfer_generations": 6,
+  "conditions": ["g0", "g3", "g6", "scrambled_g6", "random"],
+  "macro_source": "runs/pilot-20260916-v2-complete/common_macros.json",
+  "log_selection": true
+}

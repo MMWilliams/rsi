@@ -1,0 +1,15 @@
+[
+  "Concat(', ')",
+  "Concat(', ', ' ', '.', ' ')",
+  "Concat('-')",
+  "Concat('-', Sub(C4,M(UPPER,2,end)))",
+  "Concat('/', '/', ': ')",
+  "Concat('/', Sub(C-6,C-1))",
+  "Concat(': ')",
+  "Concat(Sub(C-7,M(UPPER,1,end)))",
+  "Concat(Sub(C0,C4))",
+  "Concat(Sub(C0,C5))",
+  "Concat(Sub(M(WORD,1,end),M(WORD,2,start)))",
+  "Concat(Sub(M(WORD,1,end),M(WORD,2,start)), ': ')",
+  "Concat(cap(Sub(C0,M(UPPER,1,end))), ', ', '.')"
+]
