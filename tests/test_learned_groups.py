@@ -40,6 +40,37 @@ def test_likelihood_selects_the_planted_count():
     assert adjusted_rand_score(truth, labels) == 1.
 
 
+def test_learned_agent_matches_its_semantics():
+    from rsi import coach_reference, learned_reference
+    from rsi.growth_coach import (CHAMPION, UNHEDGED, Prior, draw_worlds, observed_sets,
+                                  triples)
+    harness = Harness()
+    harness.set_tiebreak(611101 + 77)
+    rng = random.Random(9)
+    seen = [f for f in harness.by_family if f not in ('popcount', 'xormod')]
+    pool = triples(harness, seen, rng, 14, 130)
+    worlds = draw_worlds(harness, pool, 3, rng, 14, 130, 30)
+    reserved = {index for world in worlds for index in world['stream']}
+    training = draw_worlds(harness, pool, 200, rng, 14, 130, 0)
+    observed = observed_sets(harness, training, reserved, 64, rng)
+    prior = Prior(harness, observed)
+    labels, _groups = learn_groups(observed, len(harness.key_names), choices=range(3, 10),
+                                   select='likelihood')
+    agent = LearnedFamilySimulator(harness, labels, 2., .2)
+    keys_of_row = coach_reference.row_keys(harness)
+    solved = 0
+    for world in worlds:
+        views = agent.views(world['stream'], rng)
+        for coach, budget in ((UNHEDGED, 256), (CHAMPION, 1024)):
+            trace = []
+            agent.lifetime(coach, views, prior, budget, trace=trace)
+            expected = learned_reference.lifetime(harness, keys_of_row, views, prior, coach,
+                                                  budget, groups=(labels, 2., .2))
+            assert [(d['pick'], d['hit']) for d in trace] == expected
+            solved += sum(d['hit'] for d in trace)
+    assert solved > 0
+
+
 def test_unseen_atoms_form_one_extra_group():
     harness = Harness()
     keys = len(harness.key_names)
