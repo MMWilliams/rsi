@@ -1,5 +1,31 @@
 # RSI to-do
 
+## Programme, 2026-10-04: recursive growth through drawn levels
+
+Plan in `PROGRAMME-RECURSIVE-2026-10-04.md`. Levels L0 solver, L1 world model,
+L2 representation learner, L3 learner selector; every level earned, hedged,
+with a capacity default. Screens gate every phase.
+
+- [ ] **Phase 0.** Merge `worktree-learned-groups` into `master`. Correct rule 6
+      (results file, paper §6.4, rule list below). Re-run cold start with the
+      stream reservation fixed. Record CPU time, peak memory, failed runs.
+      Add forecast commitment to the confirmation runner template.
+- [ ] **Phase 1, C-growth-earned (next run).** Groups learned from atom sets the
+      agent earned at budget B, 400 vs 1,600 earned worlds; controls handed-set,
+      permuted, rank-r factorization, none. Report cells where earned groups
+      are worse than none. If it fails, denoising is the L2 target.
+- [ ] **Phase 2.** `make_environments` (θ: groups per world, family count, slip,
+      skew, hierarchy). Screen M1 (L2 default regret vs per-environment oracle
+      and rank-r default), M2 (selector from early statistics beats held-out
+      likelihood at small N). Only then R1 (child under transmitted selector,
+      every W and B) and R2 (compounding over environments).
+- [ ] **Phase 3.** Atom invention from the ord_expr grammar, charged in scans;
+      screen I1, then H1 (guided beats BFS at matched budget) and H2 (unfamiliar
+      family reachable). Separate environment variant.
+- [ ] **Phase 4.** All levels earned in one lifetime; factorial freezing each
+      level; productivity per total resource vector.
+- [ ] **Phase 5.** Second task form as a drawn variable, then a second domain.
+
 ## Status, 2026-09-21 (evening)
 
 **Growth is demonstrated, in a new environment, and its boundary is located.**
