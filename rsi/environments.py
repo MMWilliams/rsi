@@ -24,15 +24,26 @@ PER_WORLD = (2, 3, 4)
 SLIPS = (0., .15)
 
 
-def make_environment(harness, seed):
+def make_environment(harness, seed, theta=None):
+    """`theta` fixes the environment's parameters; otherwise they are drawn.
+    `skew` > 0 draws group sizes from a symmetric Dirichlet with that
+    concentration (smaller is more uneven); 0 makes them equal."""
     rng = random.Random(seed)
-    theta = {'groups': rng.choice(GROUP_COUNTS), 'per_world': rng.choice(PER_WORLD),
-             'slip': rng.choice(SLIPS)}
+    if theta is None:
+        theta = {'groups': rng.choice(GROUP_COUNTS), 'per_world': rng.choice(PER_WORLD),
+                 'slip': rng.choice(SLIPS), 'skew': 0.}
     keys = list(range(len(harness.key_names)))
     rng.shuffle(keys)
-    labels = np.empty(len(keys), dtype=np.int64)
-    for position, key in enumerate(keys):
-        labels[key] = position % theta['groups']
+    groups = theta['groups']
+    if theta.get('skew'):
+        shares = np.random.default_rng(seed).dirichlet([theta['skew']] * groups)
+        # every group keeps at least 14 atoms, so a world can always be drawn
+        sizes = 14 + np.floor(shares * (len(keys) - 14 * groups)).astype(int)
+        sizes[-1] = len(keys) - sizes[:-1].sum()
+    else:
+        sizes = np.full(groups, len(keys) // groups)
+        sizes[:len(keys) % groups] += 1
+    labels = np.repeat(np.arange(groups), sizes)[np.argsort(keys)]
     return {'seed': seed, 'theta': theta, 'labels': labels}
 
 
