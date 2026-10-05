@@ -78,9 +78,9 @@ def _earn(job):
     for budget in BUDGETS:
         trace = []
         simulator.lifetime(BLIND, views, None, budget, trace=trace)
-        keys = sorted({k for d in trace if d['pick'] >= 0
+        keys = sorted({int(k) for d in trace if d['pick'] >= 0
                        for k in simulator.row_keys[d['pick']]})
-        out.append((keys, sum(d['hit'] for d in trace)))
+        out.append((keys, int(sum(d['hit'] for d in trace))))
     return out
 
 
