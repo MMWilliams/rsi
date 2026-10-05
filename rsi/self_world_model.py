@@ -41,21 +41,37 @@ class SelfWorldModel:
         self.seen = seen                # atoms earned in at least one world
         self.groups = int(labels.max()) + 1
         self.triples = np.array(list(itertools.combinations(range(self.groups), per_world)))
+        self.weight = np.ones(len(labels))   # per-atom prevalence within its group
         self._membership()
 
     def _membership(self):
-        """q[T, k]: probability atom k is in a world that uses group set T."""
+        """q[T, k]: probability atom k is in a world that uses group set T;
+        within the union, proportional to the atom's prevalence weight."""
         g, labels = self.groups, self.labels
-        sizes = np.bincount(labels[labels >= 0], minlength=g)
+        grouped = labels >= 0
+        mass = np.bincount(labels[grouped], weights=self.weight[grouped], minlength=g)
         uses = np.zeros((len(self.triples), g), dtype=bool)
         uses[np.arange(len(self.triples))[:, None], self.triples] = True
-        union = (uses * sizes).sum(axis=1)
-        q_in = np.minimum(self.keys_per_world / np.maximum(union, 1), 1. - EPS)
+        union = (uses * mass).sum(axis=1)
         inside = np.zeros((len(self.triples), len(labels)), dtype=bool)
-        grouped = labels >= 0
         inside[:, grouped] = uses[:, labels[grouped]]
+        q_in = self.keys_per_world * self.weight[None, :] / np.maximum(union, EPS)[:, None]
         self.uses = uses
-        self.q = np.where(inside, q_in[:, None], self.q_out)
+        self.q = np.where(inside, np.minimum(q_in, 1. - EPS), self.q_out)
+
+    def sample_worlds(self, count, rng):
+        """Imagined worlds' atom sets: a group set uniformly, then atoms without
+        replacement in proportion to prevalence, as the model believes worlds
+        are made."""
+        out = []
+        grouped = np.flatnonzero(self.labels >= 0)
+        for _ in range(count):
+            triple = self.triples[rng.integers(len(self.triples))]
+            pool = grouped[np.isin(self.labels[grouped], triple)]
+            p = self.weight[pool] / self.weight[pool].sum()
+            size = min(self.keys_per_world, len(pool))
+            out.append(sorted(rng.choice(pool, size, replace=False, p=p).tolist()))
+        return out
 
     def _earn_probability(self):
         return np.clip(self.r * self.q + self.f * (1 - self.q), EPS, 1 - EPS)
@@ -93,15 +109,23 @@ def _matrix(sets, keys):
 
 
 def fit(earned_sets, keys, groups, per_world=3, keys_per_world=14, iterations=30, seed=0,
-        q_out=.01):
-    """Joint EM fit; returns the model and its training log likelihood trace."""
+        q_out=.01, fixed_r=None, init=None):
+    """Joint EM fit; returns the model and its training log likelihood trace.
+
+    `fixed_r` holds the discovery rates (from self-simulation) instead of
+    estimating them; only then is per-atom prevalence identifiable, so only
+    then is it fitted. `init` starts from another model's groups."""
     earned = _matrix(earned_sets, keys)
     seen_atoms, affinity = _affinity(earned_sets, keys)
-    labels = _cluster(seen_atoms, affinity, groups, keys, seed)
     seen = np.zeros(keys, dtype=bool)
     seen[seen_atoms] = True
+    if init is not None:
+        labels = np.where(seen, init.labels, -1)
+    else:
+        labels = _cluster(seen_atoms, affinity, groups, keys, seed)
     rate = earned.mean(axis=0)
-    model = SelfWorldModel(labels, np.clip(rate * 4, .05, .95), np.full(keys, .01),
+    r0 = fixed_r if fixed_r is not None else np.clip(rate * 4, .05, .95)
+    model = SelfWorldModel(labels, np.clip(r0, EPS, 1 - EPS), np.full(keys, .01),
                            per_world, keys_per_world, q_out, seen)
     trace = []
     for _ in range(iterations):
@@ -112,14 +136,28 @@ def fit(earned_sets, keys, groups, per_world=3, keys_per_world=14, iterations=30
         joint_in = np.where(earned > 0, r * q, (1 - r) * q)
         joint_out = np.where(earned > 0, f * (1 - q), (1 - f) * (1 - q))
         member = joint_in / np.maximum(joint_in + joint_out, EPS)
-        r = (member * earned).sum(0) / np.maximum(member.sum(0), EPS)
         f = ((1 - member) * earned).sum(0) / np.maximum((1 - member).sum(0), EPS)
-        model.r = np.clip(r, EPS, 1 - EPS)
         model.f = np.clip(f, EPS, .5)
+        use = post @ model.uses                          # P(world uses group g)
+        if fixed_r is None:
+            r = (member * earned).sum(0) / np.maximum(member.sum(0), EPS)
+            model.r = np.clip(r, EPS, 1 - EPS)
+        else:
+            # prevalence: expected membership per world exposed to the atom's group
+            grouped = model.labels >= 0
+            exposure = np.ones(keys)
+            exposure[grouped] = use[:, model.labels[grouped]].sum(0)
+            w = member.sum(0) / np.maximum(exposure, EPS)
+            for g in range(model.groups):
+                inside = model.labels == g
+                if inside.any() and w[inside].mean() > 0:
+                    w[inside] = w[inside] / w[inside].mean()
+            model.weight = np.clip(np.where(grouped, w, 1.), .05, 20.)
+            model._membership()
         # Reassign atoms: expected log likelihood of each atom's earned column
         # if it belonged to each group, holding the world posteriors fixed.
-        use = post @ model.uses                          # P(world uses group g)
         q_in = np.median(model.q[model.q > model.q_out]) if (model.q > model.q_out).any() else .1
+        q_in = np.minimum(q_in * model.weight, 1 - EPS)
         p_in = model.r * q_in + model.f * (1 - q_in)
         p_out = model.r * model.q_out + model.f * (1 - model.q_out)
         l1_in, l0_in = np.log(np.clip(p_in, EPS, 1)), np.log(np.clip(1 - p_in, EPS, 1))
