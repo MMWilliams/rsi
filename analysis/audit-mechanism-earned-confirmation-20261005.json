@@ -1,0 +1,141 @@
+{
+  "scope": "independent audit of mechanism-earned-confirmation-20261005.json",
+  "catalog_digest": "1d3c71aff89ba2b6fd72da3ea20591d74afc6aa26ef367c59bed6e57ee5424b8",
+  "replications": {
+    "A": {
+      "earning_picks_checked": 340,
+      "earning_lifetimes_replayed": 6,
+      "picks": 551591,
+      "interpreter_sample": 3000,
+      "interpreter_accepts_graded_misses": 15,
+      "lifetimes_replayed": 54,
+      "gates_recomputed": {
+        "improve": {
+          "seen_triple": {
+            "128": true,
+            "256": false,
+            "512": false,
+            "1024": true,
+            "2048": true,
+            "4096": false
+          },
+          "new_triple": {
+            "128": true,
+            "256": false,
+            "512": false,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          },
+          "new_family": {
+            "128": true,
+            "256": false,
+            "512": false,
+            "1024": false,
+            "2048": true,
+            "4096": false
+          }
+        },
+        "safe": {
+          "seen_triple": {
+            "128": true,
+            "256": true,
+            "512": true,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          },
+          "new_triple": {
+            "128": true,
+            "256": true,
+            "512": false,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          },
+          "new_family": {
+            "128": true,
+            "256": true,
+            "512": false,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          }
+        },
+        "growth_passed": true,
+        "structure_passed": true,
+        "safe_passed": false,
+        "earned_passed": false
+      }
+    },
+    "B": {
+      "earning_picks_checked": 240,
+      "earning_lifetimes_replayed": 6,
+      "picks": 564004,
+      "interpreter_sample": 3000,
+      "interpreter_accepts_graded_misses": 16,
+      "lifetimes_replayed": 54,
+      "gates_recomputed": {
+        "improve": {
+          "seen_triple": {
+            "128": true,
+            "256": false,
+            "512": false,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          },
+          "new_triple": {
+            "128": true,
+            "256": false,
+            "512": false,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          },
+          "new_family": {
+            "128": false,
+            "256": false,
+            "512": false,
+            "1024": false,
+            "2048": false,
+            "4096": false
+          }
+        },
+        "safe": {
+          "seen_triple": {
+            "128": true,
+            "256": true,
+            "512": true,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          },
+          "new_triple": {
+            "128": true,
+            "256": false,
+            "512": false,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          },
+          "new_family": {
+            "128": true,
+            "256": true,
+            "512": true,
+            "1024": true,
+            "2048": true,
+            "4096": true
+          }
+        },
+        "growth_passed": true,
+        "structure_passed": true,
+        "safe_passed": false,
+        "earned_passed": false
+      }
+    }
+  },
+  "failures": [],
+  "passed": true,
+  "wall_seconds": 1161.2930626999587
+}
