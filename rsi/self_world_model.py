@@ -44,6 +44,7 @@ class SelfWorldModel:
         self.groups = int(labels.max()) + 1
         self.triples = np.array(list(itertools.combinations(range(self.groups), per_world)))
         self.weight = np.ones(len(labels))   # per-atom prevalence within its group
+        self.pi = np.full(len(self.triples), 1. / len(self.triples))  # how often each group set occurs
         self._membership()
 
     def _membership(self):
@@ -68,7 +69,7 @@ class SelfWorldModel:
         out = []
         grouped = np.flatnonzero(self.labels >= 0)
         while len(out) < count:
-            triple = self.triples[rng.integers(len(self.triples))]
+            triple = self.triples[rng.choice(len(self.triples), p=self.pi)]
             pool = grouped[np.isin(self.labels[grouped], triple)]
             p = self.weight[pool] / self.weight[pool].sum()
             size = min(self.keys_per_world, len(pool))
@@ -86,11 +87,11 @@ class SelfWorldModel:
         each world, from a binary worlds-by-atoms matrix of earned sets."""
         p = self._earn_probability()[:, self.seen]
         e = earned[:, self.seen]
-        loglik = e @ np.log(p).T + (1 - e) @ np.log(1 - p).T
+        loglik = e @ np.log(p).T + (1 - e) @ np.log(1 - p).T + np.log(self.pi)[None, :]
         top = loglik.max(axis=1, keepdims=True)
         weights = np.exp(loglik - top)
         total = weights.sum(axis=1, keepdims=True)
-        return weights / total, (top + np.log(total / len(self.triples))).ravel()
+        return weights / total, (top + np.log(total)).ravel()
 
     def membership(self, earned):
         """P(atom k is in world w | its earned set): the world model's belief
@@ -136,6 +137,8 @@ def fit(earned_sets, keys, groups, per_world=3, keys_per_world=14, iterations=30
     for _ in range(iterations):
         post, ll = model.world_posterior(earned)
         trace.append(float(ll.sum()))
+        # which group sets occur, and how often: mixture weights, lightly smoothed
+        model.pi = (post.sum(axis=0) + 1.) / (len(post) + len(model.pi))
         q = post @ model.q
         r, f = model.r, model.f
         joint_in = np.where(earned > 0, r * q, (1 - r) * q)
