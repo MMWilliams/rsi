@@ -23,12 +23,14 @@ probable. Initialised from spectral clustering on positive PMI.
 from __future__ import annotations
 
 import itertools
+from types import SimpleNamespace
 
 import numpy as np
 
 from .learned_groups import _affinity, _cluster
 
 EPS = 1e-6
+R_MIN = .10
 
 
 class SelfWorldModel:
@@ -65,12 +67,15 @@ class SelfWorldModel:
         are made."""
         out = []
         grouped = np.flatnonzero(self.labels >= 0)
-        for _ in range(count):
+        while len(out) < count:
             triple = self.triples[rng.integers(len(self.triples))]
             pool = grouped[np.isin(self.labels[grouped], triple)]
             p = self.weight[pool] / self.weight[pool].sum()
             size = min(self.keys_per_world, len(pool))
-            out.append(sorted(rng.choice(pool, size, replace=False, p=p).tolist()))
+            keys = rng.choice(pool, size, replace=False, p=p)
+            # a world uses every group it picked
+            if set(self.labels[keys].tolist()) == set(triple.tolist()):
+                out.append(sorted(keys.tolist()))
         return out
 
     def _earn_probability(self):
@@ -156,16 +161,28 @@ def fit(earned_sets, keys, groups, per_world=3, keys_per_world=14, iterations=30
             model._membership()
         # Reassign atoms: expected log likelihood of each atom's earned column
         # if it belonged to each group, holding the world posteriors fixed.
-        q_in = np.median(model.q[model.q > model.q_out]) if (model.q > model.q_out).any() else .1
-        q_in = np.minimum(q_in * model.weight, 1 - EPS)
-        p_in = model.r * q_in + model.f * (1 - q_in)
-        p_out = model.r * model.q_out + model.f * (1 - model.q_out)
-        l1_in, l0_in = np.log(np.clip(p_in, EPS, 1)), np.log(np.clip(1 - p_in, EPS, 1))
-        l1_out, l0_out = np.log(np.clip(p_out, EPS, 1)), np.log(np.clip(1 - p_out, EPS, 1))
-        a_in = use.T @ earned * l1_in + use.T @ (1 - earned) * l0_in        # [G, K]
-        a_out = (1 - use).T @ earned * l1_out + (1 - use).T @ (1 - earned) * l0_out
-        score = a_in + a_out
-        new = np.where(seen, score.argmax(axis=0), -1)
+        # Membership in world w for an atom of group g is the posterior
+        # expectation over w's group sets of keys_per_world / union size.
+        mass = np.bincount(model.labels[model.labels >= 0],
+                           weights=model.weight[model.labels >= 0], minlength=model.groups)
+        union = (model.uses * mass).sum(axis=1)
+        share = model.keys_per_world / np.maximum(union, EPS)            # per group set
+        inside = post @ (model.uses * share[:, None])                    # [W, G]
+        score = np.empty((model.groups, keys))
+        for g in range(model.groups):
+            q = np.minimum(inside[:, [g]] * model.weight[None, :], 1 - EPS) \
+                + (1 - use[:, [g]]) * model.q_out
+            p = np.clip(model.r * q + model.f * (1 - q), EPS, 1 - EPS)
+            score[g] = (earned * np.log(p) + (1 - earned) * np.log(1 - p)).sum(axis=0)
+        # An atom may belong to no world at all and be earned only through
+        # the agent's own wrong picks: then every earn is an import.
+        f_alone = np.clip(earned.mean(axis=0), EPS, 1 - EPS)
+        none = (earned * np.log(f_alone) + (1 - earned) * np.log(1 - f_alone)).sum(axis=0)
+        new = np.where(seen & (score.max(axis=0) > none), score.argmax(axis=0), -1)
+        # The self model's verdict binds the world model: an atom the agent
+        # would almost never find if it were in a world is not in any world;
+        # it is seen only through imports.
+        new[model.r < R_MIN] = -1
         changed = int((new != model.labels).sum())
         if changed:
             # keep every group non-empty so the triple space is stable
@@ -175,7 +192,26 @@ def fit(earned_sets, keys, groups, per_world=3, keys_per_world=14, iterations=30
                 model._membership()
         if not changed and len(trace) > 2 and abs(trace[-1] - trace[-2]) < 1e-3 * abs(trace[-1]):
             break
+    trace.append(model.log_likelihood(earned))
     return model, trace
+
+
+def fit_restarts(earned_sets, keys, groups, restarts=8, shake=.3, **kwargs):
+    """Best of several EM runs by training likelihood: the spectral start, then
+    starts with a share of atoms moved to random groups."""
+    best = None
+    for start in range(restarts):
+        init = None
+        if start:
+            rng = np.random.default_rng(start)
+            labels = best[0].labels.copy()
+            move = (labels >= 0) & (rng.random(len(labels)) < shake)
+            labels[move] = rng.integers(groups, size=move.sum())
+            init = SimpleNamespace(labels=labels)
+        model, trace = fit(earned_sets, keys, groups, init=init, seed=start, **kwargs)
+        if best is None or trace[-1] > best[1][-1]:
+            best = (model, trace)
+    return best
 
 
 def select(earned_sets, keys, choices=range(3, 13), per_world=3, **kwargs):
