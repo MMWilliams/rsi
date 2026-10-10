@@ -128,8 +128,7 @@ with a capacity default. Screens gate every phase.
       (2) The benchmark's family mix is not the agent's: training worlds use
       80% of the viable triples (at 644101 four of the six untrained ones
       contain mod), so mod is in 47% of benchmark worlds and 35% of training
-      worlds, and the 7-group model matches TRAINING (.36). The "family mix"
-      gap was the benchmark. New benchmark from the training triple pool
+      worlds. New benchmark from the training triple pool
       (`mechanism_world_benchmark_trained.py`); completeness now per family
       against the per-family split-half ceiling plus atoms/family/world
       (`mechanism_world_completeness.py` -> ...-20261010.json). Untrained
@@ -149,6 +148,31 @@ with a capacity default. Screens gate every phase.
       644101 (6: -11679, 7: -11540, 8: -11675), ARI .90.
       Machine: 12 workers died of commit exhaustion (other jobs hold ~80 GB);
       RSI_WORKERS env var caps the pool, 8 used.
+      RESULTS (`mechanism-world-completeness-20261010.json`, confident picks,
+      imagined vs benchmark half 0, ceiling = half 1 vs half 0, same atoms):
+      within-family fidelity is AT THE CEILING everywhere it is measurable:
+      bit .85/.91/.77 vs .90/.97/.99; divmod .57/.59/.79 vs .49/.55/.71;
+      parity .79/.92/.75 vs .87/.91/.68; threshold .88/.87/.48 vs .98/.89/.60;
+      mod .19/.14/.24 vs .24/.19/.30 (seeds 643/644/645101). Atom-level MAE
+      .080/.092/.072 vs ceiling .074/.068/.063: self-simulation predicts each
+      atom's discovery rate about as well as a second benchmark run does.
+      Pooled Pearson .30/.17/.39 vs .77/.79/.78 is the family MIX, not the
+      atoms: imagined worlds carry 6.1/5.3/6.5 mod atoms vs 3.9/3.2/4.3 real,
+      and fewer of every small family. Cause (`mechanism_world_imagine_diag.py`):
+      pi puts mod in 64% of imagined worlds vs 35% real, because rotmod worlds
+      (36% of all) have no group set of their own and EM files most of them
+      under mod triples (rotmod atoms sit in mod). Earlier reads of "imagined
+      mod presence .36" came from `sample_worlds` redrawing the GROUP SET when
+      a small group went unused, which under-sampled sets with small groups;
+      fixed (atoms redrawn, set kept), and `imagine` was already exact. The one
+      remaining world-model error is therefore rotmod's missing group, whose
+      cause is the free per-atom import rate (above). Group count by held-out
+      likelihood: 6/7/7; ARI .93/.90/.62 (645101 is a poor local optimum).
+      A few real but rarely found atoms (r<.10: ~5 divmod, ~20 mod) are filed
+      as import-only and never imagined; they are outside these numbers.
+      Next: tie f for grouped atoms to the import-only rate; refit; rotmod
+      should separate and the mod excess should close. Then fidelity per family
+      is complete and L1 can be used by the agent (predict its own discovery).
 - [ ] Remaining routes, none cheap: (a) a different quality signal (held-out
       likelihood gain over no grouping), screened the same way; (b) Phase 2
       proper, trust learned across drawn environments rather than from one

@@ -74,10 +74,13 @@ class SelfWorldModel:
             pool = grouped[np.isin(self.labels[grouped], triple)]
             p = self.weight[pool] / self.weight[pool].sum()
             size = min(self.keys_per_world, len(pool))
-            keys = rng.choice(pool, size, replace=False, p=p)
-            # a world uses every group it picked
-            if set(self.labels[keys].tolist()) == set(triple.tolist()):
-                out.append(sorted(keys.tolist()))
+            # a world uses every group it picked; redraw the atoms, not the
+            # group set, or sets with a small group are under-sampled
+            while True:
+                keys = rng.choice(pool, size, replace=False, p=p)
+                if set(self.labels[keys].tolist()) == set(triple.tolist()):
+                    break
+            out.append(sorted(keys.tolist()))
         return out
 
     def _earn_probability(self):
