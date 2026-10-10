@@ -14,6 +14,146 @@ with a capacity default. Screens gate every phase.
       agent earned at budget B, 400 vs 1,600 earned worlds; controls handed-set,
       permuted, rank-r factorization, none. Report cells where earned groups
       are worse than none. If it fails, denoising is the L2 target.
+      Dev probe done 2026-10-04 (seed 641101, worktree earned-groups,
+      `analysis/mechanism-earned-groups-probe-20261004.json`): earned-at-B is
+      worse than champion at 128/256 (-160 to -201), neutral 512/1024, +99 to
+      +224 at 2048/4096; groups earned at 4096 and deployed everywhere beat
+      champion nearly every cell and sit close to handed. Pooled 1600 vs 400
+      earned +374 [97, 648].
+      Rehearsal 2026-10-05 (`mechanism_earned_confirmation.py --dev 643101`,
+      128 worlds/split) contradicts it: earn-at-4096 loses at 256-512, growth
+      1600 vs 400 = -1103. Denoising by pick recurrence (m=2,3; precision .86/.94)
+      does not fix it. Cause is discovery bias: blind earning recovers mod
+      atoms .74-.84 vs rotmod/gcd .23-.31, ARI vs families .17-.55 (handed .87),
+      and more worlds learn the bias harder. Testing the recursive fix:
+      `mechanism_earned_generations_probe.py`, each generation earns with the
+      previous generation's groups. Read 2026-10-05: earning improves
+      (solved/world 27 -> 36, bit/divmod/parity recall up) but groups do not
+      (ARI .40/.53/.36/.40 by generation; rotmod/gcd recall stays .18-.37) and
+      held-out acquisition does not (pooled vs champion +720, +295, +404, -58;
+      blind control noise of the same size). Bootstrapping moves the bias, it
+      does not remove it. Open: bias-corrected co-occurrence (weight by each
+      atom's label-free discoverability) or accept that hard families need
+      Phase 3 invention.
+      Fix found: leave atoms earned in <50 worlds ungrouped (m=3); frozen c7898b0.
+      **C-earned FAILED 2026-10-05** (seeds 991101/992101, audited, 666ad19,
+      `EARNED-GROUPS-RESULTS-2026-10-05.md`): growth +3639/+3275 and structure
+      +5513/+5498 pass both reps; safety fails both (256-512 losses up to -350).
+      Recovers ~25% of the handed gain. No rerun on these arms.
+- [ ] Trust screen (dev 643101/644101): group weight 0.5 (was 2) with hedge .5
+      from 256 is safe on both, pooled +2004/+1859; hedge .75 is far worse.
+      Rehearsal on fresh 645101 (`mechanism_earned_confirmation2.py`, audited):
+      growth +3439, structure +2156, monotone in worlds (mid +1096), 69% of
+      handed gain, but ONE cell unsafe: seen_triple 512 -67 [-143, -2]. Handed
+      itself has ~0 headroom at 512 (+20, -9, -6). Decision pending with reese:
+      a strict-zero safety gate at a zero-headroom cell is a coin flip; a
+      non-inferiority margin must be justified before seeing more results, not
+      fitted to -67. Seeds 1001101/1002101 unopened.
+      512 probe (dev x3, `mechanism_budget512_probe.py`): the champion needs
+      its half hedge at 512 (unhedged -374 to -659). True-set groups beat it
+      only UNHEDGED (+301 to +585); hedged they're ~0. Earned groups are ~0 at
+      every hedge (h.5: -13, +44, -49). So 512 is not a family-agent blind
+      spot: the right hedge depends on representation quality, and the earned
+      grouping has no edge there to protect. Next L2 target: set trust/hedge
+      from the grouping's own label-free quality (held-out likelihood,
+      resample stability), i.e. the agent learns how far to trust what it
+      learned. That is the Phase 2 selector, one level down.
+      Screened 2026-10-05 (`mechanism_trust_quality_screen.py`): FAILED.
+      Split-half stability does not rank the full-trust gain (Spearman .07,
+      .32, .00 on 643/644/645101). The gain is dominated by seed (earned c50 w2
+      full trust: +942, -373, +650) and interacts with weight (full trust
+      helps at w2, hurts at w0.5). No trust machinery to build on this signal.
+- [ ] Phase 2 started 2026-10-05: `rsi/environments.py` (random atom
+      partition into F groups, g per world, slip). Screen M1
+      (`mechanism_env_m1_screen.py`, 12 envs, handed sets, 6 L2 configs)
+      FAILED: fixed p3w2 gets +2288 vs oracle +2545, regret 10% (<25% bar),
+      and per-env oracle at 32 worlds is partly noise. Also: the seed drew
+      per_world=4 in 8/12 envs; at g=4 the learner finds only 3-5 groups and
+      gains are small. Per programme: widen the meta-distribution (group-size
+      skew, two-level hierarchy, balanced theta draw) before building R1.
+      M1b (balanced 12-cell theta grid incl. Dirichlet .5 skew, 48 worlds,
+      cross-fitted oracle) FAILED decisively: fixed p3w2 +6669 vs oracle
+      +6685, regret 0.2%. Level-2 selection over this class is free. What
+      varies by environment is how much any config can gain: with 6 large
+      groups and >=3 per world the clustering finds 3-5 groups and gains
+      ~+100; small groups give +500 to +1250. The limit is the representation
+      learner's capacity, not its configuration. Per programme: R1 not built;
+      next is a richer L2 class (e.g. overlapping/soft groups, factorization)
+      screened for headroom, or Phase 3.
+      Headroom screen (`mechanism_env_headroom_screen.py`): an agent given the
+      TRUE partition gains +7411 vs learned +6669, so any richer L2 class can
+      add at most ~10%, all in large-group envs (6 groups, >=3/world: +60 ->
+      +313, +65 -> +166; 12 groups/4 per world +243 -> +358). Small-group envs
+      are already at the true-partition ceiling. Low-value line; Phase 3
+      (reach, not representation) is where headroom is.
+- [ ] World + self model (2026-10-05, c5e1604, `rsi/self_world_model.py`):
+      joint EM over earned sets. Groups ARI .76-.80 on ~258 atoms; atom
+      membership AUC .80-.86 (beats earned-only and pair prior) but top-14
+      recall below pair prior (no per-atom prevalence). Self model r Pearson
+      .54-.71 raw, collapses on m=3 sets: r and prevalence aren't identifiable
+      from earned sets. Scope decided 2026-10-05: NARROW (predicate induction).
+      Self-simulation (`mechanism_self_simulation*.py`): with the TRUE world
+      distribution, simulated discovery rates match real ones at Pearson .91,
+      MAE .07 (truth's own split-half .89). Inside the fitted world model:
+      .14-.40, so the world model is the bottleneck. Found: removing held-out
+      test mechanisms from training streams shifts per-atom discovery rates
+      (oracle without removal: Pearson .50 vs real training rates), so
+      training-world earning statistics are not test conditions; score the
+      self model against test-condition rates. Next: make the world model
+      accurate enough that imagined worlds match real ones.
+      World model pass 2026-10-05: benchmark = agent's discovery in TRUE
+      generator, test conditions (`mechanism_world_benchmark.py`, ceiling
+      Pearson .87-.90). Self-assessment: picks with 1 consistent hypothesis
+      found are 90% correct vs 26% at >16 (`mechanism_pick_confidence.py`).
+      Fit on confident picks + restarts + exact reassignment + family
+      presence + self-model binding (atoms with r<.10 = import-only; real
+      atoms r .37-1.0, import-only .01-.09): groups ARI .85-.90 (handed .87),
+      popcount/xormod correctly excluded. BUT discovery fidelity of
+      self-simulation in the fitted model only .13-.34 (v1 without binding
+      was .58-.83 on fewer atoms). Diagnosed (`mechanism_world_fidelity_diag.py`,
+      644101): family-level imagined discovery matches truth (.84-.98 vs
+      .80-.98); overall Pearson is dominated by within-family atom variation,
+      which for mod/rotmod/gcd is mostly noise (benchmark split-half .35/.20/0).
+      Added learned group-set frequencies (pi): mod presence/world 2.4 -> 3.4
+      (true 4.4), within-mod .10 -> .28 (ceiling .35). Remaining real gaps:
+      divmod within-family .53 vs ceiling .97; rotmod merged into mod
+      (imagined r .91 vs true .37); family presence still off (bit 2.2 vs
+      1.4, divmod 4.0 vs 2.9, mod 3.4 vs 4.4). Fidelity metric should be
+      reported per family against per-family ceilings.
+      2026-10-10 (73cf897), three causes found, one fixed, one re-scored:
+      (1) The imagined-world filter redrew the GROUP SET after a rejection,
+      shifting mod presence .53 -> .41; the true generator keeps the triple
+      and redraws atoms (presence unchanged, mod atoms/world 4.97 -> 4.42).
+      Matched in `imagine` (`mechanism_world_filter_diag.py`).
+      (2) The benchmark's family mix is not the agent's: training worlds use
+      80% of the viable triples (at 644101 four of the six untrained ones
+      contain mod), so mod is in 47% of benchmark worlds and 35% of training
+      worlds, and the 7-group model matches TRAINING (.36). The "family mix"
+      gap was the benchmark. New benchmark from the training triple pool
+      (`mechanism_world_benchmark_trained.py`); completeness now per family
+      against the per-family split-half ceiling plus atoms/family/world
+      (`mechanism_world_completeness.py` -> ...-20261010.json). Untrained
+      combinations are a separate generalisation question, not completeness.
+      (3) rotmod never gets a group at 6-9 groups (`mechanism_world_groups_diag.py`):
+      merged into mod, every rotmod triple gets pi 0, posterior triple
+      accuracy .50 with every confusion a rotmod world
+      (`mechanism_world_pi_diag.py`). A restart that frees the smallest group
+      for the worst-explained atoms (`_misfit_init`) raises held-out
+      likelihood (7 groups -11595 -> -11540) but frees it for 2 mod atoms,
+      not rotmod. Open: margin per earn rather than per atom, or a split move
+      sized to a small family. Group count by held-out likelihood picks 7 at
+      644101 (6: -11679, 7: -11540, 8: -11675), ARI .90.
+      Machine: 12 workers died of commit exhaustion (other jobs hold ~80 GB);
+      RSI_WORKERS env var caps the pool, 8 used.
+- [ ] Remaining routes, none cheap: (a) a different quality signal (held-out
+      likelihood gain over no grouping), screened the same way; (b) Phase 2
+      proper, trust learned across drawn environments rather than from one
+      grouping; (c) Phase 3 atom invention for the hard families that earning
+      can't see.
+- [ ] Next L2 target from that failure, screen first: soft confidence-weighted
+      membership, hedge share from the grouping's held-out likelihood, or the
+      evidence bar learned across environments (Phase 2 selector).
+- [ ] Merge `worktree-earned-groups` into master (c7898b0, 666ad19).
 - [ ] **Phase 2.** `make_environments` (θ: groups per world, family count, slip,
       skew, hierarchy). Screen M1 (L2 default regret vs per-environment oracle
       and rank-r default), M2 (selector from early statistics beats held-out
