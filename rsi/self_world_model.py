@@ -62,14 +62,15 @@ class SelfWorldModel:
         self.uses = uses
         self.q = np.where(inside, np.minimum(q_in, 1. - EPS), self.q_out)
 
-    def sample_worlds(self, count, rng):
-        """Imagined worlds' atom sets: a group set uniformly, then atoms without
-        replacement in proportion to prevalence, as the model believes worlds
-        are made."""
+    def sample_worlds(self, count, rng, triple_index=None):
+        """Imagined worlds' atom sets: a group set by its learned frequency (or
+        the one given), then atoms without replacement in proportion to
+        prevalence, as the model believes worlds are made."""
         out = []
         grouped = np.flatnonzero(self.labels >= 0)
         while len(out) < count:
-            triple = self.triples[rng.choice(len(self.triples), p=self.pi)]
+            index = rng.choice(len(self.triples), p=self.pi) if triple_index is None else triple_index
+            triple = self.triples[index]
             pool = grouped[np.isin(self.labels[grouped], triple)]
             p = self.weight[pool] / self.weight[pool].sum()
             size = min(self.keys_per_world, len(pool))
@@ -162,25 +163,7 @@ def fit(earned_sets, keys, groups, per_world=3, keys_per_world=14, iterations=30
                     w[inside] = w[inside] / w[inside].mean()
             model.weight = np.clip(np.where(grouped, w, 1.), .05, 20.)
             model._membership()
-        # Reassign atoms: expected log likelihood of each atom's earned column
-        # if it belonged to each group, holding the world posteriors fixed.
-        # Membership in world w for an atom of group g is the posterior
-        # expectation over w's group sets of keys_per_world / union size.
-        mass = np.bincount(model.labels[model.labels >= 0],
-                           weights=model.weight[model.labels >= 0], minlength=model.groups)
-        union = (model.uses * mass).sum(axis=1)
-        share = model.keys_per_world / np.maximum(union, EPS)            # per group set
-        inside = post @ (model.uses * share[:, None])                    # [W, G]
-        score = np.empty((model.groups, keys))
-        for g in range(model.groups):
-            q = np.minimum(inside[:, [g]] * model.weight[None, :], 1 - EPS) \
-                + (1 - use[:, [g]]) * model.q_out
-            p = np.clip(model.r * q + model.f * (1 - q), EPS, 1 - EPS)
-            score[g] = (earned * np.log(p) + (1 - earned) * np.log(1 - p)).sum(axis=0)
-        # An atom may belong to no world at all and be earned only through
-        # the agent's own wrong picks: then every earn is an import.
-        f_alone = np.clip(earned.mean(axis=0), EPS, 1 - EPS)
-        none = (earned * np.log(f_alone) + (1 - earned) * np.log(1 - f_alone)).sum(axis=0)
+        score, none = _atom_scores(model, earned, post)
         new = np.where(seen & (score.max(axis=0) > none), score.argmax(axis=0), -1)
         # The self model's verdict binds the world model: an atom the agent
         # would almost never find if it were in a world is not in any world;
@@ -199,13 +182,60 @@ def fit(earned_sets, keys, groups, per_world=3, keys_per_world=14, iterations=30
     return model, trace
 
 
+def _atom_scores(model, earned, post):
+    """Expected log likelihood of each atom's earned column if it belonged to
+    each group, holding the world posteriors fixed, and if it belonged to no
+    world at all (earned only through the agent's own wrong picks, so every
+    earn is an import). Membership in world w for an atom of group g is the
+    posterior expectation over w's group sets of keys_per_world / union size."""
+    keys = len(model.labels)
+    use = post @ model.uses                                              # P(world uses g)
+    mass = np.bincount(model.labels[model.labels >= 0],
+                       weights=model.weight[model.labels >= 0], minlength=model.groups)
+    union = (model.uses * mass).sum(axis=1)
+    share = model.keys_per_world / np.maximum(union, EPS)                # per group set
+    inside = post @ (model.uses * share[:, None])                        # [W, G]
+    score = np.empty((model.groups, keys))
+    for g in range(model.groups):
+        q = np.minimum(inside[:, [g]] * model.weight[None, :], 1 - EPS) \
+            + (1 - use[:, [g]]) * model.q_out
+        p = np.clip(model.r * q + model.f * (1 - q), EPS, 1 - EPS)
+        score[g] = (earned * np.log(p) + (1 - earned) * np.log(1 - p)).sum(axis=0)
+    f_alone = np.clip(earned.mean(axis=0), EPS, 1 - EPS)
+    none = (earned * np.log(f_alone) + (1 - earned) * np.log(1 - f_alone)).sum(axis=0)
+    return score, none
+
+
+def _misfit_init(model, earned, share=.05):
+    """Free the smallest group for the atoms the model explains worst. A family
+    the spectral start never isolated (rotmod: 8 atoms, found a third of the
+    time) shows up as atoms that fit no group much better than no world;
+    reassignment alone cannot create a group for them."""
+    post, _ = model.world_posterior(earned)
+    score, none = _atom_scores(model, earned, post)
+    labels = model.labels.copy()
+    grouped = np.flatnonzero(labels >= 0)
+    smallest = int(np.bincount(labels[grouped], minlength=model.groups).argmin())
+    moved = grouped[labels[grouped] == smallest]
+    second = score.copy()
+    second[smallest] = -np.inf
+    labels[moved] = second[:, moved].argmax(axis=0)
+    margin = score.max(axis=0) - none
+    worst = grouped[np.argsort(margin[grouped])[:max(6, int(share * len(grouped)))]]
+    labels[worst] = smallest
+    return SimpleNamespace(labels=labels)
+
+
 def fit_restarts(earned_sets, keys, groups, restarts=8, shake=.3, **kwargs):
-    """Best of several EM runs by training likelihood: the spectral start, then
-    starts with a share of atoms moved to random groups."""
+    """Best of several EM runs by training likelihood: the spectral start,
+    starts with a share of atoms moved to random groups, then a start that
+    frees the smallest group for the atoms the best fit explains worst."""
     best = None
-    for start in range(restarts):
+    for start in range(restarts + 1):
         init = None
-        if start:
+        if start == restarts:
+            init = _misfit_init(best[0], _matrix(earned_sets, keys))
+        elif start:
             rng = np.random.default_rng(start)
             labels = best[0].labels.copy()
             move = (labels >= 0) & (rng.random(len(labels)) < shake)

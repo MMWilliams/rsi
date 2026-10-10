@@ -42,19 +42,25 @@ OUT = ROOT / 'analysis/mechanism-self-simulation-20261005.json'
 _STATE = {}
 
 
-def imagine(harness, model, seed, rng):
-    """Imagined worlds' streams, from the world model's own generative story."""
+def imagine(harness, model, seed, rng, attempts=40):
+    """Imagined worlds' streams, from the world model's own generative story,
+    filtered as the true generator filters: a world must admit at least
+    MINIMUM_MEMBERS rules, and a rejection redraws the atoms of the same group
+    set rather than the group set, so the filter changes which atoms a group
+    set yields and not how often each group set occurs."""
     worlds, streams = [], []
     while len(worlds) < IMAGINED:
-        for keys in model.sample_worlds(IMAGINED - len(worlds), rng):
+        index = rng.choice(len(model.triples), p=model.pi)
+        for _ in range(attempts):
+            keys = model.sample_worlds(1, rng, triple_index=index)[0]
             names = sorted(harness.key_names[k] for k in keys)
             members = world_members(harness.catalog, harness.by_key, names)
-            if len(members) < conf.MINIMUM_MEMBERS:
-                continue
-            members = list(members)
-            rng.shuffle(members)
-            worlds.append(keys)
-            streams.append(members[:conf.EARN_STREAM])
+            if len(members) >= conf.MINIMUM_MEMBERS:
+                members = list(members)
+                rng.shuffle(members)
+                worlds.append(keys)
+                streams.append(members[:conf.EARN_STREAM])
+                break
     return worlds, streams
 
 
