@@ -21,7 +21,7 @@ def main():
     fams = sorted(h.by_family); fam = np.array([fams.index(k.split(':')[0]) for k in h.key_names])
     sets = [sorted({int(k) for p, _h, n, _s in w if p >= 0 and n <= 1 for k in s.row_keys[p]}) for w in load(SEED)]
     held = _matrix(sets[TRAIN:], K)
-    for g in (6, 7, 8, 9):
+    for g in [int(a) for a in sys.argv[1:]] or (6, 7, 8, 9):
         m, trace = fit_restarts(sets[:TRAIN], K, g, restarts=4)
         grouped = m.labels >= 0
         print(f'groups {g}: held-out ll {m.log_likelihood(held):.0f}  train ll {trace[-1]:.0f}  '

@@ -140,8 +140,12 @@ with a capacity default. Screens gate every phase.
       (`mechanism_world_pi_diag.py`). A restart that frees the smallest group
       for the worst-explained atoms (`_misfit_init`) raises held-out
       likelihood (7 groups -11595 -> -11540) but frees it for 2 mod atoms,
-      not rotmod. Open: margin per earn rather than per atom, or a split move
-      sized to a small family. Group count by held-out likelihood picks 7 at
+      not rotmod: rotmod atoms rank 28-132 of 232 by that margin (per earn
+      46-154; `mechanism_world_misfit_diag.py`) because each atom's free import
+      rate f absorbs its earns outside its group's worlds, so a rotmod atom
+      filed under mod is explained as well as a mod atom. Isolating a small
+      family needs f tied to the import-only atoms' rates (.01-.09), not free
+      per atom. Group count by held-out likelihood picks 7 at
       644101 (6: -11679, 7: -11540, 8: -11675), ARI .90.
       Machine: 12 workers died of commit exhaustion (other jobs hold ~80 GB);
       RSI_WORKERS env var caps the pool, 8 used.
