@@ -174,7 +174,7 @@ are for replication only. Nothing proven is reset between generations.
       1129->2136, drawn7 202->299, metric 343->1647, every pool up, 2.32x,
       audit 6/6: ALL FOUR GATES PASS. c8 RESULT (919107): mech 1138->2263,
       drawn7 275->382, metric 248->1901, 2.04x, audit 7/7: ALL FOUR PASS.
-      v4 PROTOCOL PASSES on both seeds. Paper/doc update in progress, then the untrained guard (v5
+      v4 PROTOCOL PASSES on both seeds. Paper (15 pp) + doc (rev 56) updated with all eight seeds. NEXT: the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
