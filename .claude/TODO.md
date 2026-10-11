@@ -186,7 +186,11 @@ are for replication only. Nothing proven is reset between generations.
       1179->1990, drawn7 367->388 (+6%, GATE 1 FAIL), metric 281->1872;
       untrained 28.0->25.0 = 89% (GATE 2 FAIL, first ever); cost 2.48 pass;
       audit pass. Guard never fired (losses 2-9% each, cumulative dip).
-      c10 RUNNING. (old note: the untrained guard (v5
+      c10 RESULT (919109): mech 1111->2151, drawn7 278->334, metric 404->1626,
+      every pool up, cost 2.53 FAIL, audit pass; guard fired 3x. v5 FAILS;
+      guard RETIRED, seed.py restored to the v4 hash. v4 = confirmed protocol.
+      NEXT: paper/doc with v5; later a cumulative-drift guard vs the INITIAL
+      language (own seeds), second task form. (old note: the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).
 
 ## Programme, 2026-10-04: recursive growth through drawn levels

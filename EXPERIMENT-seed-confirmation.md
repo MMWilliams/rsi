@@ -484,3 +484,36 @@ does not protect the untrained pool; the dip on this seed accrued across
 three extensions that each cost a little. The pool also started high
 (28.0, against 19 to 24 on the other seeds), so part of the 11% is the
 start's draw. Neither excuses the gate.
+
+### Replication J, seed 919109 under v5 (`seeds/c10`, `runs_seed_conf_c10.log`), 2026-10-11
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,111 | 2,151 | +94% | trained 22.8 -> 39.9, untrained 20.5 -> 35.9, unfamiliar 3.0 -> 13.8 |
+| drawn7 | 278 | 334 | +20% | env 11.6 -> 13.9 |
+| metric777001 | 404 | 1,626 | +302% | seen 13.3 -> 44.6, unfamiliar 3.5 -> 23.2 |
+
+Kept changes (7): six models and one extension. The guard fired three times
+(mech lives 0 and 1, drawn7 life 0, each an unguided loss of 17% on 24
+worlds) and let one metric extension through. Proof scans 2.53x live.
+
+- Gate 1: PASS. Gate 2: PASS (every pool rose). Gate 3: FAIL, 2.53x.
+- Gate 4: PASS, 7 of 7 replay, salts unique.
+
+### Verdict on v5
+
+Fails. 919108 failed growth and safety with the guard silent; 919109 failed
+cost by 0.03 with the guard firing three times and holding back two
+mechanism extensions until life 3. The guard as built neither protects the
+untrained pool (a per-candidate tolerance lets a drift accrue) nor pays for
+itself. It is retired: `rsi/seed.py` is restored to the v4 hash, and v4
+remains the confirmed protocol. A guard that bounds cumulative drift against
+the initial language's unguided score is the next design, if one is wanted;
+it would need its own pair of sealed seeds.
+
+### Summary over the ten sealed seeds
+
+v4 is the confirmed version (919106, 919107: all gates). Across all ten,
+growth of at least 15% in every area on nine (919108's drawn7, +6%), no pool
+below 90% on nine (919108's untrained, 89%), cost under 2.5x on six of the
+eight after v1, and all 68 accepted changes standing on replay.

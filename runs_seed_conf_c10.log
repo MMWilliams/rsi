@@ -1,0 +1,198 @@
+seed c10 version 0, area mech, lives there 0, language 260 atoms
+mech life 0: solved 1562 of 9600; by pool {"trained": 20.8, "unfamiliar": 2.8}; 17 s
+  together: held-out 875 -> 1130 [+1.2, +9.3] per world dropped; {"trained": 31.4, "unfamiliar": 9.6, "untrained": 29.6}
+  extend: held-out 875 -> 776 [-6.6, -0.1] per world dropped; {"trained": 19.8, "unfamiliar": 6.5, "untrained": 22.2}
+  model: held-out 875 -> 1169 [+2.7, +9.8] per world KEPT; {"trained": 34.2, "unfamiliar": 5.8, "untrained": 33.1}
+  carried: version 1, language 260, model g=7 pw=3, prior yes, held-out 1169; resource live 9.8M proof 24.6M tests 93129; 86 s
+mech life 1: solved 2555 of 9600; by pool {"trained": 32.8, "unfamiliar": 8.2}; 15 s
+  together: held-out 1156 -> 1309 [+0.4, +6.2] per world dropped; {"trained": 36.6, "unfamiliar": 7.9, "untrained": 37.3}
+  extend: held-out 1156 -> 1166 [-2.5, +1.1] per world dropped; {"trained": 33.2, "unfamiliar": 9.6, "untrained": 30.0}
+  model: held-out 1156 -> 1301 [+0.8, +5.4] per world KEPT; {"trained": 36.2, "unfamiliar": 5.8, "untrained": 39.3}
+  carried: version 2, language 260, model g=7 pw=2, prior yes, held-out 1301; resource live 19.7M proof 49.2M tests 185067; 84 s
+mech life 2: solved 3449 of 9600; by pool {"trained": 44.8, "unfamiliar": 9.5}; 16 s
+  together: held-out 1288 -> 1124 [-5.7, +0.9] per world dropped; {"trained": 35.9, "unfamiliar": 10.8, "untrained": 23.6}
+  extend: held-out 1288 -> 1168 [-3.5, +1.0] per world dropped; {"trained": 37.2, "unfamiliar": 10.8, "untrained": 25.0}
+  model: held-out 1288 -> 1261 [-2.1, +1.0] per world dropped; {"trained": 40.6, "unfamiliar": 8.5, "untrained": 29.7}
+  carried: version 2, language 260, model g=7 pw=2, prior yes, held-out 1288; resource live 29.5M proof 63.9M tests 281327; 65 s
+mech life 3: solved 2943 of 9600; by pool {"trained": 37.6, "unfamiliar": 9.8}; 18 s
+  together: held-out 1319 -> 1334 [-2.6, +3.2] per world dropped; {"trained": 40.7, "unfamiliar": 14.8, "untrained": 27.9}
+  extend: held-out 1319 -> 1222 [-4.3, +2.4] per world dropped; {"trained": 34.9, "unfamiliar": 15.1, "untrained": 26.4}
+  model: held-out 1319 -> 1351 [-1.2, +2.5] per world dropped; {"trained": 42.8, "unfamiliar": 9.6, "untrained": 32.0}
+  carried: version 2, language 260, model g=7 pw=2, prior yes, held-out 1319; resource live 39.3M proof 81.1M tests 374371; 85 s
+kept: [{"life": 0, "area": "mech", "change": "model g=7 pw=3 from 96 worlds + prior", "gain": 294, "version": 1}, {"life": 1, "area": "mech", "change": "model g=7 pw=2 from 192 worlds + prior", "gain": 145, "version": 2}]
+seed c10 version 2, area drawn7, lives there 0, language 260 atoms
+drawn7 life 0: solved 862 of 9600; by pool {"env": 9.0}; 17 s
+  together: held-out 514 -> 697 [+0.7, +6.7] per world dropped; {"env": 14.5}
+  extend: held-out 514 -> 328 [-3.5, +0.5] per world dropped; {"env": 6.8}
+  model: held-out 514 -> 661 [+0.5, +5.5] per world KEPT; {"env": 13.8}
+  carried: version 3, language 260, model g=8 pw=4, prior yes, held-out 661; resource live 49.2M proof 105.7M tests 470703; 106 s
+drawn7 life 1: solved 1157 of 9600; by pool {"env": 12.1}; 15 s
+  together: held-out 624 -> 645 [-1.1, +2.2] per world dropped; {"env": 13.4}
+  extend: held-out 624 -> 642 [-1.0, +1.8] per world dropped; {"env": 13.4}
+  model: held-out 624 -> 684 [-2.4, +1.0] per world dropped; {"env": 14.2}
+  carried: version 3, language 260, model g=8 pw=4, prior yes, held-out 624; resource live 59.0M proof 122.9M tests 563825; 82 s
+drawn7 life 2: solved 1278 of 9600; by pool {"env": 13.3}; 17 s
+  together: held-out 608 -> 659 [-0.5, +2.6] per world dropped; {"env": 13.7}
+  extend: held-out 608 -> 670 [-1.9, +1.7] per world dropped; {"env": 14.0}
+  model: held-out 608 -> 632 [-0.2, +1.4] per world dropped; {"env": 13.2}
+  carried: version 3, language 260, model g=8 pw=4, prior yes, held-out 608; resource live 68.8M proof 140.1M tests 676135; 85 s
+kept: [{"life": 0, "area": "mech", "change": "model g=7 pw=3 from 96 worlds + prior", "gain": 294, "version": 1}, {"life": 1, "area": "mech", "change": "model g=7 pw=2 from 192 worlds + prior", "gain": 145, "version": 2}, {"life": 0, "area": "drawn7", "change": "model g=8 pw=4 from 96 worlds + prior", "gain": 147, "version": 3}]
+seed c10 version 3, area metric777001, lives there 0, language 260 atoms
+metric777001 life 0: solved 1024 of 9600; by pool {"seen_centre": 12.2, "unfamiliar_centre": 6.0}; 18 s
+  together: held-out 422 -> 1221 [+13.0, +20.6] per world KEPT; {"seen_centre": 33.2, "unfamiliar_centre": 17.7} elsewhere {"mech": "1003->1032", "drawn7": "290->333"}
+  carried: version 4, language 300, model g=7 pw=2, prior yes, held-out 1221; resource live 78.6M proof 169.6M tests 769432; 120 s
+metric777001 life 1: solved 3071 of 9600; by pool {"seen_centre": 37.4, "unfamiliar_centre": 15.7}; 30 s
+  together: held-out 1399 -> 1637 [+2.1, +7.8] per world dropped; {"seen_centre": 40.3, "unfamiliar_centre": 27.9} elsewhere {"mech": "871->800", "drawn7": "407->422"}
+  extend: held-out 1399 -> 1545 [+1.0, +5.3] per world dropped; {"seen_centre": 37.9, "unfamiliar_centre": 26.5} elsewhere {"mech": "871->800", "drawn7": "407->422"}
+  model: held-out 1399 -> 1543 [+0.3, +5.9] per world KEPT; {"seen_centre": 40.2, "unfamiliar_centre": 24.1}
+  carried: version 5, language 300, model g=8 pw=2, prior yes, held-out 1543; resource live 88.5M proof 217.5M tests 864560; 231 s
+metric777001 life 2: solved 3528 of 9600; by pool {"seen_centre": 41.0, "unfamiliar_centre": 24.0}; 48 s
+  together: held-out 1565 -> 1659 [-1.1, +4.9] per world dropped; {"seen_centre": 44.8, "unfamiliar_centre": 24.4}
+Timeout (0:10:00)!
+Thread 0x00002ee0 (most recent call first):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 326 in _recv_bytes
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 255 in recv
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 579 in _handle_results
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 995 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1044 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1015 in _bootstrap
+
+Thread 0x0000db80 (most recent call first):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 298 in _send_bytes
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 211 in send
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 540 in _handle_tasks
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 995 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1044 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1015 in _bootstrap
+
+Thread 0x0000df44 (most recent call first):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 1054 in _exhaustive_wait
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 1122 in wait
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 502 in _wait_for_updates
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 522 in _handle_workers
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 995 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1044 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1015 in _bootstrap
+
+Thread 0x0000b4b4 (most recent call first):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 359 in wait
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 660 in wait
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 765 in wait
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 768 in get
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 367 in map
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 316 in run
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 527 in prove
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 114 in main
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 130 in <module>
+  extend: held-out 1565 -> 1708 [+1.4, +4.7] per world dropped; {"seen_centre": 46.0, "unfamiliar_centre": 25.1} elsewhere {"mech": "1187->1125", "drawn7": "350->398"}
+  prune: held-out 1565 -> 1382 [-4.3, +0.4] per world dropped; {"seen_centre": 39.8, "unfamiliar_centre": 17.8}
+  model: held-out 1565 -> 1430 [-1.5, +0.5] per world dropped; {"seen_centre": 42.1, "unfamiliar_centre": 17.5}
+  carried: version 5, language 300, model g=8 pw=2, prior yes, held-out 1565; resource live 98.3M proof 256.8M tests 959704; 281 s
+kept: [{"life": 0, "area": "mech", "change": "model g=7 pw=3 from 96 worlds + prior", "gain": 294, "version": 1}, {"life": 1, "area": "mech", "change": "model g=7 pw=2 from 192 worlds + prior", "gain": 145, "version": 2}, {"life": 0, "area": "drawn7", "change": "model g=8 pw=4 from 96 worlds + prior", "gain": 147, "version": 3}, {"life": 0, "area": "metric777001", "change": "language +40 + model g=7 pw=2 from 96 worlds + prior", "gain": 799, "version": 4}, {"life": 1, "area": "metric777001", "change": "model g=8 pw=2 from 192 worlds + prior", "gain": 144, "version": 5}]
+seed c10 version 5, area mech, lives there 4, language 300 atoms
+mech life 4: solved 2698 of 9600; by pool {"trained": 34.4, "unfamiliar": 9.3}; 42 s
+  together: held-out 1200 -> 1255 [-1.7, +4.0] per world dropped; {"trained": 29.1, "unfamiliar": 11.8, "untrained": 37.6}
+  extend: held-out 1200 -> 1104 [-2.8, -0.6] per world dropped; {"trained": 21.1, "unfamiliar": 11.4, "untrained": 36.5}
+  prune: held-out 1200 -> 1230 [-0.2, +1.5] per world dropped; {"trained": 34.2, "unfamiliar": 9.5, "untrained": 33.2}
+  model: held-out 1200 -> 1306 [+0.1, +4.6] per world KEPT; {"trained": 31.7, "unfamiliar": 11.5, "untrained": 38.4}
+  carried: version 6, language 300, model g=8 pw=3, prior yes, held-out 1306; resource live 108.1M proof 278.9M tests 1051967; 136 s
+mech life 5: solved 3545 of 9600; by pool {"trained": 44.6, "unfamiliar": 13.9}; 25 s
+  together: held-out 1705 -> 1724 [-1.9, +1.0] per world dropped; {"trained": 41.6, "unfamiliar": 15.5, "untrained": 50.6}
+  extend: held-out 1705 -> 1722 [-1.5, +0.3] per world dropped; {"trained": 41.2, "unfamiliar": 16.2, "untrained": 50.1}
+  prune: held-out 1705 -> 1708 [-1.0, +1.0] per world dropped; {"trained": 50.6, "unfamiliar": 12.9, "untrained": 43.2}
+  model: held-out 1705 -> 1763 [+0.1, +2.4] per world KEPT; {"trained": 51.8, "unfamiliar": 14.6, "untrained": 43.8}
+  carried: version 7, language 300, model g=7 pw=3, prior yes, held-out 1763; resource live 118.0M proof 298.6M tests 1147035; 196 s
+kept: [{"life": 0, "area": "mech", "change": "model g=7 pw=3 from 96 worlds + prior", "gain": 294, "version": 1}, {"life": 1, "area": "mech", "change": "model g=7 pw=2 from 192 worlds + prior", "gain": 145, "version": 2}, {"life": 0, "area": "drawn7", "change": "model g=8 pw=4 from 96 worlds + prior", "gain": 147, "version": 3}, {"life": 0, "area": "metric777001", "change": "language +40 + model g=7 pw=2 from 96 worlds + prior", "gain": 799, "version": 4}, {"life": 1, "area": "metric777001", "change": "model g=8 pw=2 from 192 worlds + prior", "gain": 144, "version": 5}, {"life": 4, "area": "mech", "change": "model g=8 pw=3 from 480 worlds + prior", "gain": 106, "version": 6}, {"life": 5, "area": "mech", "change": "model g=7 pw=3 from 576 worlds + prior", "gain": 58, "version": 7}]
+mech fresh held-out 1111 -> 2151
+drawn7 fresh held-out 278 -> 334
+metric777001 fresh held-out 404 -> 1626
+{
+ "name": "c10",
+ "version": 7,
+ "budget": 1024,
+ "areas": {
+  "mech": {
+   "start": {
+    "budget": 1024,
+    "total": 1111,
+    "by_pool": {
+     "trained": 22.833333333333332,
+     "unfamiliar": 3.0,
+     "untrained": 20.458333333333332
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 2151,
+    "by_pool": {
+     "trained": 39.875,
+     "unfamiliar": 13.833333333333334,
+     "untrained": 35.916666666666664
+    }
+   },
+   "gain": 1040
+  },
+  "drawn7": {
+   "start": {
+    "budget": 1024,
+    "total": 278,
+    "by_pool": {
+     "env": 11.583333333333334
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 334,
+    "by_pool": {
+     "env": 13.916666666666666
+    }
+   },
+   "gain": 56
+  },
+  "metric777001": {
+   "start": {
+    "budget": 1024,
+    "total": 404,
+    "by_pool": {
+     "seen_centre": 13.291666666666666,
+     "unfamiliar_centre": 3.5416666666666665
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 1626,
+    "by_pool": {
+     "seen_centre": 44.583333333333336,
+     "unfamiliar_centre": 23.166666666666668
+    }
+   },
+   "gain": 1222
+  }
+ },
+ "lives": {
+  "mech": 6,
+  "drawn7": 3,
+  "metric777001": 3
+ },
+ "resource": {
+  "live_scans": 117964800,
+  "proof_scans": 298598400,
+  "invention_tests": 1147035
+ },
+ "invented": {
+  "kept": 40,
+  "by_true_family": {
+   "popcount": 4,
+   "xormod": 19,
+   "novel": 17
+  }
+ }
+}
+1 model g=7 pw=3 from 96 worlds + prior ok
+2 model g=7 pw=2 from 192 worlds + prior ok
+3 model g=8 pw=4 from 96 worlds + prior ok
+4 language +40 + model g=7 pw=2 from 96 worlds + prior ok
+5 model g=8 pw=2 from 192 worlds + prior ok
+6 model g=8 pw=3 from 480 worlds + prior ok
+7 model g=7 pw=3 from 576 worlds + prior ok
+{"name": "c10", "passed": true}
