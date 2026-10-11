@@ -517,3 +517,42 @@ v4 is the confirmed version (919106, 919107: all gates). Across all ten,
 growth of at least 15% in every area on nine (919108's drawn7, +6%), no pool
 below 90% on nine (919108's untrained, 89%), cost under 2.5x on six of the
 eight after v1, and all 68 accepted changes standing on replay.
+
+
+## Protocol v6 (FROZEN 2026-10-11, after the v5 verdict)
+
+The v4 code, unchanged (every source hash below but the runner's equals
+v4's), with a wider schedule: six areas instead of three. The goal this
+programme set is growth in as many areas as possible; the sealed-seed
+evidence so far covers three. The schedule is mech 4, drawn7 3,
+metric777001 3, drawn11 2, drawn13 2, metric555001 2, mech 2 lives (18 lives,
+96 worlds each). drawn11 is 12 groups with 4 per world and no slip; drawn13
+is 6 groups with 2 per world and slip 0.15; metric555001 is the metric
+structure under a second sparse weighting, never lived by any seed before.
+Gates unchanged and applied to every area: growth of at least 15% in each
+of the six on fresh held-out sets (salt 999, 24 worlds per pool), no pool
+below 90% of its start, proofs at most 2.5x live, every kept change
+replaying with a salt unique within its area. Fresh check over six areas.
+
+Seeds: 919110 (replication K) and 919111 (replication L), sealed and
+unopened at the time of writing.
+
+Hashes:
+
+```
+8771b419951b80571c920ebd0a0522f30e62113a9e20aed4c472403fb978f7e4  rsi/seed.py
+15a2b0f65ccb52ee60aa423a43ec2c2caf80af9091c33a28de182e8915fb49a9  rsi/seed_areas.py
+aefd9cc94f7dbf8f54eb311baae6245522bf212bdbca4b6ac63cb5f13cfa9c83  rsi/invention.py
+e9c6a2b3ed10cd6bb33306ca5234c06b5a087c739fcf71c65aa97593a205f2a3  rsi/self_world_model.py
+4babdfde950755e0511ffeefa2ca7272cce42323298e7a7eca5d4941ffcf476f  seed_run.py
+b6f5f11a0632b5af605729377a9a75561440fda21c5e0ff27ad310d26dd0da6c  seed_check.py
+271cb85d5a83c83173fbb3d63d441d187fed1a3850ae58e85f0c8f88e5828420  audit_seed.py
+64ea9eeedd36f643554d23bc0995d291ff7e1d7de718f3b36fae0f447eb430ce  confirm_seed.sh
+```
+
+Forecast, committed before opening 919110: gate 1 0.6 (two lives in a new
+area have passed 15% on the development seed for drawn11 and drawn13, 199
+-> 360 and 294 -> 442, but a two-life area has one or two chances to accept
+anything, and metric555001 is untried), gate 2 0.6 (six areas, nine pools),
+gate 3 0.7 (more areas, more cross-area checks per language candidate),
+gate 4 0.9; all four on both seeds 0.2.
