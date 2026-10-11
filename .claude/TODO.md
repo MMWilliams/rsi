@@ -136,7 +136,8 @@ are for replication only. Nothing proven is reset between generations.
       318->1619, every pool up, audit 8/8; gate 3 FAILED 5.88x. VERDICT:
       gates 1,2,4 pass on both sealed seeds, gate 3 fails on both; all five
       seeds now used, a cost fix needs NEW sealed seeds (reserve 919102/3).
-      Paper 2 + doc: add the confirmation paragraph (in progress).
+      Paper 2 + doc: confirmation paragraph + table DONE (14 pp, doc rev 51).
+      NEXT: cut proof cost, reserve 919102/919103, re-run the protocol.
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 
