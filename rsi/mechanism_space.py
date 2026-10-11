@@ -205,14 +205,16 @@ def _tree_size(expr):
     return 1 + sum(_tree_size(value) for value in expr.values() if isinstance(value, dict))
 
 
-def build_catalog():
+def build_catalog(atoms=None):
     """Atoms, every cross-family pair under three boolean operators, and every
     complement, reduced to one representative per distinct mask.
 
     The representative kept is the one whose code sorts first, so the catalog
     is a function of the atom list alone and carries no arm's preferences.
+    `atoms` names a language other than the full one: a seed subset, or a
+    subset extended by invented atoms.
     """
-    atoms = atom_expressions()
+    atoms = atom_expressions() if atoms is None else list(atoms)
     atom_masks = [mask_of(expr) for _key, _family, expr in atoms]
     best = {}
 

@@ -1,5 +1,17 @@
 # RSI to-do
 
+## Goal (set by reese, 2026-10-10)
+
+Perfect a seed AI that can successfully improve in as many areas as
+possible. Continually focus on the seed itself and carry forward proven
+successes. The seed is one artifact, code plus carried state, that earns
+its experience, builds its own world and self model from it, directs
+representation learning and invention from that model, keeps what proves
+out (language, groups, priors) across lives, and is scored on improvement
+across areas (mechanism worlds, string DSL tasks, metric worlds, drawn
+environments). Develop on the seed where things work (644101); other seeds
+are for replication only. Nothing proven is reset between generations.
+
 ## Programme, 2026-10-04: recursive growth through drawn levels
 
 Plan in `PROGRAMME-RECURSIVE-2026-10-04.md`. Levels L0 solver, L1 world model,

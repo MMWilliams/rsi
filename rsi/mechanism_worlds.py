@@ -18,8 +18,8 @@ from .mechanism_space import (build_catalog, densities, drawable_index, make_tas
 
 
 class Harness:
-    def __init__(self):
-        self.catalog = build_catalog()
+    def __init__(self, atoms=None):
+        self.catalog = build_catalog(atoms)
         self.packed = pack(self.catalog)
         self.density = densities(self.packed)
         self.sizes = (self.density * 256).astype(np.int32)
