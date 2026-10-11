@@ -46,6 +46,21 @@ are for replication only. Nothing proven is reset between generations.
       the machine's commit was exhausted by other jobs); faulthandler dumps
       every 600 s now. Third area `rsi/seed_areas.py` MetricArea (behavioural
       metric worlds) wired as --area metric777001.
+      THIRD AREA metric777001 (hidden sparse weighting over atom descriptors;
+      a world = centre atom + 14 nearest): s1 4 lives, fresh held-out 375 ->
+      1913 (5x); the 48-world model alone +975 on the per-life set; extension
+      +179 kept at life 1; prune -25 +102 at life 3. s1 three-area fresh
+      check at version 22: mech 1299 -> 2072, drawn7 181 -> 338, metric 375
+      -> 1913. INTERFERENCE: drawn7 read 376 at version 17 and 338 at 22; the
+      metric lives changed the shared language (prune -25, +40) and were
+      proven only in the metric area. Shared-state changes must be proven
+      across every area lived (non-inferior elsewhere). REPLICATION: s2
+      (643101) 3 mech lives fresh held-out 1372 -> 2006; s3 (645101) 1159 ->
+      2048; models kept every life on both, extensions dropped on both (s1's
+      first kept extension came at life 1 of 10). Proof cost: s1 135M scans
+      of proofs vs 88M lived. Next: cross-area proofs for language changes,
+      combined candidate proven first, per_world chosen by held-out
+      likelihood, a 4-group-per-world drawn area.
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 

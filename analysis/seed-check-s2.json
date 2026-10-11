@@ -1,0 +1,63 @@
+{
+  "name": "s2",
+  "version": 3,
+  "budget": 1024,
+  "areas": {
+    "mech": {
+      "start": {
+        "budget": 1024,
+        "total": 1372,
+        "by_pool": {
+          "trained": 26.791666666666668,
+          "unfamiliar": 4.5,
+          "untrained": 25.875
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 2006,
+        "by_pool": {
+          "trained": 37.875,
+          "unfamiliar": 8.208333333333334,
+          "untrained": 37.5
+        }
+      },
+      "gain": 634
+    }
+  },
+  "lives": {
+    "mech": 3
+  },
+  "resource": {
+    "live_scans": 14745600,
+    "proof_scans": 66355200,
+    "invention_tests": 144664
+  },
+  "kept_changes": [
+    {
+      "life": 0,
+      "area": "mech",
+      "change": "model g=6 from 48 worlds + prior",
+      "gain": 475,
+      "version": 1
+    },
+    {
+      "life": 1,
+      "area": "mech",
+      "change": "model g=7 from 96 worlds + prior",
+      "gain": 50,
+      "version": 2
+    },
+    {
+      "life": 2,
+      "area": "mech",
+      "change": "model g=7 from 144 worlds + prior",
+      "gain": 59,
+      "version": 3
+    }
+  ],
+  "invented": {
+    "kept": 0,
+    "by_true_family": {}
+  }
+}

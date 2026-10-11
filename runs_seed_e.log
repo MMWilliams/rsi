@@ -1,0 +1,250 @@
+seed s1 version 17, area metric777001, lives there 0, language 411 atoms
+metric777001 life 0: solved 374 of 4800; by pool {"seen_centre": 7.9, "unfamiliar_centre": 7.4}; 47 s
+  extend: 24 atoms from 49335 tests; held-out 399 -> 259 dropped; {"seen_centre": 6.9, "unfamiliar_centre": 3.9}
+  reflect: 8 groups over 168 atoms from 48 worlds; held-out 399 -> 1374 KEPT; {"seen_centre": 34.4, "unfamiliar_centre": 22.8}
+  carried: version 18, language 411, model yes, prior yes, held-out 1374; resource live 73.7M proof 86.0M tests 343391; 207 s
+metric777001 life 1: solved 1319 of 4800; by pool {"seen_centre": 26.9, "unfamiliar_centre": 29.2}; 57 s
+  extend: 40 atoms from 46098 tests; held-out 1530 -> 1709 KEPT; {"seen_centre": 39.9, "unfamiliar_centre": 31.3}
+  reflect: 8 groups over 187 atoms from 96 worlds; held-out 1709 -> 1657 dropped; {"seen_centre": 37.5, "unfamiliar_centre": 31.6}
+  carried: version 19, language 451, model yes, prior yes, held-out 1709; resource live 78.6M proof 100.8M tests 389489; 282 s
+metric777001 life 2: solved 1454 of 4800; by pool {"seen_centre": 34.9, "unfamiliar_centre": 16.5}; 77 s
+Timeout (0:10:00)!
+Thread 0x0000a074 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 321 in _recv_bytes
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 250 in recv
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 579 in _handle_results
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x0000bd5c (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 293 in _send_bytes
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 206 in send
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 540 in _handle_tasks
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x0000bd88 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1016 in _exhaustive_wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1084 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 502 in _wait_for_updates
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 522 in _handle_workers
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x0000cdf8 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 355 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 655 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 765 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 768 in get
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 367 in map
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 253 in run
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 350 in prove
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 73 in main
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 115 in <module>
+  extend: 40 atoms from 45557 tests; held-out 1591 -> 1538 dropped; {"seen_centre": 37.4, "unfamiliar_centre": 26.7}
+  reflect: 8 groups over 158 atoms from 144 worlds; held-out 1591 -> 1711 KEPT; {"seen_centre": 39.8, "unfamiliar_centre": 31.5}
+  carried: version 20, language 451, model yes, prior yes, held-out 1711; resource live 83.6M proof 115.5M tests 435046; 292 s
+metric777001 life 3: solved 1771 of 4800; by pool {"seen_centre": 40.0, "unfamiliar_centre": 27.6}; 61 s
+  extend: 40 atoms from 45476 tests; held-out 1623 -> 1550 dropped; {"seen_centre": 36.5, "unfamiliar_centre": 28.1}
+  prune: 25 unearned atoms; held-out 1623 -> 1725 KEPT; {"seen_centre": 41.4, "unfamiliar_centre": 30.5}
+  reflect: 8 groups over 165 atoms from 192 worlds; held-out 1725 -> 1745 KEPT; {"seen_centre": 42.7, "unfamiliar_centre": 30.0}
+  carried: version 22, language 426, model yes, prior yes, held-out 1745; resource live 88.5M proof 135.2M tests 480522; 326 s
+kept: [{"life": 0, "change": "model g=6 from 48 worlds + prior", "gain": 417, "version": 1}, {"life": 1, "change": "language +40 atoms", "gain": 14, "version": 2}, {"life": 1, "change": "model g=6 from 96 worlds + prior", "gain": 118, "version": 3}, {"life": 2, "change": "model g=6 from 144 worlds + prior", "gain": 13, "version": 4}, {"life": 3, "change": "language +40 atoms", "gain": 45, "version": 5}, {"life": 3, "change": "model g=8 from 192 worlds + prior", "gain": 133, "version": 6}, {"life": 4, "change": "model g=8 from 240 worlds + prior", "gain": 98, "version": 7}, {"life": 5, "change": "model g=8 from 288 worlds + prior", "gain": 2, "version": 8}, {"life": 6, "change": "model g=8 from 336 worlds + prior", "gain": 11, "version": 9}, {"life": 7, "change": "language +40 atoms", "gain": 53, "version": 10}, {"life": 8, "area": "mech", "change": "language +40", "gain": 24, "version": 11}, {"life": 0, "area": "drawn7", "change": "prune -23", "gain": 19, "version": 12}, {"life": 0, "area": "drawn7", "change": "model g=6 from 48 worlds + prior", "gain": 158, "version": 13}, {"life": 1, "area": "drawn7", "change": "language +40", "gain": 52, "version": 14}, {"life": 1, "area": "drawn7", "change": "model g=6 from 96 worlds + prior", "gain": 18, "version": 15}, {"life": 2, "area": "drawn7", "change": "model g=6 from 144 worlds + prior", "gain": 5, "version": 16}, {"life": 3, "area": "drawn7", "change": "prune -26", "gain": 62, "version": 17}, {"life": 0, "area": "metric777001", "change": "model g=8 from 48 worlds + prior", "gain": 975, "version": 18}, {"life": 1, "area": "metric777001", "change": "language +40", "gain": 179, "version": 19}, {"life": 2, "area": "metric777001", "change": "model g=8 from 144 worlds + prior", "gain": 120, "version": 20}, {"life": 3, "area": "metric777001", "change": "prune -25", "gain": 102, "version": 21}, {"life": 3, "area": "metric777001", "change": "model g=8 from 192 worlds + prior", "gain": 20, "version": 22}]
+mech fresh held-out 1299 -> 2072
+drawn7 fresh held-out 181 -> 338
+metric777001 fresh held-out 375 -> 1913
+{
+ "name": "s1",
+ "version": 22,
+ "budget": 1024,
+ "areas": {
+  "mech": {
+   "start": {
+    "budget": 1024,
+    "total": 1299,
+    "by_pool": {
+     "trained": 26.25,
+     "unfamiliar": 3.6666666666666665,
+     "untrained": 24.208333333333332
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 2072,
+    "by_pool": {
+     "trained": 49.458333333333336,
+     "unfamiliar": 18.666666666666668,
+     "untrained": 18.208333333333332
+    }
+   },
+   "gain": 773
+  },
+  "drawn7": {
+   "start": {
+    "budget": 1024,
+    "total": 181,
+    "by_pool": {
+     "env": 7.541666666666667
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 338,
+    "by_pool": {
+     "env": 14.083333333333334
+    }
+   },
+   "gain": 157
+  },
+  "metric777001": {
+   "start": {
+    "budget": 1024,
+    "total": 375,
+    "by_pool": {
+     "seen_centre": 10.75,
+     "unfamiliar_centre": 4.875
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 1913,
+    "by_pool": {
+     "seen_centre": 45.125,
+     "unfamiliar_centre": 34.583333333333336
+    }
+   },
+   "gain": 1538
+  }
+ },
+ "lives": {
+  "mech": 10,
+  "drawn7": 4,
+  "metric777001": 4
+ },
+ "resource": {
+  "live_scans": 88473600,
+  "proof_scans": 135168000,
+  "invention_tests": 480522
+ },
+ "invented": {
+  "kept": 166,
+  "by_true_family": {
+   "popcount": 27,
+   "xormod": 29,
+   "novel": 110
+  }
+ }
+}
+seed s2 version 0, area mech, lives there 0, language 260 atoms
+mech life 0: solved 928 of 4800; by pool {"trained": 24.0, "unfamiliar": 5.2}; 13 s
+  extend: 40 atoms from 48178 tests; held-out 1311 -> 1118 dropped; {"trained": 18.9, "unfamiliar": 8.4, "untrained": 19.3}
+  reflect: 6 groups over 181 atoms from 48 worlds; held-out 1311 -> 1786 KEPT; {"trained": 34.3, "unfamiliar": 7.1, "untrained": 33.0}
+  carried: version 1, language 260, model yes, prior yes, held-out 1786; resource live 4.9M proof 22.1M tests 48178; 96 s
+mech life 1: solved 1237 of 4800; by pool {"trained": 31.8, "unfamiliar": 7.7}; 16 s
+  extend: 40 atoms from 48256 tests; held-out 1824 -> 1752 dropped; {"trained": 34.5, "unfamiliar": 10.4, "untrained": 28.1}
+  reflect: 7 groups over 189 atoms from 96 worlds; held-out 1824 -> 1874 KEPT; {"trained": 39.8, "unfamiliar": 6.5, "untrained": 31.8}
+  carried: version 2, language 260, model yes, prior yes, held-out 1874; resource live 9.8M proof 44.2M tests 96434; 98 s
+mech life 2: solved 1309 of 4800; by pool {"trained": 33.5, "unfamiliar": 8.6}; 15 s
+  extend: 40 atoms from 48230 tests; held-out 1730 -> 1695 dropped; {"trained": 27.7, "unfamiliar": 12.0, "untrained": 31.0}
+  reflect: 7 groups over 180 atoms from 144 worlds; held-out 1730 -> 1789 KEPT; {"trained": 30.0, "unfamiliar": 6.8, "untrained": 37.8}
+  carried: version 3, language 260, model yes, prior yes, held-out 1789; resource live 14.7M proof 66.4M tests 144664; 102 s
+kept: [{"life": 0, "area": "mech", "change": "model g=6 from 48 worlds + prior", "gain": 475, "version": 1}, {"life": 1, "area": "mech", "change": "model g=7 from 96 worlds + prior", "gain": 50, "version": 2}, {"life": 2, "area": "mech", "change": "model g=7 from 144 worlds + prior", "gain": 59, "version": 3}]
+mech fresh held-out 1372 -> 2006
+{
+ "name": "s2",
+ "version": 3,
+ "budget": 1024,
+ "areas": {
+  "mech": {
+   "start": {
+    "budget": 1024,
+    "total": 1372,
+    "by_pool": {
+     "trained": 26.791666666666668,
+     "unfamiliar": 4.5,
+     "untrained": 25.875
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 2006,
+    "by_pool": {
+     "trained": 37.875,
+     "unfamiliar": 8.208333333333334,
+     "untrained": 37.5
+    }
+   },
+   "gain": 634
+  }
+ },
+ "lives": {
+  "mech": 3
+ },
+ "resource": {
+  "live_scans": 14745600,
+  "proof_scans": 66355200,
+  "invention_tests": 144664
+ },
+ "invented": {
+  "kept": 0,
+  "by_true_family": {}
+ }
+}
+seed s3 version 0, area mech, lives there 0, language 260 atoms
+mech life 0: solved 918 of 4800; by pool {"trained": 24.4, "unfamiliar": 3.3}; 12 s
+  extend: 40 atoms from 54623 tests; held-out 1205 -> 1002 dropped; {"trained": 16.9, "unfamiliar": 7.9, "untrained": 16.9}
+  reflect: 6 groups over 193 atoms from 48 worlds; held-out 1205 -> 1617 KEPT; {"trained": 31.0, "unfamiliar": 6.1, "untrained": 30.3}
+  carried: version 1, language 260, model yes, prior yes, held-out 1617; resource live 4.9M proof 22.1M tests 54623; 80 s
+mech life 1: solved 1369 of 4800; by pool {"trained": 35.9, "unfamiliar": 6.3}; 14 s
+  extend: 40 atoms from 54620 tests; held-out 1893 -> 1722 dropped; {"trained": 30.2, "unfamiliar": 9.2, "untrained": 32.4}
+  reflect: 6 groups over 181 atoms from 96 worlds; held-out 1893 -> 1967 KEPT; {"trained": 35.9, "unfamiliar": 6.6, "untrained": 39.5}
+  carried: version 2, language 260, model yes, prior yes, held-out 1967; resource live 9.8M proof 44.2M tests 109243; 90 s
+mech life 2: solved 1338 of 4800; by pool {"trained": 34.5, "unfamiliar": 8.1}; 13 s
+  extend: 40 atoms from 48229 tests; held-out 1788 -> 1728 dropped; {"trained": 32.4, "unfamiliar": 9.2, "untrained": 30.4}
+  reflect: 7 groups over 196 atoms from 144 worlds; held-out 1788 -> 1906 KEPT; {"trained": 36.8, "unfamiliar": 6.9, "untrained": 35.8}
+  carried: version 3, language 260, model yes, prior yes, held-out 1906; resource live 14.7M proof 66.4M tests 157472; 84 s
+kept: [{"life": 0, "area": "mech", "change": "model g=6 from 48 worlds + prior", "gain": 412, "version": 1}, {"life": 1, "area": "mech", "change": "model g=6 from 96 worlds + prior", "gain": 74, "version": 2}, {"life": 2, "area": "mech", "change": "model g=7 from 144 worlds + prior", "gain": 118, "version": 3}]
+mech fresh held-out 1159 -> 2048
+{
+ "name": "s3",
+ "version": 3,
+ "budget": 1024,
+ "areas": {
+  "mech": {
+   "start": {
+    "budget": 1024,
+    "total": 1159,
+    "by_pool": {
+     "trained": 21.875,
+     "unfamiliar": 2.125,
+     "untrained": 24.291666666666668
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 2048,
+    "by_pool": {
+     "trained": 43.333333333333336,
+     "unfamiliar": 6.5,
+     "untrained": 35.5
+    }
+   },
+   "gain": 889
+  }
+ },
+ "lives": {
+  "mech": 3
+ },
+ "resource": {
+  "live_scans": 14745600,
+  "proof_scans": 66355200,
+  "invention_tests": 157472
+ },
+ "invented": {
+  "kept": 0,
+  "by_true_family": {}
+ }
+}
