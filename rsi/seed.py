@@ -428,16 +428,32 @@ class Seed:
         carried score is cached per state version and held-out draw; every
         proof lifetime is charged."""
         carried = self._carried(area, held_out, salt, budget)
-        records = self.run(held_out, budget, area.name, state=candidate)
-        new = self.score(records, held_out, budget)
-        new['hits'] = [r['hits'] for r in records]
-        self.state['resource']['proof_scans'] += len(held_out) * STREAM * budget
-        # paired over worlds: kept only when the gain's 95% interval excludes zero
-        diff = np.array(new['hits'], dtype=float) - np.array(carried['hits'], dtype=float)
-        draws = np.random.default_rng(salt).integers(len(diff), size=(boot, len(diff)))
-        means = diff[draws].mean(axis=1)
-        new['interval'] = [float(np.percentile(means, 2.5)), float(np.percentile(means, 97.5))]
-        kept = new['interval'][0] > 0
+
+        def interval(diff):
+            draws = np.random.default_rng(salt).integers(len(diff), size=(boot, len(diff)))
+            means = diff[draws].mean(axis=1)
+            return [float(np.percentile(means, 2.5)), float(np.percentile(means, 97.5))]
+
+        # the candidate on half the set first; a clear loss stops there
+        first = list(range(0, len(held_out), 2))
+        second = list(range(1, len(held_out), 2))
+        base = np.array(carried['hits'], dtype=float)
+        hits = {}
+        for part in (first, second):
+            records = self.run([held_out[i] for i in part], budget, area.name, state=candidate)
+            self.state['resource']['proof_scans'] += len(part) * STREAM * budget
+            hits.update(zip(part, (r['hits'] for r in records)))
+            done = sorted(hits)
+            diff = np.array([hits[i] for i in done]) - base[done]
+            bounds = interval(diff)
+            if bounds[1] < 0:
+                break
+        done = sorted(hits)
+        new = self.score([{'hits': hits[i]} for i in done], [held_out[i] for i in done], budget)
+        new.update(hits=[hits[i] for i in done], worlds=len(done), interval=bounds)
+        if len(done) < len(held_out):           # stopped early: scale to the full set for the ledger
+            new['total'] = int(round(new['total'] * len(held_out) / len(done)))
+        kept = bounds[0] > 0 and len(done) == len(held_out)
         elsewhere = {}
         if kept and shared:
             for name, a in self.state['areas'].items():
