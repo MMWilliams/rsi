@@ -1,0 +1,47 @@
+seed s1 version 22, area drawn11, lives there 0, language 426 atoms
+drawn11 life 0: solved 363 of 4800; by pool {"env": 7.6}; 46 s
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 48, in mapstar
+    return list(map(*args))
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 203, in _life
+    views, tasks = _views(h, masks, random.Random(rng_seed))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 191, in _views
+    consistent = np.flatnonzero(vector_test(h.packed, task['visible_pos'], task['visible_neg']))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\mechanism_space.py", line 269, in vector_test
+    avoids = ((packed & neg_words) == np.uint64(0)).all(axis=1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 1.02 MiB for an array with shape (266272, 4) and data type bool
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 120, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 96, in main
+    kept, carried, new, elsewhere = seed.prove(
+                                    ^^^^^^^^^^^
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 418, in prove
+    base = self._carried(other, held, salt, budget)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 393, in _carried
+    carried = self.score(self.run(held_out, budget, area.name), held_out, budget)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 294, in run
+    out = pool.map(_life, [(i, w['masks'], w['rng']) for i, w in enumerate(worlds)], chunksize=2)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 774, in get
+    raise self._value
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 1.02 MiB for an array with shape (266272, 4) and data type bool

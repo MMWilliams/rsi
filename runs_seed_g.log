@@ -1,0 +1,215 @@
+seed s1 version 22, area drawn11, lives there 1, language 426 atoms
+drawn11 life 1: solved 354 of 4800; by pool {"env": 7.4}; 67 s
+  together: held-out 165 -> 344 dropped; {"env": 14.3} elsewhere {"mech": "1089->1003", "drawn7": "226->198", "metric777001": "846->855"}
+  extend: held-out 165 -> 180 dropped; {"env": 7.5} elsewhere {"mech": "1089->1003", "drawn7": "226->198", "metric777001": "846->855"}
+Timeout (0:10:00)!
+Thread 0x0000793c (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 321 in _recv_bytes
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 250 in recv
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 579 in _handle_results
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x0000b3b4 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 531 in _handle_tasks
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x0000c5dc (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1016 in _exhaustive_wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1084 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 502 in _wait_for_updates
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 522 in _handle_workers
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x00009b60 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 355 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 655 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 765 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 768 in get
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 367 in map
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 298 in run
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 418 in prove
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 104 in main
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 120 in <module>
+  model: held-out 165 -> 417 KEPT; {"env": 17.4}
+  carried: version 23, language 426, model g=7 pw=4, prior yes, held-out 417; resource live 98.3M proof 169.6M tests 584455; 595 s
+drawn11 life 2: solved 650 of 4800; by pool {"env": 13.5}; 64 s
+  together: held-out 379 -> 282 dropped; {"env": 11.8}
+  extend: held-out 379 -> 323 dropped; {"env": 13.5}
+  model: held-out 379 -> 368 dropped; {"env": 15.3}
+  carried: version 23, language 426, model g=7 pw=4, prior yes, held-out 379; resource live 103.2M proof 179.4M tests 630213; 210 s
+kept: [{"life": 0, "area": "drawn7", "change": "prune -23", "gain": 19, "version": 12}, {"life": 0, "area": "drawn7", "change": "model g=6 from 48 worlds + prior", "gain": 158, "version": 13}, {"life": 1, "area": "drawn7", "change": "language +40", "gain": 52, "version": 14}, {"life": 1, "area": "drawn7", "change": "model g=6 from 96 worlds + prior", "gain": 18, "version": 15}, {"life": 2, "area": "drawn7", "change": "model g=6 from 144 worlds + prior", "gain": 5, "version": 16}, {"life": 3, "area": "drawn7", "change": "prune -26", "gain": 62, "version": 17}, {"life": 0, "area": "metric777001", "change": "model g=8 from 48 worlds + prior", "gain": 975, "version": 18}, {"life": 1, "area": "metric777001", "change": "language +40", "gain": 179, "version": 19}, {"life": 2, "area": "metric777001", "change": "model g=8 from 144 worlds + prior", "gain": 120, "version": 20}, {"life": 3, "area": "metric777001", "change": "prune -25", "gain": 102, "version": 21}, {"life": 3, "area": "metric777001", "change": "model g=8 from 192 worlds + prior", "gain": 20, "version": 22}, {"life": 1, "area": "drawn11", "change": "model g=7 pw=4 from 96 worlds + prior", "gain": 252, "version": 23}]
+seed s1 version 23, area drawn13, lives there 0, language 426 atoms
+drawn13 life 0: solved 326 of 4800; by pool {"env": 6.8}; 66 s
+  together: held-out 218 -> 368 dropped; {"env": 15.3} elsewhere {"mech": "1008->1017", "drawn7": "169->190", "metric777001": "824->827", "drawn11": "240->184"}
+  extend: held-out 218 -> 146 dropped; {"env": 6.1}
+  model: held-out 218 -> 340 KEPT; {"env": 14.2}
+  carried: version 24, language 426, model g=6 pw=4, prior yes, held-out 340; resource live 108.1M proof 206.4M tests 685249; 539 s
+Timeout (0:10:00)!
+Thread 0x0000d5d0 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 321 in _recv_bytes
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 250 in recv
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 579 in _handle_results
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x00008dcc (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 531 in _handle_tasks
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x0000c92c (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1016 in _exhaustive_wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1084 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 502 in _wait_for_updates
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 522 in _handle_workers
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x0000c184 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 355 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 655 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 765 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 768 in get
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 367 in map
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 298 in run
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 319 in live
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 56 in main
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 120 in <module>
+drawn13 life 1: solved 710 of 4800; by pool {"env": 14.8}; 58 s
+  together: held-out 302 -> 274 dropped; {"env": 11.4}
+  extend: held-out 302 -> 284 dropped; {"env": 11.8}
+  model: held-out 302 -> 280 dropped; {"env": 11.7}
+  carried: version 24, language 426, model g=6 pw=4, prior yes, held-out 302; resource live 113.0M proof 216.3M tests 737143; 177 s
+kept: [{"life": 0, "area": "drawn7", "change": "model g=6 from 48 worlds + prior", "gain": 158, "version": 13}, {"life": 1, "area": "drawn7", "change": "language +40", "gain": 52, "version": 14}, {"life": 1, "area": "drawn7", "change": "model g=6 from 96 worlds + prior", "gain": 18, "version": 15}, {"life": 2, "area": "drawn7", "change": "model g=6 from 144 worlds + prior", "gain": 5, "version": 16}, {"life": 3, "area": "drawn7", "change": "prune -26", "gain": 62, "version": 17}, {"life": 0, "area": "metric777001", "change": "model g=8 from 48 worlds + prior", "gain": 975, "version": 18}, {"life": 1, "area": "metric777001", "change": "language +40", "gain": 179, "version": 19}, {"life": 2, "area": "metric777001", "change": "model g=8 from 144 worlds + prior", "gain": 120, "version": 20}, {"life": 3, "area": "metric777001", "change": "prune -25", "gain": 102, "version": 21}, {"life": 3, "area": "metric777001", "change": "model g=8 from 192 worlds + prior", "gain": 20, "version": 22}, {"life": 1, "area": "drawn11", "change": "model g=7 pw=4 from 96 worlds + prior", "gain": 252, "version": 23}, {"life": 0, "area": "drawn13", "change": "model g=6 pw=4 from 48 worlds + prior", "gain": 122, "version": 24}]
+mech fresh held-out 1299 -> 2072
+drawn7 fresh held-out 181 -> 338
+metric777001 fresh held-out 375 -> 1913
+drawn11 fresh held-out 215 -> 296
+drawn13 fresh held-out 224 -> 422
+{
+ "name": "s1",
+ "version": 24,
+ "budget": 1024,
+ "areas": {
+  "mech": {
+   "start": {
+    "budget": 1024,
+    "total": 1299,
+    "by_pool": {
+     "trained": 26.25,
+     "unfamiliar": 3.6666666666666665,
+     "untrained": 24.208333333333332
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 2072,
+    "by_pool": {
+     "trained": 49.458333333333336,
+     "unfamiliar": 18.666666666666668,
+     "untrained": 18.208333333333332
+    }
+   },
+   "gain": 773
+  },
+  "drawn7": {
+   "start": {
+    "budget": 1024,
+    "total": 181,
+    "by_pool": {
+     "env": 7.541666666666667
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 338,
+    "by_pool": {
+     "env": 14.083333333333334
+    }
+   },
+   "gain": 157
+  },
+  "metric777001": {
+   "start": {
+    "budget": 1024,
+    "total": 375,
+    "by_pool": {
+     "seen_centre": 10.75,
+     "unfamiliar_centre": 4.875
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 1913,
+    "by_pool": {
+     "seen_centre": 45.125,
+     "unfamiliar_centre": 34.583333333333336
+    }
+   },
+   "gain": 1538
+  },
+  "drawn11": {
+   "start": {
+    "budget": 1024,
+    "total": 215,
+    "by_pool": {
+     "env": 8.958333333333334
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 296,
+    "by_pool": {
+     "env": 12.333333333333334
+    }
+   },
+   "gain": 81
+  },
+  "drawn13": {
+   "start": {
+    "budget": 1024,
+    "total": 224,
+    "by_pool": {
+     "env": 9.333333333333334
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 422,
+    "by_pool": {
+     "env": 17.583333333333332
+    }
+   },
+   "gain": 198
+  }
+ },
+ "lives": {
+  "mech": 10,
+  "drawn7": 4,
+  "metric777001": 4,
+  "drawn11": 3,
+  "drawn13": 2
+ },
+ "resource": {
+  "live_scans": 113049600,
+  "proof_scans": 216268800,
+  "invention_tests": 737143
+ },
+ "invented": {
+  "kept": 166,
+  "by_true_family": {
+   "popcount": 27,
+   "xormod": 29,
+   "novel": 110
+  }
+ }
+}

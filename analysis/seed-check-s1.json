@@ -1,6 +1,6 @@
 {
   "name": "s1",
-  "version": 22,
+  "version": 24,
   "budget": 1024,
   "areas": {
     "mech": {
@@ -59,17 +59,53 @@
         }
       },
       "gain": 1538
+    },
+    "drawn11": {
+      "start": {
+        "budget": 1024,
+        "total": 215,
+        "by_pool": {
+          "env": 8.958333333333334
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 296,
+        "by_pool": {
+          "env": 12.333333333333334
+        }
+      },
+      "gain": 81
+    },
+    "drawn13": {
+      "start": {
+        "budget": 1024,
+        "total": 224,
+        "by_pool": {
+          "env": 9.333333333333334
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 422,
+        "by_pool": {
+          "env": 17.583333333333332
+        }
+      },
+      "gain": 198
     }
   },
   "lives": {
     "mech": 10,
     "drawn7": 4,
-    "metric777001": 4
+    "metric777001": 4,
+    "drawn11": 3,
+    "drawn13": 2
   },
   "resource": {
-    "live_scans": 88473600,
-    "proof_scans": 135168000,
-    "invention_tests": 480522
+    "live_scans": 113049600,
+    "proof_scans": 216268800,
+    "invention_tests": 737143
   },
   "kept_changes": [
     {
@@ -215,6 +251,20 @@
       "change": "model g=8 from 192 worlds + prior",
       "gain": 20,
       "version": 22
+    },
+    {
+      "life": 1,
+      "area": "drawn11",
+      "change": "model g=7 pw=4 from 96 worlds + prior",
+      "gain": 252,
+      "version": 23
+    },
+    {
+      "life": 0,
+      "area": "drawn13",
+      "change": "model g=6 pw=4 from 48 worlds + prior",
+      "gain": 122,
+      "version": 24
     }
   ],
   "invented": {
