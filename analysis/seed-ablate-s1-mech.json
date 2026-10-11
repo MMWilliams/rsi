@@ -1,0 +1,56 @@
+{
+  "carried": {
+    "budget": 1024,
+    "total": 2072,
+    "by_pool": {
+      "trained": 49.458333333333336,
+      "unfamiliar": 18.666666666666668,
+      "untrained": 18.208333333333332
+    }
+  },
+  "no prior": {
+    "budget": 1024,
+    "total": 1614,
+    "by_pool": {
+      "trained": 43.041666666666664,
+      "unfamiliar": 14.666666666666666,
+      "untrained": 9.541666666666666
+    }
+  },
+  "no model": {
+    "budget": 1024,
+    "total": 1639,
+    "by_pool": {
+      "trained": 37.333333333333336,
+      "unfamiliar": 15.041666666666666,
+      "untrained": 15.916666666666666
+    }
+  },
+  "language only": {
+    "budget": 1024,
+    "total": 735,
+    "by_pool": {
+      "trained": 11.125,
+      "unfamiliar": 9.041666666666666,
+      "untrained": 10.458333333333334
+    }
+  },
+  "initial language, carried model + prior": {
+    "budget": 1024,
+    "total": 1973,
+    "by_pool": {
+      "trained": 49.958333333333336,
+      "unfamiliar": 6.083333333333333,
+      "untrained": 26.166666666666668
+    }
+  },
+  "initial": {
+    "budget": 1024,
+    "total": 1299,
+    "by_pool": {
+      "trained": 26.25,
+      "unfamiliar": 3.6666666666666665,
+      "untrained": 24.208333333333332
+    }
+  }
+}

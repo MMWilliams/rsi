@@ -384,13 +384,23 @@ class Seed:
         self.state['resource']['invention_tests'] += tests
         return list(new.values()), tests, provenance
 
-    def prune(self, min_lives=2):
-        """Invented atoms never earned with confidence since they entered, two
-        or more lives on: candidates for removal."""
+    def prune(self, min_lives=2, r_min=.10):
+        """Invented atoms that have not earned their keep, two or more lives
+        after they entered: never earned with confidence anywhere, or rated by
+        every area model that has seen them as found only through the seed's
+        own wrong picks (discovery rate below `r_min`, the self model's
+        import-only verdict). Candidates for removal; the proof decides."""
         life = self.lives()
         earned = {k for e in self.state['experience'] for k in e['confident']}
-        return [k for k, meta in self.state['inventions'].items()
-                if meta.get('life') is not None and life - meta['life'] >= min_lives and k not in earned]
+        models = [a['model'] for a in self.state['areas'].values() if a.get('model')]
+        out = []
+        for k, meta in self.state['inventions'].items():
+            if life - (meta.get('life') or 0) < min_lives:   # atoms of unknown entry are old
+                continue
+            ratings = [m['r'][k] for m in models if k in m['r']]
+            if k not in earned or (ratings and max(ratings) < r_min):
+                out.append(k)
+        return out
 
     # -- prove --------------------------------------------------------------
 
