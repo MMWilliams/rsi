@@ -1,0 +1,18 @@
+seed s1 version 0 lives so far 0 language 260 atoms; 3456 grammar candidates
+life 0: solved 887 of 4800; by pool {"trained": 23.4, "unfamiliar": 3.8}; 13 s
+  extend: 40 atoms from 51451 tests; held-out 1291 -> 1090 dropped; by pool {"trained": 19.2, "unfamiliar": 6.2, "untrained": 20.0}
+  reflect: 6 groups over 181 atoms from 48 worlds; held-out 1291 -> 1708 KEPT; by pool {"trained": 32.8, "unfamiliar": 8.6, "untrained": 29.8}
+  carried: version 1, language 260, model yes, prior yes, held-out 1708; 100 s
+life 1: solved 1257 of 4800; by pool {"trained": 32.5, "unfamiliar": 7.2}; 17 s
+  extend: 40 atoms from 48200 tests; held-out 1708 -> 1722 KEPT; by pool {"trained": 31.7, "unfamiliar": 14.8, "untrained": 25.2}
+  reflect: 6 groups over 186 atoms from 96 worlds; held-out 1722 -> 1840 KEPT; by pool {"trained": 34.6, "unfamiliar": 14.3, "untrained": 27.8}
+  carried: version 3, language 300, model yes, prior yes, held-out 1840; 102 s
+life 2: solved 1285 of 4800; by pool {"trained": 31.9, "unfamiliar": 11.5}; 33 s
+  extend: 40 atoms from 47606 tests; held-out 1840 -> 1666 dropped; by pool {"trained": 31.2, "unfamiliar": 13.6, "untrained": 24.6}
+  reflect: 6 groups over 174 atoms from 144 worlds; held-out 1840 -> 1853 KEPT; by pool {"trained": 32.4, "unfamiliar": 18.5, "untrained": 26.3}
+  carried: version 4, language 300, model yes, prior yes, held-out 1853; 139 s
+life 3: solved 1321 of 4800; by pool {"trained": 32.7, "unfamiliar": 12.0}; 29 s
+  extend: 40 atoms from 47632 tests; held-out 1853 -> 1898 KEPT; by pool {"trained": 35.4, "unfamiliar": 17.0, "untrained": 26.6}
+  reflect: 8 groups over 167 atoms from 192 worlds; held-out 1898 -> 2031 KEPT; by pool {"trained": 37.5, "unfamiliar": 18.0, "untrained": 29.1}
+  carried: version 6, language 340, model yes, prior yes, held-out 2031; 150 s
+kept: [{"life": 0, "change": "model g=6 from 48 worlds + prior", "gain": 417, "version": 1}, {"life": 1, "change": "language +40 atoms", "gain": 14, "version": 2}, {"life": 1, "change": "model g=6 from 96 worlds + prior", "gain": 118, "version": 3}, {"life": 2, "change": "model g=6 from 144 worlds + prior", "gain": 13, "version": 4}, {"life": 3, "change": "language +40 atoms", "gain": 45, "version": 5}, {"life": 3, "change": "model g=8 from 192 worlds + prior", "gain": 133, "version": 6}]
