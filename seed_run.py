@@ -58,11 +58,15 @@ def main():
         entry = seed.state['ledger'][-1]
         print(f'{area.name} life {life}: solved {entry["total"]} of {args.worlds * 100}; by pool '
               f'{fmt(entry)}; {time.time() - t:.0f} s', flush=True)
-        # the held-out set changes only after an acceptance in this area: a set on which
-        # nothing was accepted carries no selection bias, and the carried score stays cached
-        accepted = sum(1 for e in seed.state['ledger'] if e['op'] == 'prove' and e.get('kept') and e['area'] == area.name)
-        salt = 1000 * (1 + sorted(seed.state['areas']).index(area.name)) + accepted
-        held = area.held_out(-(-args.held_out // len(area.pools)), salt=salt)   # --held-out worlds in all, split over pools
+
+        def fresh():
+            # the held-out set changes only after an acceptance in this area, within a life
+            # as across lives: a set on which nothing was accepted carries no selection bias,
+            # and the carried score on it stays cached
+            accepted = sum(1 for e in seed.state['ledger'] if e['op'] == 'prove' and e.get('kept') and e['area'] == area.name)
+            salt = 1000 * (1 + sorted(seed.state['areas']).index(area.name)) + accepted
+            return salt, area.held_out(-(-args.held_out // len(area.pools)), salt=salt)   # --held-out worlds over all pools
+
         atoms, tests, provenance = seed.extend(worlds, records, cands)
         drop = seed.prune()
         model = seed.reflect(area.name)
@@ -97,6 +101,7 @@ def main():
         done = False
         if len(parts) >= 2:
             cand = apply(seed.candidate(), {p[0] for p in parts})
+            salt, held = fresh()
             kept, carried, new, elsewhere = seed.prove(
                 area, held, salt, cand, args.budget, ' + '.join(p[1] for p in parts),
                 note={'parts': [p[0] for p in parts]}, shared=any(p[2] for p in parts))
@@ -105,6 +110,7 @@ def main():
         if not done:
             for kind, change, shared, note in parts:
                 cand = apply(seed.candidate(), {kind})
+                salt, held = fresh()
                 kept, carried, new, elsewhere = seed.prove(area, held, salt, cand, args.budget, change,
                                                            note=note, shared=shared)
                 report(kind, kept, carried, new, elsewhere)

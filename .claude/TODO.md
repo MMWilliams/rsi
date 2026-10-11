@@ -156,6 +156,8 @@ are for replication only. Nothing proven is reset between generations.
       one seed passes all gates, the other fails only the uniqueness clause.
       NEXT: v3 fix (fresh set after an in-life acceptance), paper/doc update,
       919104/919105 for v3 when wanted; label-free untrained guard still open.
+      v3 fix APPLIED in seed_run.py (fresh() before each proof), not frozen,
+      not run. Paper 2 + doc updated with all four sealed seeds (doc rev 53).
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 

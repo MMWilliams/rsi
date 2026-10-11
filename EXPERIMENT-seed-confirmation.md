@@ -254,3 +254,12 @@ on the development seed, in milder form, and remains unguarded.
 Forecast scoring for v2: gate 1 (0.85) passed twice, gate 2 (0.6) passed
 twice, gate 3 (0.75) passed twice, gate 4 (0.9) passed once and failed once;
 all four on both seeds (0.35) did not happen.
+
+## v3 (code applied 2026-10-11, NOT frozen, NOT run)
+
+`seed_run.py` now draws the held-out set from the acceptance count at proof
+time, so the parts tested after an acceptance within a life get a fresh set.
+Everything else as v2. To be frozen with new hashes and run on 919104 and
+919105 when the next confirmation is wanted. The untrained-pool guard is
+still not built; 919103's 94% is the standing evidence that it is needed
+only mildly.
