@@ -146,3 +146,52 @@ Gates 1, 2 and 4 pass on both sealed seeds; gate 3 fails on both. The
 protocol as frozen is therefore failed on cost and passed on growth, safety
 and provenance. Development seeds s1, s2, s3 and these two confirmation seeds
 are now all used; any cost fix must be confirmed on new sealed seeds.
+
+
+## Protocol v2 (FROZEN 2026-10-11, after the v1 verdict)
+
+v1 failed only its cost gate, on both seeds, and the arithmetic says why: a
+fresh held-out set every life makes the carried state's re-score alone 1.5x
+the cost of a 48-world life in the mechanism area (72 worlds), and three
+candidates per life on top make 4x to 6x unavoidable however early the
+losers stop. v2 changes the schedule's economics, not the acceptance rule:
+
+- Lives are 96 worlds (was 48): the agent lives twice as long between tests.
+- Every acceptance test uses 48 worlds in every area (mechanism 16 per pool,
+  was 24 per pool = 72); the cross-area check stays at 24 worlds minimum.
+- The held-out set of an area changes only after an acceptance in that area;
+  a set on which nothing was accepted carries no selection bias, and the
+  carried state's score on it stays cached.
+- A candidate stops at the half set when its mean gain there is not positive
+  (was: only when the half-set interval lay wholly below zero).
+
+Dev measurement before freezing (seed 778, mech 2 / drawn7 1 / metric 1,
+`runs_seed_d2.log`): proof scans 2.06x live; the same schedule under v1 with
+the first two cuts alone read 5.1x (`runs_seed_d1.log`, seed 777). Growth on
+those dev lives was unchanged in kind (mech held-out 749 -> 1121, drawn7
+529 -> 822, metric 444 -> 1368 on the per-life sets).
+
+Seeds: 919102 (replication C) and 919103 (replication D), sealed and unopened
+at the time of writing. Schedule as v1 (mech 4, drawn7 3, metric 3, mech 2
+lives), endpoints and gates as v1 (growth >= 15% every area, no pool below
+90% of start, proofs <= 2.5x live, every kept change replays with salts
+unique per area). Runner `confirm_seed.sh <name> <seed>` now passes
+`--worlds 96 --held-out 48`.
+
+Hashes:
+
+```
+5673d937d45063bbafd31cd03a0b17bf55c6424befc2beb42dd7c87f49996f7d  rsi/seed.py
+15a2b0f65ccb52ee60aa423a43ec2c2caf80af9091c33a28de182e8915fb49a9  rsi/seed_areas.py
+aefd9cc94f7dbf8f54eb311baae6245522bf212bdbca4b6ac63cb5f13cfa9c83  rsi/invention.py
+e9c6a2b3ed10cd6bb33306ca5234c06b5a087c739fcf71c65aa97593a205f2a3  rsi/self_world_model.py
+b2fadf612c34d4c122011dfce15b5711abeae6d50bb3c01c164bec205c9109f9  seed_run.py
+b6f5f11a0632b5af605729377a9a75561440fda21c5e0ff27ad310d26dd0da6c  seed_check.py
+271cb85d5a83c83173fbb3d63d441d187fed1a3850ae58e85f0c8f88e5828420  audit_seed.py
+3676f13465e58b584b0e180e89630310a9216682bc3e996a2818161c5deb294c  confirm_seed.sh
+```
+
+Forecast, committed before opening 919102: gate 1 0.85, gate 2 0.6 (both
+v1 seeds passed with every pool up), gate 3 0.75 (dev 2.06x; a seed that
+accepts on many lives re-scores more often), gate 4 0.9; all four gates on
+both seeds 0.35.

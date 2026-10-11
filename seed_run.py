@@ -34,7 +34,7 @@ def main():
     ap.add_argument('--lives', type=int, default=4)
     ap.add_argument('--worlds', type=int, default=48)
     ap.add_argument('--budget', type=int, default=1024)
-    ap.add_argument('--held-out', type=int, default=24)
+    ap.add_argument('--held-out', type=int, default=48, help='worlds per acceptance test, over all pools')
     args = ap.parse_args()
     warnings.filterwarnings('ignore')
     faulthandler.dump_traceback_later(600, repeat=True)   # where the main process is, if it stalls
@@ -58,8 +58,11 @@ def main():
         entry = seed.state['ledger'][-1]
         print(f'{area.name} life {life}: solved {entry["total"]} of {args.worlds * 100}; by pool '
               f'{fmt(entry)}; {time.time() - t:.0f} s', flush=True)
-        salt = 1000 * (1 + sorted(seed.state['areas']).index(area.name)) + life
-        held = area.held_out(max(args.held_out, -(-48 // len(area.pools))), salt=salt)   # at least 48 worlds
+        # the held-out set changes only after an acceptance in this area: a set on which
+        # nothing was accepted carries no selection bias, and the carried score stays cached
+        accepted = sum(1 for e in seed.state['ledger'] if e['op'] == 'prove' and e.get('kept') and e['area'] == area.name)
+        salt = 1000 * (1 + sorted(seed.state['areas']).index(area.name)) + accepted
+        held = area.held_out(-(-args.held_out // len(area.pools)), salt=salt)   # --held-out worlds in all, split over pools
         atoms, tests, provenance = seed.extend(worlds, records, cands)
         drop = seed.prune()
         model = seed.reflect(area.name)

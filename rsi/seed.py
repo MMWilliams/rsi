@@ -460,7 +460,7 @@ class Seed:
             done = sorted(hits)
             diff = np.array([hits[i] for i in done]) - base[done]
             bounds = interval(diff)
-            if bounds[1] < 0:
+            if bounds[1] < 0 or diff.mean() <= 0:   # clearly or probably behind: stop at the half set
                 break
         done = sorted(hits)
         new = self.score([{'hits': hits[i]} for i in done], [held_out[i] for i in done], budget)

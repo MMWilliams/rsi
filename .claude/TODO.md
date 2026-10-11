@@ -137,7 +137,15 @@ are for replication only. Nothing proven is reset between generations.
       gates 1,2,4 pass on both sealed seeds, gate 3 fails on both; all five
       seeds now used, a cost fix needs NEW sealed seeds (reserve 919102/3).
       Paper 2 + doc: confirmation paragraph + table DONE (14 pp, doc rev 51).
-      NEXT: cut proof cost, reserve 919102/919103, re-run the protocol.
+      COST CUTS (uncommitted): held-out set reused until an acceptance in
+      that area (salt = accepted count, carried score cached); half-set stop
+      when mean gain <= 0. Measuring on dev seed d1 (777), runs_seed_d1.log;
+      then freeze protocol v2 and run 919102/919103. d1 (777) read 5.1x:
+      the floor is structural (fresh carried re-score + 3 candidates on 72
+      worlds). v2: lives 96 worlds, tests 48 worlds everywhere, set reused
+      until acceptance, half-set stop on mean <= 0; d2 (778) read 2.06x.
+      v2 FROZEN with hashes; c3 = 919102 RUNNING (runs_seed_conf_c3.log),
+      then c4 = 919103.
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 
