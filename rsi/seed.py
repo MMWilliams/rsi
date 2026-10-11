@@ -289,9 +289,19 @@ class Seed:
         per_world = model.get('per_world', 3) if model else 3
         prior_sets = [e['picks'] for e in st['experience'] if e['area'] == area] if a['prior'] else None
         ctx = multiprocessing.get_context('spawn')
-        with ctx.Pool(workers, initializer=_init,
-                      initargs=(st['language'], labels, per_world, prior_sets, st['tiebreak'], budget)) as pool:
-            out = pool.map(_life, [(i, w['masks'], w['rng']) for i, w in enumerate(worlds)], chunksize=2)
+        jobs = [(i, w['masks'], w['rng']) for i, w in enumerate(worlds)]
+        for attempt in range(4):
+            try:
+                with ctx.Pool(max(1, workers >> attempt), initializer=_init,
+                              initargs=(st['language'], labels, per_world, prior_sets,
+                                        st['tiebreak'], budget)) as pool:
+                    out = pool.map(_life, jobs, chunksize=2)
+                break
+            except MemoryError:
+                # the machine's commit is shared with other jobs; wait, then fewer workers
+                if attempt == 3:
+                    raise
+                time.sleep(90)
         return sorted(out, key=lambda r: r['index'])
 
     @staticmethod
