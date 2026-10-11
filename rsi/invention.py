@@ -103,13 +103,15 @@ def fits_any(cand, pos, neg, earned):
     return ok.any(axis=0)
 
 
-def invent(cands, tasks, earned, known, budget=None):
+def invent(cands, tasks, earned, known, budget=None, min_tasks=2):
     """Breadth-first invention for one world. `cands` is the candidate list,
     `tasks` the (pos, neg) constraints of the tasks the agent could not solve,
     `earned` the masks of atoms it earned there, `known` the set of masks (and
     complements) already in its language. A candidate is kept when it fits at
-    least one still-uncovered task. Returns (kept candidate indices, tests)."""
-    if not tasks:
+    least `min_tasks` still-uncovered tasks: an atom the world is built from
+    recurs across its mechanisms, a chance fit does not. Returns (kept
+    candidate indices, tests)."""
+    if len(tasks) < min_tasks:
         return [], 0
     pos, neg = words([t[0] for t in tasks]), words([t[1] for t in tasks])
     earned = words(earned) if len(earned) else np.zeros((0, 4), dtype=np.uint64)
@@ -123,7 +125,7 @@ def invent(cands, tasks, earned, known, budget=None):
         tests += 1
         open_ = np.flatnonzero(~covered)
         fit = fits_any(words([mask])[0], pos[open_], neg[open_], earned)
-        if fit.any():
+        if fit.sum() >= min_tasks:
             kept.append(index)
             covered[open_[fit]] = True
     return kept, tests
