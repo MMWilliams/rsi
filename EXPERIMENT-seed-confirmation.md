@@ -556,3 +556,34 @@ area have passed 15% on the development seed for drawn11 and drawn13, 199
 anything, and metric555001 is untried), gate 2 0.6 (six areas, nine pools),
 gate 3 0.7 (more areas, more cross-area checks per language candidate),
 gate 4 0.9; all four on both seeds 0.2.
+
+### Replication K, seed 919110 under v6 (`seeds/c11`, `runs_seed_conf_c11.log`), 2026-10-11, INCOMPLETE
+
+All 18 lives ran (10 kept changes: four in mech, two in drawn7, two in
+metric777001, one each in drawn11 and drawn13, none in metric555001's two
+lives, where the model proposals read [+0.2, +4.2] and were kept only on the
+second). The host ran out of memory during the fresh check: Claude Code
+stopped the job after five of the six areas had printed, before the sixth
+and before the audit. The job was not restarted without reese's say-so.
+
+Fresh check, five of six areas (24 worlds per pool, salt 999):
+
+| area | start | carried | gain |
+| --- | --- | --- | --- |
+| mech | 1,197 | 2,442 | +104% |
+| drawn7 | 305 | 375 | +23% |
+| metric777001 | 299 | 1,415 | +373% |
+| drawn11 | 291 | 424 | +46% |
+| drawn13 | 375 | 483 | +29% |
+| metric555001 | not run | | |
+
+- Gate 1: five of six areas pass; the sixth is unmeasured.
+- Gate 2: per-pool numbers are in `analysis/seed-check-c11.json` only once
+  the check completes; unmeasured.
+- Gate 3: FAIL, 2.78x. Six areas mean up to five cross-area checks per
+  language candidate; v4's 2.0x to 2.3x on three areas does not carry.
+- Gate 4: not run.
+
+To finish: `RSI_WORKERS=4 python seed_check.py --name c11 --seed 919110
+--areas mech,drawn7,metric777001,drawn11,drawn13,metric555001 && python
+audit_seed.py --name c11`, then `sh confirm_seed.sh c12 919111`.
