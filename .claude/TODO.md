@@ -132,6 +132,11 @@ are for replication only. Nothing proven is reset between generations.
       (919101) running. Then: paper 2 confirmation section + doc; cut proof
       cost (skip the lone extend test when together failed only on the
       cross-area check; test cross-area once per life, not per candidate).
+      c2 RESULT (919101): mech 1223->1944, drawn7 271->318 (+17%), metric
+      318->1619, every pool up, audit 8/8; gate 3 FAILED 5.88x. VERDICT:
+      gates 1,2,4 pass on both sealed seeds, gate 3 fails on both; all five
+      seeds now used, a cost fix needs NEW sealed seeds (reserve 919102/3).
+      Paper 2 + doc: add the confirmation paragraph (in progress).
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 

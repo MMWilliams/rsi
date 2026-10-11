@@ -121,3 +121,28 @@ on 72 worlds; drawn7 life 1 "together" cost mech 1012 -> 945).
 
 Forecast scoring: gates 1, 2 and 4 were given 0.6, 0.45 and 0.8 and passed;
 gate 3 was given 0.5 and failed.
+
+### Replication B, seed 919101 (`seeds/c2`, `runs_seed_conf_c2.log`), 2026-10-11
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,223 | 1,944 | +59% | trained 25.0 -> 33.2, untrained 21.0 -> 29.8, unfamiliar 4.9 -> 18.0 |
+| drawn7 | 271 | 318 | +17% | env 11.3 -> 13.2 |
+| metric777001 | 318 | 1,619 | +409% | seen 8.7 -> 40.4, unfamiliar 4.5 -> 27.0 |
+
+Kept changes (8): mech life 0 language +40 + model; mech life 3 language +40
++ prune -27 + model; drawn7 life 0 language +40 + prune -26 + model; drawn7
+life 1 language +40; metric life 0 language +40 + prune -20 + model; metric
+life 1 model; metric life 2 prune -51; mech life 4 model. This seed accepted
+four extensions where seed 919100 accepted one; its drawn7 gain is the
+smallest of the six area results and the closest to the 15% line.
+
+- Gate 1: PASS. Gate 2: PASS (every pool rose). Gate 3: FAIL, 5.88x.
+- Gate 4: PASS, all 8 kept changes replay exactly; salts unique per area.
+
+### Verdict
+
+Gates 1, 2 and 4 pass on both sealed seeds; gate 3 fails on both. The
+protocol as frozen is therefore failed on cost and passed on growth, safety
+and provenance. Development seeds s1, s2, s3 and these two confirmation seeds
+are now all used; any cost fix must be confirmed on new sealed seeds.
