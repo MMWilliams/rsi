@@ -255,11 +255,31 @@ Forecast scoring for v2: gate 1 (0.85) passed twice, gate 2 (0.6) passed
 twice, gate 3 (0.75) passed twice, gate 4 (0.9) passed once and failed once;
 all four on both seeds (0.35) did not happen.
 
-## v3 (code applied 2026-10-11, NOT frozen, NOT run)
+## Protocol v3 (FROZEN 2026-10-11, after the v2 verdict)
 
-`seed_run.py` now draws the held-out set from the acceptance count at proof
-time, so the parts tested after an acceptance within a life get a fresh set.
-Everything else as v2. To be frozen with new hashes and run on 919104 and
-919105 when the next confirmation is wanted. The untrained-pool guard is
-still not built; 919103's 94% is the standing evidence that it is needed
-only mildly.
+`seed_run.py` draws the held-out set from the acceptance count at proof
+time, so the parts tested after an acceptance within a life get a fresh set;
+this closes the clause 919102 failed. Everything else as v2: schedule, lives
+of 96 worlds, 48-world tests, gates, endpoints, runner. The untrained-pool
+guard is not built; 919103's 94% is the standing evidence that the effect is
+mild under v2.
+
+Seeds: 919104 (replication E) and 919105 (replication F), sealed and unopened
+at the time of writing.
+
+Hashes:
+
+```
+5673d937d45063bbafd31cd03a0b17bf55c6424befc2beb42dd7c87f49996f7d  rsi/seed.py
+15a2b0f65ccb52ee60aa423a43ec2c2caf80af9091c33a28de182e8915fb49a9  rsi/seed_areas.py
+aefd9cc94f7dbf8f54eb311baae6245522bf212bdbca4b6ac63cb5f13cfa9c83  rsi/invention.py
+e9c6a2b3ed10cd6bb33306ca5234c06b5a087c739fcf71c65aa97593a205f2a3  rsi/self_world_model.py
+4babdfde950755e0511ffeefa2ca7272cce42323298e7a7eca5d4941ffcf476f  seed_run.py
+b6f5f11a0632b5af605729377a9a75561440fda21c5e0ff27ad310d26dd0da6c  seed_check.py
+271cb85d5a83c83173fbb3d63d441d187fed1a3850ae58e85f0c8f88e5828420  audit_seed.py
+3676f13465e58b584b0e180e89630310a9216682bc3e996a2818161c5deb294c  confirm_seed.sh
+```
+
+Forecast, committed before opening 919104: gate 1 0.9, gate 2 0.6, gate 3
+0.7 (a fresh set after each in-life acceptance adds re-scores on the lives
+that accept more than one part), gate 4 0.9; all four on both seeds 0.4.

@@ -158,6 +158,9 @@ are for replication only. Nothing proven is reset between generations.
       919104/919105 for v3 when wanted; label-free untrained guard still open.
       v3 fix APPLIED in seed_run.py (fresh() before each proof), not frozen,
       not run. Paper 2 + doc updated with all four sealed seeds (doc rev 53).
+      v3 FROZEN with hashes; c5 = 919104 RUNNING (runs_seed_conf_c5.log),
+      then c6 = 919105. Then paper/doc update, then the untrained guard (v4
+      idea, label-free: candidate must also hold on the no-prior half).
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 
