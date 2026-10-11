@@ -189,7 +189,7 @@ are for replication only. Nothing proven is reset between generations.
       c10 RESULT (919109): mech 1111->2151, drawn7 278->334, metric 404->1626,
       every pool up, cost 2.53 FAIL, audit pass; guard fired 3x. v5 FAILS;
       guard RETIRED, seed.py restored to the v4 hash. v4 = confirmed protocol.
-      NEXT: paper/doc with v5; later a cumulative-drift guard vs the INITIAL
+      Paper (15 pp) + doc (rev 60) carry all ten seeds. LATER: a cumulative-drift guard vs the INITIAL
       language (own seeds), second task form. (old note: the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).
 
