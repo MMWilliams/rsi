@@ -175,6 +175,8 @@ with a capacity default. Screens gate every phase.
       is complete and L1 can be used by the agent (predict its own discovery).
       Paper (2026-10-10): `SELF-SIMULATION-WORLD-MODEL-2026-10-10.md`, living
       copy with charts https://claude.ai/code/artifact/6664a612-30fc-4059-9fa8-71124f164828
+      arXiv-style PDF: `paper/self-simulation-world-model.pdf` from
+      `paper/self-simulation-world-model.tex` (pdflatex, MiKTeX; run twice).
 - [ ] Remaining routes, none cheap: (a) a different quality signal (held-out
       likelihood gain over no grouping), screened the same way; (b) Phase 2
       proper, trust learned across drawn environments rather than from one
