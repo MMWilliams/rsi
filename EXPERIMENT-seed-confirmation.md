@@ -283,3 +283,33 @@ b6f5f11a0632b5af605729377a9a75561440fda21c5e0ff27ad310d26dd0da6c  seed_check.py
 Forecast, committed before opening 919104: gate 1 0.9, gate 2 0.6, gate 3
 0.7 (a fresh set after each in-life acceptance adds re-scores on the lives
 that accept more than one part), gate 4 0.9; all four on both seeds 0.4.
+
+### Replication E, seed 919104 under v3 (`seeds/c5`, `runs_seed_conf_c5.log`), 2026-10-11
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,276 | 1,807 | +42% | trained 27.1 -> 33.9, untrained 22.2 -> 24.8, unfamiliar 3.9 -> 16.7 |
+| drawn7 | 280 | 364 | +30% | env 11.7 -> 15.2 |
+| metric777001 | 373 | 1,927 | +417% | seen 11.0 -> 46.7, unfamiliar 4.5 -> 33.6 |
+
+Kept changes (7): mech lives 0 and 1 (language +40 + model), drawn7 life 0
+(model) and life 1 (prune -21), metric life 0 (language +40 + model) and
+life 2 (model), mech life 4 (prune -29). Proof scans 270M against 118M live.
+
+- Gate 1: PASS. Gate 2: PASS (every pool rose). Gate 3: PASS, 2.29x.
+- Gate 4: FAIL. Salts are unique, and 6 of 7 kept changes replay exactly,
+  but version 6 (metric life 2, model) does not: the ledger's carried score
+  is 1,479 and the replay reads 1,526 (the candidate, 1,791, replays
+  exactly; the replayed interval is [+2.9, +8.1], so the acceptance stands).
+  Cause, found: v2's reuse of a held-out set across lives caches the
+  carried state's score per version, but the carried state's search prior
+  is built from all of the area's experience, which grows every life
+  whether or not anything is accepted. At metric life 1 the carried score
+  was computed with 864 experience records; at life 2, with 960, the cache
+  was reused. The baseline was stale by 47 tasks. The s2 chain-time
+  mismatches predate this cache and remain unexplained.
+
+Fix for a v4: the cached carried score also records the area's experience
+count and is recomputed when it changes. This gives back part of v2's cost
+saving (the carried is re-scored on every life of an area with a prior), so
+gate 3 is at risk again; the honest baseline comes first.

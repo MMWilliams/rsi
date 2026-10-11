@@ -159,7 +159,14 @@ are for replication only. Nothing proven is reset between generations.
       v3 fix APPLIED in seed_run.py (fresh() before each proof), not frozen,
       not run. Paper 2 + doc updated with all four sealed seeds (doc rev 53).
       v3 FROZEN with hashes; c5 = 919104 RUNNING (runs_seed_conf_c5.log),
-      then c6 = 919105. Then paper/doc update, then the untrained guard (v4
+      then c6 = 919105 (c5 at mech life 5 of the schedule at 05:49, proofs
+      kept in every area so far). c5 RESULT (919104): mech 1276->1807, drawn7
+      280->364, metric 373->1927, every pool up, 2.29x, salts unique, BUT
+      audit v6 MISMATCH: carried 1479 recorded vs 1526 replayed. CAUSE: set
+      reuse caches the carried score per version while the prior grows with
+      experience every life. v4 fix = cache keyed on the area experience
+      count too (script tmp/v4_fix.py, apply AFTER c6 finishes under v3
+      hashes). Then paper/doc update, then the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
