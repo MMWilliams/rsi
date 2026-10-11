@@ -87,6 +87,19 @@ are for replication only. Nothing proven is reset between generations.
       Confirmation protocol drafted, NOT frozen: EXPERIMENT-seed-confirmation.md
       (gates: growth >=15% every area, no pool below 90% of start, proofs
       <= 2.5x live, ledger replays); seeds 919100/919101 reserved.
+      Life 10 (old rule): prune DROPPED (2401 -> 2321), a model KEPT on +24
+      that did not hold on the untouched set (mech 2072 -> 1990). Two seed
+      fixes (87096e8): proofs keep a change only if the paired bootstrap
+      95% interval over held-out worlds is above zero; content-stable
+      tie-break (hash of the row) so a language change no longer reshuffles
+      every row's scan order. Life 11: self-model prune KEPT [+0.3, +3.0]
+      per world (language 426 -> 371; invented 111 = 26 popcount, 29 xormod,
+      56 novel) and better in EVERY other area (drawn7 134->155, metric
+      980->1007, drawn11 171->207, drawn13 161->184); model [-1.2,+2.1] and
+      extension dropped. Five-area fresh check v26 (new tie-break, new
+      baselines): mech 1232->2072, drawn7 211->364, metric 427->2076,
+      drawn11 199->360, drawn13 294->442. Proof cost 302M vs 123M live
+      (2.5x): cut next (smaller cross-area sets, early stopping).
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 
