@@ -52,6 +52,7 @@ class MetricArea(Area):
                  minimum=110, unfamiliar_share=.25):
         super().__init__(seed)
         self.name = f'metric{weight_seed}'
+        self.spec = {'kind': 'metric', 'weight_seed': weight_seed}
         self.latent = descriptors(self.full)
         rng = np.random.default_rng(weight_seed)
         self.weights = np.zeros(self.latent.shape[1])

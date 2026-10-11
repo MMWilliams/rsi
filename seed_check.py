@@ -16,8 +16,7 @@ from collections import Counter
 
 from rsi.common import ROOT, write_json
 from rsi.mechanism_space import FULL, atom_expressions, mask_of
-from rsi.seed import Seed
-from seed_run import make_area
+from rsi.seed import Seed, make_area
 
 
 def main():
