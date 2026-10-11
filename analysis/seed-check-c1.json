@@ -1,0 +1,133 @@
+{
+  "name": "c1",
+  "version": 7,
+  "budget": 1024,
+  "areas": {
+    "mech": {
+      "start": {
+        "budget": 1024,
+        "total": 1128,
+        "by_pool": {
+          "trained": 21.458333333333332,
+          "unfamiliar": 4.083333333333333,
+          "untrained": 21.458333333333332
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 1997,
+        "by_pool": {
+          "trained": 34.875,
+          "unfamiliar": 12.75,
+          "untrained": 35.583333333333336
+        }
+      },
+      "gain": 869
+    },
+    "drawn7": {
+      "start": {
+        "budget": 1024,
+        "total": 236,
+        "by_pool": {
+          "env": 9.833333333333334
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 385,
+        "by_pool": {
+          "env": 16.041666666666668
+        }
+      },
+      "gain": 149
+    },
+    "metric777001": {
+      "start": {
+        "budget": 1024,
+        "total": 405,
+        "by_pool": {
+          "seen_centre": 14.291666666666666,
+          "unfamiliar_centre": 2.5833333333333335
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 1055,
+        "by_pool": {
+          "seen_centre": 30.75,
+          "unfamiliar_centre": 13.208333333333334
+        }
+      },
+      "gain": 650
+    }
+  },
+  "lives": {
+    "mech": 6,
+    "drawn7": 3,
+    "metric777001": 3
+  },
+  "resource": {
+    "live_scans": 58982400,
+    "proof_scans": 351436800,
+    "invention_tests": 597644
+  },
+  "kept_changes": [
+    {
+      "life": 0,
+      "area": "mech",
+      "change": "language +40 + model g=6 pw=4 from 48 worlds + prior",
+      "gain": 653,
+      "version": 1
+    },
+    {
+      "life": 2,
+      "area": "mech",
+      "change": "prune -18",
+      "gain": 62,
+      "version": 2
+    },
+    {
+      "life": 1,
+      "area": "drawn7",
+      "change": "model g=6 pw=4 from 96 worlds + prior",
+      "gain": 286,
+      "version": 3
+    },
+    {
+      "life": 2,
+      "area": "drawn7",
+      "change": "prune -6",
+      "gain": 30,
+      "version": 4
+    },
+    {
+      "life": 0,
+      "area": "metric777001",
+      "change": "model g=6 pw=3 from 48 worlds + prior",
+      "gain": 561,
+      "version": 5
+    },
+    {
+      "life": 1,
+      "area": "metric777001",
+      "change": "model g=6 pw=2 from 96 worlds + prior",
+      "gain": 104,
+      "version": 6
+    },
+    {
+      "life": 4,
+      "area": "mech",
+      "change": "model g=8 pw=3 from 240 worlds + prior",
+      "gain": 164,
+      "version": 7
+    }
+  ],
+  "invented": {
+    "kept": 16,
+    "by_true_family": {
+      "popcount": 2,
+      "novel": 6,
+      "xormod": 8
+    }
+  }
+}
