@@ -100,6 +100,16 @@ are for replication only. Nothing proven is reset between generations.
       baselines): mech 1232->2072, drawn7 211->364, metric 427->2076,
       drawn11 199->360, drawn13 294->442. Proof cost 302M vs 123M live
       (2.5x): cut next (smaller cross-area sets, early stopping).
+      2026-10-11 s2/s3 multi-area (runs_seed_j.log, stable tie-break):
+      s2 mech 1292->1879, drawn7 221->424, metric 492->1520; s3 mech
+      1081->2074, drawn7 280->246 (DECLINE: metric life-0 extension +40
+      passed the 12-world cross-area check 124->148 yet lost 12% on the
+      24-world untouched set; nothing kept in s3 drawn7 itself, intervals
+      crossed zero on 24-world sets), metric 394->1349. Paper 2 second
+      editorial pass applied (doc rev 48, PDF 13 pp, new fig 1).
+      NEXT: held-out 48 worlds for single-pool areas and larger cross-area
+      sets (power, not size, is the problem); run audit_seed.py; freeze
+      EXPERIMENT-seed-confirmation.md and run 919100/919101.
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 

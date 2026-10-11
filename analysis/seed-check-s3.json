@@ -1,37 +1,75 @@
 {
   "name": "s3",
-  "version": 3,
+  "version": 5,
   "budget": 1024,
   "areas": {
     "mech": {
       "start": {
         "budget": 1024,
-        "total": 1159,
+        "total": 1081,
         "by_pool": {
-          "trained": 21.875,
-          "unfamiliar": 2.125,
-          "untrained": 24.291666666666668
+          "trained": 22.041666666666668,
+          "unfamiliar": 3.0416666666666665,
+          "untrained": 19.958333333333332
         }
       },
       "carried": {
         "budget": 1024,
-        "total": 2048,
+        "total": 2074,
         "by_pool": {
-          "trained": 43.333333333333336,
-          "unfamiliar": 6.5,
-          "untrained": 35.5
+          "trained": 38.5,
+          "unfamiliar": 12.333333333333334,
+          "untrained": 35.583333333333336
         }
       },
-      "gain": 889
+      "gain": 993
+    },
+    "drawn7": {
+      "start": {
+        "budget": 1024,
+        "total": 280,
+        "by_pool": {
+          "env": 11.666666666666666
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 246,
+        "by_pool": {
+          "env": 10.25
+        }
+      },
+      "gain": -34
+    },
+    "metric777001": {
+      "start": {
+        "budget": 1024,
+        "total": 394,
+        "by_pool": {
+          "seen_centre": 13.0,
+          "unfamiliar_centre": 3.4166666666666665
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 1349,
+        "by_pool": {
+          "seen_centre": 38.75,
+          "unfamiliar_centre": 17.458333333333332
+        }
+      },
+      "gain": 955
     }
   },
   "lives": {
-    "mech": 3
+    "mech": 3,
+    "drawn7": 2,
+    "metric777001": 2
   },
   "resource": {
-    "live_scans": 14745600,
-    "proof_scans": 66355200,
-    "invention_tests": 157472
+    "live_scans": 34406400,
+    "proof_scans": 138854400,
+    "invention_tests": 365935
   },
   "kept_changes": [
     {
@@ -54,10 +92,28 @@
       "change": "model g=7 from 144 worlds + prior",
       "gain": 118,
       "version": 3
+    },
+    {
+      "life": 0,
+      "area": "metric777001",
+      "change": "language +40 + model g=8 pw=3 from 48 worlds + prior",
+      "gain": 707,
+      "version": 4
+    },
+    {
+      "life": 1,
+      "area": "metric777001",
+      "change": "model g=8 pw=2 from 96 worlds + prior",
+      "gain": 81,
+      "version": 5
     }
   ],
   "invented": {
-    "kept": 0,
-    "by_true_family": {}
+    "kept": 40,
+    "by_true_family": {
+      "novel": 20,
+      "popcount": 7,
+      "xormod": 13
+    }
   }
 }
