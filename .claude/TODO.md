@@ -73,6 +73,20 @@ are for replication only. Nothing proven is reset between generations.
       Paper 2: 'A Seed That Grows by Proving Its Own Changes'
       https://claude.ai/code/artifact/ebd48ba7-84b1-4bb2-b2e5-eb18375651bc
       (five-area check pending; PDF to follow).
+      Five-area check v24: drawn11 215 -> 296, drawn13 224 -> 422 (others
+      unchanged). PDF paper/seed-growth.pdf. ABLATION (`seed_ablate.py`,
+      mech fresh set): carried 2072 {trained 49.5, unfamiliar 18.7, untrained
+      18.2}; initial language + carried model/prior 1973 {50.0, 6.1, 26.2};
+      language only 735; initial 1299 {26.2, 3.7, 24.2}. So the grown
+      language (166 invented atoms, 110 novel) dilutes the blind half of the
+      budget and costs untrained combinations; the model+prior alone raise
+      them. Self-model verdict on invented atoms: 107 rated real (r>=.10) by
+      some area model incl. 55 of 56 true-family; 59 rated import-only
+      everywhere (1 true-family). prune() now also proposes those (ffaa39d).
+      Running: one mech life + five-area check to see untrained recover.
+      Confirmation protocol drafted, NOT frozen: EXPERIMENT-seed-confirmation.md
+      (gates: growth >=15% every area, no pool below 90% of start, proofs
+      <= 2.5x live, ledger replays); seeds 919100/919101 reserved.
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 
