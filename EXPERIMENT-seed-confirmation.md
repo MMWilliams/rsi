@@ -364,3 +364,18 @@ b6f5f11a0632b5af605729377a9a75561440fda21c5e0ff27ad310d26dd0da6c  seed_check.py
 Forecast, committed before opening 919106: gate 1 0.9, gate 2 0.65, gate 3
 0.55 (v3 read 2.29x and 1.94x with the stale cache saving a re-score on the
 lives that kept nothing), gate 4 0.85; all four on both seeds 0.3.
+
+### Replication G, seed 919106 under v4 (`seeds/c7`, `runs_seed_conf_c7.log`), 2026-10-11
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,129 | 2,136 | +89% | trained 24.6 -> 38.3, untrained 20.3 -> 36.8, unfamiliar 2.2 -> 13.9 |
+| drawn7 | 202 | 299 | +48% | env 8.4 -> 12.5 |
+| metric777001 | 343 | 1,647 | +380% | seen 11.4 -> 42.3, unfamiliar 2.9 -> 26.3 |
+
+Kept changes (6). Proof scans 2.32x live.
+
+- Gate 1: PASS. Gate 2: PASS (every pool rose). Gate 3: PASS, 2.32x.
+- Gate 4: PASS, 6 of 6 replay exactly, salts unique.
+
+All four gates pass.

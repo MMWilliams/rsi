@@ -170,7 +170,9 @@ are for replication only. Nothing proven is reset between generations.
       322->1518, every pool up, 1.94x, audit fails once (same stale cache).
       v3 verdict: growth/safety/cost pass both, audit fails both. v4 = cache
       fix, freeze, 919106/919107. v4 FROZEN; c7 = 919106 RUNNING
-      (runs_seed_conf_c7.log), then c8 = 919107. Then paper/doc update, then the untrained guard (v5
+      (runs_seed_conf_c7.log), then c8 = 919107. c7 RESULT (919106): mech
+      1129->2136, drawn7 202->299, metric 343->1647, every pool up, 2.32x,
+      audit 6/6: ALL FOUR GATES PASS. c8 RUNNING. Then paper/doc update, then the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).
 
 ## Programme, 2026-10-04: recursive growth through drawn levels

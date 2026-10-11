@@ -1,0 +1,150 @@
+{
+  "name": "c7",
+  "replayed": [
+    {
+      "version": 1,
+      "area": "mech",
+      "change": "language +40 + model g=8 pw=4 from 96 worlds + prior",
+      "carried": [
+        841,
+        841
+      ],
+      "candidate": [
+        1092,
+        1092
+      ],
+      "interval": [
+        [
+          0.2916666666666667,
+          10.0625
+        ],
+        [
+          0.2916666666666667,
+          10.0625
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 2,
+      "area": "mech",
+      "change": "model g=8 pw=3 from 192 worlds + prior",
+      "carried": [
+        1198,
+        1198
+      ],
+      "candidate": [
+        1325,
+        1325
+      ],
+      "interval": [
+        [
+          0.375,
+          5.0625
+        ],
+        [
+          0.375,
+          5.0625
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 3,
+      "area": "drawn7",
+      "change": "language +40 + prune -20 + model g=6 pw=4 from 96 worlds + prior",
+      "carried": [
+        492,
+        492
+      ],
+      "candidate": [
+        705,
+        705
+      ],
+      "interval": [
+        [
+          0.6041666666666666,
+          8.125520833333335
+        ],
+        [
+          0.6041666666666666,
+          8.125520833333335
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 4,
+      "area": "metric777001",
+      "change": "model g=7 pw=2 from 96 worlds + prior",
+      "carried": [
+        468,
+        468
+      ],
+      "candidate": [
+        1268,
+        1268
+      ],
+      "interval": [
+        [
+          12.3125,
+          21.166666666666668
+        ],
+        [
+          12.3125,
+          21.166666666666668
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 5,
+      "area": "metric777001",
+      "change": "model g=8 pw=2 from 192 worlds + prior",
+      "carried": [
+        1222,
+        1222
+      ],
+      "candidate": [
+        1417,
+        1417
+      ],
+      "interval": [
+        [
+          1.875,
+          6.375
+        ],
+        [
+          1.875,
+          6.375
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 6,
+      "area": "mech",
+      "change": "model g=7 pw=2 from 480 worlds + prior",
+      "carried": [
+        1171,
+        1171
+      ],
+      "candidate": [
+        1362,
+        1362
+      ],
+      "interval": [
+        [
+          1.6875,
+          6.50104166666667
+        ],
+        [
+          1.6875,
+          6.50104166666667
+        ]
+      ],
+      "ok": true
+    }
+  ],
+  "passed": true
+}
