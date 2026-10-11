@@ -61,6 +61,18 @@ are for replication only. Nothing proven is reset between generations.
       of proofs vs 88M lived. Next: cross-area proofs for language changes,
       combined candidate proven first, per_world chosen by held-out
       likelihood, a 4-group-per-world drawn area.
+      DONE 2026-10-11 (806a6d6, b704945): combined-first proofs, cross-area
+      non-inferiority (2%) for language changes, per_world in {2,3,4} by
+      held-out likelihood, MemoryError retry with fewer workers. drawn11 (12g,
+      4/world, slip 0): life 1 model KEPT 165 -> 417 choosing pw=4 (true);
+      the GUARD FIRED: extend+model gained 165 -> 344 locally but mech
+      1089 -> 1003 and drawn7 226 -> 198, dropped. drawn13 (6g, 2/world):
+      life 0 model KEPT 218 -> 340 (pw=4 chosen, true 2); guard dropped a
+      +150 combination that cost drawn11 240 -> 184. Lives after the first
+      kept nothing in both. Resource s1: live 113M, proof 216M, tests 737k.
+      Paper 2: 'A Seed That Grows by Proving Its Own Changes'
+      https://claude.ai/code/artifact/ebd48ba7-84b1-4bb2-b2e5-eb18375651bc
+      (five-area check pending; PDF to follow).
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 
