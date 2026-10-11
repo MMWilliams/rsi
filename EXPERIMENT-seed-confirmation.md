@@ -557,33 +557,29 @@ anything, and metric555001 is untried), gate 2 0.6 (six areas, nine pools),
 gate 3 0.7 (more areas, more cross-area checks per language candidate),
 gate 4 0.9; all four on both seeds 0.2.
 
-### Replication K, seed 919110 under v6 (`seeds/c11`, `runs_seed_conf_c11.log`), 2026-10-11, INCOMPLETE
+### Replication K, seed 919110 under v6 (`seeds/c11`, `runs_seed_conf_c11.log`, `runs_seed_conf_c11_check.log`), 2026-10-11
 
-All 18 lives ran (10 kept changes: four in mech, two in drawn7, two in
-metric777001, one each in drawn11 and drawn13, none in metric555001's two
-lives, where the model proposals read [+0.2, +4.2] and were kept only on the
-second). The host ran out of memory during the fresh check: Claude Code
-stopped the job after five of the six areas had printed, before the sixth
-and before the audit. The job was not restarted without reese's say-so.
+The host ran out of memory during the fresh check on the first attempt;
+the check and audit were rerun after reese said to proceed (the 18 lives
+and their state were complete and untouched).
 
-Fresh check, five of six areas (24 worlds per pool, salt 999):
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,197 | 2,442 | +104% | trained 24.6 -> 45.2, untrained 21.6 -> 37.5, unfamiliar 3.7 -> 19.0 |
+| drawn7 | 305 | 375 | +23% | env 12.7 -> 15.6 |
+| metric777001 | 299 | 1,415 | +373% | seen 8.0 -> 40.8, unfamiliar 4.5 -> 18.2 |
+| drawn11 | 291 | 424 | +46% | env 12.1 -> 17.7 |
+| drawn13 | 375 | 483 | +29% | env 15.6 -> 20.1 |
+| metric555001 | 356 | 1,833 | +415% | seen 13.3 -> 50.4, unfamiliar 1.5 -> 26.0 |
 
-| area | start | carried | gain |
-| --- | --- | --- | --- |
-| mech | 1,197 | 2,442 | +104% |
-| drawn7 | 305 | 375 | +23% |
-| metric777001 | 299 | 1,415 | +373% |
-| drawn11 | 291 | 424 | +46% |
-| drawn13 | 375 | 483 | +29% |
-| metric555001 | not run | | |
+Kept changes (10): four in mech, two in drawn7, two in metric777001, one in
+drawn11, one in drawn13; metric555001 kept nothing in its own two lives yet
+rose 415% on its fresh set from the state the other areas built, the
+language above all (unfamiliar centres 1.5 -> 26.0). Proof scans 2.78x
+live.
 
-- Gate 1: five of six areas pass; the sixth is unmeasured.
-- Gate 2: per-pool numbers are in `analysis/seed-check-c11.json` only once
-  the check completes; unmeasured.
+- Gate 1: PASS, six of six areas, smallest +23%.
+- Gate 2: PASS, all nine pools rose.
 - Gate 3: FAIL, 2.78x. Six areas mean up to five cross-area checks per
   language candidate; v4's 2.0x to 2.3x on three areas does not carry.
-- Gate 4: not run.
-
-To finish: `RSI_WORKERS=4 python seed_check.py --name c11 --seed 919110
---areas mech,drawn7,metric777001,drawn11,drawn13,metric555001 && python
-audit_seed.py --name c11`, then `sh confirm_seed.sh c12 919111`.
+- Gate 4: PASS, 10 of 10 replay exactly, salts unique.

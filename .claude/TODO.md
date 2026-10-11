@@ -197,6 +197,9 @@ are for replication only. Nothing proven is reset between generations.
       (10:12). NOT restarted unasked. To finish: RSI_WORKERS=4 python seed_check.py
       --name c11 --seed 919110 --areas mech,drawn7,metric777001,drawn11,drawn13,metric555001
       && python audit_seed.py --name c11; then sh confirm_seed.sh c12 919111.
+      DONE (reese said proceed): c11 ALL SIX AREAS UP (+23% to +415%, metric555001
+      356->1833 with nothing kept in its own lives), all 9 pools up, audit
+      10/10, cost 2.78 FAIL. c12 (919111) RUNNING.
       LATER: a cumulative-drift guard vs the INITIAL
       language (own seeds), second task form. (old note: the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).
