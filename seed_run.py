@@ -27,6 +27,9 @@ def make_area(name, seed):
         return MechanismArea(seed)
     if name.startswith('drawn'):
         return DrawnArea(seed, int(name[5:] or 7), THETA)
+    if name.startswith('metric'):
+        from rsi.seed_areas import MetricArea
+        return MetricArea(seed, int(name[6:] or 777001))
     raise ValueError(name)
 
 

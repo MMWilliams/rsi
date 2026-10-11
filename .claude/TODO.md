@@ -32,6 +32,20 @@ are for replication only. Nothing proven is reset between generations.
       charged to the seed; novel atoms may be junk that dilutes the window.
       Running: lives 4-7 (`runs_seed_s1_b.log`). Next: charge proofs, rotate
       held-out sets, second area (string DSL banks), seeds 643101/645101.
+      UPDATE (same day, cd61f93+): models/priors per area, held-out drawn
+      fresh per life, proofs charged, prune (invented atoms never earned in
+      >=2 lives -> candidate removal). s1 lives 4-9 in mech: fresh-per-life
+      held-out 2031 -> 2129 -> 2131 -> 2142 -> 2195 -> 2234 (then two drops).
+      SECOND AREA drawn7 (random cross-family partition of all atoms, 9
+      groups, 3/world, slip .15): 4 lives, 7 of 9 candidates kept incl. two
+      prunes (+19, +62) and a 48-world model (+158); fresh held-out 181 ->
+      376 (7.5 -> 15.7 per world). mech fresh held-out 1299 -> 1997 after 10
+      lives. Language 411 = 260 + 151 invented (25 popcount, 28 xormod, 98
+      novel). Resource: live 68.8M scans, proof 71.3M (proofs cost as much
+      as living; cut later), tests 294k. One stall seen (worker pool while
+      the machine's commit was exhausted by other jobs); faulthandler dumps
+      every 600 s now. Third area `rsi/seed_areas.py` MetricArea (behavioural
+      metric worlds) wired as --area metric777001.
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 
