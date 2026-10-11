@@ -195,3 +195,31 @@ Forecast, committed before opening 919102: gate 1 0.85, gate 2 0.6 (both
 v1 seeds passed with every pool up), gate 3 0.75 (dev 2.06x; a seed that
 accepts on many lives re-scores more often), gate 4 0.9; all four gates on
 both seeds 0.35.
+
+### Replication C, seed 919102 under v2 (`seeds/c3`, `runs_seed_conf_c3.log`), 2026-10-11
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,020 | 2,010 | +97% | trained 20.6 -> 30.9, untrained 19.2 -> 37.1, unfamiliar 2.6 -> 15.8 |
+| drawn7 | 281 | 409 | +46% | env 11.7 -> 17.0 |
+| metric777001 | 364 | 1,550 | +326% | seen 9.3 -> 38.8, unfamiliar 5.8 -> 25.8 |
+
+Kept changes (8): mech lives 0, 1, 2 (language +40 + model each, the third
+with prune -34); drawn7 life 0 (language +40 + prune -43 + model); metric
+life 0 (language +40 + prune -26 + model), metric life 1 (prune -4, then
+model, two separate acceptances), mech life 4 (language +40 + prune -37 +
+model). Proof scans 222M against 118M live.
+
+- Gate 1: PASS. Gate 2: PASS (every pool rose). Gate 3: PASS, 1.89x.
+- Gate 4: replay PASS, all 8 kept changes reproduce exactly; the salt
+  uniqueness clause FAILS: in metric life 1 the prune was accepted and then
+  the model was accepted in the same life, on the same held-out set (salt
+  3001 twice). The parts of one life share that life's set by construction,
+  in v1 as in v2; this is the first run in which two parts of one life were
+  both accepted. The second acceptance is a paired comparison against the
+  first's score on the same worlds, so the replay is exact, but the set was
+  used to accept twice, which the clause forbids. Recorded as a gate 4 fail.
+
+Fix for a v3, not applied while 919103 runs under the v2 hashes: after an
+acceptance within a life, the remaining parts draw a fresh set (salt from
+the acceptance count at proof time, not at life start).

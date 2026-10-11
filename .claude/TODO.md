@@ -145,7 +145,11 @@ are for replication only. Nothing proven is reset between generations.
       worlds). v2: lives 96 worlds, tests 48 worlds everywhere, set reused
       until acceptance, half-set stop on mean <= 0; d2 (778) read 2.06x.
       v2 FROZEN with hashes; c3 = 919102 RUNNING (runs_seed_conf_c3.log),
-      then c4 = 919103.
+      then c4 = 919103. c3 RESULT: mech 1020->2010, drawn7 281->409, metric
+      364->1550, every pool up, 1.89x, audit 8/8; BUT gate 4 salt-uniqueness
+      clause FAILED (metric life 1: prune then model both accepted on one
+      set). c4 RUNNING under v2 unchanged. v3 fix after c4: salt from the
+      acceptance count at PROOF time so later parts in a life get a fresh set.
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 
