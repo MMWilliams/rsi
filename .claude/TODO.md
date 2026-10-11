@@ -166,7 +166,10 @@ are for replication only. Nothing proven is reset between generations.
       reuse caches the carried score per version while the prior grows with
       experience every life. v4 fix = cache keyed on the area experience
       count too (script tmp/v4_fix.py, apply AFTER c6 finishes under v3
-      hashes). Then paper/doc update, then the untrained guard (v5
+      hashes). c6 RESULT (919105): mech 1147->2366, drawn7 180->342, metric
+      322->1518, every pool up, 1.94x, audit fails once (same stale cache).
+      v3 verdict: growth/safety/cost pass both, audit fails both. v4 = cache
+      fix, freeze, 919106/919107. Then paper/doc update, then the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).
 
 ## Programme, 2026-10-04: recursive growth through drawn levels

@@ -313,3 +313,26 @@ Fix for a v4: the cached carried score also records the area's experience
 count and is recomputed when it changes. This gives back part of v2's cost
 saving (the carried is re-scored on every life of an area with a prior), so
 gate 3 is at risk again; the honest baseline comes first.
+
+### Replication F, seed 919105 under v3 (`seeds/c6`, `runs_seed_conf_c6.log`), 2026-10-11
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,147 | 2,366 | +106% | trained 25.7 -> 43.3, untrained 17.4 -> 36.7, unfamiliar 4.7 -> 18.6 |
+| drawn7 | 180 | 342 | +90% | env 7.5 -> 14.2 |
+| metric777001 | 322 | 1,518 | +371% | seen 10.0 -> 44.8, unfamiliar 3.4 -> 18.5 |
+
+Kept changes (6). Proof scans 1.94x live.
+
+- Gate 1: PASS. Gate 2: PASS (every pool rose). Gate 3: PASS, 1.94x.
+- Gate 4: FAIL, the same cause as 919104: version 2 (mech life 3, model)
+  records a carried score of 1,327 where the replay reads 1,300; the
+  candidate (1,412) replays exactly and the acceptance stands. Salts unique,
+  5 of 6 replay.
+
+### Verdict on v3
+
+Growth, safety and cost pass on both sealed seeds. The audit fails on both,
+once each, for one cause: the carried score cached on a reused set goes
+stale as the area's experience grows. Every acceptance stands on replay. v4
+fixes the cache and must be confirmed on two further sealed seeds.
