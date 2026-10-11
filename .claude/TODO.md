@@ -174,7 +174,15 @@ are for replication only. Nothing proven is reset between generations.
       1129->2136, drawn7 202->299, metric 343->1647, every pool up, 2.32x,
       audit 6/6: ALL FOUR GATES PASS. c8 RESULT (919107): mech 1138->2263,
       drawn7 275->382, metric 248->1901, 2.04x, audit 7/7: ALL FOUR PASS.
-      v4 PROTOCOL PASSES on both seeds. Paper (15 pp) + doc (rev 56) updated with all eight seeds. NEXT: the untrained guard (v5
+      v4 PROTOCOL PASSES on both seeds. Paper (15 pp) + doc (rev 56) updated with all eight seeds.
+      v5 GUARD APPLIED (uncommitted): a language candidate must also be
+      non-inferior (2%) with model+prior OFF on the own-area set (label-free;
+      protects the unguided half of the budget). Measuring on d3 (779),
+      runs_seed_d3.log: fired 3x, cost 2.94x. Tuned: tolerance 10%, blind
+      baseline cached by language (d4 2.69x), then half-set candidate run and
+      skip for prune-only (d5 2.62x, guard fired once). v5 FROZEN with the
+      cost gate at risk (forecast 0.35); c9 = 919108 RUNNING
+      (runs_seed_conf_c9.log), then c10 = 919109. (old note: the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).
 
 ## Programme, 2026-10-04: recursive growth through drawn levels

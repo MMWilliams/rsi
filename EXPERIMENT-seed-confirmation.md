@@ -407,3 +407,51 @@ all eight (lowest 94%, untrained on 919103). Cost under 2.5x on the six
 seeds after v1. Every acceptance stood on replay on all eight; the audit
 found two stale recorded baselines (v3) and one doubled set (v2), each a
 flaw of the test's bookkeeping and each fixed before the next pair of seeds.
+
+
+## Protocol v5 (FROZEN 2026-10-11, after the v4 pass)
+
+v4 passed. v5 adds the one guard the development results asked for and the
+confirmation runs left unguarded: the untrained pool. The guard is
+label-free. Before a candidate that adds atoms to the shared language is
+accepted, the candidate and the carried language are also scored with the
+area's model and prior switched off, on the even-indexed half of the
+held-out set; the candidate is rejected if its unguided score falls more
+than 10% below the carried language's. The carried language's unguided score
+is cached per language and held-out draw. Candidates that only remove atoms
+are not guarded (removal cannot dilute unguided search, and the own-area
+test covers it). Rationale: the ablation of the development seed traced the
+untrained-pool loss to the grown language diluting the half of the budget
+that searches without the model, which is what worlds the model does not
+recognise fall back on. Everything else as v4. Gates and thresholds
+unchanged.
+
+Dev measurements (mech 2 / drawn7 1 / metric 1, 96-world lives): the guard
+at 2% on the full set fired on three of four extensions and read 2.94x
+(seed 779); at 10% with the baseline cached by language, 2.69x (seed 780);
+on the half set with prune-only candidates skipped, 2.62x (seed 781), the
+guard firing once (unguided 398 -> 336 on 24 worlds, extension dropped,
+model alone kept). The cost gate is at risk by design: a rejected extension
+is re-proposed next life and guarded again. The gate stays at 2.5x.
+
+Seeds: 919108 (replication I) and 919109 (replication J), sealed and unopened
+at the time of writing.
+
+Hashes:
+
+```
+fc8564c580bc5ab46260753867750ffad0e901698d3c64cd9d45e8520fb699f6  rsi/seed.py
+15a2b0f65ccb52ee60aa423a43ec2c2caf80af9091c33a28de182e8915fb49a9  rsi/seed_areas.py
+aefd9cc94f7dbf8f54eb311baae6245522bf212bdbca4b6ac63cb5f13cfa9c83  rsi/invention.py
+e9c6a2b3ed10cd6bb33306ca5234c06b5a087c739fcf71c65aa97593a205f2a3  rsi/self_world_model.py
+4babdfde950755e0511ffeefa2ca7272cce42323298e7a7eca5d4941ffcf476f  seed_run.py
+b6f5f11a0632b5af605729377a9a75561440fda21c5e0ff27ad310d26dd0da6c  seed_check.py
+271cb85d5a83c83173fbb3d63d441d187fed1a3850ae58e85f0c8f88e5828420  audit_seed.py
+3676f13465e58b584b0e180e89630310a9216682bc3e996a2818161c5deb294c  confirm_seed.sh
+```
+
+Forecast, committed before opening 919108: gate 1 0.85 (the guard can hold
+back the extensions that unfamiliar-family worlds need), gate 2 0.75, gate 3
+0.35, gate 4 0.9; all four on both seeds 0.15. Secondary question, not a
+gate: whether the untrained pool rises more than under v4 (v4: 20.3 -> 36.8
+and 20.8 -> 29.7) and whether the unfamiliar pool rises less.

@@ -1,0 +1,24 @@
+seed d5 version 0, area mech, lives there 0, language 260 atoms
+mech life 0: solved 1791 of 9600; by pool {"trained": 23.3, "unfamiliar": 4.7}; 15 s
+  together: held-out 754 -> 1041 [+2.7, +9.4] per world dropped; {"trained": 25.8, "unfamiliar": 10.6, "untrained": 28.6}
+  extend: held-out 754 -> 672 [-6.5, +1.5] per world dropped; {"trained": 16.0, "unfamiliar": 11.0, "untrained": 15.0}
+  model: held-out 754 -> 1045 [+3.2, +9.2] per world KEPT; {"trained": 29.4, "unfamiliar": 6.3, "untrained": 29.6}
+  carried: version 1, language 260, model g=8 pw=4, prior yes, held-out 1045; resource live 9.8M proof 24.6M tests 93083; 87 s
+mech life 1: solved 2789 of 9600; by pool {"trained": 36.0, "unfamiliar": 8.3}; 16 s
+  together: held-out 1221 -> 1304 [-1.1, +4.5] per world dropped; {"trained": 38.6, "unfamiliar": 15.6, "untrained": 27.3}
+  extend: held-out 1221 -> 1268 [-2.2, +2.2] per world dropped; {"trained": 40.2, "unfamiliar": 14.9, "untrained": 24.1}
+  model: held-out 1221 -> 1251 [-1.7, +3.1] per world dropped; {"trained": 40.1, "unfamiliar": 10.1, "untrained": 28.0}
+  carried: version 1, language 260, model g=8 pw=4, prior yes, held-out 1221; resource live 19.7M proof 41.8M tests 184998; 67 s
+kept: [{"life": 0, "area": "mech", "change": "model g=8 pw=4 from 96 worlds + prior", "gain": 291, "version": 1}]
+seed d5 version 1, area drawn7, lives there 0, language 260 atoms
+drawn7 life 0: solved 841 of 9600; by pool {"env": 8.8}; 13 s
+  together: held-out 441 -> 647 [+1.5, +7.2] per world dropped; {"env": 13.5} elsewhere {"mech": "814->748"}
+  extend: held-out 441 -> 416 [-3.3, +3.0] per world dropped; {"env": 8.7}
+  model: held-out 441 -> 577 [+0.3, +5.3] per world KEPT; {"env": 12.0}
+  carried: version 2, language 260, model g=8 pw=4, prior yes, held-out 577; resource live 29.5M proof 73.7M tests 278119; 89 s
+kept: [{"life": 0, "area": "mech", "change": "model g=8 pw=4 from 96 worlds + prior", "gain": 291, "version": 1}, {"life": 0, "area": "drawn7", "change": "model g=8 pw=4 from 96 worlds + prior", "gain": 136, "version": 2}]
+seed d5 version 2, area metric777001, lives there 0, language 260 atoms
+metric777001 life 0: solved 1180 of 9600; by pool {"seen_centre": 14.3, "unfamiliar_centre": 6.2}; 14 s
+  together: held-out 359 -> 997 [+9.5, +17.1] per world KEPT; {"seen_centre": 26.2, "unfamiliar_centre": 15.3} elsewhere {"mech": "854->848", "drawn7": "245->269"}
+  carried: version 3, language 300, model g=7 pw=2, prior yes, held-out 997; resource live 39.3M proof 103.2M tests 371482; 89 s
+kept: [{"life": 0, "area": "mech", "change": "model g=8 pw=4 from 96 worlds + prior", "gain": 291, "version": 1}, {"life": 0, "area": "drawn7", "change": "model g=8 pw=4 from 96 worlds + prior", "gain": 136, "version": 2}, {"life": 0, "area": "metric777001", "change": "language +40 + model g=7 pw=2 from 96 worlds + prior", "gain": 638, "version": 3}]
