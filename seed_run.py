@@ -48,8 +48,9 @@ def main():
     def report(label, kept, carried, new, elsewhere):
         where = '' if not elsewhere else ' elsewhere ' + json.dumps(
             {k: f'{v["carried"]}->{v["candidate"]}' for k, v in elsewhere.items()})
-        print(f'  {label}: held-out {carried["total"]} -> {new["total"]} {"KEPT" if kept else "dropped"}; '
-              f'{fmt(new)}{where}', flush=True)
+        lo, hi = new.get('interval', (0., 0.))
+        print(f'  {label}: held-out {carried["total"]} -> {new["total"]} [{lo:+.1f}, {hi:+.1f}] per world '
+              f'{"KEPT" if kept else "dropped"}; {fmt(new)}{where}', flush=True)
 
     for _ in range(args.lives):
         t = time.time()

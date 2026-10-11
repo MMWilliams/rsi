@@ -168,7 +168,7 @@ def make_area(spec, seed):
 
 def _init(language, labels, per_world, prior_sets, tiebreak, budget):
     h = Harness([tuple(a) for a in language])
-    h.set_tiebreak(tiebreak)
+    h.set_tiebreak(tiebreak, stable=True)   # a row keeps its tie-break when the language changes
     sim = Simulator(h)
     if labels:
         arr = np.array([labels.get(k, -1) for k in h.key_names])
@@ -409,25 +409,35 @@ class Seed:
         carried = a['held_out_score']
         if (carried is None or carried.get('version') != self.state['version']
                 or carried.get('salt') != salt or carried['budget'] != budget
-                or carried.get('size') != len(held_out)):
-            carried = self.score(self.run(held_out, budget, area.name), held_out, budget)
-            carried.update(version=self.state['version'], salt=salt, size=len(held_out))
+                or carried.get('size') != len(held_out) or 'hits' not in carried):
+            records = self.run(held_out, budget, area.name)
+            carried = self.score(records, held_out, budget)
+            carried.update(version=self.state['version'], salt=salt, size=len(held_out),
+                           hits=[r['hits'] for r in records])
             a['held_out_score'] = carried
             self.state['resource']['proof_scans'] += len(held_out) * STREAM * budget
             self.save()
         return carried
 
     def prove(self, area, held_out, salt, candidate, budget, change, note=None,
-              shared=False, per_pool_other=12, tolerance=.02):
-        """Keep the candidate only if it solves more of this life's held-out
-        set than the carried state and, for a change to shared state, leaves
-        every other area the seed has lived in within `tolerance` of its
-        carried score. The carried score is cached per state version and
-        held-out draw; every proof lifetime is charged."""
+              shared=False, per_pool_other=12, tolerance=.02, boot=4000):
+        """Keep the candidate only if its gain over the carried state on this
+        life's held-out set, paired over worlds, has a bootstrap interval
+        above zero and, for a change to shared state, leaves every other area
+        the seed has lived in within `tolerance` of its carried score. The
+        carried score is cached per state version and held-out draw; every
+        proof lifetime is charged."""
         carried = self._carried(area, held_out, salt, budget)
-        new = self.score(self.run(held_out, budget, area.name, state=candidate), held_out, budget)
+        records = self.run(held_out, budget, area.name, state=candidate)
+        new = self.score(records, held_out, budget)
+        new['hits'] = [r['hits'] for r in records]
         self.state['resource']['proof_scans'] += len(held_out) * STREAM * budget
-        kept = new['total'] > carried['total']
+        # paired over worlds: kept only when the gain's 95% interval excludes zero
+        diff = np.array(new['hits'], dtype=float) - np.array(carried['hits'], dtype=float)
+        draws = np.random.default_rng(salt).integers(len(diff), size=(boot, len(diff)))
+        means = diff[draws].mean(axis=1)
+        new['interval'] = [float(np.percentile(means, 2.5)), float(np.percentile(means, 97.5))]
+        kept = new['interval'][0] > 0
         elsewhere = {}
         if kept and shared:
             for name, a in self.state['areas'].items():

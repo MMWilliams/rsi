@@ -1,6 +1,6 @@
 {
   "name": "s1",
-  "version": 24,
+  "version": 25,
   "budget": 1024,
   "areas": {
     "mech": {
@@ -15,14 +15,14 @@
       },
       "carried": {
         "budget": 1024,
-        "total": 2072,
+        "total": 1990,
         "by_pool": {
-          "trained": 49.458333333333336,
-          "unfamiliar": 18.666666666666668,
-          "untrained": 18.208333333333332
+          "trained": 46.916666666666664,
+          "unfamiliar": 16.708333333333332,
+          "untrained": 19.291666666666668
         }
       },
-      "gain": 773
+      "gain": 691
     },
     "drawn7": {
       "start": {
@@ -96,16 +96,16 @@
     }
   },
   "lives": {
-    "mech": 10,
+    "mech": 11,
     "drawn7": 4,
     "metric777001": 4,
     "drawn11": 3,
     "drawn13": 2
   },
   "resource": {
-    "live_scans": 113049600,
-    "proof_scans": 216268800,
-    "invention_tests": 737143
+    "live_scans": 117964800,
+    "proof_scans": 253132800,
+    "invention_tests": 785933
   },
   "kept_changes": [
     {
@@ -265,6 +265,13 @@
       "change": "model g=6 pw=4 from 48 worlds + prior",
       "gain": 122,
       "version": 24
+    },
+    {
+      "life": 10,
+      "area": "mech",
+      "change": "model g=7 pw=3 from 528 worlds + prior",
+      "gain": 24,
+      "version": 25
     }
   ],
   "invented": {

@@ -46,7 +46,7 @@ class Harness:
             right[index] = self.key_index[keys[1]] if len(keys) > 1 else -1
         return left, right
 
-    def set_tiebreak(self, seed):
+    def set_tiebreak(self, seed, stable=False):
         """Fix the order rows are scanned in when an arm scores them equally.
 
         Catalog order is complexity order, and using it to break ties gave the
@@ -55,7 +55,21 @@ class Harness:
         nothing to do with their scores. One shared random tie-break makes
         every arm's ordering a function of its scores alone.
         """
-        self.tiebreak = np.random.default_rng(seed).permutation(self.catalog.size)
+        if not stable:
+            self.tiebreak = np.random.default_rng(seed).permutation(self.catalog.size)
+            return
+        # A row's tie-break is a hash of what it is, not of where it sits, so
+        # rows keep their relative order when atoms are added to or removed
+        # from the language; a language change then changes nothing but the
+        # rows it adds or removes.
+        import hashlib
+        catalog = self.catalog
+        keys = np.empty(catalog.size, dtype=np.int64)
+        for index, (op, left, right, negated) in enumerate(catalog.codes):
+            right_key = catalog.atoms[right][0] if op >= 0 else ''
+            name = f'{seed}|{op}|{catalog.atoms[left][0]}|{right_key}|{int(negated)}'.encode()
+            keys[index] = int.from_bytes(hashlib.blake2b(name, digest_size=8).digest(), 'little') >> 1
+        self.tiebreak = keys
 
     def order_from_key_scores(self, key_score):
         """A catalog ordering induced by a score over atom keys."""
