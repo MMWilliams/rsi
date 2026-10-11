@@ -379,3 +379,31 @@ Kept changes (6). Proof scans 2.32x live.
 - Gate 4: PASS, 6 of 6 replay exactly, salts unique.
 
 All four gates pass.
+
+### Replication H, seed 919107 under v4 (`seeds/c8`, `runs_seed_conf_c8.log`), 2026-10-11
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,138 | 2,263 | +99% | trained 24.4 -> 45.3, untrained 20.8 -> 29.7, unfamiliar 2.2 -> 19.3 |
+| drawn7 | 275 | 382 | +39% | env 11.5 -> 15.9 |
+| metric777001 | 248 | 1,901 | +667% | seen 7.0 -> 44.2, unfamiliar 3.4 -> 35.0 |
+
+Kept changes (7). Proof scans 2.04x live.
+
+- Gate 1: PASS. Gate 2: PASS (every pool rose). Gate 3: PASS, 2.04x.
+- Gate 4: PASS, 7 of 7 replay exactly, salts unique.
+
+### Verdict on v4
+
+All four gates pass on both sealed seeds, 919106 and 919107. The protocol
+passes. Forecast scoring: the 0.3 given to this outcome was too low; gate 3
+(0.55) passed twice at 2.32x and 2.04x.
+
+### Summary over the eight sealed seeds
+
+Growth of at least 15% in every area on all eight (smallest +17%, drawn7 on
+919101; largest +667%, metric on 919107). No pool below 90% of its start on
+all eight (lowest 94%, untrained on 919103). Cost under 2.5x on the six
+seeds after v1. Every acceptance stood on replay on all eight; the audit
+found two stale recorded baselines (v3) and one doubled set (v2), each a
+flaw of the test's bookkeeping and each fixed before the next pair of seeds.
