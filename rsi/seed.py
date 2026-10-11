@@ -270,6 +270,21 @@ class Seed:
     def save(self):
         (self.path / 'state.json').write_text(json.dumps(self.state))
 
+    def _snapshot(self):
+        """What a replay of a proof needs about this version: the language,
+        the areas' models and prior flags, the inventions, and how much
+        experience the seed had. Written once per version."""
+        folder = self.path / 'versions'
+        folder.mkdir(exist_ok=True)
+        file = folder / f'{self.state["version"]}.json'
+        if file.exists():
+            return
+        areas = {name: {k: v for k, v in a.items() if k != 'held_out_score'}
+                 for name, a in self.state['areas'].items()}
+        file.write_text(json.dumps({'version': self.state['version'], 'language': self.state['language'],
+                                    'areas': areas, 'inventions': self.state['inventions'],
+                                    'experience_len': len(self.state['experience'])}))
+
     def lives(self, area=None):
         return sum(1 for e in self.state['ledger']
                    if e['op'] == 'live' and (area is None or e['area'] == area))
@@ -475,9 +490,12 @@ class Seed:
             entry['note'] = note
         self.state['ledger'].append(entry)
         if kept:
+            self._snapshot()                      # the state before, for an auditor's replay
             for key in ('language', 'areas', 'inventions'):
                 self.state[key] = candidate[key]
             self.state['version'] += 1
+            entry['version_after'] = self.state['version']
+            self._snapshot()
             new.update(version=self.state['version'], salt=salt, size=len(held_out))
             self.area_state(area.name)['held_out_score'] = new
             for name in elsewhere:   # their carried scores are now stale
