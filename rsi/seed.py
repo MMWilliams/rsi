@@ -273,12 +273,11 @@ class Seed:
     def _snapshot(self):
         """What a replay of a proof needs about this version: the language,
         the areas' models and prior flags, the inventions, and how much
-        experience the seed had. Written once per version."""
+        experience the seed had. Rewritten whenever a proof is kept, so the
+        file always holds the state as it was just before or just after."""
         folder = self.path / 'versions'
         folder.mkdir(exist_ok=True)
         file = folder / f'{self.state["version"]}.json'
-        if file.exists():
-            return
         areas = {name: {k: v for k, v in a.items() if k != 'held_out_score'}
                  for name, a in self.state['areas'].items()}
         file.write_text(json.dumps({'version': self.state['version'], 'language': self.state['language'],

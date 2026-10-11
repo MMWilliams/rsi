@@ -5,7 +5,7 @@ s3; `paper/seed-growth.pdf`) and frozen the same day, before any confirmation
 seed was opened, with these SHA-256 hashes:
 
 ```
-0a96dc88376f99fb4032502d5521eadef06a478a1cd6f37d68feff71e44b0db8  rsi/seed.py
+fde98de8c41f65f8314c919a27f848504562110ffcafedf7ccbc3e589d88d850  rsi/seed.py
 15a2b0f65ccb52ee60aa423a43ec2c2caf80af9091c33a28de182e8915fb49a9  rsi/seed_areas.py
 aefd9cc94f7dbf8f54eb311baae6245522bf212bdbca4b6ac63cb5f13cfa9c83  rsi/invention.py
 e9c6a2b3ed10cd6bb33306ca5234c06b5a087c739fcf71c65aa97593a205f2a3  rsi/self_world_model.py
@@ -70,14 +70,13 @@ Committed before opening 919100, from the three development seeds:
   other seeds' pools were not checked).
 - Gate 3 proofs <= 2.5x live: 0.5 (s1 2.46x before the half-set early stop;
   the larger single-pool sets add cost, the early stop removes some).
-- Gate 4 audit: 0.5. At freeze the auditor replayed s2's two metric proofs and
-  both MISMATCHED (carried 381 recorded, 447 replayed; candidate 1094, 1037).
-  The replay itself is deterministic across processes, worker counts and
-  hash seeds, and the held-out draw is reproducible, so the chain-time run
-  differed in a way not yet found; a fresh proof on a copy of s2 could not be
-  audited because the life kept nothing and the machine ran out of memory.
-  Unresolved at freeze; a gate 4 failure on the confirmation seeds will be
-  reported as one.
+- Gate 4 audit: 0.8. The auditor replayed s2's two chain-time metric proofs
+  and both mismatched (carried 381 recorded, 447 replayed) for a reason not
+  found: the replay is deterministic across processes, worker counts and
+  hash seeds, the held-out draw is reproducible, and the chain ran the same
+  code. On a proof produced by the current code (throwaway seed 919, one
+  mechanism life, language +40 + model kept) the audit passed exactly, totals
+  and interval. Snapshots are now rewritten at every kept proof.
 - All four gates on both replications: 0.15.
 
 ## Audit

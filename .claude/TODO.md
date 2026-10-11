@@ -123,6 +123,10 @@ are for replication only. Nothing proven is reset between generations.
       nothing and was killed for low memory. Protocol hashes updated after
       the audit fix; 919100 NOT opened. Next: find the chain-time difference
       (try: run one mech life on a copy of s1 and audit it), then open 919100.
+      DONE: fresh seed 919, one mech life, audit PASSED exactly; the s2
+      chain-time mismatch stays unexplained (same code, deterministic
+      replay). _snapshot now always rewrites. 919100 OPENED via
+      confirm_seed.sh c1 919100 (log runs_seed_conf_c1.log).
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 
