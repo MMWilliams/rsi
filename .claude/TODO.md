@@ -192,7 +192,12 @@ are for replication only. Nothing proven is reset between generations.
       Paper (15 pp) + doc (rev 60) carry all ten seeds. v6 FROZEN = v4 code +
       SIX-AREA schedule (mech 4, drawn7 3, metric777001 3, drawn11 2, drawn13 2,
       metric555001 2, mech 2); c11 = 919110 RUNNING (runs_seed_conf_c11.log),
-      then c12 = 919111. LATER: a cumulative-drift guard vs the INITIAL
+      then c12 = 919111. c11: all 18 lives COMPLETE (state v10), but the
+      fresh check + audit were KILLED by Claude Code for low system memory
+      (10:12). NOT restarted unasked. To finish: RSI_WORKERS=4 python seed_check.py
+      --name c11 --seed 919110 --areas mech,drawn7,metric777001,drawn11,drawn13,metric555001
+      && python audit_seed.py --name c11; then sh confirm_seed.sh c12 919111.
+      LATER: a cumulative-drift guard vs the INITIAL
       language (own seeds), second task form. (old note: the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).
 
