@@ -169,7 +169,8 @@ are for replication only. Nothing proven is reset between generations.
       hashes). c6 RESULT (919105): mech 1147->2366, drawn7 180->342, metric
       322->1518, every pool up, 1.94x, audit fails once (same stale cache).
       v3 verdict: growth/safety/cost pass both, audit fails both. v4 = cache
-      fix, freeze, 919106/919107. Then paper/doc update, then the untrained guard (v5
+      fix, freeze, 919106/919107. v4 FROZEN; c7 = 919106 RUNNING
+      (runs_seed_conf_c7.log), then c8 = 919107. Then paper/doc update, then the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).
 
 ## Programme, 2026-10-04: recursive growth through drawn levels

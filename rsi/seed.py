@@ -284,6 +284,9 @@ class Seed:
                                     'areas': areas, 'inventions': self.state['inventions'],
                                     'experience_len': len(self.state['experience'])}))
 
+    def experience_count(self, area):
+        return sum(1 for e in self.state['experience'] if e['area'] == area)
+
     def lives(self, area=None):
         return sum(1 for e in self.state['ledger']
                    if e['op'] == 'live' and (area is None or e['area'] == area))
@@ -421,13 +424,17 @@ class Seed:
     def _carried(self, area, held_out, salt, budget):
         a = self.area_state(area.name)
         carried = a['held_out_score']
+        # the carried state's prior is built from the area's experience, which grows every
+        # life whether or not a change is kept: a cached score is stale once it has grown
+        lived = self.experience_count(area.name)
         if (carried is None or carried.get('version') != self.state['version']
                 or carried.get('salt') != salt or carried['budget'] != budget
-                or carried.get('size') != len(held_out) or 'hits' not in carried):
+                or carried.get('size') != len(held_out) or 'hits' not in carried
+                or carried.get('experience') != lived):
             records = self.run(held_out, budget, area.name)
             carried = self.score(records, held_out, budget)
             carried.update(version=self.state['version'], salt=salt, size=len(held_out),
-                           hits=[r['hits'] for r in records])
+                           experience=lived, hits=[r['hits'] for r in records])
             a['held_out_score'] = carried
             self.state['resource']['proof_scans'] += len(held_out) * STREAM * budget
             self.save()
@@ -496,7 +503,8 @@ class Seed:
             self.state['version'] += 1
             entry['version_after'] = self.state['version']
             self._snapshot()
-            new.update(version=self.state['version'], salt=salt, size=len(held_out))
+            new.update(version=self.state['version'], salt=salt, size=len(held_out),
+                       experience=self.experience_count(area.name))
             self.area_state(area.name)['held_out_score'] = new
             for name in elsewhere:   # their carried scores are now stale
                 self.area_state(name)['held_out_score'] = None

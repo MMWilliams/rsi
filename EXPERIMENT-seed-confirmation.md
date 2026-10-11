@@ -336,3 +336,31 @@ Growth, safety and cost pass on both sealed seeds. The audit fails on both,
 once each, for one cause: the carried score cached on a reused set goes
 stale as the area's experience grows. Every acceptance stands on replay. v4
 fixes the cache and must be confirmed on two further sealed seeds.
+
+
+## Protocol v4 (FROZEN 2026-10-11, after the v3 verdict)
+
+The cached carried score on a reused held-out set now records the area's
+experience count and is recomputed when that count changes, so the baseline
+of every test is the carried state as it is at that moment. Everything else
+as v3. Cost rises by one carried re-score per life in an area with a prior.
+
+Seeds: 919106 (replication G) and 919107 (replication H), sealed and unopened
+at the time of writing.
+
+Hashes:
+
+```
+8771b419951b80571c920ebd0a0522f30e62113a9e20aed4c472403fb978f7e4  rsi/seed.py
+15a2b0f65ccb52ee60aa423a43ec2c2caf80af9091c33a28de182e8915fb49a9  rsi/seed_areas.py
+aefd9cc94f7dbf8f54eb311baae6245522bf212bdbca4b6ac63cb5f13cfa9c83  rsi/invention.py
+e9c6a2b3ed10cd6bb33306ca5234c06b5a087c739fcf71c65aa97593a205f2a3  rsi/self_world_model.py
+4babdfde950755e0511ffeefa2ca7272cce42323298e7a7eca5d4941ffcf476f  seed_run.py
+b6f5f11a0632b5af605729377a9a75561440fda21c5e0ff27ad310d26dd0da6c  seed_check.py
+271cb85d5a83c83173fbb3d63d441d187fed1a3850ae58e85f0c8f88e5828420  audit_seed.py
+3676f13465e58b584b0e180e89630310a9216682bc3e996a2818161c5deb294c  confirm_seed.sh
+```
+
+Forecast, committed before opening 919106: gate 1 0.9, gate 2 0.65, gate 3
+0.55 (v3 read 2.29x and 1.94x with the stale cache saving a re-score on the
+lives that kept nothing), gate 4 0.85; all four on both seeds 0.3.
