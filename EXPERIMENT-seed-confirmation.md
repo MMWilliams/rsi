@@ -223,3 +223,34 @@ model). Proof scans 222M against 118M live.
 Fix for a v3, not applied while 919103 runs under the v2 hashes: after an
 acceptance within a life, the remaining parts draw a fresh set (salt from
 the acceptance count at proof time, not at life start).
+
+### Replication D, seed 919103 under v2 (`seeds/c4`, `runs_seed_conf_c4.log`), 2026-10-11
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,200 | 1,697 | +41% | trained 21.1 -> 31.9, untrained 23.8 -> 22.3 (94% of start), unfamiliar 5.1 -> 16.5 |
+| drawn7 | 255 | 363 | +42% | env 10.6 -> 15.1 |
+| metric777001 | 363 | 1,428 | +293% | seen 11.0 -> 32.7, unfamiliar 4.2 -> 26.8 |
+
+Kept changes (5): mech life 0 (language +40 + model), mech life 1 (model),
+drawn7 life 1 (model), metric life 0 (language +40 + prune + model), metric
+life 1 (language + prune + model). Proof scans 233M against 118M live.
+
+- Gate 1: PASS. Gate 2: PASS, with the untrained pool at 94% of its start,
+  the only pool of the four confirmation seeds to fall and the closest any
+  came to the 90% line. Gate 3: PASS, 1.98x. Gate 4: PASS, 5 of 5 replay,
+  salts unique.
+
+### Verdict on v2
+
+Seed 919103 passes all four gates. Seed 919102 passes growth, safety, cost
+and replay and fails the salt-uniqueness clause of gate 4 (two parts of one
+life accepted on one set). v2 therefore passes on one sealed seed and fails
+one clause on the other; the clause's fix is a v3 (fresh set after any
+acceptance within a life) that would need two further sealed seeds. The
+untrained-pool dip on 919103 is within tolerance but is the same effect as
+on the development seed, in milder form, and remains unguarded.
+
+Forecast scoring for v2: gate 1 (0.85) passed twice, gate 2 (0.6) passed
+twice, gate 3 (0.75) passed twice, gate 4 (0.9) passed once and failed once;
+all four on both seeds (0.35) did not happen.

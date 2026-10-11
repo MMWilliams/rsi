@@ -150,6 +150,12 @@ are for replication only. Nothing proven is reset between generations.
       clause FAILED (metric life 1: prune then model both accepted on one
       set). c4 RUNNING under v2 unchanged. v3 fix after c4: salt from the
       acceptance count at PROOF time so later parts in a life get a fresh set.
+      c4 RESULT (919103): mech 1200->1697 (+41%), drawn7 255->363, metric
+      363->1428, 1.98x, audit 5/5, salts unique: ALL FOUR GATES PASS; untrained
+      pool 23.8->22.3 (94%, within tolerance, still unguarded). v2 verdict:
+      one seed passes all gates, the other fails only the uniqueness clause.
+      NEXT: v3 fix (fresh set after an in-life acceptance), paper/doc update,
+      919104/919105 for v3 when wanted; label-free untrained guard still open.
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 
