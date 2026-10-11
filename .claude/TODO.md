@@ -182,7 +182,11 @@ are for replication only. Nothing proven is reset between generations.
       baseline cached by language (d4 2.69x), then half-set candidate run and
       skip for prune-only (d5 2.62x, guard fired once). v5 FROZEN with the
       cost gate at risk (forecast 0.35); c9 = 919108 RUNNING
-      (runs_seed_conf_c9.log), then c10 = 919109. (old note: the untrained guard (v5
+      (runs_seed_conf_c9.log), then c10 = 919109. c9 RESULT (919108): mech
+      1179->1990, drawn7 367->388 (+6%, GATE 1 FAIL), metric 281->1872;
+      untrained 28.0->25.0 = 89% (GATE 2 FAIL, first ever); cost 2.48 pass;
+      audit pass. Guard never fired (losses 2-9% each, cumulative dip).
+      c10 RUNNING. (old note: the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).
 
 ## Programme, 2026-10-04: recursive growth through drawn levels

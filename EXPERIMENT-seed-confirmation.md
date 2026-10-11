@@ -455,3 +455,32 @@ back the extensions that unfamiliar-family worlds need), gate 2 0.75, gate 3
 0.35, gate 4 0.9; all four on both seeds 0.15. Secondary question, not a
 gate: whether the untrained pool rises more than under v4 (v4: 20.3 -> 36.8
 and 20.8 -> 29.7) and whether the unfamiliar pool rises less.
+
+### Replication I, seed 919108 under v5 (`seeds/c9`, `runs_seed_conf_c9.log`), 2026-10-11
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,179 | 1,990 | +69% | trained 18.4 -> 41.3, untrained 28.0 -> 25.0 (89% of start), unfamiliar 2.8 -> 16.6 |
+| drawn7 | 367 | 388 | +6% | env 15.3 -> 16.2 |
+| metric777001 | 281 | 1,872 | +566% | seen 10.0 -> 43.6, unfamiliar 1.7 -> 34.4 |
+
+Kept changes (7): three extensions (+40, +40, +40 with prune -30), three
+models, one prune. Proof scans 2.48x live. The guard was evaluated five
+times and never fired: the largest unguided loss it saw was 9% (drawn7
+life 0, 265 -> 240 on 24 worlds, accepted); the two rejected metric
+candidates fell to the cross-area check, not to the guard.
+
+- Gate 1: FAIL. drawn7 grew 6% (367 -> 388); its start, 15.3 tasks per
+  world, is the highest start of any seed in that area, and only one model
+  was accepted there in three lives.
+- Gate 2: FAIL. The untrained pool fell to 89% of its start (28.0 -> 25.0),
+  the first pool below 90% in nine sealed seeds, and it fell with the guard
+  in place and silent: the three accepted extensions passed the guard at
+  unguided losses of 6%, 2% and 9%.
+- Gate 3: PASS, 2.48x. Gate 4: PASS, 7 of 7 replay, salts unique.
+
+What this says about the guard: a 10% tolerance on half-set unguided search
+does not protect the untrained pool; the dip on this seed accrued across
+three extensions that each cost a little. The pool also started high
+(28.0, against 19 to 24 on the other seeds), so part of the 11% is the
+start's draw. Neither excuses the gate.

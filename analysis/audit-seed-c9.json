@@ -1,0 +1,174 @@
+{
+  "name": "c9",
+  "replayed": [
+    {
+      "version": 1,
+      "area": "mech",
+      "change": "language +40 + model g=6 pw=4 from 96 worlds + prior",
+      "carried": [
+        766,
+        766
+      ],
+      "candidate": [
+        1309,
+        1309
+      ],
+      "interval": [
+        [
+          6.749479166666667,
+          16.083333333333332
+        ],
+        [
+          6.749479166666667,
+          16.083333333333332
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 2,
+      "area": "mech",
+      "change": "language +40 + model g=7 pw=2 from 192 worlds + prior",
+      "carried": [
+        1230,
+        1230
+      ],
+      "candidate": [
+        1360,
+        1360
+      ],
+      "interval": [
+        [
+          0.4583333333333333,
+          5.125
+        ],
+        [
+          0.4583333333333333,
+          5.125
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 3,
+      "area": "drawn7",
+      "change": "language +40 + prune -30 + model g=8 pw=4 from 96 worlds + prior",
+      "carried": [
+        571,
+        571
+      ],
+      "candidate": [
+        740,
+        740
+      ],
+      "interval": [
+        [
+          0.5208333333333334,
+          6.354166666666667
+        ],
+        [
+          0.5208333333333334,
+          6.354166666666667
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 4,
+      "area": "drawn7",
+      "change": "model g=8 pw=4 from 192 worlds + prior",
+      "carried": [
+        725,
+        725
+      ],
+      "candidate": [
+        796,
+        796
+      ],
+      "interval": [
+        [
+          0.08333333333333333,
+          2.9791666666666665
+        ],
+        [
+          0.08333333333333333,
+          2.9791666666666665
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 5,
+      "area": "metric777001",
+      "change": "model g=8 pw=2 from 96 worlds + prior",
+      "carried": [
+        530,
+        530
+      ],
+      "candidate": [
+        1708,
+        1708
+      ],
+      "interval": [
+        [
+          19.25,
+          29.9375
+        ],
+        [
+          19.25,
+          29.9375
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 6,
+      "area": "metric777001",
+      "change": "model g=8 pw=2 from 192 worlds + prior",
+      "carried": [
+        1882,
+        1882
+      ],
+      "candidate": [
+        2049,
+        2049
+      ],
+      "interval": [
+        [
+          0.9375,
+          6.208854166666669
+        ],
+        [
+          0.9375,
+          6.208854166666669
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 7,
+      "area": "metric777001",
+      "change": "prune -30",
+      "carried": [
+        1948,
+        1948
+      ],
+      "candidate": [
+        2045,
+        2045
+      ],
+      "interval": [
+        [
+          0.125,
+          4.291666666666667
+        ],
+        [
+          0.125,
+          4.291666666666667
+        ]
+      ],
+      "ok": true
+    }
+  ],
+  "passed": true
+}
