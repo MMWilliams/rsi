@@ -177,6 +177,15 @@ with a capacity default. Screens gate every phase.
       copy with charts https://claude.ai/code/artifact/6664a612-30fc-4059-9fa8-71124f164828
       arXiv-style PDF: `paper/self-simulation-world-model.pdf` from
       `paper/self-simulation-world-model.tex` (pdflatex, MiKTeX; run twice).
+- [ ] **RSI refocus (2026-10-10).** `GROWTH-DISTILLATION-2026-10-10.md`: every
+      place growth was actually seen, ranked. Improver-of-the-improver growth
+      seen nowhere (G3 -2, Gen-2 null, coach closed). Reproduced kinds: earned
+      loop (within-lifetime, no feedback), acquisition growth through a learned
+      representation (C-growth/C-family/C-earned growth+structure), reach by
+      invention (V60-V73, string DSL, one generation deep). Proposed next: join
+      them; the earned world+self model directs invention at atoms/families it
+      predicts it cannot find, charged in scans, next generation earns on the
+      extended language; screen on one seed first. Prerequisite: tie f.
 - [ ] Remaining routes, none cheap: (a) a different quality signal (held-out
       likelihood gain over no grouping), screened the same way; (b) Phase 2
       proper, trust learned across drawn environments rather than from one
