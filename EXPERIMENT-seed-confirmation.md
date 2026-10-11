@@ -92,3 +92,32 @@ sealed seeds, keeping only proven changes, without harming any pool, at a
 stated cost. It would not establish recursive growth in the programme's sense
 (the operations are fixed), transfer to a second task form or domain, or
 growth past the schedule's length.
+
+## Results
+
+### Replication A, seed 919100 (`seeds/c1`, `runs_seed_conf_c1.log`), 2026-10-11
+
+Fresh held-out sets (salt 999, 24 worlds per pool), start -> carried:
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,128 | 1,997 | +77% | trained 21.5 -> 34.9, untrained 21.5 -> 35.6, unfamiliar 4.1 -> 12.8 |
+| drawn7 | 236 | 385 | +63% | env 9.8 -> 16.0 |
+| metric777001 | 405 | 1,055 | +160% | seen 14.3 -> 30.8, unfamiliar 2.6 -> 13.2 |
+
+Kept changes (7 of 33 candidates): mech life 0 language +40 + model; mech
+life 2 prune -18; drawn7 life 1 model; drawn7 life 2 prune -6; metric lives 0
+and 1 model; mech life 4 model. Every extension after life 0 was rejected,
+twice by the cross-area check (metric life 0 "together" cost mech 1002 -> 965
+on 72 worlds; drawn7 life 1 "together" cost mech 1012 -> 945).
+
+- Gate 1 growth >= 15% every area: PASS.
+- Gate 2 no pool below 90% of start: PASS (every pool rose).
+- Gate 3 proofs <= 2.5x live: FAIL, 5.96x (351M proof scans against 59M live).
+  The larger held-out sets (48 worlds for single-pool areas, 24-world
+  cross-area sets) and a language candidate on nearly every life, each
+  tested together and alone across every other area, are the cost.
+- Gate 4 audit: PASS, all 7 kept changes replay exactly; salts unique per area.
+
+Forecast scoring: gates 1, 2 and 4 were given 0.6, 0.45 and 0.8 and passed;
+gate 3 was given 0.5 and failed.

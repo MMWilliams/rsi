@@ -127,6 +127,11 @@ are for replication only. Nothing proven is reset between generations.
       chain-time mismatch stays unexplained (same code, deterministic
       replay). _snapshot now always rewrites. 919100 OPENED via
       confirm_seed.sh c1 919100 (log runs_seed_conf_c1.log).
+      c1 RESULT: mech 1128->1997, drawn7 236->385, metric 405->1055, every
+      pool up, audit 7/7 replay; gate 3 FAILED at 5.96x proof/live. c2
+      (919101) running. Then: paper 2 confirmation section + doc; cut proof
+      cost (skip the lone extend test when together failed only on the
+      cross-area check; test cross-area once per life, not per candidate).
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 
