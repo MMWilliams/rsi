@@ -12,6 +12,27 @@ across areas (mechanism worlds, string DSL tasks, metric worlds, drawn
 environments). Develop on the seed where things work (644101); other seeds
 are for replication only. Nothing proven is reset between generations.
 
+- [ ] **THE SEED (2026-10-10, `rsi/seed.py`, `seed_run.py`, `seed_check.py`).**
+      One agent, one carried state (language of atoms, experience by atom
+      name, world+self model, pair prior, ledger), three operations on itself:
+      live (earn in fresh worlds), extend (invent atoms from the ord_expr
+      grammar for the worlds it could not solve; a candidate must recur across
+      >=2 unsolved tasks), reflect (refit model + prior from all experience).
+      Every change is proven on a fixed held-out set (24 trained / 24
+      untrained-combo / 24 unfamiliar-family worlds) before it is kept.
+      Seed s1, 644101, budget 1024, 48 worlds/life, language starts without
+      popcount/xormod. Four lives: fixed held-out 1291 -> 1708 -> 1722 -> 1840
+      -> 1853 -> 1898 -> 2031 of 7200 (6 of 8 candidates kept: 4 models, 2
+      language extensions of 40 atoms). FRESH held-out (never proved on):
+      1250 -> 1861 (+611, +49%); trained 25.3 -> 34.3, untrained 20.2 -> 29.0,
+      unfamiliar 6.6 -> 14.3 per world. 80 invented atoms kept: 12 true
+      popcount, 18 true xormod, 50 novel. First end-to-end growth of one seed
+      carrying only proven changes. Caveats: dev only, one seed; proofs reuse
+      one fixed set (fresh set reads 170 lower); proof lifetimes are not
+      charged to the seed; novel atoms may be junk that dilutes the window.
+      Running: lives 4-7 (`runs_seed_s1_b.log`). Next: charge proofs, rotate
+      held-out sets, second area (string DSL banks), seeds 643101/645101.
+
 ## Programme, 2026-10-04: recursive growth through drawn levels
 
 Plan in `PROGRAMME-RECURSIVE-2026-10-04.md`. Levels L0 solver, L1 world model,
