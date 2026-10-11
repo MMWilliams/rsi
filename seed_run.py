@@ -45,6 +45,8 @@ def main():
     ap.add_argument('--held-out', type=int, default=24)
     args = ap.parse_args()
     warnings.filterwarnings('ignore')
+    import faulthandler
+    faulthandler.dump_traceback_later(600, repeat=True)   # where the main process is, if it stalls
     area = make_area(args.area, args.seed)
     mech = area if args.area == 'mech' else MechanismArea(args.seed)
     seed = Seed(ROOT / 'seeds' / args.name, language=mech.seed_language, name=args.name)
