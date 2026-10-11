@@ -30,8 +30,13 @@ def main():
     snaps = seed.path / 'versions'
     have = {int(p.stem) for p in snaps.glob('*.json')} if snaps.exists() else set()
     wanted = [int(v) for v in args.versions.split(',') if v] or sorted(v for v in have if v - 1 in have)
-    proofs = {e['version_after']: e for e in seed.state['ledger'] if e['op'] == 'prove' and e.get('kept')
-              and 'version_after' in e}
+    proofs, lived = {}, 0
+    for e in seed.state['ledger']:
+        if e['op'] == 'live':
+            lived += e['worlds']
+        elif e['op'] == 'prove' and e.get('kept') and 'version_after' in e:
+            # both states of a proof share the experience the seed had when it ran
+            proofs[e['version_after']] = dict(e, experience_len=e.get('experience_len', lived))
     report = {'name': args.name, 'replayed': [], 'passed': True}
     for v in wanted:
         if v not in proofs or v not in have or v - 1 not in have:
@@ -50,7 +55,7 @@ def main():
             st['language'] = snap['language']
             st['areas'] = snap['areas']
             st['inventions'] = snap['inventions']
-            st['experience'] = st['experience'][:snap['experience_len']]
+            st['experience'] = st['experience'][:entry['experience_len']]
             return st
 
         carried = seed.run(held, budget, area.name, state=state_at(before))

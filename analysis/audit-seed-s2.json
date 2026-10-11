@@ -1,0 +1,54 @@
+{
+  "name": "s2",
+  "replayed": [
+    {
+      "version": 5,
+      "area": "metric777001",
+      "change": "model g=7 pw=4 from 48 worlds + prior",
+      "carried": [
+        447,
+        381
+      ],
+      "candidate": [
+        1037,
+        1094
+      ],
+      "interval": [
+        [
+          8.895833333333334,
+          16.0
+        ],
+        [
+          10.332812500000001,
+          19.666666666666668
+        ]
+      ],
+      "ok": false
+    },
+    {
+      "version": 6,
+      "area": "metric777001",
+      "change": "language +39 + prune -17 + model g=8 pw=2 from 96 worlds + prior",
+      "carried": [
+        1130,
+        1147
+      ],
+      "candidate": [
+        1650,
+        1416
+      ],
+      "interval": [
+        [
+          7.186979166666667,
+          14.709375000000005
+        ],
+        [
+          2.978645833333333,
+          8.250520833333335
+        ]
+      ],
+      "ok": false
+    }
+  ],
+  "passed": false
+}

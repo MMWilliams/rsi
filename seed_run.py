@@ -59,7 +59,7 @@ def main():
         print(f'{area.name} life {life}: solved {entry["total"]} of {args.worlds * 100}; by pool '
               f'{fmt(entry)}; {time.time() - t:.0f} s', flush=True)
         salt = 1000 * (1 + sorted(seed.state['areas']).index(area.name)) + life
-        held = area.held_out(args.held_out, salt=salt)
+        held = area.held_out(max(args.held_out, -(-48 // len(area.pools))), salt=salt)   # at least 48 worlds
         atoms, tests, provenance = seed.extend(worlds, records, cands)
         drop = seed.prune()
         model = seed.reflect(area.name)

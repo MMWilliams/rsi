@@ -1,10 +1,21 @@
-# Seed confirmation protocol (draft, not yet frozen)
+# Seed confirmation protocol (FROZEN 2026-10-11)
 
 Drafted 2026-10-11 after the development runs of `rsi/seed.py` (seeds s1, s2,
-s3; `paper/seed-growth.pdf`). To be frozen with the SHA-256 of `rsi/seed.py`,
-`rsi/seed_areas.py`, `rsi/invention.py`, `rsi/self_world_model.py`,
-`seed_run.py`, `seed_check.py` and `audit_seed.py` before any confirmation
-seed is opened. Nothing below has been run.
+s3; `paper/seed-growth.pdf`) and frozen the same day, before any confirmation
+seed was opened, with these SHA-256 hashes:
+
+```
+0a96dc88376f99fb4032502d5521eadef06a478a1cd6f37d68feff71e44b0db8  rsi/seed.py
+15a2b0f65ccb52ee60aa423a43ec2c2caf80af9091c33a28de182e8915fb49a9  rsi/seed_areas.py
+aefd9cc94f7dbf8f54eb311baae6245522bf212bdbca4b6ac63cb5f13cfa9c83  rsi/invention.py
+e9c6a2b3ed10cd6bb33306ca5234c06b5a087c739fcf71c65aa97593a205f2a3  rsi/self_world_model.py
+98c0301b4b7575eff3fd3cca551af048ba1aaf99dd6b8441265434bd8b67fa0d  seed_run.py
+b6f5f11a0632b5af605729377a9a75561440fda21c5e0ff27ad310d26dd0da6c  seed_check.py
+271cb85d5a83c83173fbb3d63d441d187fed1a3850ae58e85f0c8f88e5828420  audit_seed.py
+```
+
+Runner: `confirm_seed.sh <name> <seed>` (the schedule below, then the check
+and the audit), log `runs_seed_conf_<name>.log`.
 
 ## Claim under test
 
@@ -21,7 +32,9 @@ state, without losing on any pool of any area.
   645101 are not used.
 - Schedule, fixed: mech 4 lives, then drawn7 3 lives, then metric777001
   3 lives, then mech 2 lives. 48 worlds per life, budget 1,024, held-out 24
-  per pool, cross-area 12 per pool, tolerance 2%, workers as the machine
+  per pool and at least 48 worlds (so 48 for drawn7, 48 for metric, 72 for
+  mech), cross-area 12 per pool and at least 24 worlds, tolerance 2%,
+  acceptance by paired bootstrap 95% interval above zero, workers as the machine
   allows (workers never change results: the tie-break and every world seed
   are functions of the confirmation seed).
 - Everything the seed reads is label-free (`rsi/seed.py`, docstring). Labels
@@ -29,8 +42,8 @@ state, without losing on any pool of any area.
 
 ## Endpoints
 
-Fresh held-out sets of each area with salt 7777, 24 worlds per pool, never
-used by any proof. For each area: start = initial language, no model, no
+Fresh held-out sets of each area with salt 999 (`seed_check.py`), 24 worlds
+per pool, never used by any proof (proof salts are 1000 x area index + life). For each area: start = initial language, no model, no
 prior; carried = the final state.
 
 ## Gates, both replications
@@ -42,22 +55,36 @@ prior; carried = the final state.
 4. Provenance: every kept change's proof recomputes (audit) and every kept
    change's held-out salt is unique within its area.
 
-Gate 2 is the one the development runs would fail today: s1's mech untrained
-pool fell 24 -> 18 per world (version 24). The label-free guard being built
-for that must be in place before freezing; if it is not, the protocol is
-frozen as is and the failure is reported.
+Gate 2 is the one the development runs came closest to failing: s1's mech
+untrained pool fell 24 -> 18 per world at version 24 and recovered to 91% of
+its start after the self-model prune. No label-free guard was built; the
+protocol is frozen as is and a failure will be reported as one.
 
 ## Forecast (to be committed before the run)
 
-Per gate and replication, an interval for each endpoint, scored by a proper
-rule afterwards. Not yet written.
+Committed before opening 919100, from the three development seeds:
+
+- Gate 1 growth >= 15% in every area: mech 0.95 (dev: +45% to +92%), drawn7
+  0.70 (dev: +72%, +92%, -12%), metric 0.90 (dev: 3x to 5x). All three: 0.6.
+- Gate 2 no pool below 90% of start: 0.45 (s1 untrained ended at 91%; the
+  other seeds' pools were not checked).
+- Gate 3 proofs <= 2.5x live: 0.5 (s1 2.46x before the half-set early stop;
+  the larger single-pool sets add cost, the early stop removes some).
+- Gate 4 audit: 0.5. At freeze the auditor replayed s2's two metric proofs and
+  both MISMATCHED (carried 381 recorded, 447 replayed; candidate 1094, 1037).
+  The replay itself is deterministic across processes, worker counts and
+  hash seeds, and the held-out draw is reproducible, so the chain-time run
+  differed in a way not yet found; a fresh proof on a copy of s2 could not be
+  audited because the life kept nothing and the machine ran out of memory.
+  Unresolved at freeze; a gate 4 failure on the confirmation seeds will be
+  reported as one.
+- All four gates on both replications: 0.15.
 
 ## Audit
 
-`audit_seed.py` (to be written): rebuild each area from the state's specs,
-recompute the carried and candidate scores of every kept change from the
-ledger's salts and the state versions reconstructed by replaying the ledger,
-and check equality; recompute the resource totals from the ledger.
+`audit_seed.py` rebuilds each area from the state's specs, redraws each kept
+change's held-out set from the ledger's salt, reruns the before and after
+snapshots and checks the totals and the interval against the ledger.
 
 ## What a pass would and would not establish
 

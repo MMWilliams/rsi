@@ -110,6 +110,19 @@ are for replication only. Nothing proven is reset between generations.
       NEXT: held-out 48 worlds for single-pool areas and larger cross-area
       sets (power, not size, is the problem); run audit_seed.py; freeze
       EXPERIMENT-seed-confirmation.md and run 919100/919101.
+      2026-10-11 later: held-out min 48 worlds (seed_run) and cross-area
+      min 24 worlds (prove) DONE; protocol FROZEN with hashes + forecast,
+      runner confirm_seed.sh. AUDIT s2 MISMATCHED both metric proofs: the
+      before-snapshot's experience_len is stale (written at the previous
+      acceptance), fixed by recording experience_len in each prove entry
+      and using it in audit_seed.py; v5 still unexplained, determinism
+      replay (tmp/determinism.py) pending. Re-hash files, re-audit s2/s3,
+      then open 919100. Replay is deterministic (workers, hash seeds, held-out
+      hash all stable) yet v5 still mismatches the ledger per world (worlds
+      0,1,5 equal, most others not); fresh-proof test on a copy of s2 kept
+      nothing and was killed for low memory. Protocol hashes updated after
+      the audit fix; 919100 NOT opened. Next: find the chain-time difference
+      (try: run one mech life on a copy of s1 and audit it), then open 919100.
 
 ## Programme, 2026-10-04: recursive growth through drawn levels
 

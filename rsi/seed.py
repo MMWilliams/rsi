@@ -475,7 +475,7 @@ class Seed:
                 if name == area.name or not self.lives(name) or not a.get('spec'):
                     continue
                 other = make_area(a['spec'], self.state['seed'])
-                held = other.held_out(per_pool_other, salt=salt)
+                held = other.held_out(max(per_pool_other, -(-24 // len(other.pools))), salt=salt)   # at least 24 worlds
                 base = self._carried(other, held, salt, budget)
                 there = self.score(self.run(held, budget, name, state=candidate), held, budget)
                 self.state['resource']['proof_scans'] += len(held) * STREAM * budget
@@ -483,7 +483,8 @@ class Seed:
                 if there['total'] < base['total'] * (1 - tolerance):
                     kept = False
         entry = {'life': self.lives(area.name) - 1, 'area': area.name, 'op': 'prove', 'change': change,
-                 'salt': salt, 'carried': carried, 'candidate': new, 'kept': kept}
+                 'salt': salt, 'carried': carried, 'candidate': new, 'kept': kept,
+                 'experience_len': len(self.state['experience'])}
         if elsewhere:
             entry['elsewhere'] = elsewhere
         if note:
