@@ -1,21 +1,25 @@
-"""The seed: one agent, one carried state, three operations on itself.
+"""The seed: one agent, one carried state, four operations on itself.
 
-State: its language (the atoms its catalog is built from), its experience
-(the atom sets it earned in every world it has lived, by atom name so that the
-language may grow under it), its world and self model fitted from that
-experience, the pair prior it starts a world from, and a ledger of every
-change it tried and whether it was kept.
+State: its language (the atoms its catalog is built from, shared across
+areas), its experience (the atom sets it earned in every world it has lived,
+by atom name and area, so that the language may grow under it), per area a
+world and self model and a pair prior fitted from that area's experience, the
+atoms it invented and when, a ledger of every change it tried with its proof,
+and the resource it has spent.
 
 Operations: `live` earns experience in an area under a scan budget; `reflect`
-refits the model and the prior from everything it has earned; `extend` invents
-atoms from the grammar for the worlds it could not solve. Every change is a
-candidate until `prove` shows it solves more of a fixed held-out set than the
-carried state does. Only proven changes are kept, and nothing kept is reset.
-Nothing here reads a family label or a true world; the area's pools are named
-for the ledger only.
+refits an area's model and prior from everything earned there; `extend`
+invents atoms from the grammar for the worlds it could not solve; `prune`
+proposes dropping invented atoms that never earned their keep. Every change is
+a candidate until `prove` shows it solves more of a held-out set, drawn fresh
+for each life, than the carried state does; only proven changes are kept, and
+nothing kept is reset. Proof lifetimes are charged to the seed's resource.
+Nothing here reads a family label or a true world; an area's pools name where
+a world came from, for the ledger only.
 """
 from __future__ import annotations
 
+import copy
 import json
 import multiprocessing
 import os
@@ -26,6 +30,7 @@ from types import SimpleNamespace
 
 import numpy as np
 
+from .environments import draw as draw_env, make_environment
 from .growth_coach import BLIND, CHAMPION, UNHEDGED, Prior, Simulator, draw_worlds, triples, world_seed
 from .invention import invent
 from .learned_groups import LearnedFamilySimulator
@@ -40,14 +45,53 @@ WORKERS = int(os.environ.get('RSI_WORKERS', 8))
 _STATE = {}
 
 
-class MechanismArea:
-    """Worlds from the true generator. The seed's language starts without the
-    unfamiliar families, so their worlds hold mechanisms it cannot reach by
-    scanning; a fifth of the viable known triples are kept out of its lives."""
+# -- areas ------------------------------------------------------------------
 
-    def __init__(self, seed, unfamiliar=('popcount', 'xormod'), untrained_share=.2):
+class Area:
+    """Worlds from a generator the seed never sees."""
+    name = 'area'
+    pools = ('all',)
+
+    def __init__(self, seed):
         self.full = Harness()
         self.seed = seed
+
+    def _worlds(self, pool, count, rng):
+        raise NotImplementedError
+
+    def draw(self, pool, count, rng):
+        return [{'pool': pool, 'masks': [self.full.catalog.masks[m] for m in w['stream']]}
+                for w in self._worlds(pool, count, rng)]
+
+    def held_out(self, per_pool, salt=0):
+        """A fresh held-out set per salt: proofs never reuse one set."""
+        rng = random.Random(world_seed(self.seed + 4242, salt))
+        out = []
+        for pool in self.pools:
+            out += self.draw(pool, per_pool, rng)
+        for i, w in enumerate(out):
+            w['rng'] = world_seed(self.seed + 8 + salt, i)
+        return out
+
+    def life_worlds(self, life, count):
+        rng = random.Random(world_seed(self.seed + 10, life))
+        out = self.life_draw(count, rng)
+        rng.shuffle(out)
+        for i, w in enumerate(out):
+            w['rng'] = world_seed(self.seed + 100 + life, i)
+        return out
+
+
+class MechanismArea(Area):
+    """Family-structured worlds. The seed's starting language lacks the
+    unfamiliar families, so their worlds hold mechanisms it cannot reach by
+    scanning; a fifth of the viable known triples stay out of its lives."""
+    name = 'mech'
+    pools = ('trained', 'untrained', 'unfamiliar')
+
+    def __init__(self, seed, unfamiliar=('popcount', 'xormod'), untrained_share=.2,
+                 unfamiliar_share=.25):
+        super().__init__(seed)
         rng = random.Random(seed)
         families = sorted(self.full.by_family)
         known = [f for f in families if f not in unfamiliar]
@@ -55,36 +99,41 @@ class MechanismArea:
         rng.shuffle(pool)
         cut = max(1, round(untrained_share * len(pool)))
         everything = triples(self.full, families, rng, KEYS_PER_WORLD, MINIMUM_MEMBERS)
-        self.pools = {'untrained': pool[:cut], 'trained': pool[cut:],
-                      'unfamiliar': [t for t in everything if set(t) & set(unfamiliar)]}
+        self.triples = {'untrained': pool[:cut], 'trained': pool[cut:],
+                        'unfamiliar': [t for t in everything if set(t) & set(unfamiliar)]}
+        self.unfamiliar_share = unfamiliar_share
         self.seed_language = [a for a in atom_expressions() if a[1] not in unfamiliar]
 
-    def draw(self, pool, count, rng):
-        worlds = draw_worlds(self.full, self.pools[pool], count, rng, KEYS_PER_WORLD,
-                             MINIMUM_MEMBERS, STREAM)
-        return [{'pool': pool, 'triple': list(w['triple']),
-                 'masks': [self.full.catalog.masks[m] for m in w['stream']]} for w in worlds]
+    def _worlds(self, pool, count, rng):
+        return draw_worlds(self.full, self.triples[pool], count, rng, KEYS_PER_WORLD,
+                           MINIMUM_MEMBERS, STREAM)
 
-    def held_out(self, per_pool=24):
-        rng = random.Random(self.seed + 4242)
-        out = []
-        for pool in ('trained', 'untrained', 'unfamiliar'):
-            out += self.draw(pool, per_pool, rng)
-        for i, w in enumerate(out):
-            w['rng'] = world_seed(self.seed + 8, i)
-        return out
-
-    def life_worlds(self, life, count, unfamiliar_share=.25):
-        rng = random.Random(world_seed(self.seed + 10, life))
-        unfamiliar = round(count * unfamiliar_share)
-        out = self.draw('trained', count - unfamiliar, rng) + self.draw('unfamiliar', unfamiliar, rng)
-        rng.shuffle(out)
-        for i, w in enumerate(out):
-            w['rng'] = world_seed(self.seed + 100 + life, i)
-        return out
+    def life_draw(self, count, rng):
+        unfamiliar = round(count * self.unfamiliar_share)
+        return self.draw('trained', count - unfamiliar, rng) + self.draw('unfamiliar', unfamiliar, rng)
 
 
-# -- the agent inside a worker: the state's language, model and prior --------
+class DrawnArea(Area):
+    """An environment drawn from the Phase 2 meta-distribution: every atom
+    partitioned at random into groups, a world drawing from a few of them, with
+    slips. The partition cuts across families, so nothing the seed learned in
+    the mechanism area applies except its language."""
+    pools = ('env',)
+
+    def __init__(self, seed, env_seed, theta=None):
+        super().__init__(seed)
+        self.name = f'drawn{env_seed}'
+        self.environment = make_environment(self.full, env_seed, theta)
+
+    def _worlds(self, pool, count, rng):
+        return draw_env(self.full, self.environment, count, rng, KEYS_PER_WORLD,
+                        MINIMUM_MEMBERS, STREAM)
+
+    def life_draw(self, count, rng):
+        return self.draw('env', count, rng)
+
+
+# -- the agent inside a worker ------------------------------------------------
 
 def _init(language, labels, prior_sets, tiebreak, budget):
     h = Harness([tuple(a) for a in language])
@@ -137,12 +186,15 @@ def _life(job):
             'confident': sorted(confident), 'unsolved': unsolved, 'stuck': len(unsolved)}
 
 
+# -- the seed ----------------------------------------------------------------
+
 class Seed:
     def __init__(self, path, language=None, name=None):
         self.path = Path(path)
         file = self.path / 'state.json'
         if file.exists():
             self.state = json.loads(file.read_text())
+            self._migrate()
         else:
             if language is None:
                 raise ValueError('a new seed needs a language')
@@ -150,22 +202,51 @@ class Seed:
             self.state = {'name': name or self.path.name, 'created': time.strftime('%Y-%m-%d %H:%M'),
                           'version': 0, 'tiebreak': 77,
                           'language': [list(a) for a in language],
-                          'experience': [], 'experience_all': [],
-                          'model': None, 'prior': False, 'kept': [], 'ledger': [],
-                          'held_out_score': None}
+                          'initial_language': [list(a) for a in language],
+                          'experience': [], 'areas': {}, 'inventions': {},
+                          'kept': [], 'ledger': [],
+                          'resource': {'live_scans': 0, 'proof_scans': 0, 'invention_tests': 0}}
             self.save()
+
+    def _migrate(self):
+        """The first seed kept one area's model at the top level."""
+        s = self.state
+        if 'areas' in s:
+            return
+        s['areas'] = {'mech': {'model': s.pop('model', None), 'prior': s.pop('prior', False),
+                               'held_out_score': None}}
+        s.pop('held_out_score', None)
+        picks = s.pop('experience_all', [])
+        s['experience'] = [{'area': 'mech', 'confident': c, 'picks': p}
+                           for c, p in zip(s['experience'], picks)]
+        s['initial_language'] = [a for a in s['language'] if not a[0].startswith('inv:')]
+        s['inventions'] = {a[0]: {'life': None, 'area': 'mech'} for a in s['language']
+                           if a[0].startswith('inv:')}
+        s['resource'] = {'live_scans': sum(e.get('scans', 0) for e in s['ledger'] if e['op'] == 'live'),
+                         'proof_scans': 0, 'invention_tests': 0}
+        for e in s['ledger']:
+            e.setdefault('area', 'mech')
+        self.save()
 
     def save(self):
         (self.path / 'state.json').write_text(json.dumps(self.state))
 
-    @property
-    def lives(self):
-        return sum(1 for e in self.state['ledger'] if e['op'] == 'live')
+    def lives(self, area=None):
+        return sum(1 for e in self.state['ledger']
+                   if e['op'] == 'live' and (area is None or e['area'] == area))
 
-    def run(self, worlds, budget, state=None, workers=WORKERS):
+    def area_state(self, area, state=None):
         st = self.state if state is None else state
-        labels = st['model']['labels'] if st['model'] else None
-        prior_sets = st['experience_all'] if st['prior'] else None
+        return st['areas'].setdefault(area, {'model': None, 'prior': False, 'held_out_score': None})
+
+    def candidate(self):
+        return copy.deepcopy(self.state)
+
+    def run(self, worlds, budget, area, state=None, workers=WORKERS):
+        st = self.state if state is None else state
+        a = self.area_state(area, st)
+        labels = a['model']['labels'] if a['model'] else None
+        prior_sets = [e['picks'] for e in st['experience'] if e['area'] == area] if a['prior'] else None
         ctx = multiprocessing.get_context('spawn')
         with ctx.Pool(workers, initializer=_init,
                       initargs=(st['language'], labels, prior_sets, st['tiebreak'], budget)) as pool:
@@ -182,13 +263,14 @@ class Seed:
     # -- live ---------------------------------------------------------------
 
     def live(self, area, count, budget):
-        life = self.lives
+        life = self.lives(area.name)
         worlds = area.life_worlds(life, count)
-        records = self.run(worlds, budget)
+        records = self.run(worlds, budget, area.name)
         for r in records:
-            self.state['experience'].append(r['confident'])
-            self.state['experience_all'].append(sorted(r['picks']))
-        entry = {'life': life, 'op': 'live', 'worlds': count, 'budget': budget,
+            self.state['experience'].append({'area': area.name, 'confident': r['confident'],
+                                             'picks': sorted(r['picks'])})
+        self.state['resource']['live_scans'] += count * STREAM * budget
+        entry = {'life': life, 'area': area.name, 'op': 'live', 'worlds': count, 'budget': budget,
                  'scans': count * STREAM * budget, 'version': self.state['version']}
         entry.update(self.score(records, worlds, budget))
         self.state['ledger'].append(entry)
@@ -197,9 +279,9 @@ class Seed:
 
     # -- reflect ------------------------------------------------------------
 
-    def reflect(self, minimum=48, counts=(6, 7, 8)):
-        """A candidate model and prior from everything earned so far."""
-        sets = self.state['experience']
+    def reflect(self, area, minimum=48, counts=(6, 7, 8)):
+        """A candidate model for an area from everything earned there."""
+        sets = [e['confident'] for e in self.state['experience'] if e['area'] == area]
         if len(sets) < minimum:
             return None
         keys = sorted(a[0] for a in self.state['language'])
@@ -217,16 +299,16 @@ class Seed:
         except (ValueError, IndexError) as error:
             return {'error': repr(error)}
         return {'labels': {keys[i]: int(l) for i, l in enumerate(m.labels) if l >= 0},
-                'groups': best, 'worlds': len(sets), 'held_out_ll': {str(g): v for g, v in scores.items()},
+                'groups': best, 'worlds': len(sets),
+                'held_out_ll': {str(g): v for g, v in scores.items()},
                 'r': {keys[i]: round(float(m.r[i]), 3) for i in np.flatnonzero(m.seen)}}
 
-    # -- extend -------------------------------------------------------------
+    # -- extend and prune ---------------------------------------------------
 
     def extend(self, worlds, records, cands, share=.3, cap=40):
         """Candidate atoms for the worlds with the most unsolved tasks: the
-        top `share` of this life's worlds by stuck count."""
+        top `share` of this life's worlds by stuck count, never the easy ones."""
         stuck = np.array([r['stuck'] for r in records])
-        # the worlds this life could not solve much of, and never the easy ones
         cut = max(.15 * STREAM, float(np.quantile(stuck, 1 - share)))
         masks = {a[0]: mask_of(a[2]) for a in self.state['language']}
         known = set(masks.values()) | {FULL & ~m for m in masks.values()}
@@ -235,41 +317,56 @@ class Seed:
             if r['stuck'] < cut:
                 continue
             earned = [masks[k] for k in r['picks'] if k in masks]
-            kept, n = invent(cands, r['unsolved'], earned, known | set(new) | {FULL & ~m for m in new})
+            kept, n = invent(cands, r['unsolved'], earned,
+                             known | set(new) | {FULL & ~m for m in new})
             tests += n
             for j in kept:
                 name, _tags, expr, mask = cands[j]
                 if len(new) < cap and mask not in new and (FULL & ~mask) not in new:
                     new[mask] = (f'inv:{name}', 'inv', expr)
                     provenance.append({'atom': f'inv:{name}', 'pool': w['pool'], 'stuck': int(r['stuck'])})
+        self.state['resource']['invention_tests'] += tests
         return list(new.values()), tests, provenance
+
+    def prune(self, min_lives=2):
+        """Invented atoms never earned with confidence since they entered, two
+        or more lives on: candidates for removal."""
+        life = self.lives()
+        earned = {k for e in self.state['experience'] for k in e['confident']}
+        return [k for k, meta in self.state['inventions'].items()
+                if meta.get('life') is not None and life - meta['life'] >= min_lives and k not in earned]
 
     # -- prove --------------------------------------------------------------
 
-    def prove(self, held_out, candidate, budget, change, note=None):
-        """Keep the candidate only if it solves more held-out tasks than the
-        carried state. The held-out set is fixed, so the carried score is
-        cached per state version."""
-        carried = self.state['held_out_score']
-        if carried is None or carried['version'] != self.state['version'] or carried['budget'] != budget:
-            carried = self.score(self.run(held_out, budget), held_out, budget)
-            carried['version'] = self.state['version']
-            self.state['held_out_score'] = carried
+    def prove(self, area, held_out, salt, candidate, budget, change, note=None):
+        """Keep the candidate only if it solves more of this life's held-out
+        set than the carried state. The carried score is cached per state
+        version and held-out draw; every proof lifetime is charged."""
+        a = self.area_state(area.name)
+        carried = a['held_out_score']
+        cost = len(held_out) * STREAM * budget
+        if (carried is None or carried.get('version') != self.state['version']
+                or carried.get('salt') != salt or carried['budget'] != budget):
+            carried = self.score(self.run(held_out, budget, area.name), held_out, budget)
+            carried.update(version=self.state['version'], salt=salt)
+            a['held_out_score'] = carried
+            self.state['resource']['proof_scans'] += cost
             self.save()
-        new = self.score(self.run(held_out, budget, state=candidate), held_out, budget)
+        new = self.score(self.run(held_out, budget, area.name, state=candidate), held_out, budget)
+        self.state['resource']['proof_scans'] += cost
         kept = new['total'] > carried['total']
-        entry = {'life': self.lives - 1, 'op': 'prove', 'change': change, 'carried': carried,
-                 'candidate': new, 'kept': kept}
+        entry = {'life': self.lives(area.name) - 1, 'area': area.name, 'op': 'prove', 'change': change,
+                 'salt': salt, 'carried': carried, 'candidate': new, 'kept': kept}
         if note:
             entry['note'] = note
         self.state['ledger'].append(entry)
         if kept:
-            for key in ('language', 'model', 'prior'):
+            for key in ('language', 'areas', 'inventions'):
                 self.state[key] = candidate[key]
             self.state['version'] += 1
-            new['version'] = self.state['version']
-            self.state['held_out_score'] = new
-            self.state['kept'].append({'life': self.lives - 1, 'change': change,
+            new.update(version=self.state['version'], salt=salt)
+            self.area_state(area.name)['held_out_score'] = new
+            self.state['kept'].append({'life': entry['life'], 'area': area.name, 'change': change,
                                        'gain': new['total'] - carried['total'],
                                        'version': self.state['version']})
         self.save()
