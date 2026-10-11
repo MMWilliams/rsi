@@ -22,7 +22,6 @@ true world; an area's pools name where a world came from, for the ledger only.
 from __future__ import annotations
 
 import copy
-import hashlib
 import json
 import multiprocessing
 import os
@@ -279,7 +278,7 @@ class Seed:
         folder = self.path / 'versions'
         folder.mkdir(exist_ok=True)
         file = folder / f'{self.state["version"]}.json'
-        areas = {name: {k: v for k, v in a.items() if k not in ('held_out_score', 'held_out_blind')}
+        areas = {name: {k: v for k, v in a.items() if k != 'held_out_score'}
                  for name, a in self.state['areas'].items()}
         file.write_text(json.dumps({'version': self.state['version'], 'language': self.state['language'],
                                     'areas': areas, 'inventions': self.state['inventions'],
@@ -441,32 +440,8 @@ class Seed:
             self.save()
         return carried
 
-    @staticmethod
-    def _unguided(state, area):
-        st = copy.deepcopy(state)
-        a = st['areas'].setdefault(area, {})
-        a['model'], a['prior'] = None, False
-        return st
-
-    def _blind(self, area, held_out, salt, budget):
-        """The carried language's score with no model and no prior, cached per
-        language and held-out draw (it depends on nothing else)."""
-        a = self.area_state(area.name)
-        cached = a.get('held_out_blind')
-        language = hashlib.blake2b(json.dumps(sorted(x[0] for x in self.state['language'])).encode(),
-                                   digest_size=8).hexdigest()
-        if (cached is None or cached.get('language') != language or cached.get('salt') != salt
-                or cached.get('budget') != budget or cached.get('size') != len(held_out)):
-            records = self.run(held_out, budget, area.name, state=self._unguided(self.state, area.name))
-            cached = self.score(records, held_out, budget)
-            cached.update(language=language, salt=salt, size=len(held_out), hits=[r['hits'] for r in records])
-            a['held_out_blind'] = cached
-            self.state['resource']['proof_scans'] += len(held_out) * STREAM * budget
-            self.save()
-        return cached
-
     def prove(self, area, held_out, salt, candidate, budget, change, note=None,
-              shared=False, per_pool_other=12, tolerance=.02, blind_tolerance=.10, boot=4000):
+              shared=False, per_pool_other=12, tolerance=.02, boot=4000):
         """Keep the candidate only if its gain over the carried state on this
         life's held-out set, paired over worlds, has a bootstrap interval
         above zero and, for a change to shared state, leaves every other area
@@ -500,23 +475,7 @@ class Seed:
         if len(done) < len(held_out):           # stopped early: scale to the full set for the ledger
             new['total'] = int(round(new['total'] * len(held_out) / len(done)))
         kept = bounds[0] > 0 and len(done) == len(held_out)
-        elsewhere, blind = {}, {}
-        grown = {a[0] for a in candidate['language']} - {a[0] for a in self.state['language']}
-        if kept and shared and grown:
-            # label-free guard for the worlds the model does not recognise: with the model
-            # and prior switched off, a language with new atoms must not search much worse
-            # than the carried one. A grown language dilutes the unguided half of the
-            # budget, which is what untrained family combinations fall back on. Judged on
-            # half the set against the carried language's cached unguided score there.
-            base = self._blind(area, held_out, salt, budget)
-            half = list(range(0, len(held_out), 2))
-            records = self.run([held_out[i] for i in half], budget, area.name,
-                               state=self._unguided(candidate, area.name))
-            self.state['resource']['proof_scans'] += len(half) * STREAM * budget
-            blind = {'carried': int(sum(base['hits'][i] for i in half)),
-                     'candidate': int(sum(r['hits'] for r in records)), 'worlds': len(half)}
-            if blind['candidate'] < blind['carried'] * (1 - blind_tolerance):
-                kept = False
+        elsewhere = {}
         if kept and shared:
             for name, a in self.state['areas'].items():
                 if name == area.name or not self.lives(name) or not a.get('spec'):
@@ -534,8 +493,6 @@ class Seed:
                  'experience_len': len(self.state['experience'])}
         if elsewhere:
             entry['elsewhere'] = elsewhere
-        if blind:
-            entry['blind'] = blind
         if note:
             entry['note'] = note
         self.state['ledger'].append(entry)
