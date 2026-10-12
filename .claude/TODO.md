@@ -207,7 +207,7 @@ are for replication only. Nothing proven is reset between generations.
       to +351%, all 9 pools up, cost 2.88 < 3.25, audit 10/10). c14 RESULT
       (919113): ALL FOUR GATES PASS (+45% to +542%, all 9 pools up, cost 2.32,
       audit 8/8). v7 PASSES = CONFIRMED SIX-AREA PROTOCOL. Fourteen seeds: 107
-      acceptances all replay; growth+safety on 13/14 (miss = 919108, v5). NOW: paper/doc/chart need v6+v7 seeds; then the
+      acceptances all replay; growth+safety on 13/14 (miss = 919108, v5). DONE: paper (16 pp, Table 5 six-area, Fig 2 = start-vs-retained scatter of 65 pairs) + doc (rev 64, chart pub 15, 65 rows) carry all fourteen. NEXT: the
       string-DSL task family as a new area type (goal lists it; not built).
       LATER: a cumulative-drift guard vs the INITIAL
       language (own seeds), second task form. (old note: the untrained guard (v5
