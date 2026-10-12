@@ -204,8 +204,10 @@ are for replication only. Nothing proven is reset between generations.
       only (gate set for 3 areas; cross-area checks grow with areas). v7
       FROZEN = same code, cost gate 2.5x + 0.25x per area beyond three
       (3.25x at six); c13 RESULT (919112): ALL FOUR GATES PASS (six areas +58%
-      to +351%, all 9 pools up, cost 2.88 < 3.25, audit 10/10). c14 = 919113
-      RUNNING (runs_seed_conf_c14.log). After v7: paper/doc/chart need v6+v7 seeds; then the
+      to +351%, all 9 pools up, cost 2.88 < 3.25, audit 10/10). c14 RESULT
+      (919113): ALL FOUR GATES PASS (+45% to +542%, all 9 pools up, cost 2.32,
+      audit 8/8). v7 PASSES = CONFIRMED SIX-AREA PROTOCOL. Fourteen seeds: 107
+      acceptances all replay; growth+safety on 13/14 (miss = 919108, v5). NOW: paper/doc/chart need v6+v7 seeds; then the
       string-DSL task family as a new area type (goal lists it; not built).
       LATER: a cumulative-drift guard vs the INITIAL
       language (own seeds), second task form. (old note: the untrained guard (v5

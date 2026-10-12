@@ -682,3 +682,62 @@ ceiling.
 - Gate 4: PASS, 10 of 10 replay exactly, salts unique within area.
 
 All four gates pass on 919112. 919113 (replication N) opened next.
+
+### Replication N, seed 919113 under v7 (`seeds/c14`, `runs_seed_conf_c14.log`), 2026-10-11
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,269 | 1,878 | +48% | trained 23.5 -> 36.2, untrained 26.6 -> 29.5, unfamiliar 2.7 -> 12.5 |
+| drawn7 | 230 | 334 | +45% | env 9.6 -> 13.9 |
+| metric777001 | 389 | 1,667 | +329% | seen 11.6 -> 35.3, unfamiliar 4.6 -> 34.1 |
+| drawn11 | 249 | 369 | +48% | env 10.4 -> 15.4 |
+| drawn13 | 258 | 375 | +45% | env 10.8 -> 15.6 |
+| metric555001 | 284 | 1,823 | +542% | seen 10.3 -> 50.8, unfamiliar 1.5 -> 25.2 |
+
+Kept changes (8): five language extensions of 40 atoms (mech lives 0 and 3,
+drawn7 life 0 with prune -31, drawn11 life 0 with prune -15, drawn13 life 0
+with prune -15), two model refits (metric777001, metric555001), one prune
+(drawn13 -10). Proof scans 2.32x live: the most language extensions of any
+seed yet the lowest six-area cost, because four of the five passed in the
+first life of their area, when few other areas had been lived and the
+cross-area bill was one to four checks, and the rejected candidates stopped
+on the half set.
+
+- Gate 1: PASS, six of six areas, smallest +45%.
+- Gate 2: PASS, all nine pools rose; the weakest (mech untrained, 26.6 ->
+  29.5) to 111% of its start.
+- Gate 3: PASS, 2.32x against 3.25x.
+- Gate 4: PASS, 8 of 8 replay exactly, salts unique within area.
+
+### Verdict on v7
+
+All four gates pass on both sealed seeds. v7 PASSES. v7 is the confirmed
+protocol for six areas; v4 remains the confirmed protocol for three.
+
+Across the four six-area seeds (919110 to 919113; the first two under v6,
+whose only difference from v7 is the cost threshold): 24 of 24 areas rose
+by at least 23% on fresh held-out sets (median +80%, range +23% to +542%);
+36 of 36 pools rose (the weakest to 111% of its start); 39 of 39
+acceptances replay exactly; cost 2.78x, 2.64x, 2.88x, 2.32x (mean 2.65x)
+against the scaled gate of 3.25x. The two metric areas gained most
+(+249% to +542%); metric555001 did so on two seeds without keeping any
+change in its own lives, from the language and models the other areas
+built, which is the carried-forward transfer the programme set out to
+show.
+
+## Fourteen sealed seeds, summary
+
+| version | seeds | areas | growth | safety | cost | audit |
+| --- | --- | --- | --- | --- | --- | --- |
+| v1 | 919100, 919101 | 3 | pass, pass | pass, pass | FAIL (6x) | pass (one stale baseline) |
+| v2 | 919102, 919103 | 3 | pass, pass | pass, pass | pass, pass | FAIL (own-set clause, one seed) |
+| v3 | 919104, 919105 | 3 | pass, pass | pass, pass | pass, pass | FAIL (stale cache, one proof per seed) |
+| v4 | 919106, 919107 | 3 | pass, pass | pass, pass | pass, pass | pass, pass |
+| v5 | 919108, 919109 | 3 | FAIL, pass | FAIL, pass | pass, FAIL | pass, pass |
+| v6 | 919110, 919111 | 6 | pass, pass | pass, pass | FAIL, FAIL (2.5x gate) | pass, pass |
+| v7 | 919112, 919113 | 6 | pass, pass | pass, pass | pass, pass (3.25x gate) | pass, pass |
+
+107 acceptances across fourteen seeds; every one stands on replay. Growth of
+at least 15% in every area on thirteen of fourteen seeds and no pool below
+90% on thirteen of fourteen; both misses are seed 919108 under the retired
+v5 guard.
