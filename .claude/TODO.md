@@ -221,8 +221,9 @@ are for replication only. Nothing proven is reset between generations.
       c16 = 919115 BOTH PASS all four gates: v8 CONFIRMED (14/14 areas up, smallest
       +27%, str7 +27%/+32%; 22/22 pools up; cost 2.61x/2.71x vs 3.5x; 24/24 replay;
       both seeds kept the same 6 withheld UPPER/LOWER positions, c15 also C-13/C-14).
-      NEXT: paper + doc + chart (+14 rows), memory; then the next seed step (string
-      plateau at ~81% of tasks after life 0, or an eighth area).
+      Paper (16 pp, 79-pair figure, seven-area table), Claude Doc (string form, v8,
+      chart 79 rows) and memory DONE 2026-10-12. NEXT seed step: the string plateau
+      (~81% of tasks after life 0; hidden-example ambiguity) or an eighth area.
       LATER: a cumulative-drift guard vs the INITIAL
       language (own seeds), second task form. (old note: the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).
