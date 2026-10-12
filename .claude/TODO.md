@@ -259,7 +259,9 @@ are for replication only. Nothing proven is reset between generations.
       ~3 h; a resume would skip one life's proofs and need recording as a deviation.
       Paper (17 pp, 100 pairs, table through 919118) + Doc (rev 76, chart 100 rows)
       updated through v9 and the first v10 seed 2026-10-12. After c20: v10 verdict,
-      then paper/doc once more. Remaining
+      then paper/doc once more. Untrained-pool drift CHECKED across the 19 sealed seeds:
+      rose on 17/19 (median 163%), dips only under v2/v5, no relation to other areas'
+      language changes; no guard needed (EXPERIMENT note). Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for
       ~half; a majority-keys rule would not pick it): leave.
       LATER: a cumulative-drift guard vs the INITIAL

@@ -1140,3 +1140,20 @@ Proof scans 2.92x live (2.33x and 2.27x under v9).
   included; salts unique within area.
 
 All four gates pass on 919118. 919119 (replication T) opened next.
+
+### Note: the mechanism area's untrained pool across the nineteen sealed seeds (2026-10-12)
+
+The pool the development runs flagged as the weak point (untrained family
+combinations, which the shared language can dilute) rose on seventeen of
+nineteen sealed seeds, to a median 163% of its start; the two dips, 94% on
+919103 (v2) and 89% on 919108 (v5, the retired guard), are both under
+early versions. Its ratio shows no relation to the number of
+shared-language changes other areas kept (one to four per seed; 919116
+kept four and the pool rose to 189%), and the extension rule's first seed
+(919118, three extensions) ended at 201%. The 82% seen on the development
+seed `d_ext` came with the mechanism area lived last, after three
+extensions by other areas with no lived mechanism area to check them on;
+the confirmation schedule lives it first. No cumulative-drift guard is
+needed on this evidence; the per-candidate 2% check on 24 worlds has held
+in the schedule as run.
+
