@@ -656,3 +656,29 @@ areas passed under v6, but two-life areas have one or two chances), gate 2
 0.7 (eighteen of eighteen pools rose under v6; mech's untrained pool is
 the historically weak one, 94% of start on one v3 seed), gate 3 0.8 (2.64x
 and 2.78x against 3.25x), gate 4 0.9; all four on both seeds 0.35.
+
+### Replication M, seed 919112 under v7 (`seeds/c13`, `runs_seed_conf_c13.log`), 2026-10-11
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,014 | 2,070 | +104% | trained 19.8 -> 36.7, untrained 18.5 -> 29.5, unfamiliar 4.0 -> 20.0 |
+| drawn7 | 214 | 374 | +75% | env 8.9 -> 15.6 |
+| metric777001 | 493 | 1,723 | +249% | seen 16.2 -> 41.7, unfamiliar 4.3 -> 30.1 |
+| drawn11 | 217 | 415 | +91% | env 9.0 -> 17.3 |
+| drawn13 | 237 | 375 | +58% | env 9.9 -> 15.6 |
+| metric555001 | 308 | 1,390 | +351% | seen 10.8 -> 38.7, unfamiliar 2.0 -> 19.2 |
+
+Kept changes (10): three language extensions of 40 atoms (mech life 0,
+metric777001 life 1 with prune -6, drawn11 life 0 with prune -15), five
+model refits (mech, drawn7, metric777001, drawn13, metric555001), two
+prunes (drawn11 -9, metric555001 -14). Proof scans 2.88x live, the highest
+of the four six-area seeds and the one with the most language candidates
+passing their own area; 0.23 per area over v4's mean, under the 0.25
+ceiling.
+
+- Gate 1: PASS, six of six areas, smallest +58%.
+- Gate 2: PASS, all nine pools rose; the weakest rose to 158% of its start.
+- Gate 3: PASS, 2.88x against 3.25x.
+- Gate 4: PASS, 10 of 10 replay exactly, salts unique within area.
+
+All four gates pass on 919112. 919113 (replication N) opened next.

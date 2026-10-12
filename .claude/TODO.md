@@ -203,8 +203,9 @@ are for replication only. Nothing proven is reset between generations.
       +421%), all 9 pools up, audit 11/11, cost 2.64 FAIL. v6 FAILS on cost
       only (gate set for 3 areas; cross-area checks grow with areas). v7
       FROZEN = same code, cost gate 2.5x + 0.25x per area beyond three
-      (3.25x at six); c13 = 919112 RUNNING (runs_seed_conf_c13.log), then
-      c14 = 919113. After v7: paper/doc/chart need v6+v7 seeds; then the
+      (3.25x at six); c13 RESULT (919112): ALL FOUR GATES PASS (six areas +58%
+      to +351%, all 9 pools up, cost 2.88 < 3.25, audit 10/10). c14 = 919113
+      RUNNING (runs_seed_conf_c14.log). After v7: paper/doc/chart need v6+v7 seeds; then the
       string-DSL task family as a new area type (goal lists it; not built).
       LATER: a cumulative-drift guard vs the INITIAL
       language (own seeds), second task form. (old note: the untrained guard (v5
