@@ -252,8 +252,12 @@ are for replication only. Nothing proven is reset between generations.
       artefact, watch gate 2). v10 FROZEN = v9 + extension. c19 = 919118 ALL FOUR
       GATES PASS (7/7 areas, smallest drawn7 +28%; 11/11 pools; cost 2.92x; 15/15
       replay incl. 2 extended acceptances, both confirmed by their extension set at a
-      similar gain; 3 extensions, 1 rejected). c20 = 919119 RUNNING
-      (runs_seed_conf_c20.log); then the v10 verdict, paper/doc/chart. Remaining
+      similar gain; 3 extensions, 1 rejected). c20 = 919119 KILLED by Claude Code for
+      low system memory at life 20 of 21 (mech life 4 lived, its proofs not recorded;
+      version 13). NOT restarted (harness rule: only when reese asks). On go: clean
+      rerun (rm seeds/c20, runs_seed_conf_c20.log; sh confirm_seed.sh c20 919119),
+      ~3 h; a resume would skip one life's proofs and need recording as a deviation.
+      Then the v10 verdict, paper/doc/chart. Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for
       ~half; a majority-keys rule would not pick it): leave.
       LATER: a cumulative-drift guard vs the INITIAL
