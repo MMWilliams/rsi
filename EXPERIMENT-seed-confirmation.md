@@ -583,3 +583,76 @@ live.
 - Gate 3: FAIL, 2.78x. Six areas mean up to five cross-area checks per
   language candidate; v4's 2.0x to 2.3x on three areas does not carry.
 - Gate 4: PASS, 10 of 10 replay exactly, salts unique.
+
+### Replication L, seed 919111 under v6 (`seeds/c12`, `runs_seed_conf_c12.log`), 2026-10-11
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,187 | 2,160 | +82% | trained 22.1 -> 45.0, untrained 23.7 -> 30.9, unfamiliar 3.7 -> 14.1 |
+| drawn7 | 305 | 384 | +26% | env 12.7 -> 16.0 |
+| metric777001 | 355 | 1,585 | +346% | seen 10.5 -> 39.0, unfamiliar 4.3 -> 27.0 |
+| drawn11 | 206 | 341 | +66% | env 8.6 -> 14.2 |
+| drawn13 | 176 | 314 | +78% | env 7.3 -> 13.1 |
+| metric555001 | 283 | 1,475 | +421% | seen 10.2 -> 40.2, unfamiliar 1.6 -> 21.3 |
+
+Kept changes (11): two in mech (both language +40 with a model), two in
+drawn7 (model, prune -39), three in metric777001 (language +40 with a
+model, two model refits), one each in drawn11 and drawn13 (models), one
+prune -13 in drawn13, one model in metric555001. Proof scans 2.64x live.
+
+- Gate 1: PASS, six of six areas, smallest +26%.
+- Gate 2: PASS, all nine pools rose.
+- Gate 3: FAIL, 2.64x.
+- Gate 4: PASS, 11 of 11 replay exactly, salts unique within area.
+
+### Verdict on v6
+
+Growth, safety and audit pass on both seeds: twelve of twelve areas up by
+at least 23%, eighteen of eighteen pools up, 21 of 21 acceptances stand on
+replay. The cost gate fails on both (2.78x, 2.64x). v6 FAILS as frozen.
+
+The cost failure has one cause and it was forecast at 0.3: the gate was
+set at 2.5x on three areas, and every language candidate that passes its
+own area is then checked on every other lived area (24 worlds each), so
+the test bill grows with the number of areas. v4's two seeds on three
+areas read 2.32x and 2.04x (mean 2.18); v6's two on six read 2.78x and
+2.64x (mean 2.71): an increase of 0.53 for three further areas, 0.18 per
+area. The structural ceiling is 0.25 per area per life (one 24-world
+check against a 96-world life, the carried side cached per version), met
+only if every life produces a language candidate that passes its own area.
+
+The cost gate was a guard against testing swamping living, not against
+checking more areas. A gate that scales with the areas checked is declared
+below as v7; v6's seeds do not count toward it, since the scaled threshold
+was chosen after they were read.
+
+## Protocol v7 (FROZEN 2026-10-11, after the v6 verdict)
+
+Same code, same schedule and same gates 1, 2 and 4 as v6 (every hash below
+equals v6's). Gate 3 becomes: proof scans at most (2.5 + 0.25 x (k - 3))
+times live scans, where k is the number of areas lived; at six areas,
+3.25x. The 0.25 per area is the structural ceiling derived above, not the
+measured 0.18, so the gate tests whether the cost structure holds on new
+seeds rather than whether two numbers repeat.
+
+Seeds: 919112 (replication M, `seeds/c13`) and 919113 (replication N,
+`seeds/c14`), sealed and unopened at the time of writing.
+
+Hashes:
+
+```
+8771b419951b80571c920ebd0a0522f30e62113a9e20aed4c472403fb978f7e4  rsi/seed.py
+15a2b0f65ccb52ee60aa423a43ec2c2caf80af9091c33a28de182e8915fb49a9  rsi/seed_areas.py
+aefd9cc94f7dbf8f54eb311baae6245522bf212bdbca4b6ac63cb5f13cfa9c83  rsi/invention.py
+e9c6a2b3ed10cd6bb33306ca5234c06b5a087c739fcf71c65aa97593a205f2a3  rsi/self_world_model.py
+4babdfde950755e0511ffeefa2ca7272cce42323298e7a7eca5d4941ffcf476f  seed_run.py
+b6f5f11a0632b5af605729377a9a75561440fda21c5e0ff27ad310d26dd0da6c  seed_check.py
+271cb85d5a83c83173fbb3d63d441d187fed1a3850ae58e85f0c8f88e5828420  audit_seed.py
+64ea9eeedd36f643554d23bc0995d291ff7e1d7de718f3b36fae0f447eb430ce  confirm_seed.sh
+```
+
+Forecast, committed before opening 919112: gate 1 0.75 (twelve of twelve
+areas passed under v6, but two-life areas have one or two chances), gate 2
+0.7 (eighteen of eighteen pools rose under v6; mech's untrained pool is
+the historically weak one, 94% of start on one v3 seed), gate 3 0.8 (2.64x
+and 2.78x against 3.25x), gate 4 0.9; all four on both seeds 0.35.

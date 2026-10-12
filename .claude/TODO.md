@@ -199,7 +199,13 @@ are for replication only. Nothing proven is reset between generations.
       && python audit_seed.py --name c11; then sh confirm_seed.sh c12 919111.
       DONE (reese said proceed): c11 ALL SIX AREAS UP (+23% to +415%, metric555001
       356->1833 with nothing kept in its own lives), all 9 pools up, audit
-      10/10, cost 2.78 FAIL. c12 (919111) RUNNING.
+      10/10, cost 2.78 FAIL. c12 RESULT (919111): all six areas up (+26% to
+      +421%), all 9 pools up, audit 11/11, cost 2.64 FAIL. v6 FAILS on cost
+      only (gate set for 3 areas; cross-area checks grow with areas). v7
+      FROZEN = same code, cost gate 2.5x + 0.25x per area beyond three
+      (3.25x at six); c13 = 919112 RUNNING (runs_seed_conf_c13.log), then
+      c14 = 919113. After v7: paper/doc/chart need v6+v7 seeds; then the
+      string-DSL task family as a new area type (goal lists it; not built).
       LATER: a cumulative-drift guard vs the INITIAL
       language (own seeds), second task form. (old note: the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).
