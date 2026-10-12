@@ -261,7 +261,12 @@ are for replication only. Nothing proven is reset between generations.
       updated through v9 and the first v10 seed 2026-10-12. After c20: v10 verdict,
       then paper/doc once more. Untrained-pool drift CHECKED across the 19 sealed seeds:
       rose on 17/19 (median 163%), dips only under v2/v5, no relation to other areas'
-      language changes; no guard needed (EXPERIMENT note). Remaining
+      language changes; no guard needed (EXPERIMENT note). EIGHTH AREA ready with no new
+      code: str11 = StringArea(env_seed 11), a different trained/untrained split over
+      the same 58 keys (smoke test: starting-language blind rates like str7's, trained
+      47-77, untrained 81-92, unfamiliar 25-87 per world). Candidate v11 = v10 schedule
+      + str11 3 lives (24 lives, 8 areas), cost gate 2.5 + 0.25 x 5 = 3.75x; freeze only
+      after the v10 verdict. Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for
       ~half; a majority-keys rule would not pick it): leave.
       LATER: a cumulative-drift guard vs the INITIAL
