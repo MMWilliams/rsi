@@ -217,8 +217,12 @@ are for replication only. Nothing proven is reset between generations.
       d_str2 + seed_check str7,mech + audit (runs_seed_d_str2_check.log) to prove the
       two forms coexist: DONE (mech life kept 753->1028; fresh check str7 4641->5965
       +29% all pools up, mech 1232->1621 +32%; audit 3/3). v8 FROZEN = v7 schedule +
-      str7 3 lives (21 lives, 7 areas, two forms), gate 3 at 3.5x; c15 = 919114
-      RUNNING (runs_seed_conf_c15.log), then c16 = 919115.
+      str7 3 lives (21 lives, 7 areas, two forms), gate 3 at 3.5x. c15 = 919114 and
+      c16 = 919115 BOTH PASS all four gates: v8 CONFIRMED (14/14 areas up, smallest
+      +27%, str7 +27%/+32%; 22/22 pools up; cost 2.61x/2.71x vs 3.5x; 24/24 replay;
+      both seeds kept the same 6 withheld UPPER/LOWER positions, c15 also C-13/C-14).
+      NEXT: paper + doc + chart (+14 rows), memory; then the next seed step (string
+      plateau at ~81% of tasks after life 0, or an eighth area).
       LATER: a cumulative-drift guard vs the INITIAL
       language (own seeds), second task form. (old note: the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).

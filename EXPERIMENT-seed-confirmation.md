@@ -725,7 +725,7 @@ change in its own lives, from the language and models the other areas
 built, which is the carried-forward transfer the programme set out to
 show.
 
-## Fourteen sealed seeds, summary
+## Sixteen sealed seeds, summary
 
 | version | seeds | areas | growth | safety | cost | audit |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -736,10 +736,11 @@ show.
 | v5 | 919108, 919109 | 3 | FAIL, pass | FAIL, pass | pass, FAIL | pass, pass |
 | v6 | 919110, 919111 | 6 | pass, pass | pass, pass | FAIL, FAIL (2.5x gate) | pass, pass |
 | v7 | 919112, 919113 | 6 | pass, pass | pass, pass | pass, pass (3.25x gate) | pass, pass |
+| v8 | 919114, 919115 | 7, two forms | pass, pass | pass, pass | pass, pass (3.5x gate) | pass, pass |
 
-107 acceptances across fourteen seeds; every one stands on replay. Growth of
-at least 15% in every area on thirteen of fourteen seeds and no pool below
-90% on thirteen of fourteen; both misses are seed 919108 under the retired
+131 acceptances across sixteen seeds; every one stands on replay. Growth of
+at least 15% in every area on fifteen of sixteen seeds and no pool below
+90% on fifteen of sixteen; both misses are seed 919108 under the retired
 v5 guard.
 
 
@@ -817,3 +818,83 @@ twelve), gate 2 0.65 (eleven pools now; the string area's untrained pool
 rose on the development seed, mech's untrained dipped to 97%), gate 3 0.75
 (cross-form checks are skipped, so the string area adds its own proofs
 only), gate 4 0.9; all four on both seeds 0.3.
+
+### Replication O, seed 919114 under v8 (`seeds/c15`, `runs_seed_conf_c15.log`), 2026-10-12
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,185 | 2,300 | +94% | trained 23.9 -> 35.6, untrained 21.0 -> 40.3, unfamiliar 4.4 -> 20.0 |
+| drawn7 | 166 | 460 | +177% | env 6.9 -> 19.2 |
+| metric777001 | 344 | 1,422 | +313% | seen 8.5 -> 32.2, unfamiliar 5.8 -> 27.0 |
+| drawn11 | 249 | 381 | +53% | env 10.4 -> 15.9 |
+| drawn13 | 215 | 439 | +104% | env 9.0 -> 18.3 |
+| metric555001 | 371 | 1,605 | +333% | seen 13.3 -> 43.5, unfamiliar 2.2 -> 23.4 |
+| str7 | 4,749 | 6,026 | +27% | trained 65.6 -> 75.4, untrained 81.5 -> 95.2, unfamiliar 50.8 -> 80.5 |
+
+Kept changes (13): five language extensions (mech lives 0 and 2, drawn13
+life 0, each of 40 atoms; str7 life 0 of 14 keys with prune -7 and str7
+life 2 of 2 keys with prune -8), five model refits (drawn7, metric777001,
+drawn11, metric555001 lives 0 and 1), three prunes (drawn7 -28, drawn11 -4,
+metric555001 -15). The eight string keys that survived are the six withheld
+UPPER and LOWER positions (M(UPPER,1..3,end), M(LOWER,1..3,start)) and two
+positions outside the generator's universe (C-13, C-14), the first novel
+keys kept in the string form; unlike the development seed, the string area
+kept a change after life 0. Proof scans 2.61x live, inside the six-area
+range (2.32x to 2.88x): the string area's proofs are charged like any
+other's, and no cross-form check is made, so the seventh area added no
+cost beyond its own.
+
+- Gate 1: PASS, seven of seven areas, smallest +27% (str7).
+- Gate 2: PASS, all eleven pools rose; the weakest (str7 trained, 65.6 ->
+  75.4) to 115% of its start.
+- Gate 3: PASS, 2.61x against 3.5x.
+- Gate 4: PASS, 13 of 13 replay exactly, salts unique within area.
+
+All four gates pass on 919114. 919115 (replication P) opened next.
+
+### Replication P, seed 919115 under v8 (`seeds/c16`, `runs_seed_conf_c16.log`), 2026-10-12
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,174 | 1,885 | +61% | trained 21.1 -> 33.5, untrained 23.0 -> 29.1, unfamiliar 4.8 -> 15.9 |
+| drawn7 | 320 | 413 | +29% | env 13.3 -> 17.2 |
+| metric777001 | 309 | 1,409 | +356% | seen 8.9 -> 33.6, unfamiliar 4.0 -> 25.1 |
+| drawn11 | 251 | 386 | +54% | env 10.5 -> 16.1 |
+| drawn13 | 322 | 430 | +34% | env 13.4 -> 17.9 |
+| metric555001 | 300 | 1,321 | +340% | seen 10.2 -> 39.0, unfamiliar 2.3 -> 16.0 |
+| str7 | 4,119 | 5,419 | +32% | trained 61.8 -> 77.3, untrained 54.4 -> 68.1, unfamiliar 55.4 -> 80.4 |
+
+Kept changes (11): four language extensions (mech lives 0 and 2 of 40
+atoms, the second with prune -16; drawn7 life 0 of 40 atoms with prune
+-38; str7 life 0 of 12 keys with prune -2), six model refits (metric777001
+lives 0 and 1, drawn11, drawn13, metric555001, str7 life 2 with prune -6),
+one prune (drawn13 -10). The six string keys that survived are exactly the
+six withheld UPPER and LOWER positions, the same six as on 919114, and no
+novel key. Proof scans 2.71x live.
+
+- Gate 1: PASS, seven of seven areas, smallest +29% (drawn7).
+- Gate 2: PASS, all eleven pools rose; the weakest (str7 trained 61.8 ->
+  77.3 and untrained 54.4 -> 68.1) to 125% of their start.
+- Gate 3: PASS, 2.71x against 3.5x.
+- Gate 4: PASS, 11 of 11 replay exactly, salts unique within area.
+
+### Verdict on v8
+
+All four gates pass on both sealed seeds. v8 PASSES. v8 is the confirmed
+protocol for seven areas in two task forms; v7 remains the confirmed
+protocol for six areas and v4 for three.
+
+Across the two seven-area seeds (919114, 919115): 14 of 14 areas rose by
+at least 27% on fresh held-out sets (median +78%, range +27% to +356%);
+22 of 22 pools rose (the weakest to 115% of its start); 24 of 24
+acceptances replay exactly; cost 2.61x and 2.71x against the gate of
+3.5x, inside the range of the four six-area seeds, because a form whose
+catalog is disjoint adds its own proofs and no cross-form check. The
+string area rose +27% and +32%, and both seeds kept the same six withheld
+positions (M(UPPER,1..3,end), M(LOWER,1..3,start)), proposed by invention
+from what stuck worlds had earned and accepted on held-out tasks, with no
+family label read; 919114 also kept two positions outside the generator's
+universe. The committed forecast gave this outcome 0.3.
+
+Across the six seeds of six or more areas (919110 to 919115): 38 of 38
+area scores rose, 58 of 58 pools rose, 63 of 63 acceptances replay.
