@@ -257,7 +257,9 @@ are for replication only. Nothing proven is reset between generations.
       version 13). NOT restarted (harness rule: only when reese asks). On go: clean
       rerun (rm seeds/c20, runs_seed_conf_c20.log; sh confirm_seed.sh c20 919119),
       ~3 h; a resume would skip one life's proofs and need recording as a deviation.
-      Then the v10 verdict, paper/doc/chart. Remaining
+      Paper (17 pp, 100 pairs, table through 919118) + Doc (rev 76, chart 100 rows)
+      updated through v9 and the first v10 seed 2026-10-12. After c20: v10 verdict,
+      then paper/doc once more. Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for
       ~half; a majority-keys rule would not pick it): leave.
       LATER: a cumulative-drift guard vs the INITIAL
