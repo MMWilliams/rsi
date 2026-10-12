@@ -245,10 +245,12 @@ are for replication only. Nothing proven is reset between generations.
       one accepted drawn7 change generalised to +10% (proof said +35%), and lives 1-2
       rejected five candidates at +7..10% on 48 worlds (intervals straddling 0). v9
       FAILS as a protocol (v8 stays confirmed); the string fix held on both seeds.
-      NEXT (seed itself): acceptance power at the threshold: when the full-set
-      interval straddles 0 with a positive mean, extend the held-out set once (same
-      area, new salt) and decide on the union; audit replays both sets. Develop on
-      644101 (drawn7 lives), then v10 = v9 + extension, seeds 919118/919119. Remaining
+      Extension rule BUILT (prove: straddling interval with a mean large enough to
+      clear zero on a doubled set -> one extension set, decide on the union; audit
+      replays it). Dev d_ext (644101): 4 extensions, 1 accepted (neutral on fresh), 3
+      rejected; drawn7 fresh +49%; mech untrained 82% (mech lived last: schedule
+      artefact, watch gate 2). v10 FROZEN = v9 + extension; c19 = 919118 RUNNING
+      (runs_seed_conf_c19.log), then c20 = 919119. Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for
       ~half; a majority-keys rule would not pick it): leave.
       LATER: a cumulative-drift guard vs the INITIAL

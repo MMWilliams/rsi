@@ -1043,3 +1043,65 @@ candidates that followed, at +7% to +10% on 48 worlds, were rejected on
 intervals that straddled zero. The seed's acceptance test has the power to
 detect a 15% effect in a single-pool area only barely at 48 worlds: that
 is the next thing to change in the seed, to be developed on 644101 first.
+
+
+## Protocol v10 (FROZEN 2026-10-12, after the v9 verdict)
+
+One change from v9, in the seed's prove operation; nothing in the
+schedule, the gates or the areas. A candidate whose gain on the full
+held-out set has a bootstrap interval straddling zero, with a positive
+mean large enough that a doubled set would clear zero if the gain held
+(lower bound above mean x (1 - sqrt 2)), is run once more on an extension
+set of the same size drawn with its own salt (the proof's salt plus 500),
+the carried state is scored on that set too, and the decision is the
+interval over the union of the two sets. Every other candidate is judged
+as before. The ledger records the extension (salt, both scores, the union
+interval) and the auditor replays both sets and recomputes the union
+interval. Motivation: on 919116 drawn7's lives 1 and 2 rejected five
+candidates at +7% to +10% on 48 worlds whose intervals straddled zero. On
+the four seven-area seeds the rule would have re-tested three to five
+candidates per run, each extension costing about one life of scans, so
+0.15 to 0.25 on the cost ratio.
+
+Development (seed 644101, `seeds/d_ext`, `runs_seed_d_ext.log`; drawn7 3,
+metric777001 2, mech 2 lives, not the confirmation schedule): four
+extensions, all in drawn7 lives 1 and 2; three rejected on the union
+(extension-set gains +29, +9 and -6 against proof-set gains +59, +26 and
++38) and one accepted (life 2, language +40 with prune -13 and a refit:
++57 on the proof set, interval -0.12 to 2.60; +27 on the extension set;
+union interval 0.05 to 1.74). On the fresh 24-world set that acceptance
+was neutral (275 -> 271; `replay_versions.py d_ext drawn7`), the area's
+growth there coming from life 0 (211 -> 275) and from later changes in
+other areas (314 at the end, +49%). Fresh check: drawn7 211 -> 314 (+49%),
+metric777001 270 -> 1,833 (+579%), mech 1,232 -> 1,669 (+35%) with mech's
+untrained pool at 82% of its start (20.5 -> 16.8): mech was lived last
+here, after three shared-language extensions by other areas with no lived
+mechanism area to check them on; the confirmation schedule lives mech
+first. Audit 6 of 6, the extended acceptance replaying exactly. Cost 2.46x
+over seven lives.
+
+Schedule, gates and seeds as v8 and v9. Seeds: 919118 (replication S,
+`seeds/c19`) and 919119 (replication T, `seeds/c20`), sealed and unopened
+at the time of writing.
+
+Hashes (`rsi/seed.py` and `audit_seed.py` differ from v9):
+
+```
+8e169908bf1c527aac0c5178ac618053bf795f92909e4c2a01eca2e777f6e7de  rsi/seed.py
+15a2b0f65ccb52ee60aa423a43ec2c2caf80af9091c33a28de182e8915fb49a9  rsi/seed_areas.py
+3055e82052dec8aaf0ebee0f9d91438c1ce018ef2bf84be877c2fa9f2cb83213  rsi/seed_string.py
+aefd9cc94f7dbf8f54eb311baae6245522bf212bdbca4b6ac63cb5f13cfa9c83  rsi/invention.py
+e9c6a2b3ed10cd6bb33306ca5234c06b5a087c739fcf71c65aa97593a205f2a3  rsi/self_world_model.py
+2bbb0f02a31e0fc4987ba0f77a3c7304d0a1a3fea2f9a8886d7fcd247e108988  seed_run.py
+1623b2b09ccdffbcbb1d600f2a887bd97b918d19687f19de7b8ec55a64bb1894  seed_check.py
+5874a3b678eaec3c07ad68fe72a541947633e39fe6d7363fc860c7c8d80b89d3  audit_seed.py
+6b140671e341b9e23dc80ebae9cad44103ed91343aaf64a8a9d090a2b1e960e6  confirm_seed.sh
+```
+
+Forecast, committed before opening 919118: gate 1 0.75 (the rule adds
+power where v9 failed; six of seven areas passed on both v9 seeds), gate
+2 0.6 (more shared-language acceptances mean more drift on the other
+areas, each still checked at 2% on 24 worlds; the untrained pool is the
+historical weak point), gate 3 0.8 (2.33x and 2.27x under v9, plus 0.15
+to 0.25), gate 4 0.85 (a new replay path, exercised once in development);
+all four on both seeds 0.3.
