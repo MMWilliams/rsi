@@ -68,11 +68,28 @@ def main():
         interval = [float(np.percentile(means, 2.5)), float(np.percentile(means, 97.5))]
         ok = (sum(c_hits) == entry['carried']['total'] and sum(n_hits) == entry['candidate']['total']
               and np.allclose(interval, entry['candidate']['interval'], atol=1e-9))
+        extension = None
+        if 'extension' in entry:      # judged on the union of the proof set and one extension set
+            ext_entry = entry['extension']
+            ext = area.held_out(ext_entry['carried']['size'] // len(area.pools), salt=ext_entry['salt'])
+            e_carried = [r['hits'] for r in seed.run(ext, budget, area.name, state=state_at(before))]
+            e_candidate = [r['hits'] for r in seed.run(ext, budget, area.name, state=state_at(after))]
+            diff_all = np.concatenate([diff, np.array(e_candidate, dtype=float) - np.array(e_carried, dtype=float)])
+            draws = np.random.default_rng(entry['salt']).integers(len(diff_all), size=(4000, len(diff_all)))
+            means = diff_all[draws].mean(axis=1)
+            interval_all = [float(np.percentile(means, 2.5)), float(np.percentile(means, 97.5))]
+            ok = (ok and sum(e_carried) == ext_entry['carried']['total']
+                  and sum(e_candidate) == ext_entry['candidate']['total']
+                  and np.allclose(interval_all, ext_entry['candidate']['interval'], atol=1e-9))
+            extension = {'carried': [sum(e_carried), ext_entry['carried']['total']],
+                         'candidate': [sum(e_candidate), ext_entry['candidate']['total']],
+                         'interval': [interval_all, ext_entry['candidate']['interval']]}
         report['passed'] &= ok
         report['replayed'].append({'version': v, 'area': entry['area'], 'change': entry['change'],
                                    'carried': [sum(c_hits), entry['carried']['total']],
                                    'candidate': [sum(n_hits), entry['candidate']['total']],
-                                   'interval': [interval, entry['candidate']['interval']], 'ok': bool(ok)})
+                                   'interval': [interval, entry['candidate']['interval']], 'ok': bool(ok),
+                                   **({'extension': extension} if extension else {})})
         print(v, entry['change'], 'ok' if ok else 'MISMATCH', flush=True)
     write_json(ROOT / f'analysis/audit-seed-{args.name}.json', report)
     print(json.dumps({k: v for k, v in report.items() if k != 'replayed'}))

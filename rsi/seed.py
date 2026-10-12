@@ -224,6 +224,9 @@ def _life(job):
 
 # -- the seed ----------------------------------------------------------------
 
+EXTENSION_SALT = 500     # an extension set's salt is its proof's salt plus this
+
+
 class Seed:
     def __init__(self, path, language=None, name=None, seed=None):
         self.path = Path(path)
@@ -283,7 +286,7 @@ class Seed:
         folder = self.path / 'versions'
         folder.mkdir(exist_ok=True)
         file = folder / f'{self.state["version"]}.json'
-        areas = {name: {k: v for k, v in a.items() if k != 'held_out_score'}
+        areas = {name: {k: v for k, v in a.items() if k not in ('held_out_score', 'extension_score')}
                  for name, a in self.state['areas'].items()}
         file.write_text(json.dumps({'version': self.state['version'], 'language': self.state['language'],
                                     'areas': areas, 'inventions': self.state['inventions'],
@@ -435,9 +438,9 @@ class Seed:
 
     # -- prove --------------------------------------------------------------
 
-    def _carried(self, area, held_out, salt, budget):
+    def _carried(self, area, held_out, salt, budget, key='held_out_score'):
         a = self.area_state(area.name)
-        carried = a['held_out_score']
+        carried = a[key] if key in a else None
         # the carried state's prior is built from the area's experience, which grows every
         # life whether or not a change is kept: a cached score is stale once it has grown
         lived = self.experience_count(area.name)
@@ -449,19 +452,22 @@ class Seed:
             carried = self.score(records, held_out, budget)
             carried.update(version=self.state['version'], salt=salt, size=len(held_out),
                            experience=lived, hits=[r['hits'] for r in records])
-            a['held_out_score'] = carried
+            a[key] = carried
             self.state['resource']['proof_scans'] += len(held_out) * STREAM * budget
             self.save()
         return carried
 
     def prove(self, area, held_out, salt, candidate, budget, change, note=None,
-              shared=False, per_pool_other=12, tolerance=.02, boot=4000):
+              shared=False, per_pool_other=12, tolerance=.02, boot=4000, extend=True):
         """Keep the candidate only if its gain over the carried state on this
         life's held-out set, paired over worlds, has a bootstrap interval
         above zero and, for a change to shared state, leaves every other area
-        the seed has lived in within `tolerance` of its carried score. The
-        carried score is cached per state version and held-out draw; every
-        proof lifetime is charged."""
+        the seed has lived in within `tolerance` of its carried score. A
+        candidate whose full-set interval straddles zero, with a mean gain
+        large enough that a doubled set would clear zero if the gain held,
+        is run once more on an extension set of the same size and judged on
+        the union. The carried score is cached per state version and
+        held-out draw; every proof lifetime is charged."""
         carried = self._carried(area, held_out, salt, budget)
 
         def interval(diff):
@@ -489,6 +495,23 @@ class Seed:
         if len(done) < len(held_out):           # stopped early: scale to the full set for the ledger
             new['total'] = int(round(new['total'] * len(held_out) / len(done)))
         kept = bounds[0] > 0 and len(done) == len(held_out)
+        extension = None
+        if (extend and not kept and len(done) == len(held_out) and diff.mean() > 0
+                and bounds[0] > diff.mean() * (1 - 2 ** .5)):
+            # at the threshold: a doubled set halves the interval's variance, so it would
+            # clear zero if the mean held; one extension set, same size, its own draw
+            ext_salt = salt + EXTENSION_SALT
+            ext = area.held_out(len(held_out) // len(area.pools), salt=ext_salt)
+            base_ext = self._carried(area, ext, ext_salt, budget, key='extension_score')
+            records = self.run(ext, budget, area.name, state=candidate)
+            self.state['resource']['proof_scans'] += len(ext) * STREAM * budget
+            ext_hits = [r['hits'] for r in records]
+            diff_all = np.concatenate([diff, np.array(ext_hits, dtype=float) - np.array(base_ext['hits'], dtype=float)])
+            bounds_all = interval(diff_all)
+            ext_new = self.score(records, ext, budget)
+            ext_new.update(hits=ext_hits, worlds=len(ext), interval=bounds_all)
+            extension = {'salt': ext_salt, 'carried': base_ext, 'candidate': ext_new}
+            kept = bounds_all[0] > 0
         elsewhere = {}
         if kept and shared:
             for name, a in self.state['areas'].items():
@@ -507,6 +530,8 @@ class Seed:
         entry = {'life': self.lives(area.name) - 1, 'area': area.name, 'op': 'prove', 'change': change,
                  'salt': salt, 'carried': carried, 'candidate': new, 'kept': kept,
                  'experience_len': len(self.state['experience'])}
+        if extension:
+            entry['extension'] = extension
         if elsewhere:
             entry['elsewhere'] = elsewhere
         if note:
