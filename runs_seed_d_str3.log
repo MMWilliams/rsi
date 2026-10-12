@@ -1,0 +1,59 @@
+seed d_str3 version 0, area str7, lives there 0, language 306 atoms
+str7 life 0: solved 6391 of 9600; by pool {"trained": 72.0, "unfamiliar": 50.2}; 8 s
+  together: held-out 2949 -> 3906 [+16.0, +23.9] per world KEPT; {"trained": 83.9, "unfamiliar": 73.6, "untrained": 86.6}
+  carried: version 1, language 323, model g=7 pw=4, prior yes, held-out 3906; resource live 9.8M proof 9.8M tests 18178; 31 s
+str7 life 1: solved 8002 of 9600; by pool {"trained": 84.9, "unfamiliar": 78.7}; 11 s
+  model: held-out 4067 -> 4076 [-0.8, +1.1] per world dropped; {"trained": 87.3, "unfamiliar": 82.4, "untrained": 85.0}
+  carried: version 1, language 323, model g=7 pw=4, prior yes, held-out 4067; resource live 19.7M proof 19.7M tests 21764; 28 s
+str7 life 2: solved 8198 of 9600; by pool {"trained": 84.8, "unfamiliar": 87.0}; 12 s
+  together: held-out 4088 -> 4079 [-1.3, +0.8] per world dropped; {"trained": 87.1, "unfamiliar": 82.8, "untrained": 85.1}
+  prune: held-out 4088 -> 4096 [+0.0, +0.4] per world dropped; {"trained": 86.4, "unfamiliar": 85.6, "untrained": 84.1}
+  model: held-out 4088 -> 4010 [-1.2, +1.1] per world dropped; {"trained": 83.4, "unfamiliar": 83.0, "untrained": 84.2}
+  carried: version 1, language 323, model g=7 pw=4, prior yes, held-out 4088; resource live 29.5M proof 36.9M tests 23766; 41 s
+kept: [{"life": 0, "area": "str7", "change": "language +17 + model g=7 pw=4 from 96 worlds + prior", "gain": 957, "version": 1}]
+str7 fresh held-out 4712 -> 6230
+{
+ "name": "d_str3",
+ "version": 1,
+ "budget": 1024,
+ "areas": {
+  "str7": {
+   "start": {
+    "budget": 1024,
+    "total": 4712,
+    "by_pool": {
+     "trained": 78.25,
+     "unfamiliar": 51.416666666666664,
+     "untrained": 66.66666666666667
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 6230,
+    "by_pool": {
+     "trained": 88.875,
+     "unfamiliar": 85.375,
+     "untrained": 85.33333333333333
+    }
+   },
+   "gain": 1518
+  }
+ },
+ "lives": {
+  "str7": 3
+ },
+ "resource": {
+  "live_scans": 29491200,
+  "proof_scans": 36864000,
+  "invention_tests": 23766
+ },
+ "invented": {
+  "kept": 17,
+  "by_true_family": {
+   "str:generator": 12,
+   "str:novel": 5
+  }
+ }
+}
+1 language +17 + model g=7 pw=4 from 96 worlds + prior ok
+{"name": "d_str3", "passed": true}

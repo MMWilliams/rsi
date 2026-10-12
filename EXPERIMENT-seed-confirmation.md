@@ -898,3 +898,62 @@ universe. The committed forecast gave this outcome 0.3.
 
 Across the six seeds of six or more areas (919110 to 919115): 38 of 38
 area scores rose, 58 of 58 pools rose, 63 of 63 acceptances replay.
+
+
+## Protocol v9 (FROZEN 2026-10-12, after the v8 pass)
+
+One change from v8, in the string worker's consistency filter; nothing in
+the schedule, the gates or the other areas' code. Diagnosis on the
+development seed (`diag_string.py`, 24 fresh worlds, 2,400 tasks): under
+v8's worker 1,901 tasks hit, 126 fit the visible pairs and not the hidden
+ones, and 373 were unsolved, of which 283 had no program over the full
+58-key catalog at any budget. The cause was the worker's own filter: a row
+was compatible only if its output was non-empty on every visible input,
+and a prefix row had to leave something to complete on every input,
+whereas the generator's rows are the substring between two positions that
+may coincide on some inputs. The filter now admits a row that is empty on
+some visible inputs (not all) and a prefix row that completes the target
+on some inputs. Same state, same worlds: 2,015 hit, 163 wrong, 222
+unsolved (16 with no program anywhere, 206 with one in the carried
+language outside the window). The invention test uses the same two
+functions and inherits the change.
+
+Development (seed 644101, `seeds/d_str3`, `runs_seed_d_str3.log`): three
+string lives under the fixed worker. Life 0 kept a language extension of
+17 keys (all twelve withheld UPPER and LOWER positions, and five positions
+outside the generator's universe, C-16 to C-13 and C13) with a model and
+prior, held-out 2,949 -> 3,906; lives 1 and 2 kept nothing (refits within
+noise; a prune of 11 at an interval whose lower bound was exactly 0).
+Fresh check: str7 4,712 -> 6,230 (+32%; trained 78.2 -> 88.9, untrained
+66.7 -> 85.3, unfamiliar 51.4 -> 85.4 per world). Audit 1 of 1. Cost 1.25x
+over the three lives.
+
+Schedule, gates and seeds as v8: mech 4, drawn7 3, metric777001 3, drawn11
+2, drawn13 2, metric555001 2, str7 3, mech 2 lives (21 lives, 96 worlds
+each); growth of at least 15% in each of the seven areas, no pool below
+90% of its start, proof scans at most 3.5 times live scans, every kept
+change replaying with a salt unique within its area. Seeds: 919116
+(replication Q, `seeds/c17`) and 919117 (replication R, `seeds/c18`),
+sealed and unopened at the time of writing.
+
+Hashes (only `rsi/seed_string.py` differs from v8):
+
+```
+cbfef54eebe9a1aab3213778eea2e3665107422214129a5fd1f0a795ebfd1c23  rsi/seed.py
+15a2b0f65ccb52ee60aa423a43ec2c2caf80af9091c33a28de182e8915fb49a9  rsi/seed_areas.py
+3055e82052dec8aaf0ebee0f9d91438c1ce018ef2bf84be877c2fa9f2cb83213  rsi/seed_string.py
+aefd9cc94f7dbf8f54eb311baae6245522bf212bdbca4b6ac63cb5f13cfa9c83  rsi/invention.py
+e9c6a2b3ed10cd6bb33306ca5234c06b5a087c739fcf71c65aa97593a205f2a3  rsi/self_world_model.py
+2bbb0f02a31e0fc4987ba0f77a3c7304d0a1a3fea2f9a8886d7fcd247e108988  seed_run.py
+1623b2b09ccdffbcbb1d600f2a887bd97b918d19687f19de7b8ec55a64bb1894  seed_check.py
+271cb85d5a83c83173fbb3d63d441d187fed1a3850ae58e85f0c8f88e5828420  audit_seed.py
+6b140671e341b9e23dc80ebae9cad44103ed91343aaf64a8a9d090a2b1e960e6  confirm_seed.sh
+```
+
+Forecast, committed before opening 919116: gate 1 0.7 (the string area now
+starts higher, 65 to 78 tasks per world, and must still gain 15%; the
+development run gained 32% in one life; the six other areas are untouched
+and passed fourteen of fourteen under v8), gate 2 0.65 (every string pool
+rose on the development seed and on both v8 seeds), gate 3 0.8 (2.61x and
+2.71x under v8; the string area's proofs are unchanged in number), gate 4
+0.9; all four on both seeds 0.35.

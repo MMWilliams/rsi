@@ -1,0 +1,52 @@
+{
+  "name": "d_str3",
+  "version": 1,
+  "budget": 1024,
+  "areas": {
+    "str7": {
+      "start": {
+        "budget": 1024,
+        "total": 4712,
+        "by_pool": {
+          "trained": 78.25,
+          "unfamiliar": 51.416666666666664,
+          "untrained": 66.66666666666667
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 6230,
+        "by_pool": {
+          "trained": 88.875,
+          "unfamiliar": 85.375,
+          "untrained": 85.33333333333333
+        }
+      },
+      "gain": 1518
+    }
+  },
+  "lives": {
+    "str7": 3
+  },
+  "resource": {
+    "live_scans": 29491200,
+    "proof_scans": 36864000,
+    "invention_tests": 23766
+  },
+  "kept_changes": [
+    {
+      "life": 0,
+      "area": "str7",
+      "change": "language +17 + model g=7 pw=4 from 96 worlds + prior",
+      "gain": 957,
+      "version": 1
+    }
+  ],
+  "invented": {
+    "kept": 17,
+    "by_true_family": {
+      "str:generator": 12,
+      "str:novel": 5
+    }
+  }
+}

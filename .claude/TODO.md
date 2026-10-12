@@ -229,8 +229,10 @@ are for replication only. Nothing proven is reset between generations.
       the generator's rows can be. Relaxed (empty on some, not all; prefix may complete
       the target on some inputs): 2015 hit / 163 wrong / 222 unsolved (54 nowhere, 168
       in language but outside the window). Fix applied to rsi/seed_string.py; dev run
-      d_str3 (644101, 3 str7 lives + check + audit, runs_seed_d_str3.log) RUNNING; if
-      growth holds, freeze v9 = v8 + fixed worker, seeds 919116/919117. Remaining
+      d_str3 (644101, 3 str7 lives): life 0 kept +17 keys (all 12 withheld UPPER/LOWER
+      + 5 novel) + model + prior; fresh 4712 -> 6230 (+32%), every pool up, audit 1/1.
+      v9 FROZEN = v8 + fixed worker; c17 = 919116 RUNNING (runs_seed_conf_c17.log),
+      then c18 = 919117. Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for
       ~half; a majority-keys rule would not pick it): leave.
       LATER: a cumulative-drift guard vs the INITIAL
