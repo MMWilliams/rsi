@@ -741,3 +741,79 @@ show.
 at least 15% in every area on thirteen of fourteen seeds and no pool below
 90% on thirteen of fourteen; both misses are seed 919108 under the retired
 v5 guard.
+
+
+## Protocol v8 (FROZEN 2026-10-12, after the v7 pass)
+
+A second task form. Every area so far shares one task form: a hidden
+predicate over characters, found by scanning a catalog of candidate
+predicates. v8 adds an area of a different form, string transformation
+tasks over the published trapdoor DSL (2606.07856): a task is three visible
+and six hidden input-output pairs of a hidden program, a program
+concatenates up to three rows, a row is the substring between two positions
+(with or without a case operation) or a constant, and the keys are the
+positions (C-12 to C12; the start or end of the first, second or third
+WORD, DIGITS, UPPER or LOWER match), the three case operations and six
+constants: 58 keys, 9,400 rows. A world is 14 keys from three key families
+and 100 tasks over programs on those keys alone, the mechanism area's
+structure transposed; its pools are trained, untrained and unfamiliar
+triples of families, with the UPPER and LOWER positions withheld from the
+starting language (46 keys, 5,334 rows). The seed's scan window in this
+form is the first `budget` rows of its catalog in the order its evidence,
+prior and model give, as in the mechanism form; a task is solved by the
+first program of rows inside the window that reproduces the visible
+examples, and counted a hit if it reproduces the hidden ones. Invention
+proposes keys the language lacks (positions to C16 and the fourth match,
+the case operations, the constants) that, with what a stuck world earned,
+complete programs for at least two of its unsolved tasks on their visible
+examples. Nothing in the form reads a family label or a hidden program.
+
+The seed's four operations are unchanged; `rsi/seed.py` dispatches the
+worker by the form of the worlds, filters each form's keys out of the
+other's catalog, and checks a shared-language change on the other lived
+areas of the same form only (the other form's catalog is built from its own
+keys and cannot change). The string form's starting vocabulary is part of
+every new seed's initial language.
+
+Development (seed 644101, `seeds/d_str2`, `runs_seed_d_str2*.log`): four
+string lives kept a language extension of 15 keys (six survived the prune:
+the withheld UPPER and LOWER positions, all six from the generator's own
+universe), a model and a prior in life 0, held-out 2,827 -> 3,735; lives 1
+to 3 kept only a prune, the area plateauing at about 81% of tasks. Fresh
+check: str7 4,641 -> 5,965 (+29%; trained 75.0 -> 84.0, untrained 68.1 ->
+82.4, unfamiliar 50.2 -> 82.2 per world); one mechanism life on the same
+seed then kept a language extension and model, mech 1,232 -> 1,621 (+32%,
+untrained 20.5 -> 19.8). The auditor replayed all three acceptances
+exactly.
+
+Schedule: mech 4, drawn7 3, metric777001 3, drawn11 2, drawn13 2,
+metric555001 2, str7 3, mech 2 lives (21 lives, 96 worlds each); fresh
+check over seven areas. Gates as v7 with k = 7: growth of at least 15% in
+each of the seven areas, no pool below 90% of its start, proof scans at
+most 2.5 + 0.25 x 4 = 3.5 times live scans, every kept change replaying
+with a salt unique within its area.
+
+Seeds: 919114 (replication O, `seeds/c15`) and 919115 (replication P,
+`seeds/c16`), sealed and unopened at the time of writing.
+
+Hashes:
+
+```
+cbfef54eebe9a1aab3213778eea2e3665107422214129a5fd1f0a795ebfd1c23  rsi/seed.py
+15a2b0f65ccb52ee60aa423a43ec2c2caf80af9091c33a28de182e8915fb49a9  rsi/seed_areas.py
+043225574c68e4b5115946fbcf1383492da030884fe4c3da938691e89b0221cc  rsi/seed_string.py
+aefd9cc94f7dbf8f54eb311baae6245522bf212bdbca4b6ac63cb5f13cfa9c83  rsi/invention.py
+e9c6a2b3ed10cd6bb33306ca5234c06b5a087c739fcf71c65aa97593a205f2a3  rsi/self_world_model.py
+2bbb0f02a31e0fc4987ba0f77a3c7304d0a1a3fea2f9a8886d7fcd247e108988  seed_run.py
+1623b2b09ccdffbcbb1d600f2a887bd97b918d19687f19de7b8ec55a64bb1894  seed_check.py
+271cb85d5a83c83173fbb3d63d441d187fed1a3850ae58e85f0c8f88e5828420  audit_seed.py
+6b140671e341b9e23dc80ebae9cad44103ed91343aaf64a8a9d090a2b1e960e6  confirm_seed.sh
+```
+
+Forecast, committed before opening 919114: gate 1 0.7 (the string area
+passed 15% in one development life, but a three-life area whose growth
+comes in life 0 has one real chance; the six-area record is twelve of
+twelve), gate 2 0.65 (eleven pools now; the string area's untrained pool
+rose on the development seed, mech's untrained dipped to 97%), gate 3 0.75
+(cross-form checks are skipped, so the string area adds its own proofs
+only), gate 4 0.9; all four on both seeds 0.3.

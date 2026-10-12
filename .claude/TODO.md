@@ -208,7 +208,17 @@ are for replication only. Nothing proven is reset between generations.
       (919113): ALL FOUR GATES PASS (+45% to +542%, all 9 pools up, cost 2.32,
       audit 8/8). v7 PASSES = CONFIRMED SIX-AREA PROTOCOL. Fourteen seeds: 107
       acceptances all replay; growth+safety on 13/14 (miss = 919108, v5). DONE: paper (16 pp, Table 5 six-area, Fig 2 = start-vs-retained scatter of 65 pairs) + doc (rev 64, chart pub 15, 65 rows) carry all fourteen. NEXT: the
-      string-DSL task family as a new area type (goal lists it; not built).
+      string-DSL task family as a new area type: BUILT 2026-10-12 (rsi/seed_string.py,
+      area str7 = trapdoor DSL tasks, 58 keys / 5.3k rows vs window 1024, UPPER/LOWER
+      positions withheld; seed.py dispatches by form, cross-area checks stay in-form).
+      Dev seed d_str2 (644101): fresh held-out 2827 -> 3735 (+32%) in ONE life
+      (language +15 incl. the withheld positions, model, prior), unfamiliar 47 -> 73
+      per world; lives 1-3 plateau ~3850 (81% of tasks). Running: one mech life on
+      d_str2 + seed_check str7,mech + audit (runs_seed_d_str2_check.log) to prove the
+      two forms coexist: DONE (mech life kept 753->1028; fresh check str7 4641->5965
+      +29% all pools up, mech 1232->1621 +32%; audit 3/3). v8 FROZEN = v7 schedule +
+      str7 3 lives (21 lives, 7 areas, two forms), gate 3 at 3.5x; c15 = 919114
+      RUNNING (runs_seed_conf_c15.log), then c16 = 919115.
       LATER: a cumulative-drift guard vs the INITIAL
       language (own seeds), second task form. (old note: the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).

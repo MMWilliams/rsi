@@ -1,0 +1,73 @@
+str7 fresh held-out 4641 -> 5965
+mech fresh held-out 1232 -> 1621
+{
+ "name": "d_str2",
+ "version": 3,
+ "budget": 1024,
+ "areas": {
+  "str7": {
+   "start": {
+    "budget": 1024,
+    "total": 4641,
+    "by_pool": {
+     "trained": 75.04166666666667,
+     "unfamiliar": 50.208333333333336,
+     "untrained": 68.125
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 5965,
+    "by_pool": {
+     "trained": 83.95833333333333,
+     "unfamiliar": 82.16666666666667,
+     "untrained": 82.41666666666667
+    }
+   },
+   "gain": 1324
+  },
+  "mech": {
+   "start": {
+    "budget": 1024,
+    "total": 1232,
+    "by_pool": {
+     "trained": 25.583333333333332,
+     "unfamiliar": 5.25,
+     "untrained": 20.5
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 1621,
+    "by_pool": {
+     "trained": 38.625,
+     "unfamiliar": 9.083333333333334,
+     "untrained": 19.833333333333332
+    }
+   },
+   "gain": 389
+  }
+ },
+ "lives": {
+  "str7": 4,
+  "mech": 1
+ },
+ "resource": {
+  "live_scans": 49152000,
+  "proof_scans": 61440000,
+  "invention_tests": 156103
+ },
+ "invented": {
+  "kept": 46,
+  "by_true_family": {
+   "str:generator": 6,
+   "popcount": 4,
+   "novel": 28,
+   "xormod": 8
+  }
+ }
+}
+1 language +15 + model g=6 pw=4 from 96 worlds + prior ok
+2 prune -9 ok
+3 language +40 + model g=8 pw=4 from 96 worlds + prior ok
+{"name": "d_str2", "passed": true}

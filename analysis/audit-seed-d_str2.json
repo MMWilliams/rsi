@@ -1,0 +1,78 @@
+{
+  "name": "d_str2",
+  "replayed": [
+    {
+      "version": 1,
+      "area": "str7",
+      "change": "language +15 + model g=6 pw=4 from 96 worlds + prior",
+      "carried": [
+        2827,
+        2827
+      ],
+      "candidate": [
+        3735,
+        3735
+      ],
+      "interval": [
+        [
+          14.707812500000001,
+          23.500520833333336
+        ],
+        [
+          14.707812500000001,
+          23.500520833333336
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 2,
+      "area": "str7",
+      "change": "prune -9",
+      "carried": [
+        3905,
+        3905
+      ],
+      "candidate": [
+        3913,
+        3913
+      ],
+      "interval": [
+        [
+          0.041666666666666664,
+          0.3125
+        ],
+        [
+          0.041666666666666664,
+          0.3125
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 3,
+      "area": "mech",
+      "change": "language +40 + model g=8 pw=4 from 96 worlds + prior",
+      "carried": [
+        753,
+        753
+      ],
+      "candidate": [
+        1028,
+        1028
+      ],
+      "interval": [
+        [
+          2.0203125,
+          9.354166666666666
+        ],
+        [
+          2.0203125,
+          9.354166666666666
+        ]
+      ],
+      "ok": true
+    }
+  ],
+  "passed": true
+}
