@@ -1105,3 +1105,38 @@ areas, each still checked at 2% on 24 worlds; the untrained pool is the
 historical weak point), gate 3 0.8 (2.33x and 2.27x under v9, plus 0.15
 to 0.25), gate 4 0.85 (a new replay path, exercised once in development);
 all four on both seeds 0.3.
+
+### Replication S, seed 919118 under v10 (`seeds/c19`, `runs_seed_conf_c19.log`), 2026-10-12
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,159 | 2,484 | +114% | trained 20.5 -> 41.1, untrained 23.2 -> 46.6, unfamiliar 4.6 -> 15.8 |
+| drawn7 | 273 | 349 | +28% | env 11.4 -> 14.5 |
+| metric777001 | 450 | 2,283 | +407% | seen 13.5 -> 56.5, unfamiliar 5.2 -> 38.6 |
+| drawn11 | 241 | 439 | +82% | env 10.0 -> 18.3 |
+| drawn13 | 286 | 379 | +33% | env 11.9 -> 15.8 |
+| metric555001 | 378 | 1,329 | +252% | seen 12.9 -> 36.2, unfamiliar 2.8 -> 19.2 |
+| str7 | 4,722 | 6,193 | +31% | trained 70.3 -> 83.6, untrained 77.0 -> 89.6, unfamiliar 49.4 -> 84.8 |
+
+Kept changes (15): five language extensions (mech lives 0 and 2 of 40
+atoms, the second with prune -11; metric777001 lives 1 and 2 of 40 with
+prunes -12 and -8; str7 life 0 of 18 keys with prune -1), nine model
+refits (drawn7, metric777001 life 0, drawn11, drawn13, metric555001 lives
+0 and 1, str7 life 2 with prune -12, mech lives 4 and 5), one prune
+(drawn13 -31). Extensions, three: metric777001 life 0, a candidate at +67
+on the proof set and +28 on the extension set, union interval -0.17 to
+2.22, rejected; metric777001 life 2, language +40 with prune -8 and a
+refit, +132 and +115, union 0.77 to 4.41, kept (version 6); str7 life 2,
+prune -12 with a refit, +59 and +80, union 0.20 to 2.84, kept (version
+13). Both accepted extensions were confirmed by their extension set at a
+similar gain. String keys kept: six withheld positions, no novel key.
+Proof scans 2.92x live (2.33x and 2.27x under v9).
+
+- Gate 1: PASS, seven of seven areas, smallest +28% (drawn7).
+- Gate 2: PASS, all eleven pools rose; the weakest (str7 untrained, 77.0
+  -> 89.6) to 116% of its start.
+- Gate 3: PASS, 2.92x against 3.5x.
+- Gate 4: PASS, 15 of 15 replay exactly, the two extended acceptances
+  included; salts unique within area.
+
+All four gates pass on 919118. 919119 (replication T) opened next.
