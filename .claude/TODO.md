@@ -222,8 +222,17 @@ are for replication only. Nothing proven is reset between generations.
       +27%, str7 +27%/+32%; 22/22 pools up; cost 2.61x/2.71x vs 3.5x; 24/24 replay;
       both seeds kept the same 6 withheld UPPER/LOWER positions, c15 also C-13/C-14).
       Paper (16 pp, 79-pair figure, seven-area table), Claude Doc (string form, v8,
-      chart 79 rows) and memory DONE 2026-10-12. NEXT seed step: the string plateau
-      (~81% of tasks after life 0; hidden-example ambiguity) or an eighth area.
+      chart 79 rows) and memory DONE 2026-10-12. String plateau DIAGNOSED (scratchpad
+      diag_str.py, d_str2, 24 fresh worlds): 1901 hit / 126 wrong on hidden / 373
+      unsolved, and 283 of the unsolved had NO program over the full 58-key catalog:
+      the worker's consistency filter dropped rows empty on any visible input, which
+      the generator's rows can be. Relaxed (empty on some, not all; prefix may complete
+      the target on some inputs): 2015 hit / 163 wrong / 222 unsolved (54 nowhere, 168
+      in language but outside the window). Fix applied to rsi/seed_string.py; dev run
+      d_str3 (644101, 3 str7 lives + check + audit, runs_seed_d_str3.log) RUNNING; if
+      growth holds, freeze v9 = v8 + fixed worker, seeds 919116/919117. Remaining
+      'wrong' cases are 3-example ambiguity (same-length right program in window for
+      ~half; a majority-keys rule would not pick it): leave.
       LATER: a cumulative-drift guard vs the INITIAL
       language (own seeds), second task form. (old note: the untrained guard (v5
       idea, label-free: candidate must also hold on the no-prior half).

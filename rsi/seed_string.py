@@ -8,7 +8,7 @@ match), three case operations and six constants, 9,400 rows in all against
 a window of 1,024. Rows are the atoms built from them: the
 substring between two positions, with or without a case operation, or a
 constant. A program concatenates up to three rows; a task is three visible
-and three hidden input-output pairs of one hidden program. A world is 14
+and six hidden input-output pairs of one hidden program. A world is 14
 keys drawn from three key families (as a mechanism world is 14 keys from
 three atom families); its 100 tasks are programs over those keys alone. The
 seed's job in a world is what it is elsewhere: find each task's program
@@ -301,9 +301,10 @@ def key_terms(s, evidence):
 
 def programs(outs, targets, limit):
     """Programs of up to three rows in the given order that reproduce the
-    visible outputs, each with the scan count at which it was found; the
-    first row of a longer program must leave something to complete. `limit`
-    is a one-element list the caller may lower."""
+    visible outputs, each with the scan count at which it was found; a
+    prefix row of a longer program must leave something to complete on some
+    input (it may complete the target on others). `limit` is a one-element
+    list the caller may lower."""
     n, scans = len(outs), 0
     for i in range(n):
         scans += 1
@@ -311,7 +312,7 @@ def programs(outs, targets, limit):
             yield (i,), scans
         if scans >= limit[0]:
             return
-    pre = [i for i in range(n) if all(t.startswith(o) and len(o) < len(t) for o, t in zip(outs[i], targets))]
+    pre = [i for i in range(n) if outs[i] != targets and all(t.startswith(o) for o, t in zip(outs[i], targets))]
     rem = {i: [t[len(o):] for o, t in zip(outs[i], targets)] for i in pre}
     for i in pre:
         r = rem[i]
@@ -324,7 +325,7 @@ def programs(outs, targets, limit):
     for i in pre:
         r = rem[i]
         for j in range(n):
-            if not all(t.startswith(o) and len(o) < len(t) for o, t in zip(outs[j], r)):
+            if outs[j] == r or not all(t.startswith(o) for o, t in zip(outs[j], r)):
                 continue
             r2 = [t[len(o):] for o, t in zip(outs[j], r)]
             for k in range(n):
@@ -336,9 +337,11 @@ def programs(outs, targets, limit):
 
 
 def compatible(rows, visible, inside=None):
-    """Rows (within `inside`) whose output on every visible input is a
-    non-empty part of the target: the free consistency test, as the mask test
-    is elsewhere."""
+    """Rows (within `inside`) whose output on every visible input is a part
+    of the target, and not empty on all of them: the free consistency test,
+    as the mask test is elsewhere. A row may be empty on some inputs (a
+    substring between positions that coincide there), as the generator's
+    rows are; one empty on every visible input says nothing."""
     out = []
     for i in (range(len(rows)) if inside is None else inside):
         row = rows[i]
@@ -348,11 +351,12 @@ def compatible(rows, visible, inside=None):
                 o = eval_row(row, inp)
             except PosError:
                 break
-            if not o or o not in tgt:
+            if o not in tgt:
                 break
             outs.append(o)
         else:
-            out.append((i, outs))
+            if any(outs):
+                out.append((i, outs))
     return out
 
 
