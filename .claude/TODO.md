@@ -236,8 +236,19 @@ are for replication only. Nothing proven is reset between generations.
       withheld positions + 8 novel), 11/11 pools up, cost 2.33x, 14/14 replay. drawn7
       kept one change (life 0, +207 on 48 worlds); replaying its fresh score at each
       kept version (scratchpad replay_drawn7.py) to see whether later shared-language
-      changes eroded it (cumulative drift) or the gain was noise. c18 = 919117 RUNNING
-      (runs_seed_conf_c18.log) for the record. Remaining
+      changes eroded it (cumulative drift) or the gain was noise. c18 = 919117 PASSES
+      all four (7/7 areas up, smallest str7 +25%; 11/11 pools; cost 2.27x; 11/11
+      replay). v9 verdict: FAILS (one seed, drawn7 growth); the string fix itself held
+      on both seeds (+23%, +25%, 11 of 12 withheld positions invented on each).
+      Replay (replay_versions.py c17 drawn7): 258 start -> 283 after drawn7's own change
+      (v4) -> 259..283 under later shared-language changes -> 279 final: NOT drift; the
+      one accepted drawn7 change generalised to +10% (proof said +35%), and lives 1-2
+      rejected five candidates at +7..10% on 48 worlds (intervals straddling 0). v9
+      FAILS as a protocol (v8 stays confirmed); the string fix held on both seeds.
+      NEXT (seed itself): acceptance power at the threshold: when the full-set
+      interval straddles 0 with a positive mean, extend the held-out set once (same
+      area, new salt) and decide on the union; audit replays both sets. Develop on
+      644101 (drawn7 lives), then v10 = v9 + extension, seeds 919118/919119. Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for
       ~half; a majority-keys rule would not pick it): leave.
       LATER: a cumulative-drift guard vs the INITIAL

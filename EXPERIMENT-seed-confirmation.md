@@ -725,7 +725,7 @@ change in its own lives, from the language and models the other areas
 built, which is the carried-forward transfer the programme set out to
 show.
 
-## Sixteen sealed seeds, summary
+## Eighteen sealed seeds, summary
 
 | version | seeds | areas | growth | safety | cost | audit |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -737,11 +737,12 @@ show.
 | v6 | 919110, 919111 | 6 | pass, pass | pass, pass | FAIL, FAIL (2.5x gate) | pass, pass |
 | v7 | 919112, 919113 | 6 | pass, pass | pass, pass | pass, pass (3.25x gate) | pass, pass |
 | v8 | 919114, 919115 | 7, two forms | pass, pass | pass, pass | pass, pass (3.5x gate) | pass, pass |
+| v9 | 919116, 919117 | 7, two forms | FAIL (drawn7 +8%), pass | pass, pass | pass, pass (3.5x gate) | pass, pass |
 
-131 acceptances across sixteen seeds; every one stands on replay. Growth of
-at least 15% in every area on fifteen of sixteen seeds and no pool below
-90% on fifteen of sixteen; both misses are seed 919108 under the retired
-v5 guard.
+156 acceptances across eighteen seeds; every one stands on replay. Growth of
+at least 15% in every area on sixteen of eighteen seeds (the misses: 919108
+under the retired v5 guard, 919116 under v9 in drawn7) and no pool below
+90% on seventeen of eighteen (919108).
 
 
 ## Protocol v8 (FROZEN 2026-10-12, after the v7 pass)
@@ -957,3 +958,88 @@ and passed fourteen of fourteen under v8), gate 2 0.65 (every string pool
 rose on the development seed and on both v8 seeds), gate 3 0.8 (2.61x and
 2.71x under v8; the string area's proofs are unchanged in number), gate 4
 0.9; all four on both seeds 0.35.
+
+### Replication Q, seed 919116 under v9 (`seeds/c17`, `runs_seed_conf_c17.log`), 2026-10-12
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,072 | 2,088 | +95% | trained 21.8 -> 37.3, untrained 18.1 -> 34.2, unfamiliar 4.7 -> 15.5 |
+| drawn7 | 258 | 279 | +8% | env 10.8 -> 11.6 |
+| metric777001 | 259 | 1,715 | +562% | seen 8.2 -> 41.8, unfamiliar 2.6 -> 29.7 |
+| drawn11 | 220 | 377 | +71% | env 9.2 -> 15.7 |
+| drawn13 | 224 | 384 | +71% | env 9.3 -> 16.0 |
+| metric555001 | 339 | 1,485 | +338% | seen 11.0 -> 41.0, unfamiliar 3.2 -> 20.8 |
+| str7 | 5,076 | 6,248 | +23% | trained 79.1 -> 85.2, untrained 79.6 -> 90.4, unfamiliar 52.8 -> 84.8 |
+
+Kept changes (14): seven language extensions (mech lives 0, 1 and 2 of 40
+atoms, the third with prune -33; drawn7 life 0 of 40 with prune -37;
+metric777001 life 0 of 40 with prune -30; drawn11 life 1 of 40 with prune
+-18; str7 life 0 of 19 keys with prune -2), five model refits
+(metric777001 life 2, drawn11 life 0, drawn13 life 0, metric555001 lives 0
+and 1), two prunes (metric777001 -24, drawn13 -25). String keys kept:
+eleven of the twelve withheld UPPER and LOWER positions (all but
+M(UPPER,1,start)) and eight positions outside the generator's universe
+(C-16 to C-13, C13 to C16). Proof scans 2.33x live.
+
+- Gate 1: FAIL, drawn7 +8%; the six other areas +23% (str7) to +562%.
+- Gate 2: PASS, all eleven pools rose; the weakest (drawn7) to 108%.
+- Gate 3: PASS, 2.33x against 3.5x.
+- Gate 4: PASS, 14 of 14 replay exactly, salts unique within area.
+
+Where drawn7 stood, by version (`replay_versions.py c17 drawn7`: the fresh
+24-world set scored by the state after each kept change): start 258;
+after drawn7's own change (v4) 283; after metric777001's extension (v5)
+271; after its prune and refit (v6, v7) 275; after drawn11's extension
+(v9) 259; after drawn13's prune (v11) 283; after metric555001's refit
+(v13) 283; after str7's extension (v14) 279. The accepted drawn7 change
+gained 207 on its 48-world proof set (599 -> 806, interval 1.2 to 7.5 per
+world) and 25 on the fresh set (1.0 per world, below its interval); later
+shared-language changes moved the score by at most -24, and the final
+state stands at 99% of the area's peak on this set. Not cumulative drift:
+one accepted change whose proof gain did not generalise, after which
+lives 1 and 2 rejected five candidates with gains of 50 to 74 tasks on 48
+worlds (+7% to +10%) whose intervals straddled zero.
+
+### Replication R, seed 919117 under v9 (`seeds/c18`, `runs_seed_conf_c18.log`), 2026-10-12
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,217 | 2,416 | +99% | trained 24.5 -> 41.4, untrained 22.6 -> 36.7, unfamiliar 3.6 -> 22.5 |
+| drawn7 | 241 | 432 | +79% | env 10.0 -> 18.0 |
+| metric777001 | 326 | 1,584 | +386% | seen 10.2 -> 38.9, unfamiliar 3.4 -> 27.1 |
+| drawn11 | 275 | 416 | +51% | env 11.5 -> 17.3 |
+| drawn13 | 305 | 442 | +45% | env 12.7 -> 18.4 |
+| metric555001 | 384 | 1,716 | +347% | seen 12.5 -> 48.8, unfamiliar 3.5 -> 22.8 |
+| str7 | 4,910 | 6,127 | +25% | trained 68.2 -> 82.5, untrained 81.5 -> 89.0, unfamiliar 54.8 -> 83.8 |
+
+Kept changes (11): six language extensions (mech lives 0 and 2 of 40
+atoms, the second with prune -21; drawn7 life 0 of 40 with prune -21;
+metric777001 life 0 of 31 with prune -21; metric555001 life 0 of 40 with
+prune -11; str7 life 0 of 17 keys with prune -30), five model refits
+(metric777001 life 1, drawn11 life 0, drawn13 life 0, metric555001 life 1,
+mech life 4). String keys kept: eleven of the twelve withheld positions
+(all but M(UPPER,1,start)) and six outside the generator's universe (C13
+to C16, M(WORD,4,start), M(LOWER,4,start)). Proof scans 2.27x live.
+
+- Gate 1: PASS, seven of seven areas, smallest +25% (str7).
+- Gate 2: PASS, all eleven pools rose; the weakest (str7 untrained, 81.5
+  -> 89.0) to 109% of its start.
+- Gate 3: PASS, 2.27x against 3.5x.
+- Gate 4: PASS, 11 of 11 replay exactly, salts unique within area.
+
+### Verdict on v9
+
+One seed fails the growth gate, in drawn7, an area v9's change does not
+touch; the other passes all four. v9 FAILS as a protocol; v8 remains the
+confirmed protocol for seven areas. The change itself held: under the
+fixed worker the string area starts higher (5,076 and 4,910 against 4,749
+and 4,119 under v8) and still rose 23% and 25%, and each seed invented
+eleven of the twelve withheld positions where the v8 seeds found six.
+
+The miss is at the noise floor of the gate, not a regression: drawn7 had
+risen on all eighteen seeds before (by 29% to 177%), on this seed its one
+accepted change generalised to +10% rather than its proof's +35%, and the
+candidates that followed, at +7% to +10% on 48 worlds, were rejected on
+intervals that straddled zero. The seed's acceptance test has the power to
+detect a 15% effect in a single-pool area only barely at 48 worlds: that
+is the next thing to change in the seed, to be developed on 644101 first.
