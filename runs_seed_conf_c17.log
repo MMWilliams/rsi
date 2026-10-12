@@ -1,0 +1,300 @@
+seed c17 version 0, area mech, lives there 0, language 306 atoms
+mech life 0: solved 1844 of 9600; by pool {"trained": 23.0, "unfamiliar": 8.0}; 12 s
+  together: held-out 694 -> 1131 [+5.2, +13.1] per world KEPT; {"trained": 34.9, "unfamiliar": 9.6, "untrained": 26.2}
+  carried: version 1, language 346, model g=6 pw=4, prior yes, held-out 1131; resource live 9.8M proof 9.8M tests 99484; 43 s
+mech life 1: solved 2802 of 9600; by pool {"trained": 34.4, "unfamiliar": 13.7}; 20 s
+  together: held-out 1134 -> 1230 [+0.2, +4.0] per world KEPT; {"trained": 37.3, "unfamiliar": 12.3, "untrained": 27.2}
+  carried: version 2, language 386, model g=6 pw=3, prior yes, held-out 1230; resource live 19.7M proof 19.7M tests 191380; 61 s
+mech life 2: solved 2961 of 9600; by pool {"trained": 37.2, "unfamiliar": 11.8}; 29 s
+  together: held-out 1202 -> 1373 [+0.9, +6.1] per world KEPT; {"trained": 41.9, "unfamiliar": 16.3, "untrained": 27.6}
+  carried: version 3, language 393, model g=7 pw=2, prior yes, held-out 1373; resource live 29.5M proof 29.5M tests 282154; 78 s
+mech life 3: solved 3106 of 9600; by pool {"trained": 37.4, "unfamiliar": 17.2}; 33 s
+  together: held-out 1569 -> 1354 [-5.5, +0.9] per world dropped; {"trained": 37.5, "unfamiliar": 17.4, "untrained": 29.8}
+  extend: held-out 1569 -> 1458 [-1.0, +0.6] per world dropped; {"trained": 37.9, "unfamiliar": 20.0, "untrained": 33.2}
+  prune: held-out 1569 -> 1422 [-3.7, +1.3] per world dropped; {"trained": 38.9, "unfamiliar": 15.9, "untrained": 34.1}
+  model: held-out 1569 -> 1422 [-3.3, +1.7] per world dropped; {"trained": 37.0, "unfamiliar": 22.0, "untrained": 29.9}
+  carried: version 3, language 393, model g=7 pw=2, prior yes, held-out 1569; resource live 39.3M proof 44.2M tests 372705; 106 s
+kept: [{"life": 0, "area": "mech", "change": "language +40 + model g=6 pw=4 from 96 worlds + prior", "gain": 437, "version": 1}, {"life": 1, "area": "mech", "change": "language +40 + model g=6 pw=3 from 192 worlds + prior", "gain": 96, "version": 2}, {"life": 2, "area": "mech", "change": "language +40 + prune -33 + model g=7 pw=2 from 288 worlds + prior", "gain": 171, "version": 3}]
+seed c17 version 3, area drawn7, lives there 0, language 393 atoms
+drawn7 life 0: solved 841 of 9600; by pool {"env": 8.8}; 33 s
+  together: held-out 599 -> 806 [+1.2, +7.5] per world KEPT; {"env": 16.8} elsewhere {"mech": "1196->1210"}
+  carried: version 4, language 396, model g=7 pw=4, prior yes, held-out 806; resource live 49.2M proof 61.4M tests 463450; 105 s
+drawn7 life 1: solved 1486 of 9600; by pool {"env": 15.5}; 33 s
+  together: held-out 710 -> 716 [-1.4, +1.7] per world dropped; {"env": 14.9}
+  extend: held-out 710 -> 768 [-2.0, +1.0] per world dropped; {"env": 16.0}
+  prune: held-out 710 -> 760 [-2.4, +0.8] per world dropped; {"env": 15.8}
+  model: held-out 710 -> 727 [-0.9, +1.6] per world dropped; {"env": 15.1}
+  carried: version 4, language 396, model g=7 pw=4, prior yes, held-out 710; resource live 59.0M proof 81.1M tests 563303; 124 s
+drawn7 life 2: solved 1372 of 9600; by pool {"env": 14.3}; 33 s
+  together: held-out 714 -> 782 [-3.2, +2.4] per world dropped; {"env": 16.3}
+  extend: held-out 714 -> 788 [-1.9, +1.5] per world dropped; {"env": 16.4}
+  prune: held-out 714 -> 728 [-3.2, +0.0] per world dropped; {"env": 15.2}
+  model: held-out 714 -> 778 [-2.0, +1.1] per world dropped; {"env": 16.2}
+  carried: version 4, language 396, model g=7 pw=4, prior yes, held-out 714; resource live 68.8M proof 95.8M tests 656928; 103 s
+kept: [{"life": 0, "area": "mech", "change": "language +40 + model g=6 pw=4 from 96 worlds + prior", "gain": 437, "version": 1}, {"life": 1, "area": "mech", "change": "language +40 + model g=6 pw=3 from 192 worlds + prior", "gain": 96, "version": 2}, {"life": 2, "area": "mech", "change": "language +40 + prune -33 + model g=7 pw=2 from 288 worlds + prior", "gain": 171, "version": 3}, {"life": 0, "area": "drawn7", "change": "language +40 + prune -37 + model g=7 pw=4 from 96 worlds + prior", "gain": 207, "version": 4}]
+seed c17 version 4, area metric777001, lives there 0, language 396 atoms
+metric777001 life 0: solved 924 of 9600; by pool {"seen_centre": 9.8, "unfamiliar_centre": 9.1}; 33 s
+  together: held-out 387 -> 1245 [+13.5, +22.3] per world KEPT; {"seen_centre": 29.5, "unfamiliar_centre": 22.4} elsewhere {"mech": "1086->1085", "drawn7": "362->384"}
+  carried: version 5, language 406, model g=6 pw=2, prior yes, held-out 1245; resource live 78.6M proof 118.0M tests 753762; 131 s
+metric777001 life 1: solved 2802 of 9600; by pool {"seen_centre": 31.2, "unfamiliar_centre": 23.1}; 36 s
+  together: held-out 1560 -> 1656 [-2.4, +5.8] per world dropped; {"seen_centre": 37.8, "unfamiliar_centre": 31.2}
+  extend: held-out 1560 -> 1639 [-0.1, +3.5] per world dropped; {"seen_centre": 38.1, "unfamiliar_centre": 30.2}
+  model: held-out 1560 -> 1566 [-4.1, +3.8] per world dropped; {"seen_centre": 34.9, "unfamiliar_centre": 30.3}
+  carried: version 5, language 406, model g=6 pw=2, prior yes, held-out 1560; resource live 88.5M proof 137.6M tests 847085; 142 s
+metric777001 life 2: solved 3167 of 9600; by pool {"seen_centre": 35.5, "unfamiliar_centre": 25.5}; 36 s
+  together: held-out 1487 -> 1777 [+2.9, +9.6] per world dropped; {"seen_centre": 41.2, "unfamiliar_centre": 32.8} elsewhere {"mech": "1115->1123", "drawn7": "291->281"}
+  extend: held-out 1487 -> 1587 [+0.6, +3.6] per world dropped; {"seen_centre": 33.0, "unfamiliar_centre": 33.1} elsewhere {"mech": "1115->1117", "drawn7": "291->268"}
+  prune: held-out 1487 -> 1613 [+0.9, +4.6] per world KEPT; {"seen_centre": 36.0, "unfamiliar_centre": 31.2} elsewhere {"mech": "1115->1145", "drawn7": "291->308"}
+  model: held-out 1385 -> 1496 [+0.3, +4.5] per world KEPT; {"seen_centre": 39.4, "unfamiliar_centre": 22.9}
+  carried: version 7, language 382, model g=8 pw=2, prior yes, held-out 1496; resource live 98.3M proof 191.7M tests 940564; 284 s
+kept: [{"life": 0, "area": "mech", "change": "language +40 + model g=6 pw=4 from 96 worlds + prior", "gain": 437, "version": 1}, {"life": 1, "area": "mech", "change": "language +40 + model g=6 pw=3 from 192 worlds + prior", "gain": 96, "version": 2}, {"life": 2, "area": "mech", "change": "language +40 + prune -33 + model g=7 pw=2 from 288 worlds + prior", "gain": 171, "version": 3}, {"life": 0, "area": "drawn7", "change": "language +40 + prune -37 + model g=7 pw=4 from 96 worlds + prior", "gain": 207, "version": 4}, {"life": 0, "area": "metric777001", "change": "language +40 + prune -30 + model g=6 pw=2 from 96 worlds + prior", "gain": 858, "version": 5}, {"life": 2, "area": "metric777001", "change": "prune -24", "gain": 126, "version": 6}, {"life": 2, "area": "metric777001", "change": "model g=8 pw=2 from 288 worlds + prior", "gain": 111, "version": 7}]
+seed c17 version 7, area drawn11, lives there 0, language 382 atoms
+drawn11 life 0: solved 957 of 9600; by pool {"env": 10.0}; 26 s
+  together: held-out 459 -> 695 [+2.4, +7.4] per world dropped; {"env": 14.5} elsewhere {"mech": "1232->1208", "drawn7": "481->462", "metric777001": "902->918"}
+  extend: held-out 459 -> 467 [-1.8, +2.1] per world dropped; {"env": 9.7}
+  prune: held-out 459 -> 488 [-0.1, +1.4] per world dropped; {"env": 10.2}
+  model: held-out 459 -> 706 [+2.7, +7.6] per world KEPT; {"env": 14.7}
+  carried: version 8, language 382, model g=7 pw=4, prior yes, held-out 706; resource live 108.1M proof 233.5M tests 1031544; 192 s
+drawn11 life 1: solved 1370 of 9600; by pool {"env": 14.3}; 31 s
+  together: held-out 698 -> 757 [+0.1, +2.5] per world KEPT; {"env": 15.8} elsewhere {"mech": "995->1001", "drawn7": "366->363", "metric777001": "837->940"}
+  carried: version 9, language 404, model g=6 pw=4, prior yes, held-out 757; resource live 118.0M proof 260.5M tests 1128664; 152 s
+kept: [{"life": 0, "area": "mech", "change": "language +40 + model g=6 pw=4 from 96 worlds + prior", "gain": 437, "version": 1}, {"life": 1, "area": "mech", "change": "language +40 + model g=6 pw=3 from 192 worlds + prior", "gain": 96, "version": 2}, {"life": 2, "area": "mech", "change": "language +40 + prune -33 + model g=7 pw=2 from 288 worlds + prior", "gain": 171, "version": 3}, {"life": 0, "area": "drawn7", "change": "language +40 + prune -37 + model g=7 pw=4 from 96 worlds + prior", "gain": 207, "version": 4}, {"life": 0, "area": "metric777001", "change": "language +40 + prune -30 + model g=6 pw=2 from 96 worlds + prior", "gain": 858, "version": 5}, {"life": 2, "area": "metric777001", "change": "prune -24", "gain": 126, "version": 6}, {"life": 2, "area": "metric777001", "change": "model g=8 pw=2 from 288 worlds + prior", "gain": 111, "version": 7}, {"life": 0, "area": "drawn11", "change": "model g=7 pw=4 from 96 worlds + prior", "gain": 247, "version": 8}, {"life": 1, "area": "drawn11", "change": "language +40 + prune -18 + model g=6 pw=4 from 192 worlds + prior", "gain": 59, "version": 9}]
+seed c17 version 9, area drawn13, lives there 0, language 404 atoms
+drawn13 life 0: solved 1093 of 9600; by pool {"env": 11.4}; 35 s
+  together: held-out 412 -> 801 [+5.4, +10.6] per world dropped; {"env": 16.7} elsewhere {"mech": "1274->1260", "drawn7": "351->377", "metric777001": "920->943", "drawn11": "338->304"}
+  extend: held-out 412 -> 322 [-3.0, +1.6] per world dropped; {"env": 6.7}
+  prune: held-out 412 -> 342 [-0.4, +0.2] per world dropped; {"env": 7.1}
+  model: held-out 412 -> 772 [+5.0, +10.0] per world KEPT; {"env": 16.1}
+  carried: version 10, language 404, model g=8 pw=4, prior yes, held-out 772; resource live 127.8M proof 302.3M tests 1225309; 239 s
+drawn13 life 1: solved 1567 of 9600; by pool {"env": 16.3}; 35 s
+  together: held-out 807 -> 738 [-4.1, +0.6] per world dropped; {"env": 15.4}
+  extend: held-out 807 -> 758 [-3.4, +0.4] per world dropped; {"env": 15.8}
+  prune: held-out 807 -> 855 [+0.2, +2.0] per world KEPT; {"env": 17.8} elsewhere {"mech": "1048->1058", "drawn7": "355->356", "metric777001": "1000->1005", "drawn11": "380->401"}
+  model: held-out 790 -> 726 [-5.0, +0.1] per world dropped; {"env": 15.1}
+  carried: version 11, language 379, model g=8 pw=4, prior yes, held-out 790; resource live 137.6M proof 346.5M tests 1315557; 225 s
+kept: [{"life": 0, "area": "mech", "change": "language +40 + model g=6 pw=4 from 96 worlds + prior", "gain": 437, "version": 1}, {"life": 1, "area": "mech", "change": "language +40 + model g=6 pw=3 from 192 worlds + prior", "gain": 96, "version": 2}, {"life": 2, "area": "mech", "change": "language +40 + prune -33 + model g=7 pw=2 from 288 worlds + prior", "gain": 171, "version": 3}, {"life": 0, "area": "drawn7", "change": "language +40 + prune -37 + model g=7 pw=4 from 96 worlds + prior", "gain": 207, "version": 4}, {"life": 0, "area": "metric777001", "change": "language +40 + prune -30 + model g=6 pw=2 from 96 worlds + prior", "gain": 858, "version": 5}, {"life": 2, "area": "metric777001", "change": "prune -24", "gain": 126, "version": 6}, {"life": 2, "area": "metric777001", "change": "model g=8 pw=2 from 288 worlds + prior", "gain": 111, "version": 7}, {"life": 0, "area": "drawn11", "change": "model g=7 pw=4 from 96 worlds + prior", "gain": 247, "version": 8}, {"life": 1, "area": "drawn11", "change": "language +40 + prune -18 + model g=6 pw=4 from 192 worlds + prior", "gain": 59, "version": 9}, {"life": 0, "area": "drawn13", "change": "model g=8 pw=4 from 96 worlds + prior", "gain": 360, "version": 10}, {"life": 1, "area": "drawn13", "change": "prune -25", "gain": 48, "version": 11}]
+seed c17 version 11, area metric555001, lives there 0, language 379 atoms
+metric555001 life 0: solved 1023 of 9600; by pool {"seen_centre": 12.0, "unfamiliar_centre": 6.7}; 27 s
+  together: held-out 436 -> 1405 [+15.3, +25.3] per world dropped; {"seen_centre": 38.0, "unfamiliar_centre": 20.6} elsewhere {"mech": "980->963", "drawn7": "431->420", "metric777001": "882->912", "drawn11": "377->367", "drawn13": "382->343"}
+  extend: held-out 436 -> 374 [-4.2, -0.5] per world dropped; {"seen_centre": 10.5, "unfamiliar_centre": 5.1}
+  model: held-out 436 -> 1432 [+15.5, +26.1] per world KEPT; {"seen_centre": 39.6, "unfamiliar_centre": 20.1}
+  carried: version 12, language 379, model g=7 pw=2, prior yes, held-out 1432; resource live 147.5M proof 390.8M tests 1419197; 218 s
+metric555001 life 1: solved 3650 of 9600; by pool {"seen_centre": 44.2, "unfamiliar_centre": 19.6}; 33 s
+  together: held-out 1433 -> 1515 [-0.3, +3.8] per world dropped; {"seen_centre": 44.2, "unfamiliar_centre": 18.9}
+  extend: held-out 1433 -> 1342 [-2.0, +0.2] per world dropped; {"seen_centre": 40.9, "unfamiliar_centre": 15.0}
+  model: held-out 1433 -> 1531 [+0.1, +4.0] per world KEPT; {"seen_centre": 44.6, "unfamiliar_centre": 19.2}
+  carried: version 13, language 379, model g=8 pw=2, prior yes, held-out 1531; resource live 157.3M proof 408.0M tests 1510178; 117 s
+kept: [{"life": 1, "area": "mech", "change": "language +40 + model g=6 pw=3 from 192 worlds + prior", "gain": 96, "version": 2}, {"life": 2, "area": "mech", "change": "language +40 + prune -33 + model g=7 pw=2 from 288 worlds + prior", "gain": 171, "version": 3}, {"life": 0, "area": "drawn7", "change": "language +40 + prune -37 + model g=7 pw=4 from 96 worlds + prior", "gain": 207, "version": 4}, {"life": 0, "area": "metric777001", "change": "language +40 + prune -30 + model g=6 pw=2 from 96 worlds + prior", "gain": 858, "version": 5}, {"life": 2, "area": "metric777001", "change": "prune -24", "gain": 126, "version": 6}, {"life": 2, "area": "metric777001", "change": "model g=8 pw=2 from 288 worlds + prior", "gain": 111, "version": 7}, {"life": 0, "area": "drawn11", "change": "model g=7 pw=4 from 96 worlds + prior", "gain": 247, "version": 8}, {"life": 1, "area": "drawn11", "change": "language +40 + prune -18 + model g=6 pw=4 from 192 worlds + prior", "gain": 59, "version": 9}, {"life": 0, "area": "drawn13", "change": "model g=8 pw=4 from 96 worlds + prior", "gain": 360, "version": 10}, {"life": 1, "area": "drawn13", "change": "prune -25", "gain": 48, "version": 11}, {"life": 0, "area": "metric555001", "change": "model g=7 pw=2 from 96 worlds + prior", "gain": 996, "version": 12}, {"life": 1, "area": "metric555001", "change": "model g=8 pw=2 from 192 worlds + prior", "gain": 98, "version": 13}]
+seed c17 version 13, area str7, lives there 0, language 379 atoms
+str7 life 0: solved 6077 of 9600; by pool {"trained": 67.6, "unfamiliar": 50.4}; 7 s
+  together: held-out 3290 -> 4027 [+11.9, +19.1] per world KEPT; {"trained": 81.6, "unfamiliar": 77.7, "untrained": 92.4}
+  carried: version 14, language 396, model g=6 pw=4, prior yes, held-out 4027; resource live 167.1M proof 417.8M tests 1523568; 29 s
+str7 life 1: solved 7841 of 9600; by pool {"trained": 83.5, "unfamiliar": 76.1}; 10 s
+  together: held-out 4231 -> 4248 [-1.1, +2.4] per world dropped; {"trained": 86.4, "unfamiliar": 87.4, "untrained": 91.8}
+  extend: held-out 4231 -> 4234 [+0.0, +0.0] per world dropped; {"trained": 87.0, "unfamiliar": 88.1, "untrained": 89.5}
+  model: held-out 4231 -> 4249 [-1.0, +2.4] per world dropped; {"trained": 86.5, "unfamiliar": 87.3, "untrained": 91.8}
+  carried: version 14, language 396, model g=6 pw=4, prior yes, held-out 4231; resource live 176.9M proof 435.0M tests 1526242; 38 s
+str7 life 2: solved 7920 of 9600; by pool {"trained": 82.2, "unfamiliar": 83.4}; 11 s
+  together: held-out 4273 -> 4178 [-6.8, -0.1] per world dropped; {"trained": 85.9, "unfamiliar": 86.9, "untrained": 88.4}
+  prune: held-out 4273 -> 4276 [-0.1, +0.3] per world dropped; {"trained": 86.1, "unfamiliar": 88.7, "untrained": 92.4}
+  model: held-out 4273 -> 4162 [-7.1, -0.4] per world dropped; {"trained": 85.9, "unfamiliar": 86.9, "untrained": 87.4}
+  carried: version 14, language 396, model g=6 pw=4, prior yes, held-out 4273; resource live 186.8M proof 449.7M tests 1528519; 36 s
+kept: [{"life": 2, "area": "mech", "change": "language +40 + prune -33 + model g=7 pw=2 from 288 worlds + prior", "gain": 171, "version": 3}, {"life": 0, "area": "drawn7", "change": "language +40 + prune -37 + model g=7 pw=4 from 96 worlds + prior", "gain": 207, "version": 4}, {"life": 0, "area": "metric777001", "change": "language +40 + prune -30 + model g=6 pw=2 from 96 worlds + prior", "gain": 858, "version": 5}, {"life": 2, "area": "metric777001", "change": "prune -24", "gain": 126, "version": 6}, {"life": 2, "area": "metric777001", "change": "model g=8 pw=2 from 288 worlds + prior", "gain": 111, "version": 7}, {"life": 0, "area": "drawn11", "change": "model g=7 pw=4 from 96 worlds + prior", "gain": 247, "version": 8}, {"life": 1, "area": "drawn11", "change": "language +40 + prune -18 + model g=6 pw=4 from 192 worlds + prior", "gain": 59, "version": 9}, {"life": 0, "area": "drawn13", "change": "model g=8 pw=4 from 96 worlds + prior", "gain": 360, "version": 10}, {"life": 1, "area": "drawn13", "change": "prune -25", "gain": 48, "version": 11}, {"life": 0, "area": "metric555001", "change": "model g=7 pw=2 from 96 worlds + prior", "gain": 996, "version": 12}, {"life": 1, "area": "metric555001", "change": "model g=8 pw=2 from 192 worlds + prior", "gain": 98, "version": 13}, {"life": 0, "area": "str7", "change": "language +19 + prune -2 + model g=6 pw=4 from 96 worlds + prior", "gain": 737, "version": 14}]
+seed c17 version 14, area mech, lives there 4, language 396 atoms
+mech life 4: solved 3026 of 9600; by pool {"trained": 36.9, "unfamiliar": 15.5}; 32 s
+  together: held-out 1431 -> 1448 [-5.5, +0.3] per world dropped; {"trained": 44.2, "unfamiliar": 17.9, "untrained": 28.4}
+  extend: held-out 1431 -> 1526 [-3.0, +1.1] per world dropped; {"trained": 47.9, "unfamiliar": 18.5, "untrained": 29.0}
+  prune: held-out 1431 -> 1572 [+0.0, +0.0] per world dropped; {"trained": 51.0, "unfamiliar": 16.8, "untrained": 30.5}
+  model: held-out 1431 -> 1528 [-2.8, +0.8] per world dropped; {"trained": 49.0, "unfamiliar": 17.1, "untrained": 29.4}
+  carried: version 14, language 396, model g=7 pw=2, prior yes, held-out 1431; resource live 196.6M proof 464.5M tests 1622705; 110 s
+mech life 5: solved 2966 of 9600; by pool {"trained": 36.6, "unfamiliar": 13.8}; 35 s
+  together: held-out 1416 -> 1490 [-4.8, +2.7] per world dropped; {"trained": 47.4, "unfamiliar": 16.1, "untrained": 29.6}
+  extend: held-out 1416 -> 1446 [-1.0, +2.5] per world dropped; {"trained": 43.4, "unfamiliar": 20.6, "untrained": 26.3}
+  prune: held-out 1416 -> 1558 [+0.0, +0.0] per world dropped; {"trained": 50.5, "unfamiliar": 17.4, "untrained": 29.5}
+  model: held-out 1416 -> 1466 [-4.8, +0.8] per world dropped; {"trained": 48.8, "unfamiliar": 14.2, "untrained": 28.6}
+  carried: version 14, language 396, model g=7 pw=2, prior yes, held-out 1416; resource live 206.4M proof 481.7M tests 1713712; 128 s
+kept: [{"life": 2, "area": "mech", "change": "language +40 + prune -33 + model g=7 pw=2 from 288 worlds + prior", "gain": 171, "version": 3}, {"life": 0, "area": "drawn7", "change": "language +40 + prune -37 + model g=7 pw=4 from 96 worlds + prior", "gain": 207, "version": 4}, {"life": 0, "area": "metric777001", "change": "language +40 + prune -30 + model g=6 pw=2 from 96 worlds + prior", "gain": 858, "version": 5}, {"life": 2, "area": "metric777001", "change": "prune -24", "gain": 126, "version": 6}, {"life": 2, "area": "metric777001", "change": "model g=8 pw=2 from 288 worlds + prior", "gain": 111, "version": 7}, {"life": 0, "area": "drawn11", "change": "model g=7 pw=4 from 96 worlds + prior", "gain": 247, "version": 8}, {"life": 1, "area": "drawn11", "change": "language +40 + prune -18 + model g=6 pw=4 from 192 worlds + prior", "gain": 59, "version": 9}, {"life": 0, "area": "drawn13", "change": "model g=8 pw=4 from 96 worlds + prior", "gain": 360, "version": 10}, {"life": 1, "area": "drawn13", "change": "prune -25", "gain": 48, "version": 11}, {"life": 0, "area": "metric555001", "change": "model g=7 pw=2 from 96 worlds + prior", "gain": 996, "version": 12}, {"life": 1, "area": "metric555001", "change": "model g=8 pw=2 from 192 worlds + prior", "gain": 98, "version": 13}, {"life": 0, "area": "str7", "change": "language +19 + prune -2 + model g=6 pw=4 from 96 worlds + prior", "gain": 737, "version": 14}]
+mech fresh held-out 1072 -> 2088
+drawn7 fresh held-out 258 -> 279
+metric777001 fresh held-out 259 -> 1715
+drawn11 fresh held-out 220 -> 377
+drawn13 fresh held-out 224 -> 384
+metric555001 fresh held-out 339 -> 1485
+str7 fresh held-out 5076 -> 6248
+{
+ "name": "c17",
+ "version": 14,
+ "budget": 1024,
+ "areas": {
+  "mech": {
+   "start": {
+    "budget": 1024,
+    "total": 1072,
+    "by_pool": {
+     "trained": 21.833333333333332,
+     "unfamiliar": 4.708333333333333,
+     "untrained": 18.125
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 2088,
+    "by_pool": {
+     "trained": 37.333333333333336,
+     "unfamiliar": 15.5,
+     "untrained": 34.166666666666664
+    }
+   },
+   "gain": 1016
+  },
+  "drawn7": {
+   "start": {
+    "budget": 1024,
+    "total": 258,
+    "by_pool": {
+     "env": 10.75
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 279,
+    "by_pool": {
+     "env": 11.625
+    }
+   },
+   "gain": 21
+  },
+  "metric777001": {
+   "start": {
+    "budget": 1024,
+    "total": 259,
+    "by_pool": {
+     "seen_centre": 8.166666666666666,
+     "unfamiliar_centre": 2.625
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 1715,
+    "by_pool": {
+     "seen_centre": 41.75,
+     "unfamiliar_centre": 29.708333333333332
+    }
+   },
+   "gain": 1456
+  },
+  "drawn11": {
+   "start": {
+    "budget": 1024,
+    "total": 220,
+    "by_pool": {
+     "env": 9.166666666666666
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 377,
+    "by_pool": {
+     "env": 15.708333333333334
+    }
+   },
+   "gain": 157
+  },
+  "drawn13": {
+   "start": {
+    "budget": 1024,
+    "total": 224,
+    "by_pool": {
+     "env": 9.333333333333334
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 384,
+    "by_pool": {
+     "env": 16.0
+    }
+   },
+   "gain": 160
+  },
+  "metric555001": {
+   "start": {
+    "budget": 1024,
+    "total": 339,
+    "by_pool": {
+     "seen_centre": 10.958333333333334,
+     "unfamiliar_centre": 3.1666666666666665
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 1485,
+    "by_pool": {
+     "seen_centre": 41.041666666666664,
+     "unfamiliar_centre": 20.833333333333332
+    }
+   },
+   "gain": 1146
+  },
+  "str7": {
+   "start": {
+    "budget": 1024,
+    "total": 5076,
+    "by_pool": {
+     "trained": 79.125,
+     "unfamiliar": 52.791666666666664,
+     "untrained": 79.58333333333333
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 6248,
+    "by_pool": {
+     "trained": 85.16666666666667,
+     "unfamiliar": 84.79166666666667,
+     "untrained": 90.375
+    }
+   },
+   "gain": 1172
+  }
+ },
+ "lives": {
+  "mech": 6,
+  "drawn7": 3,
+  "metric777001": 3,
+  "drawn11": 2,
+  "drawn13": 2,
+  "metric555001": 2,
+  "str7": 3
+ },
+ "resource": {
+  "live_scans": 206438400,
+  "proof_scans": 481689600,
+  "invention_tests": 1713712
+ },
+ "invented": {
+  "kept": 90,
+  "by_true_family": {
+   "xormod": 19,
+   "popcount": 23,
+   "novel": 29,
+   "str:novel": 8,
+   "str:generator": 11
+  }
+ }
+}
+1 language +40 + model g=6 pw=4 from 96 worlds + prior ok
+2 language +40 + model g=6 pw=3 from 192 worlds + prior ok
+3 language +40 + prune -33 + model g=7 pw=2 from 288 worlds + prior ok
+4 language +40 + prune -37 + model g=7 pw=4 from 96 worlds + prior ok
+5 language +40 + prune -30 + model g=6 pw=2 from 96 worlds + prior ok
+6 prune -24 ok
+7 model g=8 pw=2 from 288 worlds + prior ok
+8 model g=7 pw=4 from 96 worlds + prior ok
+9 language +40 + prune -18 + model g=6 pw=4 from 192 worlds + prior ok
+10 model g=8 pw=4 from 96 worlds + prior ok
+11 prune -25 ok
+12 model g=7 pw=2 from 96 worlds + prior ok
+13 model g=8 pw=2 from 192 worlds + prior ok
+14 language +19 + prune -2 + model g=6 pw=4 from 96 worlds + prior ok
+{"name": "c17", "passed": true}

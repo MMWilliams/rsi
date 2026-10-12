@@ -231,8 +231,13 @@ are for replication only. Nothing proven is reset between generations.
       in language but outside the window). Fix applied to rsi/seed_string.py; dev run
       d_str3 (644101, 3 str7 lives): life 0 kept +17 keys (all 12 withheld UPPER/LOWER
       + 5 novel) + model + prior; fresh 4712 -> 6230 (+32%), every pool up, audit 1/1.
-      v9 FROZEN = v8 + fixed worker; c17 = 919116 RUNNING (runs_seed_conf_c17.log),
-      then c18 = 919117. Remaining
+      v9 FROZEN = v8 + fixed worker. c17 = 919116: GATE 1 FAILS on drawn7 (+8%, 258 ->
+      279); the other six areas +23% to +562%, str7 +23% (5076 -> 6248, 11 of 12
+      withheld positions + 8 novel), 11/11 pools up, cost 2.33x, 14/14 replay. drawn7
+      kept one change (life 0, +207 on 48 worlds); replaying its fresh score at each
+      kept version (scratchpad replay_drawn7.py) to see whether later shared-language
+      changes eroded it (cumulative drift) or the gain was noise. c18 = 919117 RUNNING
+      (runs_seed_conf_c18.log) for the record. Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for
       ~half; a majority-keys rule would not pick it): leave.
       LATER: a cumulative-drift guard vs the INITIAL
