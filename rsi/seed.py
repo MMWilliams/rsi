@@ -152,6 +152,8 @@ def make_area(spec, seed):
             spec = {'kind': 'drawn', 'env_seed': env_seed, 'theta': THETAS.get(env_seed)}
         elif name.startswith('metric'):
             spec = {'kind': 'metric', 'weight_seed': int(name[6:] or 777001)}
+        elif name.startswith('str'):
+            spec = {'kind': 'string', 'env_seed': int(name[3:] or 7)}
         else:
             raise ValueError(name)
     if spec['kind'] == 'mech':
@@ -161,13 +163,16 @@ def make_area(spec, seed):
     if spec['kind'] == 'metric':
         from .seed_areas import MetricArea
         return MetricArea(seed, spec['weight_seed'])
+    if spec['kind'] == 'string':
+        from .seed_string import StringArea
+        return StringArea(seed, spec['env_seed'])
     raise ValueError(spec)
 
 
 # -- the agent inside a worker ------------------------------------------------
 
 def _init(language, labels, per_world, prior_sets, tiebreak, budget):
-    h = Harness([tuple(a) for a in language])
+    h = Harness([tuple(a) for a in language if a[1] != 'str'])   # the string form's keys live elsewhere
     h.set_tiebreak(tiebreak, stable=True)   # a row keeps its tie-break when the language changes
     sim = Simulator(h)
     if labels:
@@ -306,13 +311,19 @@ class Seed:
         per_world = model.get('per_world', 3) if model else 3
         prior_sets = [e['picks'] for e in st['experience'] if e['area'] == area] if a['prior'] else None
         ctx = multiprocessing.get_context('spawn')
-        jobs = [(i, w['masks'], w['rng']) for i, w in enumerate(worlds)]
+        if worlds and 'tasks' in worlds[0]:       # the string form: its own worker over the same state
+            from .seed_string import init_string, life_string
+            init, work = init_string, life_string
+            jobs = [(i, w['tasks'], w['rng']) for i, w in enumerate(worlds)]
+            initargs = (st['language'], labels, prior_sets, st['tiebreak'], budget)
+        else:
+            init, work = _init, _life
+            jobs = [(i, w['masks'], w['rng']) for i, w in enumerate(worlds)]
+            initargs = (st['language'], labels, per_world, prior_sets, st['tiebreak'], budget)
         for attempt in range(4):
             try:
-                with ctx.Pool(max(1, workers >> attempt), initializer=_init,
-                              initargs=(st['language'], labels, per_world, prior_sets,
-                                        st['tiebreak'], budget)) as pool:
-                    out = pool.map(_life, jobs, chunksize=2)
+                with ctx.Pool(max(1, workers >> attempt), initializer=init, initargs=initargs) as pool:
+                    out = pool.map(work, jobs, chunksize=2)
                 break
             except MemoryError:
                 # the machine's commit is shared with other jobs; wait, then fewer workers
@@ -381,9 +392,12 @@ class Seed:
     def extend(self, worlds, records, cands, share=.3, cap=40):
         """Candidate atoms for the worlds with the most unsolved tasks: the
         top `share` of this life's worlds by stuck count, never the easy ones."""
+        if worlds and 'tasks' in worlds[0]:
+            from .seed_string import extend_string
+            return extend_string(self, worlds, records)
         stuck = np.array([r['stuck'] for r in records])
         cut = max(.15 * STREAM, float(np.quantile(stuck, 1 - share)))
-        masks = {a[0]: mask_of(a[2]) for a in self.state['language']}
+        masks = {a[0]: mask_of(a[2]) for a in self.state['language'] if a[1] != 'str'}
         known = set(masks.values()) | {FULL & ~m for m in masks.values()}
         new, tests, provenance = {}, 0, []
         for w, r in zip(worlds, records):
@@ -480,6 +494,8 @@ class Seed:
             for name, a in self.state['areas'].items():
                 if name == area.name or not self.lives(name) or not a.get('spec'):
                     continue
+                if (a['spec']['kind'] == 'string') != (area.spec['kind'] == 'string'):
+                    continue   # each form's catalog is built from its own keys: the other is untouched
                 other = make_area(a['spec'], self.state['seed'])
                 held = other.held_out(max(per_pool_other, -(-24 // len(other.pools))), salt=salt)   # at least 24 worlds
                 base = self._carried(other, held, salt, budget)

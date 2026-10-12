@@ -20,6 +20,7 @@ import warnings
 from rsi.common import ROOT
 from rsi.invention import candidates
 from rsi.seed import MechanismArea, Seed, make_area
+from rsi.seed_string import SEED_LANGUAGE
 
 
 def fmt(score):
@@ -40,7 +41,14 @@ def main():
     faulthandler.dump_traceback_later(600, repeat=True)   # where the main process is, if it stalls
     area = make_area(args.area, args.seed)
     mech = area if args.area == 'mech' else MechanismArea(args.seed)
-    seed = Seed(ROOT / 'seeds' / args.name, language=mech.seed_language, name=args.name, seed=args.seed)
+    seed = Seed(ROOT / 'seeds' / args.name, language=mech.seed_language + SEED_LANGUAGE,
+                name=args.name, seed=args.seed)
+    if not any(a[1] == 'str' for a in seed.state['language']):   # a seed from before the string form
+        for key in ('language', 'initial_language'):
+            seed.state[key] += [list(a) for a in SEED_LANGUAGE]
+        seed.state['ledger'].append({'op': 'vocabulary', 'area': 'str', 'atoms': len(SEED_LANGUAGE),
+                                     'version': seed.state['version']})
+        seed.save()
     cands = candidates()
     print(f'seed {seed.state["name"]} version {seed.state["version"]}, area {area.name}, lives there '
           f'{seed.lives(area.name)}, language {len(seed.state["language"])} atoms', flush=True)

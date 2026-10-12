@@ -17,6 +17,7 @@ from collections import Counter
 from rsi.common import ROOT, write_json
 from rsi.mechanism_space import FULL, atom_expressions, mask_of
 from rsi.seed import Seed, make_area
+from rsi.seed_string import GENERATOR_KEYS
 
 
 def main():
@@ -48,8 +49,13 @@ def main():
         family[m] = fam
         family[FULL & ~m] = fam
     kept = [a for a in seed.state['language'] if a[0].startswith('inv:')]
-    out['invented'] = {'kept': len(kept),
-                       'by_true_family': dict(Counter(family.get(mask_of(a[2]), 'novel') for a in kept))}
+
+    def label(a):
+        if a[1] == 'str':
+            return 'str:generator' if a[2] in GENERATOR_KEYS else 'str:novel'
+        return family.get(mask_of(a[2]), 'novel')
+
+    out['invented'] = {'kept': len(kept), 'by_true_family': dict(Counter(label(a) for a in kept))}
     write_json(ROOT / f'analysis/seed-check-{args.name}.json', out)
     print(json.dumps({k: v for k, v in out.items() if k != 'kept_changes'}, indent=1))
 

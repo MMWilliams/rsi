@@ -1,0 +1,18 @@
+seed d_str2 version 0, area str7, lives there 0, language 306 atoms
+str7 life 0: solved 6072 of 9600; by pool {"trained": 68.5, "unfamiliar": 47.5}; 9 s
+  together: held-out 2827 -> 3735 [+14.7, +23.5] per world KEPT; {"trained": 74.9, "unfamiliar": 73.1, "untrained": 85.5}
+  carried: version 1, language 321, model g=6 pw=4, prior yes, held-out 3735; resource live 9.8M proof 9.8M tests 23438; 32 s
+str7 life 1: solved 7639 of 9600; by pool {"trained": 78.9, "unfamiliar": 81.7}; 13 s
+  model: held-out 3883 -> 3694 [-1.5, +0.5] per world dropped; {"trained": 72.9, "unfamiliar": 80.4, "untrained": 77.6}
+  carried: version 1, language 321, model g=6 pw=4, prior yes, held-out 3883; resource live 19.7M proof 17.2M tests 34020; 29 s
+str7 life 2: solved 7485 of 9600; by pool {"trained": 76.8, "unfamiliar": 81.4}; 14 s
+  together: held-out 3905 -> 3921 [-0.5, +1.0] per world dropped; {"trained": 80.5, "unfamiliar": 84.1, "untrained": 80.4}
+  prune: held-out 3905 -> 3913 [+0.0, +0.3] per world KEPT; {"trained": 81.2, "unfamiliar": 83.6, "untrained": 79.8}
+  model: held-out 3832 -> 3924 [-1.2, +0.8] per world dropped; {"trained": 79.1, "unfamiliar": 84.6, "untrained": 81.5}
+  carried: version 2, language 312, model g=6 pw=4, prior yes, held-out 3832; resource live 29.5M proof 39.3M tests 44888; 49 s
+str7 life 3: solved 7474 of 9600; by pool {"trained": 73.6, "unfamiliar": 90.5}; 10 s
+  together: held-out 3849 -> 3924 [-1.3, +0.1] per world dropped; {"trained": 79.0, "unfamiliar": 83.5, "untrained": 82.8}
+  extend: held-out 3849 -> 3944 [-0.4, +0.1] per world dropped; {"trained": 79.4, "unfamiliar": 84.2, "untrained": 82.9}
+  model: held-out 3849 -> 3928 [-1.2, +0.2] per world dropped; {"trained": 79.0, "unfamiliar": 83.8, "untrained": 82.8}
+  carried: version 2, language 312, model g=6 pw=4, prior yes, held-out 3849; resource live 39.3M proof 51.6M tests 63043; 39 s
+kept: [{"life": 0, "area": "str7", "change": "language +15 + model g=6 pw=4 from 96 worlds + prior", "gain": 908, "version": 1}, {"life": 2, "area": "str7", "change": "prune -9", "gain": 8, "version": 2}]
