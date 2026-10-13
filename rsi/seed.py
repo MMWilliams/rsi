@@ -24,6 +24,7 @@ from __future__ import annotations
 import copy
 import json
 import multiprocessing
+import shutil
 import os
 import random
 import time
@@ -225,6 +226,15 @@ def _life(job):
 # -- the seed ----------------------------------------------------------------
 
 EXTENSION_SALT = 500     # an extension set's salt is its proof's salt plus this
+META_SALT = 5000         # meta sets, on which two branches of the seed are compared
+FALLBACK_MENU = ('model', 'prune', 'extend', 'extend+model')   # tested alone after the combination fails
+REPLACES = {'extend': 'extend+model'}                           # what a retired fallback gives way to
+PROCEDURE = {'patience': 4, 'probation': 4, 'extend_cap': 40, 'recurrence': 2}   # the improver's knobs
+KNOBS = {'patience': (2, 4, 8), 'probation': (2, 4, 8), 'extend_cap': (20, 40, 80), 'recurrence': (2, 3)}
+
+
+def form_of(spec):
+    return 'string' if spec['kind'] == 'string' else 'character'
 
 
 class Seed:
@@ -243,7 +253,7 @@ class Seed:
                           'language': [list(a) for a in language],
                           'initial_language': [list(a) for a in language],
                           'experience': [], 'areas': {}, 'inventions': {},
-                          'kept': [], 'ledger': [],
+                          'kept': [], 'ledger': [], 'procedure': dict(PROCEDURE),
                           'resource': {'live_scans': 0, 'proof_scans': 0, 'invention_tests': 0}}
             self.save()
 
@@ -265,6 +275,7 @@ class Seed:
             for e in s['ledger']:
                 e.setdefault('area', 'mech')
             changed = True
+        s.setdefault('procedure', dict(PROCEDURE))   # in memory; written with the next real change
         if s.get('seed') is None and seed is not None:
             s['seed'] = seed
             changed = True
@@ -278,14 +289,14 @@ class Seed:
     def save(self):
         (self.path / 'state.json').write_text(json.dumps(self.state))
 
-    def _snapshot(self):
+    def _snapshot(self, file=None):
         """What a replay of a proof needs about this version: the language,
         the areas' models and prior flags, the inventions, and how much
         experience the seed had. Rewritten whenever a proof is kept, so the
         file always holds the state as it was just before or just after."""
         folder = self.path / 'versions'
         folder.mkdir(exist_ok=True)
-        file = folder / f'{self.state["version"]}.json'
+        file = file or folder / f'{self.state["version"]}.json'
         areas = {name: {k: v for k, v in a.items() if k not in ('held_out_score', 'extension_score')}
                  for name, a in self.state['areas'].items()}
         file.write_text(json.dumps({'version': self.state['version'], 'language': self.state['language'],
@@ -298,6 +309,103 @@ class Seed:
     def lives(self, area=None):
         return sum(1 for e in self.state['ledger']
                    if e['op'] == 'live' and (area is None or e['area'] == area))
+
+    # -- the improver as state ------------------------------------------------
+
+    def forms(self):
+        return {name: form_of(a['spec']) for name, a in self.state['areas'].items() if a.get('spec')}
+
+    def fallback_policy(self, form, upto=None, patience=None, probation=None):
+        """What the producer tests on its own after the combination fails, in
+        areas of this form, learned from its own ledger: a fallback with
+        `patience` rejections and no acceptance since is retired and tried
+        again once every `probation` lives of the form; an extension retired
+        on its own gives way to the extension with the model. A pure function
+        of the ledger up to `upto`, so an auditor can recompute it."""
+        patience = self.state['procedure']['patience'] if patience is None else patience
+        probation = self.state['procedure']['probation'] if probation is None else probation
+        forms = self.forms()
+        lives, rejections, retired = 0, {}, {}
+        for e in self.state['ledger'][:upto]:
+            if forms.get(e.get('area')) != form:
+                continue
+            if e['op'] == 'live':
+                lives += 1
+            elif e['op'] == 'prove' and (e.get('note') or {}).get('fallback'):
+                key = '+'.join(sorted(e['note']['parts']))
+                if e['kept']:
+                    rejections[key] = 0
+                    retired.pop(key, None)
+                else:
+                    rejections[key] = rejections.get(key, 0) + 1
+                    if rejections[key] >= patience and key not in retired:
+                        retired[key] = lives
+        idle = {k for k, v in retired.items() if lives == v or (lives - v) % probation}
+        active = [k for k in FALLBACK_MENU if k not in idle
+                  and (k not in REPLACES.values() or any(REPLACES.get(r) == k for r in idle))]
+        return {'lives': lives, 'patience': patience, 'probation': probation, 'active': active,
+                'retired': {k: {'rejections': rejections[k], 'since': v} for k, v in retired.items()}}
+
+    def revise(self, area):
+        """Record in the ledger the fallback policy this life runs under."""
+        form = form_of(area.spec)
+        policy = self.fallback_policy(form)
+        self.state['ledger'].append({'op': 'revise', 'area': area.name, 'form': form, **policy})
+        self.save()
+        return policy
+
+    def mutation(self, form):
+        """The meta-producer: one change to the procedure to test this life,
+        round-robin over its knobs by the lives in this form, each to the
+        next value of its cycle."""
+        forms = self.forms()
+        lives = sum(1 for e in self.state['ledger'] if e['op'] == 'live' and forms.get(e['area']) == form)
+        knob = list(KNOBS)[(lives - 1) % len(KNOBS)]
+        cycle, current = KNOBS[knob], self.state['procedure'][knob]
+        return knob, cycle[(cycle.index(current) + 1) % len(cycle)] if current in cycle else cycle[0]
+
+    def branch(self, label):
+        """A copy of this seed in its own folder, to run one phase under a procedure."""
+        path = self.path / 'branches' / label
+        path.mkdir(parents=True, exist_ok=True)
+        (path / 'state.json').write_text(json.dumps(self.state))
+        return Seed(path)
+
+    def meta_proof(self, area, state_a, state_b, budget, life, held_out, boot=4000):
+        """Two branch states on a meta set no proof used, paired over worlds:
+        b's gain over a, with its bootstrap interval."""
+        salt = META_SALT + 100 * sorted(self.state['areas']).index(area.name) + life
+        held = area.held_out(-(-held_out // len(area.pools)), salt=salt)
+        ha = [r['hits'] for r in self.run(held, budget, area.name, state=state_a)]
+        hb = [r['hits'] for r in self.run(held, budget, area.name, state=state_b)]
+        diff = np.array(hb, dtype=float) - np.array(ha, dtype=float)
+        draws = np.random.default_rng(salt).integers(len(diff), size=(boot, len(diff)))
+        means = diff[draws].mean(axis=1)
+        return {'salt': salt, 'worlds': len(held), 'a': int(sum(ha)), 'b': int(sum(hb)),
+                'mean': float(diff.mean()), 'scans': 2 * len(held) * STREAM * budget,
+                'interval': [float(np.percentile(means, 2.5)), float(np.percentile(means, 97.5))]}
+
+    def adopt(self, winner, loser, entry):
+        """Take the winning branch's state, ledger and snapshots; charge what the
+        other branch and the meta set cost; file the loser's final state for
+        the auditor."""
+        base = dict(self.state['resource'])
+        k = sum(1 for e in self.state['ledger'] if e['op'] == 'meta')
+        (self.path / 'versions').mkdir(exist_ok=True)
+        loser._snapshot(self.path / 'versions' / f'meta{k}_loser.json')
+        winner._snapshot()
+        for f in (winner.path / 'versions').glob('*.json'):
+            shutil.copyfile(f, self.path / 'versions' / f.name)
+        self.state = winner.state
+        r = self.state['resource']
+        r['proof_scans'] += (loser.state['resource']['live_scans'] - base['live_scans']
+                             + loser.state['resource']['proof_scans'] - base['proof_scans']
+                             + entry['meta']['scans'])
+        r['invention_tests'] += loser.state['resource']['invention_tests'] - base['invention_tests']
+        entry.update(winner_version=self.state['version'], loser_snapshot=f'meta{k}_loser.json')
+        self.state['ledger'].append(entry)
+        self.save()
+        shutil.rmtree(self.path / 'branches', ignore_errors=True)
 
     def area_state(self, area, state=None):
         st = self.state if state is None else state
@@ -392,12 +500,15 @@ class Seed:
 
     # -- extend and prune ---------------------------------------------------
 
-    def extend(self, worlds, records, cands, share=.3, cap=40):
+    def extend(self, worlds, records, cands, share=.3):
         """Candidate atoms for the worlds with the most unsolved tasks: the
-        top `share` of this life's worlds by stuck count, never the easy ones."""
+        top `share` of this life's worlds by stuck count, never the easy ones.
+        The cap on atoms per life and the recurrence an atom needs are the
+        procedure's."""
+        cap, recurrence = self.state['procedure']['extend_cap'], self.state['procedure']['recurrence']
         if worlds and 'tasks' in worlds[0]:
             from .seed_string import extend_string
-            return extend_string(self, worlds, records)
+            return extend_string(self, worlds, records, cap=cap)
         stuck = np.array([r['stuck'] for r in records])
         cut = max(.15 * STREAM, float(np.quantile(stuck, 1 - share)))
         masks = {a[0]: mask_of(a[2]) for a in self.state['language'] if a[1] != 'str'}
@@ -408,7 +519,7 @@ class Seed:
                 continue
             earned = [masks[k] for k in r['picks'] if k in masks]
             kept, n = invent(cands, r['unsolved'], earned,
-                             known | set(new) | {FULL & ~m for m in new})
+                             known | set(new) | {FULL & ~m for m in new}, min_tasks=recurrence)
             tests += n
             for j in kept:
                 name, _tags, expr, mask = cands[j]

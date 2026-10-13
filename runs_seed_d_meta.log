@@ -1,0 +1,52 @@
+seed d_meta version 0, area str7, lives there 0, language 306 atoms, procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2}
+str7 life 0: solved 3279 of 4800; by pool {"trained": 72.8, "unfamiliar": 54.9}; 8 s
+  meta: patience 4 -> 8
+  [a] together: held-out 2949 -> 3996 [+18.0, +26.0] per world KEPT; {"trained": 84.0, "unfamiliar": 77.2, "untrained": 88.5}
+  [b] together: held-out 2949 -> 3996 [+18.0, +26.0] per world KEPT; {"trained": 84.0, "unfamiliar": 77.2, "untrained": 88.5}
+  meta: 3913 -> 3913 on 48 worlds [+0.0, +0.0] per world, proof cost 9.8M vs 9.8M: patience=8 declined
+  carried: version 1, language 321, model g=6 pw=4, prior yes, held-out 3996; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2}; resource live 4.9M proof 29.5M tests 17972; 82 s
+str7 life 1: solved 3951 of 4800; by pool {"trained": 84.3, "unfamiliar": 76.3}; 9 s
+  meta: probation 4 -> 8
+  [a] together: held-out 4089 -> 4096 [-1.1, +1.6] per world dropped; {"trained": 87.8, "unfamiliar": 83.1, "untrained": 85.1}
+  [a] model: held-out 4089 -> 4089 [-1.2, +1.5] per world dropped; {"trained": 87.8, "unfamiliar": 82.7, "untrained": 85.1}
+  [a] extend: held-out 4089 -> 4096 [+0.0, +0.3] per world KEPT; {"trained": 88.2, "unfamiliar": 83.6, "untrained": 84.2}
+  [b] together: held-out 4089 -> 4096 [-1.1, +1.6] per world dropped; {"trained": 87.8, "unfamiliar": 83.1, "untrained": 85.1}
+  [b] model: held-out 4089 -> 4089 [-1.2, +1.5] per world dropped; {"trained": 87.8, "unfamiliar": 82.7, "untrained": 85.1}
+  [b] extend: held-out 4089 -> 4096 [+0.0, +0.3] per world KEPT; {"trained": 88.2, "unfamiliar": 83.6, "untrained": 84.2}
+  meta: 3996 -> 3996 on 48 worlds [+0.0, +0.0] per world, proof cost 19.7M vs 19.7M: probation=8 declined
+  carried: version 2, language 322, model g=6 pw=4, prior yes, held-out 4096; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2}; resource live 9.8M proof 78.6M tests 23376; 144 s
+str7 life 2: solved 4087 of 4800; by pool {"trained": 85.7, "unfamiliar": 83.6}; 13 s
+  meta: extend_cap 40 -> 80
+  [a] together: held-out 4083 -> 4146 [-2.2, +0.6] per world dropped; {"trained": 87.1, "unfamiliar": 85.5, "untrained": 86.5}
+  [a] model: held-out 4083 -> 4136 [-2.4, +0.5] per world dropped; {"trained": 86.5, "unfamiliar": 85.5, "untrained": 86.5}
+  [a] prune: held-out 4083 -> 4099 [+0.1, +0.8] per world KEPT; {"trained": 86.1, "unfamiliar": 83.2, "untrained": 86.9}
+  [a] extend: held-out 4176 -> 4116 [-0.2, +0.0] per world dropped; {"trained": 87.1, "unfamiliar": 84.0, "untrained": 86.1}
+  [b] together: held-out 4083 -> 4146 [-2.2, +0.6] per world dropped; {"trained": 87.1, "unfamiliar": 85.5, "untrained": 86.5}
+  [b] model: held-out 4083 -> 4136 [-2.4, +0.5] per world dropped; {"trained": 86.5, "unfamiliar": 85.5, "untrained": 86.5}
+  [b] prune: held-out 4083 -> 4099 [+0.1, +0.8] per world KEPT; {"trained": 86.1, "unfamiliar": 83.2, "untrained": 86.9}
+  [b] extend: held-out 4176 -> 4116 [-0.2, +0.0] per world dropped; {"trained": 87.1, "unfamiliar": 84.0, "untrained": 86.1}
+  meta: 4107 -> 4107 on 48 worlds [+0.0, +0.0] per world, proof cost 22.1M vs 22.1M: extend_cap=80 declined
+  carried: version 3, language 312, model g=6 pw=4, prior yes, held-out 4176; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2}; resource live 14.7M proof 132.7M tests 25880; 122 s
+str7 life 3: solved 3965 of 4800; by pool {"trained": 83.4, "unfamiliar": 80.2}; 8 s
+  meta: recurrence 2 -> 3
+  [a] together: held-out 4179 -> 4080 [-2.7, +0.4] per world dropped; {"trained": 87.0, "unfamiliar": 82.6, "untrained": 85.4}
+  [a] model: held-out 4179 -> 4092 [-2.4, +0.6] per world dropped; {"trained": 87.0, "unfamiliar": 83.1, "untrained": 85.6}
+  [a] prune: held-out 4179 -> 4120 [-0.5, +0.1] per world dropped; {"trained": 87.6, "unfamiliar": 83.8, "untrained": 86.1}
+  [a] extend: held-out 4179 -> 4114 [-0.8, +0.1] per world dropped; {"trained": 87.6, "unfamiliar": 83.4, "untrained": 86.1}
+  [b] together: held-out 4179 -> 4080 [-2.7, +0.4] per world dropped; {"trained": 87.0, "unfamiliar": 82.6, "untrained": 85.4}
+  [b] model: held-out 4179 -> 4092 [-2.4, +0.6] per world dropped; {"trained": 87.0, "unfamiliar": 83.1, "untrained": 85.6}
+  [b] prune: held-out 4179 -> 4120 [-0.5, +0.1] per world dropped; {"trained": 87.6, "unfamiliar": 83.8, "untrained": 86.1}
+  [b] extend: held-out 4179 -> 4114 [-0.8, +0.1] per world dropped; {"trained": 87.6, "unfamiliar": 83.4, "untrained": 86.1}
+  meta: 4080 -> 4080 on 48 worlds [+0.0, +0.0] per world, proof cost 14.7M vs 14.7M: recurrence=3 declined
+  carried: version 3, language 312, model g=6 pw=4, prior yes, held-out 4179; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2}; resource live 19.7M proof 172.0M tests 32234; 108 s
+str7 life 4: solved 4096 of 4800; by pool {"trained": 85.1, "unfamiliar": 86.1}; 10 s
+  meta: patience 4 -> 8
+  [a] model: held-out 4184 -> 4120 [-2.0, +1.0] per world dropped; {"trained": 87.8, "unfamiliar": 83.4, "untrained": 86.4}
+  [b] model: held-out 4184 -> 4120 [-2.0, +1.0] per world dropped; {"trained": 87.8, "unfamiliar": 83.4, "untrained": 86.4}
+  meta: 4147 -> 4147 on 48 worlds [+0.0, +0.0] per world, proof cost 7.4M vs 7.4M: patience=8 declined
+  carried: version 3, language 312, model g=6 pw=4, prior yes, held-out 4184; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2}; resource live 24.6M proof 196.6M tests 33686; 71 s
+str7 life 5: solved 4121 of 4800; by pool {"trained": 85.5, "unfamiliar": 86.8}; 9 s
+  meta: probation 4 -> 8
+  [a] together: held-out 4182 -> 4090 [-2.7, +0.5] per world dropped; {"trained": 86.2, "unfamiliar": 82.9, "untrained": 86.5}
+  [a] policy: fallbacks ['prune', 'extend'], retired {"model": {"rejections": 4, "since": 5}}
+  [a] extend: held-out 4182 -> 4114 [-1.0, +0.1] per world dropped; {"trained": 87.4, "unfamiliar": 83.8, "untrained": 86.0}

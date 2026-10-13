@@ -1212,3 +1212,59 @@ c2 under v1's economics); on the seven-area seeds c15 to c18 it is +0.15x
 to +0.24x, so a v11 run should land near 2.6x to 3.2x against its 3.75x
 gate. Forecast for v11 when it is frozen: 0.35.
 
+## The improver as state: level 1 (producer policy) and level 2 (meta-proof), development (2026-10-12)
+
+Reese's direction: true recursive self-improvement, the seed improving its
+improver and its producer, not only its state. What is built, on top of the
+unchanged level-0 acceptance test:
+
+Level 1, the producer policy (`Seed.fallback_policy`): which parts the
+producer tests on their own after the combined candidate fails is no longer
+fixed. It is a pure function of the seed's own ledger: a fallback with
+`patience` rejections in a form and no acceptance since is retired, tried
+again once every `probation` lives of the form, and an extension retired on
+its own gives way to the extension with the model (the menu: model, prune,
+extend, extend+model). Motivation from the nine multi-area sealed ledgers
+(c11 to c19): an extension tested alone was kept 0 times in 129 and cost 13%
+of all proof scans; model alone 47 of 134; prune alone 13 of 105; the
+combination 43 of 174 (57% of proof cost). Each life's policy is recorded as
+a `revise` ledger entry; the auditor recomputes every one from the ledger
+before it.
+
+Level 2, the meta-proof (`seed_run.py --meta-every N`, `Seed.mutation`,
+`Seed.branch`, `Seed.meta_proof`, `Seed.adopt`): the knobs of the producer
+and of the level-1 rule live in `state['procedure']` (patience 4, probation
+4, extend_cap 40, recurrence 2). Every Nth life the meta-producer proposes
+one mutation (round-robin over the knobs, each to the next value of its
+cycle: patience and probation 2/4/8, extend_cap 20/40/80, recurrence 2/3).
+Two branches of the seed run the proposal-and-proof phase from the same
+lived worlds, one under the current procedure and one under the mutation,
+and both final states are scored on a meta set no proof used (salt 5000 +
+100 x area + life, --held-out worlds), paired over worlds. The mutation is
+adopted if its branch's gain has an interval above zero, or if the interval
+straddles zero with a non-negative mean and the branch's proof cost is at
+least 10% lower. The branch not taken and the meta set are charged to proof
+scans. The auditor replays every meta-proof from the winner's version
+snapshot and the loser's filed snapshot. Level 2 changing level 1's knobs
+is the recursion; the fixed substrate is the comparison harness itself and
+its schedule.
+
+Development `d_meta` (644101, str7, meta every life; `runs_seed_d_meta.log`;
+stopped by the host for low memory in life 5 of 6, not restarted): the
+machinery ran end to end for five lives. Every mutation was declined,
+correctly: patience 8, probation 8, extend_cap 80, recurrence 3 and patience
+8 again each left that life's proposals and fallbacks unchanged, so both
+branches made the same decisions, the meta set read +0.0 on every world and
+the costs were equal. In life 5 level 1 fired for the first time: the model
+fallback, rejected four times in the string form, was retired and the phase
+tested prune and extend only. Two lessons went straight into the code: (1) a
+mutation whose branch would propose and test exactly what the current
+procedure proposes this life is detected by comparing the two plans
+(proposed atoms, drops, model and active fallbacks) before any proof, and is
+recorded as a no-op rather than run, which removes most of the meta-level's
+cost (with every mutation run, proof scans were 8x living on this seed);
+(2) the one-life horizon can only see knobs that change the current life,
+so second-order knobs such as patience show an effect only on the life in
+which a retirement threshold is crossed; longer branch horizons are the
+next step and cost lives. Audit and fresh check pending (memory).
+

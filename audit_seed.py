@@ -91,6 +91,47 @@ def main():
                                    'interval': [interval, entry['candidate']['interval']], 'ok': bool(ok),
                                    **({'extension': extension} if extension else {})})
         print(v, entry['change'], 'ok' if ok else 'MISMATCH', flush=True)
+    # every recorded fallback policy follows from the ledger before it, and every
+    # meta-proof replays: both branches' final states on the meta set
+    policy_ok, metas = True, []
+    for i, e in enumerate(seed.state['ledger']):
+        if e['op'] == 'revise':
+            p = seed.fallback_policy(e['form'], upto=i, patience=e['patience'], probation=e['probation'])
+            same = p['active'] == e['active'] and p['retired'] == e['retired']
+            policy_ok &= same
+            if not same:
+                print('revise at ledger entry', i, 'MISMATCH', flush=True)
+        elif e['op'] == 'meta' and not e.get('noop'):
+            area = make_area(seed.state['areas'][e['area']]['spec'], seed.state['seed'])
+            held = area.held_out(e['meta']['worlds'] // len(area.pools), salt=e['meta']['salt'])
+            winner = json.loads((snaps / f'{e["winner_version"]}.json').read_text())
+            loser = json.loads((snaps / e['loser_snapshot']).read_text())
+            a, b = (loser, winner) if e['adopted'] else (winner, loser)
+
+            def state_of(snap):
+                st = seed.candidate()
+                st['language'] = snap['language']
+                st['areas'] = snap['areas']
+                st['inventions'] = snap['inventions']
+                st['experience'] = st['experience'][:snap['experience_len']]
+                return st
+
+            budget = e['budget']
+            ha = [r['hits'] for r in seed.run(held, budget, area.name, state=state_of(a))]
+            hb = [r['hits'] for r in seed.run(held, budget, area.name, state=state_of(b))]
+            diff = np.array(hb, dtype=float) - np.array(ha, dtype=float)
+            draws = np.random.default_rng(e['meta']['salt']).integers(len(diff), size=(4000, len(diff)))
+            means = diff[draws].mean(axis=1)
+            interval = [float(np.percentile(means, 2.5)), float(np.percentile(means, 97.5))]
+            ok = (sum(ha) == e['meta']['a'] and sum(hb) == e['meta']['b']
+                  and np.allclose(interval, e['meta']['interval'], atol=1e-9))
+            policy_ok &= ok
+            metas.append({'ledger': i, 'mutation': e['mutation'], 'adopted': e['adopted'],
+                          'a': [sum(ha), e['meta']['a']], 'b': [sum(hb), e['meta']['b']], 'ok': bool(ok)})
+            print('meta', e['mutation'], 'adopted' if e['adopted'] else 'declined', 'ok' if ok else 'MISMATCH', flush=True)
+    report['policy_ok'] = policy_ok
+    report['meta'] = metas
+    report['passed'] &= policy_ok
     write_json(ROOT / f'analysis/audit-seed-{args.name}.json', report)
     print(json.dumps({k: v for k, v in report.items() if k != 'replayed'}))
     return 0 if report['passed'] else 1

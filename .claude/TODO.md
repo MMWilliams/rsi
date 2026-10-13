@@ -278,6 +278,19 @@ are for replication only. Nothing proven is reset between generations.
       v10 schedule + str11 3 lives (24 lives, 8 areas), cost gate 3.75x; extension_triggers.py:
       the rule fires on ~19% of full-set rejections, +0.15..0.24x cost on 7-area seeds, so
       expect 2.6..3.2x; forecast 0.35; FREEZE ONLY
+      after the v10 verdict. TRUE RSI (reese, 2026-10-12: improve the improver and
+      producer, not just the state): BUILT level 1 (producer fallback policy learned
+      from the seed's own ledger, patience/probation, extend alone -> extend+model;
+      evidence: extend alone 0/129 kept, 13% of proof cost on c11-c19) and level 2
+      (state['procedure'] knobs mutated by the seed, tested by two shadow branches on a
+      meta set, adopted if better or no-worse-and-10%-cheaper; auditor replays both).
+      d_meta (str7, meta every life) ran 5 lives: all mutations correctly declined as
+      no-ops; model fallback retired in life 5; KILLED by the host (memory). Added
+      no-op detection (plans compared before proofs). NEXT: audit d_meta; a character-form
+      dev run (mech 6 lives + drawn7 2, --meta-every 2) once memory allows; multi-life
+      branch horizons for second-order knobs; evidence-driven mutation choice; then a
+      sealed version with --meta-every in the schedule. Keep confirm_seed.sh unchanged
+      (default --meta-every 0 = v10 behaviour). Previously: freeze v11 only
       after the v10 verdict (c20 rerun). Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for
       ~half; a majority-keys rule would not pick it): leave.
