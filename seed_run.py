@@ -29,6 +29,8 @@ import sys
 import time
 import warnings
 
+import numpy as np
+
 from rsi.common import ROOT
 from rsi.invention import candidates
 from rsi.seed import MechanismArea, Seed, form_of, make_area
@@ -212,19 +214,25 @@ def main():
                 cost_a = {k: a.state['resource'][k] - base[k] for k in base}
                 cost_b = {k: b.state['resource'][k] - base[k] for k in base}
                 meta = seed.meta_proof(area, a.state, b.state, args.budget, life + args.meta_lives - 1, args.held_out)
-                lo, hi = meta['interval']
-                ca, cb = cost_a['proof_scans'], cost_b['proof_scans']
+                mutation = {'knob': knob, 'before': before, 'after': value, 'votes': votes}
+                diff = np.array(meta['hb'], dtype=float) - np.array(meta['ha'], dtype=float)
+                pooled = seed.pooled(form, mutation, diff, cost_a['proof_scans'], cost_b['proof_scans'], meta['salt'])
+                verdict = pooled or {'mean': meta['mean'], 'interval': meta['interval'],
+                                     'cost': {'a': cost_a['proof_scans'], 'b': cost_b['proof_scans']}}
+                lo, hi = verdict['interval']
+                ca, cb = verdict['cost']['a'], verdict['cost']['b']
                 better = lo > 0
-                cheaper = meta['mean'] >= 0 and lo <= 0 <= hi and cb <= ca * (1 - MARGIN)
+                cheaper = verdict['mean'] >= 0 and lo <= 0 <= hi and cb <= ca * (1 - MARGIN)
                 adopted = better or cheaper
                 entry = {'op': 'meta', 'area': area.name, 'form': form, 'life': life, 'lives': args.meta_lives,
-                         'budget': args.budget,
-                         'mutation': {'knob': knob, 'before': before, 'after': value, 'votes': votes},
+                         'budget': args.budget, 'mutation': mutation,
                          'cost': {'a': cost_a, 'b': cost_b}, 'meta': meta, 'adopted': adopted,
-                         'rule': 'better' if better else 'cheaper' if cheaper else 'declined', 'margin': MARGIN}
+                         'rule': 'better' if better else 'cheaper' if cheaper else 'declined', 'margin': MARGIN,
+                         **({'pooled': pooled} if pooled else {})}
                 seed.adopt(b if adopted else a, a if adopted else b, entry)
-                print(f'  meta: {meta["a"]} -> {meta["b"]} on {meta["worlds"]} worlds [{lo:+.1f}, {hi:+.1f}] per world, '
-                      f'proof cost {ca / 1e6:.1f}M vs {cb / 1e6:.1f}M: {knob}={value} '
+                print(f'  meta: {meta["a"]} -> {meta["b"]} on {meta["worlds"]} worlds'
+                      f'{" (pooled over %d tests, %d worlds)" % (pooled["tests"], pooled["worlds"]) if pooled else ""} '
+                      f'[{lo:+.1f}, {hi:+.1f}] per world, proof cost {ca / 1e6:.1f}M vs {cb / 1e6:.1f}M: {knob}={value} '
                       f'{"ADOPTED (" + entry["rule"] + ")" if adopted else "declined"}', flush=True)
         else:
             if args.meta_every and seed.lives(area.name) % args.meta_every == 0:

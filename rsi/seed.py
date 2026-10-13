@@ -444,9 +444,27 @@ class Seed:
         diff = np.array(hb, dtype=float) - np.array(ha, dtype=float)
         draws = np.random.default_rng(salt).integers(len(diff), size=(boot, len(diff)))
         means = diff[draws].mean(axis=1)
-        return {'salt': salt, 'worlds': len(held), 'a': int(sum(ha)), 'b': int(sum(hb)),
+        return {'salt': salt, 'worlds': len(held), 'a': int(sum(ha)), 'b': int(sum(hb)), 'ha': ha, 'hb': hb,
                 'mean': float(diff.mean()), 'scans': 2 * len(held) * STREAM * budget,
                 'interval': [float(np.percentile(means, 2.5)), float(np.percentile(means, 97.5))]}
+
+    def pooled(self, form, mutation, diff, cost_a, cost_b, salt, upto=None, boot=4000):
+        """This meta-proof pooled with every earlier declined test of the same
+        mutation in the form: the per-world differences of all of them, paired
+        within each test, and the costs summed. None if this is the first."""
+        earlier = [e for e in self.state['ledger'][:upto]
+                   if e['op'] == 'meta' and not e.get('noop') and e['form'] == form and not e['adopted'] and 'ha' in e['meta']
+                   and all(e['mutation'][k] == mutation[k] for k in ('knob', 'before', 'after'))]
+        if not earlier:
+            return None
+        diff_all = np.concatenate([np.array(e['meta']['hb'], dtype=float) - np.array(e['meta']['ha'], dtype=float)
+                                   for e in earlier] + [diff])
+        draws = np.random.default_rng(salt).integers(len(diff_all), size=(boot, len(diff_all)))
+        means = diff_all[draws].mean(axis=1)
+        return {'tests': len(earlier) + 1, 'worlds': int(len(diff_all)), 'mean': float(diff_all.mean()),
+                'interval': [float(np.percentile(means, 2.5)), float(np.percentile(means, 97.5))],
+                'cost': {'a': cost_a + sum(e['cost']['a']['proof_scans'] for e in earlier),
+                         'b': cost_b + sum(e['cost']['b']['proof_scans'] for e in earlier)}}
 
     def adopt(self, winner, loser, entry):
         """Take the winning branch's state, ledger and snapshots; charge what the

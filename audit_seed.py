@@ -127,6 +127,12 @@ def main():
             interval = [float(np.percentile(means, 2.5)), float(np.percentile(means, 97.5))]
             ok = (sum(ha) == e['meta']['a'] and sum(hb) == e['meta']['b']
                   and np.allclose(interval, e['meta']['interval'], atol=1e-9))
+            if 'pooled' in e:         # the verdict pooled earlier tests of the same mutation
+                pooled = seed.pooled(e['form'], e['mutation'], diff, e['cost']['a']['proof_scans'],
+                                     e['cost']['b']['proof_scans'], e['meta']['salt'], upto=i)
+                ok = (ok and pooled is not None and pooled['tests'] == e['pooled']['tests']
+                      and np.allclose(pooled['interval'], e['pooled']['interval'], atol=1e-9)
+                      and pooled['cost'] == e['pooled']['cost'])
             meta_ok &= ok
             metas.append({'ledger': i, 'mutation': e['mutation'], 'adopted': e['adopted'],
                           'a': [sum(ha), e['meta']['a']], 'b': [sum(hb), e['meta']['b']], 'ok': bool(ok)})

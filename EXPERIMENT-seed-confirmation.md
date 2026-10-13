@@ -1381,3 +1381,18 @@ meta-test's power at these horizons is low; pooling repeated tests of the
 same mutation, or lengthening the horizon when votes are strong, is the
 next improvement to the improver's improver.
 
+Pooled meta-proofs (2026-10-12): a repeat test of a mutation the form has
+declined before is judged on all its tests together, the per-world
+differences paired within each test and the costs summed
+(`Seed.pooled`; the auditor recomputes the pooled verdict). Development
+`d_meta6` (644101, str7 15 lives, `--meta-every 3 --meta-lives 2
+--meta-budget 0.5`; `runs_seed_d_meta6.log`): five meta-tests, the last
+two pooled. Patience 2 at life 11, pooled with its test at life 5 (96
+worlds): identical states, pooled cost 39.3M against 41.8M (6% dearer),
+declined. Recurrence 3 at life 14, pooled with life 8: identical, equal
+cost, declined. Life 2: extend_cap 20 by round-robin, declined. Over four
+tests on two seeds patience 2 has now read cheaper once and dearer three
+times on the string form; the pooled verdict stands at declined, which is
+the honest reading. fresh check done, audit not run (the task was stopped by reese during the
+check; nothing restarted).
+

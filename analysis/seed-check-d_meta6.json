@@ -1,0 +1,65 @@
+{
+  "name": "d_meta6",
+  "version": 3,
+  "budget": 1024,
+  "areas": {
+    "str7": {
+      "start": {
+        "budget": 1024,
+        "total": 4712,
+        "by_pool": {
+          "trained": 78.25,
+          "unfamiliar": 51.416666666666664,
+          "untrained": 66.66666666666667
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 6220,
+        "by_pool": {
+          "trained": 89.29166666666667,
+          "unfamiliar": 85.20833333333333,
+          "untrained": 84.66666666666667
+        }
+      },
+      "gain": 1508
+    }
+  },
+  "lives": {
+    "str7": 16
+  },
+  "resource": {
+    "live_scans": 78643200,
+    "proof_scans": 380928000,
+    "invention_tests": 50996
+  },
+  "kept_changes": [
+    {
+      "life": 0,
+      "area": "str7",
+      "change": "language +15 + model g=6 pw=4 from 48 worlds + prior",
+      "gain": 1047,
+      "version": 1
+    },
+    {
+      "life": 1,
+      "area": "str7",
+      "change": "language +1",
+      "gain": 7,
+      "version": 2
+    },
+    {
+      "life": 2,
+      "area": "str7",
+      "change": "prune -10",
+      "gain": 16,
+      "version": 3
+    }
+  ],
+  "invented": {
+    "kept": 6,
+    "by_true_family": {
+      "str:generator": 6
+    }
+  }
+}
