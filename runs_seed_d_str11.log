@@ -1,0 +1,14 @@
+seed d_str11 version 0, area str11, lives there 0, language 306 atoms
+str11 life 0: solved 3191 of 4800; by pool {"trained": 69.8, "unfamiliar": 56.6}; 5 s
+  together: held-out 3252 -> 3936 [+10.9, +17.7] per world KEPT; {"trained": 80.0, "unfamiliar": 75.1, "untrained": 90.9}
+  carried: version 1, language 319, model g=6 pw=4, prior yes, held-out 3936; resource live 4.9M proof 9.8M tests 11379; 42 s
+str11 life 1: solved 3867 of 4800; by pool {"trained": 83.4, "unfamiliar": 71.9}; 8 s
+  model: held-out 4244 -> 4174 [-3.1, +1.2] per world dropped; {"trained": 83.1, "unfamiliar": 88.2, "untrained": 89.5}
+  carried: version 1, language 319, model g=6 pw=4, prior yes, held-out 4244; resource live 9.8M proof 17.2M tests 14754; 23 s
+str11 life 2: solved 3921 of 4800; by pool {"trained": 82.2, "unfamiliar": 80.2}; 6 s
+  together: held-out 4232 -> 4204 [-3.3, +2.2] per world dropped; {"trained": 87.4, "unfamiliar": 84.5, "untrained": 90.9}
+  prune: held-out 4232 -> 4244 [+0.0, +0.6] per world KEPT; {"trained": 87.8, "unfamiliar": 86.5, "untrained": 90.9}
+  model: held-out 4000 -> 4085 [+0.4, +3.6] per world KEPT; {"trained": 81.6, "unfamiliar": 80.9, "untrained": 92.8}
+  carried: version 3, language 312, model g=8 pw=4, prior yes, held-out 4085; resource live 14.7M proof 39.3M tests 17214; 43 s
+kept: [{"life": 0, "area": "str11", "change": "language +13 + model g=6 pw=4 from 48 worlds + prior", "gain": 684, "version": 1}, {"life": 2, "area": "str11", "change": "prune -7", "gain": 12, "version": 2}, {"life": 2, "area": "str11", "change": "model g=8 pw=4 from 144 worlds + prior", "gain": 85, "version": 3}]
+exit 0

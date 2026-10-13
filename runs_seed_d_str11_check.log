@@ -1,0 +1,49 @@
+str11 fresh held-out 4604 -> 6277
+{
+ "name": "d_str11",
+ "version": 3,
+ "budget": 1024,
+ "areas": {
+  "str11": {
+   "start": {
+    "budget": 1024,
+    "total": 4604,
+    "by_pool": {
+     "trained": 67.875,
+     "unfamiliar": 49.125,
+     "untrained": 74.83333333333333
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 6277,
+    "by_pool": {
+     "trained": 84.70833333333333,
+     "unfamiliar": 83.83333333333333,
+     "untrained": 93.0
+    }
+   },
+   "gain": 1673
+  }
+ },
+ "lives": {
+  "str11": 3
+ },
+ "resource": {
+  "live_scans": 14745600,
+  "proof_scans": 39321600,
+  "invention_tests": 17214
+ },
+ "invented": {
+  "kept": 6,
+  "by_true_family": {
+   "str:generator": 6
+  }
+ }
+}
+usage: audit_seed.py [-h] [--name NAME] [--versions VERSIONS]
+audit_seed.py: error: unrecognized arguments: d_str11
+1 language +13 + model g=6 pw=4 from 48 worlds + prior ok
+2 prune -7 ok
+3 model g=8 pw=4 from 144 worlds + prior ok
+{"name": "d_str11", "passed": true}

@@ -1159,3 +1159,23 @@ the confirmation schedule lives it first. No cumulative-drift guard is
 needed on this evidence; the per-candidate 2% check on 24 worlds has held
 in the schedule as run.
 
+### Development: the eighth area, str11 (`seeds/d_str11`, `runs_seed_d_str11.log`, 2026-10-12)
+
+str11 is StringArea with env_seed 11: the same 58 keys and catalog as str7
+and a different random split of the seven key families into trained,
+untrained and unfamiliar triples. No new code. Three lives of 48 worlds on
+644101 (held-out 48): life 0 kept a language extension of 13 keys with a
+model and prior (held-out 3,252 -> 3,936, +10.9 to +17.7 per world); life 1
+kept nothing (model -3.1 to +1.2); life 2 kept a prune of 7 keys (+0.0 to
++0.6) and a refit model (+0.4 to +3.6). Fresh check (24 worlds per pool,
+salt 999): 4,604 -> 6,277 (+36%); trained 67.9 -> 84.7, unfamiliar 49.1 ->
+83.8, untrained 74.8 -> 93.0 per world. Six invented keys survive, all in
+the generator's universe and the same six the v8 seeds found on str7:
+M(UPPER,1..3,end) and M(LOWER,1..3,start). Audit 3 of 3. Proof scans
+2.67x live over three lives.
+
+Draft v11, NOT frozen until the v10 verdict: the v10 schedule plus three
+str11 lives after str7 (24 lives, eight areas, two forms), cost gate 2.5 +
+0.25 x 5 = 3.75x; the string form's cross-area check then has a second
+lived area to fire on (str7 and str11 check each other at 2% on 24 worlds).
+

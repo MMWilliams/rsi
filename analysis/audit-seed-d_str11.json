@@ -1,0 +1,78 @@
+{
+  "name": "d_str11",
+  "replayed": [
+    {
+      "version": 1,
+      "area": "str11",
+      "change": "language +13 + model g=6 pw=4 from 48 worlds + prior",
+      "carried": [
+        3252,
+        3252
+      ],
+      "candidate": [
+        3936,
+        3936
+      ],
+      "interval": [
+        [
+          10.854166666666666,
+          17.729166666666668
+        ],
+        [
+          10.854166666666666,
+          17.729166666666668
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 2,
+      "area": "str11",
+      "change": "prune -7",
+      "carried": [
+        4232,
+        4232
+      ],
+      "candidate": [
+        4244,
+        4244
+      ],
+      "interval": [
+        [
+          0.041666666666666664,
+          0.5833333333333334
+        ],
+        [
+          0.041666666666666664,
+          0.5833333333333334
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 3,
+      "area": "str11",
+      "change": "model g=8 pw=4 from 144 worlds + prior",
+      "carried": [
+        4000,
+        4000
+      ],
+      "candidate": [
+        4085,
+        4085
+      ],
+      "interval": [
+        [
+          0.4166666666666667,
+          3.5625
+        ],
+        [
+          0.4166666666666667,
+          3.5625
+        ]
+      ],
+      "ok": true
+    }
+  ],
+  "passed": true
+}
