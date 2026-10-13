@@ -1393,6 +1393,6 @@ declined. Recurrence 3 at life 14, pooled with life 8: identical, equal
 cost, declined. Life 2: extend_cap 20 by round-robin, declined. Over four
 tests on two seeds patience 2 has now read cheaper once and dearer three
 times on the string form; the pooled verdict stands at declined, which is
-the honest reading. fresh check done, audit not run (the task was stopped by reese during the
+the honest reading. fresh check done, audit interrupted at its fourth meta-proof (3 proofs and 3 meta-proofs had replayed) (the task was stopped by reese during the
 check; nothing restarted).
 

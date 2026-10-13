@@ -303,7 +303,7 @@ are for replication only. Nothing proven is reset between generations.
       (cap 20 by round-robin, patience 2, recurrence 3), all declined; patience 2 read
       12% DEARER here vs 15% cheaper in d_meta3: low power at short horizons. Fresh +32%,
       audit clean, cost 5.1x. POOLING BUILT (Seed.pooled, audited): d_meta6 (str7 15 lives)
-      pooled patience 2 over 2 tests (6% dearer, declined) and recurrence 3 (equal); fresh check done, audit not run;
+      pooled patience 2 over 2 tests (6% dearer, declined) and recurrence 3 (equal); fresh check done, audit interrupted at its fourth meta-proof (3 proofs and 3 meta-proofs had replayed);
       task stopped by reese during the check. NEXT: a budget relative to living; horizon
       scaling with vote strength; then a
       sealed version with --meta-every in the schedule. Keep confirm_seed.sh unchanged
