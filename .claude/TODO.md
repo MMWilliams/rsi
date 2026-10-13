@@ -270,7 +270,11 @@ are for replication only. Nothing proven is reset between generations.
       StringArea(env_seed 11), same 58 keys, different trained/untrained split, no new
       code. DEV d_str11 (644101, 3 lives): fresh 4,604 -> 6,277 (+36%), trained 67.9 ->
       84.7, unfamiliar 49.1 -> 83.8, untrained 74.8 -> 93.0; 6 keys invented = the same
-      six withheld positions the v8 seeds found on str7; audit 3/3; 2.67x. Draft v11 =
+      six withheld positions the v8 seeds found on str7; audit 3/3; 2.67x. Then 2 str7
+      lives on the same state: the cross-area check fired INSIDE the string form for the
+      first time (str7 language candidate on str11's 24-world set 3,096 -> 3,066, -1.0%,
+      accepted; fresh str11 6,277 -> 6,158, -1.9%); fresh str7 4,712 -> 6,154 (+31%),
+      str11 +34%; 11 of 12 withheld positions + 10 novel keys; audit 4/4; 2.90x. Draft v11 =
       v10 schedule + str11 3 lives (24 lives, 8 areas), cost gate 3.75x; FREEZE ONLY
       after the v10 verdict (c20 rerun). Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for

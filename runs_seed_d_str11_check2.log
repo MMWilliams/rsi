@@ -1,0 +1,74 @@
+str11 fresh held-out 4604 -> 6158
+str7 fresh held-out 4712 -> 6154
+{
+ "name": "d_str11",
+ "version": 4,
+ "budget": 1024,
+ "areas": {
+  "str11": {
+   "start": {
+    "budget": 1024,
+    "total": 4604,
+    "by_pool": {
+     "trained": 67.875,
+     "unfamiliar": 49.125,
+     "untrained": 74.83333333333333
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 6158,
+    "by_pool": {
+     "trained": 84.66666666666667,
+     "unfamiliar": 79.83333333333333,
+     "untrained": 92.08333333333333
+    }
+   },
+   "gain": 1554
+  },
+  "str7": {
+   "start": {
+    "budget": 1024,
+    "total": 4712,
+    "by_pool": {
+     "trained": 78.25,
+     "unfamiliar": 51.416666666666664,
+     "untrained": 66.66666666666667
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 6154,
+    "by_pool": {
+     "trained": 89.08333333333333,
+     "unfamiliar": 82.66666666666667,
+     "untrained": 84.66666666666667
+    }
+   },
+   "gain": 1442
+  }
+ },
+ "lives": {
+  "str11": 3,
+  "str7": 2
+ },
+ "resource": {
+  "live_scans": 24576000,
+  "proof_scans": 71270400,
+  "invention_tests": 23689
+ },
+ "invented": {
+  "kept": 21,
+  "by_true_family": {
+   "str:generator": 11,
+   "str:novel": 10
+  }
+ }
+}
+check exit 0
+1 language +13 + model g=6 pw=4 from 48 worlds + prior ok
+2 prune -7 ok
+3 model g=8 pw=4 from 144 worlds + prior ok
+4 language +16 + prune -1 + model g=6 pw=3 from 48 worlds + prior ok
+{"name": "d_str11", "passed": true}
+audit exit 0

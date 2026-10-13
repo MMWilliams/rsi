@@ -1179,3 +1179,20 @@ str11 lives after str7 (24 lives, eight areas, two forms), cost gate 2.5 +
 0.25 x 5 = 3.75x; the string form's cross-area check then has a second
 lived area to fire on (str7 and str11 check each other at 2% on 24 worlds).
 
+Two str7 lives on the same state (`runs_seed_d_str11_str7.log`), the first
+time two lived areas of the string form check each other. str7 life 0 kept
+a language extension of 16 keys with a prune of 1, a model and a prior
+(held-out 3,162 -> 3,972, +12.1 to +22.0 per world); the cross-area check
+scored that candidate on str11's 24-world set at 3,096 -> 3,066 (-1.0%,
+inside the 2% tolerance). Life 1 kept nothing (three candidates at -1.4 to
++0.6). Fresh check of both areas: str7 4,712 -> 6,154 (+31%; trained 78.2
+-> 89.1, unfamiliar 51.4 -> 82.7, untrained 66.7 -> 84.7); str11 4,604 ->
+6,158 (+34%; 6,277 before the str7 lives, so the str7 change cost it 1.9%
+on the fresh set, the direction and size the check read). 21 invented
+keys kept: eleven of the twelve withheld positions (all but
+M(UPPER,1,end), which the str7 prune removed) and ten outside the
+generator's universe (C-16 to C-13, C13 to C16, M(WORD,4,start),
+M(LOWER,4,start)). Audit 4 of 4. Proof scans 2.90x live over five lives.
+The check works inside the string form as it does in the character form;
+its tolerance is per candidate, as before.
+

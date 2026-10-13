@@ -1,0 +1,11 @@
+seed d_str11 version 3, area str7, lives there 0, language 312 atoms
+str7 life 0: solved 3309 of 4800; by pool {"trained": 67.6, "unfamiliar": 73.0}; 5 s
+  together: held-out 3162 -> 3972 [+12.1, +22.0] per world KEPT; {"trained": 84.2, "unfamiliar": 82.1, "untrained": 81.9} elsewhere {"str11": "3096->3066"}
+  carried: version 4, language 327, model g=6 pw=3, prior yes, held-out 3972; resource live 19.7M proof 56.5M tests 22969; 33 s
+str7 life 1: solved 4060 of 4800; by pool {"trained": 86.1, "unfamiliar": 80.2}; 7 s
+  together: held-out 4126 -> 4208 [-1.4, +0.6] per world dropped; {"trained": 88.2, "unfamiliar": 86.6, "untrained": 88.1}
+  extend: held-out 4126 -> 4128 [-0.1, +0.1] per world dropped; {"trained": 85.3, "unfamiliar": 86.3, "untrained": 86.4}
+  model: held-out 4126 -> 4206 [-1.4, +0.6] per world dropped; {"trained": 88.2, "unfamiliar": 86.5, "untrained": 88.1}
+  carried: version 4, language 327, model g=6 pw=3, prior yes, held-out 4126; resource live 24.6M proof 71.3M tests 23689; 30 s
+kept: [{"life": 0, "area": "str11", "change": "language +13 + model g=6 pw=4 from 48 worlds + prior", "gain": 684, "version": 1}, {"life": 2, "area": "str11", "change": "prune -7", "gain": 12, "version": 2}, {"life": 2, "area": "str11", "change": "model g=8 pw=4 from 144 worlds + prior", "gain": 85, "version": 3}, {"life": 0, "area": "str7", "change": "language +16 + prune -1 + model g=6 pw=3 from 48 worlds + prior", "gain": 810, "version": 4}]
+run exit 0

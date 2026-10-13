@@ -1,6 +1,6 @@
 {
   "name": "d_str11",
-  "version": 3,
+  "version": 4,
   "budget": 1024,
   "areas": {
     "str11": {
@@ -15,23 +15,45 @@
       },
       "carried": {
         "budget": 1024,
-        "total": 6277,
+        "total": 6158,
         "by_pool": {
-          "trained": 84.70833333333333,
-          "unfamiliar": 83.83333333333333,
-          "untrained": 93.0
+          "trained": 84.66666666666667,
+          "unfamiliar": 79.83333333333333,
+          "untrained": 92.08333333333333
         }
       },
-      "gain": 1673
+      "gain": 1554
+    },
+    "str7": {
+      "start": {
+        "budget": 1024,
+        "total": 4712,
+        "by_pool": {
+          "trained": 78.25,
+          "unfamiliar": 51.416666666666664,
+          "untrained": 66.66666666666667
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 6154,
+        "by_pool": {
+          "trained": 89.08333333333333,
+          "unfamiliar": 82.66666666666667,
+          "untrained": 84.66666666666667
+        }
+      },
+      "gain": 1442
     }
   },
   "lives": {
-    "str11": 3
+    "str11": 3,
+    "str7": 2
   },
   "resource": {
-    "live_scans": 14745600,
-    "proof_scans": 39321600,
-    "invention_tests": 17214
+    "live_scans": 24576000,
+    "proof_scans": 71270400,
+    "invention_tests": 23689
   },
   "kept_changes": [
     {
@@ -54,12 +76,20 @@
       "change": "model g=8 pw=4 from 144 worlds + prior",
       "gain": 85,
       "version": 3
+    },
+    {
+      "life": 0,
+      "area": "str7",
+      "change": "language +16 + prune -1 + model g=6 pw=3 from 48 worlds + prior",
+      "gain": 810,
+      "version": 4
     }
   ],
   "invented": {
-    "kept": 6,
+    "kept": 21,
     "by_true_family": {
-      "str:generator": 6
+      "str:generator": 11,
+      "str:novel": 10
     }
   }
 }
