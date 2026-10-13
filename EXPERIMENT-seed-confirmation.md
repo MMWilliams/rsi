@@ -1325,3 +1325,23 @@ only on a shadow-branch comparison; the comparison harness, its schedule
 meta-tests so a sealed schedule stays near the cost gate, decide per-form
 versus shared procedures, then a frozen version with the meta-level on.
 
+Per-form procedures and a meta budget (2026-10-12). The procedure is now
+one set of knobs per form (`state['procedure']['character' | 'string']`;
+older seeds migrate by copying their single procedure to both), since the
+sealed ledgers show the forms differ in what pays (model alone kept 35% of
+the time in the character form, 0 of 7 in strings). `--meta-budget F`
+rations the meta-level: a mutation is tested only while the scans charged
+to testing the procedure (the branch not taken plus the meta sets, now
+recorded per meta entry as `charged`) are below F of all proof scans.
+
+Development `d_meta4` (644101, str7 6 lives then mech, `--meta-lives 2
+--meta-budget 0.25`, meta every third string life and every second
+character life; `runs_seed_d_meta4.log`; stopped by the host for low
+memory in mech life 4, not restarted). Strings: one meta-test at life 2
+(extend_cap 40 -> 20, identical states, equal cost, declined; 51.6M
+charged), after which the budget gate held every later test back, through
+mech life 3 (the gate reads charged 51.6M against 0.25 x proof scans, 31M
+to 47M). Growth continued under the gate: mech held-out 753 -> 1,004 (life
+0), then a prune and a model kept; the string model fallback was retired at
+life 5 by level 1. Audit and fresh check pending.
+

@@ -294,7 +294,11 @@ are for replication only. Nothing proven is reset between generations.
       d_meta3 (str7, meta every 3rd life, 3-life branches): FIRST ADOPTION, patience 4 -> 2
       (identical states, 15% cheaper); extend_cap 20 and probation 2 declined; audit 3/3 +
       meta 3/3; fresh +32%; cost 5.5x. Procedure is shared across forms (open question).
-      NEXT: evidence-driven mutation choice; ration meta-tests for a sealed schedule; then a
+      BUILT per-form procedures + --meta-budget F (meta scans <= F x proof scans). d_meta4
+      (str7 6 + mech, --meta-lives 2 --meta-budget 0.25): gate held after one 51.6M test;
+      growth continued; KILLED by host (UnrealEditor 28 GB + Godot 10 GB) at mech life 4;
+      resume only when reese asks (seed_run d_meta4 mech --lives 2 then drawn7 2, check,
+      audit). NEXT: evidence-driven mutation choice; a budget relative to living; then a
       sealed version with --meta-every in the schedule. Keep confirm_seed.sh unchanged
       (default --meta-every 0 = v10 behaviour). Previously: freeze v11 only
       after the v10 verdict (c20 rerun). Remaining

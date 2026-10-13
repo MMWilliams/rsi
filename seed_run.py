@@ -151,6 +151,8 @@ def main():
     ap.add_argument('--held-out', type=int, default=48, help='worlds per acceptance test, over all pools')
     ap.add_argument('--meta-every', type=int, default=0, help='test a change to the procedure every Nth life; 0 never')
     ap.add_argument('--meta-lives', type=int, default=1, help='lives each branch runs before the meta set scores them')
+    ap.add_argument('--meta-budget', type=float, default=0,
+                    help='test the procedure only while its tests have cost less than this share of all proof scans; 0 no limit')
     args = ap.parse_args()
     warnings.filterwarnings('ignore')
     faulthandler.dump_traceback_later(600, repeat=True)   # where the main process is, if it stalls
@@ -167,7 +169,7 @@ def main():
     cands = candidates()
     print(f'seed {seed.state["name"]} version {seed.state["version"]}, area {area.name}, lives there '
           f'{seed.lives(area.name)}, language {len(seed.state["language"])} atoms, '
-          f'procedure {json.dumps(seed.state["procedure"])}', flush=True)
+          f'procedure {json.dumps(seed.procedure(form_of(area.spec)))}', flush=True)
 
     target = seed.lives(area.name) + args.lives
     while seed.lives(area.name) < target:
@@ -177,12 +179,13 @@ def main():
         print(f'{area.name} life {life}: solved {entry["total"]} of {args.worlds * 100}; by pool '
               f'{fmt(entry)}; {time.time() - t:.0f} s', flush=True)
         form = form_of(area.spec)
-        if args.meta_every and seed.lives(area.name) % args.meta_every == 0:
+        within = not args.meta_budget or seed.meta_spent() < args.meta_budget * seed.state['resource']['proof_scans']
+        if args.meta_every and seed.lives(area.name) % args.meta_every == 0 and within:
             knob, value = seed.mutation(form)
-            before = seed.state['procedure'][knob]
+            before = seed.procedure(form)[knob]
             print(f'  meta: {knob} {before} -> {value}', flush=True)
             a, b = seed.branch('a'), seed.branch('b')
-            b.state['procedure'][knob] = value
+            b.state['procedure'][form][knob] = value
             b.save()
             prop_a = propose(a, area, worlds, records, cands, '[a] ')
             prop_b = propose(b, area, worlds, records, cands, '[b] ')
@@ -224,13 +227,16 @@ def main():
                       f'proof cost {ca / 1e6:.1f}M vs {cb / 1e6:.1f}M: {knob}={value} '
                       f'{"ADOPTED (" + entry["rule"] + ")" if adopted else "declined"}', flush=True)
         else:
+            if args.meta_every and seed.lives(area.name) % args.meta_every == 0:
+                print(f'  meta: budget spent ({seed.meta_spent() / 1e6:.1f}M of '
+                      f'{args.meta_budget * seed.state["resource"]["proof_scans"] / 1e6:.1f}M); no test', flush=True)
             phase(seed, area, worlds, records, cands, args.budget, args.held_out)
         a_ = seed.state['areas'][area.name]
         r = seed.state['resource']
         print(f'  carried: version {seed.state["version"]}, language {len(seed.state["language"])}, '
               f'model {"g=%d pw=%d" % (a_["model"]["groups"], a_["model"].get("per_world", 3)) if a_["model"] else "no"}, '
               f'prior {"yes" if a_["prior"] else "no"}, held-out {a_["held_out_score"]["total"]}; '
-              f'procedure {json.dumps(seed.state["procedure"])}; '
+              f'procedure {json.dumps(seed.procedure(form))}; '
               f'resource live {r["live_scans"] / 1e6:.1f}M proof {r["proof_scans"] / 1e6:.1f}M '
               f'tests {r["invention_tests"]}; {time.time() - t:.0f} s', flush=True)
     print('kept:', json.dumps(seed.state['kept'][-12:]), flush=True)

@@ -229,7 +229,9 @@ EXTENSION_SALT = 500     # an extension set's salt is its proof's salt plus this
 META_SALT = 5000         # meta sets, on which two branches of the seed are compared
 FALLBACK_MENU = ('model', 'prune', 'extend', 'extend+model')   # tested alone after the combination fails
 REPLACES = {'extend': 'extend+model'}                           # what a retired fallback gives way to
-PROCEDURE = {'patience': 4, 'probation': 4, 'extend_cap': 40, 'recurrence': 2}   # the improver's knobs
+KNOB_DEFAULTS = {'patience': 4, 'probation': 4, 'extend_cap': 40, 'recurrence': 2}   # the improver's knobs
+FORMS = ('character', 'string')
+PROCEDURE = {form: dict(KNOB_DEFAULTS) for form in FORMS}                         # one procedure per form
 KNOBS = {'patience': (2, 4, 8), 'probation': (2, 4, 8), 'extend_cap': (20, 40, 80), 'recurrence': (2, 3)}
 
 
@@ -253,7 +255,7 @@ class Seed:
                           'language': [list(a) for a in language],
                           'initial_language': [list(a) for a in language],
                           'experience': [], 'areas': {}, 'inventions': {},
-                          'kept': [], 'ledger': [], 'procedure': dict(PROCEDURE),
+                          'kept': [], 'ledger': [], 'procedure': {f: dict(KNOB_DEFAULTS) for f in FORMS},
                           'resource': {'live_scans': 0, 'proof_scans': 0, 'invention_tests': 0}}
             self.save()
 
@@ -275,7 +277,10 @@ class Seed:
             for e in s['ledger']:
                 e.setdefault('area', 'mech')
             changed = True
-        s.setdefault('procedure', dict(PROCEDURE))   # in memory; written with the next real change
+        s.setdefault('procedure', {f: dict(KNOB_DEFAULTS) for f in FORMS})   # in memory; written with the next real change
+        if 'patience' in s['procedure']:              # one procedure for both forms, before 2026-10-12
+            s['procedure'] = {f: dict(s['procedure']) for f in FORMS}
+            changed = True
         if s.get('seed') is None and seed is not None:
             s['seed'] = seed
             changed = True
@@ -312,6 +317,13 @@ class Seed:
 
     # -- the improver as state ------------------------------------------------
 
+    def procedure(self, form):
+        return self.state['procedure'][form]
+
+    def meta_spent(self):
+        """Scans charged so far to testing the procedure itself."""
+        return sum(e.get('charged', 0) for e in self.state['ledger'] if e['op'] == 'meta')
+
     def forms(self):
         return {name: form_of(a['spec']) for name, a in self.state['areas'].items() if a.get('spec')}
 
@@ -322,8 +334,8 @@ class Seed:
         again once every `probation` lives of the form; an extension retired
         on its own gives way to the extension with the model. A pure function
         of the ledger up to `upto`, so an auditor can recompute it."""
-        patience = self.state['procedure']['patience'] if patience is None else patience
-        probation = self.state['procedure']['probation'] if probation is None else probation
+        patience = self.procedure(form)['patience'] if patience is None else patience
+        probation = self.procedure(form)['probation'] if probation is None else probation
         forms = self.forms()
         lives, rejections, retired = 0, {}, {}
         for e in self.state['ledger'][:upto]:
@@ -361,7 +373,7 @@ class Seed:
         forms = self.forms()
         lives = sum(1 for e in self.state['ledger'] if e['op'] == 'live' and forms.get(e['area']) == form)
         knob = list(KNOBS)[(lives - 1) % len(KNOBS)]
-        current = self.state['procedure'][knob]
+        current = self.procedure(form)[knob]
         others = [v for v in KNOBS[knob] if v != current]
         tried = sum(1 for e in self.state['ledger'] if e['op'] == 'meta' and e['mutation']['knob'] == knob
                     and forms.get(e['area']) == form)
@@ -401,9 +413,10 @@ class Seed:
             shutil.copyfile(f, self.path / 'versions' / f.name)
         self.state = winner.state
         r = self.state['resource']
-        r['proof_scans'] += (loser.state['resource']['live_scans'] - base['live_scans']
-                             + loser.state['resource']['proof_scans'] - base['proof_scans']
-                             + entry['meta']['scans'])
+        charged = (loser.state['resource']['live_scans'] - base['live_scans']
+                   + loser.state['resource']['proof_scans'] - base['proof_scans'] + entry['meta']['scans'])
+        r['proof_scans'] += charged
+        entry['charged'] = charged
         r['invention_tests'] += loser.state['resource']['invention_tests'] - base['invention_tests']
         entry.update(winner_version=self.state['version'], loser_snapshot=f'meta{k}_loser.json',
                      experience_len=len(winner.state['experience']))   # both branches had this much
@@ -509,8 +522,9 @@ class Seed:
         top `share` of this life's worlds by stuck count, never the easy ones.
         The cap on atoms per life and the recurrence an atom needs are the
         procedure's."""
-        cap, recurrence = self.state['procedure']['extend_cap'], self.state['procedure']['recurrence']
-        if worlds and 'tasks' in worlds[0]:
+        form = 'string' if worlds and 'tasks' in worlds[0] else 'character'
+        cap, recurrence = self.procedure(form)['extend_cap'], self.procedure(form)['recurrence']
+        if form == 'string':
             from .seed_string import extend_string
             return extend_string(self, worlds, records, cap=cap)
         stuck = np.array([r['stuck'] for r in records])
