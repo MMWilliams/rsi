@@ -725,7 +725,7 @@ change in its own lives, from the language and models the other areas
 built, which is the carried-forward transfer the programme set out to
 show.
 
-## Eighteen sealed seeds, summary
+## Nineteen sealed seeds, summary
 
 | version | seeds | areas | growth | safety | cost | audit |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -738,11 +738,13 @@ show.
 | v7 | 919112, 919113 | 6 | pass, pass | pass, pass | pass, pass (3.25x gate) | pass, pass |
 | v8 | 919114, 919115 | 7, two forms | pass, pass | pass, pass | pass, pass (3.5x gate) | pass, pass |
 | v9 | 919116, 919117 | 7, two forms | FAIL (drawn7 +8%), pass | pass, pass | pass, pass (3.5x gate) | pass, pass |
+| v10 | 919118, 919119 | 7, two forms | pass, (rerun pending) | pass, - | pass (2.92x), - | pass, - |
 
-156 acceptances across eighteen seeds; every one stands on replay. Growth of
-at least 15% in every area on sixteen of eighteen seeds (the misses: 919108
+171 acceptances across nineteen seeds; every one stands on replay. Growth of
+at least 15% in every area on seventeen of nineteen seeds (the misses: 919108
 under the retired v5 guard, 919116 under v9 in drawn7) and no pool below
-90% on seventeen of eighteen (919108).
+90% on eighteen of nineteen (919108). Seed 919119 (v10) was interrupted by
+the host at life 20 of 21 and awaits a clean rerun.
 
 
 ## Protocol v8 (FROZEN 2026-10-12, after the v7 pass)

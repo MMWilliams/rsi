@@ -258,8 +258,12 @@ are for replication only. Nothing proven is reset between generations.
       rerun (rm seeds/c20, runs_seed_conf_c20.log; sh confirm_seed.sh c20 919119),
       ~3 h; a resume would skip one life's proofs and need recording as a deviation.
       Paper (17 pp, 100 pairs, table through 919118) + Doc (rev 76, chart 100 rows)
-      updated through v9 and the first v10 seed 2026-10-12. After c20: v10 verdict,
-      then paper/doc once more. Untrained-pool drift CHECKED across the 19 sealed seeds:
+      updated through v9 and the first v10 seed 2026-10-12. PLAIN PAPER
+      paper/seed-growth-plain.tex/.pdf (21 pp, zero prior knowledge: every term defined,
+      glossary, version table) written 2026-10-12 at reese's request; keep it in step
+      with the technical paper after each verdict. Stray mangled lines (heredoc )
+      removed from seed-growth.tex. After c20: v10 verdict, then both papers and the
+      Doc once more. Untrained-pool drift CHECKED across the 19 sealed seeds:
       rose on 17/19 (median 163%), dips only under v2/v5, no relation to other areas'
       language changes; no guard needed (EXPERIMENT note). EIGHTH AREA ready with no new
       code: str11 = StringArea(env_seed 11), a different trained/untrained split over
