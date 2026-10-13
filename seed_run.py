@@ -181,9 +181,9 @@ def main():
         form = form_of(area.spec)
         within = not args.meta_budget or seed.meta_spent() < args.meta_budget * seed.state['resource']['proof_scans']
         if args.meta_every and seed.lives(area.name) % args.meta_every == 0 and within:
-            knob, value = seed.mutation(form)
+            knob, value, votes = seed.mutation(form)
             before = seed.procedure(form)[knob]
-            print(f'  meta: {knob} {before} -> {value}', flush=True)
+            print(f'  meta: {knob} {before} -> {value}; votes {json.dumps(votes)}', flush=True)
             a, b = seed.branch('a'), seed.branch('b')
             b.state['procedure'][form][knob] = value
             b.save()
@@ -193,7 +193,7 @@ def main():
                 # the same proposals under the same fallbacks: the phases would be identical
                 shutil.rmtree(seed.path / 'branches', ignore_errors=True)
                 seed.state['ledger'].append({'op': 'meta', 'area': area.name, 'form': form, 'life': life,
-                                             'mutation': {'knob': knob, 'before': before, 'after': value},
+                                             'mutation': {'knob': knob, 'before': before, 'after': value, 'votes': votes},
                                              'noop': True})
                 print(f'  meta: {knob}={value} changes nothing this life; not tested', flush=True)
                 test(seed, area, *prop_a, args.budget, args.held_out, '')
@@ -219,7 +219,7 @@ def main():
                 adopted = better or cheaper
                 entry = {'op': 'meta', 'area': area.name, 'form': form, 'life': life, 'lives': args.meta_lives,
                          'budget': args.budget,
-                         'mutation': {'knob': knob, 'before': before, 'after': value},
+                         'mutation': {'knob': knob, 'before': before, 'after': value, 'votes': votes},
                          'cost': {'a': cost_a, 'b': cost_b}, 'meta': meta, 'adopted': adopted,
                          'rule': 'better' if better else 'cheaper' if cheaper else 'declined', 'margin': MARGIN}
                 seed.adopt(b if adopted else a, a if adopted else b, entry)

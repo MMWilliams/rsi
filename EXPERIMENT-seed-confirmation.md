@@ -1345,3 +1345,18 @@ to 47M). Growth continued under the gate: mech held-out 753 -> 1,004 (life
 0), then a prune and a model kept; the string model fallback was retired at
 life 5 by level 1. Audit and fresh check pending.
 
+Evidence-driven mutations (2026-10-12, code only, no run yet: memory). The
+meta-producer no longer cycles its knobs blindly, which made most tests
+no-ops. It reads votes from the form's ledger since each knob was last
+tested: patience down for every fallback tested past its second straight
+rejection and rejected again, up for one kept after that; probation down
+for a retired fallback kept on its re-try, up for one rejected; recurrence
+up for every extension rejected on its own, down for every life that could
+propose none; extend_cap up for a kept extension that filled the cap. The
+knob with the most votes moves one step that way; with no votes, the old
+round-robin. The votes are recorded in each meta entry. On the development
+ledgers it proposes recurrence 3 for d_meta4's string form (six rejected
+extensions, three wasted fallback proofs) and patience 2 for d_meta2's
+character form (two wasted fallback proofs), the latter the change d_meta3
+adopted on strings.
+

@@ -24,6 +24,7 @@ from __future__ import annotations
 import copy
 import json
 import multiprocessing
+import re
 import shutil
 import os
 import random
@@ -368,16 +369,63 @@ class Seed:
 
     def mutation(self, form):
         """The meta-producer: one change to the procedure to test this life,
-        round-robin over its knobs by the lives in this form, each to the
-        next value of its cycle."""
+        chosen from the ledger's evidence in this form since each knob was
+        last tested. Votes: patience down for every fallback tested past its
+        second straight rejection and rejected again, up for one kept after
+        that; probation down for a retired fallback kept on its re-try, up
+        for one rejected; recurrence up for every extension rejected, down
+        for every life that could propose none (only extensions tested on
+        their own count); extend_cap up for a kept
+        extension that filled the cap. The knob with the most votes moves
+        one step that way; with no votes, round-robin over the knobs."""
         forms = self.forms()
-        lives = sum(1 for e in self.state['ledger'] if e['op'] == 'live' and forms.get(e['area']) == form)
-        knob = list(KNOBS)[(lives - 1) % len(KNOBS)]
-        current = self.procedure(form)[knob]
-        others = [v for v in KNOBS[knob] if v != current]
-        tried = sum(1 for e in self.state['ledger'] if e['op'] == 'meta' and e['mutation']['knob'] == knob
-                    and forms.get(e['area']) == form)
-        return knob, others[tried % len(others)]     # each attempt on a knob tries another of its values
+        ledger = [e for e in self.state['ledger'] if forms.get(e.get('area')) == form]
+        last = {k: max([i for i, e in enumerate(ledger) if e['op'] == 'meta' and e['mutation']['knob'] == k],
+                       default=-1) for k in KNOBS}
+        proc = self.procedure(form)
+        votes = {k: 0 for k in KNOBS}
+        run, idle, lives, extended = {}, set(), 0, True
+        for i, e in enumerate(ledger):
+            if e['op'] == 'live':
+                if not extended and lives > last['recurrence']:
+                    votes['recurrence'] -= 1
+                lives, extended = i, False
+            elif e['op'] == 'revise':
+                idle = {k for k in e['retired'] if k not in e['active']}
+            elif e['op'] == 'prove':
+                note = e.get('note') or {}
+                parts = note.get('parts', [])
+                if 'extend' in parts:
+                    extended = True
+                    n = int(re.search(r'language \+(\d+)', e['change']).group(1))
+                    if not e['kept'] and note.get('fallback') and i > last['recurrence']:
+                        votes['recurrence'] += 1       # the extension itself, not a combination it was in
+                    if e['kept'] and n >= proc['extend_cap'] and i > last['extend_cap']:
+                        votes['extend_cap'] += 1
+                if note.get('fallback'):
+                    key = '+'.join(sorted(parts))
+                    if run.get(key, 0) >= 2 and i > last['patience']:
+                        votes['patience'] += 1 if e['kept'] else -1
+                    if key in idle and i > last['probation']:
+                        votes['probation'] += -1 if e['kept'] else 1
+                    run[key] = 0 if e['kept'] else run.get(key, 0) + 1
+        if not extended and lives > last['recurrence']:
+            votes['recurrence'] -= 1
+
+        def step(knob, direction):
+            cycle, j = KNOBS[knob], KNOBS[knob].index(proc[knob])
+            return cycle[j + direction] if 0 <= j + direction < len(cycle) else None
+
+        moves = {k: step(k, 1 if v > 0 else -1) for k, v in votes.items() if v}
+        moves = {k: v for k, v in moves.items() if v is not None}
+        if moves:
+            knob = max(moves, key=lambda k: abs(votes[k]))
+            return knob, moves[knob], votes
+        n = sum(1 for e in ledger if e['op'] == 'live')
+        knob = list(KNOBS)[(n - 1) % len(KNOBS)]
+        others = [v for v in KNOBS[knob] if v != proc[knob]]
+        tried = sum(1 for e in ledger if e['op'] == 'meta' and e['mutation']['knob'] == knob)
+        return knob, others[tried % len(others)], votes
 
     def branch(self, label):
         """A copy of this seed in its own folder, to run one phase under a procedure."""
