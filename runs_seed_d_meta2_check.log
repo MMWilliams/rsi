@@ -1,0 +1,77 @@
+mech fresh held-out 1232 -> 2030
+drawn7 fresh held-out 211 -> 334
+{
+ "name": "d_meta2",
+ "version": 6,
+ "budget": 1024,
+ "areas": {
+  "mech": {
+   "start": {
+    "budget": 1024,
+    "total": 1232,
+    "by_pool": {
+     "trained": 25.583333333333332,
+     "unfamiliar": 5.25,
+     "untrained": 20.5
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 2030,
+    "by_pool": {
+     "trained": 45.041666666666664,
+     "unfamiliar": 14.958333333333334,
+     "untrained": 24.583333333333332
+    }
+   },
+   "gain": 798
+  },
+  "drawn7": {
+   "start": {
+    "budget": 1024,
+    "total": 211,
+    "by_pool": {
+     "env": 8.791666666666666
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 334,
+    "by_pool": {
+     "env": 13.916666666666666
+    }
+   },
+   "gain": 123
+  }
+ },
+ "lives": {
+  "mech": 6,
+  "drawn7": 2
+ },
+ "resource": {
+  "live_scans": 39321600,
+  "proof_scans": 344064000,
+  "invention_tests": 603121
+ },
+ "invented": {
+  "kept": 43,
+  "by_true_family": {
+   "xormod": 13,
+   "popcount": 5,
+   "novel": 25
+  }
+ }
+}
+check exit 0
+1 language +40 + model g=6 pw=4 from 48 worlds + prior ok
+2 model g=8 pw=4 from 96 worlds + prior ok
+3 model g=7 pw=3 from 144 worlds + prior ok
+4 language +40 + prune -30 + model g=8 pw=3 from 192 worlds + prior ok
+5 prune -7 ok
+6 model g=7 pw=4 from 48 worlds + prior ok
+meta {'knob': 'extend_cap', 'before': 40, 'after': 80} declined ok
+meta {'knob': 'recurrence', 'before': 2, 'after': 3} declined ok
+meta {'knob': 'extend_cap', 'before': 40, 'after': 80} declined ok
+meta {'knob': 'recurrence', 'before': 2, 'after': 3} declined ok
+{"name": "d_meta2", "passed": true, "policy_ok": true, "meta_ok": true, "meta": [{"ledger": 15, "mutation": {"knob": "extend_cap", "before": 40, "after": 80}, "adopted": false, "a": [1343, 1343], "b": [1343, 1343], "ok": true}, {"ledger": 18, "mutation": {"knob": "recurrence", "before": 2, "after": 3}, "adopted": false, "a": [1118, 1118], "b": [1157, 1157], "ok": true}, {"ledger": 39, "mutation": {"knob": "extend_cap", "before": 40, "after": 80}, "adopted": false, "a": [616, 616], "b": [582, 582], "ok": true}, {"ledger": 46, "mutation": {"knob": "recurrence", "before": 2, "after": 3}, "adopted": false, "a": [670, 670], "b": [670, 670], "ok": true}]}
+audit exit 0

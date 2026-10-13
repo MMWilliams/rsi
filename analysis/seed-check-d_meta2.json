@@ -1,0 +1,106 @@
+{
+  "name": "d_meta2",
+  "version": 6,
+  "budget": 1024,
+  "areas": {
+    "mech": {
+      "start": {
+        "budget": 1024,
+        "total": 1232,
+        "by_pool": {
+          "trained": 25.583333333333332,
+          "unfamiliar": 5.25,
+          "untrained": 20.5
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 2030,
+        "by_pool": {
+          "trained": 45.041666666666664,
+          "unfamiliar": 14.958333333333334,
+          "untrained": 24.583333333333332
+        }
+      },
+      "gain": 798
+    },
+    "drawn7": {
+      "start": {
+        "budget": 1024,
+        "total": 211,
+        "by_pool": {
+          "env": 8.791666666666666
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 334,
+        "by_pool": {
+          "env": 13.916666666666666
+        }
+      },
+      "gain": 123
+    }
+  },
+  "lives": {
+    "mech": 6,
+    "drawn7": 2
+  },
+  "resource": {
+    "live_scans": 39321600,
+    "proof_scans": 344064000,
+    "invention_tests": 603121
+  },
+  "kept_changes": [
+    {
+      "life": 0,
+      "area": "mech",
+      "change": "language +40 + model g=6 pw=4 from 48 worlds + prior",
+      "gain": 249,
+      "version": 1
+    },
+    {
+      "life": 1,
+      "area": "mech",
+      "change": "model g=8 pw=4 from 96 worlds + prior",
+      "gain": 121,
+      "version": 2
+    },
+    {
+      "life": 2,
+      "area": "mech",
+      "change": "model g=7 pw=3 from 144 worlds + prior",
+      "gain": 73,
+      "version": 3
+    },
+    {
+      "life": 3,
+      "area": "mech",
+      "change": "language +40 + prune -30 + model g=8 pw=3 from 192 worlds + prior",
+      "gain": 85,
+      "version": 4
+    },
+    {
+      "life": 4,
+      "area": "mech",
+      "change": "prune -7",
+      "gain": 15,
+      "version": 5
+    },
+    {
+      "life": 0,
+      "area": "drawn7",
+      "change": "model g=7 pw=4 from 48 worlds + prior",
+      "gain": 83,
+      "version": 6
+    }
+  ],
+  "invented": {
+    "kept": 43,
+    "by_true_family": {
+      "xormod": 13,
+      "popcount": 5,
+      "novel": 25
+    }
+  }
+}

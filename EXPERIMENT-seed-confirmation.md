@@ -1268,3 +1268,28 @@ so second-order knobs such as patience show an effect only on the life in
 which a retirement threshold is crossed; longer branch horizons are the
 next step and cost lives. Audit and fresh check pending (memory).
 
+Development `d_meta2` (644101, mech 6 lives then drawn7 2, meta every life,
+no-op detection on; `runs_seed_d_meta2.log`, `runs_seed_d_meta2_check.log`):
+fresh check mech 1,232 -> 2,030 (+65%; trained 25.6 -> 45.0, untrained 20.5
+-> 24.6, unfamiliar 5.2 -> 15.0), drawn7 211 -> 334 (+58%); 43 invented
+atoms kept (13 xormod, 5 popcount, 25 novel). Audit: 6 of 6 proofs, 4 of 4
+meta-proofs, every policy revision. Level 1 fired in the character form:
+`extend` alone was retired after its fourth rejection (mech life 5) and
+both drawn7 lives tested `extend+model` in its place (rejected, -1.9 to
++1.1 and -5.0 to +1.5 per world). Level 2: of eight mutations, four were
+no-ops (patience 8, probation 8, twice each: no retirement threshold was
+crossed) and four ran as branch pairs, all declined by the rule: extend_cap
+80 at mech life 2 ended in the identical state at equal cost; recurrence 3
+at mech life 3 kept a slightly different extension, meta set 1,118 -> 1,157,
+interval -0.1 to +1.8 (not above zero, equal cost); extend_cap 80 at drawn7
+life 0 kept the combination its branch had proved (+0.0 to +5.9) but read
+616 -> 582 on the meta set, mean negative, so cheaper did not count;
+recurrence 3 at drawn7 life 1 ended identical and dearer. Cost: proof
+scans 8.75x living with a meta-test every life (a branch pair doubles a
+phase; v10's protocol runs at 2.3 to 2.9x). Conclusions: the harness and
+its audit work in both forms; the rule declined correctly every time; no
+mutation of these four knobs showed a benefit within one life. Second-order
+knobs (patience, probation) act over lives, not within one, so the next
+increment is a branch horizon of several lives, and the meta-test must be
+rationed (every few lives) or chosen by evidence.
+

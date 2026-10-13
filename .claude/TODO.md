@@ -286,8 +286,11 @@ are for replication only. Nothing proven is reset between generations.
       meta set, adopted if better or no-worse-and-10%-cheaper; auditor replays both).
       d_meta (str7, meta every life) ran 5 lives: all mutations correctly declined as
       no-ops; model fallback retired in life 5; KILLED by the host (memory). Added
-      no-op detection (plans compared before proofs). NEXT: audit d_meta; a character-form
-      dev run (mech 6 lives + drawn7 2, --meta-every 2) once memory allows; multi-life
+      no-op detection (plans compared before proofs). d_meta audits clean (3 proofs, 5
+      meta). d_meta2 (mech 6 + drawn7 2, meta every life): mech fresh +65%, drawn7 +58%,
+      audit 6/6 + 4/4 meta; extend alone RETIRED at mech life 5, extend+model tested in
+      drawn7 (rejected twice); 4 no-ops + 4 real meta-tests, all correctly declined;
+      cost 8.75x (meta every life doubles phases). NEXT: multi-life
       branch horizons for second-order knobs; evidence-driven mutation choice; then a
       sealed version with --meta-every in the schedule. Keep confirm_seed.sh unchanged
       (default --meta-every 0 = v10 behaviour). Previously: freeze v11 only
