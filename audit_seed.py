@@ -28,7 +28,7 @@ def main():
     warnings.filterwarnings('ignore')
     seed = Seed(ROOT / 'seeds' / args.name)
     snaps = seed.path / 'versions'
-    have = {int(p.stem) for p in snaps.glob('*.json')} if snaps.exists() else set()
+    have = {int(p.stem) for p in snaps.glob('*.json') if p.stem.isdigit()} if snaps.exists() else set()
     wanted = [int(v) for v in args.versions.split(',') if v] or sorted(v for v in have if v - 1 in have)
     proofs, lived = {}, 0
     for e in seed.state['ledger']:
@@ -93,7 +93,7 @@ def main():
         print(v, entry['change'], 'ok' if ok else 'MISMATCH', flush=True)
     # every recorded fallback policy follows from the ledger before it, and every
     # meta-proof replays: both branches' final states on the meta set
-    policy_ok, metas = True, []
+    policy_ok, meta_ok, metas = True, True, []
     for i, e in enumerate(seed.state['ledger']):
         if e['op'] == 'revise':
             p = seed.fallback_policy(e['form'], upto=i, patience=e['patience'], probation=e['probation'])
@@ -108,12 +108,14 @@ def main():
             loser = json.loads((snaps / e['loser_snapshot']).read_text())
             a, b = (loser, winner) if e['adopted'] else (winner, loser)
 
+            had = e.get('experience_len', loser['experience_len'])   # version snapshots are rewritten by later lives
+
             def state_of(snap):
                 st = seed.candidate()
                 st['language'] = snap['language']
                 st['areas'] = snap['areas']
                 st['inventions'] = snap['inventions']
-                st['experience'] = st['experience'][:snap['experience_len']]
+                st['experience'] = st['experience'][:had]
                 return st
 
             budget = e['budget']
@@ -125,13 +127,14 @@ def main():
             interval = [float(np.percentile(means, 2.5)), float(np.percentile(means, 97.5))]
             ok = (sum(ha) == e['meta']['a'] and sum(hb) == e['meta']['b']
                   and np.allclose(interval, e['meta']['interval'], atol=1e-9))
-            policy_ok &= ok
+            meta_ok &= ok
             metas.append({'ledger': i, 'mutation': e['mutation'], 'adopted': e['adopted'],
                           'a': [sum(ha), e['meta']['a']], 'b': [sum(hb), e['meta']['b']], 'ok': bool(ok)})
             print('meta', e['mutation'], 'adopted' if e['adopted'] else 'declined', 'ok' if ok else 'MISMATCH', flush=True)
     report['policy_ok'] = policy_ok
+    report['meta_ok'] = meta_ok
     report['meta'] = metas
-    report['passed'] &= policy_ok
+    report['passed'] &= policy_ok and meta_ok
     write_json(ROOT / f'analysis/audit-seed-{args.name}.json', report)
     print(json.dumps({k: v for k, v in report.items() if k != 'replayed'}))
     return 0 if report['passed'] else 1

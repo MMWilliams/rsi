@@ -1,0 +1,9 @@
+1 language +15 + model g=6 pw=4 from 48 worlds + prior ok
+2 language +1 ok
+3 prune -10 ok
+meta {'knob': 'patience', 'before': 4, 'after': 8} declined ok
+meta {'knob': 'probation', 'before': 4, 'after': 8} declined ok
+meta {'knob': 'extend_cap', 'before': 40, 'after': 80} declined ok
+meta {'knob': 'recurrence', 'before': 2, 'after': 3} declined ok
+meta {'knob': 'patience', 'before': 4, 'after': 8} declined ok
+{"name": "d_meta", "passed": true, "policy_ok": true, "meta_ok": true, "meta": [{"ledger": 2, "mutation": {"knob": "patience", "before": 4, "after": 8}, "adopted": false, "a": [3913, 3913], "b": [3913, 3913], "ok": true}, {"ledger": 8, "mutation": {"knob": "probation", "before": 4, "after": 8}, "adopted": false, "a": [3996, 3996], "b": [3996, 3996], "ok": true}, {"ledger": 15, "mutation": {"knob": "extend_cap", "before": 40, "after": 80}, "adopted": false, "a": [4107, 4107], "b": [4107, 4107], "ok": true}, {"ledger": 22, "mutation": {"knob": "recurrence", "before": 2, "after": 3}, "adopted": false, "a": [4080, 4080], "b": [4080, 4080], "ok": true}, {"ledger": 26, "mutation": {"knob": "patience", "before": 4, "after": 8}, "adopted": false, "a": [4147, 4147], "b": [4147, 4147], "ok": true}]}

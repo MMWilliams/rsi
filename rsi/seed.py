@@ -402,7 +402,8 @@ class Seed:
                              + loser.state['resource']['proof_scans'] - base['proof_scans']
                              + entry['meta']['scans'])
         r['invention_tests'] += loser.state['resource']['invention_tests'] - base['invention_tests']
-        entry.update(winner_version=self.state['version'], loser_snapshot=f'meta{k}_loser.json')
+        entry.update(winner_version=self.state['version'], loser_snapshot=f'meta{k}_loser.json',
+                     experience_len=len(self.state['experience']))   # both branches had this much
         self.state['ledger'].append(entry)
         self.save()
         shutil.rmtree(self.path / 'branches', ignore_errors=True)
