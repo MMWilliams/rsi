@@ -1355,8 +1355,9 @@ up for every extension rejected on its own, down for every life that could
 propose none; extend_cap up for a kept extension that filled the cap. The
 knob with the most votes moves one step that way; with no votes, the old
 round-robin. The votes are recorded in each meta entry. On the development
-ledgers it proposes recurrence 3 for d_meta4's string form (six rejected
-extensions, three wasted fallback proofs) and patience 2 for d_meta2's
-character form (two wasted fallback proofs), the latter the change d_meta3
-adopted on strings.
+ledgers it proposes patience 2 for d_meta4's string form (three wasted
+fallback proofs against two extensions rejected on their own) and for
+d_meta2's character form (two wasted fallback proofs), the change d_meta3
+adopted on strings, and recurrence 3 for d_meta3's string form (five
+extensions rejected on their own).
 
