@@ -290,8 +290,11 @@ are for replication only. Nothing proven is reset between generations.
       meta). d_meta2 (mech 6 + drawn7 2, meta every life): mech fresh +65%, drawn7 +58%,
       audit 6/6 + 4/4 meta; extend alone RETIRED at mech life 5, extend+model tested in
       drawn7 (rejected twice); 4 no-ops + 4 real meta-tests, all correctly declined;
-      cost 8.75x (meta every life doubles phases). NEXT: multi-life
-      branch horizons for second-order knobs; evidence-driven mutation choice; then a
+      cost 8.75x (meta every life doubles phases). Multi-life horizons BUILT (--meta-lives).
+      d_meta3 (str7, meta every 3rd life, 3-life branches): FIRST ADOPTION, patience 4 -> 2
+      (identical states, 15% cheaper); extend_cap 20 and probation 2 declined; audit 3/3 +
+      meta 3/3; fresh +32%; cost 5.5x. Procedure is shared across forms (open question).
+      NEXT: evidence-driven mutation choice; ration meta-tests for a sealed schedule; then a
       sealed version with --meta-every in the schedule. Keep confirm_seed.sh unchanged
       (default --meta-every 0 = v10 behaviour). Previously: freeze v11 only
       after the v10 verdict (c20 rerun). Remaining

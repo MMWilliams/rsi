@@ -1,0 +1,136 @@
+{
+  "name": "d_meta3",
+  "replayed": [
+    {
+      "version": 1,
+      "area": "str7",
+      "change": "language +15 + model g=6 pw=4 from 48 worlds + prior",
+      "carried": [
+        2949,
+        2949
+      ],
+      "candidate": [
+        3996,
+        3996
+      ],
+      "interval": [
+        [
+          18.0,
+          26.0
+        ],
+        [
+          18.0,
+          26.0
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 2,
+      "area": "str7",
+      "change": "language +1",
+      "carried": [
+        4089,
+        4089
+      ],
+      "candidate": [
+        4096,
+        4096
+      ],
+      "interval": [
+        [
+          0.020833333333333332,
+          0.3125
+        ],
+        [
+          0.020833333333333332,
+          0.3125
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 3,
+      "area": "str7",
+      "change": "prune -10",
+      "carried": [
+        4083,
+        4083
+      ],
+      "candidate": [
+        4099,
+        4099
+      ],
+      "interval": [
+        [
+          0.0625,
+          0.75
+        ],
+        [
+          0.0625,
+          0.75
+        ]
+      ],
+      "ok": true
+    }
+  ],
+  "passed": true,
+  "policy_ok": true,
+  "meta_ok": true,
+  "meta": [
+    {
+      "ledger": 22,
+      "mutation": {
+        "knob": "extend_cap",
+        "before": 40,
+        "after": 20
+      },
+      "adopted": false,
+      "a": [
+        4147,
+        4147
+      ],
+      "b": [
+        4147,
+        4147
+      ],
+      "ok": true
+    },
+    {
+      "ledger": 35,
+      "mutation": {
+        "knob": "probation",
+        "before": 4,
+        "after": 2
+      },
+      "adopted": false,
+      "a": [
+        4104,
+        4104
+      ],
+      "b": [
+        4104,
+        4104
+      ],
+      "ok": true
+    },
+    {
+      "ledger": 47,
+      "mutation": {
+        "knob": "patience",
+        "before": 4,
+        "after": 2
+      },
+      "adopted": true,
+      "a": [
+        4259,
+        4259
+      ],
+      "b": [
+        4259,
+        4259
+      ],
+      "ok": true
+    }
+  ]
+}

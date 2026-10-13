@@ -11,10 +11,11 @@ With --meta-every N, every Nth life the seed also tests a change to its own
 procedure (the knobs of its producer and of the rule that revises the
 producer): two branches run the proposal-and-proof phase from the same
 lived worlds, one under the current procedure and one under the mutated
-one, and the mutation is adopted only if the branch under it scores higher
-on a meta set no proof used, or scores no lower at a tenth less cost. A
-mutation that would propose and test exactly what the current procedure
-proposes this life is a no-op: recorded, not run. The
+one, then --meta-lives K further lives each on the same world draws, and
+the mutation is adopted only if the branch under it scores higher on a
+meta set no proof used, or scores no lower at a tenth less cost. With a
+horizon of one life, a mutation that would propose and test exactly what
+the current procedure proposes is a no-op: recorded, not run. The
 state is saved after every operation, so a run resumes, and the ledger
 records every candidate change with its proof.
 """
@@ -127,6 +128,11 @@ def test(seed, area, parts, atoms, drop, model, budget, held_out, tag):
             applied.update(fresh_kinds)
 
 
+def phase(seed, area, worlds, records, cands, budget, held_out, tag=''):
+    """Propose and prove under the seed's procedure."""
+    test(seed, area, *propose(seed, area, worlds, records, cands, tag), budget, held_out, tag)
+
+
 def plan(seed, area, proposal):
     """What a phase would propose and test: equal plans give identical phases."""
     parts, atoms, drop, model = proposal
@@ -144,6 +150,7 @@ def main():
     ap.add_argument('--budget', type=int, default=1024)
     ap.add_argument('--held-out', type=int, default=48, help='worlds per acceptance test, over all pools')
     ap.add_argument('--meta-every', type=int, default=0, help='test a change to the procedure every Nth life; 0 never')
+    ap.add_argument('--meta-lives', type=int, default=1, help='lives each branch runs before the meta set scores them')
     args = ap.parse_args()
     warnings.filterwarnings('ignore')
     faulthandler.dump_traceback_later(600, repeat=True)   # where the main process is, if it stalls
@@ -162,7 +169,8 @@ def main():
           f'{seed.lives(area.name)}, language {len(seed.state["language"])} atoms, '
           f'procedure {json.dumps(seed.state["procedure"])}', flush=True)
 
-    for _ in range(args.lives):
+    target = seed.lives(area.name) + args.lives
+    while seed.lives(area.name) < target:
         t = time.time()
         life, worlds, records = seed.live(area, args.worlds, args.budget)
         entry = seed.state['ledger'][-1]
@@ -178,7 +186,7 @@ def main():
             b.save()
             prop_a = propose(a, area, worlds, records, cands, '[a] ')
             prop_b = propose(b, area, worlds, records, cands, '[b] ')
-            if plan(a, area, prop_a) == plan(b, area, prop_b):
+            if args.meta_lives == 1 and plan(a, area, prop_a) == plan(b, area, prop_b):
                 # the same proposals under the same fallbacks: the phases would be identical
                 shutil.rmtree(seed.path / 'branches', ignore_errors=True)
                 seed.state['ledger'].append({'op': 'meta', 'area': area.name, 'form': form, 'life': life,
@@ -192,15 +200,22 @@ def main():
                 base = dict(seed.state['resource'])
                 test(a, area, *prop_a, args.budget, args.held_out, '[a] ')
                 test(b, area, *prop_b, args.budget, args.held_out, '[b] ')
+                for branch, tag in ((a, '[a] '), (b, '[b] ')):
+                    for _ in range(args.meta_lives - 1):     # the horizon: the same world draws in both
+                        life_, worlds_, records_ = branch.live(area, args.worlds, args.budget)
+                        e_ = branch.state['ledger'][-1]
+                        print(f'  {tag}{area.name} life {life_}: solved {e_["total"]} of {args.worlds * 100}', flush=True)
+                        phase(branch, area, worlds_, records_, cands, args.budget, args.held_out, tag)
                 cost_a = {k: a.state['resource'][k] - base[k] for k in base}
                 cost_b = {k: b.state['resource'][k] - base[k] for k in base}
-                meta = seed.meta_proof(area, a.state, b.state, args.budget, life, args.held_out)
+                meta = seed.meta_proof(area, a.state, b.state, args.budget, life + args.meta_lives - 1, args.held_out)
                 lo, hi = meta['interval']
                 ca, cb = cost_a['proof_scans'], cost_b['proof_scans']
                 better = lo > 0
                 cheaper = meta['mean'] >= 0 and lo <= 0 <= hi and cb <= ca * (1 - MARGIN)
                 adopted = better or cheaper
-                entry = {'op': 'meta', 'area': area.name, 'form': form, 'life': life, 'budget': args.budget,
+                entry = {'op': 'meta', 'area': area.name, 'form': form, 'life': life, 'lives': args.meta_lives,
+                         'budget': args.budget,
                          'mutation': {'knob': knob, 'before': before, 'after': value},
                          'cost': {'a': cost_a, 'b': cost_b}, 'meta': meta, 'adopted': adopted,
                          'rule': 'better' if better else 'cheaper' if cheaper else 'declined', 'margin': MARGIN}

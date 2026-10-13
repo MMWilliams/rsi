@@ -1,0 +1,129 @@
+seed d_meta3 version 0, area str7, lives there 0, language 306 atoms, procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2}
+str7 life 0: solved 3279 of 4800; by pool {"trained": 72.8, "unfamiliar": 54.9}; 7 s
+  together: held-out 2949 -> 3996 [+18.0, +26.0] per world KEPT; {"trained": 84.0, "unfamiliar": 77.2, "untrained": 88.5}
+  carried: version 1, language 321, model g=6 pw=4, prior yes, held-out 3996; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2}; resource live 4.9M proof 9.8M tests 8986; 36 s
+str7 life 1: solved 3951 of 4800; by pool {"trained": 84.3, "unfamiliar": 76.3}; 9 s
+  together: held-out 4089 -> 4096 [-1.1, +1.6] per world dropped; {"trained": 87.8, "unfamiliar": 83.1, "untrained": 85.1}
+  model: held-out 4089 -> 4089 [-1.2, +1.5] per world dropped; {"trained": 87.8, "unfamiliar": 82.7, "untrained": 85.1}
+  extend: held-out 4089 -> 4096 [+0.0, +0.3] per world KEPT; {"trained": 88.2, "unfamiliar": 83.6, "untrained": 84.2}
+  carried: version 2, language 322, model g=6 pw=4, prior yes, held-out 4096; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2}; resource live 9.8M proof 29.5M tests 11688; 43 s
+str7 life 2: solved 4087 of 4800; by pool {"trained": 85.7, "unfamiliar": 83.6}; 7 s
+  meta: extend_cap 40 -> 20
+  [a] together: held-out 4083 -> 4146 [-2.2, +0.6] per world dropped; {"trained": 87.1, "unfamiliar": 85.5, "untrained": 86.5}
+  [a] model: held-out 4083 -> 4136 [-2.4, +0.5] per world dropped; {"trained": 86.5, "unfamiliar": 85.5, "untrained": 86.5}
+  [a] prune: held-out 4083 -> 4099 [+0.1, +0.8] per world KEPT; {"trained": 86.1, "unfamiliar": 83.2, "untrained": 86.9}
+  [a] extend: held-out 4176 -> 4116 [-0.2, +0.0] per world dropped; {"trained": 87.1, "unfamiliar": 84.0, "untrained": 86.1}
+  [b] together: held-out 4083 -> 4146 [-2.2, +0.6] per world dropped; {"trained": 87.1, "unfamiliar": 85.5, "untrained": 86.5}
+  [b] model: held-out 4083 -> 4136 [-2.4, +0.5] per world dropped; {"trained": 86.5, "unfamiliar": 85.5, "untrained": 86.5}
+  [b] prune: held-out 4083 -> 4099 [+0.1, +0.8] per world KEPT; {"trained": 86.1, "unfamiliar": 83.2, "untrained": 86.9}
+  [b] extend: held-out 4176 -> 4116 [-0.2, +0.0] per world dropped; {"trained": 87.1, "unfamiliar": 84.0, "untrained": 86.1}
+  [a] str7 life 3: solved 3965 of 4800
+  [a] together: held-out 4179 -> 4080 [-2.7, +0.4] per world dropped; {"trained": 87.0, "unfamiliar": 82.6, "untrained": 85.4}
+  [a] model: held-out 4179 -> 4092 [-2.4, +0.6] per world dropped; {"trained": 87.0, "unfamiliar": 83.1, "untrained": 85.6}
+  [a] prune: held-out 4179 -> 4120 [-0.5, +0.1] per world dropped; {"trained": 87.6, "unfamiliar": 83.8, "untrained": 86.1}
+  [a] extend: held-out 4179 -> 4114 [-0.8, +0.1] per world dropped; {"trained": 87.6, "unfamiliar": 83.4, "untrained": 86.1}
+  [a] str7 life 4: solved 4096 of 4800
+  [a] model: held-out 4184 -> 4120 [-2.0, +1.0] per world dropped; {"trained": 87.8, "unfamiliar": 83.4, "untrained": 86.4}
+  [b] str7 life 3: solved 3965 of 4800
+  [b] together: held-out 4179 -> 4080 [-2.7, +0.4] per world dropped; {"trained": 87.0, "unfamiliar": 82.6, "untrained": 85.4}
+  [b] model: held-out 4179 -> 4092 [-2.4, +0.6] per world dropped; {"trained": 87.0, "unfamiliar": 83.1, "untrained": 85.6}
+  [b] prune: held-out 4179 -> 4120 [-0.5, +0.1] per world dropped; {"trained": 87.6, "unfamiliar": 83.8, "untrained": 86.1}
+  [b] extend: held-out 4179 -> 4114 [-0.8, +0.1] per world dropped; {"trained": 87.6, "unfamiliar": 83.4, "untrained": 86.1}
+  [b] str7 life 4: solved 4096 of 4800
+  [b] model: held-out 4184 -> 4120 [-2.0, +1.0] per world dropped; {"trained": 87.8, "unfamiliar": 83.4, "untrained": 86.4}
+  meta: 4147 -> 4147 on 48 worlds [+0.0, +0.0] per world, proof cost 44.2M vs 44.2M: extend_cap=20 declined
+  carried: version 3, language 312, model g=6 pw=4, prior yes, held-out 4184; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2}; resource live 24.6M proof 137.6M tests 21998; 206 s
+str7 life 5: solved 4121 of 4800; by pool {"trained": 85.5, "unfamiliar": 86.8}; 8 s
+  meta: probation 4 -> 2
+  [a] together: held-out 4182 -> 4090 [-2.7, +0.5] per world dropped; {"trained": 86.2, "unfamiliar": 82.9, "untrained": 86.5}
+  [a] policy: fallbacks ['prune', 'extend'], retired {"model": {"rejections": 4, "since": 5}}
+  [a] extend: held-out 4182 -> 4114 [-1.0, +0.1] per world dropped; {"trained": 87.4, "unfamiliar": 83.8, "untrained": 86.0}
+  [b] together: held-out 4182 -> 4090 [-2.7, +0.5] per world dropped; {"trained": 86.2, "unfamiliar": 82.9, "untrained": 86.5}
+  [b] policy: fallbacks ['prune', 'extend'], retired {"model": {"rejections": 4, "since": 5}}
+  [b] extend: held-out 4182 -> 4114 [-1.0, +0.1] per world dropped; {"trained": 87.4, "unfamiliar": 83.8, "untrained": 86.0}
+  [a] str7 life 6: solved 4136 of 4800
+  [a] together: held-out 4187 -> 4090 [-2.8, +0.4] per world dropped; {"trained": 86.4, "unfamiliar": 82.8, "untrained": 86.5}
+  [a] policy: fallbacks ['prune', 'extend'], retired {"model": {"rejections": 4, "since": 5}}
+  [a] extend: held-out 4187 -> 4124 [-0.7, +0.0] per world dropped; {"trained": 87.4, "unfamiliar": 84.2, "untrained": 86.1}
+  [a] str7 life 7: solved 4132 of 4800
+  [a] together: held-out 4190 -> 4106 [-2.4, +0.8] per world dropped; {"trained": 86.8, "unfamiliar": 82.6, "untrained": 87.2}
+  [a] policy: fallbacks ['prune', 'extend+model'], retired {"model": {"rejections": 4, "since": 5}, "extend": {"rejections": 4, "since": 7}}
+  [a] extend+model: held-out 4190 -> 4106 [-2.4, +0.8] per world dropped; {"trained": 86.8, "unfamiliar": 82.6, "untrained": 87.2}
+  [b] str7 life 6: solved 4136 of 4800
+  [b] together: held-out 4187 -> 4090 [-2.8, +0.4] per world dropped; {"trained": 86.4, "unfamiliar": 82.8, "untrained": 86.5}
+  [b] policy: fallbacks ['model', 'prune', 'extend'], retired {"model": {"rejections": 4, "since": 5}}
+  [b] model: held-out 4187 -> 4088 [-2.9, +0.3] per world dropped; {"trained": 86.0, "unfamiliar": 83.0, "untrained": 86.5}
+  [b] extend: held-out 4187 -> 4124 [-0.7, +0.0] per world dropped; {"trained": 87.4, "unfamiliar": 84.2, "untrained": 86.1}
+  [b] str7 life 7: solved 4132 of 4800
+  [b] together: held-out 4190 -> 4106 [-2.4, +0.8] per world dropped; {"trained": 86.8, "unfamiliar": 82.6, "untrained": 87.2}
+  [b] policy: fallbacks ['prune', 'extend+model'], retired {"model": {"rejections": 5, "since": 5}, "extend": {"rejections": 4, "since": 7}}
+  [b] extend+model: held-out 4190 -> 4106 [-2.4, +0.8] per world dropped; {"trained": 86.8, "unfamiliar": 82.6, "untrained": 87.2}
+  meta: 4104 -> 4104 on 48 worlds [+0.0, +0.0] per world, proof cost 29.5M vs 31.9M: probation=2 declined
+  carried: version 3, language 312, model g=6 pw=4, prior yes, held-out 4190; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2}; resource live 39.3M proof 218.7M tests 31494; 203 s
+str7 life 8: solved 4071 of 4800; by pool {"trained": 85.5, "unfamiliar": 82.7}; 8 s
+  meta: patience 4 -> 2
+  [a] together: held-out 4186 -> 4088 [-2.8, +0.6] per world dropped; {"trained": 86.2, "unfamiliar": 82.6, "untrained": 86.6}
+  [a] policy: fallbacks ['model', 'prune', 'extend+model'], retired {"model": {"rejections": 4, "since": 5}, "extend": {"rejections": 4, "since": 7}}
+  [a] model: held-out 4186 -> 4086 [-2.9, +0.6] per world dropped; {"trained": 86.2, "unfamiliar": 82.5, "untrained": 86.6}
+  [a] extend+model: held-out 4186 -> 4088 [-2.8, +0.6] per world dropped; {"trained": 86.2, "unfamiliar": 82.6, "untrained": 86.6}
+  [b] together: held-out 4186 -> 4088 [-2.8, +0.6] per world dropped; {"trained": 86.2, "unfamiliar": 82.6, "untrained": 86.6}
+  [b] policy: fallbacks ['prune', 'extend+model'], retired {"model": {"rejections": 4, "since": 3}, "extend": {"rejections": 4, "since": 4}}
+  [b] extend+model: held-out 4186 -> 4088 [-2.8, +0.6] per world dropped; {"trained": 86.2, "unfamiliar": 82.6, "untrained": 86.6}
+  [a] str7 life 9: solved 4017 of 4800
+  [a] together: held-out 4186 -> 4084 [-2.8, +0.5] per world dropped; {"trained": 86.2, "unfamiliar": 82.4, "untrained": 86.6}
+  [a] policy: fallbacks ['prune', 'extend+model'], retired {"model": {"rejections": 5, "since": 5}, "extend": {"rejections": 4, "since": 7}}
+  [a] extend+model: held-out 4186 -> 4084 [-2.8, +0.5] per world dropped; {"trained": 86.2, "unfamiliar": 82.4, "untrained": 86.6}
+  [a] str7 life 10: solved 4114 of 4800
+Timeout (0:10:00)!
+Thread 0x0000afec (most recent call first):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 326 in _recv_bytes
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 255 in recv
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 579 in _handle_results
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 995 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1044 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1015 in _bootstrap
+
+Thread 0x00006b30 (most recent call first):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 298 in _send_bytes
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 211 in send
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 540 in _handle_tasks
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 995 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1044 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1015 in _bootstrap
+
+Thread 0x0000a41c (most recent call first):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 1054 in _exhaustive_wait
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 1122 in wait
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 502 in _wait_for_updates
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 522 in _handle_workers
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 995 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1044 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1015 in _bootstrap
+
+Thread 0x00009f64 (most recent call first):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 359 in wait
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 660 in wait
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 765 in wait
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 768 in get
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 367 in map
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 441 in run
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 566 in _carried
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 586 in prove
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 102 in test
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 133 in phase
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 208 in main
+  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 240 in <module>
+  [a] together: held-out 4172 -> 4088 [-2.8, +0.5] per world dropped; {"trained": 86.2, "unfamiliar": 82.5, "untrained": 86.8}
+  [a] policy: fallbacks ['prune', 'extend'], retired {"model": {"rejections": 5, "since": 5}, "extend": {"rejections": 4, "since": 7}}
+  [a] extend: held-out 4172 -> 4126 [-0.5, +0.1] per world dropped; {"trained": 87.4, "unfamiliar": 84.4, "untrained": 86.1}
+  [b] str7 life 9: solved 4017 of 4800
+  [b] together: held-out 4186 -> 4084 [-2.8, +0.5] per world dropped; {"trained": 86.2, "unfamiliar": 82.4, "untrained": 86.6}
+  [b] policy: fallbacks ['prune'], retired {"model": {"rejections": 4, "since": 3}, "extend": {"rejections": 4, "since": 4}, "extend+model": {"rejections": 2, "since": 9}}
+  [b] str7 life 10: solved 4114 of 4800
+  [b] together: held-out 4172 -> 4088 [-2.8, +0.5] per world dropped; {"trained": 86.2, "unfamiliar": 82.5, "untrained": 86.8}
+  [b] policy: fallbacks ['model', 'prune'], retired {"model": {"rejections": 4, "since": 3}, "extend": {"rejections": 4, "since": 4}, "extend+model": {"rejections": 2, "since": 9}}
+  [b] model: held-out 4172 -> 4092 [-2.7, +0.6] per world dropped; {"trained": 86.2, "unfamiliar": 82.8, "untrained": 86.8}
+  meta: 4259 -> 4259 on 48 worlds [+0.0, +0.0] per world, proof cost 31.9M vs 27.0M: patience=2 ADOPTED (cheaper)
+  carried: version 3, language 312, model g=6 pw=4, prior yes, held-out 4172; procedure {"patience": 2, "probation": 4, "extend_cap": 40, "recurrence": 2}; resource live 54.1M proof 297.4M tests 43002; 174 s
+kept: [{"life": 0, "area": "str7", "change": "language +15 + model g=6 pw=4 from 48 worlds + prior", "gain": 1047, "version": 1}, {"life": 1, "area": "str7", "change": "language +1", "gain": 7, "version": 2}, {"life": 2, "area": "str7", "change": "prune -10", "gain": 16, "version": 3}]
+run exit 0

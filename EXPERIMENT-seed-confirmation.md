@@ -1293,3 +1293,35 @@ knobs (patience, probation) act over lives, not within one, so the next
 increment is a branch horizon of several lives, and the meta-test must be
 rationed (every few lives) or chosen by evidence.
 
+Development `d_meta3` (644101, str7 9 lives, `--meta-every 3 --meta-lives 3`:
+every third life a branch pair runs three lives each on the same world
+draws before the meta set scores them; `runs_seed_d_meta3.log`,
+`runs_seed_d_meta3_check.log`). The seed's mutations now alternate through
+a knob's other values. Life 2, extend_cap 40 -> 20: identical final states
+(4,147 = 4,147), equal cost, declined. Life 5, probation 4 -> 2: identical
+states, the mutated branch dearer (31.9M against 29.5M proof scans, the
+retired model fallback re-tried more often), declined. Life 8, patience
+4 -> 2: identical states (4,259 = 4,259) and the mutated branch 15%
+cheaper (27.0M against 31.9M): under patience 2 the branch retired the
+model and extension fallbacks sooner and tested fewer parts that were
+going to be rejected. ADOPTED by the cheaper rule; the seed's procedure
+now reads patience 2. This is the first change the seed has made to the
+rule that revises its own producer, proven on a three-life horizon, and
+the auditor replays it (meta 3 of 3, proofs 3 of 3, every revision).
+Fresh check: str7 4,712 -> 6,233 (+32%; trained 78.2 -> 89.4, untrained
+66.7 -> 84.8, unfamiliar 51.4 -> 85.5), the same six withheld positions
+invented. Cost 5.5x living over eleven lives: a three-life branch pair
+every third life doubles those lives' proofs and charges the loser's
+living. The procedure is one object shared by both forms, so a knob
+adopted on string evidence governs the character form too; whether that
+is right is open.
+
+Where this leaves true RSI: level 0 (state) proven by held-out tests;
+level 1 (producer policy) revised automatically from the ledger; level 2
+(the knobs of the producer and of level 1) mutated by the seed and adopted
+only on a shadow-branch comparison; the comparison harness, its schedule
+(--meta-every, --meta-lives) and the adoption rule (better, or no worse at
+10% less cost) are fixed code. Next: ration or evidence-drive the
+meta-tests so a sealed schedule stays near the cost gate, decide per-form
+versus shared procedures, then a frozen version with the meta-level on.
+

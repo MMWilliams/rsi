@@ -361,8 +361,11 @@ class Seed:
         forms = self.forms()
         lives = sum(1 for e in self.state['ledger'] if e['op'] == 'live' and forms.get(e['area']) == form)
         knob = list(KNOBS)[(lives - 1) % len(KNOBS)]
-        cycle, current = KNOBS[knob], self.state['procedure'][knob]
-        return knob, cycle[(cycle.index(current) + 1) % len(cycle)] if current in cycle else cycle[0]
+        current = self.state['procedure'][knob]
+        others = [v for v in KNOBS[knob] if v != current]
+        tried = sum(1 for e in self.state['ledger'] if e['op'] == 'meta' and e['mutation']['knob'] == knob
+                    and forms.get(e['area']) == form)
+        return knob, others[tried % len(others)]     # each attempt on a knob tries another of its values
 
     def branch(self, label):
         """A copy of this seed in its own folder, to run one phase under a procedure."""
@@ -403,7 +406,7 @@ class Seed:
                              + entry['meta']['scans'])
         r['invention_tests'] += loser.state['resource']['invention_tests'] - base['invention_tests']
         entry.update(winner_version=self.state['version'], loser_snapshot=f'meta{k}_loser.json',
-                     experience_len=len(self.state['experience']))   # both branches had this much
+                     experience_len=len(winner.state['experience']))   # both branches had this much
         self.state['ledger'].append(entry)
         self.save()
         shutil.rmtree(self.path / 'branches', ignore_errors=True)

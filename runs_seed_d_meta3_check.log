@@ -1,0 +1,51 @@
+str7 fresh held-out 4712 -> 6233
+{
+ "name": "d_meta3",
+ "version": 3,
+ "budget": 1024,
+ "areas": {
+  "str7": {
+   "start": {
+    "budget": 1024,
+    "total": 4712,
+    "by_pool": {
+     "trained": 78.25,
+     "unfamiliar": 51.416666666666664,
+     "untrained": 66.66666666666667
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 6233,
+    "by_pool": {
+     "trained": 89.375,
+     "unfamiliar": 85.5,
+     "untrained": 84.83333333333333
+    }
+   },
+   "gain": 1521
+  }
+ },
+ "lives": {
+  "str7": 11
+ },
+ "resource": {
+  "live_scans": 54067200,
+  "proof_scans": 297369600,
+  "invention_tests": 43002
+ },
+ "invented": {
+  "kept": 6,
+  "by_true_family": {
+   "str:generator": 6
+  }
+ }
+}
+1 language +15 + model g=6 pw=4 from 48 worlds + prior ok
+2 language +1 ok
+3 prune -10 ok
+meta {'knob': 'extend_cap', 'before': 40, 'after': 20} declined ok
+meta {'knob': 'probation', 'before': 4, 'after': 2} declined ok
+meta {'knob': 'patience', 'before': 4, 'after': 2} adopted ok
+{"name": "d_meta3", "passed": true, "policy_ok": true, "meta_ok": true, "meta": [{"ledger": 22, "mutation": {"knob": "extend_cap", "before": 40, "after": 20}, "adopted": false, "a": [4147, 4147], "b": [4147, 4147], "ok": true}, {"ledger": 35, "mutation": {"knob": "probation", "before": 4, "after": 2}, "adopted": false, "a": [4104, 4104], "b": [4104, 4104], "ok": true}, {"ledger": 47, "mutation": {"knob": "patience", "before": 4, "after": 2}, "adopted": true, "a": [4259, 4259], "b": [4259, 4259], "ok": true}]}
+audit exit 0
