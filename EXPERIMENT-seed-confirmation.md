@@ -1196,3 +1196,19 @@ M(LOWER,4,start)). Audit 4 of 4. Proof scans 2.90x live over five lives.
 The check works inside the string form as it does in the character form;
 its tolerance is per candidate, as before.
 
+### Note: how often the extension rule fires, from the sealed ledgers (2026-10-12)
+
+`extension_triggers.py` reads a seed's ledger and counts the full-set
+rejections that v10's rule would send to an extension set (interval
+straddling zero, positive mean, lower bound above mean x (1 - sqrt 2)),
+with an upper bound on the cost (carried and candidate both scored on one
+extension set). On c19, the one seed that ran v10, it counts zero such
+rejections left behind, as it must; the three that qualified were extended
+(one rejected, two accepted). On c1 to c18, 77 of 407 full-set rejections
+(19%) would have been extended, most in metric777001, mech and drawn7; a
+further 80 (20%) had intervals above zero and were rejected by the
+cross-area check. The cost bound is +0.33x live on average (max +0.92x, on
+c2 under v1's economics); on the seven-area seeds c15 to c18 it is +0.15x
+to +0.24x, so a v11 run should land near 2.6x to 3.2x against its 3.75x
+gate. Forecast for v11 when it is frozen: 0.35.
+

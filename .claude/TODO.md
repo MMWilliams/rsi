@@ -275,7 +275,9 @@ are for replication only. Nothing proven is reset between generations.
       first time (str7 language candidate on str11's 24-world set 3,096 -> 3,066, -1.0%,
       accepted; fresh str11 6,277 -> 6,158, -1.9%); fresh str7 4,712 -> 6,154 (+31%),
       str11 +34%; 11 of 12 withheld positions + 10 novel keys; audit 4/4; 2.90x. Draft v11 =
-      v10 schedule + str11 3 lives (24 lives, 8 areas), cost gate 3.75x; FREEZE ONLY
+      v10 schedule + str11 3 lives (24 lives, 8 areas), cost gate 3.75x; extension_triggers.py:
+      the rule fires on ~19% of full-set rejections, +0.15..0.24x cost on 7-area seeds, so
+      expect 2.6..3.2x; forecast 0.35; FREEZE ONLY
       after the v10 verdict (c20 rerun). Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for
       ~half; a majority-keys rule would not pick it): leave.
