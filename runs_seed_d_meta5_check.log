@@ -1,0 +1,51 @@
+str7 fresh held-out 4712 -> 6233
+{
+ "name": "d_meta5",
+ "version": 3,
+ "budget": 1024,
+ "areas": {
+  "str7": {
+   "start": {
+    "budget": 1024,
+    "total": 4712,
+    "by_pool": {
+     "trained": 78.25,
+     "unfamiliar": 51.416666666666664,
+     "untrained": 66.66666666666667
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 6233,
+    "by_pool": {
+     "trained": 89.41666666666667,
+     "unfamiliar": 85.5,
+     "untrained": 84.79166666666667
+    }
+   },
+   "gain": 1521
+  }
+ },
+ "lives": {
+  "str7": 10
+ },
+ "resource": {
+  "live_scans": 49152000,
+  "proof_scans": 250675200,
+  "invention_tests": 37439
+ },
+ "invented": {
+  "kept": 6,
+  "by_true_family": {
+   "str:generator": 6
+  }
+ }
+}
+1 language +15 + model g=6 pw=4 from 48 worlds + prior ok
+2 language +1 ok
+3 prune -10 ok
+meta {'knob': 'extend_cap', 'before': 40, 'after': 20, 'votes': {'patience': 0, 'probation': 0, 'extend_cap': 0, 'recurrence': -1}} declined ok
+meta {'knob': 'patience', 'before': 4, 'after': 2, 'votes': {'patience': -2, 'probation': 0, 'extend_cap': 0, 'recurrence': 0}} declined ok
+meta {'knob': 'recurrence', 'before': 2, 'after': 3, 'votes': {'patience': 0, 'probation': 0, 'extend_cap': 0, 'recurrence': 3}} declined ok
+{"name": "d_meta5", "passed": true, "policy_ok": true, "meta_ok": true, "meta": [{"ledger": 19, "mutation": {"knob": "extend_cap", "before": 40, "after": 20, "votes": {"patience": 0, "probation": 0, "extend_cap": 0, "recurrence": -1}}, "adopted": false, "a": [4080, 4080], "b": [4080, 4080], "ok": true}, {"ledger": 31, "mutation": {"knob": "patience", "before": 4, "after": 2, "votes": {"patience": -2, "probation": 0, "extend_cap": 0, "recurrence": 0}}, "adopted": false, "a": [4036, 4036], "b": [4036, 4036], "ok": true}, {"ledger": 45, "mutation": {"knob": "recurrence", "before": 2, "after": 3, "votes": {"patience": 0, "probation": 0, "extend_cap": 0, "recurrence": 3}}, "adopted": false, "a": [4099, 4099], "b": [4099, 4099], "ok": true}]}
+audit exit 0

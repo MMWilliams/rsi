@@ -1,0 +1,154 @@
+{
+  "name": "d_meta5",
+  "replayed": [
+    {
+      "version": 1,
+      "area": "str7",
+      "change": "language +15 + model g=6 pw=4 from 48 worlds + prior",
+      "carried": [
+        2949,
+        2949
+      ],
+      "candidate": [
+        3996,
+        3996
+      ],
+      "interval": [
+        [
+          18.0,
+          26.0
+        ],
+        [
+          18.0,
+          26.0
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 2,
+      "area": "str7",
+      "change": "language +1",
+      "carried": [
+        4089,
+        4089
+      ],
+      "candidate": [
+        4096,
+        4096
+      ],
+      "interval": [
+        [
+          0.020833333333333332,
+          0.3125
+        ],
+        [
+          0.020833333333333332,
+          0.3125
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 3,
+      "area": "str7",
+      "change": "prune -10",
+      "carried": [
+        4083,
+        4083
+      ],
+      "candidate": [
+        4099,
+        4099
+      ],
+      "interval": [
+        [
+          0.0625,
+          0.75
+        ],
+        [
+          0.0625,
+          0.75
+        ]
+      ],
+      "ok": true
+    }
+  ],
+  "passed": true,
+  "policy_ok": true,
+  "meta_ok": true,
+  "meta": [
+    {
+      "ledger": 19,
+      "mutation": {
+        "knob": "extend_cap",
+        "before": 40,
+        "after": 20,
+        "votes": {
+          "patience": 0,
+          "probation": 0,
+          "extend_cap": 0,
+          "recurrence": -1
+        }
+      },
+      "adopted": false,
+      "a": [
+        4080,
+        4080
+      ],
+      "b": [
+        4080,
+        4080
+      ],
+      "ok": true
+    },
+    {
+      "ledger": 31,
+      "mutation": {
+        "knob": "patience",
+        "before": 4,
+        "after": 2,
+        "votes": {
+          "patience": -2,
+          "probation": 0,
+          "extend_cap": 0,
+          "recurrence": 0
+        }
+      },
+      "adopted": false,
+      "a": [
+        4036,
+        4036
+      ],
+      "b": [
+        4036,
+        4036
+      ],
+      "ok": true
+    },
+    {
+      "ledger": 45,
+      "mutation": {
+        "knob": "recurrence",
+        "before": 2,
+        "after": 3,
+        "votes": {
+          "patience": 0,
+          "probation": 0,
+          "extend_cap": 0,
+          "recurrence": 3
+        }
+      },
+      "adopted": false,
+      "a": [
+        4099,
+        4099
+      ],
+      "b": [
+        4099,
+        4099
+      ],
+      "ok": true
+    }
+  ]
+}

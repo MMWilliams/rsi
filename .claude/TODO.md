@@ -299,7 +299,11 @@ are for replication only. Nothing proven is reset between generations.
       growth continued; KILLED by host (UnrealEditor 28 GB + Godot 10 GB) at mech life 4;
       resume only when reese asks (seed_run d_meta4 mech --lives 2 then drawn7 2, check,
       audit). Evidence-driven mutation choice BUILT (votes from the ledger, recorded per meta
-      entry; untested in a run). NEXT: a budget relative to living; then a
+      entry). d_meta5 (str7 9 lives, 2-life horizon, budget 0.5): chose per the votes
+      (cap 20 by round-robin, patience 2, recurrence 3), all declined; patience 2 read
+      12% DEARER here vs 15% cheaper in d_meta3: low power at short horizons. Fresh +32%,
+      audit clean, cost 5.1x. NEXT: pool repeated tests of one mutation / lengthen the
+      horizon when votes are strong; a budget relative to living; then a
       sealed version with --meta-every in the schedule. Keep confirm_seed.sh unchanged
       (default --meta-every 0 = v10 behaviour). Previously: freeze v11 only
       after the v10 verdict (c20 rerun). Remaining

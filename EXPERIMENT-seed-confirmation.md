@@ -1361,3 +1361,23 @@ d_meta2's character form (two wasted fallback proofs), the change d_meta3
 adopted on strings, and recurrence 3 for d_meta3's string form (five
 extensions rejected on their own).
 
+Development `d_meta5` (644101, str7 9 lives, evidence-driven mutations,
+`--meta-every 3 --meta-lives 2 --meta-budget 0.5`; `runs_seed_d_meta5.log`,
+`runs_seed_d_meta5_check.log`). Life 2: the only vote (recurrence down, from
+lives that proposed no extension) had nowhere to go from 2, so round-robin
+gave extend_cap 20: identical states, equal cost, declined. Life 5: votes
+patience -2, so patience 2 over two lives: identical states (4,036 =
+4,036) but the mutated branch dearer (22.1M against 19.7M: it retired
+extend earlier and tested extend+model in its place, and re-tried the
+retired model on probation), declined. Life 8: votes recurrence +3, so
+recurrence 3: identical states, equal cost, declined. Fresh check str7
+4,712 -> 6,233 (+32%), the same six withheld positions; cost 5.1x; audit 3
+of 3 proofs, 3 of 3 meta-proofs, every revision. The producer chose what
+its ledger said each time. Note the conflict with `d_meta3`, where
+patience 2 was adopted on a three-life horizon as 15% cheaper: on a
+two-life horizon at a different life it read 12% dearer. The cheaper rule
+is sensitive to which proofs happen to fall inside the horizon, so the
+meta-test's power at these horizons is low; pooling repeated tests of the
+same mutation, or lengthening the horizon when votes are strong, is the
+next improvement to the improver's improver.
+
