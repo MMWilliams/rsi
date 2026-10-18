@@ -115,7 +115,10 @@ def main():
                 st['language'] = snap['language']
                 st['areas'] = snap['areas']
                 st['inventions'] = snap['inventions']
-                st['experience'] = st['experience'][:had]
+                if 'experience_tail' in snap:     # a losing branch's own lives after the branch point
+                    st['experience'] = st['experience'][:snap['experience_from']] + snap['experience_tail']
+                else:
+                    st['experience'] = st['experience'][:had]
                 return st
 
             budget = e['budget']

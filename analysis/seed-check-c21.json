@@ -1,0 +1,254 @@
+{
+  "name": "c21",
+  "version": 13,
+  "budget": 1024,
+  "areas": {
+    "mech": {
+      "start": {
+        "budget": 1024,
+        "total": 1164,
+        "by_pool": {
+          "trained": 23.5,
+          "unfamiliar": 4.333333333333333,
+          "untrained": 20.666666666666668
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 2185,
+        "by_pool": {
+          "trained": 41.25,
+          "unfamiliar": 14.083333333333334,
+          "untrained": 35.708333333333336
+        }
+      },
+      "gain": 1021
+    },
+    "drawn7": {
+      "start": {
+        "budget": 1024,
+        "total": 362,
+        "by_pool": {
+          "env": 15.083333333333334
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 463,
+        "by_pool": {
+          "env": 19.291666666666668
+        }
+      },
+      "gain": 101
+    },
+    "metric777001": {
+      "start": {
+        "budget": 1024,
+        "total": 364,
+        "by_pool": {
+          "seen_centre": 9.291666666666666,
+          "unfamiliar_centre": 5.875
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 1522,
+        "by_pool": {
+          "seen_centre": 32.708333333333336,
+          "unfamiliar_centre": 30.708333333333332
+        }
+      },
+      "gain": 1158
+    },
+    "drawn11": {
+      "start": {
+        "budget": 1024,
+        "total": 251,
+        "by_pool": {
+          "env": 10.458333333333334
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 368,
+        "by_pool": {
+          "env": 15.333333333333334
+        }
+      },
+      "gain": 117
+    },
+    "drawn13": {
+      "start": {
+        "budget": 1024,
+        "total": 215,
+        "by_pool": {
+          "env": 8.958333333333334
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 338,
+        "by_pool": {
+          "env": 14.083333333333334
+        }
+      },
+      "gain": 123
+    },
+    "metric555001": {
+      "start": {
+        "budget": 1024,
+        "total": 410,
+        "by_pool": {
+          "seen_centre": 15.666666666666666,
+          "unfamiliar_centre": 1.4166666666666667
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 1253,
+        "by_pool": {
+          "seen_centre": 35.75,
+          "unfamiliar_centre": 16.458333333333332
+        }
+      },
+      "gain": 843
+    },
+    "str7": {
+      "start": {
+        "budget": 1024,
+        "total": 4871,
+        "by_pool": {
+          "trained": 68.54166666666667,
+          "unfamiliar": 58.041666666666664,
+          "untrained": 76.375
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 6278,
+        "by_pool": {
+          "trained": 83.75,
+          "unfamiliar": 85.95833333333333,
+          "untrained": 91.875
+        }
+      },
+      "gain": 1407
+    }
+  },
+  "lives": {
+    "mech": 6,
+    "drawn7": 3,
+    "metric777001": 3,
+    "drawn11": 2,
+    "drawn13": 2,
+    "metric555001": 2,
+    "str7": 3
+  },
+  "resource": {
+    "live_scans": 206438400,
+    "proof_scans": 851558400,
+    "invention_tests": 2441333
+  },
+  "kept_changes": [
+    {
+      "life": 0,
+      "area": "mech",
+      "change": "language +40 + model g=7 pw=3 from 96 worlds + prior",
+      "gain": 466,
+      "version": 1
+    },
+    {
+      "life": 0,
+      "area": "drawn7",
+      "change": "model g=8 pw=4 from 96 worlds + prior",
+      "gain": 177,
+      "version": 2
+    },
+    {
+      "life": 1,
+      "area": "drawn7",
+      "change": "prune -8",
+      "gain": 41,
+      "version": 3
+    },
+    {
+      "life": 0,
+      "area": "metric777001",
+      "change": "model g=7 pw=2 from 96 worlds + prior",
+      "gain": 571,
+      "version": 4
+    },
+    {
+      "life": 1,
+      "area": "metric777001",
+      "change": "model g=7 pw=2 from 192 worlds + prior",
+      "gain": 41,
+      "version": 5
+    },
+    {
+      "life": 2,
+      "area": "metric777001",
+      "change": "model g=8 pw=2 from 288 worlds + prior",
+      "gain": 59,
+      "version": 6
+    },
+    {
+      "life": 0,
+      "area": "drawn11",
+      "change": "model g=6 pw=4 from 96 worlds + prior",
+      "gain": 92,
+      "version": 7
+    },
+    {
+      "life": 0,
+      "area": "drawn13",
+      "change": "model g=6 pw=4 from 96 worlds + prior",
+      "gain": 303,
+      "version": 8
+    },
+    {
+      "life": 0,
+      "area": "metric555001",
+      "change": "model g=8 pw=2 from 96 worlds + prior",
+      "gain": 596,
+      "version": 9
+    },
+    {
+      "life": 1,
+      "area": "metric555001",
+      "change": "model g=8 pw=2 from 192 worlds + prior",
+      "gain": 113,
+      "version": 10
+    },
+    {
+      "life": 0,
+      "area": "str7",
+      "change": "language +22 + model g=6 pw=4 from 96 worlds + prior",
+      "gain": 815,
+      "version": 11
+    },
+    {
+      "life": 2,
+      "area": "str7",
+      "change": "prune -16 + model g=8 pw=4 from 288 worlds + prior",
+      "gain": 44,
+      "version": 12
+    },
+    {
+      "life": 4,
+      "area": "mech",
+      "change": "model g=8 pw=4 from 480 worlds + prior",
+      "gain": 299,
+      "version": 13
+    }
+  ],
+  "invented": {
+    "kept": 38,
+    "by_true_family": {
+      "novel": 13,
+      "popcount": 15,
+      "xormod": 4,
+      "str:generator": 6
+    }
+  }
+}

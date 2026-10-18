@@ -1492,3 +1492,110 @@ start on d_meta7); gate 3 0.85 (d_meta7 at 2.55x and 3.52x); gate 4 0.9;
 gates 1 to 4 on both seeds 0.35. Gate 5 on a given seed 0.2 (one adoption
 in about twenty development tests, about five tests a seed); on at least
 one of the two 0.35.
+
+### Replication U, seed 919120 under v11 (`seeds/c21`, `runs_seed_conf_c21.log`), 2026-10-18
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,164 | 2,185 | +88% | trained 23.5 -> 41.2, untrained 20.7 -> 35.7, unfamiliar 4.3 -> 14.1 |
+| drawn7 | 362 | 463 | +28% | env 15.1 -> 19.3 |
+| metric777001 | 364 | 1,522 | +318% | seen 9.3 -> 32.7, unfamiliar 5.9 -> 30.7 |
+| drawn11 | 251 | 368 | +47% | env 10.5 -> 15.3 |
+| drawn13 | 215 | 338 | +57% | env 9.0 -> 14.1 |
+| metric555001 | 410 | 1,253 | +206% | seen 15.7 -> 35.8, unfamiliar 1.4 -> 16.5 |
+| str7 | 4,871 | 6,278 | +29% | trained 68.5 -> 83.8, untrained 76.4 -> 91.9, unfamiliar 58.0 -> 86.0 |
+
+Kept changes (13): two language extensions (mech life 0 of 40 atoms with a
+refit; str7 life 0 of 22 keys with a refit), nine model refits, two prunes
+(drawn7 -8; str7 -16 with a refit). Level 1 retired extend alone in the
+character form at life 5 and extend+model at life 10.
+
+The meta-level, six tests. extend_cap 80 at mech life 1: identical, equal
+cost, declined. patience 2 over two lives at drawn7 life 1: the branch
+under patience 2 retired the prune fallback a life sooner and so never
+tested the prune -8 that the current procedure kept; on the meta set 730 ->
+683, interval -1.79 to -0.29 per world, though 42% cheaper (27.0M against
+46.7M): declined, correctly, as worse. recurrence 3 at metric777001 life 2:
+identical states (1,480 = 1,480) at 17% less proof cost (47.9M against
+57.8M): ADOPTED by the cheaper rule, the character form's procedure now
+recurrence 3. prune_r .05 at drawn11 life 1, under recurrence 3: identical
+(718 = 718) at 15% less (14.7M against 17.2M; the prune fallback had no
+candidate to test): ADOPTED, the procedure now recurrence 3 and prune_r .05.
+share .5 at str7 life 1: a no-op, not run. patience 2 again at mech life 4,
+under both adopted changes: identical this time and 18% cheaper, but pooled
+with the drawn7 test over 96 worlds (-0.9 to -0.1): declined. Every later
+character life ran under the procedure the seed had changed: drawn11 life
+1 on, drawn13, metric555001 and mech lives 4 and 5. Two further patience
+tests did not run (one life left in those runs); the budget held back four.
+
+- Gate 1: PASS, seven of seven areas, smallest +28% (drawn7).
+- Gate 2: PASS, all eleven pools rose; the weakest (str7 trained) to 122%
+  of its start.
+- Gate 3: PASS, level-0 proofs 2.95x against 3.5x, all proofs 4.12x
+  against 5.0x (28.4% of proof scans charged to the meta-level).
+- Gate 4: FAIL. Thirteen of thirteen acceptances replay exactly, salts
+  unique; every policy revision recomputes; four of five meta-proofs
+  replay; the drawn7 patience test does not: the auditor scores the losing
+  branch at 699 against the recorded 683. Cause, found the same day: the
+  auditor rebuilds a branch's prior from the main seed's experience, which
+  is the winner's; over a two-life horizon the loser lives its second life
+  under a different state and earns different experience, and the loser
+  snapshot did not keep it. Every two-life test in development had ended
+  in identical branches, so this was never exercised. Re-execution
+  (`analysis/c21_meta1_reexecution.py`, `runs_c21_meta1_reexecution.log`):
+  b kept nothing in either life, so its second life can be re-lived from
+  the loser snapshot and the shared experience; it solves 1,569 tasks, as
+  the run logged, and scores 683 on the meta set, every world equal to the
+  record. The recorded meta-proof was right and the decision stands; what
+  failed is the record's completeness, which the gate requires.
+- Gate 5: PASS. Two mutations adopted, both replaying exactly, and nine of
+  the run's later lives ran under them.
+
+### Verdict on v11
+
+v11 FAILS: gate 4 on 919120. The failure is in what a sealed seed records
+for its auditor, not in any decision the seed took; re-execution confirms
+the one meta-proof the snapshots could not replay. Seed 919120 is also
+the first sealed evidence that the improver improves itself under proof:
+it adopted two changes to its own procedure (recurrence 3, prune_r .05),
+each measured as the same state at 15% to 17% less proof cost on a test
+no proof used, it ran its later lives under them, and it rejected, on
+evidence, a third (patience 2) that would have saved 42% but lost a kept
+prune. Both adoptions are of the cheaper kind: the seed made its improver
+cheaper, not yet better. 919121 is not opened under v11, since the defect
+is known; it goes to v11.1.
+
+## Protocol v11.1 (FROZEN 2026-10-18, after the v11 verdict)
+
+One change from v11, in the record only: a losing branch's snapshot now
+carries the experience it earned after the branch point
+(`experience_from`, `experience_tail`), and the auditor builds that
+branch's state from it. No decision of the seed reads the loser
+snapshot, so the seed's behaviour is v11's. Checked on a scratch copy of
+c21 with the re-executed tail (meta 5 of 5 replay) and on a two-life
+smoke test (the loser's tail written, audit clean).
+
+Schedule, gates and forecast basis as v11. Seeds: 919121 (replication V,
+`seeds/c22`) and 919122 (replication W, `seeds/c23`), sealed and unopened.
+The str11 draft (v12) moves to 919123 and 919124.
+
+Hashes (`rsi/seed.py` and `audit_seed.py` differ from v11):
+
+```
+5eaae60af771c5ff6368ceb95435cad748b73129d343e453f690b5e7e118ad76  rsi/seed.py
+15a2b0f65ccb52ee60aa423a43ec2c2caf80af9091c33a28de182e8915fb49a9  rsi/seed_areas.py
+3055e82052dec8aaf0ebee0f9d91438c1ce018ef2bf84be877c2fa9f2cb83213  rsi/seed_string.py
+aefd9cc94f7dbf8f54eb311baae6245522bf212bdbca4b6ac63cb5f13cfa9c83  rsi/invention.py
+e9c6a2b3ed10cd6bb33306ca5234c06b5a087c739fcf71c65aa97593a205f2a3  rsi/self_world_model.py
+b9c7479a79f0379a5200c123b3dc8c3025c0b32aa57a1d8e6e34787a5eff6254  seed_run.py
+1623b2b09ccdffbcbb1d600f2a887bd97b918d19687f19de7b8ec55a64bb1894  seed_check.py
+00c8b93d9432eb9255d8558e7f54901c5098ab3d8e6b5e19bc339b917c07a60c  audit_seed.py
+37be378c64e00d689d96dfdc03b36f0771eef4883bc840b37e7241e04f9e1de8  confirm_seed.sh
+```
+
+Forecast, committed before opening 919121: gate 1 0.75, gate 2 0.7 (all
+pools rose on 919120), gate 3 0.8 (4.12x on 919120 against 5.0x, closer to
+the limit than d_meta7's 3.52x), gate 4 0.9 (the gap closed; a new path
+tested on real divergent data once), gates 1 to 4 on both seeds 0.35.
+Gate 5 on a given seed 0.4 (two adoptions in four real tests on 919120,
+none in five on d_meta7); on at least one of the two 0.6.

@@ -301,19 +301,24 @@ class Seed:
     def save(self):
         (self.path / 'state.json').write_text(json.dumps(self.state))
 
-    def _snapshot(self, file=None):
+    def _snapshot(self, file=None, tail_from=None):
         """What a replay of a proof needs about this version: the language,
         the areas' models and prior flags, the inventions, and how much
         experience the seed had. Rewritten whenever a proof is kept, so the
-        file always holds the state as it was just before or just after."""
+        file always holds the state as it was just before or just after.
+        With `tail_from`, also the experience after that point: a losing
+        branch's own lives, which the main seed never keeps."""
         folder = self.path / 'versions'
         folder.mkdir(exist_ok=True)
         file = file or folder / f'{self.state["version"]}.json'
         areas = {name: {k: v for k, v in a.items() if k not in ('held_out_score', 'extension_score')}
                  for name, a in self.state['areas'].items()}
-        file.write_text(json.dumps({'version': self.state['version'], 'language': self.state['language'],
-                                    'areas': areas, 'inventions': self.state['inventions'],
-                                    'experience_len': len(self.state['experience'])}))
+        snap = {'version': self.state['version'], 'language': self.state['language'],
+                'areas': areas, 'inventions': self.state['inventions'],
+                'experience_len': len(self.state['experience'])}
+        if tail_from is not None:
+            snap.update(experience_from=tail_from, experience_tail=self.state['experience'][tail_from:])
+        file.write_text(json.dumps(snap))
 
     def experience_count(self, area):
         return sum(1 for e in self.state['experience'] if e['area'] == area)
@@ -485,7 +490,8 @@ class Seed:
         base = dict(self.state['resource'])
         k = sum(1 for e in self.state['ledger'] if e['op'] == 'meta')
         (self.path / 'versions').mkdir(exist_ok=True)
-        loser._snapshot(self.path / 'versions' / f'meta{k}_loser.json')
+        shared = len(self.state['experience'])   # what both branches started from
+        loser._snapshot(self.path / 'versions' / f'meta{k}_loser.json', tail_from=shared)
         winner._snapshot()
         for f in (winner.path / 'versions').glob('*.json'):
             shutil.copyfile(f, self.path / 'versions' / f.name)
