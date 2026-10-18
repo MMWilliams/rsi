@@ -1174,7 +1174,7 @@ the generator's universe and the same six the v8 seeds found on str7:
 M(UPPER,1..3,end) and M(LOWER,1..3,start). Audit 3 of 3. Proof scans
 2.67x live over three lives.
 
-Draft v11, NOT frozen until the v10 verdict: the v10 schedule plus three
+Draft v12 (numbered v11 until 2026-10-18), NOT frozen until the v10 and v11 verdicts: the v10 schedule plus three
 str11 lives after str7 (24 lives, eight areas, two forms), cost gate 2.5 +
 0.25 x 5 = 3.75x; the string form's cross-area check then has a second
 lived area to fire on (str7 and str11 check each other at 2% on 24 worlds).
@@ -1209,8 +1209,8 @@ rejections left behind, as it must; the three that qualified were extended
 further 80 (20%) had intervals above zero and were rejected by the
 cross-area check. The cost bound is +0.33x live on average (max +0.92x, on
 c2 under v1's economics); on the seven-area seeds c15 to c18 it is +0.15x
-to +0.24x, so a v11 run should land near 2.6x to 3.2x against its 3.75x
-gate. Forecast for v11 when it is frozen: 0.35.
+to +0.24x, so a v12 run should land near 2.6x to 3.2x against its 3.75x
+gate. Forecast for v12 (the str11 draft) when it is frozen: 0.35.
 
 ## The improver as state: level 1 (producer policy) and level 2 (meta-proof), development (2026-10-12)
 
@@ -1396,3 +1396,99 @@ times on the string form; the pooled verdict stands at declined, which is
 the honest reading. fresh check done, audit interrupted at its fourth meta-proof (3 proofs and 3 meta-proofs had replayed) (the task was stopped by reese during the
 check; nothing restarted).
 
+Development `d_meta7`: the candidate v11 schedule on the development seed
+(644101, `sh confirm_seed.sh d_meta7 644101`, `runs_seed_d_meta7.log`,
+2026-10-18). Before it, two changes from the lesson of d_meta2 to d_meta6,
+where 13 of 15 branch pairs ended in identical states (the four knobs only
+decide which doomed fallbacks are tested, so they cannot change what is
+kept): two knobs that change what the producer proposes, `share` (the
+fraction of a life's hardest worlds the producer invents for: .2, .3, .5;
+default .3) and `prune_r` (the discovery rate below which an invented atom
+is proposed for pruning: .05, .1, .2; default .1), with votes (share up for
+every kept extension; prune_r up for a prune kept on its own, down for one
+rejected); a horizon per knob (patience and probation, which act across
+lives, over --meta-lives lives; the others over one life); the cadence
+counted over the seed's lives in all areas; and no test that would overrun
+the lives an area's run has left (584d816).
+
+Fresh check (salt 999, 24 worlds per pool): mech 1,232 -> 2,129 (+73%;
+trained 25.6 -> 46.5, untrained 20.5 -> 20.4, unfamiliar 5.3 -> 21.8),
+drawn7 211 -> 331 (+57%), metric777001 270 -> 1,769 (+555%), drawn11 199 ->
+348 (+75%), drawn13 294 -> 493 (+68%), metric555001 295 -> 1,628 (+452%),
+str7 4,712 -> 6,159 (+31%). Fourteen kept changes; audit 14 of 14, every
+policy revision, 5 of 5 meta-proofs. Cost 3.52x live in all: 2.55x for
+level-0 proofs, and 27.7% of proof scans charged to the meta-level. Level 1
+retired extend alone and prune alone in the character form after four
+rejections each (life 10), tested extend+model in their place, and retired
+that too at life 16.
+
+Six meta-tests (the seed's lives 2, 6, 12, 16, 18 and 20; the budget held
+back lives 4, 8, 10 and 14). extend_cap 80 at mech life 1: both branches
+kept a change, the mutated branch's state read 1,211 -> 1,194 on the meta
+set (interval -1.3 to +0.4), declined. share .5 at drawn7 life 1: nothing
+kept in either branch, identical, declined. extend_cap 80 at metric777001
+life 2: both kept the same model, identical; pooled with the mech test over
+96 worlds (-0.6 to +0.2), declined. recurrence 3 at drawn13 life 1:
+identical at equal cost, declined. share .5 at str7 life 1: a no-op (the
+same proposals), not run. patience 2 over two lives at mech life 4:
+identical states, the mutated branch 9% dearer (29.5M against 27.0M),
+declined. A patience test at metric555001 life 1 did not run, with one
+life left in that run. No adoption. Over the eight development runs the
+meta-level has adopted one mutation in about twenty real tests: the level-0
+acceptance test is a strong filter, and the knobs so far mostly change
+what gets rejected, not what gets kept.
+
+## Protocol v11 (FROZEN 2026-10-18): the improver under proof
+
+Reese's direction (2026-10-18): sealed evidence for the true-RSI levels.
+v11 is v10 with levels 1 and 2 on: the producer's fallback policy learned
+from the seed's own ledger (level 1, every life), and on every second life
+of the seed a test of one mutation of the procedure on two shadow branches,
+adopted only on the meta-proof (level 2; `--meta-every 2 --meta-lives 2
+--meta-budget 0.3`). Schedule, areas, held-out sets and the acceptance test
+are v10's. The str11 draft that was numbered v11 is now v12.
+
+Gates:
+
+1. Growth: every area at least +15% on its fresh set (salt 999).
+2. Safety: no pool below 90% of its start.
+3. Cost, in two parts: level-0 proof scans (all proof scans less what the
+   meta-level was charged) at most 3.5x live, as v10; all proof scans at
+   most 5.0x live (3.5x over 1 - 0.3, the meta budget).
+4. Replay: every acceptance replays exactly, salts unique within area;
+   every policy revision recomputes from the ledger before it; every
+   meta-proof, pooled verdicts included, replays from the winner's and the
+   loser's snapshots.
+5. The improver improved: at least one mutation of the procedure adopted
+   by the meta-proof (better on the meta set, or no worse at 10% less
+   cost), replaying under gate 4.
+
+Gates 1 to 4 decide whether v11 passes, that is whether the seed may carry
+its meta-level forward. Gate 5 is the claim that the seed improved its own
+improver under proof; it is scored and reported per seed.
+
+Seeds: 919120 (replication U, `seeds/c21`) and 919121 (replication V,
+`seeds/c22`), sealed and unopened at the time of writing.
+
+Hashes (`rsi/seed.py`, `seed_run.py`, `audit_seed.py` and
+`confirm_seed.sh` differ from v10):
+
+```
+39d17f7759590fcf687c0f9a392e5e0b8d19662bdb429deca2ab045808b67333  rsi/seed.py
+15a2b0f65ccb52ee60aa423a43ec2c2caf80af9091c33a28de182e8915fb49a9  rsi/seed_areas.py
+3055e82052dec8aaf0ebee0f9d91438c1ce018ef2bf84be877c2fa9f2cb83213  rsi/seed_string.py
+aefd9cc94f7dbf8f54eb311baae6245522bf212bdbca4b6ac63cb5f13cfa9c83  rsi/invention.py
+e9c6a2b3ed10cd6bb33306ca5234c06b5a087c739fcf71c65aa97593a205f2a3  rsi/self_world_model.py
+b9c7479a79f0379a5200c123b3dc8c3025c0b32aa57a1d8e6e34787a5eff6254  seed_run.py
+1623b2b09ccdffbcbb1d600f2a887bd97b918d19687f19de7b8ec55a64bb1894  seed_check.py
+5c13eaca350d87660a800d1d2d9bda3ea986da3a07465a02cd7428a986aee07e  audit_seed.py
+37be378c64e00d689d96dfdc03b36f0771eef4883bc840b37e7241e04f9e1de8  confirm_seed.sh
+```
+
+Forecast, committed before opening 919120: gate 1 0.75 (every seven-area
+seed since v8 passed it but 919116 under v9; d_meta7 passed with smallest
++31%); gate 2 0.65 (mech's untrained pool is the weak point: 99.6% of its
+start on d_meta7); gate 3 0.85 (d_meta7 at 2.55x and 3.52x); gate 4 0.9;
+gates 1 to 4 on both seeds 0.35. Gate 5 on a given seed 0.2 (one adoption
+in about twenty development tests, about five tests a seed); on at least
+one of the two 0.35.
