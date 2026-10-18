@@ -304,11 +304,18 @@ are for replication only. Nothing proven is reset between generations.
       12% DEARER here vs 15% cheaper in d_meta3: low power at short horizons. Fresh +32%,
       audit clean, cost 5.1x. POOLING BUILT (Seed.pooled, audited): d_meta6 (str7 15 lives)
       pooled patience 2 over 2 tests (6% dearer, declined) and recurrence 3 (equal); fresh check done, audit interrupted at its fourth meta-proof (3 proofs and 3 meta-proofs had replayed);
-      task stopped by reese during the check. NEXT: a budget relative to living; horizon
-      scaling with vote strength; then a
-      sealed version with --meta-every in the schedule. Keep confirm_seed.sh unchanged
-      (default --meta-every 0 = v10 behaviour). Previously: freeze v11 only
-      after the v10 verdict (c20 rerun). Remaining
+      task stopped by reese during the check. SEALED META-LEVEL (reese 2026-10-18: "proceed
+      with achieving sealed evidence for the true rsi level work"): 13 of 15 dev branch
+      pairs ended in identical states, so two knobs that change what is PROPOSED were
+      added (share .2/.3/.5 = fraction of hard worlds invented for; prune_r .05/.1/.2 =
+      prune threshold), per-knob horizon (patience/probation over --meta-lives, others 1
+      life), cadence over the seed's global lives, a test never overruns an area's run
+      (584d816). confirm_seed.sh is now CANDIDATE v11 = v10 schedule + --meta-every 2
+      --meta-lives 2 --meta-budget 0.3. Dev d_meta7 (644101, full schedule) RUNNING; then
+      freeze v11 (gates 1-4 as v10 with meta-proofs in gate 4, cost gate split into level-0
+      and total, gate 5 = an adopted procedure change), sealed seeds 919120 (c21), 919121
+      (c22), verdict, papers. The str11 draft becomes v12. c20 (v10) rerun needs the v10
+      code: git worktree at 7f4e760 (hashes match v10). Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for
       ~half; a majority-keys rule would not pick it): leave.
       LATER: a cumulative-drift guard vs the INITIAL
