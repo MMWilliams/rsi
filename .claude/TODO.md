@@ -311,10 +311,12 @@ are for replication only. Nothing proven is reset between generations.
       prune threshold), per-knob horizon (patience/probation over --meta-lives, others 1
       life), cadence over the seed's global lives, a test never overruns an area's run
       (584d816). confirm_seed.sh is now CANDIDATE v11 = v10 schedule + --meta-every 2
-      --meta-lives 2 --meta-budget 0.3. Dev d_meta7 (644101, full schedule) RUNNING; then
-      freeze v11 (gates 1-4 as v10 with meta-proofs in gate 4, cost gate split into level-0
-      and total, gate 5 = an adopted procedure change), sealed seeds 919120 (c21), 919121
-      (c22), verdict, papers. The str11 draft becomes v12. c20 (v10) rerun needs the v10
+      --meta-lives 2 --meta-budget 0.3. Dev d_meta7 DONE: gates 1-4 met (all 7 areas +31..
+      +555%, mech untrained 99.6%, level-0 2.55x, total 3.52x, audit 14/14 + 5/5 meta), NO
+      adoption in 5 meta-tests (1 in ~20 over all dev runs). v11 FROZEN 7a99185 (gates 1-4
+      decide the pass; gate 5 = an adopted procedure change, forecast 0.2/seed). c21 =
+      919120 RUNNING (runs_seed_conf_c21.log); then c22 = 919121, verdict (Replications U,
+      V), summary table, both papers + Doc. The str11 draft becomes v12. c20 (v10) rerun needs the v10
       code: git worktree at 7f4e760 (hashes match v10). Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for
       ~half; a majority-keys rule would not pick it): leave.
