@@ -313,10 +313,15 @@ are for replication only. Nothing proven is reset between generations.
       (584d816). confirm_seed.sh is now CANDIDATE v11 = v10 schedule + --meta-every 2
       --meta-lives 2 --meta-budget 0.3. Dev d_meta7 DONE: gates 1-4 met (all 7 areas +31..
       +555%, mech untrained 99.6%, level-0 2.55x, total 3.52x, audit 14/14 + 5/5 meta), NO
-      adoption in 5 meta-tests (1 in ~20 over all dev runs). v11 FROZEN 7a99185 (gates 1-4
-      decide the pass; gate 5 = an adopted procedure change, forecast 0.2/seed). c21 =
-      919120 RUNNING (runs_seed_conf_c21.log); then c22 = 919121, verdict (Replications U,
-      V), summary table, both papers + Doc. The str11 draft becomes v12. c20 (v10) rerun needs the v10
+      adoption in 5 meta-tests (1 in ~20 over all dev runs). v11 FROZEN 7a99185. c21 =
+      919120 (Replication U): gates 1,2,3,5 PASS, FIRST SEALED ADOPTIONS (recurrence 3,
+      prune_r .05, identical states at 15-17% less proof cost; patience 2 rejected as worse
+      on evidence); gate 4 FAIL: loser snapshot lacked the losing branch's own experience
+      over a 2-life horizon, so 1 of 5 meta-proofs did not replay (683 recorded, 699
+      replayed); re-execution confirmed 683 exactly. v11 FAILS. v11.1 FROZEN 8286b88
+      (loser snapshot carries its experience tail; behaviour = v11). c22 = 919121 RUNNING,
+      then c23 = 919122, verdict (Replications V, W), summary table, both papers + Doc.
+      v12 (str11) seeds now 919123/919124. The str11 draft becomes v12. c20 (v10) rerun needs the v10
       code: git worktree at 7f4e760 (hashes match v10). Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for
       ~half; a majority-keys rule would not pick it): leave.
