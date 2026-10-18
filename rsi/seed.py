@@ -230,10 +230,13 @@ EXTENSION_SALT = 500     # an extension set's salt is its proof's salt plus this
 META_SALT = 5000         # meta sets, on which two branches of the seed are compared
 FALLBACK_MENU = ('model', 'prune', 'extend', 'extend+model')   # tested alone after the combination fails
 REPLACES = {'extend': 'extend+model'}                           # what a retired fallback gives way to
-KNOB_DEFAULTS = {'patience': 4, 'probation': 4, 'extend_cap': 40, 'recurrence': 2}   # the improver's knobs
+KNOB_DEFAULTS = {'patience': 4, 'probation': 4, 'extend_cap': 40, 'recurrence': 2,   # the improver's knobs
+                 'share': .3, 'prune_r': .1}
 FORMS = ('character', 'string')
 PROCEDURE = {form: dict(KNOB_DEFAULTS) for form in FORMS}                         # one procedure per form
-KNOBS = {'patience': (2, 4, 8), 'probation': (2, 4, 8), 'extend_cap': (20, 40, 80), 'recurrence': (2, 3)}
+KNOBS = {'patience': (2, 4, 8), 'probation': (2, 4, 8), 'extend_cap': (20, 40, 80), 'recurrence': (2, 3),
+         'share': (.2, .3, .5), 'prune_r': (.05, .1, .2)}
+SECOND_ORDER = ('patience', 'probation')   # act across lives, so tested over a horizon of lives
 
 
 def form_of(spec):
@@ -282,6 +285,9 @@ class Seed:
         if 'patience' in s['procedure']:              # one procedure for both forms, before 2026-10-12
             s['procedure'] = {f: dict(s['procedure']) for f in FORMS}
             changed = True
+        for p in s['procedure'].values():            # knobs added later take their defaults, in memory
+            for k, v in KNOB_DEFAULTS.items():
+                p.setdefault(k, v)
         if s.get('seed') is None and seed is not None:
             s['seed'] = seed
             changed = True
@@ -376,8 +382,10 @@ class Seed:
         for one rejected; recurrence up for every extension rejected, down
         for every life that could propose none (only extensions tested on
         their own count); extend_cap up for a kept
-        extension that filled the cap. The knob with the most votes moves
-        one step that way; with no votes, round-robin over the knobs."""
+        extension that filled the cap; share up for every kept extension;
+        prune_r up for a prune kept on its own, down for one rejected. The
+        knob with the most votes moves one step that way; with no votes,
+        round-robin over the knobs."""
         forms = self.forms()
         ledger = [e for e in self.state['ledger'] if forms.get(e.get('area')) == form]
         last = {k: max([i for i, e in enumerate(ledger) if e['op'] == 'meta' and e['mutation']['knob'] == k],
@@ -402,6 +410,10 @@ class Seed:
                         votes['recurrence'] += 1       # the extension itself, not a combination it was in
                     if e['kept'] and n >= proc['extend_cap'] and i > last['extend_cap']:
                         votes['extend_cap'] += 1
+                    if e['kept'] and i > last['share']:
+                        votes['share'] += 1            # inventing paid: invent for more of the hard worlds
+                if parts == ['prune'] and note.get('fallback') and i > last['prune_r']:
+                    votes['prune_r'] += 1 if e['kept'] else -1
                 if note.get('fallback'):
                     key = '+'.join(sorted(parts))
                     if run.get(key, 0) >= 2 and i > last['patience']:
@@ -583,16 +595,17 @@ class Seed:
 
     # -- extend and prune ---------------------------------------------------
 
-    def extend(self, worlds, records, cands, share=.3):
+    def extend(self, worlds, records, cands):
         """Candidate atoms for the worlds with the most unsolved tasks: the
         top `share` of this life's worlds by stuck count, never the easy ones.
-        The cap on atoms per life and the recurrence an atom needs are the
-        procedure's."""
+        The share, the cap on atoms per life and the recurrence an atom needs
+        are the procedure's."""
         form = 'string' if worlds and 'tasks' in worlds[0] else 'character'
-        cap, recurrence = self.procedure(form)['extend_cap'], self.procedure(form)['recurrence']
+        proc = self.procedure(form)
+        cap, recurrence, share = proc['extend_cap'], proc['recurrence'], proc['share']
         if form == 'string':
             from .seed_string import extend_string
-            return extend_string(self, worlds, records, cap=cap)
+            return extend_string(self, worlds, records, share=share, cap=cap)
         stuck = np.array([r['stuck'] for r in records])
         cut = max(.15 * STREAM, float(np.quantile(stuck, 1 - share)))
         masks = {a[0]: mask_of(a[2]) for a in self.state['language'] if a[1] != 'str'}
@@ -613,12 +626,14 @@ class Seed:
         self.state['resource']['invention_tests'] += tests
         return list(new.values()), tests, provenance
 
-    def prune(self, min_lives=2, r_min=.10):
+    def prune(self, form, min_lives=2):
         """Invented atoms that have not earned their keep, two or more lives
         after they entered: never earned with confidence anywhere, or rated by
         every area model that has seen them as found only through the seed's
-        own wrong picks (discovery rate below `r_min`, the self model's
-        import-only verdict). Candidates for removal; the proof decides."""
+        own wrong picks (discovery rate below the procedure's `prune_r` for
+        the form being lived, the self model's import-only verdict).
+        Candidates for removal; the proof decides."""
+        r_min = self.procedure(form)['prune_r']
         life = self.lives()
         earned = {k for e in self.state['experience'] for k in e['confident']}
         models = [a['model'] for a in self.state['areas'].values() if a.get('model')]
