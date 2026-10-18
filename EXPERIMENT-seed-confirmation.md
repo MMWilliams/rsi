@@ -1523,14 +1523,15 @@ recurrence 3. prune_r .05 at drawn11 life 1, under recurrence 3: identical
 candidate to test): ADOPTED, the procedure now recurrence 3 and prune_r .05.
 share .5 at str7 life 1: a no-op, not run. patience 2 again at mech life 4,
 under both adopted changes: identical this time and 18% cheaper, but pooled
-with the drawn7 test over 96 worlds (-0.9 to -0.1): declined. Every later
-character life ran under the procedure the seed had changed: drawn11 life
-1 on, drawn13, metric555001 and mech lives 4 and 5. Two further patience
-tests did not run (one life left in those runs); the budget held back four.
+with the drawn7 test over 96 worlds (-0.9 to -0.1): declined. The eight
+character lives after the first adoption ran under recurrence 3 (drawn11,
+drawn13, metric555001, mech lives 4 and 5), the last six also under
+prune_r .05. Two further patience tests did not run (one life left in
+those runs); the budget held back two.
 
 - Gate 1: PASS, seven of seven areas, smallest +28% (drawn7).
-- Gate 2: PASS, all eleven pools rose; the weakest (str7 trained) to 122%
-  of its start.
+- Gate 2: PASS, all eleven pools rose; the weakest (str7 untrained) to
+  120% of its start.
 - Gate 3: PASS, level-0 proofs 2.95x against 3.5x, all proofs 4.12x
   against 5.0x (28.4% of proof scans charged to the meta-level).
 - Gate 4: FAIL. Thirteen of thirteen acceptances replay exactly, salts
@@ -1548,8 +1549,8 @@ tests did not run (one life left in those runs); the budget held back four.
   the run logged, and scores 683 on the meta set, every world equal to the
   record. The recorded meta-proof was right and the decision stands; what
   failed is the record's completeness, which the gate requires.
-- Gate 5: PASS. Two mutations adopted, both replaying exactly, and nine of
-  the run's later lives ran under them.
+- Gate 5: PASS. Two mutations adopted, both replaying exactly, and the
+  eight later character lives ran under them.
 
 ### Verdict on v11
 
