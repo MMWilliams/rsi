@@ -319,7 +319,7 @@ are for replication only. Nothing proven is reset between generations.
       on evidence); gate 4 FAIL: loser snapshot lacked the losing branch's own experience
       over a 2-life horizon, so 1 of 5 meta-proofs did not replay (683 recorded, 699
       replayed); re-execution confirmed 683 exactly. v11 FAILS. v11.1 FROZEN 8286b88
-      (loser snapshot carries its experience tail; behaviour = v11). c22 PASSED gates 1-5 (dfbabfe); c23 = 919122 running; then v11.1 verdict, papers, Doc. Old note: c22 = 919121 died with the
+      (loser snapshot carries its experience tail; behaviour = v11). v11.1 PASSES: c22 and c23 both gates 1-5 (5bc84f1); 4 of 8 mutations adopted, recurrence 3 on c23 as BETTER. Both papers updated (a126d4a). OPEN: living Doc/artifact copy not updated; replicate a better-not-cheaper adoption; next level = agent-proposed procedure components beyond the knob menu; v12 (str11) on 919123/919124. Old note: c22 = 919121 died with the
       session at life ~9 (2026-10-19); CLEAN RERUN RUNNING (record the restart in Replication V),
       then c23 = 919122, verdict (Replications V, W), summary table, both papers + Doc.
       v12 (str11) seeds now 919123/919124. The str11 draft becomes v12. c20 (v10) rerun needs the v10
