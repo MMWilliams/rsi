@@ -333,6 +333,14 @@ are for replication only. Nothing proven is reset between generations.
       (drawn11 seed_run --meta-every 1 --meta-lives 3) + audit. Note: on d_meta7 votes pick
       prune_r (-5), not max_groups (+4), so d_meta8 may not test the new knob first.
       Sealed proposal if a "better" adoption shows: v11.2 on 919125/919126.
+      RESULTS (10-18): d_rec1 mech: Q=P=R meta 1502, proof 29.5M, 0 kept in all arms:
+      NOT CONFIRMED (the c21 "cheaper" adoptions do not compound here). d_rec2 drawn11
+      max_groups=12: P bit-identical to Q (meta 691, 41.8M, 0 kept); held-out likelihood
+      never picks g>8 on d_meta7 experience, so the knob is dead: REFUTED. d_meta8 not run.
+      Open: prune proofs read held-out 1511 -> 1556 yet interval [+0.0,+0.0] and dropped
+      (d_rec1 log): check the paired interval for prune, may be a scoring bug.
+      c22 HUNG since ~18:10 (log line 102+: faulthandler timeouts in multiprocessing spawn,
+      58 s CPU in 3 h, no workers); kill/restart is reese's call.
       v12 (str11) seeds now 919123/919124. The str11 draft becomes v12. c20 (v10) rerun needs the v10
       code: git worktree at 7f4e760 (hashes match v10). Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for
