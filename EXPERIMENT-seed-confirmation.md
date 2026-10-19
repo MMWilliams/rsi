@@ -1600,3 +1600,39 @@ the limit than d_meta7's 3.52x), gate 4 0.9 (the gap closed; a new path
 tested on real divergent data once), gates 1 to 4 on both seeds 0.35.
 Gate 5 on a given seed 0.4 (two adoptions in four real tests on 919120,
 none in five on d_meta7); on at least one of the two 0.6.
+
+### Replication V, seed 919121 under v11.1 (`seeds/c22`, `runs_seed_conf_c22.log`), 2026-10-19
+
+The first run died with the session at about life 9, before any score was
+read; its partial log was set aside and the seed rerun from scratch under
+the same frozen files.
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,309 | 2,356 | +80% | trained 24.6 -> 34.4, untrained 26.4 -> 44.9, unfamiliar 3.5 -> 18.9 |
+| drawn7 | 151 | 326 | +116% | env 6.3 -> 13.6 |
+| metric777001 | 485 | 1,497 | +209% | seen 16.5 -> 40.8, unfamiliar 3.7 -> 21.5 |
+| drawn11 | 225 | 413 | +84% | env 9.4 -> 17.2 |
+| drawn13 | 261 | 434 | +66% | env 10.9 -> 18.1 |
+| metric555001 | 360 | 1,454 | +304% | seen 12.3 -> 39.0, unfamiliar 2.7 -> 21.5 |
+| str7 | 4,386 | 6,014 | +37% | trained 63.5 -> 81.7, untrained 70.4 -> 86.5, unfamiliar 48.8 -> 82.3 |
+
+Kept changes (11): four language extensions with refits, five model refits
+alone, two prunes alone. Level 1 retired model and extend alone at life 7,
+prune at 10, extend+model at 13.
+
+The meta-level, three tests run. extend_cap 80 at mech life 1: identical
+(1,062 = 1,062) at 15% less proof cost (14.7M against 17.2M): ADOPTED, the
+character form's procedure extend_cap 80 for every later character life.
+share .5 at str7 life 1: identical at equal cost, declined. patience 2 over
+two lives late in the run: identical (1,329 = 1,329) at equal cost,
+declined. A second share test was a no-op, not run; four patience tests
+had one life left and did not run; the budget held back two.
+
+- Gate 1: PASS, seven of seven, smallest +37% (str7).
+- Gate 2: PASS, all fifteen pools rose; the weakest (str7 untrained) to 123%.
+- Gate 3: PASS, level-0 proofs 2.10x against 3.5x, all proofs 2.56x against
+  5.0x (18.1% of proof scans charged to the meta-level).
+- Gate 4: PASS, the auditor replays every acceptance, every policy
+  revision and three of three meta-proofs (`analysis/audit-seed-c22.json`).
+- Gate 5: PASS, one mutation adopted and lived under.

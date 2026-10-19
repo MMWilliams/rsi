@@ -1,0 +1,352 @@
+{
+  "name": "c22",
+  "replayed": [
+    {
+      "version": 1,
+      "area": "mech",
+      "change": "language +40 + model g=7 pw=4 from 96 worlds + prior",
+      "carried": [
+        706,
+        706
+      ],
+      "candidate": [
+        1028,
+        1028
+      ],
+      "interval": [
+        [
+          2.791145833333333,
+          10.770833333333334
+        ],
+        [
+          2.791145833333333,
+          10.770833333333334
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 2,
+      "area": "mech",
+      "change": "language +80 + prune -8 + model g=6 pw=3 from 288 worlds + prior",
+      "carried": [
+        1062,
+        1062
+      ],
+      "candidate": [
+        1289,
+        1289
+      ],
+      "interval": [
+        [
+          1.7911458333333337,
+          7.958333333333333
+        ],
+        [
+          1.7911458333333337,
+          7.958333333333333
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 3,
+      "area": "mech",
+      "change": "prune -28",
+      "carried": [
+        1278,
+        1278
+      ],
+      "candidate": [
+        1354,
+        1354
+      ],
+      "interval": [
+        [
+          0.25,
+          3.0625
+        ],
+        [
+          0.25,
+          3.0625
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 4,
+      "area": "drawn7",
+      "change": "language +80 + prune -18 + model g=6 pw=4 from 96 worlds + prior",
+      "carried": [
+        476,
+        476
+      ],
+      "candidate": [
+        639,
+        639
+      ],
+      "interval": [
+        [
+          0.6656250000000004,
+          6.208333333333333
+        ],
+        [
+          0.6656250000000004,
+          6.208333333333333
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 5,
+      "area": "metric777001",
+      "change": "language +18 + prune -58 + model g=8 pw=2 from 96 worlds + prior",
+      "carried": [
+        309,
+        309
+      ],
+      "candidate": [
+        1310,
+        1310
+      ],
+      "interval": [
+        [
+          15.395312500000001,
+          26.479687500000004
+        ],
+        [
+          15.395312500000001,
+          26.479687500000004
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 6,
+      "area": "drawn11",
+      "change": "model g=7 pw=4 from 96 worlds + prior",
+      "carried": [
+        449,
+        449
+      ],
+      "candidate": [
+        693,
+        693
+      ],
+      "interval": [
+        [
+          1.999479166666667,
+          7.9796875000000025
+        ],
+        [
+          1.999479166666667,
+          7.9796875000000025
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 7,
+      "area": "drawn13",
+      "change": "model g=6 pw=4 from 96 worlds + prior",
+      "carried": [
+        480,
+        480
+      ],
+      "candidate": [
+        757,
+        757
+      ],
+      "interval": [
+        [
+          2.353645833333333,
+          9.270833333333334
+        ],
+        [
+          2.353645833333333,
+          9.270833333333334
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 8,
+      "area": "metric555001",
+      "change": "model g=8 pw=2 from 96 worlds + prior",
+      "carried": [
+        455,
+        455
+      ],
+      "candidate": [
+        1288,
+        1288
+      ],
+      "interval": [
+        [
+          12.832812500000001,
+          22.063020833333336
+        ],
+        [
+          12.832812500000001,
+          22.063020833333336
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 9,
+      "area": "metric555001",
+      "change": "model g=8 pw=2 from 192 worlds + prior",
+      "carried": [
+        1500,
+        1500
+      ],
+      "candidate": [
+        1618,
+        1618
+      ],
+      "interval": [
+        [
+          1.2291666666666667,
+          3.7713541666666686
+        ],
+        [
+          1.2291666666666667,
+          3.7713541666666686
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 10,
+      "area": "str7",
+      "change": "language +17 + prune -17 + model g=6 pw=2 from 96 worlds + prior",
+      "carried": [
+        3059,
+        3059
+      ],
+      "candidate": [
+        3911,
+        3911
+      ],
+      "interval": [
+        [
+          12.9375,
+          22.708333333333332
+        ],
+        [
+          12.9375,
+          22.708333333333332
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 11,
+      "area": "str7",
+      "change": "prune -11",
+      "carried": [
+        3982,
+        3982
+      ],
+      "candidate": [
+        3999,
+        3999
+      ],
+      "interval": [
+        [
+          0.0625,
+          0.6666666666666666
+        ],
+        [
+          0.0625,
+          0.6666666666666666
+        ]
+      ],
+      "ok": true
+    }
+  ],
+  "passed": true,
+  "policy_ok": true,
+  "meta_ok": true,
+  "meta": [
+    {
+      "ledger": 7,
+      "mutation": {
+        "knob": "extend_cap",
+        "before": 40,
+        "after": 80,
+        "votes": {
+          "patience": 0,
+          "probation": 0,
+          "extend_cap": 1,
+          "recurrence": -1,
+          "share": 1,
+          "prune_r": 0
+        }
+      },
+      "adopted": true,
+      "a": [
+        1062,
+        1062
+      ],
+      "b": [
+        1062,
+        1062
+      ],
+      "ok": true
+    },
+    {
+      "ledger": 24,
+      "mutation": {
+        "knob": "share",
+        "before": 0.3,
+        "after": 0.5,
+        "votes": {
+          "patience": 0,
+          "probation": 0,
+          "extend_cap": 2,
+          "recurrence": 1,
+          "share": 3,
+          "prune_r": 1
+        }
+      },
+      "adopted": false,
+      "a": [
+        754,
+        754
+      ],
+      "b": [
+        754,
+        754
+      ],
+      "ok": true
+    },
+    {
+      "ledger": 92,
+      "mutation": {
+        "knob": "patience",
+        "before": 4,
+        "after": 2,
+        "votes": {
+          "patience": -10,
+          "probation": 0,
+          "extend_cap": 2,
+          "recurrence": 9,
+          "share": 1,
+          "prune_r": -4
+        }
+      },
+      "adopted": false,
+      "a": [
+        1329,
+        1329
+      ],
+      "b": [
+        1329,
+        1329
+      ],
+      "ok": true
+    }
+  ]
+}
