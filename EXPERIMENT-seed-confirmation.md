@@ -1636,3 +1636,65 @@ had one life left and did not run; the budget held back two.
 - Gate 4: PASS, the auditor replays every acceptance, every policy
   revision and three of three meta-proofs (`analysis/audit-seed-c22.json`).
 - Gate 5: PASS, one mutation adopted and lived under.
+
+### Replication W, seed 919122 under v11.1 (`seeds/c23`, `runs_seed_conf_c23.log`), 2026-10-19
+
+| area | start | carried | gain | pools start -> carried (tasks per world) |
+| --- | --- | --- | --- | --- |
+| mech | 1,166 | 2,385 | +105% | trained 23.4 -> 36.7, untrained 20.6 -> 43.3, unfamiliar 4.5 -> 19.4 |
+| drawn7 | 260 | 410 | +58% | env 10.8 -> 17.1 |
+| metric777001 | 259 | 1,893 | +631% | seen 6.9 -> 41.2, unfamiliar 3.9 -> 37.6 |
+| drawn11 | 303 | 454 | +50% | env 12.6 -> 18.9 |
+| drawn13 | 214 | 410 | +92% | env 8.9 -> 17.1 |
+| metric555001 | 458 | 1,764 | +285% | seen 16.0 -> 46.0, unfamiliar 3.0 -> 27.5 |
+| str7 | 4,569 | 5,873 | +29% | trained 72.2 -> 88.1, untrained 61.3 -> 72.1, unfamiliar 56.9 -> 84.5 |
+
+Kept changes: 14.
+
+The meta-level, five tests run. extend_cap 80 at mech life 1: identical
+(1,112 = 1,112) at 15% less proof cost: ADOPTED. recurrence 3 at drawn7
+life 1: both branches kept their combined candidate, but the one under
+recurrence 3 kept a better one (held-out 864 against 813, and mech 1,247
+against 1,188 where branch a's change cost mech); on the meta set 724 ->
+759, interval +0.1 to +1.4 per world, at 57% more proof cost (27.0M
+against 17.2M): ADOPTED as better, the first adoption in any run where
+the changed procedure produced a better state, not the same state for
+less. share .5 at metric555001: identical, equal cost, declined. prune_r
+.05 at drawn11: identical at 16% less: ADOPTED. patience 2 over two lives
+at mech life 4: identical, equal cost, declined. One share test a no-op;
+two patience tests had one life left; the budget held back the rest.
+
+- Gate 1: PASS, seven of seven, smallest +29% (str7).
+- Gate 2: PASS, all fifteen pools rose; the weakest (str7 untrained) to 118%.
+- Gate 3: PASS, level-0 proofs 2.71x against 3.5x, all proofs 3.67x
+  against 5.0x (26.0% of proof scans charged to the meta-level).
+- Gate 4: PASS, every acceptance, every policy revision and five of five
+  meta-proofs replay (`analysis/audit-seed-c23.json`).
+- Gate 5: PASS, three mutations adopted and lived under.
+
+The log of both runs carries a few stack dumps headed "Timeout (0:10:00)!":
+the watchdog in `seed_run.py` prints where the main process is whenever a
+step runs past ten minutes, and the run goes on; none is an error.
+
+### Verdict on v11.1
+
+v11.1 PASSES: gates 1 to 4 on both sealed seeds, gate 5 on both. Forecast
+for gates 1 to 4 on both seeds was 0.35.
+
+What is now sealed evidence, on 919121 and 919122, under a protocol frozen
+before either was opened:
+
+- Level 0: the seed improves its own state in all seven areas, every pool
+  rising, every acceptance replayed.
+- Level 1: its fallback policy, learned from its own ledger, retires
+  proof kinds that keep failing; every revision recomputes.
+- Level 2: it proposes changes to its own improver from ledger votes,
+  tests each on a meta set no proof used, and adopts four of eight tested
+  (two cheaper extend_cap, one cheaper prune_r, one better recurrence),
+  declining the rest on evidence. Every later life runs under the adopted
+  procedure; every meta-proof replays.
+
+Limits: the knobs are a fixed menu of six with three values each; the seed
+chooses among procedures it was given, it does not write new ones. Three
+of four adoptions are of the cheaper kind. The better one is a single
+test with its interval's lower end at +0.1 per world.
