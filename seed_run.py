@@ -16,7 +16,7 @@ if the branch under it scores higher on a meta set no proof used, or
 scores no lower at a tenth less cost. A knob that acts within a life is
 tested over that life; one that acts across lives (patience, probation)
 over --meta-lives K lives, the branches living the same world draws, and
-only if the area's run has K lives left. With a horizon of one life, a
+only if the area's run has K lives left, else a one-life knob. With a horizon of one life, a
 mutation that would propose and test exactly what the current procedure
 proposes is a no-op: recorded, not run. The
 state is saved after every operation, so a run resumes, and the ledger
@@ -190,14 +190,12 @@ def main():
         within = not args.meta_budget or seed.meta_spent() < args.meta_budget * seed.state['resource']['proof_scans']
         horizon = 0
         if due and within:
-            knob, value, votes = seed.mutation(form)
+            left = target - seed.lives(area.name) + 1
+            # a knob that acts across lives needs that many lives left in this run; otherwise a one-life knob
+            knob, value, votes = seed.mutation(form, exclude=SECOND_ORDER if args.meta_lives > left else ())
             before = seed.procedure(form)[knob]
             horizon = args.meta_lives if knob in SECOND_ORDER else 1
-            left = target - seed.lives(area.name) + 1
             print(f'  meta: {knob} {before} -> {value} over {horizon} lives; votes {json.dumps(votes)}', flush=True)
-            if horizon > left:
-                print(f'  meta: {left} lives left in this run; no test', flush=True)
-                horizon = 0
         elif due:
             print(f'  meta: budget spent ({seed.meta_spent() / 1e6:.1f}M of '
                   f'{args.meta_budget * seed.state["resource"]["proof_scans"] / 1e6:.1f}M); no test', flush=True)

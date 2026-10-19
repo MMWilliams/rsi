@@ -321,6 +321,18 @@ are for replication only. Nothing proven is reset between generations.
       replayed); re-execution confirmed 683 exactly. v11 FAILS. v11.1 FROZEN 8286b88
       (loser snapshot carries its experience tail; behaviour = v11). c22 = 919121 RUNNING,
       then c23 = 919122, verdict (Replications V, W), summary table, both papers + Doc.
+      META-KNOB (2026-10-18, branch worktree-meta-knob, NOT RUN, wait for c22/c23): diagnosis
+      (Fable): knobs act upstream of a level-0 proof whose kept changes are ~all model refits,
+      so branch states end identical and only "cheaper" can fire; due slots wasted when a
+      second-order knob can't fit the lives left; refit grid g<=8 binds (drawn7 has 9 true
+      groups, drawn11 12). Built: knob max_groups (8/10/12, default 8 = old behaviour) voted
+      by kept models at the grid top; second-order knobs excluded instead of dropping the
+      slot; seed_meta_recursive.py (P adopted vs Q current vs R adversary, same draws, meta set,
+      proof cost) = the recursive-step test. Dev tests, one at a time: d_rec1 (mech,
+      recurrence=3,prune_r=0.05 vs extend_cap=80), d_rec2 (drawn11, max_groups=12), d_meta8
+      (drawn11 seed_run --meta-every 1 --meta-lives 3) + audit. Note: on d_meta7 votes pick
+      prune_r (-5), not max_groups (+4), so d_meta8 may not test the new knob first.
+      Sealed proposal if a "better" adoption shows: v11.2 on 919125/919126.
       v12 (str11) seeds now 919123/919124. The str11 draft becomes v12. c20 (v10) rerun needs the v10
       code: git worktree at 7f4e760 (hashes match v10). Remaining
       'wrong' cases are 3-example ambiguity (same-length right program in window for

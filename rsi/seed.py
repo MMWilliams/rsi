@@ -231,11 +231,11 @@ META_SALT = 5000         # meta sets, on which two branches of the seed are comp
 FALLBACK_MENU = ('model', 'prune', 'extend', 'extend+model')   # tested alone after the combination fails
 REPLACES = {'extend': 'extend+model'}                           # what a retired fallback gives way to
 KNOB_DEFAULTS = {'patience': 4, 'probation': 4, 'extend_cap': 40, 'recurrence': 2,   # the improver's knobs
-                 'share': .3, 'prune_r': .1}
+                 'share': .3, 'prune_r': .1, 'max_groups': 8}
 FORMS = ('character', 'string')
 PROCEDURE = {form: dict(KNOB_DEFAULTS) for form in FORMS}                         # one procedure per form
 KNOBS = {'patience': (2, 4, 8), 'probation': (2, 4, 8), 'extend_cap': (20, 40, 80), 'recurrence': (2, 3),
-         'share': (.2, .3, .5), 'prune_r': (.05, .1, .2)}
+         'share': (.2, .3, .5), 'prune_r': (.05, .1, .2), 'max_groups': (8, 10, 12)}
 SECOND_ORDER = ('patience', 'probation')   # act across lives, so tested over a horizon of lives
 
 
@@ -378,7 +378,7 @@ class Seed:
         self.save()
         return policy
 
-    def mutation(self, form):
+    def mutation(self, form, exclude=()):
         """The meta-producer: one change to the procedure to test this life,
         chosen from the ledger's evidence in this form since each knob was
         last tested. Votes: patience down for every fallback tested past its
@@ -388,9 +388,11 @@ class Seed:
         for every life that could propose none (only extensions tested on
         their own count); extend_cap up for a kept
         extension that filled the cap; share up for every kept extension;
-        prune_r up for a prune kept on its own, down for one rejected. The
-        knob with the most votes moves one step that way; with no votes,
-        round-robin over the knobs."""
+        prune_r up for a prune kept on its own, down for one rejected;
+        max_groups up for a kept model that chose the top of its grid, down
+        for one at or under the grid below. The knob with the most votes
+        moves one step that way; with no votes, round-robin over the knobs.
+        Knobs in `exclude` are not proposed."""
         forms = self.forms()
         ledger = [e for e in self.state['ledger'] if forms.get(e.get('area')) == form]
         last = {k: max([i for i, e in enumerate(ledger) if e['op'] == 'meta' and e['mutation']['knob'] == k],
@@ -419,6 +421,10 @@ class Seed:
                         votes['share'] += 1            # inventing paid: invent for more of the hard worlds
                 if parts == ['prune'] and note.get('fallback') and i > last['prune_r']:
                     votes['prune_r'] += 1 if e['kept'] else -1
+                if 'model' in parts and e['kept'] and i > last['max_groups']:
+                    g = int(re.search(r'model g=(\d+)', e['change']).group(1))
+                    j = KNOBS['max_groups'].index(proc['max_groups'])
+                    votes['max_groups'] += 1 if g >= proc['max_groups'] else -1 if j and g <= KNOBS['max_groups'][j - 1] else 0
                 if note.get('fallback'):
                     key = '+'.join(sorted(parts))
                     if run.get(key, 0) >= 2 and i > last['patience']:
@@ -433,13 +439,14 @@ class Seed:
             cycle, j = KNOBS[knob], KNOBS[knob].index(proc[knob])
             return cycle[j + direction] if 0 <= j + direction < len(cycle) else None
 
-        moves = {k: step(k, 1 if v > 0 else -1) for k, v in votes.items() if v}
+        moves = {k: step(k, 1 if v > 0 else -1) for k, v in votes.items() if v and k not in exclude}
         moves = {k: v for k, v in moves.items() if v is not None}
         if moves:
             knob = max(moves, key=lambda k: abs(votes[k]))
             return knob, moves[knob], votes
+        allowed = [k for k in KNOBS if k not in exclude]
         n = sum(1 for e in ledger if e['op'] == 'live')
-        knob = list(KNOBS)[(n - 1) % len(KNOBS)]
+        knob = allowed[(n - 1) % len(allowed)]
         others = [v for v in KNOBS[knob] if v != proc[knob]]
         tried = sum(1 for e in ledger if e['op'] == 'meta' and e['mutation']['knob'] == knob)
         return knob, others[tried % len(others)], votes
@@ -571,12 +578,14 @@ class Seed:
 
     # -- reflect ------------------------------------------------------------
 
-    def reflect(self, area, minimum=48, counts=(6, 7, 8), per_worlds=(2, 3, 4)):
+    def reflect(self, area, minimum=48, counts=None, per_worlds=(2, 3, 4)):
         """A candidate model for an area from everything earned there: group
-        count and groups per world by held-out likelihood."""
+        count, from 6 up to the procedure's `max_groups`, and groups per
+        world by held-out likelihood."""
         sets = [e['confident'] for e in self.state['experience'] if e['area'] == area]
         if len(sets) < minimum:
             return None
+        counts = counts or range(6, self.procedure(self.forms()[area])['max_groups'] + 1)
         keys = sorted(a[0] for a in self.state['language'])
         index = {k: i for i, k in enumerate(keys)}
         idx = [[index[k] for k in s if k in index] for s in sets]
