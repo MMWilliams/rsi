@@ -1630,7 +1630,7 @@ declined. A second share test was a no-op, not run; four patience tests
 had one life left and did not run; the budget held back two.
 
 - Gate 1: PASS, seven of seven, smallest +37% (str7).
-- Gate 2: PASS, all fifteen pools rose; the weakest (str7 untrained) to 123%.
+- Gate 2: PASS, all eleven pools rose; the weakest (str7 untrained) to 123%.
 - Gate 3: PASS, level-0 proofs 2.10x against 3.5x, all proofs 2.56x against
   5.0x (18.1% of proof scans charged to the meta-level).
 - Gate 4: PASS, the auditor replays every acceptance, every policy
@@ -1665,7 +1665,7 @@ at mech life 4: identical, equal cost, declined. One share test a no-op;
 two patience tests had one life left; the budget held back the rest.
 
 - Gate 1: PASS, seven of seven, smallest +29% (str7).
-- Gate 2: PASS, all fifteen pools rose; the weakest (str7 untrained) to 118%.
+- Gate 2: PASS, all eleven pools rose; the weakest (str7 untrained) to 118%.
 - Gate 3: PASS, level-0 proofs 2.71x against 3.5x, all proofs 3.67x
   against 5.0x (26.0% of proof scans charged to the meta-level).
 - Gate 4: PASS, every acceptance, every policy revision and five of five
