@@ -1698,3 +1698,26 @@ Limits: the knobs are a fixed menu of six with three values each; the seed
 chooses among procedures it was given, it does not write new ones. Three
 of four adoptions are of the cheaper kind. The better one is a single
 test with its interval's lower end at +0.1 per world.
+
+### v11.1 multi-seed replication (review 002, required experiment 2), frozen 2026-10-26
+
+A reviewer asked for the final protocol on 5 to 10 independent seeds with
+intervals per pool. v11.1 is unchanged (hashes as above, checked against
+master 1cbf3e2 before launch). Eight more sealed seeds, never opened, run
+one at a time with `confirm_seed.sh`: 919127 to 919134 as `seeds/c24` to
+`seeds/c31` (919123/4 stay reserved for v12, 919125/6 for a v11.2 that was
+never frozen). With 919121 and 919122 that is ten seeds under one protocol.
+
+Reported per seed: gates 1 to 5 as before. Reported over all ten: for every
+area and every pool, the carried/start ratio on the fresh check set, its
+median, minimum and a 95% bootstrap interval over seeds (resampling seeds,
+10,000 draws), and the count of seeds on which it fell below 100%. The
+untrained mech pool and the str7 untrained pool are named in advance as the
+pools to watch (an untrained pool ended at 89% under v5).
+
+Forecast, committed before opening 919127: gates 1 to 4 on a given seed
+0.8 (passed on both v11.1 seeds; the hang and memory kills are run
+failures, rerun clean and recorded, not gate failures); all eight pass 1 to
+4: 0.2. Gate 5 on a given seed 0.7 (adoptions on all three v11-family
+seeds). Every pool's median ratio above 100%: 0.9. At least one pool below
+100% on at least one seed: 0.5.
