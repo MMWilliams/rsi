@@ -1,0 +1,8 @@
+# HANDOFF: review 002 response
+
+1. Goal: answer review 002 (`C:\Users\reese\Downloads\seed_growth_review002.txt`) with its three required experiments, then revise both papers. Done = R2 ten-seed table + R1/R3 arm grid results in the papers.
+2. Files changed (master): `REVIEW-002-RESPONSE-PLAN.md` (plan + evaluation), `EXPERIMENT-seed-confirmation.md` (v11.1 multi-seed replication preregistered, 919127-919134 = c24-c31, forecast), `run_review002_r2.sh` (sequential, hash-guarded, venv PATH), `v11.1.sha256`. Worktree `.claude/worktrees/review002` (branch worktree-review002) created, no changes yet.
+3. Decisions: final protocol = v11.1 (hashes match master); seeds skip 919123-6 (reserved v12/v11.2); ablation code goes in the worktree so master's frozen files stay untouched while R2 runs; R1+R3 share one arm grid on 3 seeds, meta off; R3 arms first (82% of full-set rejections had positive point gain, see plan).
+4. Failed: first R2 launch died on import (system python has no numpy); runner now prepends `.venv/Scripts` to PATH. c24 had not created any state, so it is still unopened.
+5. Next step: when R2 finishes (or in parallel only if free RAM > 20 GB), implement `--arm` in the worktree's seed_run.py: no-guidance (skip reflect), frequency (prior from per-atom earned counts, no model), no-invention (skip extend/prune), accept-all (keep the combination without proof), point (keep if half-set point gain > 0, no interval, no cross-area), matched (accept-all + extra lives to equal full's live+proof scans). Smoke one life each on a dev seed, then preregister arms on 919127-919129.
+6. Test: `cat runs_review002_r2.log` shows "done c31"; `python audit_seed.py --name c24..c31` pass. Current: c24 running (started 10-26 ~16:55).

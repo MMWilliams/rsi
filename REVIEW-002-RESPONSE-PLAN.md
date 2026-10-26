@@ -50,3 +50,14 @@ Level 0 (state) against levels 1-2 (procedure) made explicit in the
 introduction; related work: continual learning, adaptive search, DreamCoder-
 style library learning; chronology of versions to an appendix with the table
 kept in the body.
+
+## Evaluation (2026-10-26)
+
+R3 is the one that can change the thesis. Of 1,068 proofs on the sealed seeds
+c1-c23, 479 were rejected after the full held-out set and 394 of those (82%)
+scored above the carried state, short of the interval; neutral changes would
+sit near 50%. The test discards mostly-good changes, and the model compounds
+with experience, so accept-all or matched could beat full. Run R1+R3 as one
+grid, R3 arms first. The "9% untrained" the review cites is dev agent s1
+before gate 2 (paper line 321); sealed v11.1 pools all rose (weakest 118%):
+say dev-only in the limits section. R4: decline in the limits section.
