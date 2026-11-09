@@ -1,0 +1,453 @@
+{
+  "seeds": [
+    {
+      "name": "c22",
+      "seed": 919121,
+      "gates": {
+        "1_growth": true,
+        "2_safety": true,
+        "3_cost": true,
+        "4_replay": true,
+        "5_adopted": true
+      },
+      "passes_1_to_4": true,
+      "below_growth": [],
+      "level0_cost": 2.0952380952380953,
+      "all_proof_cost": 2.5595238095238093,
+      "kept_proofs": 11,
+      "adopted": [
+        {
+          "knob": "extend_cap",
+          "after": 80,
+          "rule": "cheaper"
+        }
+      ]
+    },
+    {
+      "name": "c23",
+      "seed": 919122,
+      "gates": {
+        "1_growth": true,
+        "2_safety": true,
+        "3_cost": true,
+        "4_replay": true,
+        "5_adopted": true
+      },
+      "passes_1_to_4": true,
+      "below_growth": [],
+      "level0_cost": 2.7142857142857144,
+      "all_proof_cost": 3.6666666666666665,
+      "kept_proofs": 14,
+      "adopted": [
+        {
+          "knob": "extend_cap",
+          "after": 80,
+          "rule": "cheaper"
+        },
+        {
+          "knob": "recurrence",
+          "after": 3,
+          "rule": "better"
+        },
+        {
+          "knob": "prune_r",
+          "after": 0.05,
+          "rule": "cheaper"
+        }
+      ]
+    },
+    {
+      "name": "c24",
+      "seed": 919127,
+      "gates": {
+        "1_growth": false,
+        "2_safety": true,
+        "3_cost": true,
+        "4_replay": true,
+        "5_adopted": false
+      },
+      "passes_1_to_4": false,
+      "below_growth": [
+        {
+          "area": "drawn13",
+          "start": 328,
+          "carried": 343
+        }
+      ],
+      "level0_cost": 2.607142857142857,
+      "all_proof_cost": 3.630952380952381,
+      "kept_proofs": 12,
+      "adopted": []
+    },
+    {
+      "name": "c25",
+      "seed": 919128,
+      "gates": {
+        "1_growth": true,
+        "2_safety": true,
+        "3_cost": true,
+        "4_replay": true,
+        "5_adopted": true
+      },
+      "passes_1_to_4": true,
+      "below_growth": [],
+      "level0_cost": 2.2976190476190474,
+      "all_proof_cost": 3.0476190476190474,
+      "kept_proofs": 10,
+      "adopted": [
+        {
+          "knob": "patience",
+          "after": 2,
+          "rule": "cheaper"
+        }
+      ]
+    },
+    {
+      "name": "c26",
+      "seed": 919129,
+      "gates": {
+        "1_growth": true,
+        "2_safety": true,
+        "3_cost": true,
+        "4_replay": true,
+        "5_adopted": true
+      },
+      "passes_1_to_4": true,
+      "below_growth": [],
+      "level0_cost": 2.9702380952380953,
+      "all_proof_cost": 4.041666666666667,
+      "kept_proofs": 13,
+      "adopted": [
+        {
+          "knob": "extend_cap",
+          "after": 80,
+          "rule": "cheaper"
+        }
+      ]
+    },
+    {
+      "name": "c27",
+      "seed": 919130,
+      "gates": {
+        "1_growth": true,
+        "2_safety": true,
+        "3_cost": true,
+        "4_replay": true,
+        "5_adopted": true
+      },
+      "passes_1_to_4": true,
+      "below_growth": [],
+      "level0_cost": 2.3452380952380953,
+      "all_proof_cost": 3.4285714285714284,
+      "kept_proofs": 11,
+      "adopted": [
+        {
+          "knob": "extend_cap",
+          "after": 80,
+          "rule": "cheaper"
+        },
+        {
+          "knob": "patience",
+          "after": 2,
+          "rule": "cheaper"
+        }
+      ]
+    },
+    {
+      "name": "c28",
+      "seed": 919131,
+      "gates": {
+        "1_growth": true,
+        "2_safety": true,
+        "3_cost": true,
+        "4_replay": true,
+        "5_adopted": true
+      },
+      "passes_1_to_4": true,
+      "below_growth": [],
+      "level0_cost": 2.761904761904762,
+      "all_proof_cost": 3.5238095238095237,
+      "kept_proofs": 16,
+      "adopted": [
+        {
+          "knob": "extend_cap",
+          "after": 80,
+          "rule": "cheaper"
+        }
+      ]
+    },
+    {
+      "name": "c29",
+      "seed": 919132,
+      "gates": {
+        "1_growth": true,
+        "2_safety": true,
+        "3_cost": true,
+        "4_replay": true,
+        "5_adopted": true
+      },
+      "passes_1_to_4": true,
+      "below_growth": [],
+      "level0_cost": 2.255952380952381,
+      "all_proof_cost": 3.017857142857143,
+      "kept_proofs": 10,
+      "adopted": [
+        {
+          "knob": "share",
+          "after": 0.5,
+          "rule": "cheaper"
+        }
+      ]
+    },
+    {
+      "name": "c30",
+      "seed": 919133,
+      "gates": {
+        "1_growth": true,
+        "2_safety": true,
+        "3_cost": true,
+        "4_replay": true,
+        "5_adopted": true
+      },
+      "passes_1_to_4": true,
+      "below_growth": [],
+      "level0_cost": 3.0357142857142856,
+      "all_proof_cost": 4.154761904761905,
+      "kept_proofs": 13,
+      "adopted": [
+        {
+          "knob": "extend_cap",
+          "after": 80,
+          "rule": "cheaper"
+        },
+        {
+          "knob": "prune_r",
+          "after": 0.05,
+          "rule": "cheaper"
+        }
+      ]
+    },
+    {
+      "name": "c31",
+      "seed": 919134,
+      "gates": {
+        "1_growth": true,
+        "2_safety": true,
+        "3_cost": true,
+        "4_replay": true,
+        "5_adopted": true
+      },
+      "passes_1_to_4": true,
+      "below_growth": [],
+      "level0_cost": 2.511904761904762,
+      "all_proof_cost": 3.6845238095238093,
+      "kept_proofs": 13,
+      "adopted": [
+        {
+          "knob": "extend_cap",
+          "after": 80,
+          "rule": "cheaper"
+        }
+      ]
+    }
+  ],
+  "pools": {
+    "mech": {
+      "median": 1.8381125426043692,
+      "minimum": 1.6387900355871887,
+      "below_100": 0,
+      "interval": [
+        1.7720443365446403,
+        1.9005799689603278
+      ]
+    },
+    "mech/trained": {
+      "median": 1.509492160872529,
+      "minimum": 1.2212389380530972,
+      "below_100": 0,
+      "interval": [
+        1.4271012006861061,
+        1.5670681688833796
+      ]
+    },
+    "mech/unfamiliar": {
+      "median": 5.0964285714285715,
+      "minimum": 2.6456692913385824,
+      "below_100": 0,
+      "interval": [
+        4.465897507181911,
+        6.846805317324185
+      ]
+    },
+    "mech/untrained": {
+      "median": 1.6721513995927004,
+      "minimum": 1.1324626865671643,
+      "below_100": 0,
+      "interval": [
+        1.4543561761855188,
+        1.9074803149606299
+      ]
+    },
+    "drawn7": {
+      "median": 1.6109253065774805,
+      "minimum": 1.2067039106145252,
+      "below_100": 0,
+      "interval": [
+        1.4874212628667998,
+        1.8527667984189722
+      ]
+    },
+    "drawn7/env": {
+      "median": 1.6109253065774805,
+      "minimum": 1.2067039106145252,
+      "below_100": 0,
+      "interval": [
+        1.4874212628667998,
+        1.8527667984189724
+      ]
+    },
+    "metric777001": {
+      "median": 5.306315954959027,
+      "minimum": 3.08659793814433,
+      "below_100": 0,
+      "interval": [
+        3.638157894736842,
+        6.105769230769231
+      ]
+    },
+    "metric777001/seen_centre": {
+      "median": 4.108277224824356,
+      "minimum": 2.468513853904282,
+      "below_100": 0,
+      "interval": [
+        2.975460122699386,
+        4.583791208791208
+      ]
+    },
+    "metric777001/unfamiliar_centre": {
+      "median": 9.019537643207856,
+      "minimum": 5.058064516129032,
+      "below_100": 0,
+      "interval": [
+        5.779411764705882,
+        11.75
+      ]
+    },
+    "drawn11": {
+      "median": 1.48137305990661,
+      "minimum": 1.1813186813186813,
+      "below_100": 0,
+      "interval": [
+        1.2393442622950819,
+        1.666952695269527
+      ]
+    },
+    "drawn11/env": {
+      "median": 1.48137305990661,
+      "minimum": 1.1813186813186813,
+      "below_100": 0,
+      "interval": [
+        1.2393442622950819,
+        1.7481973581973582
+      ]
+    },
+    "drawn13": {
+      "median": 1.6603649929421254,
+      "minimum": 1.045731707317073,
+      "below_100": 0,
+      "interval": [
+        1.5091129219348103,
+        1.9158878504672898
+      ]
+    },
+    "drawn13/env": {
+      "median": 1.6603649929421254,
+      "minimum": 1.045731707317073,
+      "below_100": 0,
+      "interval": [
+        1.5091129219348103,
+        1.9158878504672898
+      ]
+    },
+    "metric555001": {
+      "median": 4.055902777777778,
+      "minimum": 2.3692307692307693,
+      "below_100": 0,
+      "interval": [
+        3.693472525473071,
+        4.585442460932514
+      ]
+    },
+    "metric555001/seen_centre": {
+      "median": 3.223488833144522,
+      "minimum": 1.893478260869565,
+      "below_100": 0,
+      "interval": [
+        2.87012987012987,
+        3.618320610687023
+      ]
+    },
+    "metric555001/unfamiliar_centre": {
+      "median": 7.516590589887642,
+      "minimum": 4.935251798561151,
+      "below_100": 0,
+      "interval": [
+        6.067415730337078,
+        17.30829326923077
+      ]
+    },
+    "str7": {
+      "median": 1.319400210760494,
+      "minimum": 1.201118434192131,
+      "below_100": 0,
+      "interval": [
+        1.285401619610418,
+        1.3457952636967012
+      ]
+    },
+    "str7/trained": {
+      "median": 1.2137655083516836,
+      "minimum": 1.103161397670549,
+      "below_100": 0,
+      "interval": [
+        1.1592061529493067,
+        1.2518248175182483
+      ]
+    },
+    "str7/unfamiliar": {
+      "median": 1.656123596064504,
+      "minimum": 1.4857142857142858,
+      "below_100": 0,
+      "interval": [
+        1.549735470084443,
+        1.6874466268146884
+      ]
+    },
+    "str7/untrained": {
+      "median": 1.1891640866873066,
+      "minimum": 1.0842931937172775,
+      "below_100": 0,
+      "interval": [
+        1.1521873511471594,
+        1.2289940828402366
+      ]
+    }
+  },
+  "summary": {
+    "passes_1_to_4": 9,
+    "seeds": 10,
+    "adopting_seeds": 9,
+    "adoptions": 13,
+    "adopted_better": 1,
+    "adopted_cheaper": 12,
+    "kept_proofs": 123,
+    "level0_cost_range": [
+      2.0952380952380953,
+      3.0357142857142856
+    ],
+    "all_proof_cost_range": [
+      2.5595238095238093,
+      4.154761904761905
+    ]
+  }
+}

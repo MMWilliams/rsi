@@ -1721,3 +1721,67 @@ failures, rerun clean and recorded, not gate failures); all eight pass 1 to
 4: 0.2. Gate 5 on a given seed 0.7 (adoptions on all three v11-family
 seeds). Every pool's median ratio above 100%: 0.9. At least one pool below
 100% on at least one seed: 0.5.
+
+### Review 002 arms (required experiments 1 and 3), frozen 2026-11-09
+
+The review asked what each part of the seed is worth and whether the
+acceptance test earns its cost. Seven arms, each the v11.1 schedule (seven
+areas, 21 lives of 96 worlds, budget 1,024, 48-world held-out sets) with the
+meta-level off so that level 0 is what is compared, on three seeds: 919127,
+919128, 919129, tags c24, c25, c26. Those seeds were lived with the meta-level
+on in the replication above; no arm has run on them. Three seeds are too few
+for intervals, so the per-seed sign is reported and nothing is called
+significant.
+
+Code: `rsi/seed_arms.py`, `run_arms.py`, hashes in `arms.sha256`; the v11.1
+files are imported unedited and `v11.1.sha256` is checked before every run.
+Runner: `run_review_arms.sh`, one run at a time.
+
+| arm | what changes |
+| --- | --- |
+| full | v11.1 level 0, the frozen `Seed` |
+| accept-all | every proposed change is kept; no proof is run |
+| point | kept if the point gain on half the held-out set is positive; no interval, no extension, no cross-area check |
+| matched | accept-all, with every schedule step scaled so live scans equal full's live + proof scans on that seed, within one life |
+| no-guidance | no model and no prior are ever fitted |
+| frequency | no model; the prior is each atom's earned frequency, with no pair term |
+| no-invention | no extension and no pruning; the language stays the starting language |
+
+Scored by `seed_check.py` on the fresh sets (salt 999, 24 worlds per pool).
+Primary measure, per arm and seed: G = the mean over the seven areas of
+ln(carried / start). Total scans (live + proof) are reported beside every G.
+Harmful acceptances (a kept change that lowers its own area's total on a set
+of 12 worlds per pool, salt 999, no proof used, before against after with the
+experience it was tested under) are counted for full, point and accept-all.
+Matched is not counted: it has about four times accept-all's acceptances and
+the same rule.
+
+Decision rules, stated before any arm runs:
+
+1. The test beats an alternative (accept-all, point or matched) if full has
+   the higher G on all three seeds.
+2. If an alternative has the higher G on two or three seeds, the paper
+   withdraws the claim that the acceptance test is its central contribution
+   and says the test did not earn its cost at this budget and on these areas.
+3. Otherwise the comparison is inconclusive and the paper says so.
+4. Guidance is shown to matter if full's G beats no-guidance on all three
+   seeds; the frequency comparison asks the same of frequency. Invention is
+   shown to matter if full's unfamiliar-family pools, mech unfamiliar and str7
+   unfamiliar, both beat no-invention's on all three seeds.
+
+Forecast, committed before any arm runs: full beats accept-all on all three
+0.4; full beats matched on all three 0.3; an alternative has the higher G on
+at least two seeds, for matched 0.45, for point 0.4, for accept-all 0.35; full
+beats no-guidance on all three 0.95; full beats frequency on all three 0.6;
+invention rule 4 holds 0.9.
+
+The offline re-judging of recorded proofs (optional experiment 5) is
+`rejudge_proofs.py`; the ten-seed tables are `summarize_v11_replication.py`.
+
+Replay of the arms: the frequency arm's prior is installed in the workers by
+`use_arm`, so the standalone `audit_seed.py` reads a false mismatch on a
+frequency seed. Audit one by rerunning `run_arms.py frequency <tag> <seed>`,
+which finds its lives done and runs the check and the audit with the prior in
+force. An arm that keeps nothing has nothing to replay, and that is reported
+as zero replays, not as a pass. Point, accept-all and matched do not use the
+interval rule and are not audited.

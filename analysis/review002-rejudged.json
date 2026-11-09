@@ -1,0 +1,48 @@
+{
+  "seeds": 30,
+  "proofs": 1517,
+  "full_set_without_extension": 902,
+  "set_size": {
+    "1/1": {
+      "accept_kept": 435,
+      "accept_lost": 0,
+      "reject_passed": 0,
+      "reject_held": 467
+    },
+    "1/2": {
+      "accept_kept": 310,
+      "accept_lost": 125,
+      "reject_passed": 30,
+      "reject_held": 437
+    },
+    "1/4": {
+      "accept_kept": 228,
+      "accept_lost": 207,
+      "reject_passed": 37,
+      "reject_held": 430
+    }
+  },
+  "cross_area_tolerance": {
+    "0.0": {
+      "with_cross_area_check": 238,
+      "would_pass": 49
+    },
+    "0.02": {
+      "with_cross_area_check": 238,
+      "would_pass": 80
+    },
+    "0.05": {
+      "with_cross_area_check": 238,
+      "would_pass": 152
+    },
+    "0.1": {
+      "with_cross_area_check": 238,
+      "would_pass": 211
+    }
+  },
+  "plan_reference_c1_c23": {
+    "proofs": 1068,
+    "full_set_rejections": 479,
+    "of_which_positive": 394
+  }
+}
