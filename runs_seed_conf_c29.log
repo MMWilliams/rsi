@@ -1,0 +1,477 @@
+seed c29 version 0, area mech, lives there 0, language 306 atoms, procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.3, "prune_r": 0.1}
+mech life 0: solved 1817 of 9600; by pool {"trained": 24.0, "unfamiliar": 3.6}; 17 s
+  together: held-out 798 -> 1232 [+4.6, +13.7] per world KEPT; {"trained": 38.4, "unfamiliar": 8.6, "untrained": 30.0}
+  carried: version 1, language 346, model g=6 pw=4, prior yes, held-out 1232; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.3, "prune_r": 0.1}; resource live 9.8M proof 9.8M tests 99469; 57 s
+mech life 1: solved 2683 of 9600; by pool {"trained": 33.1, "unfamiliar": 12.4}; 36 s
+  meta: extend_cap 40 -> 80 over 1 lives; votes {"patience": 0, "probation": 0, "extend_cap": 1, "recurrence": -1, "share": 1, "prune_r": 0}
+  [a] together: held-out 1270 -> 1250 [-3.9, +0.3] per world dropped; {"trained": 30.5, "unfamiliar": 12.8, "untrained": 34.9}
+  [a] model: held-out 1270 -> 1324 [-2.0, +1.5] per world dropped; {"trained": 30.8, "unfamiliar": 13.5, "untrained": 38.5}
+  [a] extend: held-out 1270 -> 1240 [-3.6, -0.7] per world dropped; {"trained": 28.0, "unfamiliar": 11.6, "untrained": 37.9}
+  [b] together: held-out 1270 -> 1228 [-4.6, +0.3] per world dropped; {"trained": 29.0, "unfamiliar": 14.2, "untrained": 33.5}
+  [b] model: held-out 1270 -> 1324 [-2.0, +1.5] per world dropped; {"trained": 30.8, "unfamiliar": 13.5, "untrained": 38.5}
+  [b] extend: held-out 1270 -> 1230 [-4.6, +0.2] per world dropped; {"trained": 28.1, "unfamiliar": 13.2, "untrained": 35.5}
+  meta: 1408 -> 1408 on 48 worlds [+0.0, +0.0] per world, proof cost 12.3M vs 12.3M: extend_cap=80 declined
+  carried: version 1, language 346, model g=6 pw=4, prior yes, held-out 1270; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.3, "prune_r": 0.1}; resource live 19.7M proof 44.2M tests 288829; 204 s
+mech life 2: solved 2579 of 9600; by pool {"trained": 32.5, "unfamiliar": 10.0}; 27 s
+  together: held-out 1307 -> 1502 [+1.6, +6.7] per world KEPT; {"trained": 38.6, "unfamiliar": 16.3, "untrained": 38.9}
+  carried: version 2, language 378, model g=6 pw=3, prior yes, held-out 1502; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.3, "prune_r": 0.1}; resource live 29.5M proof 54.1M tests 390228; 75 s
+mech life 3: solved 2981 of 9600; by pool {"trained": 36.5, "unfamiliar": 14.7}; 38 s
+  meta: budget spent (22.1M of 16.2M); no test
+  together: held-out 1360 -> 1310 [-4.6, +3.0] per world dropped; {"trained": 42.5, "unfamiliar": 12.8, "untrained": 26.6}
+  model: held-out 1360 -> 1354 [-2.8, +2.4] per world dropped; {"trained": 37.9, "unfamiliar": 17.9, "untrained": 28.9}
+  prune: held-out 1360 -> 1363 [-1.7, +1.9] per world dropped; {"trained": 40.4, "unfamiliar": 13.7, "untrained": 31.1}
+  extend: held-out 1360 -> 1326 [-1.0, +0.3] per world dropped; {"trained": 41.8, "unfamiliar": 15.9, "untrained": 25.2}
+  carried: version 2, language 378, model g=6 pw=3, prior yes, held-out 1360; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.3, "prune_r": 0.1}; resource live 39.3M proof 73.7M tests 490604; 145 s
+kept: [{"life": 0, "area": "mech", "change": "language +40 + model g=6 pw=4 from 96 worlds + prior", "gain": 434, "version": 1}, {"life": 2, "area": "mech", "change": "language +40 + prune -8 + model g=6 pw=3 from 288 worlds + prior", "gain": 195, "version": 2}]
+seed c29 version 2, area drawn7, lives there 0, language 378 atoms, procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.3, "prune_r": 0.1}
+drawn7 life 0: solved 1070 of 9600; by pool {"env": 11.1}; 63 s
+  together: held-out 384 -> 653 [+3.1, +8.1] per world KEPT; {"env": 13.6} elsewhere {"mech": "1108->1115"}
+  carried: version 3, language 383, model g=6 pw=4, prior yes, held-out 653; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.3, "prune_r": 0.1}; resource live 49.2M proof 90.9M tests 584728; 212 s
+drawn7 life 1: solved 1320 of 9600; by pool {"env": 13.8}; 63 s
+  meta: share 0.3 -> 0.5 over 1 lives; votes {"patience": 0, "probation": 0, "extend_cap": 2, "recurrence": 1, "share": 3, "prune_r": -1}
+  [a] together: held-out 721 -> 766 [-0.8, +2.7] per world dropped; {"env": 16.0}
+  [a] model: held-out 721 -> 722 [-1.2, +1.4] per world dropped; {"env": 15.0}
+  [a] prune: held-out 721 -> 720 [-1.8, +0.2] per world dropped; {"env": 15.0}
+  [a] extend: held-out 721 -> 772 [-0.2, +2.5] per world dropped; {"env": 16.1}
+Timeout (0:10:00)!
+Thread 0x0000ef04 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 321 in _recv_bytes
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 250 in recv
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 579 in _handle_results
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x0000a6c4 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 293 in _send_bytes
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 206 in send
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 540 in _handle_tasks
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x00010744 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1016 in _exhaustive_wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1084 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 502 in _wait_for_updates
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 522 in _handle_workers
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x00002870 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 355 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 655 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 765 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 768 in get
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 367 in map
+  File "C:\Users\reese\projects\rsi\rsi\seed.py", line 538 in run
+  File "C:\Users\reese\projects\rsi\rsi\seed.py", line 667 in _carried
+  File "C:\Users\reese\projects\rsi\rsi\seed.py", line 687 in prove
+  File "C:\Users\reese\projects\rsi\seed_run.py", line 107 in test
+  File "C:\Users\reese\projects\rsi\seed_run.py", line 223 in main
+  File "C:\Users\reese\projects\rsi\seed_run.py", line 267 in <module>
+  [b] together: held-out 721 -> 745 [-1.1, +2.2] per world dropped; {"env": 15.5}
+  [b] model: held-out 721 -> 722 [-1.2, +1.4] per world dropped; {"env": 15.0}
+  [b] prune: held-out 721 -> 720 [-1.8, +0.2] per world dropped; {"env": 15.0}
+  [b] extend: held-out 721 -> 731 [-0.9, +1.4] per world dropped; {"env": 15.2}
+  meta: 709 -> 709 on 48 worlds [+0.0, +0.0] per world, proof cost 31.9M vs 22.1M: share=0.5 ADOPTED (cheaper)
+  carried: version 3, language 383, model g=6 pw=4, prior yes, held-out 721; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}; resource live 59.0M proof 154.8M tests 838406; 495 s
+drawn7 life 2: solved 1404 of 9600; by pool {"env": 14.6}; 31 s
+  together: held-out 744 -> 740 [-1.5, +1.4] per world dropped; {"env": 15.4}
+  model: held-out 744 -> 740 [-1.1, +1.0] per world dropped; {"env": 15.4}
+  prune: held-out 744 -> 763 [-0.6, +1.5] per world dropped; {"env": 15.9}
+  extend: held-out 744 -> 728 [-1.2, +0.6] per world dropped; {"env": 15.2}
+  carried: version 3, language 383, model g=6 pw=4, prior yes, held-out 744; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}; resource live 68.8M proof 179.4M tests 991821; 145 s
+kept: [{"life": 0, "area": "mech", "change": "language +40 + model g=6 pw=4 from 96 worlds + prior", "gain": 434, "version": 1}, {"life": 2, "area": "mech", "change": "language +40 + prune -8 + model g=6 pw=3 from 288 worlds + prior", "gain": 195, "version": 2}, {"life": 0, "area": "drawn7", "change": "language +40 + prune -35 + model g=6 pw=4 from 96 worlds + prior", "gain": 269, "version": 3}]
+seed c29 version 3, area metric777001, lives there 0, language 383 atoms, procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}
+metric777001 life 0: solved 772 of 9600; by pool {"seen_centre": 8.8, "unfamiliar_centre": 5.8}; 29 s
+  meta: budget spent (63.9M of 53.8M); no test
+  together: held-out 338 -> 1216 [+13.4, +23.5] per world KEPT; {"seen_centre": 27.1, "unfamiliar_centre": 23.5} elsewhere {"mech": "1033->1068", "drawn7": "383->388"}
+  carried: version 4, language 400, model g=8 pw=4, prior yes, held-out 1216; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}; resource live 78.6M proof 201.5M tests 1151637; 129 s
+metric777001 life 1: solved 2532 of 9600; by pool {"seen_centre": 27.7, "unfamiliar_centre": 22.5}; 34 s
+  together: held-out 1461 -> 1832 [+5.1, +10.7] per world dropped; {"seen_centre": 42.8, "unfamiliar_centre": 33.5} elsewhere {"mech": "1013->983", "drawn7": "313->324"}
+  policy: fallbacks ['prune', 'extend+model'], retired {"model": {"rejections": 4, "since": 7}, "extend": {"rejections": 4, "since": 7}}
+  prune: held-out 1461 -> 1590 [-1.7, +1.4] per world dropped; {"seen_centre": 43.3, "unfamiliar_centre": 22.9}
+  extend+model: held-out 1461 -> 1877 [+6.2, +11.5] per world dropped; {"seen_centre": 43.9, "unfamiliar_centre": 34.3} elsewhere {"mech": "1013->967", "drawn7": "313->323"}
+  carried: version 4, language 400, model g=8 pw=4, prior yes, held-out 1461; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}; resource live 88.5M proof 237.2M tests 1307422; 224 s
+metric777001 life 2: solved 3013 of 9600; by pool {"seen_centre": 33.0, "unfamiliar_centre": 26.6}; 34 s
+  meta: patience 4 -> 2 over 2 lives; votes {"patience": -6, "probation": 0, "extend_cap": 3, "recurrence": 4, "share": 1, "prune_r": -4}
+  meta: 1 lives left in this run; no test
+  together: held-out 1580 -> 1864 [+2.7, +9.5] per world dropped; {"seen_centre": 43.3, "unfamiliar_centre": 34.4} elsewhere {"mech": "1013->984", "drawn7": "313->335"}
+  policy: fallbacks ['extend+model'], retired {"model": {"rejections": 4, "since": 7}, "extend": {"rejections": 4, "since": 7}, "prune": {"rejections": 4, "since": 9}}
+  extend+model: held-out 1580 -> 1939 [+4.7, +10.5] per world dropped; {"seen_centre": 45.0, "unfamiliar_centre": 35.8} elsewhere {"mech": "1013->969", "drawn7": "313->327"}
+  carried: version 4, language 400, model g=8 pw=4, prior yes, held-out 1580; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}; resource live 98.3M proof 264.2M tests 1463122; 189 s
+kept: [{"life": 0, "area": "mech", "change": "language +40 + model g=6 pw=4 from 96 worlds + prior", "gain": 434, "version": 1}, {"life": 2, "area": "mech", "change": "language +40 + prune -8 + model g=6 pw=3 from 288 worlds + prior", "gain": 195, "version": 2}, {"life": 0, "area": "drawn7", "change": "language +40 + prune -35 + model g=6 pw=4 from 96 worlds + prior", "gain": 269, "version": 3}, {"life": 0, "area": "metric777001", "change": "language +40 + prune -23 + model g=8 pw=4 from 96 worlds + prior", "gain": 878, "version": 4}]
+seed c29 version 4, area drawn11, lives there 0, language 400 atoms, procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}
+drawn11 life 0: solved 889 of 9600; by pool {"env": 9.3}; 33 s
+  together: held-out 468 -> 709 [+2.1, +8.1] per world dropped; {"env": 14.8} elsewhere {"mech": "1149->1095", "drawn7": "389->376", "metric777001": "536->534"}
+  policy: fallbacks ['model', 'extend'], retired {"model": {"rejections": 4, "since": 7}, "extend": {"rejections": 4, "since": 7}, "prune": {"rejections": 4, "since": 9}}
+  model: held-out 468 -> 704 [+1.9, +7.9] per world KEPT; {"env": 14.7}
+  extend: held-out 687 -> 642 [-2.6, -0.1] per world dropped; {"env": 13.4}
+  carried: version 5, language 400, model g=6 pw=4, prior yes, held-out 687; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}; resource live 108.1M proof 303.5M tests 1615735; 221 s
+drawn11 life 1: solved 1495 of 9600; by pool {"env": 15.6}; 36 s
+  meta: patience 4 -> 2 over 2 lives; votes {"patience": -6, "probation": 0, "extend_cap": 3, "recurrence": 6, "share": 1, "prune_r": -4}
+  meta: 1 lives left in this run; no test
+  together: held-out 686 -> 686 [-1.3, +1.2] per world dropped; {"env": 14.3}
+  policy: fallbacks ['model', 'extend+model'], retired {"extend": {"rejections": 5, "since": 7}, "prune": {"rejections": 4, "since": 9}}
+  model: held-out 686 -> 686 [-1.7, +1.5] per world dropped; {"env": 14.3}
+  extend+model: held-out 686 -> 677 [-1.5, +1.0] per world dropped; {"env": 14.1}
+  carried: version 5, language 400, model g=6 pw=4, prior yes, held-out 686; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}; resource live 118.0M proof 320.7M tests 1768351; 141 s
+kept: [{"life": 0, "area": "mech", "change": "language +40 + model g=6 pw=4 from 96 worlds + prior", "gain": 434, "version": 1}, {"life": 2, "area": "mech", "change": "language +40 + prune -8 + model g=6 pw=3 from 288 worlds + prior", "gain": 195, "version": 2}, {"life": 0, "area": "drawn7", "change": "language +40 + prune -35 + model g=6 pw=4 from 96 worlds + prior", "gain": 269, "version": 3}, {"life": 0, "area": "metric777001", "change": "language +40 + prune -23 + model g=8 pw=4 from 96 worlds + prior", "gain": 878, "version": 4}, {"life": 0, "area": "drawn11", "change": "model g=6 pw=4 from 96 worlds + prior", "gain": 236, "version": 5}]
+seed c29 version 5, area drawn13, lives there 0, language 400 atoms, procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}
+drawn13 life 0: solved 948 of 9600; by pool {"env": 9.9}; 36 s
+  together: held-out 431 -> 738 [+3.6, +9.3] per world dropped; {"env": 15.4} elsewhere {"mech": "1011->966", "drawn7": "337->336", "metric777001": "715->723", "drawn11": "377->353"}
+  policy: fallbacks ['model', 'prune', 'extend+model'], retired {"extend": {"rejections": 5, "since": 7}, "prune": {"rejections": 4, "since": 9}}
+  model: held-out 431 -> 800 [+4.7, +10.7] per world KEPT; {"env": 16.7}
+  prune: held-out 694 -> 710 [-1.0, +1.7] per world dropped; {"env": 14.8}
+  extend+model: held-out 694 -> 646 [-2.3, +1.0] per world dropped; {"env": 13.5}
+  carried: version 6, language 400, model g=6 pw=4, prior yes, held-out 694; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}; resource live 127.8M proof 369.9M tests 1917849; 301 s
+drawn13 life 1: solved 1305 of 9600; by pool {"env": 13.6}; 57 s
+  meta: patience 4 -> 2 over 2 lives; votes {"patience": -9, "probation": 0, "extend_cap": 3, "recurrence": 8, "share": 1, "prune_r": -5}
+  meta: 1 lives left in this run; no test
+  together: held-out 769 -> 666 [-4.0, +0.7] per world dropped; {"env": 13.9}
+  policy: fallbacks ['model'], retired {"extend": {"rejections": 5, "since": 7}, "prune": {"rejections": 5, "since": 9}, "extend+model": {"rejections": 4, "since": 13}}
+  model: held-out 769 -> 672 [-3.8, +0.5] per world dropped; {"env": 14.0}
+  carried: version 6, language 400, model g=6 pw=4, prior yes, held-out 769; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}; resource live 137.6M proof 379.7M tests 2070437; 152 s
+kept: [{"life": 0, "area": "mech", "change": "language +40 + model g=6 pw=4 from 96 worlds + prior", "gain": 434, "version": 1}, {"life": 2, "area": "mech", "change": "language +40 + prune -8 + model g=6 pw=3 from 288 worlds + prior", "gain": 195, "version": 2}, {"life": 0, "area": "drawn7", "change": "language +40 + prune -35 + model g=6 pw=4 from 96 worlds + prior", "gain": 269, "version": 3}, {"life": 0, "area": "metric777001", "change": "language +40 + prune -23 + model g=8 pw=4 from 96 worlds + prior", "gain": 878, "version": 4}, {"life": 0, "area": "drawn11", "change": "model g=6 pw=4 from 96 worlds + prior", "gain": 236, "version": 5}, {"life": 0, "area": "drawn13", "change": "model g=6 pw=4 from 96 worlds + prior", "gain": 369, "version": 6}]
+seed c29 version 6, area metric555001, lives there 0, language 400 atoms, procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}
+metric555001 life 0: solved 1075 of 9600; by pool {"seen_centre": 12.0, "unfamiliar_centre": 8.7}; 77 s
+  together: held-out 455 -> 1400 [+14.9, +24.7] per world KEPT; {"seen_centre": 40.9, "unfamiliar_centre": 17.4} elsewhere {"mech": "1098->1106", "drawn7": "344->343", "metric777001": "730->762", "drawn11": "354->355", "drawn13": "383->376"}
+  carried: version 7, language 409, model g=8 pw=2, prior yes, held-out 1400; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}; resource live 147.5M proof 416.6M tests 2223093; 430 s
+metric555001 life 1: solved 2988 of 9600; by pool {"seen_centre": 34.7, "unfamiliar_centre": 20.5}; 82 s
+  meta: patience 4 -> 2 over 2 lives; votes {"patience": -9, "probation": 0, "extend_cap": 4, "recurrence": 8, "share": 2, "prune_r": -5}
+  meta: 1 lives left in this run; no test
+Timeout (0:10:00)!
+Thread 0x00000b10 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 321 in _recv_bytes
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 250 in recv
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 579 in _handle_results
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x0000fe88 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 293 in _send_bytes
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 206 in send
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 540 in _handle_tasks
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x0000dccc (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1016 in _exhaustive_wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1084 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 502 in _wait_for_updates
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 522 in _handle_workers
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x00010320 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 355 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 655 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 765 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 768 in get
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 367 in map
+  File "C:\Users\reese\projects\rsi\rsi\seed.py", line 538 in run
+  File "C:\Users\reese\projects\rsi\rsi\seed.py", line 700 in prove
+  File "C:\Users\reese\projects\rsi\seed_run.py", line 107 in test
+  File "C:\Users\reese\projects\rsi\seed_run.py", line 138 in phase
+  File "C:\Users\reese\projects\rsi\seed_run.py", line 254 in main
+  File "C:\Users\reese\projects\rsi\seed_run.py", line 267 in <module>
+  together: held-out 1512 -> 1546 [-1.7, +3.1] per world dropped; {"seen_centre": 42.5, "unfamiliar_centre": 22.0}
+  policy: fallbacks ['model'], retired {"extend": {"rejections": 5, "since": 7}, "prune": {"rejections": 5, "since": 9}, "extend+model": {"rejections": 4, "since": 13}}
+  model: held-out 1512 -> 1567 [-1.0, +3.4] per world dropped; {"seen_centre": 43.4, "unfamiliar_centre": 21.9}
+  carried: version 7, language 409, model g=8 pw=2, prior yes, held-out 1512; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}; resource live 157.3M proof 431.3M tests 2378345; 236 s
+kept: [{"life": 0, "area": "mech", "change": "language +40 + model g=6 pw=4 from 96 worlds + prior", "gain": 434, "version": 1}, {"life": 2, "area": "mech", "change": "language +40 + prune -8 + model g=6 pw=3 from 288 worlds + prior", "gain": 195, "version": 2}, {"life": 0, "area": "drawn7", "change": "language +40 + prune -35 + model g=6 pw=4 from 96 worlds + prior", "gain": 269, "version": 3}, {"life": 0, "area": "metric777001", "change": "language +40 + prune -23 + model g=8 pw=4 from 96 worlds + prior", "gain": 878, "version": 4}, {"life": 0, "area": "drawn11", "change": "model g=6 pw=4 from 96 worlds + prior", "gain": 236, "version": 5}, {"life": 0, "area": "drawn13", "change": "model g=6 pw=4 from 96 worlds + prior", "gain": 369, "version": 6}, {"life": 0, "area": "metric555001", "change": "language +40 + prune -31 + model g=8 pw=2 from 96 worlds + prior", "gain": 945, "version": 7}]
+seed c29 version 7, area str7, lives there 0, language 409 atoms, procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.3, "prune_r": 0.1}
+str7 life 0: solved 6570 of 9600; by pool {"trained": 71.6, "unfamiliar": 59.0}; 15 s
+  together: held-out 3041 -> 3965 [+14.8, +24.0] per world KEPT; {"trained": 87.6, "unfamiliar": 75.1, "untrained": 85.1}
+  carried: version 8, language 398, model g=7 pw=4, prior yes, held-out 3965; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.3, "prune_r": 0.1}; resource live 167.1M proof 441.1M tests 2393187; 63 s
+str7 life 1: solved 7958 of 9600; by pool {"trained": 85.1, "unfamiliar": 76.2}; 22 s
+  meta: share 0.3 -> 0.5 over 1 lives; votes {"patience": 0, "probation": 0, "extend_cap": 0, "recurrence": -1, "share": 1, "prune_r": 0}
+  meta: share=0.5 changes nothing this life; not tested
+  model: held-out 4125 -> 4183 [+0.3, +2.1] per world KEPT; {"trained": 90.8, "unfamiliar": 84.8, "untrained": 85.9}
+  carried: version 9, language 398, model g=7 pw=4, prior yes, held-out 4183; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.3, "prune_r": 0.1}; resource live 176.9M proof 451.0M tests 2397529; 64 s
+str7 life 2: solved 8080 of 9600; by pool {"trained": 86.7, "unfamiliar": 76.5}; 20 s
+  together: held-out 4065 -> 4098 [-0.1, +1.5] per world dropped; {"trained": 85.6, "unfamiliar": 84.6, "untrained": 85.9}
+  model: held-out 4065 -> 4095 [-0.1, +1.4] per world dropped; {"trained": 85.2, "unfamiliar": 84.9, "untrained": 85.9}
+  prune: held-out 4065 -> 3972 [-0.7, +0.0] per world dropped; {"trained": 80.0, "unfamiliar": 82.4, "untrained": 85.9}
+  carried: version 9, language 398, model g=7 pw=4, prior yes, held-out 4065; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.3, "prune_r": 0.1}; resource live 186.8M proof 482.9M tests 2401143; 95 s
+kept: [{"life": 0, "area": "mech", "change": "language +40 + model g=6 pw=4 from 96 worlds + prior", "gain": 434, "version": 1}, {"life": 2, "area": "mech", "change": "language +40 + prune -8 + model g=6 pw=3 from 288 worlds + prior", "gain": 195, "version": 2}, {"life": 0, "area": "drawn7", "change": "language +40 + prune -35 + model g=6 pw=4 from 96 worlds + prior", "gain": 269, "version": 3}, {"life": 0, "area": "metric777001", "change": "language +40 + prune -23 + model g=8 pw=4 from 96 worlds + prior", "gain": 878, "version": 4}, {"life": 0, "area": "drawn11", "change": "model g=6 pw=4 from 96 worlds + prior", "gain": 236, "version": 5}, {"life": 0, "area": "drawn13", "change": "model g=6 pw=4 from 96 worlds + prior", "gain": 369, "version": 6}, {"life": 0, "area": "metric555001", "change": "language +40 + prune -31 + model g=8 pw=2 from 96 worlds + prior", "gain": 945, "version": 7}, {"life": 0, "area": "str7", "change": "language +15 + prune -26 + model g=7 pw=4 from 96 worlds + prior", "gain": 924, "version": 8}, {"life": 1, "area": "str7", "change": "model g=7 pw=4 from 192 worlds + prior", "gain": 58, "version": 9}]
+seed c29 version 9, area mech, lives there 4, language 398 atoms, procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}
+mech life 4: solved 3013 of 9600; by pool {"trained": 36.0, "unfamiliar": 17.5}; 61 s
+  meta: patience 4 -> 2 over 2 lives; votes {"patience": -9, "probation": 0, "extend_cap": 4, "recurrence": 8, "share": 2, "prune_r": -5}
+  [a] together: held-out 1273 -> 1367 [-0.1, +4.1] per world dropped; {"trained": 33.2, "unfamiliar": 18.2, "untrained": 34.0}
+  [a] policy: fallbacks ['model', 'prune', 'extend+model'], retired {"extend": {"rejections": 5, "since": 7}, "prune": {"rejections": 5, "since": 9}, "extend+model": {"rejections": 4, "since": 13}}
+  [a] model: held-out 1273 -> 1399 [+0.4, +4.9] per world KEPT; {"trained": 34.9, "unfamiliar": 17.1, "untrained": 35.4}
+  [a] prune: held-out 1343 -> 1344 [+0.0, +0.0] per world dropped; {"trained": 37.2, "unfamiliar": 12.8, "untrained": 34.0}
+  [a] extend+model: held-out 1343 -> 1276 [-2.4, -0.4] per world dropped; {"trained": 35.2, "unfamiliar": 11.0, "untrained": 33.5}
+  [b] together: held-out 1273 -> 1367 [-0.1, +4.1] per world dropped; {"trained": 33.2, "unfamiliar": 18.2, "untrained": 34.0}
+  [b] policy: fallbacks [], retired {"extend": {"rejections": 5, "since": 4}, "prune": {"rejections": 5, "since": 6}, "extend+model": {"rejections": 4, "since": 10}, "model": {"rejections": 2, "since": 16}}
+  [a] mech life 5: solved 2904 of 9600
+  [a] together: held-out 1325 -> 1284 [-2.8, +2.4] per world dropped; {"trained": 37.6, "unfamiliar": 12.2, "untrained": 30.4}
+  [a] policy: fallbacks ['model'], retired {"extend": {"rejections": 5, "since": 7}, "prune": {"rejections": 6, "since": 9}, "extend+model": {"rejections": 5, "since": 13}}
+  [a] model: held-out 1325 -> 1340 [-1.0, +1.7] per world dropped; {"trained": 35.4, "unfamiliar": 14.9, "untrained": 33.4}
+Timeout (0:10:00)!
+Thread 0x00007960 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 321 in _recv_bytes
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 250 in recv
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 579 in _handle_results
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x00010434 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 531 in _handle_tasks
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x0000dd54 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1016 in _exhaustive_wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1084 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 502 in _wait_for_updates
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 522 in _handle_workers
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x00004998 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 355 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 655 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 765 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 768 in get
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 367 in map
+  File "C:\Users\reese\projects\rsi\rsi\seed.py", line 538 in run
+  File "C:\Users\reese\projects\rsi\rsi\seed.py", line 559 in live
+  File "C:\Users\reese\projects\rsi\seed_run.py", line 226 in main
+  File "C:\Users\reese\projects\rsi\seed_run.py", line 267 in <module>
+  [b] mech life 5: solved 2706 of 9600
+  [b] together: held-out 1280 -> 1387 [+0.3, +4.5] per world dropped; {"trained": 32.2, "unfamiliar": 15.8, "untrained": 38.6} elsewhere {"drawn7": "327->288", "metric777001": "788->792", "drawn11": "401->362", "drawn13": "302->297", "metric555001": "752->726"}
+  [b] policy: fallbacks ['prune', 'extend+model'], retired {"extend": {"rejections": 5, "since": 4}, "prune": {"rejections": 5, "since": 6}, "extend+model": {"rejections": 4, "since": 10}, "model": {"rejections": 2, "since": 16}}
+  [b] prune: held-out 1280 -> 1298 [+0.0, +0.0] per world dropped; {"trained": 29.5, "unfamiliar": 16.0, "untrained": 35.6}
+  [b] extend+model: held-out 1280 -> 1387 [+0.3, +4.5] per world dropped; {"trained": 32.2, "unfamiliar": 15.8, "untrained": 38.6} elsewhere {"drawn7": "327->288", "metric777001": "788->792", "drawn11": "401->362", "drawn13": "302->297", "metric555001": "752->726"}
+Timeout (0:10:00)!
+Thread 0x00010950 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 321 in _recv_bytes
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 250 in recv
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 579 in _handle_results
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x000081a0 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 293 in _send_bytes
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 206 in send
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 540 in _handle_tasks
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x00007b90 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1016 in _exhaustive_wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1084 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 502 in _wait_for_updates
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 522 in _handle_workers
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x00004998 (most recent call first):
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 355 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 655 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 765 in wait
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 768 in get
+  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 367 in map
+  File "C:\Users\reese\projects\rsi\rsi\seed.py", line 538 in run
+  File "C:\Users\reese\projects\rsi\rsi\seed.py", line 459 in meta_proof
+  File "C:\Users\reese\projects\rsi\seed_run.py", line 232 in main
+  File "C:\Users\reese\projects\rsi\seed_run.py", line 267 in <module>
+  meta: 1354 -> 1344 on 48 worlds [-2.8, +2.2] per world, proof cost 46.7M vs 73.7M: patience=2 declined
+  carried: version 10, language 398, model g=8 pw=2, prior yes, held-out 1325; procedure {"patience": 4, "probation": 4, "extend_cap": 40, "recurrence": 2, "share": 0.5, "prune_r": 0.1}; resource live 206.4M proof 623.0M tests 3021001; 1245 s
+kept: [{"life": 0, "area": "mech", "change": "language +40 + model g=6 pw=4 from 96 worlds + prior", "gain": 434, "version": 1}, {"life": 2, "area": "mech", "change": "language +40 + prune -8 + model g=6 pw=3 from 288 worlds + prior", "gain": 195, "version": 2}, {"life": 0, "area": "drawn7", "change": "language +40 + prune -35 + model g=6 pw=4 from 96 worlds + prior", "gain": 269, "version": 3}, {"life": 0, "area": "metric777001", "change": "language +40 + prune -23 + model g=8 pw=4 from 96 worlds + prior", "gain": 878, "version": 4}, {"life": 0, "area": "drawn11", "change": "model g=6 pw=4 from 96 worlds + prior", "gain": 236, "version": 5}, {"life": 0, "area": "drawn13", "change": "model g=6 pw=4 from 96 worlds + prior", "gain": 369, "version": 6}, {"life": 0, "area": "metric555001", "change": "language +40 + prune -31 + model g=8 pw=2 from 96 worlds + prior", "gain": 945, "version": 7}, {"life": 0, "area": "str7", "change": "language +15 + prune -26 + model g=7 pw=4 from 96 worlds + prior", "gain": 924, "version": 8}, {"life": 1, "area": "str7", "change": "model g=7 pw=4 from 192 worlds + prior", "gain": 58, "version": 9}, {"life": 4, "area": "mech", "change": "model g=8 pw=2 from 480 worlds + prior", "gain": 126, "version": 10}]
+mech fresh held-out 1259 -> 2196
+drawn7 fresh held-out 280 -> 423
+metric777001 fresh held-out 288 -> 1411
+drawn11 fresh held-out 362 -> 433
+drawn13 fresh held-out 233 -> 375
+metric555001 fresh held-out 480 -> 1697
+str7 fresh held-out 4384 -> 6172
+{
+ "name": "c29",
+ "version": 10,
+ "budget": 1024,
+ "areas": {
+  "mech": {
+   "start": {
+    "budget": 1024,
+    "total": 1259,
+    "by_pool": {
+     "trained": 22.708333333333332,
+     "unfamiliar": 3.6666666666666665,
+     "untrained": 26.083333333333332
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 2196,
+    "by_pool": {
+     "trained": 36.541666666666664,
+     "unfamiliar": 21.291666666666668,
+     "untrained": 33.666666666666664
+    }
+   },
+   "gain": 937
+  },
+  "drawn7": {
+   "start": {
+    "budget": 1024,
+    "total": 280,
+    "by_pool": {
+     "env": 11.666666666666666
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 423,
+    "by_pool": {
+     "env": 17.625
+    }
+   },
+   "gain": 143
+  },
+  "metric777001": {
+   "start": {
+    "budget": 1024,
+    "total": 288,
+    "by_pool": {
+     "seen_centre": 10.375,
+     "unfamiliar_centre": 1.625
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 1411,
+    "by_pool": {
+     "seen_centre": 36.625,
+     "unfamiliar_centre": 22.166666666666668
+    }
+   },
+   "gain": 1123
+  },
+  "drawn11": {
+   "start": {
+    "budget": 1024,
+    "total": 362,
+    "by_pool": {
+     "env": 15.083333333333334
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 433,
+    "by_pool": {
+     "env": 18.041666666666668
+    }
+   },
+   "gain": 71
+  },
+  "drawn13": {
+   "start": {
+    "budget": 1024,
+    "total": 233,
+    "by_pool": {
+     "env": 9.708333333333334
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 375,
+    "by_pool": {
+     "env": 15.625
+    }
+   },
+   "gain": 142
+  },
+  "metric555001": {
+   "start": {
+    "budget": 1024,
+    "total": 480,
+    "by_pool": {
+     "seen_centre": 16.291666666666668,
+     "unfamiliar_centre": 3.7083333333333335
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 1697,
+    "by_pool": {
+     "seen_centre": 46.291666666666664,
+     "unfamiliar_centre": 24.416666666666668
+    }
+   },
+   "gain": 1217
+  },
+  "str7": {
+   "start": {
+    "budget": 1024,
+    "total": 4384,
+    "by_pool": {
+     "trained": 68.5,
+     "unfamiliar": 46.791666666666664,
+     "untrained": 67.375
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 6172,
+    "by_pool": {
+     "trained": 85.75,
+     "unfamiliar": 87.20833333333333,
+     "untrained": 84.20833333333333
+    }
+   },
+   "gain": 1788
+  }
+ },
+ "lives": {
+  "mech": 6,
+  "drawn7": 3,
+  "metric777001": 3,
+  "drawn11": 2,
+  "drawn13": 2,
+  "metric555001": 2,
+  "str7": 3
+ },
+ "resource": {
+  "live_scans": 206438400,
+  "proof_scans": 623001600,
+  "invention_tests": 3021001
+ },
+ "invented": {
+  "kept": 92,
+  "by_true_family": {
+   "xormod": 22,
+   "popcount": 22,
+   "novel": 33,
+   "str:novel": 4,
+   "str:generator": 11
+  }
+ }
+}
+1 language +40 + model g=6 pw=4 from 96 worlds + prior ok
+2 language +40 + prune -8 + model g=6 pw=3 from 288 worlds + prior ok
+3 language +40 + prune -35 + model g=6 pw=4 from 96 worlds + prior ok
+4 language +40 + prune -23 + model g=8 pw=4 from 96 worlds + prior ok
+5 model g=6 pw=4 from 96 worlds + prior ok
+6 model g=6 pw=4 from 96 worlds + prior ok
+7 language +40 + prune -31 + model g=8 pw=2 from 96 worlds + prior ok
+8 language +15 + prune -26 + model g=7 pw=4 from 96 worlds + prior ok
+9 model g=7 pw=4 from 192 worlds + prior ok
+10 model g=8 pw=2 from 480 worlds + prior ok
+meta {'knob': 'extend_cap', 'before': 40, 'after': 80, 'votes': {'patience': 0, 'probation': 0, 'extend_cap': 1, 'recurrence': -1, 'share': 1, 'prune_r': 0}} declined ok
+meta {'knob': 'share', 'before': 0.3, 'after': 0.5, 'votes': {'patience': 0, 'probation': 0, 'extend_cap': 2, 'recurrence': 1, 'share': 3, 'prune_r': -1}} adopted ok
+meta {'knob': 'patience', 'before': 4, 'after': 2, 'votes': {'patience': -9, 'probation': 0, 'extend_cap': 4, 'recurrence': 8, 'share': 2, 'prune_r': -5}} declined ok
+{"name": "c29", "passed": true, "policy_ok": true, "meta_ok": true, "meta": [{"ledger": 7, "mutation": {"knob": "extend_cap", "before": 40, "after": 80, "votes": {"patience": 0, "probation": 0, "extend_cap": 1, "recurrence": -1, "share": 1, "prune_r": 0}}, "adopted": false, "a": [1408, 1408], "b": [1408, 1408], "ok": true}, {"ledger": 24, "mutation": {"knob": "share", "before": 0.3, "after": 0.5, "votes": {"patience": 0, "probation": 0, "extend_cap": 2, "recurrence": 1, "share": 3, "prune_r": -1}}, "adopted": true, "a": [709, 709], "b": [709, 709], "ok": true}, {"ledger": 89, "mutation": {"knob": "patience", "before": 4, "after": 2, "votes": {"patience": -9, "probation": 0, "extend_cap": 4, "recurrence": 8, "share": 2, "prune_r": -5}}, "adopted": false, "a": [1354, 1354], "b": [1344, 1344], "ok": true}]}

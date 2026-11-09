@@ -1,0 +1,328 @@
+{
+  "name": "c29",
+  "replayed": [
+    {
+      "version": 1,
+      "area": "mech",
+      "change": "language +40 + model g=6 pw=4 from 96 worlds + prior",
+      "carried": [
+        798,
+        798
+      ],
+      "candidate": [
+        1232,
+        1232
+      ],
+      "interval": [
+        [
+          4.604166666666667,
+          13.666666666666666
+        ],
+        [
+          4.604166666666667,
+          13.666666666666666
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 2,
+      "area": "mech",
+      "change": "language +40 + prune -8 + model g=6 pw=3 from 288 worlds + prior",
+      "carried": [
+        1307,
+        1307
+      ],
+      "candidate": [
+        1502,
+        1502
+      ],
+      "interval": [
+        [
+          1.6041666666666667,
+          6.6875
+        ],
+        [
+          1.6041666666666667,
+          6.6875
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 3,
+      "area": "drawn7",
+      "change": "language +40 + prune -35 + model g=6 pw=4 from 96 worlds + prior",
+      "carried": [
+        384,
+        384
+      ],
+      "candidate": [
+        653,
+        653
+      ],
+      "interval": [
+        [
+          3.0833333333333335,
+          8.125520833333335
+        ],
+        [
+          3.0833333333333335,
+          8.125520833333335
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 4,
+      "area": "metric777001",
+      "change": "language +40 + prune -23 + model g=8 pw=4 from 96 worlds + prior",
+      "carried": [
+        338,
+        338
+      ],
+      "candidate": [
+        1216,
+        1216
+      ],
+      "interval": [
+        [
+          13.395312500000001,
+          23.45885416666667
+        ],
+        [
+          13.395312500000001,
+          23.45885416666667
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 5,
+      "area": "drawn11",
+      "change": "model g=6 pw=4 from 96 worlds + prior",
+      "carried": [
+        468,
+        468
+      ],
+      "candidate": [
+        704,
+        704
+      ],
+      "interval": [
+        [
+          1.9375,
+          7.9375
+        ],
+        [
+          1.9375,
+          7.9375
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 6,
+      "area": "drawn13",
+      "change": "model g=6 pw=4 from 96 worlds + prior",
+      "carried": [
+        431,
+        431
+      ],
+      "candidate": [
+        800,
+        800
+      ],
+      "interval": [
+        [
+          4.729166666666667,
+          10.708333333333334
+        ],
+        [
+          4.729166666666667,
+          10.708333333333334
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 7,
+      "area": "metric555001",
+      "change": "language +40 + prune -31 + model g=8 pw=2 from 96 worlds + prior",
+      "carried": [
+        455,
+        455
+      ],
+      "candidate": [
+        1400,
+        1400
+      ],
+      "interval": [
+        [
+          14.895833333333334,
+          24.729687500000004
+        ],
+        [
+          14.895833333333334,
+          24.729687500000004
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 8,
+      "area": "str7",
+      "change": "language +15 + prune -26 + model g=7 pw=4 from 96 worlds + prior",
+      "carried": [
+        3041,
+        3041
+      ],
+      "candidate": [
+        3965,
+        3965
+      ],
+      "interval": [
+        [
+          14.770833333333334,
+          23.979166666666668
+        ],
+        [
+          14.770833333333334,
+          23.979166666666668
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 9,
+      "area": "str7",
+      "change": "model g=7 pw=4 from 192 worlds + prior",
+      "carried": [
+        4125,
+        4125
+      ],
+      "candidate": [
+        4183,
+        4183
+      ],
+      "interval": [
+        [
+          0.3333333333333333,
+          2.1458333333333335
+        ],
+        [
+          0.3333333333333333,
+          2.1458333333333335
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 10,
+      "area": "mech",
+      "change": "model g=8 pw=2 from 480 worlds + prior",
+      "carried": [
+        1273,
+        1273
+      ],
+      "candidate": [
+        1399,
+        1399
+      ],
+      "interval": [
+        [
+          0.4375,
+          4.896354166666669
+        ],
+        [
+          0.4375,
+          4.896354166666669
+        ]
+      ],
+      "ok": true
+    }
+  ],
+  "passed": true,
+  "policy_ok": true,
+  "meta_ok": true,
+  "meta": [
+    {
+      "ledger": 7,
+      "mutation": {
+        "knob": "extend_cap",
+        "before": 40,
+        "after": 80,
+        "votes": {
+          "patience": 0,
+          "probation": 0,
+          "extend_cap": 1,
+          "recurrence": -1,
+          "share": 1,
+          "prune_r": 0
+        }
+      },
+      "adopted": false,
+      "a": [
+        1408,
+        1408
+      ],
+      "b": [
+        1408,
+        1408
+      ],
+      "ok": true
+    },
+    {
+      "ledger": 24,
+      "mutation": {
+        "knob": "share",
+        "before": 0.3,
+        "after": 0.5,
+        "votes": {
+          "patience": 0,
+          "probation": 0,
+          "extend_cap": 2,
+          "recurrence": 1,
+          "share": 3,
+          "prune_r": -1
+        }
+      },
+      "adopted": true,
+      "a": [
+        709,
+        709
+      ],
+      "b": [
+        709,
+        709
+      ],
+      "ok": true
+    },
+    {
+      "ledger": 89,
+      "mutation": {
+        "knob": "patience",
+        "before": 4,
+        "after": 2,
+        "votes": {
+          "patience": -9,
+          "probation": 0,
+          "extend_cap": 4,
+          "recurrence": 8,
+          "share": 2,
+          "prune_r": -5
+        }
+      },
+      "adopted": false,
+      "a": [
+        1354,
+        1354
+      ],
+      "b": [
+        1344,
+        1344
+      ],
+      "ok": true
+    }
+  ]
+}
