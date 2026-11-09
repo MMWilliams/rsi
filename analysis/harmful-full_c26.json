@@ -1,0 +1,112 @@
+{
+  "name": "full_c26",
+  "per_pool": 12,
+  "kept": 13,
+  "harmful": 1,
+  "rows": [
+    {
+      "version": 1,
+      "area": "mech",
+      "change": "language +40 + model g=6 pw=4 from 96 worlds + prior",
+      "before": 753,
+      "after": 945,
+      "harmful": false
+    },
+    {
+      "version": 2,
+      "area": "mech",
+      "change": "language +40 + prune -16 + model g=7 pw=4 from 288 worlds + prior",
+      "before": 944,
+      "after": 1016,
+      "harmful": false
+    },
+    {
+      "version": 3,
+      "area": "mech",
+      "change": "model g=7 pw=3 from 384 worlds + prior",
+      "before": 1001,
+      "after": 1050,
+      "harmful": false
+    },
+    {
+      "version": 4,
+      "area": "drawn7",
+      "change": "model g=6 pw=4 from 96 worlds + prior",
+      "before": 207,
+      "after": 270,
+      "harmful": false
+    },
+    {
+      "version": 5,
+      "area": "metric777001",
+      "change": "language +40 + prune -26 + model g=8 pw=2 from 96 worlds + prior",
+      "before": 209,
+      "after": 775,
+      "harmful": false
+    },
+    {
+      "version": 6,
+      "area": "metric777001",
+      "change": "model g=8 pw=2 from 192 worlds + prior",
+      "before": 816,
+      "after": 889,
+      "harmful": false
+    },
+    {
+      "version": 7,
+      "area": "metric777001",
+      "change": "model g=8 pw=2 from 288 worlds + prior",
+      "before": 926,
+      "after": 976,
+      "harmful": false
+    },
+    {
+      "version": 8,
+      "area": "drawn11",
+      "change": "language +40 + prune -23 + model g=6 pw=4 from 96 worlds + prior",
+      "before": 197,
+      "after": 192,
+      "harmful": true
+    },
+    {
+      "version": 9,
+      "area": "drawn13",
+      "change": "model g=8 pw=4 from 96 worlds + prior",
+      "before": 82,
+      "after": 205,
+      "harmful": false
+    },
+    {
+      "version": 10,
+      "area": "metric555001",
+      "change": "language +40 + prune -25 + model g=7 pw=2 from 96 worlds + prior",
+      "before": 247,
+      "after": 624,
+      "harmful": false
+    },
+    {
+      "version": 11,
+      "area": "str7",
+      "change": "language +18 + prune -25 + model g=7 pw=4 from 96 worlds + prior",
+      "before": 2314,
+      "after": 2766,
+      "harmful": false
+    },
+    {
+      "version": 12,
+      "area": "str7",
+      "change": "prune -12",
+      "before": 2931,
+      "after": 2947,
+      "harmful": false
+    },
+    {
+      "version": 13,
+      "area": "mech",
+      "change": "model g=7 pw=3 from 480 worlds + prior",
+      "before": 1051,
+      "after": 1187,
+      "harmful": false
+    }
+  ]
+}

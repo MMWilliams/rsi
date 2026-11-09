@@ -1,0 +1,253 @@
+mech life 0: solved 1689
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 1, language 346, live 9.8M proof 0.0M; 24 s
+mech life 1: solved 2729
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 2, language 386, live 19.7M proof 0.0M; 35 s
+mech life 2: solved 2970
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 3, language 398, live 29.5M proof 0.0M; 45 s
+mech life 3: solved 3172
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 4, language 400, live 39.3M proof 0.0M; 46 s
+drawn7 life 0: solved 827
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 5, language 396, live 49.2M proof 0.0M; 39 s
+drawn7 life 1: solved 1216
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 6, language 412, live 59.0M proof 0.0M; 38 s
+drawn7 life 2: solved 1500
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 7, language 404, live 68.8M proof 0.0M; 47 s
+metric777001 life 0: solved 904
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 8, language 411, live 78.6M proof 0.0M; 35 s
+metric777001 life 1: solved 2932
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 9, language 435, live 88.5M proof 0.0M; 41 s
+metric777001 life 2: solved 3565
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 10, language 434, live 98.3M proof 0.0M; 54 s
+drawn11 life 0: solved 719
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 11, language 434, live 108.1M proof 0.0M; 43 s
+drawn11 life 1: solved 1383
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 12, language 444, live 118.0M proof 0.0M; 47 s
+drawn13 life 0: solved 852
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 13, language 442, live 127.8M proof 0.0M; 45 s
+drawn13 life 1: solved 1293
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 14, language 451, live 137.6M proof 0.0M; 48 s
+metric555001 life 0: solved 890
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 15, language 444, live 147.5M proof 0.0M; 45 s
+metric555001 life 1: solved 2614
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 16, language 464, live 157.3M proof 0.0M; 50 s
+str7 life 0: solved 6640
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 17, language 432, live 167.1M proof 0.0M; 23 s
+str7 life 1: solved 7980
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 18, language 393, live 176.9M proof 0.0M; 16 s
+str7 life 2: solved 7854
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 19, language 382, live 186.8M proof 0.0M; 19 s
+mech life 4: solved 3481
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 20, language 421, live 196.6M proof 0.0M; 53 s
+mech life 5: solved 3256
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 21, language 459, live 206.4M proof 0.0M; 70 s
+mech fresh held-out 1124 -> 1982
+drawn7 fresh held-out 276 -> 399
+metric777001 fresh held-out 348 -> 1958
+drawn11 fresh held-out 275 -> 402
+drawn13 fresh held-out 296 -> 380
+metric555001 fresh held-out 317 -> 1529
+str7 fresh held-out 4584 -> 5958
+{
+ "name": "accept-all_c25",
+ "version": 21,
+ "budget": 1024,
+ "areas": {
+  "mech": {
+   "start": {
+    "budget": 1024,
+    "total": 1124,
+    "by_pool": {
+     "trained": 19.5,
+     "unfamiliar": 5.0,
+     "untrained": 22.333333333333332
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 1982,
+    "by_pool": {
+     "trained": 32.625,
+     "unfamiliar": 21.5,
+     "untrained": 28.458333333333332
+    }
+   },
+   "gain": 858
+  },
+  "drawn7": {
+   "start": {
+    "budget": 1024,
+    "total": 276,
+    "by_pool": {
+     "env": 11.5
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 399,
+    "by_pool": {
+     "env": 16.625
+    }
+   },
+   "gain": 123
+  },
+  "metric777001": {
+   "start": {
+    "budget": 1024,
+    "total": 348,
+    "by_pool": {
+     "seen_centre": 10.166666666666666,
+     "unfamiliar_centre": 4.333333333333333
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 1958,
+    "by_pool": {
+     "seen_centre": 48.333333333333336,
+     "unfamiliar_centre": 33.25
+    }
+   },
+   "gain": 1610
+  },
+  "drawn11": {
+   "start": {
+    "budget": 1024,
+    "total": 275,
+    "by_pool": {
+     "env": 11.458333333333334
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 402,
+    "by_pool": {
+     "env": 16.75
+    }
+   },
+   "gain": 127
+  },
+  "drawn13": {
+   "start": {
+    "budget": 1024,
+    "total": 296,
+    "by_pool": {
+     "env": 12.333333333333334
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 380,
+    "by_pool": {
+     "env": 15.833333333333334
+    }
+   },
+   "gain": 84
+  },
+  "metric555001": {
+   "start": {
+    "budget": 1024,
+    "total": 317,
+    "by_pool": {
+     "seen_centre": 10.916666666666666,
+     "unfamiliar_centre": 2.2916666666666665
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 1529,
+    "by_pool": {
+     "seen_centre": 39.25,
+     "unfamiliar_centre": 24.458333333333332
+    }
+   },
+   "gain": 1212
+  },
+  "str7": {
+   "start": {
+    "budget": 1024,
+    "total": 4584,
+    "by_pool": {
+     "trained": 71.04166666666667,
+     "unfamiliar": 51.5,
+     "untrained": 68.45833333333333
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 5958,
+    "by_pool": {
+     "trained": 87.29166666666667,
+     "unfamiliar": 83.75,
+     "untrained": 77.20833333333333
+    }
+   },
+   "gain": 1374
+  }
+ },
+ "lives": {
+  "mech": 6,
+  "drawn7": 3,
+  "metric777001": 3,
+  "drawn11": 2,
+  "drawn13": 2,
+  "metric555001": 2,
+  "str7": 3
+ },
+ "resource": {
+  "live_scans": 206438400,
+  "proof_scans": 0,
+  "invention_tests": 1737348
+ },
+ "invented": {
+  "kept": 153,
+  "by_true_family": {
+   "xormod": 23,
+   "popcount": 29,
+   "novel": 96,
+   "str:generator": 5
+  }
+ }
+}
+audit: no replayable proofs, accept-all does not use the interval rule
+harm {'version': 1, 'area': 'mech', 'change': 'language +40 + model g=7 pw=4 from 96 worlds + prior', 'before': 528, 'after': 793, 'harmful': False}
+harm {'version': 2, 'area': 'mech', 'change': 'language +40 + model g=7 pw=2 from 192 worlds + prior', 'before': 792, 'after': 784, 'harmful': True}
+harm {'version': 3, 'area': 'mech', 'change': 'language +40 + prune -28 + model g=8 pw=3 from 288 worlds + prior', 'before': 757, 'after': 885, 'harmful': False}
+harm {'version': 4, 'area': 'mech', 'change': 'language +40 + prune -38 + model g=6 pw=3 from 384 worlds + prior', 'before': 829, 'after': 817, 'harmful': True}
+harm {'version': 5, 'area': 'drawn7', 'change': 'language +40 + prune -44 + model g=6 pw=3 from 96 worlds + prior', 'before': 75, 'after': 131, 'harmful': False}
+harm {'version': 6, 'area': 'drawn7', 'change': 'language +40 + prune -24 + model g=7 pw=4 from 192 worlds + prior', 'before': 132, 'after': 154, 'harmful': False}
+harm {'version': 7, 'area': 'drawn7', 'change': 'language +40 + prune -48 + model g=7 pw=4 from 288 worlds + prior', 'before': 164, 'after': 170, 'harmful': False}
+harm {'version': 8, 'area': 'metric777001', 'change': 'language +40 + prune -33 + model g=8 pw=2 from 96 worlds + prior', 'before': 178, 'after': 685, 'harmful': False}
+harm {'version': 9, 'area': 'metric777001', 'change': 'language +40 + prune -16 + model g=8 pw=2 from 192 worlds + prior', 'before': 719, 'after': 845, 'harmful': False}
+harm {'version': 10, 'area': 'metric777001', 'change': 'language +40 + prune -41 + model g=8 pw=2 from 288 worlds + prior', 'before': 861, 'after': 830, 'harmful': True}
+harm {'version': 11, 'area': 'drawn11', 'change': 'language +40 + prune -40 + model g=8 pw=4 from 96 worlds + prior', 'before': 158, 'after': 182, 'harmful': False}
+harm {'version': 12, 'area': 'drawn11', 'change': 'language +40 + prune -30 + model g=7 pw=4 from 192 worlds + prior', 'before': 208, 'after': 204, 'harmful': True}
+harm {'version': 13, 'area': 'drawn13', 'change': 'language +40 + prune -42 + model g=6 pw=4 from 96 worlds + prior', 'before': 87, 'after': 185, 'harmful': False}
+harm {'version': 14, 'area': 'drawn13', 'change': 'language +40 + prune -31 + model g=6 pw=4 from 192 worlds + prior', 'before': 185, 'after': 166, 'harmful': True}
+harm {'version': 15, 'area': 'metric555001', 'change': 'language +40 + prune -47 + model g=8 pw=2 from 96 worlds + prior', 'before': 230, 'after': 600, 'harmful': False}
+harm {'version': 16, 'area': 'metric555001', 'change': 'language +40 + prune -20 + model g=8 pw=2 from 192 worlds + prior', 'before': 646, 'after': 758, 'harmful': False}
+harm {'version': 17, 'area': 'str7', 'change': 'language +17 + prune -49 + model g=6 pw=3 from 96 worlds + prior', 'before': 2238, 'after': 2863, 'harmful': False}
+harm {'version': 18, 'area': 'str7', 'change': 'language +1 + prune -40 + model g=8 pw=3 from 192 worlds + prior', 'before': 2909, 'after': 2944, 'harmful': False}
+harm {'version': 19, 'area': 'str7', 'change': 'language +1 + prune -12 + model g=6 pw=3 from 288 worlds + prior', 'before': 2988, 'after': 2916, 'harmful': True}
+harm {'version': 20, 'area': 'mech', 'change': 'language +40 + prune -1 + model g=7 pw=3 from 480 worlds + prior', 'before': 836, 'after': 849, 'harmful': False}
+harm {'version': 21, 'area': 'mech', 'change': 'language +40 + prune -2 + model g=8 pw=3 from 576 worlds + prior', 'before': 830, 'after': 839, 'harmful': False}

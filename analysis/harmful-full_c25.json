@@ -1,0 +1,88 @@
+{
+  "name": "full_c25",
+  "per_pool": 12,
+  "kept": 10,
+  "harmful": 1,
+  "rows": [
+    {
+      "version": 1,
+      "area": "mech",
+      "change": "language +40 + model g=7 pw=4 from 96 worlds + prior",
+      "before": 528,
+      "after": 793,
+      "harmful": false
+    },
+    {
+      "version": 2,
+      "area": "mech",
+      "change": "language +40 + prune -7 + model g=6 pw=3 from 384 worlds + prior",
+      "before": 753,
+      "after": 766,
+      "harmful": false
+    },
+    {
+      "version": 3,
+      "area": "drawn7",
+      "change": "model g=6 pw=4 from 96 worlds + prior",
+      "before": 122,
+      "after": 154,
+      "harmful": false
+    },
+    {
+      "version": 4,
+      "area": "metric777001",
+      "change": "model g=8 pw=3 from 96 worlds + prior",
+      "before": 202,
+      "after": 698,
+      "harmful": false
+    },
+    {
+      "version": 5,
+      "area": "metric777001",
+      "change": "language +40 + prune -23 + model g=7 pw=2 from 192 worlds + prior",
+      "before": 720,
+      "after": 842,
+      "harmful": false
+    },
+    {
+      "version": 6,
+      "area": "drawn11",
+      "change": "language +40 + prune -18 + model g=8 pw=4 from 96 worlds + prior",
+      "before": 165,
+      "after": 221,
+      "harmful": false
+    },
+    {
+      "version": 7,
+      "area": "drawn13",
+      "change": "model g=6 pw=4 from 96 worlds + prior",
+      "before": 97,
+      "after": 175,
+      "harmful": false
+    },
+    {
+      "version": 8,
+      "area": "metric555001",
+      "change": "model g=7 pw=2 from 96 worlds + prior",
+      "before": 207,
+      "after": 644,
+      "harmful": false
+    },
+    {
+      "version": 9,
+      "area": "metric555001",
+      "change": "model g=8 pw=2 from 192 worlds + prior",
+      "before": 747,
+      "after": 723,
+      "harmful": true
+    },
+    {
+      "version": 10,
+      "area": "str7",
+      "change": "language +17 + prune -25 + model g=6 pw=3 from 96 worlds + prior",
+      "before": 2238,
+      "after": 2910,
+      "harmful": false
+    }
+  ]
+}

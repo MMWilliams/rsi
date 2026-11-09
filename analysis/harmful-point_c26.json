@@ -1,0 +1,152 @@
+{
+  "name": "point_c26",
+  "per_pool": 12,
+  "kept": 18,
+  "harmful": 7,
+  "rows": [
+    {
+      "version": 1,
+      "area": "mech",
+      "change": "language +40 + model g=6 pw=4 from 96 worlds + prior",
+      "before": 753,
+      "after": 945,
+      "harmful": false
+    },
+    {
+      "version": 2,
+      "area": "mech",
+      "change": "language +40",
+      "before": 980,
+      "after": 910,
+      "harmful": true
+    },
+    {
+      "version": 3,
+      "area": "mech",
+      "change": "language +40 + prune -15 + model g=7 pw=4 from 288 worlds + prior",
+      "before": 899,
+      "after": 1039,
+      "harmful": false
+    },
+    {
+      "version": 4,
+      "area": "mech",
+      "change": "prune -57",
+      "before": 1067,
+      "after": 1091,
+      "harmful": false
+    },
+    {
+      "version": 5,
+      "area": "drawn7",
+      "change": "language +40 + prune -6 + model g=8 pw=4 from 96 worlds + prior",
+      "before": 157,
+      "after": 237,
+      "harmful": false
+    },
+    {
+      "version": 6,
+      "area": "drawn7",
+      "change": "language +40 + prune -25 + model g=6 pw=4 from 288 worlds + prior",
+      "before": 248,
+      "after": 230,
+      "harmful": true
+    },
+    {
+      "version": 7,
+      "area": "metric777001",
+      "change": "language +40 + prune -30 + model g=8 pw=2 from 96 worlds + prior",
+      "before": 231,
+      "after": 698,
+      "harmful": false
+    },
+    {
+      "version": 8,
+      "area": "metric777001",
+      "change": "language +40 + prune -25 + model g=8 pw=2 from 192 worlds + prior",
+      "before": 741,
+      "after": 821,
+      "harmful": false
+    },
+    {
+      "version": 9,
+      "area": "metric777001",
+      "change": "model g=8 pw=2 from 288 worlds + prior",
+      "before": 860,
+      "after": 914,
+      "harmful": false
+    },
+    {
+      "version": 10,
+      "area": "drawn11",
+      "change": "language +40 + prune -56 + model g=6 pw=4 from 96 worlds + prior",
+      "before": 192,
+      "after": 184,
+      "harmful": true
+    },
+    {
+      "version": 11,
+      "area": "drawn11",
+      "change": "language +40 + prune -12 + model g=8 pw=4 from 192 worlds + prior",
+      "before": 196,
+      "after": 174,
+      "harmful": true
+    },
+    {
+      "version": 12,
+      "area": "drawn13",
+      "change": "language +40 + prune -34 + model g=7 pw=4 from 96 worlds + prior",
+      "before": 123,
+      "after": 217,
+      "harmful": false
+    },
+    {
+      "version": 13,
+      "area": "drawn13",
+      "change": "language +40 + prune -30 + model g=8 pw=4 from 192 worlds + prior",
+      "before": 218,
+      "after": 213,
+      "harmful": true
+    },
+    {
+      "version": 14,
+      "area": "metric555001",
+      "change": "language +40 + prune -44 + model g=8 pw=2 from 96 worlds + prior",
+      "before": 209,
+      "after": 627,
+      "harmful": false
+    },
+    {
+      "version": 15,
+      "area": "str7",
+      "change": "language +18 + prune -58 + model g=6 pw=3 from 96 worlds + prior",
+      "before": 2314,
+      "after": 2807,
+      "harmful": false
+    },
+    {
+      "version": 16,
+      "area": "str7",
+      "change": "prune -12",
+      "before": 2971,
+      "after": 2973,
+      "harmful": false
+    },
+    {
+      "version": 17,
+      "area": "mech",
+      "change": "model g=6 pw=3 from 480 worlds + prior",
+      "before": 1111,
+      "after": 1093,
+      "harmful": true
+    },
+    {
+      "version": 18,
+      "area": "mech",
+      "change": "language +40 + prune -3 + model g=7 pw=3 from 576 worlds + prior",
+      "before": 1099,
+      "after": 1088,
+      "harmful": true
+    }
+  ]
+}
