@@ -12,6 +12,11 @@ across areas (mechanism worlds, string DSL tasks, metric worlds, drawn
 environments). Develop on the seed where things work (644101); other seeds
 are for replication only. Nothing proven is reset between generations.
 
+- [ ] **Review 002 response (2026-11-09, branch worktree-review002).** Ten v11.1
+      seeds done and summarised (9/10 pass gates 1-4). Arms (ablation + proof
+      cost) running via `run_review_arms.sh`, ~15 h. Then: arm table and the
+      claims that depend on it in both papers, merge after reese's verdict.
+      Dymitr: reply drafted, reese sends; minimal fork not delivered yet.
 - [ ] **THE SEED (2026-10-10, `rsi/seed.py`, `seed_run.py`, `seed_check.py`).**
       One agent, one carried state (language of atoms, experience by atom
       name, world+self model, pair prior, ledger), three operations on itself:
