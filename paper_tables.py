@@ -57,10 +57,28 @@ def rejudged():
         rows.append([label, f'{t["accept_lost"]} of {accepted} ({100 * t["accept_lost"] / accepted:.0f}\\%)',
                      f'{t["reject_passed"]} of {rejected} ({100 * t["reject_passed"] / rejected:.0f}\\%)'])
     write('table-rejudged.tex',
-          'Recorded full-set proofs of the sealed seeds judged again on part of their own set: full-set acceptances the smaller set would lose and full-set rejections it would pass.',
-          'tab:rejudged', 'lll', 'Set size & Acceptances lost & Rejections passed', rows)
+          'Recorded full-set proofs of the sealed seeds judged again on part of their own set: full-set interval passes the smaller set would lose '
+          '(a pass is kept only if it also clears the cross-area check) and full-set interval failures it would pass.',
+          'tab:rejudged', 'lll', 'Set size & Passes lost & Failures passed', rows)
+
+
+def arms():
+    data = load('review002-arms.json')
+    rows = []
+    for arm, a in data['arms'].items():
+        runs = [a['runs'][t] for t in data['tags']]
+        diff = ', '.join(f'${x:+.3f}$' for x in a['G_minus_full']) if 'G_minus_full' in a else '--'
+        harm = f'{a["harm"]["harmful"]} of {a["harm"]["kept"]}' if a['harm'] else '--'
+        rows.append([arm, f'{a["mean_G"]:.3f}', diff, f'{a["mean_total_scans"] / 1e6:.0f}',
+                     ', '.join(str(r['kept']) for r in runs), harm, a.get('rule', '--')])
+    write('table-arms.tex',
+          f'The review-002 arms on seeds 919127 to 919129, meta-level off. G is the mean over the seven areas of ln(retained/start) on fresh held-out sets; '
+          f'the difference from full is per seed; scans are live plus proof, mean over seeds, in millions; harmful counts kept changes that lowered their own area on a fresh set. '
+          f'Outcomes follow the rules committed before any arm ran; invention is judged on the unfamiliar-family pools of mech and str7, not on G. Brier score of the eight committed forecasts {data["brier"]:.3f}.',
+          'tab:arms', 'lrlrlll', 'Arm & G & G $-$ full, per seed & Scans & Kept & Harmful & Outcome', rows)
 
 
 if __name__ == '__main__':
     ten_seeds()
     rejudged()
+    arms()

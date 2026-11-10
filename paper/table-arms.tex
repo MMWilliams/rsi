@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{The review-002 arms on seeds 919127 to 919129, meta-level off. G is the mean over the seven areas of ln(retained/start) on fresh held-out sets; the difference from full is per seed; scans are live plus proof, mean over seeds, in millions; harmful counts kept changes that lowered their own area on a fresh set. Outcomes follow the rules committed before any arm ran; invention is judged on the unfamiliar-family pools of mech and str7, not on G. Brier score of the eight committed forecasts 0.126.}
+\label{tab:arms}
+\small
+\begin{tabular}{lrlrlll}
+\toprule
+Arm & G & G $-$ full, per seed & Scans & Kept & Harmful & Outcome \\
+\midrule
+full & 0.695 & -- & 717 & 12, 10, 13 & 2 of 35 & -- \\
+accept-all & 0.691 & $+0.045$, $-0.027$, $-0.030$ & 206 & 21, 21, 21 & 15 of 63 & rule 3: inconclusive \\
+point & 0.706 & $+0.066$, $-0.023$, $-0.009$ & 366 & 18, 21, 18 & 17 of 57 & rule 3: inconclusive \\
+matched & 0.791 & $+0.150$, $+0.059$, $+0.080$ & 721 & 76, 70, 74 & -- & rule 2: withdraw \\
+no-guidance & 0.045 & $-0.650$, $-0.625$, $-0.676$ & 341 & 0, 1, 0 & -- & rule 4: shown \\
+frequency & 0.513 & $-0.128$, $-0.184$, $-0.235$ & 666 & 9, 10, 6 & -- & rule 4: shown \\
+no-invention & 0.450 & $-0.181$, $-0.290$, $-0.265$ & 431 & 11, 9, 9 & -- & rule 4: shown \\
+\bottomrule
+\end{tabular}
+\end{table}

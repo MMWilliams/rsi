@@ -9,7 +9,7 @@ import numpy as np
 from rsi.common import ROOT, write_json
 
 SEEDS = ['c22', 'c23'] + [f'c{i}' for i in range(24, 32)]
-GROWTH, SAFETY, LEVEL0, ALL_PROOFS, DRAWS = 1.15, .9, 3.5, 5., 10000
+GROWTH, SAFETY, LEVEL0, ALL_PROOFS, DRAWS = 1.15, .9, 3.5, 5., 1_000_000   # 10,000 draws left the discrete median's upper quantile a support point low
 
 
 def load(path):

@@ -20,7 +20,11 @@ are for replication only. Nothing proven is reset between generations.
       ablations on 3 of 3 seeds (G no-guidance 0.045, frequency 0.513,
       no-invention 0.450 vs full 0.695). Report: main checkout `reports/`.
       arXiv plan from the 11-09 audit is in the main checkout's HANDOFF.md.
-      Then: arm table, papers to the verdicts, merge after reese's verdict.
+      11-10: tag prereg-review002-arms pushed; summarize_arms.py + arms table
+      done; both papers rewritten to rules 2-4, audit numbers-1..11 fixed.
+      Left: second evaluation draw (unused salt), clean-room rebuild from a
+      release tag, archive (Zenodo, LICENSE, AI-use note, prior work), merge
+      after reese's verdict.
       Dymitr: reply drafted, reese sends; minimal fork not delivered yet.
 - [ ] **THE SEED (2026-10-10, `rsi/seed.py`, `seed_run.py`, `seed_check.py`).**
       One agent, one carried state (language of atoms, experience by atom
