@@ -1,0 +1,184 @@
+mech life 16: solved 3060
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 72, language 482, live 707.8M proof 0.0M; 138 s
+mech life 17: solved 2826
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 73, language 479, live 717.6M proof 0.0M; 202 s
+mech life 18: solved 2826
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 74, language 477, live 727.4M proof 0.0M; 194 s
+mech life 19: solved 2866
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 75, language 476, live 737.3M proof 0.0M; 182 s
+mech life 20: solved 3129
+  together: held-out 0 -> 0 [+0.0, +0.0] per world KEPT; {}
+  version 76, language 477, live 747.1M proof 0.0M; 162 s
+mech fresh held-out 1203 -> 2417
+drawn7 fresh held-out 283 -> 416
+metric777001 fresh held-out 302 -> 2084
+drawn11 fresh held-out 287 -> 401
+drawn13 fresh held-out 328 -> 407
+metric555001 fresh held-out 352 -> 2109
+str7 fresh held-out 4834 -> 6179
+{
+ "name": "matched_c24",
+ "version": 76,
+ "budget": 1024,
+ "areas": {
+  "mech": {
+   "start": {
+    "budget": 1024,
+    "total": 1203,
+    "by_pool": {
+     "trained": 25.958333333333332,
+     "unfamiliar": 2.2083333333333335,
+     "untrained": 21.958333333333332
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 2417,
+    "by_pool": {
+     "trained": 41.583333333333336,
+     "unfamiliar": 20.958333333333332,
+     "untrained": 38.166666666666664
+    }
+   },
+   "gain": 1214
+  },
+  "drawn7": {
+   "start": {
+    "budget": 1024,
+    "total": 283,
+    "by_pool": {
+     "env": 11.791666666666666
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 416,
+    "by_pool": {
+     "env": 17.333333333333332
+    }
+   },
+   "gain": 133
+  },
+  "metric777001": {
+   "start": {
+    "budget": 1024,
+    "total": 302,
+    "by_pool": {
+     "seen_centre": 9.333333333333334,
+     "unfamiliar_centre": 3.25
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 2084,
+    "by_pool": {
+     "seen_centre": 47.208333333333336,
+     "unfamiliar_centre": 39.625
+    }
+   },
+   "gain": 1782
+  },
+  "drawn11": {
+   "start": {
+    "budget": 1024,
+    "total": 287,
+    "by_pool": {
+     "env": 11.958333333333334
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 401,
+    "by_pool": {
+     "env": 16.708333333333332
+    }
+   },
+   "gain": 114
+  },
+  "drawn13": {
+   "start": {
+    "budget": 1024,
+    "total": 328,
+    "by_pool": {
+     "env": 13.666666666666666
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 407,
+    "by_pool": {
+     "env": 16.958333333333332
+    }
+   },
+   "gain": 79
+  },
+  "metric555001": {
+   "start": {
+    "budget": 1024,
+    "total": 352,
+    "by_pool": {
+     "seen_centre": 10.958333333333334,
+     "unfamiliar_centre": 3.7083333333333335
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 2109,
+    "by_pool": {
+     "seen_centre": 55.125,
+     "unfamiliar_centre": 32.75
+    }
+   },
+   "gain": 1757
+  },
+  "str7": {
+   "start": {
+    "budget": 1024,
+    "total": 4834,
+    "by_pool": {
+     "trained": 76.625,
+     "unfamiliar": 50.625,
+     "untrained": 74.16666666666667
+    }
+   },
+   "carried": {
+    "budget": 1024,
+    "total": 6179,
+    "by_pool": {
+     "trained": 85.58333333333333,
+     "unfamiliar": 81.91666666666667,
+     "untrained": 89.95833333333333
+    }
+   },
+   "gain": 1345
+  }
+ },
+ "lives": {
+  "mech": 21,
+  "drawn7": 11,
+  "metric777001": 11,
+  "drawn11": 7,
+  "drawn13": 7,
+  "metric555001": 8,
+  "str7": 11
+ },
+ "resource": {
+  "live_scans": 747110400,
+  "proof_scans": 0,
+  "invention_tests": 6097546
+ },
+ "invented": {
+  "kept": 171,
+  "by_true_family": {
+   "xormod": 29,
+   "popcount": 30,
+   "novel": 108,
+   "str:generator": 4
+  }
+ }
+}
+audit: no replayable proofs, matched does not use the interval rule

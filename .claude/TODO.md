@@ -14,9 +14,13 @@ are for replication only. Nothing proven is reset between generations.
 
 - [ ] **Review 002 response (2026-11-09, branch worktree-review002).** Ten v11.1
       seeds done and summarised (9/10 pass gates 1-4). Arms (ablation + proof
-      cost): 9 of 21 runs done, runner stopped 11-09 for low memory, restart
-      `run_review_arms.sh` on reese's go (it resumes). Then: arm table and the
-      claims that depend on it in both papers, merge after reese's verdict.
+      cost): all 21 runs done and committed 11-09 23:14. Rule 2 fired on
+      matched (3 of 3 seeds): papers withdraw "the test is the central
+      contribution". Accept-all, point: rule 3. Rule 4 holds for all three
+      ablations on 3 of 3 seeds (G no-guidance 0.045, frequency 0.513,
+      no-invention 0.450 vs full 0.695). Report: main checkout `reports/`.
+      arXiv plan from the 11-09 audit is in the main checkout's HANDOFF.md.
+      Then: arm table, papers to the verdicts, merge after reese's verdict.
       Dymitr: reply drafted, reese sends; minimal fork not delivered yet.
 - [ ] **THE SEED (2026-10-10, `rsi/seed.py`, `seed_run.py`, `seed_check.py`).**
       One agent, one carried state (language of atoms, experience by atom

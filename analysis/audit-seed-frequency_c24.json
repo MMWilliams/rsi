@@ -1,0 +1,245 @@
+{
+  "name": "frequency_c24",
+  "replayed": [
+    {
+      "version": 1,
+      "area": "mech",
+      "change": "language +40 + model g=0 pw=3 from 96 worlds + prior",
+      "carried": [
+        698,
+        698
+      ],
+      "candidate": [
+        1081,
+        1081
+      ],
+      "interval": [
+        [
+          4.104166666666667,
+          11.771354166666669
+        ],
+        [
+          4.104166666666667,
+          11.771354166666669
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 2,
+      "area": "mech",
+      "change": "prune -9",
+      "carried": [
+        1210,
+        1210
+      ],
+      "candidate": [
+        1235,
+        1235
+      ],
+      "interval": [
+        [
+          -0.125,
+          1.2083333333333333
+        ],
+        [
+          -0.125,
+          1.2083333333333333
+        ]
+      ],
+      "ok": true,
+      "extension": {
+        "carried": [
+          1221,
+          1221
+        ],
+        "candidate": [
+          1256,
+          1256
+        ],
+        "interval": [
+          [
+            0.11458333333333333,
+            1.1669270833333343
+          ],
+          [
+            0.11458333333333333,
+            1.1669270833333343
+          ]
+        ]
+      }
+    },
+    {
+      "version": 3,
+      "area": "drawn7",
+      "change": "language +40 + model g=0 pw=3 from 96 worlds + prior",
+      "carried": [
+        539,
+        539
+      ],
+      "candidate": [
+        806,
+        806
+      ],
+      "interval": [
+        [
+          2.2291666666666665,
+          8.9171875
+        ],
+        [
+          2.2291666666666665,
+          8.9171875
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 4,
+      "area": "metric777001",
+      "change": "language +40 + prune -5 + model g=0 pw=3 from 96 worlds + prior",
+      "carried": [
+        486,
+        486
+      ],
+      "candidate": [
+        825,
+        825
+      ],
+      "interval": [
+        [
+          3.625,
+          10.625
+        ],
+        [
+          3.625,
+          10.625
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 5,
+      "area": "drawn11",
+      "change": "language +40 + prune -11 + model g=0 pw=3 from 96 worlds + prior",
+      "carried": [
+        474,
+        474
+      ],
+      "candidate": [
+        903,
+        903
+      ],
+      "interval": [
+        [
+          5.416666666666667,
+          12.541666666666666
+        ],
+        [
+          5.416666666666667,
+          12.541666666666666
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 6,
+      "area": "drawn13",
+      "change": "model g=0 pw=3 from 192 worlds + prior",
+      "carried": [
+        395,
+        395
+      ],
+      "candidate": [
+        675,
+        675
+      ],
+      "interval": [
+        [
+          3.6244791666666667,
+          8.125
+        ],
+        [
+          3.6244791666666667,
+          8.125
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 7,
+      "area": "drawn13",
+      "change": "prune -11",
+      "carried": [
+        812,
+        812
+      ],
+      "candidate": [
+        837,
+        837
+      ],
+      "interval": [
+        [
+          0.020833333333333332,
+          1.375
+        ],
+        [
+          0.020833333333333332,
+          1.375
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 8,
+      "area": "metric555001",
+      "change": "model g=0 pw=3 from 96 worlds + prior",
+      "carried": [
+        494,
+        494
+      ],
+      "candidate": [
+        1029,
+        1029
+      ],
+      "interval": [
+        [
+          7.3953125,
+          14.7296875
+        ],
+        [
+          7.3953125,
+          14.7296875
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "version": 9,
+      "area": "str7",
+      "change": "language +18 + model g=0 pw=3 from 96 worlds + prior",
+      "carried": [
+        3335,
+        3335
+      ],
+      "candidate": [
+        3998,
+        3998
+      ],
+      "interval": [
+        [
+          9.895833333333334,
+          17.95885416666667
+        ],
+        [
+          9.895833333333334,
+          17.95885416666667
+        ]
+      ],
+      "ok": true
+    }
+  ],
+  "passed": true,
+  "policy_ok": true,
+  "meta_ok": true,
+  "meta": []
+}

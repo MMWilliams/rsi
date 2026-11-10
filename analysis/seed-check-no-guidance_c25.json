@@ -1,0 +1,169 @@
+{
+  "name": "no-guidance_c25",
+  "version": 1,
+  "budget": 1024,
+  "areas": {
+    "mech": {
+      "start": {
+        "budget": 1024,
+        "total": 1124,
+        "by_pool": {
+          "trained": 19.5,
+          "unfamiliar": 5.0,
+          "untrained": 22.333333333333332
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 972,
+        "by_pool": {
+          "trained": 16.541666666666668,
+          "unfamiliar": 7.666666666666667,
+          "untrained": 16.291666666666668
+        }
+      },
+      "gain": -152
+    },
+    "drawn7": {
+      "start": {
+        "budget": 1024,
+        "total": 276,
+        "by_pool": {
+          "env": 11.5
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 224,
+        "by_pool": {
+          "env": 9.333333333333334
+        }
+      },
+      "gain": -52
+    },
+    "metric777001": {
+      "start": {
+        "budget": 1024,
+        "total": 348,
+        "by_pool": {
+          "seen_centre": 10.166666666666666,
+          "unfamiliar_centre": 4.333333333333333
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 504,
+        "by_pool": {
+          "seen_centre": 10.875,
+          "unfamiliar_centre": 10.125
+        }
+      },
+      "gain": 156
+    },
+    "drawn11": {
+      "start": {
+        "budget": 1024,
+        "total": 275,
+        "by_pool": {
+          "env": 11.458333333333334
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 350,
+        "by_pool": {
+          "env": 14.583333333333334
+        }
+      },
+      "gain": 75
+    },
+    "drawn13": {
+      "start": {
+        "budget": 1024,
+        "total": 296,
+        "by_pool": {
+          "env": 12.333333333333334
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 310,
+        "by_pool": {
+          "env": 12.916666666666666
+        }
+      },
+      "gain": 14
+    },
+    "metric555001": {
+      "start": {
+        "budget": 1024,
+        "total": 317,
+        "by_pool": {
+          "seen_centre": 10.916666666666666,
+          "unfamiliar_centre": 2.2916666666666665
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 600,
+        "by_pool": {
+          "seen_centre": 14.583333333333334,
+          "unfamiliar_centre": 10.416666666666666
+        }
+      },
+      "gain": 283
+    },
+    "str7": {
+      "start": {
+        "budget": 1024,
+        "total": 4584,
+        "by_pool": {
+          "trained": 71.04166666666667,
+          "unfamiliar": 51.5,
+          "untrained": 68.45833333333333
+        }
+      },
+      "carried": {
+        "budget": 1024,
+        "total": 4584,
+        "by_pool": {
+          "trained": 71.04166666666667,
+          "unfamiliar": 51.5,
+          "untrained": 68.45833333333333
+        }
+      },
+      "gain": 0
+    }
+  },
+  "lives": {
+    "mech": 6,
+    "drawn7": 3,
+    "metric777001": 3,
+    "drawn11": 2,
+    "drawn13": 2,
+    "metric555001": 2,
+    "str7": 3
+  },
+  "resource": {
+    "live_scans": 206438400,
+    "proof_scans": 181862400,
+    "invention_tests": 1809419
+  },
+  "kept_changes": [
+    {
+      "life": 1,
+      "area": "metric555001",
+      "change": "language +35",
+      "gain": 325,
+      "version": 1
+    }
+  ],
+  "invented": {
+    "kept": 35,
+    "by_true_family": {
+      "novel": 8,
+      "popcount": 11,
+      "xormod": 16
+    }
+  }
+}
