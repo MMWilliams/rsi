@@ -1785,3 +1785,86 @@ which finds its lives done and runs the check and the audit with the prior in
 force. An arm that keeps nothing has nothing to replay, and that is reported
 as zero replays, not as a pass. Point, accept-all and matched do not use the
 interval rule and are not audited.
+
+### Review 002 follow-up: ten-seed arms, a time-matched arm, truth labels (frozen 2026-11-11)
+
+Three things the first response left open: the arms ran on three seeds with no
+intervals; matched was matched on scans and took 2.5 times full's wall-clock
+time; and the re-judging of proofs compared smaller tests with the full test's
+verdict, not with what a candidate really did. Code: `rsi/seed_record.py`,
+`run_record.py`, `run_time_matched.py`, `truth_labels.py`, hashes in
+`arms2.sha256`; analysis `summarize_arms10.py`. No hashed file changes
+(`v11.1.sha256`, `arms.sha256` are checked before every run). Runner:
+`run_review002_v2.sh`, one run at a time, `RSI_WORKERS=6`.
+
+**A. The seven arms on seven more seeds.** 919121, 919122 and 919130 to 919134
+(tags c22, c23, c27 to c31): the other seven sealed seeds of version 11.1. No
+arm has run on them. Same code, schedule and scoring as the three-seed arms
+above (G on salt 999; harm counted for full, accept-all and point). Per
+alternative arm, d = G(arm) - G(full) on each seed; reported are its mean and
+the paired 95% percentile bootstrap interval over seeds (10,000 resamples,
+generator seed 20261111). An arm is ahead when the interval is above zero,
+behind when below, else a tie. Primary: the seven new seeds. Secondary, beside
+it: all ten.
+
+- Matched ahead on the seven: the withdrawal of "the acceptance test is the
+  central contribution" is confirmed on seeds no arm had run on. A tie: the
+  paper says the three-seed lead was not significant on new seeds; the claim
+  stays withdrawn, since reinstating it needs full ahead. Behind: the paper
+  says the three-seed verdict did not replicate, and reinstates nothing
+  without a further preregistered run.
+- Accept-all and point: a tie is reported as the same growth; ahead or behind
+  is reported as such.
+- Guidance and the frequency comparison are confirmed if the arm is behind.
+  Invention is confirmed if no-invention is behind on both unfamiliar-family
+  pools (mech, str7), in tasks per world.
+
+**B. A time-matched arm.** Accept-all given full's wall-clock time and not its
+scans: in each step of the schedule it lives until its seconds reach full's
+seconds at the end of the same step on the same seed, at least one life per
+step (`run_time_matched.py`). A life's seconds are living plus the proposal
+phase, as `run_arms.py` prints them. Both arms run on the same machine with six
+workers; other load on the machine is not controlled, the realised seconds of
+both are reported, and a seed whose totals differ by more than 10% is flagged.
+On 919127 to 919129 the reference clock is the recorded run of C, which is the
+full arm executed again on the day; on the seven new seeds it is the full arm
+of A. No time-matched run exists on any seed, so its primary set is all ten.
+Ahead: the test's time, like its scans, grows more when spent on experience.
+A tie: at equal time neither is ahead, and matched's lead needed its extra
+time. Behind: at equal wall-clock time the test earns its place in growth, and
+the paper limits the withdrawal to the scan-matched comparison.
+
+**C. What each tested candidate really did.** The full arm is run again on
+919127 to 919129 with both states of every proof saved (`Recording`, which
+calls `Seed.prove` unchanged; the run must equal `seeds/full_<tag>` in ledger,
+language, kept changes, experience and resource, and three proofs per seed must
+replay from their recorded states). Every candidate and the state it was
+tested against are then scored on a truth set of 192 worlds of its own area
+and, where the proof ran a cross-area check, 96 worlds of each area checked,
+salt 30003, which nothing has used. A candidate is harmful when the paired 95%
+bootstrap interval of its truth-set gain (10,000 resamples of worlds within
+pools) is below zero, beneficial when above, unresolved otherwise. Reported,
+with counts: for the whole rule as it ran (what was kept), for its own-area
+test as it ran (early stop and extension set included, whatever the cross-area
+check then said), for the plain interval rule on the half and the quarter set,
+and for the point rule on the half set, the candidates passed and refused in
+each class and their mean true gain; for the cross-area check
+at tolerances 0, 2, 5 and 10%, how many passed candidates truly lowered an
+area it checked. This part is descriptive: no claim is restored or withdrawn
+on it.
+
+Results are read when every run of a part has finished; an earlier look is
+labelled preliminary and decides nothing. A killed run resumes at its next
+life, and every resume is reported. The summaries are run by hand when a part
+has finished: `truth_labels.py` for C, `summarize_arms10.py` for A and B.
+
+Forecast, committed before any of these runs. A, on the seven new seeds:
+matched ahead 0.55; accept-all a tie 0.7; point a tie 0.7; no-guidance behind
+0.97; frequency behind 0.85; no-invention behind in G 0.8, and behind on both
+unfamiliar pools 0.95. B, on ten seeds: time-matched ahead 0.3, behind 0.1.
+C: fewer than one in ten of the candidates the rule keeps are harmful 0.8;
+among the candidates it does not keep, more are beneficial than harmful 0.45;
+the point rule passes at least three times as many harmful candidates as the
+rule keeps (at least three if it keeps none) 0.6; the cross-area
+check passes a candidate that truly lowered a checked area at 10% and none at
+2%, 0.35.

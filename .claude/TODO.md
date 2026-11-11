@@ -27,16 +27,28 @@ are for replication only. Nothing proven is reset between generations.
       platform_check.py, reproduce_tables.sh, requirements-seed.txt,
       .gitattributes, CITATION.cff, paper/make_arxiv.sh added; both papers get
       a claims table, limitations, v11.1 settings, related work, AI-use note.
-      Left for reese: licence (repo has none; trapdoor-loom upstream has
-      none), repo hygiene (Kyberos snapshot, home paths), name the reviewer
-      or not, merge + push + tag seed-growth-arxiv-v1, Zenodo DOI, arXiv
-      upload (paper/arxiv/, metadata in paper/arxiv-metadata.txt).
-      v2 backlog: arms on 10 seeds with intervals; harm relabel with
-      intervals at 96 worlds per pool; salts per purpose; withhold metric
-      centres; stable argsort in MetricArea._members (cross-platform);
-      a start with nothing withheld as a second baseline; replicate
-      recurrence 3; wall-clock-matched arm.
-      Dymitr: reply drafted, reese sends; minimal fork not delivered yet.
+      Released 11-11: MIT + CC BY 4.0, hygiene done, tag seed-growth-arxiv-v1
+      pushed (ff0a057). Left for reese: arXiv upload, Zenodo DOI.
+      FOLLOW-UP 11-11 (reese: address all open review items), preregistered
+      in EXPERIMENT-seed-confirmation.md, tag prereg-review002-v2, runner
+      run_review002_v2.sh (resumable, ~65 h, one run at a time):
+      C truth labels (record_c24..c26 + truth_labels.py, ~7 h), B
+      time-matched arm on all ten seeds, A seven arms on c22, c23, c27-c31.
+      When a part finishes: truth_labels.py / summarize_arms10.py, table in
+      paper_tables.py, both papers, reproduce_tables.sh, tag
+      seed-growth-arxiv-v2 (v1 tag is not moved).
+      Paper text already in: the 9% untrained drop is the dev agent's
+      (Section 6), body chronology cut to a pointer, appendix in paragraphs.
+      Open with reese: LLM-agent experiment (review item 4), still declined
+      in Section 9.
+      Still v2 backlog: harm relabel of accept-all and point at 96 worlds
+      per pool; salts per purpose; withhold metric centres; stable argsort
+      in MetricArea._members (cross-platform); replicate recurrence 3.
+      Dymitr (Upwork reviewer): reply draft in the main checkout,
+      paper/DYMITR-REPLY-DRAFT.txt (untracked), reese sends it on Upwork.
+      The "minimal fork" is Dymitr's own deliverable (his Nov 4 message),
+      not delivered; he also has a "mouse in a maze" RSI summary awaiting
+      reese's view; reese stopped the contract 11-11.
 - [ ] **THE SEED (2026-10-10, `rsi/seed.py`, `seed_run.py`, `seed_check.py`).**
       One agent, one carried state (language of atoms, experience by atom
       name, world+self model, pair prior, ledger), three operations on itself:
