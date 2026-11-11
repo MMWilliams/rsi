@@ -2,9 +2,55 @@
 
 Mission: **RSI for research, cybersecurity, social good and policy**.
 
-Research notes, executable experiments, and artifacts for *The Münchhausen Machine* and the related self-improvement loop study.
+## Paper: A Seed Agent That Improves Its Own State (November 2026)
 
-## Working prototype
+Maureese Williams. Technical paper: [`paper/seed-growth.pdf`](paper/seed-growth.pdf). The same results for a general reader: [`paper/seed-growth-plain.pdf`](paper/seed-growth-plain.pdf). Release tag: `seed-growth-arxiv-v1`.
+
+One persistent agent solves synthetic rule-inference tasks under a scan budget and improves the state its fixed learning procedure works on: its experience, the models that guide its search, and the primitives it builds rules from. Seven task areas in two task forms. No language model is part of the agent.
+
+### What the evidence supports, and what it does not
+
+| Claim | Status | Evidence |
+|---|---|---|
+| The agent's state improves on held-out sets, final protocol (v11.1) | Supported on ten sealed seeds | Every area and pool rose on every seed; 9 of 10 passed the four pre-stated gates (7 of the 8 frozen in advance). Conditional on seven fixed area structures and one platform. |
+| Learned guidance and invention carry the growth | Supported on three seeds, preregistered sign rule | Without guidance 6% of the full agent's growth, without invention 65%, lower on every seed. A second evaluation draw agrees on every seed, with paired intervals below zero. |
+| The acceptance test is what makes the agent grow | **Withdrawn** | Keeping every change grew as much for 29% of the scans; spending the test's scans on experience grew more on 3 of 3 seeds (preregistered rule 2). The second draw agrees: that arm is ahead on all three seeds, intervals above zero. |
+| The acceptance test keeps out harmful changes | Suggestive only | 2 of 35 kept changes harmful with the test, 15 of 63 and 17 of 57 without. Raw counts, a noisy label, three seeds. |
+| The agent improves its own procedure | Narrow | 13 adoptions from a fixed menu of six settings. Twelve came from tests where nothing differed and saved nothing over a whole run; one of ten differing tests produced a better state, unreplicated. |
+| The growth is more than recovering the two withheld primitive families | Supported on three seeds | The starting state lacks two families by design. A start with nothing withheld reaches 30% to 44% of the full agent's growth before anything is learned; the full agent is ahead of it on every seed. Reported growth percentages are measured from the withheld start. |
+| Every pool of every area rises | One draw only | True on the first evaluation draw of all ten seeds. On a second draw of three seeds, 38 of 39 pools rose and one fell to 91% of its start. |
+| Recursive self-improvement in the open-ended sense | Not shown, not claimed | The agent picks among given settings and writes no new procedure. |
+| A practical domain | Not tested | Every area is synthetic. |
+| Exact reproduction on another platform | Not available | Linux draws different worlds in the two metric areas. `platform_check.py` tells you in 20 seconds. |
+
+The papers' Section 9 gives the full list of limitations with their numbers.
+
+### Reproduce
+
+1. **Tables, without running the agent** (about two minutes, Python with NumPy): `sh reproduce_tables.sh`. It checks the frozen-file hashes, rebuilds every analysis file and generated table from the committed runs, and fails if anything differs.
+2. **Environment for the agent**: Python 3.12.9, `pip install -r requirements-seed.txt`, then the string-task language, which is a separate repository with no licence and is not redistributed here:
+   ```
+   git clone https://github.com/izzortsi/trapdoor-loom vendor/trapdoor-loom
+   git -C vendor/trapdoor-loom checkout dd78141
+   python platform_check.py
+   ```
+   Reference platform: Windows 11 x86-64, CPython 3.12.9, NumPy 2.5.3.
+3. **Re-run a sealed seed** from scratch under a new name (never an existing name, which would resume and extend that agent): `sh confirm_seed.sh r24 919127`, then compare `seeds/r24` with `seeds/c24`. An arm: `python run_arms.py full r24 919127`. The full arm's lives take about 37 minutes with six worker processes on a 12-core desktop.
+
+### Where things are
+
+- Agent: `rsi/seed.py`, `rsi/seed_string.py`, `rsi/seed_areas.py`, `rsi/invention.py`, `rsi/self_world_model.py`; runners `seed_run.py`, `seed_check.py`, `audit_seed.py`, `confirm_seed.sh`. These are frozen (`v11.1.sha256`).
+- Arms: `rsi/seed_arms.py`, `run_arms.py` (`arms.sha256`); preregistration in `EXPERIMENT-seed-confirmation.md`, tag `prereg-review002-arms`.
+- Runs: `seeds/c1` to `seeds/c31` (sealed seeds; there is no `c20`), `seeds/<arm>_c24` to `_c26` (arms), `seeds/s1` to `s3` (development). Each `state.json` holds the full ledger.
+- Analysis: `summarize_v11_replication.py`, `rejudge_proofs.py`, `summarize_arms.py`, `summarize_limits.py`, `second_draw.py`, `metric_coverage.py`, `paper_tables.py`; outputs in `analysis/review002-*.json` and `paper/table-*.tex`.
+
+The code and paper were written with an AI coding assistant (Claude, by Anthropic) under the author's direction.
+
+## Earlier programme (September 2026)
+
+Research notes, executable experiments, and artifacts for *The Münchhausen Machine* and the related self-improvement loop study. None of the material below is needed for the paper above.
+
+### Working prototype
 
 The system-level proposal was adopted for implementation on 16 September 2026. The prototype combines bounded DSL search, independent oracle checks, deterministic replay, an inherited operator-effect table, model-proposed edit expressions, and verified local Qwen LoRA distillation.
 

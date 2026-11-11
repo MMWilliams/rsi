@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{The arms scored again on a second evaluation draw (salt 20001, 24 worlds per pool) that nothing had used. G as in Table~\ref{tab:arms}, mean over the three seeds, on the first and the second draw; then the difference from full on the second draw, per seed. A star marks a difference whose paired 95\% bootstrap interval over worlds (10,000 resamples within pools) excludes zero. The last row is the starting state given every generator atom, with no model and no prior.}
+\label{tab:seconddraw}
+\small
+\begin{tabular}{lrrl}
+\toprule
+Arm & G, first draw & G, second draw & G $-$ full on the second draw, per seed \\
+\midrule
+full & 0.695 & 0.763 & -- \\
+accept-all & 0.691 & 0.771 & $-0.003$, $+0.018$, $+0.006$ \\
+point & 0.706 & 0.771 & $+0.002$, $+0.023$, $-0.003$ \\
+matched & 0.791 & 0.879 & $+0.139$*, $+0.125$*, $+0.082$* \\
+no-guidance & 0.045 & 0.057 & $-0.737$*, $-0.561$*, $-0.821$* \\
+no-invention & 0.450 & 0.469 & $-0.280$*, $-0.300$*, $-0.304$* \\
+frequency & 0.513 & 0.569 & $-0.116$*, $-0.192$*, $-0.275$* \\
+start, nothing withheld & -- & 0.271 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

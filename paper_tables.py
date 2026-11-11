@@ -3,6 +3,7 @@ no number in them is typed by hand."""
 import json
 
 from rsi.common import ROOT
+from summarize_v11_replication import DRAWS
 
 PAPER = ROOT / 'paper'
 NAMES = {'mech': 'mechanism worlds', 'metric777001': 'metric777001', 'metric555001': 'metric555001'}
@@ -36,7 +37,8 @@ def ten_seeds():
             rows.append([label, pct(p['median']), pct(p['minimum']), f'{pct(p["interval"][0])} to {pct(p["interval"][1])}', str(p['below_100'])])
     write('table-ten-pools.tex',
           'Version 11.1 on ten sealed seeds: change from the starting state to the retained state on fresh held-out sets, by area and pool. '
-          'Median and minimum over seeds, 95\\% bootstrap interval of the median (10,000 resamples of seeds), and the number of seeds below the start.',
+          f'Median and minimum over seeds, 95\\% bootstrap interval of the median ({DRAWS:,} resamples of seeds), and the number of seeds below the start. '
+          'Each seed contributes one draw of 24 worlds per pool; the interval is over random seeds for the fixed area structures.',
           'tab:tenpools', 'lrrrr', 'Area or pool & Median & Weakest seed & 95\\% interval & Seeds below start', rows)
     rows = []
     for s in data['seeds']:
@@ -78,7 +80,25 @@ def arms():
           'tab:arms', 'lrlrlll', 'Arm & G & G $-$ full, per seed & Scans & Kept & Harmful & Outcome', rows)
 
 
+def second_draw():
+    data = load('review002-second-draw.json')
+    first = load('review002-arms.json')['arms']
+    rows = []
+    for arm, a in data['arms'].items():
+        runs = [data['runs'][t][arm] for t in data['tags']]
+        diff = ', '.join(f'${r["G_minus_full"]:+.3f}${"" if r["verdict"] == "tie" else "*"}' for r in runs) if 'G_minus_full' in runs[0] else '--'
+        rows.append(['start, nothing withheld' if arm == 'open' else arm, f'{first[arm]["mean_G"]:.3f}' if arm in first else '--',
+                     f'{a["mean_G"]:.3f}', diff])
+    write('table-second-draw.tex',
+          f'The arms scored again on a second evaluation draw (salt {data["salt"]}, {data["per_pool"]} worlds per pool) that nothing had used. '
+          'G as in Table~\\ref{tab:arms}, mean over the three seeds, on the first and the second draw; then the difference from full on the second draw, per seed. '
+          f'A star marks a difference whose paired 95\\% bootstrap interval over worlds ({data["draws"]:,} resamples within pools) excludes zero. '
+          'The last row is the starting state given every generator atom, with no model and no prior.',
+          'tab:seconddraw', 'lrrl', 'Arm & G, first draw & G, second draw & G $-$ full on the second draw, per seed', rows)
+
+
 if __name__ == '__main__':
     ten_seeds()
     rejudged()
     arms()
+    second_draw()

@@ -23,20 +23,21 @@ import warnings
 import numpy as np
 
 from rsi.common import ROOT, write_json
-from rsi.mechanism_space import atom_expressions
-from rsi.seed import Seed, make_area
-from rsi.seed_arms import use_arm
-from rsi.seed_string import GENERATOR_KEYS
 from summarize_arms import AREAS, TAGS
 
 SALT, PER_POOL, BUDGET, DRAWS = 20001, 24, 1024, 10_000
 ARMS = ('full', 'accept-all', 'point', 'matched', 'no-guidance', 'no-invention', 'frequency')   # frequency last: use_arm patches the workers for good
-OPEN = [list(a) for a in atom_expressions()] + [[f'str:{k}', 'str', k] for k in GENERATOR_KEYS]
 HITS = ROOT / 'analysis/second-draw-hits.json'
 OUT = ROOT / 'analysis/review002-second-draw.json'
 
 
 def score():
+    # imported here so that summarising the saved hits needs only numpy, not the agent or the vendored string language
+    from rsi.mechanism_space import atom_expressions
+    from rsi.seed import Seed, make_area
+    from rsi.seed_arms import use_arm
+    from rsi.seed_string import GENERATOR_KEYS
+    OPEN = [list(a) for a in atom_expressions()] + [[f'str:{k}', 'str', k] for k in GENERATOR_KEYS]
     warnings.filterwarnings('ignore')
     out = json.loads(HITS.read_text()) if HITS.exists() else {'salt': SALT, 'per_pool': PER_POOL, 'pools': {}, 'hits': {}}
     assert (out['salt'], out['per_pool']) == (SALT, PER_POOL)
@@ -78,21 +79,23 @@ def summarize():
         index = {a: np.concatenate([rng.choice(np.flatnonzero(p == pool), size=(DRAWS, int((p == pool).sum())))
                                     for pool in sorted(set(p))], axis=1) for a, p in pools.items()}
 
-        def logs(label):   # ln of the total per area: row 0 observed, the rest resampled
-            h = {a: np.array(d['hits'][f'{label}/{tag}/{a}']) for a in AREAS}
+        def hits(label):
+            return {a: np.array(d['hits'][f'{label}/{tag}/{a}']) for a in AREAS}
+
+        def logs(h):   # ln of the total per area: row 0 observed, the rest resampled
             return np.log(np.array([np.concatenate(([h[a].sum()], h[a][index[a]].sum(axis=1))) for a in AREAS])).T
 
-        def pool_ratio(label):
-            h = {x: {a: np.array(d['hits'][f'{x}/{tag}/{a}']) for a in AREAS} for x in (label, 'start')}
-            return min(float(h[label][a][p == pool].sum() / h['start'][a][p == pool].sum())
-                       for a, p in pools.items() for pool in set(p))
-
-        start, full = logs('start'), logs('full')
+        first_hits = hits('start')
+        start, full = logs(first_hits), logs(hits('full'))
         runs[tag] = {}
         for arm in ARMS + ('open',):
-            mine = logs(arm)
+            h = hits(arm)
+            mine = logs(h)
             g, diff = (mine - start).mean(axis=1), (mine - full).mean(axis=1)
-            row = {'G': float(g[0]), 'G_interval': interval(g[1:]), 'min_pool_ratio': pool_ratio(arm),
+            pool_ratio = {f'{a}/{pool}': float(h[a][p == pool].sum() / first_hits[a][p == pool].sum())
+                          for a, p in pools.items() for pool in sorted(set(p))}
+            row = {'G': float(g[0]), 'G_interval': interval(g[1:]), 'min_pool_ratio': min(pool_ratio.values()),
+                   'pools_below_start': {k: v for k, v in pool_ratio.items() if v < 1},
                    'area_ratio': dict(zip(AREAS, (float(x) for x in np.exp(mine[0] - start[0]))))}
             if arm in first:
                 row['G_first_draw'] = first[arm]['runs'][tag]['G']
@@ -100,8 +103,9 @@ def summarize():
                 low, high = interval(diff[1:])
                 row.update(G_minus_full=float(diff[0]), G_minus_full_interval=[low, high],
                            verdict='ahead' if low > 0 else 'behind' if high < 0 else 'tie')
-            if arm == 'open':   # the share of full's log growth that the withheld atoms alone give back
-                row['share_of_full_growth'] = dict(zip(AREAS, (float(x) for x in (mine[0] - start[0]) / (full[0] - start[0]))))
+            if arm == 'open':   # what the withheld atoms alone give back, and where full stands against that start
+                row.update(full_over_open=dict(zip(AREAS, (float(x) for x in np.exp(full[0] - mine[0])))),
+                           G_full_minus_open=float(-diff[0]), G_full_minus_open_interval=interval(-diff[1:]))
             runs[tag][arm] = row
     arms = {arm: {'mean_G': float(np.mean([runs[t][arm]['G'] for t in TAGS])),
                   'verdicts': [runs[t][arm].get('verdict') for t in TAGS]} for arm in ARMS + ('open',)}

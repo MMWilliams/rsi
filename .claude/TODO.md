@@ -22,9 +22,20 @@ are for replication only. Nothing proven is reset between generations.
       arXiv plan from the 11-09 audit is in the main checkout's HANDOFF.md.
       11-10: tag prereg-review002-arms pushed; summarize_arms.py + arms table
       done; both papers rewritten to rules 2-4, audit numbers-1..11 fixed.
-      Left: second evaluation draw (unused salt), clean-room rebuild from a
-      release tag, archive (Zenodo, LICENSE, AI-use note, prior work), merge
-      after reese's verdict.
+      11-11 (publish as is): second draw scored (second_draw.py, salt 20001,
+      committed 5dd2d33 before scoring); summarize_limits.py, metric_coverage.py,
+      platform_check.py, reproduce_tables.sh, requirements-seed.txt,
+      .gitattributes, CITATION.cff, paper/make_arxiv.sh added; both papers get
+      a claims table, limitations, v11.1 settings, related work, AI-use note.
+      Left for reese: licence (repo has none; trapdoor-loom upstream has
+      none), repo hygiene (Kyberos snapshot, home paths), name the reviewer
+      or not, merge + push + tag seed-growth-arxiv-v1, Zenodo DOI, arXiv
+      upload (paper/arxiv/, metadata in paper/arxiv-metadata.txt).
+      v2 backlog: arms on 10 seeds with intervals; harm relabel with
+      intervals at 96 worlds per pool; salts per purpose; withhold metric
+      centres; stable argsort in MetricArea._members (cross-platform);
+      a start with nothing withheld as a second baseline; replicate
+      recurrence 3; wall-clock-matched arm.
       Dymitr: reply drafted, reese sends; minimal fork not delivered yet.
 - [ ] **THE SEED (2026-10-10, `rsi/seed.py`, `seed_run.py`, `seed_check.py`).**
       One agent, one carried state (language of atoms, experience by atom
