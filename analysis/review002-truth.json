@@ -1,0 +1,5010 @@
+{
+  "salt": 30003,
+  "own": 192,
+  "other": 96,
+  "draws": 10000,
+  "tags": [
+    "c24",
+    "c25",
+    "c26"
+  ],
+  "candidates": 166,
+  "all": {
+    "harmful": 24,
+    "beneficial": 70,
+    "unresolved": 72,
+    "n": 166,
+    "mean_gain": 2.3211910140562253
+  },
+  "rules": {
+    "kept": {
+      "passed": {
+        "harmful": 0,
+        "beneficial": 33,
+        "unresolved": 2,
+        "n": 35,
+        "mean_gain": 7.616220238095238
+      },
+      "refused": {
+        "harmful": 24,
+        "beneficial": 37,
+        "unresolved": 70,
+        "n": 131,
+        "mean_gain": 0.9064885496183206
+      }
+    },
+    "full": {
+      "passed": {
+        "harmful": 0,
+        "beneficial": 48,
+        "unresolved": 2,
+        "n": 50,
+        "mean_gain": 7.416458333333334
+      },
+      "refused": {
+        "harmful": 24,
+        "beneficial": 22,
+        "unresolved": 70,
+        "n": 116,
+        "mean_gain": 0.12495510057471264
+      }
+    },
+    "half": {
+      "passed": {
+        "harmful": 0,
+        "beneficial": 31,
+        "unresolved": 3,
+        "n": 34,
+        "mean_gain": 9.351562499999998
+      },
+      "refused": {
+        "harmful": 24,
+        "beneficial": 39,
+        "unresolved": 69,
+        "n": 132,
+        "mean_gain": 0.5103377525252525
+      }
+    },
+    "quarter": {
+      "passed": {
+        "harmful": 0,
+        "beneficial": 30,
+        "unresolved": 3,
+        "n": 33,
+        "mean_gain": 9.458017676767676
+      },
+      "refused": {
+        "harmful": 24,
+        "beneficial": 40,
+        "unresolved": 69,
+        "n": 133,
+        "mean_gain": 0.5503994360902256
+      }
+    },
+    "point": {
+      "passed": {
+        "harmful": 4,
+        "beneficial": 61,
+        "unresolved": 31,
+        "n": 96,
+        "mean_gain": 4.15185546875
+      },
+      "refused": {
+        "harmful": 20,
+        "beneficial": 9,
+        "unresolved": 41,
+        "n": 70,
+        "mean_gain": -0.18943452380952377
+      }
+    }
+  },
+  "reached_cross_area_check": 22,
+  "tolerance": {
+    "0.0": {
+      "passed": {
+        "n": 5,
+        "lowered_an_area": 0,
+        "worst_true_change": [
+          -0.02002861230329045,
+          -0.020437956204379604,
+          0.00898410504492042,
+          -0.055180870631514445,
+          0.0018126888217522286
+        ]
+      },
+      "refused": {
+        "n": 17,
+        "lowered_an_area": 11,
+        "worst_true_change": [
+          -0.043065693430656915,
+          -0.00952380952380949,
+          -0.06491398896462186,
+          -0.02794336810730258,
+          -0.032041728763040234,
+          -0.032258064516129004,
+          -0.008824709185719981,
+          -0.035937499999999956,
+          -0.037109375,
+          -0.02898550724637683,
+          -0.042788129744651515,
+          -0.02505846976277981,
+          -0.02505846976277981,
+          -0.018042098229201442,
+          -0.03698896820246589,
+          -0.042180402336145395,
+          0.006357279084551859
+        ]
+      }
+    },
+    "0.02": {
+      "passed": {
+        "n": 7,
+        "lowered_an_area": 2,
+        "worst_true_change": [
+          -0.02002861230329045,
+          -0.020437956204379604,
+          0.00898410504492042,
+          -0.037109375,
+          -0.055180870631514445,
+          -0.042180402336145395,
+          0.0018126888217522286
+        ]
+      },
+      "refused": {
+        "n": 15,
+        "lowered_an_area": 9,
+        "worst_true_change": [
+          -0.043065693430656915,
+          -0.00952380952380949,
+          -0.06491398896462186,
+          -0.02794336810730258,
+          -0.032041728763040234,
+          -0.032258064516129004,
+          -0.008824709185719981,
+          -0.035937499999999956,
+          -0.02898550724637683,
+          -0.042788129744651515,
+          -0.02505846976277981,
+          -0.02505846976277981,
+          -0.018042098229201442,
+          -0.03698896820246589,
+          0.006357279084551859
+        ]
+      }
+    },
+    "0.05": {
+      "passed": {
+        "n": 16,
+        "lowered_an_area": 6,
+        "worst_true_change": [
+          -0.02002861230329045,
+          -0.020437956204379604,
+          -0.00952380952380949,
+          -0.008824709185719981,
+          0.00898410504492042,
+          -0.035937499999999956,
+          -0.037109375,
+          -0.02898550724637683,
+          -0.055180870631514445,
+          -0.02505846976277981,
+          -0.02505846976277981,
+          -0.018042098229201442,
+          -0.03698896820246589,
+          -0.042180402336145395,
+          0.006357279084551859,
+          0.0018126888217522286
+        ]
+      },
+      "refused": {
+        "n": 6,
+        "lowered_an_area": 5,
+        "worst_true_change": [
+          -0.043065693430656915,
+          -0.06491398896462186,
+          -0.02794336810730258,
+          -0.032041728763040234,
+          -0.032258064516129004,
+          -0.042788129744651515
+        ]
+      }
+    },
+    "0.1": {
+      "passed": {
+        "n": 21,
+        "lowered_an_area": 10,
+        "worst_true_change": [
+          -0.02002861230329045,
+          -0.043065693430656915,
+          -0.020437956204379604,
+          -0.00952380952380949,
+          -0.06491398896462186,
+          -0.02794336810730258,
+          -0.032258064516129004,
+          -0.008824709185719981,
+          0.00898410504492042,
+          -0.035937499999999956,
+          -0.037109375,
+          -0.02898550724637683,
+          -0.042788129744651515,
+          -0.055180870631514445,
+          -0.02505846976277981,
+          -0.02505846976277981,
+          -0.018042098229201442,
+          -0.03698896820246589,
+          -0.042180402336145395,
+          0.006357279084551859,
+          0.0018126888217522286
+        ]
+      },
+      "refused": {
+        "n": 1,
+        "lowered_an_area": 1,
+        "worst_true_change": [
+          -0.032041728763040234
+        ]
+      }
+    }
+  },
+  "forecasts": [
+    {
+      "event": "fewer than one in ten kept candidates harmful",
+      "p": 0.8,
+      "happened": true,
+      "squared_error": 0.03999999999999998
+    },
+    {
+      "event": "more refused candidates beneficial than harmful",
+      "p": 0.45,
+      "happened": true,
+      "squared_error": 0.30250000000000005
+    },
+    {
+      "event": "point passes at least three times the harmful candidates the rule keeps",
+      "p": 0.6,
+      "happened": true,
+      "squared_error": 0.16000000000000003
+    },
+    {
+      "event": "cross-area check passes a truly lowering candidate at 10% and none at 2%",
+      "p": 0.35,
+      "happened": false,
+      "squared_error": 0.12249999999999998
+    }
+  ],
+  "brier": 0.15625,
+  "rows": [
+    {
+      "tag": "c24",
+      "proof": 0,
+      "area": "mech",
+      "change": "language +40 + model g=6 pw=3 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 9.182291666666666,
+        "relative": 0.5711046323291222,
+        "interval": [
+          7.098828125,
+          11.333463541666665
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 1,
+      "area": "mech",
+      "change": "language +40 + model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.22395833333333334,
+        "relative": 0.008825944170771649,
+        "interval": [
+          -1.0677083333333333,
+          1.5313802083333314
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 2,
+      "area": "mech",
+      "change": "model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 1.2135416666666667,
+        "relative": 0.047824302134646945,
+        "interval": [
+          0.046875,
+          2.3645833333333335
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 3,
+      "area": "mech",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.8854166666666666,
+        "relative": -0.03489326765188838,
+        "interval": [
+          -1.6510416666666667,
+          -0.19270833333333334
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 4,
+      "area": "mech",
+      "change": "language +40 + prune -9 + model g=8 pw=4 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 2.78125,
+        "relative": 0.10880195599022002,
+        "interval": [
+          1.3227864583333335,
+          4.223958333333333
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 5,
+      "area": "mech",
+      "change": "model g=8 pw=4 from 288 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 3.2864583333333335,
+        "relative": 0.12856560717196408,
+        "interval": [
+          1.9322916666666667,
+          4.635416666666667
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 6,
+      "area": "mech",
+      "change": "prune -9",
+      "kept": true,
+      "own": {
+        "gain": 0.11979166666666667,
+        "relative": 0.004152374074742671,
+        "interval": [
+          -0.2604166666666667,
+          0.46875
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 7,
+      "area": "mech",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.625,
+        "relative": -0.02157497303128375,
+        "interval": [
+          -1.3020833333333333,
+          0.036458333333333336
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 8,
+      "area": "mech",
+      "change": "language +40 + prune -27 + model g=7 pw=3 from 384 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.5364583333333334,
+        "relative": 0.018788763225100258,
+        "interval": [
+          -0.9167968749999998,
+          1.9791666666666667
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 9,
+      "area": "mech",
+      "change": "model g=7 pw=3 from 384 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.7916666666666666,
+        "relative": 0.027727106895293785,
+        "interval": [
+          -0.5730468749999998,
+          2.234375
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 10,
+      "area": "mech",
+      "change": "prune -27",
+      "kept": false,
+      "own": {
+        "gain": -0.052083333333333336,
+        "relative": -0.0018241517694271847,
+        "interval": [
+          -0.71875,
+          0.5989583333333334
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 11,
+      "area": "mech",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.4947916666666667,
+        "relative": -0.017329441809558532,
+        "interval": [
+          -1.1822916666666667,
+          0.18229166666666666
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 12,
+      "area": "drawn7",
+      "change": "language +40 + prune -27 + model g=6 pw=4 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 3.6614583333333335,
+        "relative": 0.31440071556350624,
+        "interval": [
+          2.296875,
+          5.057291666666667
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": false,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -0.5833333333333334,
+          "relative": -0.02002861230329045,
+          "interval": [
+            -1.6875,
+            0.5520833333333334
+          ],
+          "class": "unresolved",
+          "check": [
+            1235,
+            1237
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 13,
+      "area": "drawn7",
+      "change": "language +40 + model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.4791666666666667,
+        "relative": 0.02906793048973144,
+        "interval": [
+          -0.515625,
+          1.5104166666666667
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 14,
+      "area": "drawn7",
+      "change": "model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.21354166666666666,
+        "relative": -0.012954186413902002,
+        "interval": [
+          -0.8802083333333334,
+          0.4635416666666667
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 15,
+      "area": "drawn7",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": 0.890625,
+        "relative": 0.05402843601895735,
+        "interval": [
+          0.15104166666666666,
+          1.6510416666666667
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 16,
+      "area": "drawn7",
+      "change": "language +40 + prune -12 + model g=6 pw=4 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.6510416666666666,
+        "relative": 0.039295818924866444,
+        "interval": [
+          -0.2552083333333333,
+          1.5365885416666647
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": true,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 17,
+      "area": "drawn7",
+      "change": "model g=6 pw=4 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.036458333333333336,
+        "relative": -0.002200565859792558,
+        "interval": [
+          -0.6302083333333334,
+          0.5520833333333334
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 18,
+      "area": "drawn7",
+      "change": "prune -12",
+      "kept": false,
+      "own": {
+        "gain": 0.2864583333333333,
+        "relative": 0.017290160326941306,
+        "interval": [
+          -0.026041666666666668,
+          0.59375
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": true,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 19,
+      "area": "drawn7",
+      "change": "language +40 + model g=6 pw=4 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.2864583333333333,
+        "relative": 0.017290160326941306,
+        "interval": [
+          -0.6145833333333334,
+          1.203125
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": true,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 20,
+      "area": "metric777001",
+      "change": "language +40 + prune -5 + model g=8 pw=2 from 96 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 17.734375,
+        "relative": 1.906494960806271,
+        "interval": [
+          15.651041666666666,
+          19.885416666666668
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -1.2291666666666667,
+          "relative": -0.043065693430656915,
+          "interval": [
+            -1.9479166666666667,
+            -0.5208333333333334
+          ],
+          "class": "harmful",
+          "check": [
+            974,
+            1003
+          ]
+        },
+        "drawn7": {
+          "gain": -0.53125,
+          "relative": -0.03248407643312101,
+          "interval": [
+            -1.3333333333333333,
+            0.3229166666666667
+          ],
+          "class": "unresolved",
+          "check": [
+            416,
+            395
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 21,
+      "area": "metric777001",
+      "change": "model g=8 pw=2 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 16.864583333333332,
+        "relative": 1.8129899216125418,
+        "interval": [
+          14.770703125,
+          18.989583333333332
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 22,
+      "area": "metric777001",
+      "change": "prune -5",
+      "kept": false,
+      "own": {
+        "gain": 0.08333333333333333,
+        "relative": 0.0031847133757962887,
+        "interval": [
+          0.015625,
+          0.16666666666666666
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 23,
+      "area": "metric777001",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": 0.7864583333333334,
+        "relative": 0.030055732484076447,
+        "interval": [
+          0.08333333333333333,
+          1.5052083333333333
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 24,
+      "area": "metric777001",
+      "change": "language +40 + prune -4 + model g=8 pw=2 from 192 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 4.348958333333333,
+        "relative": 0.15802422407267214,
+        "interval": [
+          3.078125,
+          5.625
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": false,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -0.5833333333333334,
+          "relative": -0.020437956204379604,
+          "interval": [
+            -1.2604166666666667,
+            0.09375
+          ],
+          "class": "unresolved",
+          "check": [
+            973,
+            975
+          ]
+        },
+        "drawn7": {
+          "gain": 0.052083333333333336,
+          "relative": 0.0031847133757962887,
+          "interval": [
+            -0.8854166666666666,
+            1.0315104166666629
+          ],
+          "class": "unresolved",
+          "check": [
+            396,
+            427
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 25,
+      "area": "metric777001",
+      "change": "language +40 + prune -9 + model g=8 pw=2 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.96875,
+        "relative": 0.02756780791462865,
+        "interval": [
+          -0.21354166666666666,
+          2.1979166666666665
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 26,
+      "area": "metric777001",
+      "change": "model g=8 pw=2 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.65625,
+        "relative": 0.018674966651845315,
+        "interval": [
+          -0.3072916666666667,
+          1.6666666666666667
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 27,
+      "area": "metric777001",
+      "change": "prune -9",
+      "kept": false,
+      "own": {
+        "gain": -0.21875,
+        "relative": -0.006224988883948401,
+        "interval": [
+          -0.7239583333333334,
+          0.25
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 28,
+      "area": "metric777001",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": 0.19791666666666666,
+        "relative": 0.0056321327997628234,
+        "interval": [
+          -0.484375,
+          0.90625
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 29,
+      "area": "drawn11",
+      "change": "language +40 + prune -24 + model g=6 pw=4 from 96 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 5.619791666666667,
+        "relative": 0.5712016940179989,
+        "interval": [
+          4.202994791666667,
+          7.0625
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": true,
+        "half": false,
+        "quarter": false,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -0.23958333333333334,
+          "relative": -0.008569299552906084,
+          "interval": [
+            -0.8541666666666666,
+            0.3854166666666667
+          ],
+          "class": "unresolved",
+          "check": [
+            1234,
+            1190
+          ]
+        },
+        "drawn7": {
+          "gain": -0.15625,
+          "relative": -0.00952380952380949,
+          "interval": [
+            -0.84375,
+            0.53125
+          ],
+          "class": "unresolved",
+          "check": [
+            402,
+            420
+          ]
+        },
+        "metric777001": {
+          "gain": -0.0625,
+          "relative": -0.0019474196689386325,
+          "interval": [
+            -1.1458333333333333,
+            0.9583333333333334
+          ],
+          "class": "unresolved",
+          "check": [
+            689,
+            672
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 30,
+      "area": "drawn11",
+      "change": "model g=6 pw=4 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 5.4375,
+        "relative": 0.5526733721545791,
+        "interval": [
+          4.057291666666667,
+          6.822916666666667
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 31,
+      "area": "drawn11",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.5572916666666666,
+        "relative": -0.036481418342993566,
+        "interval": [
+          -1.0520833333333333,
+          -0.057291666666666664
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 32,
+      "area": "drawn11",
+      "change": "language +40 + prune -23 + model g=6 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.5208333333333334,
+        "relative": -0.03266906239790923,
+        "interval": [
+          -1.296875,
+          0.2552083333333333
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 33,
+      "area": "drawn11",
+      "change": "model g=6 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.22395833333333334,
+        "relative": 0.014047696831100964,
+        "interval": [
+          -0.375,
+          0.8020833333333334
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 34,
+      "area": "drawn11",
+      "change": "language +40 + model g=6 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.21354166666666666,
+        "relative": -0.013394315583142746,
+        "interval": [
+          -0.7865885416666666,
+          0.3541666666666667
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 35,
+      "area": "drawn13",
+      "change": "language +40 + prune -17 + model g=8 pw=4 from 96 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 3.5208333333333335,
+        "relative": 0.33040078201368517,
+        "interval": [
+          2.109244791666667,
+          4.8959635416666645
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -0.8541666666666666,
+          "relative": -0.03055141579731746,
+          "interval": [
+            -1.9270833333333333,
+            0.020833333333333332
+          ],
+          "class": "unresolved",
+          "check": [
+            892,
+            856
+          ]
+        },
+        "drawn7": {
+          "gain": -0.4479166666666667,
+          "relative": -0.02730158730158727,
+          "interval": [
+            -1.1770833333333333,
+            0.3229166666666667
+          ],
+          "class": "unresolved",
+          "check": [
+            407,
+            408
+          ]
+        },
+        "metric777001": {
+          "gain": -2.0833333333333335,
+          "relative": -0.06491398896462186,
+          "interval": [
+            -3.09375,
+            -1.1041666666666667
+          ],
+          "class": "harmful",
+          "check": [
+            919,
+            859
+          ]
+        },
+        "drawn11": {
+          "gain": -0.65625,
+          "relative": -0.04177718832891242,
+          "interval": [
+            -1.40625,
+            0.10416666666666667
+          ],
+          "class": "unresolved",
+          "check": [
+            369,
+            361
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 36,
+      "area": "drawn13",
+      "change": "model g=8 pw=4 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 4.078125,
+        "relative": 0.38269794721407635,
+        "interval": [
+          2.6979166666666665,
+          5.494791666666667
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 37,
+      "area": "drawn13",
+      "change": "language +40 + prune -20 + model g=6 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.9635416666666666,
+        "relative": 0.06127856906260343,
+        "interval": [
+          0.109375,
+          1.8177083333333333
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 38,
+      "area": "drawn13",
+      "change": "model g=6 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 1.1510416666666667,
+        "relative": 0.0732030473666776,
+        "interval": [
+          0.4427083333333333,
+          1.890625
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 39,
+      "area": "drawn13",
+      "change": "prune -20",
+      "kept": false,
+      "own": {
+        "gain": 0.546875,
+        "relative": 0.034779728386883146,
+        "interval": [
+          0.09895833333333333,
+          1.0052083333333333
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 40,
+      "area": "drawn13",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.796875,
+        "relative": -0.05067903279231534,
+        "interval": [
+          -1.4427083333333333,
+          -0.21354166666666666
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 41,
+      "area": "metric555001",
+      "change": "language +40 + prune -20 + model g=8 pw=3 from 96 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 15.854166666666666,
+        "relative": 1.6561479869423286,
+        "interval": [
+          13.78125,
+          18.036458333333332
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -0.78125,
+          "relative": -0.02794336810730258,
+          "interval": [
+            -1.84375,
+            0.08333333333333333
+          ],
+          "class": "unresolved",
+          "check": [
+            936,
+            929
+          ]
+        },
+        "drawn7": {
+          "gain": -0.1875,
+          "relative": -0.011428571428571455,
+          "interval": [
+            -0.8020833333333334,
+            0.4479166666666667
+          ],
+          "class": "unresolved",
+          "check": [
+            394,
+            407
+          ]
+        },
+        "metric777001": {
+          "gain": -0.7916666666666666,
+          "relative": -0.024667315806556345,
+          "interval": [
+            -1.6354166666666667,
+            -0.041666666666666664
+          ],
+          "class": "harmful",
+          "check": [
+            819,
+            810
+          ]
+        },
+        "drawn11": {
+          "gain": -0.1875,
+          "relative": -0.011936339522546469,
+          "interval": [
+            -0.8958333333333334,
+            0.53125
+          ],
+          "class": "unresolved",
+          "check": [
+            391,
+            394
+          ]
+        },
+        "drawn13": {
+          "gain": 0.2604166666666667,
+          "relative": 0.017531556802244053,
+          "interval": [
+            -0.3229166666666667,
+            0.84375
+          ],
+          "class": "unresolved",
+          "check": [
+            348,
+            329
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 42,
+      "area": "metric555001",
+      "change": "model g=8 pw=3 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 16.796875,
+        "relative": 1.7546245919477692,
+        "interval": [
+          14.718619791666667,
+          18.963671875
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 43,
+      "area": "metric555001",
+      "change": "language +40 + prune -10 + model g=8 pw=2 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 3.6354166666666665,
+        "relative": 0.1256073420910564,
+        "interval": [
+          2.2083333333333335,
+          5.020833333333333
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": true,
+        "half": false,
+        "quarter": false,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -0.8958333333333334,
+          "relative": -0.032041728763040234,
+          "interval": [
+            -1.9479166666666667,
+            -0.06223958333333712
+          ],
+          "class": "harmful",
+          "check": [
+            968,
+            986
+          ]
+        },
+        "drawn7": {
+          "gain": -0.3020833333333333,
+          "relative": -0.018412698412698436,
+          "interval": [
+            -1.0729166666666667,
+            0.5
+          ],
+          "class": "unresolved",
+          "check": [
+            287,
+            299
+          ]
+        },
+        "metric777001": {
+          "gain": -0.3854166666666667,
+          "relative": -0.012009087958455011,
+          "interval": [
+            -1.3541666666666667,
+            0.5520833333333334
+          ],
+          "class": "unresolved",
+          "check": [
+            872,
+            880
+          ]
+        },
+        "drawn11": {
+          "gain": 0.07291666666666667,
+          "relative": 0.004641909814323553,
+          "interval": [
+            -0.4375,
+            0.5625
+          ],
+          "class": "unresolved",
+          "check": [
+            365,
+            317
+          ]
+        },
+        "drawn13": {
+          "gain": 0.08333333333333333,
+          "relative": 0.005610098176718203,
+          "interval": [
+            -0.5416666666666666,
+            0.7604166666666666
+          ],
+          "class": "unresolved",
+          "check": [
+            293,
+            300
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 44,
+      "area": "metric555001",
+      "change": "model g=8 pw=2 from 192 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 2.4270833333333335,
+        "relative": 0.08385819686881413,
+        "interval": [
+          1.1822916666666667,
+          3.671875
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 45,
+      "area": "metric555001",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": 1.1197916666666667,
+        "relative": 0.03569649676241071,
+        "interval": [
+          0.328125,
+          1.9166666666666667
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": true,
+        "half": false,
+        "quarter": false,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -0.84375,
+          "relative": -0.030178837555886684,
+          "interval": [
+            -1.875,
+            -0.010416666666666666
+          ],
+          "class": "harmful",
+          "check": [
+            1073,
+            1038
+          ]
+        },
+        "drawn7": {
+          "gain": -0.4166666666666667,
+          "relative": -0.025396825396825418,
+          "interval": [
+            -1.09375,
+            0.34375
+          ],
+          "class": "unresolved",
+          "check": [
+            373,
+            361
+          ]
+        },
+        "metric777001": {
+          "gain": -0.2708333333333333,
+          "relative": -0.008438818565400852,
+          "interval": [
+            -1.2395833333333333,
+            0.6354166666666666
+          ],
+          "class": "unresolved",
+          "check": [
+            918,
+            897
+          ]
+        },
+        "drawn11": {
+          "gain": -0.3958333333333333,
+          "relative": -0.025198938992042397,
+          "interval": [
+            -0.8958333333333334,
+            0.0835937499999962
+          ],
+          "class": "unresolved",
+          "check": [
+            432,
+            410
+          ]
+        },
+        "drawn13": {
+          "gain": -0.4791666666666667,
+          "relative": -0.032258064516129004,
+          "interval": [
+            -1.1458333333333333,
+            0.21875
+          ],
+          "class": "unresolved",
+          "check": [
+            361,
+            352
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 46,
+      "area": "str7",
+      "change": "language +18 + prune -12 + model g=6 pw=3 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 16.458333333333332,
+        "relative": 0.24877971972917656,
+        "interval": [
+          14.223828125,
+          18.791666666666668
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 47,
+      "area": "str7",
+      "change": "model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.3489583333333333,
+        "relative": 0.004082378747258142,
+        "interval": [
+          -0.359375,
+          1.1199218749999982
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 48,
+      "area": "str7",
+      "change": "prune -12 + model g=6 pw=3 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.3125,
+        "relative": -0.0036465297192171953,
+        "interval": [
+          -1.1822916666666667,
+          0.4791666666666667
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 49,
+      "area": "str7",
+      "change": "model g=6 pw=3 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.40625,
+        "relative": -0.004740488634982332,
+        "interval": [
+          -1.265625,
+          0.375
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 50,
+      "area": "str7",
+      "change": "prune -12",
+      "kept": false,
+      "own": {
+        "gain": 0.3177083333333333,
+        "relative": 0.0037073052145375485,
+        "interval": [
+          0.13541666666666666,
+          0.53125
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 51,
+      "area": "mech",
+      "change": "language +40 + prune -12 + model g=6 pw=3 from 480 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.375,
+        "relative": -0.013237727523441767,
+        "interval": [
+          -1.5729166666666667,
+          0.8125
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 52,
+      "area": "mech",
+      "change": "model g=6 pw=3 from 480 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 0.921875,
+        "relative": 0.032542746828461144,
+        "interval": [
+          -0.14583333333333334,
+          2.0104166666666665
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 53,
+      "area": "mech",
+      "change": "language +40 + prune -12 + model g=7 pw=3 from 576 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -1.0572916666666667,
+        "relative": -0.03568917018284112,
+        "interval": [
+          -2.2239583333333335,
+          0.11458333333333333
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 54,
+      "area": "mech",
+      "change": "model g=7 pw=3 from 576 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.23958333333333334,
+        "relative": -0.008087201125175802,
+        "interval": [
+          -1.3178385416666665,
+          0.8489583333333334
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 55,
+      "area": "mech",
+      "change": "prune -12",
+      "kept": false,
+      "own": {
+        "gain": 0.0,
+        "relative": 0.0,
+        "interval": [
+          0.0,
+          0.0
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c24",
+      "proof": 56,
+      "area": "mech",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.8125,
+        "relative": -0.02742616033755274,
+        "interval": [
+          -1.4270833333333333,
+          -0.1875
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 0,
+      "area": "mech",
+      "change": "language +40 + model g=7 pw=4 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 7.723958333333333,
+        "relative": 0.4763893350465789,
+        "interval": [
+          5.630208333333333,
+          9.828125
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 1,
+      "area": "mech",
+      "change": "language +40 + model g=7 pw=2 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 1.953125,
+        "relative": 0.08417508417508412,
+        "interval": [
+          0.703125,
+          3.244921874999998
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 2,
+      "area": "mech",
+      "change": "model g=7 pw=2 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 2.703125,
+        "relative": 0.11649831649831643,
+        "interval": [
+          1.53125,
+          3.9270833333333335
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 3,
+      "area": "mech",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -1.3385416666666667,
+        "relative": -0.05768799102132438,
+        "interval": [
+          -1.9791666666666667,
+          -0.7083333333333334
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 4,
+      "area": "mech",
+      "change": "language +40 + prune -10 + model g=7 pw=4 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.6770833333333334,
+        "relative": 0.029220049449314445,
+        "interval": [
+          -0.328125,
+          1.6666666666666667
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 5,
+      "area": "mech",
+      "change": "model g=7 pw=4 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 1.2291666666666667,
+        "relative": 0.05304562823106318,
+        "interval": [
+          0.4270833333333333,
+          2.0208333333333335
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 6,
+      "area": "mech",
+      "change": "prune -10",
+      "kept": false,
+      "own": {
+        "gain": 0.17708333333333334,
+        "relative": 0.007642166779051385,
+        "interval": [
+          -0.4583333333333333,
+          0.7083333333333334
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 7,
+      "area": "mech",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.6927083333333334,
+        "relative": -0.029894358282760214,
+        "interval": [
+          -1.3802083333333333,
+          -0.010416666666666666
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 8,
+      "area": "mech",
+      "change": "language +40 + prune -7 + model g=6 pw=3 from 384 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 2.3072916666666665,
+        "relative": 0.1008652094717668,
+        "interval": [
+          1.1041666666666667,
+          3.5052083333333335
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 9,
+      "area": "drawn7",
+      "change": "language +40 + prune -30 + model g=6 pw=4 from 96 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 3.8229166666666665,
+        "relative": 0.3875395987328405,
+        "interval": [
+          2.218619791666667,
+          5.385416666666667
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 10,
+      "area": "drawn7",
+      "change": "model g=6 pw=4 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 5.354166666666667,
+        "relative": 0.542766631467793,
+        "interval": [
+          3.9114583333333335,
+          6.7865885416666645
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 11,
+      "area": "drawn7",
+      "change": "prune -30",
+      "kept": false,
+      "own": {
+        "gain": -1.140625,
+        "relative": -0.07494866529774125,
+        "interval": [
+          -1.9583333333333333,
+          -0.3697916666666667
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 12,
+      "area": "drawn7",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.578125,
+        "relative": -0.037987679671457886,
+        "interval": [
+          -1.1303385416666665,
+          -0.046875
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 13,
+      "area": "drawn7",
+      "change": "language +40 + prune -41 + model g=7 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.14583333333333334,
+        "relative": -0.009265387160820704,
+        "interval": [
+          -1.1145833333333333,
+          0.8125
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 14,
+      "area": "drawn7",
+      "change": "model g=7 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.359375,
+        "relative": -0.02283256121773658,
+        "interval": [
+          -1.1302083333333333,
+          0.3854166666666667
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 15,
+      "area": "drawn7",
+      "change": "prune -41",
+      "kept": false,
+      "own": {
+        "gain": 1.0,
+        "relative": 0.06353408338848454,
+        "interval": [
+          0.21354166666666666,
+          1.7864583333333333
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 16,
+      "area": "drawn7",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.3177083333333333,
+        "relative": -0.020185307743216363,
+        "interval": [
+          -0.7604166666666666,
+          0.13541666666666666
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 17,
+      "area": "drawn7",
+      "change": "language +40 + prune -36 + model g=8 pw=4 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.59375,
+        "relative": -0.03664416586306651,
+        "interval": [
+          -1.390625,
+          0.171875
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 18,
+      "area": "drawn7",
+      "change": "model g=8 pw=4 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.4114583333333333,
+        "relative": -0.0253937640630022,
+        "interval": [
+          -0.9635416666666666,
+          0.140625
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 19,
+      "area": "drawn7",
+      "change": "prune -36",
+      "kept": false,
+      "own": {
+        "gain": 0.515625,
+        "relative": 0.03182256509161041,
+        "interval": [
+          -0.21354166666666666,
+          1.25
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 20,
+      "area": "drawn7",
+      "change": "language +40 + model g=8 pw=4 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.8958333333333334,
+        "relative": -0.05528768884603019,
+        "interval": [
+          -1.640625,
+          -0.171875
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 21,
+      "area": "metric777001",
+      "change": "language +40 + prune -35 + model g=8 pw=3 from 96 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 15.546875,
+        "relative": 1.73546511627907,
+        "interval": [
+          13.130078125,
+          17.932291666666668
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -0.22916666666666666,
+          "relative": -0.008824709185719981,
+          "interval": [
+            -0.9166666666666666,
+            0.4375
+          ],
+          "class": "unresolved",
+          "check": [
+            1083,
+            1048
+          ]
+        },
+        "drawn7": {
+          "gain": -0.03125,
+          "relative": -0.0020732550103662595,
+          "interval": [
+            -1.0416666666666667,
+            0.9375
+          ],
+          "class": "unresolved",
+          "check": [
+            355,
+            343
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 22,
+      "area": "metric777001",
+      "change": "model g=8 pw=3 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 19.510416666666668,
+        "relative": 2.177906976744186,
+        "interval": [
+          17.3125,
+          21.698046875
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 23,
+      "area": "metric777001",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": 0.3541666666666667,
+        "relative": 0.01244054152945484,
+        "interval": [
+          -0.65625,
+          1.3177083333333333
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 24,
+      "area": "metric777001",
+      "change": "language +40 + prune -23 + model g=7 pw=2 from 192 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 4.786458333333333,
+        "relative": 0.15793091596494246,
+        "interval": [
+          3.40625,
+          6.166666666666667
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": false,
+        "quarter": true,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": 0.6979166666666666,
+          "relative": 0.026875250701965614,
+          "interval": [
+            -0.2708333333333333,
+            1.7916666666666667
+          ],
+          "class": "unresolved",
+          "check": [
+            790,
+            814
+          ]
+        },
+        "drawn7": {
+          "gain": 0.13541666666666666,
+          "relative": 0.00898410504492042,
+          "interval": [
+            -0.8645833333333334,
+            1.1145833333333333
+          ],
+          "class": "unresolved",
+          "check": [
+            376,
+            407
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 25,
+      "area": "metric777001",
+      "change": "language +40 + prune -7 + model g=8 pw=2 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 1.4270833333333333,
+        "relative": 0.04040701961362636,
+        "interval": [
+          0.6145833333333334,
+          2.25
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": true,
+        "half": false,
+        "quarter": false,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -0.9583333333333334,
+          "relative": -0.035937499999999956,
+          "interval": [
+            -1.7291666666666667,
+            -0.25
+          ],
+          "class": "harmful",
+          "check": [
+            1135,
+            1092
+          ]
+        },
+        "drawn7": {
+          "gain": -0.2708333333333333,
+          "relative": -0.017808219178082174,
+          "interval": [
+            -1.0002604166666664,
+            0.4791666666666667
+          ],
+          "class": "unresolved",
+          "check": [
+            346,
+            350
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 26,
+      "area": "metric777001",
+      "change": "model g=8 pw=2 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.734375,
+        "relative": 0.020793393304822327,
+        "interval": [
+          0.036458333333333336,
+          1.4479166666666667
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 27,
+      "area": "metric777001",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": 0.5104166666666666,
+        "relative": 0.014452145701224106,
+        "interval": [
+          0.10403645833333346,
+          0.9375
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 28,
+      "area": "drawn11",
+      "change": "language +40 + prune -18 + model g=8 pw=4 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 6.25,
+        "relative": 0.6539509536784742,
+        "interval": [
+          4.651041666666667,
+          7.786458333333333
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": false,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -0.9895833333333334,
+          "relative": -0.037109375,
+          "interval": [
+            -1.7085937499999997,
+            -0.3229166666666667
+          ],
+          "class": "harmful",
+          "check": [
+            900,
+            888
+          ]
+        },
+        "drawn7": {
+          "gain": -0.0625,
+          "relative": -0.004109589041095929,
+          "interval": [
+            -0.625,
+            0.46875
+          ],
+          "class": "unresolved",
+          "check": [
+            433,
+            431
+          ]
+        },
+        "metric777001": {
+          "gain": 0.7708333333333334,
+          "relative": 0.020963172804532526,
+          "interval": [
+            0.15625,
+            1.4166666666666667
+          ],
+          "class": "beneficial",
+          "check": [
+            1027,
+            1098
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 29,
+      "area": "drawn11",
+      "change": "language +40 + prune -11 + model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.4322916666666667,
+        "relative": -0.02742894910773297,
+        "interval": [
+          -1.3645833333333333,
+          0.4791666666666667
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 30,
+      "area": "drawn11",
+      "change": "model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.2708333333333333,
+        "relative": 0.017184401850627973,
+        "interval": [
+          -0.5364583333333334,
+          1.0782552083333314
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 31,
+      "area": "drawn11",
+      "change": "language +40 + model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.6927083333333334,
+        "relative": -0.043952412425644405,
+        "interval": [
+          -1.6458333333333333,
+          0.21888020833333144
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 32,
+      "area": "drawn13",
+      "change": "language +40 + prune -29 + model g=6 pw=4 from 96 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 5.90625,
+        "relative": 0.6428571428571428,
+        "interval": [
+          4.265625,
+          7.5522135416666645
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": 0.2708333333333333,
+          "relative": 0.010547667342799105,
+          "interval": [
+            -0.7291666666666666,
+            1.1041666666666667
+          ],
+          "class": "unresolved",
+          "check": [
+            830,
+            827
+          ]
+        },
+        "drawn7": {
+          "gain": 0.3333333333333333,
+          "relative": 0.022008253094910613,
+          "interval": [
+            -0.3020833333333333,
+            0.9895833333333334
+          ],
+          "class": "unresolved",
+          "check": [
+            392,
+            391
+          ]
+        },
+        "metric777001": {
+          "gain": -0.6979166666666666,
+          "relative": -0.0185904550499445,
+          "interval": [
+            -1.2604166666666667,
+            -0.20833333333333334
+          ],
+          "class": "harmful",
+          "check": [
+            961,
+            955
+          ]
+        },
+        "drawn11": {
+          "gain": -0.4375,
+          "relative": -0.02898550724637683,
+          "interval": [
+            -1.0520833333333333,
+            0.14583333333333334
+          ],
+          "class": "unresolved",
+          "check": [
+            352,
+            336
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 33,
+      "area": "drawn13",
+      "change": "model g=6 pw=4 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 5.333333333333333,
+        "relative": 0.5804988662131518,
+        "interval": [
+          3.7395833333333335,
+          6.947916666666667
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 34,
+      "area": "drawn13",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.78125,
+        "relative": -0.053802008608321406,
+        "interval": [
+          -1.2501302083333332,
+          -0.3229166666666667
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 35,
+      "area": "drawn13",
+      "change": "language +40 + prune -32 + model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.3854166666666667,
+        "relative": 0.02355187778485046,
+        "interval": [
+          -0.4947916666666667,
+          1.2604166666666667
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 36,
+      "area": "drawn13",
+      "change": "model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.4583333333333333,
+        "relative": 0.02800763844684906,
+        "interval": [
+          -0.3126302083333332,
+          1.2395833333333333
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 37,
+      "area": "drawn13",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.328125,
+        "relative": -0.020050922978994246,
+        "interval": [
+          -0.640625,
+          -0.020833333333333332
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 38,
+      "area": "metric555001",
+      "change": "language +40 + prune -27 + model g=7 pw=2 from 96 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 20.317708333333332,
+        "relative": 2.55134074558535,
+        "interval": [
+          17.729166666666668,
+          22.890625
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": 0.010416666666666666,
+          "relative": 0.00040567951318459805,
+          "interval": [
+            -0.9270833333333334,
+            0.7708333333333334
+          ],
+          "class": "unresolved",
+          "check": [
+            943,
+            955
+          ]
+        },
+        "drawn7": {
+          "gain": -0.3125,
+          "relative": -0.02063273727647863,
+          "interval": [
+            -0.9375,
+            0.20833333333333334
+          ],
+          "class": "unresolved",
+          "check": [
+            384,
+            359
+          ]
+        },
+        "metric777001": {
+          "gain": -0.3958333333333333,
+          "relative": -0.010543840177580477,
+          "interval": [
+            -1.0416666666666667,
+            0.25
+          ],
+          "class": "unresolved",
+          "check": [
+            854,
+            852
+          ]
+        },
+        "drawn11": {
+          "gain": -0.6458333333333334,
+          "relative": -0.042788129744651515,
+          "interval": [
+            -1.3020833333333333,
+            0.0
+          ],
+          "class": "unresolved",
+          "check": [
+            332,
+            332
+          ]
+        },
+        "drawn13": {
+          "gain": 0.5625,
+          "relative": 0.03432930705657977,
+          "interval": [
+            -0.08333333333333333,
+            1.3333333333333333
+          ],
+          "class": "unresolved",
+          "check": [
+            367,
+            383
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 39,
+      "area": "metric555001",
+      "change": "model g=7 pw=2 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 19.703125,
+        "relative": 2.474166121648136,
+        "interval": [
+          17.203125,
+          22.130208333333332
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 40,
+      "area": "metric555001",
+      "change": "prune -27",
+      "kept": false,
+      "own": {
+        "gain": 1.0364583333333333,
+        "relative": 0.0374623493975903,
+        "interval": [
+          0.4425781250000001,
+          1.640625
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 41,
+      "area": "metric555001",
+      "change": "language +40 + prune -23 + model g=8 pw=2 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 2.8958333333333335,
+        "relative": 0.09657807886051772,
+        "interval": [
+          1.578125,
+          4.161458333333333
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 42,
+      "area": "metric555001",
+      "change": "model g=8 pw=2 from 192 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 2.7916666666666665,
+        "relative": 0.09310404724682986,
+        "interval": [
+          1.5885416666666667,
+          3.9739583333333335
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 43,
+      "area": "str7",
+      "change": "language +17 + prune -25 + model g=6 pw=3 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 17.359375,
+        "relative": 0.27524981418779415,
+        "interval": [
+          15.135416666666666,
+          19.65625
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 44,
+      "area": "str7",
+      "change": "model g=7 pw=3 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.5,
+        "relative": 0.006080952682586904,
+        "interval": [
+          -0.4583333333333333,
+          1.46875
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 45,
+      "area": "str7",
+      "change": "prune -12 + model g=8 pw=4 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.53125,
+        "relative": 0.006427221172022657,
+        "interval": [
+          -0.3542968749999999,
+          1.484375
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 46,
+      "area": "str7",
+      "change": "model g=8 pw=4 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.4791666666666667,
+        "relative": 0.005797101449275255,
+        "interval": [
+          -0.40625,
+          1.421875
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 47,
+      "area": "str7",
+      "change": "prune -12",
+      "kept": false,
+      "own": {
+        "gain": 0.4114583333333333,
+        "relative": 0.004977945809703899,
+        "interval": [
+          -0.036458333333333336,
+          1.0625
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 48,
+      "area": "mech",
+      "change": "language +40 + prune -12 + model g=6 pw=2 from 480 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.3958333333333333,
+        "relative": 0.015475463245774757,
+        "interval": [
+          -0.546875,
+          1.3854166666666667
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 49,
+      "area": "mech",
+      "change": "model g=6 pw=2 from 480 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.7916666666666666,
+        "relative": 0.030950926491549513,
+        "interval": [
+          -0.09375,
+          1.6876302083333314
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 50,
+      "area": "mech",
+      "change": "language +40 + model g=6 pw=2 from 480 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.3958333333333333,
+        "relative": 0.015475463245774757,
+        "interval": [
+          -0.546875,
+          1.3854166666666667
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 51,
+      "area": "mech",
+      "change": "language +40 + prune -12 + model g=8 pw=4 from 576 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.015625,
+        "relative": -0.0006165228113440557,
+        "interval": [
+          -0.921875,
+          0.9114583333333334
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 52,
+      "area": "mech",
+      "change": "model g=8 pw=4 from 576 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.6875,
+        "relative": 0.027127003699136898,
+        "interval": [
+          -0.15117187499999987,
+          1.53125
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c25",
+      "proof": 53,
+      "area": "mech",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.2604166666666667,
+        "relative": -0.01027538018906704,
+        "interval": [
+          -0.8333333333333334,
+          0.3541666666666667
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 0,
+      "area": "mech",
+      "change": "language +40 + model g=6 pw=4 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 8.036458333333334,
+        "relative": 0.49502726981071543,
+        "interval": [
+          6.125,
+          9.947916666666666
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": false,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 1,
+      "area": "mech",
+      "change": "language +40 + model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.2864583333333333,
+        "relative": -0.011494252873563204,
+        "interval": [
+          -1.3958333333333333,
+          0.8072916666666666
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 2,
+      "area": "mech",
+      "change": "model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.5052083333333334,
+        "relative": 0.020271682340647912,
+        "interval": [
+          -0.4479166666666667,
+          1.5104166666666667
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 3,
+      "area": "mech",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.6041666666666666,
+        "relative": -0.024242424242424288,
+        "interval": [
+          -1.2864583333333333,
+          0.078125
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 4,
+      "area": "mech",
+      "change": "language +40 + prune -16 + model g=7 pw=4 from 288 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 2.96875,
+        "relative": 0.11675542810323636,
+        "interval": [
+          1.8333333333333333,
+          4.135416666666667
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 5,
+      "area": "mech",
+      "change": "language +40 + prune -22 + model g=7 pw=3 from 384 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.6145833333333334,
+        "relative": 0.021751152073732793,
+        "interval": [
+          -0.5313802083333332,
+          1.78125
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 6,
+      "area": "mech",
+      "change": "model g=7 pw=3 from 384 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 2.3958333333333335,
+        "relative": 0.0847926267281105,
+        "interval": [
+          1.4375,
+          3.4427083333333335
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 7,
+      "area": "mech",
+      "change": "prune -22",
+      "kept": false,
+      "own": {
+        "gain": -0.4635416666666667,
+        "relative": -0.015123194562446929,
+        "interval": [
+          -1.1770833333333333,
+          0.22395833333333334
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 8,
+      "area": "mech",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -1.171875,
+        "relative": -0.03823279524214107,
+        "interval": [
+          -1.7916666666666667,
+          -0.5833333333333334
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 9,
+      "area": "drawn7",
+      "change": "language +40 + prune -42 + model g=6 pw=4 from 96 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 2.6875,
+        "relative": 0.23274695534506096,
+        "interval": [
+          1.203125,
+          4.125130208333331
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 10,
+      "area": "drawn7",
+      "change": "model g=6 pw=4 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 4.171875,
+        "relative": 0.36129905277401897,
+        "interval": [
+          2.9009114583333333,
+          5.432291666666667
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 11,
+      "area": "drawn7",
+      "change": "prune -42",
+      "kept": false,
+      "own": {
+        "gain": -1.671875,
+        "relative": -0.1063618290258449,
+        "interval": [
+          -2.7395833333333335,
+          -0.6302083333333334
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 12,
+      "area": "drawn7",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.21875,
+        "relative": -0.013916500994035741,
+        "interval": [
+          -0.796875,
+          0.3699218749999981
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 13,
+      "area": "drawn7",
+      "change": "language +40 + prune -26 + model g=7 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.09895833333333333,
+        "relative": -0.006018371872030359,
+        "interval": [
+          -0.9114583333333334,
+          0.7083333333333334
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 14,
+      "area": "drawn7",
+      "change": "model g=7 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.3697916666666667,
+        "relative": 0.022489705416534722,
+        "interval": [
+          -0.24479166666666666,
+          1.0
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 15,
+      "area": "drawn7",
+      "change": "prune -26",
+      "kept": false,
+      "own": {
+        "gain": 0.5104166666666666,
+        "relative": 0.03104212860310418,
+        "interval": [
+          -0.020833333333333332,
+          1.046875
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 16,
+      "area": "drawn7",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.8072916666666666,
+        "relative": -0.04909724421919548,
+        "interval": [
+          -1.28125,
+          -0.3333333333333333
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 17,
+      "area": "drawn7",
+      "change": "language +40 + prune -26 + model g=8 pw=4 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -1.3489583333333333,
+        "relative": -0.07998764669549108,
+        "interval": [
+          -2.1354166666666665,
+          -0.5416666666666666
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 18,
+      "area": "drawn7",
+      "change": "model g=8 pw=4 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.8645833333333334,
+        "relative": -0.051266213712167996,
+        "interval": [
+          -1.5,
+          -0.21875
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 19,
+      "area": "drawn7",
+      "change": "prune -26",
+      "kept": false,
+      "own": {
+        "gain": 0.28125,
+        "relative": 0.016676961087090714,
+        "interval": [
+          -0.21888020833333321,
+          0.78125
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 20,
+      "area": "drawn7",
+      "change": "language +40 + model g=8 pw=4 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -1.8072916666666667,
+        "relative": -0.10716491661519456,
+        "interval": [
+          -2.5572916666666665,
+          -1.0625
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 21,
+      "area": "metric777001",
+      "change": "language +40 + prune -26 + model g=8 pw=2 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 20.630208333333332,
+        "relative": 2.336873156342183,
+        "interval": [
+          18.067578125,
+          23.260416666666668
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -0.4791666666666667,
+          "relative": -0.015136558078315265,
+          "interval": [
+            -1.3125,
+            0.29192708333332956
+          ],
+          "class": "unresolved",
+          "check": [
+            990,
+            1043
+          ]
+        },
+        "drawn7": {
+          "gain": -0.9375,
+          "relative": -0.055180870631514445,
+          "interval": [
+            -1.9270833333333333,
+            0.052083333333333336
+          ],
+          "class": "unresolved",
+          "check": [
+            376,
+            384
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 22,
+      "area": "metric777001",
+      "change": "language +40 + model g=8 pw=2 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 3.6927083333333335,
+        "relative": 0.12317581653926335,
+        "interval": [
+          2.546744791666667,
+          4.869791666666667
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -0.78125,
+          "relative": -0.02505846976277981,
+          "interval": [
+            -1.53125,
+            -0.05182291666667046
+          ],
+          "class": "harmful",
+          "check": [
+            960,
+            912
+          ]
+        },
+        "drawn7": {
+          "gain": -0.375,
+          "relative": -0.02336145360155739,
+          "interval": [
+            -1.15625,
+            0.47942708333332956
+          ],
+          "class": "unresolved",
+          "check": [
+            346,
+            385
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 23,
+      "area": "metric777001",
+      "change": "model g=8 pw=2 from 192 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 1.9635416666666667,
+        "relative": 0.06549687282835293,
+        "interval": [
+          0.9217447916666668,
+          3.0677083333333335
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": false,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 24,
+      "area": "metric777001",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": 1.7291666666666667,
+        "relative": 0.05413337681395736,
+        "interval": [
+          0.96875,
+          2.5364583333333335
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": true,
+        "half": false,
+        "quarter": false,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -0.78125,
+          "relative": -0.02505846976277981,
+          "interval": [
+            -1.53125,
+            -0.05182291666667046
+          ],
+          "class": "harmful",
+          "check": [
+            1042,
+            1072
+          ]
+        },
+        "drawn7": {
+          "gain": -0.375,
+          "relative": -0.02336145360155739,
+          "interval": [
+            -1.15625,
+            0.47942708333332956
+          ],
+          "class": "unresolved",
+          "check": [
+            463,
+            443
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 25,
+      "area": "metric777001",
+      "change": "language +40 + prune -30 + model g=8 pw=2 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 2.3854166666666665,
+        "relative": 0.071484314031528,
+        "interval": [
+          1.1352864583333335,
+          3.640625
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": true,
+        "half": false,
+        "quarter": false,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -0.5625,
+          "relative": -0.018042098229201442,
+          "interval": [
+            -1.34375,
+            0.13541666666666666
+          ],
+          "class": "unresolved",
+          "check": [
+            1042,
+            1020
+          ]
+        },
+        "drawn7": {
+          "gain": 0.2916666666666667,
+          "relative": 0.018170019467877996,
+          "interval": [
+            -0.3854166666666667,
+            1.0729166666666667
+          ],
+          "class": "unresolved",
+          "check": [
+            463,
+            461
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 26,
+      "area": "metric777001",
+      "change": "model g=8 pw=2 from 288 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 1.6927083333333333,
+        "relative": 0.05072576869049472,
+        "interval": [
+          0.8854166666666666,
+          2.5208333333333335
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 27,
+      "area": "metric777001",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": 0.9166666666666666,
+        "relative": 0.02614379084967311,
+        "interval": [
+          0.11979166666666667,
+          1.7447916666666667
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": true,
+        "half": false,
+        "quarter": true,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -0.4270833333333333,
+          "relative": -0.013698630136986356,
+          "interval": [
+            -1.2708333333333333,
+            0.3645833333333333
+          ],
+          "class": "unresolved",
+          "check": [
+            1103,
+            1071
+          ]
+        },
+        "drawn7": {
+          "gain": -0.59375,
+          "relative": -0.03698896820246589,
+          "interval": [
+            -1.25,
+            0.09375
+          ],
+          "class": "unresolved",
+          "check": [
+            462,
+            450
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 28,
+      "area": "drawn11",
+      "change": "language +40 + prune -23 + model g=6 pw=4 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 5.255208333333333,
+        "relative": 0.5045,
+        "interval": [
+          3.8541666666666665,
+          6.671875
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": -1.2916666666666667,
+          "relative": -0.04143000334112934,
+          "interval": [
+            -2.1145833333333335,
+            -0.5625
+          ],
+          "class": "harmful",
+          "check": [
+            1142,
+            1131
+          ]
+        },
+        "drawn7": {
+          "gain": -0.6770833333333334,
+          "relative": -0.042180402336145395,
+          "interval": [
+            -1.15625,
+            -0.19791666666666666
+          ],
+          "class": "harmful",
+          "check": [
+            408,
+            401
+          ]
+        },
+        "metric777001": {
+          "gain": 0.5104166666666666,
+          "relative": 0.01502606562404174,
+          "interval": [
+            -0.1875,
+            1.28125
+          ],
+          "class": "unresolved",
+          "check": [
+            622,
+            619
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 29,
+      "area": "drawn11",
+      "change": "language +40 + prune -5 + model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.6145833333333334,
+        "relative": -0.03673723536737239,
+        "interval": [
+          -1.3645833333333333,
+          0.140625
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 30,
+      "area": "drawn11",
+      "change": "model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.08333333333333333,
+        "relative": 0.00498132004981322,
+        "interval": [
+          -0.640625,
+          0.7916666666666666
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 31,
+      "area": "drawn11",
+      "change": "language +40 + model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.7760416666666666,
+        "relative": -0.04638854296388539,
+        "interval": [
+          -1.5104166666666667,
+          -0.026041666666666668
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 32,
+      "area": "drawn13",
+      "change": "language +40 + prune -28 + model g=8 pw=4 from 96 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 4.848958333333333,
+        "relative": 0.4661992989484227,
+        "interval": [
+          3.3802083333333335,
+          6.364583333333333
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": 0.3229166666666667,
+          "relative": 0.010805158591843833,
+          "interval": [
+            -0.3229166666666667,
+            1.0416666666666667
+          ],
+          "class": "unresolved",
+          "check": [
+            931,
+            946
+          ]
+        },
+        "drawn7": {
+          "gain": 1.28125,
+          "relative": 0.08333333333333326,
+          "interval": [
+            0.3854166666666667,
+            2.25
+          ],
+          "class": "beneficial",
+          "check": [
+            427,
+            414
+          ]
+        },
+        "metric777001": {
+          "gain": 0.5,
+          "relative": 0.01450151057401805,
+          "interval": [
+            -0.5,
+            1.6145833333333333
+          ],
+          "class": "unresolved",
+          "check": [
+            931,
+            964
+          ]
+        },
+        "drawn11": {
+          "gain": 0.10416666666666667,
+          "relative": 0.006357279084551859,
+          "interval": [
+            -0.6145833333333334,
+            0.7604166666666666
+          ],
+          "class": "unresolved",
+          "check": [
+            299,
+            330
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 33,
+      "area": "drawn13",
+      "change": "model g=8 pw=4 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 4.869791666666667,
+        "relative": 0.46820230345518277,
+        "interval": [
+          3.4010416666666665,
+          6.34375
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 34,
+      "area": "drawn13",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.6145833333333334,
+        "relative": -0.04024556616643926,
+        "interval": [
+          -1.213671875,
+          -0.0519531250000019
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 35,
+      "area": "drawn13",
+      "change": "language +40 + prune -31 + model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.5885416666666666,
+        "relative": 0.035884407748491665,
+        "interval": [
+          -0.2604166666666667,
+          1.453125
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 36,
+      "area": "drawn13",
+      "change": "model g=8 pw=4 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.13541666666666666,
+        "relative": 0.008256589393458302,
+        "interval": [
+          -0.6614583333333334,
+          0.9322916666666666
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 37,
+      "area": "drawn13",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.6979166666666666,
+        "relative": -0.04255319148936165,
+        "interval": [
+          -1.2240885416666665,
+          -0.171875
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 38,
+      "area": "metric555001",
+      "change": "language +40 + prune -25 + model g=7 pw=2 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 18.75,
+        "relative": 1.993355481727575,
+        "interval": [
+          16.703125,
+          20.85950520833333
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      },
+      "elsewhere": {
+        "mech": {
+          "gain": 0.3645833333333333,
+          "relative": 0.012199372603694636,
+          "interval": [
+            -0.3958333333333333,
+            1.3125
+          ],
+          "class": "unresolved",
+          "check": [
+            909,
+            997
+          ]
+        },
+        "drawn7": {
+          "gain": 0.2604166666666667,
+          "relative": 0.01693766937669383,
+          "interval": [
+            -0.4166666666666667,
+            0.9895833333333334
+          ],
+          "class": "unresolved",
+          "check": [
+            317,
+            331
+          ]
+        },
+        "metric777001": {
+          "gain": 0.0625,
+          "relative": 0.0018126888217522286,
+          "interval": [
+            -0.8541666666666666,
+            1.0
+          ],
+          "class": "unresolved",
+          "check": [
+            813,
+            866
+          ]
+        },
+        "drawn11": {
+          "gain": 0.2916666666666667,
+          "relative": 0.017800381436745116,
+          "interval": [
+            -0.4375,
+            0.9479166666666666
+          ],
+          "class": "unresolved",
+          "check": [
+            410,
+            423
+          ]
+        },
+        "drawn13": {
+          "gain": 0.15625,
+          "relative": 0.00907441016333932,
+          "interval": [
+            -0.6145833333333334,
+            0.9583333333333334
+          ],
+          "class": "unresolved",
+          "check": [
+            271,
+            307
+          ]
+        }
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 39,
+      "area": "metric555001",
+      "change": "language +40 + model g=8 pw=2 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 1.953125,
+        "relative": 0.060415659739004424,
+        "interval": [
+          0.6458333333333334,
+          3.234375
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 40,
+      "area": "metric555001",
+      "change": "model g=8 pw=2 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 2.3125,
+        "relative": 0.07153214113098105,
+        "interval": [
+          1.0208333333333333,
+          3.5833333333333335
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 41,
+      "area": "str7",
+      "change": "language +18 + prune -25 + model g=7 pw=4 from 96 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 17.786458333333332,
+        "relative": 0.27676472971877786,
+        "interval": [
+          15.630208333333334,
+          20.010416666666668
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": true,
+        "quarter": true,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 42,
+      "area": "str7",
+      "change": "language +1 + model g=7 pw=3 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.13541666666666666,
+        "relative": -0.0016146059740420604,
+        "interval": [
+          -1.0052083333333333,
+          0.734375
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 43,
+      "area": "str7",
+      "change": "model g=7 pw=3 from 192 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 0.020833333333333332,
+        "relative": 0.00024840091908329143,
+        "interval": [
+          -0.796875,
+          0.84375
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 44,
+      "area": "str7",
+      "change": "language +1",
+      "kept": false,
+      "own": {
+        "gain": -0.0625,
+        "relative": -0.0007452027572502073,
+        "interval": [
+          -0.20833333333333334,
+          0.015625
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 45,
+      "area": "str7",
+      "change": "language +1 + prune -12 + model g=6 pw=3 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -1.890625,
+        "relative": -0.02249628160634609,
+        "interval": [
+          -2.8959635416666667,
+          -0.9114583333333334
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 46,
+      "area": "str7",
+      "change": "model g=6 pw=3 from 288 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -1.8854166666666667,
+        "relative": -0.022434308378780354,
+        "interval": [
+          -2.8854166666666665,
+          -0.921875
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 47,
+      "area": "str7",
+      "change": "prune -12",
+      "kept": true,
+      "own": {
+        "gain": 0.5208333333333334,
+        "relative": 0.006197322756569257,
+        "interval": [
+          0.15104166666666666,
+          1.0625
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 48,
+      "area": "str7",
+      "change": "language +1",
+      "kept": false,
+      "own": {
+        "gain": -0.07291666666666667,
+        "relative": -0.0008622813500862581,
+        "interval": [
+          -0.15104166666666666,
+          -0.015625
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 49,
+      "area": "mech",
+      "change": "language +40 + model g=7 pw=3 from 480 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": 2.359375,
+        "relative": 0.08112464183381096,
+        "interval": [
+          1.2447916666666667,
+          3.53125
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 50,
+      "area": "mech",
+      "change": "model g=7 pw=3 from 480 worlds + prior",
+      "kept": true,
+      "own": {
+        "gain": 2.8229166666666665,
+        "relative": 0.09706303724928356,
+        "interval": [
+          1.7654947916666668,
+          3.9114583333333335
+        ],
+        "class": "beneficial"
+      },
+      "passes": {
+        "kept": true,
+        "full": true,
+        "half": false,
+        "quarter": false,
+        "point": true
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 51,
+      "area": "mech",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.4635416666666667,
+        "relative": -0.014528240287300043,
+        "interval": [
+          -1.0625,
+          0.13541666666666666
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 52,
+      "area": "mech",
+      "change": "language +40 + prune -9 + model g=7 pw=4 from 576 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.9583333333333334,
+        "relative": -0.03038810900082578,
+        "interval": [
+          -1.90625,
+          -0.026041666666666668
+        ],
+        "class": "harmful"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 53,
+      "area": "mech",
+      "change": "model g=7 pw=4 from 576 worlds + prior",
+      "kept": false,
+      "own": {
+        "gain": -0.6822916666666666,
+        "relative": -0.021635012386457486,
+        "interval": [
+          -1.5260416666666667,
+          0.15625
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    },
+    {
+      "tag": "c26",
+      "proof": 54,
+      "area": "mech",
+      "change": "language +40",
+      "kept": false,
+      "own": {
+        "gain": -0.22916666666666666,
+        "relative": -0.007266721717588798,
+        "interval": [
+          -0.8489583333333334,
+          0.375
+        ],
+        "class": "unresolved"
+      },
+      "passes": {
+        "kept": false,
+        "full": false,
+        "half": false,
+        "quarter": false,
+        "point": false
+      }
+    }
+  ]
+}

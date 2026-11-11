@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{What the 166 candidates tested on seeds 919127 to 919129 really did, on a truth set of 192 fresh worlds of their own area. A candidate is harmful (H) or beneficial (B) when the paired 95\% bootstrap interval of its gain over the state it was tested against (10,000 resamples of worlds within pools) is below or above zero, and unresolved (U) otherwise; gain is the mean true gain in tasks per world. The first row is the acceptance rule as it ran, cross-area check included, and the second its own-area test alone. The others judge the recorded test results again: the plain interval rule on half and a quarter of the set, and a positive point gain on half.}
+\label{tab:truth}
+\small
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+ & \multicolumn{5}{c}{Passed} & \multicolumn{5}{c}{Refused} \\
+Rule & all & H & B & U & gain & all & H & B & U & gain \\
+\midrule
+whole rule, as run & 35 & 0 & 33 & 2 & $+7.6$ & 131 & 24 & 37 & 70 & $+0.9$ \\
+own-area test, as run & 50 & 0 & 48 & 2 & $+7.4$ & 116 & 24 & 22 & 70 & $+0.1$ \\
+interval, half set & 34 & 0 & 31 & 3 & $+9.4$ & 132 & 24 & 39 & 69 & $+0.5$ \\
+interval, quarter set & 33 & 0 & 30 & 3 & $+9.5$ & 133 & 24 & 40 & 69 & $+0.6$ \\
+point, half set & 96 & 4 & 61 & 31 & $+4.2$ & 70 & 20 & 9 & 41 & $-0.2$ \\
+\bottomrule
+\end{tabular}
+\end{table}

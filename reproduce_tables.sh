@@ -5,8 +5,8 @@
 # (PYTHON=path/to/python chooses the interpreter)
 set -e
 py=${PYTHON:-python}
-sha256sum -c --quiet v11.1.sha256 arms.sha256
-for script in summarize_v11_replication rejudge_proofs summarize_arms summarize_limits second_draw paper_tables; do
+sha256sum -c --quiet v11.1.sha256 arms.sha256 arms2.sha256
+for script in summarize_v11_replication rejudge_proofs summarize_arms summarize_limits second_draw truth_labels paper_tables; do
   "$py" "$script.py" > /dev/null
 done
 git diff --exit-code --stat -- analysis paper

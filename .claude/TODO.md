@@ -37,6 +37,12 @@ are for replication only. Nothing proven is reset between generations.
       When a part finishes: truth_labels.py / summarize_arms10.py, table in
       paper_tables.py, both papers, reproduce_tables.sh, tag
       seed-growth-arxiv-v2 (v1 tag is not moved).
+      C DONE 11-11 17:33 and in both papers (table-truth.tex): 166
+      candidates, 24 harmful / 70 beneficial / 72 unresolved; rule kept 0
+      harmful, refused 37 of 70 beneficial; point passes 4 harmful; cross-area
+      check at 2% passed 2 of 7 that truly lowered an area, refused 6 of 15
+      that did not; 3 of 4 forecasts, Brier 0.156. A and B still running.
+      New backlog from C: larger cross-area set; truth labels on all ten seeds.
       Paper text already in: the 9% untrained drop is the dev agent's
       (Section 6), body chronology cut to a pointer, appendix in paragraphs.
       Open with reese: LLM-agent experiment (review item 4), still declined

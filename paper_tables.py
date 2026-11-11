@@ -97,8 +97,26 @@ def second_draw():
           'tab:seconddraw', 'lrrl', 'Arm & G, first draw & G, second draw & G $-$ full on the second draw, per seed', rows)
 
 
+def truth():
+    data = load('review002-truth.json')
+    labels = (('kept', 'whole rule, as run'), ('full', 'own-area test, as run'), ('half', 'interval, half set'),
+              ('quarter', 'interval, quarter set'), ('point', 'point, half set'))
+    rows = [[label] + [f'${r[k]:+.1f}$' if k == 'mean_gain' else str(r[k])
+                       for r in (data['rules'][rule]['passed'], data['rules'][rule]['refused'])
+                       for k in ('n', 'harmful', 'beneficial', 'unresolved', 'mean_gain')] for rule, label in labels]
+    write('table-truth.tex',
+          f'What the {data["candidates"]} candidates tested on seeds 919127 to 919129 really did, on a truth set of {data["own"]} fresh worlds of their own area. '
+          'A candidate is harmful (H) or beneficial (B) when the paired 95\\% bootstrap interval of its gain over the state it was tested against '
+          f'({data["draws"]:,} resamples of worlds within pools) is below or above zero, and unresolved (U) otherwise; gain is the mean true gain in tasks per world. '
+          'The first row is the acceptance rule as it ran, cross-area check included, and the second its own-area test alone. '
+          'The others judge the recorded test results again: the plain interval rule on half and a quarter of the set, and a positive point gain on half.',
+          'tab:truth', 'lrrrrrrrrrr',
+          ' & \\multicolumn{5}{c}{Passed} & \\multicolumn{5}{c}{Refused} \\\\\nRule & all & H & B & U & gain & all & H & B & U & gain', rows)
+
+
 if __name__ == '__main__':
     ten_seeds()
     rejudged()
+    truth()
     arms()
     second_draw()
