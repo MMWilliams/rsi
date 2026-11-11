@@ -1,0 +1,8 @@
+# What the seed agent and the paper's scripts need (Python 3.12.9); requirements.lock.txt
+# is the whole development environment and pins a CUDA build of torch that PyPI does not serve.
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.7.2
+joblib==1.6.0
+threadpoolctl==3.7.0
+pytest==8.4.2
