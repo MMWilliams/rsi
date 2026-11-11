@@ -277,7 +277,7 @@ def build():
               p("The proposed mission needs separate evidence", s["h2"]),
               p("Research: novelty, reproducibility, and expert review. Defensive cybersecurity: authorized scopes, validated findings, and false-positive/false-negative costs. Social good: beneficiary-defined outcomes and distributional harms. Policy: traceable sources, uncertainty, stakeholder review, and correction processes. These are evaluation requirements, not current measured capabilities.", s["body"]),
               p("Source ledger", s["h2"]),
-              p("Paths below are relative to C:/Users/reese/projects/rsi/.", s["small"])]
+              p("Paths below are relative to the repository root.", s["small"])]
     sources = [
         ("S1", "Audited V8 search validation", "search-validation-results-2026-09-16.md; runs/search-validation-20260916-v8/audit.json"),
         ("S2", "Audited V2 controlled pilot", "pilot-results-2026-09-16.md; runs/pilot-20260916-v2-complete/audit.json"),

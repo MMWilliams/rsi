@@ -69,10 +69,10 @@ Thread 0x0000e890 (most recent call first):
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 765 in wait
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 768 in get
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 367 in map
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 538 in run
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 460 in meta_proof
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 232 in main
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 267 in <module>
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 538 in run
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 460 in meta_proof
+  File ".claude\worktrees\earned-groups\seed_run.py", line 232 in main
+  File ".claude\worktrees\earned-groups\seed_run.py", line 267 in <module>
   meta: 754 -> 754 on 48 worlds [+0.0, +0.0] per world, proof cost 14.7M vs 14.7M: share=0.5 declined
   carried: version 4, language 452, model g=6 pw=4, prior yes, held-out 783; procedure {"patience": 4, "probation": 4, "extend_cap": 80, "recurrence": 2, "share": 0.3, "prune_r": 0.1}; resource live 59.0M proof 140.1M tests 801581; 449 s
 drawn7 life 2: solved 1279 of 9600; by pool {"env": 13.3}; 67 s
@@ -123,12 +123,12 @@ Thread 0x0000f2b8 (most recent call first):
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 765 in wait
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 768 in get
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 367 in map
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 538 in run
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 741 in prove
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 128 in test
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 138 in phase
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 254 in main
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 267 in <module>
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 538 in run
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 741 in prove
+  File ".claude\worktrees\earned-groups\seed_run.py", line 128 in test
+  File ".claude\worktrees\earned-groups\seed_run.py", line 138 in phase
+  File ".claude\worktrees\earned-groups\seed_run.py", line 254 in main
+  File ".claude\worktrees\earned-groups\seed_run.py", line 267 in <module>
   extend+model: held-out 1457 -> 1634 [+1.2, +6.1] per world dropped; {"seen_centre": 32.0, "unfamiliar_centre": 36.1} elsewhere {"mech": "1083->1035", "drawn7": "393->375"}
   carried: version 5, language 412, model g=8 pw=2, prior yes, held-out 1457; procedure {"patience": 4, "probation": 4, "extend_cap": 80, "recurrence": 2, "share": 0.3, "prune_r": 0.1}; resource live 88.5M proof 212.6M tests 1069063; 415 s
 metric777001 life 2: solved 3141 of 9600; by pool {"seen_centre": 36.8, "unfamiliar_centre": 20.4}; 50 s
@@ -214,13 +214,13 @@ Thread 0x00007f48 (most recent call first):
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 765 in wait
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 768 in get
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 367 in map
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 538 in run
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 667 in _carried
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 740 in prove
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 107 in test
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 138 in phase
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 254 in main
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 267 in <module>
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 538 in run
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 667 in _carried
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 740 in prove
+  File ".claude\worktrees\earned-groups\seed_run.py", line 107 in test
+  File ".claude\worktrees\earned-groups\seed_run.py", line 138 in phase
+  File ".claude\worktrees\earned-groups\seed_run.py", line 254 in main
+  File ".claude\worktrees\earned-groups\seed_run.py", line 267 in <module>
   together: held-out 1500 -> 1645 [+0.8, +5.4] per world dropped; {"seen_centre": 41.9, "unfamiliar_centre": 26.6} elsewhere {"mech": "947->901", "drawn7": "422->422", "metric777001": "819->764", "drawn11": "330->316", "drawn13": "356->345"}
   policy: fallbacks ['model'], retired {"extend": {"rejections": 6, "since": 7}, "prune": {"rejections": 5, "since": 10}, "extend+model": {"rejections": 4, "since": 13}}
   model: held-out 1500 -> 1618 [+1.2, +3.8] per world KEPT; {"seen_centre": 41.7, "unfamiliar_centre": 25.7}
@@ -285,10 +285,10 @@ Thread 0x000096d8 (most recent call first):
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 765 in wait
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 768 in get
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 367 in map
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 538 in run
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 559 in live
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 226 in main
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 267 in <module>
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 538 in run
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 559 in live
+  File ".claude\worktrees\earned-groups\seed_run.py", line 226 in main
+  File ".claude\worktrees\earned-groups\seed_run.py", line 267 in <module>
   [b] mech life 5: solved 2748 of 9600
   [b] together: held-out 1385 -> 1240 [-3.5, +1.8] per world dropped; {"trained": 23.8, "unfamiliar": 16.5, "untrained": 37.2}
   [b] policy: fallbacks ['model', 'extend+model'], retired {"extend": {"rejections": 6, "since": 4}, "prune": {"rejections": 5, "since": 7}, "extend+model": {"rejections": 4, "since": 10}}

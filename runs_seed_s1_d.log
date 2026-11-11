@@ -21,40 +21,40 @@ drawn7 life 2: solved 621 of 4800; by pool {"env": 12.9}; 61 s
 drawn7 life 3: solved 617 of 4800; by pool {"env": 12.9}; 62 s
 Timeout (0:10:00)!
 Thread 0x00008c98 (most recent call first):
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 321 in _recv_bytes
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 250 in recv
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 579 in _handle_results
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 321 in _recv_bytes
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 250 in recv
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 579 in _handle_results
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
 
 Thread 0x0000b914 (most recent call first):
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 293 in _send_bytes
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 206 in send
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 540 in _handle_tasks
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 293 in _send_bytes
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 206 in send
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 540 in _handle_tasks
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
 
 Thread 0x0000c64c (most recent call first):
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1016 in _exhaustive_wait
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1084 in wait
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 502 in _wait_for_updates
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 522 in _handle_workers
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1016 in _exhaustive_wait
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\connection.py", line 1084 in wait
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 502 in _wait_for_updates
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 522 in _handle_workers
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1012 in run
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 1032 in _bootstrap
 
 Thread 0x0000bd1c (most recent call first):
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 355 in wait
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 655 in wait
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 765 in wait
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 768 in get
-  File "C:\Users\reese\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 367 in map
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 253 in run
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 355 in prove
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 70 in main
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 112 in <module>
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 355 in wait
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\threading.py", line 655 in wait
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 765 in wait
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 768 in get
+  File "~\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\multiprocessing\pool.py", line 367 in map
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 253 in run
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 355 in prove
+  File ".claude\worktrees\earned-groups\seed_run.py", line 70 in main
+  File ".claude\worktrees\earned-groups\seed_run.py", line 112 in <module>
   extend: 40 atoms from 45654 tests; held-out 313 -> 304 dropped; {"env": 12.7}
   prune: 26 unearned atoms; held-out 313 -> 375 KEPT; {"env": 15.6}
   reflect: 6 groups over 192 atoms from 192 worlds; held-out 375 -> 370 dropped; {"env": 15.4}

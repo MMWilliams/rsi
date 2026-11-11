@@ -125,14 +125,14 @@ frozen artifacts, hashes and audits are unchanged; what changed is the
 adversarial default they should have been measured against.""")
 
     # ------------------------------------------------------------- memory ----
-    mem = r'C:\Users\reese\.claude\projects\C--Users-reese\memory\rsi-project.md'
+    mem = pathlib.Path(r'~\.claude\projects\C--Users-reese\memory\rsi-project.md').expanduser()
     replace_line_starting(mem, "description:",
         "description: RSI seed-improver research at projects/rsi; verifier growth stands, every improver claim dominated by a capacity-matched pooled model (2026-09-21 review outcome)")
     replace_line_starting(mem, "**Both growth claims are now achieved, replicated and independently audited.**",
         "**2026-09-21 final outcome: verifier growth stands; NO RSI-relevant improver growth in any form.** Every improver result (routing C1/C2, construction E1-E3, the complexity-partition environment) was measured against defaults with less model capacity than the improver's output. A single 60-leaf pooled model on the same labels beats the routed system by 35/29 and the built system by 50/36; a 120-leaf model beats the partition's latent oracle routing. The partition was four small models beating one small model, not structure. Details in `WHAT-WORKED-WHAT-FAILED-2026-09-21.md` section 9.")
     edit(mem, append="""**The rule that would have caught it in one screen (2026-09-21):** P2c's adversarial default set MUST include model capacity, i.e. one larger model on the same labels at several sizes, not only hand-written rules. External reviewers named capacity-matched pooling as the largest risk before any check ran; they were right. Any future constructor language must be able to express "one larger model" so it can only win by doing something a larger model cannot.""")
 
-    idx = pathlib.Path(r'C:\Users\reese\.claude\projects\C--Users-reese\memory\MEMORY.md')
+    idx = pathlib.Path(r'~\.claude\projects\C--Users-reese\memory\MEMORY.md').expanduser()
     s = idx.read_text(encoding='utf-8')
     old = "- [RSI seed improver](rsi-project.md) evaluator AND improver growth both ACHIEVED + audited 2026-09-21; 4 preconditions gate every improver test; never benchmark growth against a one-observation baseline"
     assert old in s

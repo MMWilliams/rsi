@@ -119,10 +119,10 @@ Thread 0x0000a770 (most recent call first):
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 765 in wait
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 768 in get
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 367 in map
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 326 in run
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 502 in prove
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 113 in main
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 138 in <module>
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 326 in run
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 502 in prove
+  File ".claude\worktrees\earned-groups\seed_run.py", line 113 in main
+  File ".claude\worktrees\earned-groups\seed_run.py", line 138 in <module>
   together: held-out 1275 -> 1449 [+1.2, +6.0] per world dropped; {"seen_centre": 42.8, "unfamiliar_centre": 17.6} elsewhere {"mech": "1014->968", "drawn7": "416->421", "metric777001": "711->757", "drawn11": "446->441", "drawn13": "373->370"}
   extend: held-out 1275 -> 1312 [-0.3, +1.9] per world dropped; {"seen_centre": 37.2, "unfamiliar_centre": 17.4}
   prune: held-out 1275 -> 1304 [+0.0, +0.0] per world dropped; {"seen_centre": 38.2, "unfamiliar_centre": 16.1}

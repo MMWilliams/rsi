@@ -1,6 +1,6 @@
 # Response plan: review 002 of "A Seed That Grows by Proving Its Own Changes"
 
-Review text: `C:\Users\reese\Downloads\seed_growth_review002.txt` (2026-10-26). It
+Review text: `~\Downloads\seed_growth_review002.txt` (2026-10-26). It
 read the version with 89 sealed pairs and one completed seed of the final
 protocol; the current paper has v11.1 on two seeds.
 

@@ -106,13 +106,13 @@ Thread 0x00009f64 (most recent call first):
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 765 in wait
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 768 in get
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 367 in map
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 441 in run
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 566 in _carried
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 586 in prove
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 102 in test
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 133 in phase
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 208 in main
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 240 in <module>
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 441 in run
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 566 in _carried
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 586 in prove
+  File ".claude\worktrees\earned-groups\seed_run.py", line 102 in test
+  File ".claude\worktrees\earned-groups\seed_run.py", line 133 in phase
+  File ".claude\worktrees\earned-groups\seed_run.py", line 208 in main
+  File ".claude\worktrees\earned-groups\seed_run.py", line 240 in <module>
   [a] together: held-out 4172 -> 4088 [-2.8, +0.5] per world dropped; {"trained": 86.2, "unfamiliar": 82.5, "untrained": 86.8}
   [a] policy: fallbacks ['prune', 'extend'], retired {"model": {"rejections": 5, "since": 5}, "extend": {"rejections": 4, "since": 7}}
   [a] extend: held-out 4172 -> 4126 [-0.5, +0.1] per world dropped; {"trained": 87.4, "unfamiliar": 84.4, "untrained": 86.1}

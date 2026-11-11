@@ -140,7 +140,7 @@ does not, partitioning adds nothing here beyond capacity. That comparison is
     ])
 
     # ---- memory ----
-    mem = pathlib.Path(r'C:\Users\reese\.claude\projects\C--Users-reese\memory\rsi-project.md')
+    mem = pathlib.Path(r'~\.claude\projects\C--Users-reese\memory\rsi-project.md').expanduser()
     m = mem.read_text(encoding='utf-8')
     start = m.index("- **Construction** improver growth also achieved and audited:")
     end = m.index("\n", start)

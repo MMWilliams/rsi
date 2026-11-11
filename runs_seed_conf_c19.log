@@ -106,10 +106,10 @@ Thread 0x00005a8c (most recent call first):
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 765 in wait
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 768 in get
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 367 in map
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 329 in run
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 484 in prove
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 122 in main
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 138 in <module>
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 329 in run
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 484 in prove
+  File ".claude\worktrees\earned-groups\seed_run.py", line 122 in main
+  File ".claude\worktrees\earned-groups\seed_run.py", line 138 in <module>
   model: held-out 804 -> 806 [-3.6, +0.9] per world dropped; {"env": 16.8}
   carried: version 9, language 404, model g=6 pw=4, prior yes, held-out 804; resource live 137.6M proof 392.0M tests 1343449; 261 s
 kept: [{"life": 0, "area": "mech", "change": "language +40 + model g=6 pw=4 from 96 worlds + prior", "gain": 319, "version": 1}, {"life": 2, "area": "mech", "change": "language +40 + prune -11 + model g=7 pw=4 from 288 worlds + prior", "gain": 160, "version": 2}, {"life": 0, "area": "drawn7", "change": "model g=7 pw=4 from 96 worlds + prior", "gain": 271, "version": 3}, {"life": 0, "area": "metric777001", "change": "model g=8 pw=2 from 96 worlds + prior", "gain": 834, "version": 4}, {"life": 1, "area": "metric777001", "change": "language +40 + prune -12 + model g=8 pw=2 from 192 worlds + prior", "gain": 119, "version": 5}, {"life": 2, "area": "metric777001", "change": "language +40 + prune -8 + model g=8 pw=2 from 288 worlds + prior", "gain": 132, "version": 6}, {"life": 0, "area": "drawn11", "change": "model g=7 pw=4 from 96 worlds + prior", "gain": 343, "version": 7}, {"life": 0, "area": "drawn13", "change": "model g=6 pw=4 from 96 worlds + prior", "gain": 158, "version": 8}, {"life": 1, "area": "drawn13", "change": "prune -31", "gain": 63, "version": 9}]
@@ -152,10 +152,10 @@ Thread 0x00000234 (most recent call first):
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 765 in wait
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 768 in get
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 367 in map
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 329 in run
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 484 in prove
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 122 in main
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 138 in <module>
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 329 in run
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 484 in prove
+  File ".claude\worktrees\earned-groups\seed_run.py", line 122 in main
+  File ".claude\worktrees\earned-groups\seed_run.py", line 138 in <module>
   model: held-out 1630 -> 1745 [+0.7, +4.1] per world KEPT; {"seen_centre": 47.0, "unfamiliar_centre": 25.8}
   carried: version 11, language 404, model g=8 pw=2, prior yes, held-out 1745; resource live 157.3M proof 498.9M tests 1533371; 339 s
 kept: [{"life": 0, "area": "mech", "change": "language +40 + model g=6 pw=4 from 96 worlds + prior", "gain": 319, "version": 1}, {"life": 2, "area": "mech", "change": "language +40 + prune -11 + model g=7 pw=4 from 288 worlds + prior", "gain": 160, "version": 2}, {"life": 0, "area": "drawn7", "change": "model g=7 pw=4 from 96 worlds + prior", "gain": 271, "version": 3}, {"life": 0, "area": "metric777001", "change": "model g=8 pw=2 from 96 worlds + prior", "gain": 834, "version": 4}, {"life": 1, "area": "metric777001", "change": "language +40 + prune -12 + model g=8 pw=2 from 192 worlds + prior", "gain": 119, "version": 5}, {"life": 2, "area": "metric777001", "change": "language +40 + prune -8 + model g=8 pw=2 from 288 worlds + prior", "gain": 132, "version": 6}, {"life": 0, "area": "drawn11", "change": "model g=7 pw=4 from 96 worlds + prior", "gain": 343, "version": 7}, {"life": 0, "area": "drawn13", "change": "model g=6 pw=4 from 96 worlds + prior", "gain": 158, "version": 8}, {"life": 1, "area": "drawn13", "change": "prune -31", "gain": 63, "version": 9}, {"life": 0, "area": "metric555001", "change": "model g=8 pw=2 from 96 worlds + prior", "gain": 970, "version": 10}, {"life": 1, "area": "metric555001", "change": "model g=8 pw=2 from 192 worlds + prior", "gain": 115, "version": 11}]

@@ -46,6 +46,8 @@ The papers' Section 9 gives the full list of limitations with their numbers.
 
 The code and paper were written with an AI coding assistant (Claude, by Anthropic) under the author's direction.
 
+Licence: the code is under MIT (`LICENSE`); the paper's text and figures are under CC BY 4.0 (`paper/LICENSE`).
+
 ## Earlier programme (September 2026)
 
 Research notes, executable experiments, and artifacts for *The Münchhausen Machine* and the related self-improvement loop study. None of the material below is needed for the paper above.
@@ -182,7 +184,7 @@ The local brief v4 and gap register v3 include targeted September updates and li
 - `gap-audit-2026-09-16.md` — updated prior-art check, experiment-design corrections, and research priorities.
 - `flagship-literature-check-2026-09-16.md` — system-level comparison, including SOAR and HGM, and the inherited-improver hypothesis.
 
-The textbook PDFs remain in `C:\Users\reese\Documents\rsi-library`.
+The textbook PDFs remain in `~\Documents\rsi-library`.
 
 ## Published pages
 

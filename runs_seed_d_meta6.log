@@ -125,10 +125,10 @@ Thread 0x0000a3a0 (most recent call first):
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 765 in wait
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 768 in get
   File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\pool.py", line 367 in map
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 520 in run
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\rsi\seed.py", line 541 in live
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 210 in main
-  File "C:\Users\reese\projects\rsi\.claude\worktrees\earned-groups\seed_run.py", line 254 in <module>
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 520 in run
+  File ".claude\worktrees\earned-groups\rsi\seed.py", line 541 in live
+  File ".claude\worktrees\earned-groups\seed_run.py", line 210 in main
+  File ".claude\worktrees\earned-groups\seed_run.py", line 254 in <module>
   [b] str7 life 12: solved 4155 of 4800
   [b] together: held-out 4187 -> 4108 [-2.5, +1.1] per world dropped; {"trained": 85.9, "unfamiliar": 84.0, "untrained": 86.9}
   [b] policy: fallbacks ['prune', 'extend+model'], retired {"model": {"rejections": 5, "since": 3}, "extend": {"rejections": 6, "since": 4}, "extend+model": {"rejections": 3, "since": 9}}

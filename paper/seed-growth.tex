@@ -448,7 +448,7 @@ The growth also saturates and is uneven. On the main agent's later mechanism liv
 \section{Reproducibility}
 \label{sec:repro}
 
-The repository is \url{https://github.com/MMWilliams/rsi}. This paper corresponds to the tag \path{seed-growth-arxiv-v1}, and the arms' preregistration is the commit tagged \path{prereg-review002-arms}.
+The repository is \url{https://github.com/MMWilliams/rsi}. This paper corresponds to the tag \path{seed-growth-arxiv-v1}, and the arms' preregistration is the commit tagged \path{prereg-review002-arms}. The code is released under the MIT licence and this paper under CC BY 4.0.
 
 \paragraph{Without running the agent.} \path{sh reproduce_tables.sh} checks the hashes of the frozen files, regenerates every analysis file and every generated table of this paper (Tables~\ref{tab:tenpools}, \ref{tab:tenseeds}, \ref{tab:rejudged}, \ref{tab:arms} and~\ref{tab:seconddraw}) from the committed states, ledgers and logs, and fails if anything differs from the committed copy. It needs Python and NumPy and takes about two minutes. Every number in Section~9's limitations comes from \path{analysis/review002-limits.json}, \path{analysis/review002-second-draw.json} or \path{analysis/review002-metric-coverage.json}, which the same script rebuilds, except the last, which draws worlds and so needs the agent's environment.
 
@@ -466,7 +466,7 @@ Settings of the development agents (the final protocol's are in Section~5): 48 w
 
 Agents: \texttt{s1} on random seed 644101 (versions 1 to 26 reported here), \texttt{s2} on 643101 and \texttt{s3} on 645101. The companion paper on the world and self model is \path{SELF-SIMULATION-WORLD-MODEL-2026-10-10.md}, and the distillation of earlier growth results is \path{GROWTH-DISTILLATION-2026-10-10.md}.
 
-\paragraph{Use of AI tools.} The code, the experiment scripts, the analysis and the drafts of this text were written with an AI coding assistant (Claude, by Anthropic) working under the author's direction, and the audit that produced the limitations of Section~9 was run with the same assistant. No language model is part of the agent studied. The author is responsible for the content.
+\paragraph{Use of AI tools.} An AI coding assistant (Claude, by Anthropic) was used to write the code and to draft this text under the author's direction, and the author is responsible for the content.
 
 \begin{thebibliography}{99}
 \bibitem{balog2017} M. Balog, A. L. Gaunt, M. Brockschmidt, S. Nowozin and D. Tarlow. DeepCoder: Learning to Write Programs. ICLR, 2017.

@@ -1,7 +1,7 @@
 #!/bin/sh
 # Review 002 arms, one run at a time; stops at the first failure. EXPERIMENT-seed-confirmation.md.
 cd "$(dirname "$0")"
-export PATH="/c/Users/reese/projects/rsi/.venv/Scripts:$PATH" RSI_WORKERS=6
+export PATH="$PWD/.venv/Scripts:$PATH" RSI_WORKERS=6
 for arm in full accept-all point matched no-guidance frequency no-invention; do
   for pair in c24:919127 c25:919128 c26:919129; do
     tag=${pair%:*}; seed=${pair#*:}; name=${arm}_$tag
