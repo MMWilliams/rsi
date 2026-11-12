@@ -4,7 +4,7 @@ Mission: **RSI for research, cybersecurity, social good and policy**.
 
 ## Paper: A Seed Agent That Improves Its Own State (November 2026)
 
-Maureese Williams. Technical paper: [`paper/seed-growth.pdf`](paper/seed-growth.pdf). The same results for a general reader: [`paper/seed-growth-plain.pdf`](paper/seed-growth-plain.pdf). Release tag: `seed-growth-arxiv-v1`.
+Maureese Williams. Technical paper: [`paper/seed-growth.pdf`](paper/seed-growth.pdf). The same results for a general reader: [`paper/seed-growth-plain.pdf`](paper/seed-growth-plain.pdf). Release tag: `seed-growth-arxiv-v2`.
 
 One persistent agent solves synthetic rule-inference tasks under a scan budget and improves the state its fixed learning procedure works on: its experience, the models that guide its search, and the primitives it builds rules from. Seven task areas in two task forms. No language model is part of the agent.
 

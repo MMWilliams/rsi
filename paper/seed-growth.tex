@@ -444,7 +444,7 @@ The growth also saturates and is uneven. On the main agent's later mechanism liv
 \section{Next}
 
 \begin{itemize}[leftmargin=*]
-\item Run the arms on more seeds, with intervals, and at other budgets and area counts, to find where, if anywhere, the test pays for itself in growth and not only in safety.
+\item Run the arms on more seeds, with intervals, and at other budgets and area counts, to find where, if anywhere, the test pays for itself in growth and not only in safety. The first part is under way: the seven arms on the other seven seeds of the final protocol, with a paired interval over seeds, and an arm that keeps every change and is given full's wall-clock time and not its scans, on all ten. Their rules and forecasts are in the commit tagged \path{prereg-review002-v2}, the runs had not finished when this version was posted, and a revision will report them whatever they show.
 \item A cheaper safety check: the test's benefit is fewer harmful changes, and a check aimed at harm alone may cost far less than a full paired test.
 \item Replicate a procedure change that yields a better state and not only a cheaper one; on the ten seeds of the final protocol there is one.
 \item Save per-world results in the final checks, as the second draw does, so that each seed's reported gain carries its own interval and not only the interval over seeds; and score every sealed seed on more than one draw.
@@ -458,7 +458,7 @@ The growth also saturates and is uneven. On the main agent's later mechanism liv
 \section{Reproducibility}
 \label{sec:repro}
 
-The repository is \url{https://github.com/MMWilliams/rsi}. This paper corresponds to the tag \path{seed-growth-arxiv-v1}, the arms' preregistration is the commit tagged \path{prereg-review002-arms}, and that of the truth labels is the commit tagged \path{prereg-review002-v2}. The code is released under the MIT licence and this paper under CC BY 4.0.
+The repository is \url{https://github.com/MMWilliams/rsi}. This paper corresponds to the tag \path{seed-growth-arxiv-v2}, the arms' preregistration is the commit tagged \path{prereg-review002-arms}, and that of the truth labels is the commit tagged \path{prereg-review002-v2}. The code is released under the MIT licence and this paper under CC BY 4.0.
 
 \paragraph{Without running the agent.} \path{sh reproduce_tables.sh} checks the hashes of the frozen files, regenerates every analysis file and every generated table of this paper (Tables~\ref{tab:tenpools}, \ref{tab:tenseeds}, \ref{tab:rejudged}, \ref{tab:truth}, \ref{tab:arms} and~\ref{tab:seconddraw}) from the committed states, ledgers and logs, and fails if anything differs from the committed copy. It needs Python and NumPy and takes about two minutes. Every number in Section~9's limitations comes from \path{analysis/review002-limits.json}, \path{analysis/review002-second-draw.json} or \path{analysis/review002-metric-coverage.json}, which the same script rebuilds, except the last, which draws worlds and so needs the agent's environment.
 
